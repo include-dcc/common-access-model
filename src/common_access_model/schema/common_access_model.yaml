@@ -184,17 +184,11 @@ classes:
       - ethnicity
       - age_at_last_vital_status 
       - vital_status
+      - age_at_first_engagement
     slot_usage:
       subject_id:
         required: true
         identifier: true
-  IncludeParticipant:
-    title: INCLUDE Participant
-    description: Information specific to INCLUDE participants
-    is_a: Demographics
-    slots:
-      - down_syndrome_status
-      - age_at_first_engagement
   Family:
     title: Family
     description: A group of individuals of some relation who are grouped together in a study.
@@ -671,11 +665,6 @@ slots:
     description: Ethnicity of Participant
     range: EnumEthnicity
     required: true
-  down_syndrome_status:
-    title: Down Syndrome Status
-    description: Down Syndrome status of participant
-    range: EnumDownSyndromeStatus
-    required: true
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
     title: Age at First Participant Engagement
@@ -1122,17 +1111,6 @@ enums:
         description: A group of individuals or entities.
       other:
         description: A different entity type- ideally this will be resolved!
-  EnumDownSyndromeStatus:
-    description: Down syndrome / chromosome 21 status
-    permissible_values:
-      d21:
-        title: D21
-        description: Disomy 21 (euploid)
-        meaning: PATO:0001393
-      t21:
-        title: T21
-        description: Trisomy 21 (Down syndrome)
-        meaning: MONDO:0008608
   EnumSex:
     description: Subject Sex
     permissible_values:
