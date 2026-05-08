@@ -214,6 +214,7 @@ Demographics {
     EnumEthnicity ethnicity  
     integer age_at_last_vital_status  
     EnumVitalStatus vital_status  
+    integer age_at_first_engagement  
     uriorcurieList external_id  
 }
 Encounter {
@@ -259,16 +260,6 @@ File {
 FileHash {
     EnumFileHashType hash_type  
     string hash_value  
-}
-IncludeParticipant {
-    EnumDownSyndromeStatus down_syndrome_status  
-    integer age_at_first_engagement  
-    EnumSex sex  
-    EnumRaceList race  
-    EnumEthnicity ethnicity  
-    integer age_at_last_vital_status  
-    EnumVitalStatus vital_status  
-    uriorcurieList external_id  
 }
 Investigator {
     string name  
@@ -385,9 +376,6 @@ File ||--|o FileHash : "hash"
 File ||--|o Study : "study_id"
 File ||--}o Sample : "sample_id"
 File ||--}o Subject : "subject_id"
-IncludeParticipant ||--|o AccessPolicy : "access_policy_id"
-IncludeParticipant ||--|o Study : "study_id"
-IncludeParticipant ||--|| Subject : "subject_id"
 Investigator ||--|o AccessPolicy : "access_policy_id"
 Investigator ||--|o Study : "study_id"
 Publication ||--|o AccessPolicy : "access_policy_id"

@@ -109,10 +109,6 @@
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumDownSyndromeStatus/</loc>
-         <lastmod>2026-05-08</lastmod>
-    </url>
-    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/EnumEDAMDataTypes/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
@@ -206,10 +202,6 @@
     </url>
     <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/Float/</loc>
-         <lastmod>2026-05-08</lastmod>
-    </url>
-    <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/IncludeParticipant/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>
@@ -446,10 +438,6 @@
     </url>
     <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/do_id/</loc>
-         <lastmod>2026-05-08</lastmod>
-    </url>
-    <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/down_syndrome_status/</loc>
          <lastmod>2026-05-08</lastmod>
     </url>
     <url>

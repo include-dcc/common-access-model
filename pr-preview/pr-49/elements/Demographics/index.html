@@ -238,11 +238,6 @@
       Record &lt;|-- Demographics
         click Record href "../Record/"
 
-
-      Demographics &lt;|-- IncludeParticipant
-        click IncludeParticipant href "../IncludeParticipant/"
-
-
       Demographics : access_policy_id
 
 
@@ -253,6 +248,8 @@
         click AccessPolicy href "../AccessPolicy/"
 
 
+
+      Demographics : age_at_first_engagement
 
       Demographics : age_at_last_vital_status
 
@@ -329,10 +326,7 @@
 <h2 id="inheritance">Inheritance</h2>
 <ul>
 <li><a href="../Record/">Record</a><ul>
-<li><strong>Demographics</strong><ul>
-<li><a href="../IncludeParticipant/">IncludeParticipant</a></li>
-</ul>
-</li>
+<li><strong>Demographics</strong></li>
 </ul>
 </li>
 </ul>
@@ -381,6 +375,12 @@
 <td><a href="../vital_status/">vital_status</a></td>
 <td>0..1 <br/> <a href="../EnumVitalStatus/">EnumVitalStatus</a></td>
 <td>Whether participant is alive or dead</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../age_at_first_engagement/">age_at_first_engagement</a></td>
+<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
+<td>Age in days of Participant at first recorded study event (enrollment, visit, ...</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -443,6 +443,7 @@ slots:
 - ethnicity
 - age_at_last_vital_status
 - vital_status
+- age_at_first_engagement
 slot_usage:
   subject_id:
     name: subject_id
@@ -547,6 +548,23 @@ attributes:
     domain_of:
     - Demographics
     range: EnumVitalStatus
+  age_at_first_engagement:
+    name: age_at_first_engagement
+    description: Age in days of Participant at first recorded study event (enrollment,
+      visit, observation, sample collection, survey completion, etc.). Age at enrollment
+      is preferred, if available.
+    title: Age at First Participant Engagement
+    from_schema: https://includedcc.org/common-access-model
+    rank: 1000
+    alias: age_at_first_engagement
+    owner: Demographics
+    domain_of:
+    - Demographics
+    range: integer
+    minimum_value: -365
+    maximum_value: 32507
+    unit:
+      ucum_code: d
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

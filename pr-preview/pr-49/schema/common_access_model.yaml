@@ -580,22 +580,6 @@ enums:
       other:
         text: other
         description: A different entity type- ideally this will be resolved!
-  EnumDownSyndromeStatus:
-    name: EnumDownSyndromeStatus
-    definition_uri: https://includedcc.org/common-access-model/EnumDownSyndromeStatus
-    description: Down syndrome / chromosome 21 status
-    from_schema: https://includedcc.org/common-access-model
-    permissible_values:
-      d21:
-        text: d21
-        description: Disomy 21 (euploid)
-        meaning: PATO:0001393
-        title: D21
-      t21:
-        text: t21
-        description: Trisomy 21 (Down syndrome)
-        meaning: MONDO:0008608
-        title: T21
   EnumSex:
     name: EnumSex
     definition_uri: https://includedcc.org/common-access-model/EnumSex
@@ -1463,18 +1447,6 @@ slots:
     - Demographics
     range: EnumEthnicity
     required: true
-  down_syndrome_status:
-    name: down_syndrome_status
-    definition_uri: https://includedcc.org/common-access-model/down_syndrome_status
-    description: Down Syndrome status of participant
-    title: Down Syndrome Status
-    from_schema: https://includedcc.org/common-access-model
-    slot_uri: cam:down_syndrome_status
-    owner: IncludeParticipant
-    domain_of:
-    - IncludeParticipant
-    range: EnumDownSyndromeStatus
-    required: true
   age_at_first_engagement:
     name: age_at_first_engagement
     definition_uri: https://includedcc.org/common-access-model/age_at_first_engagement
@@ -1484,9 +1456,9 @@ slots:
     title: Age at First Participant Engagement
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:age_at_first_engagement
-    owner: IncludeParticipant
+    owner: Demographics
     domain_of:
-    - IncludeParticipant
+    - Demographics
     range: integer
     minimum_value: -365
     maximum_value: 32507
@@ -2898,32 +2870,13 @@ classes:
     - ethnicity
     - age_at_last_vital_status
     - vital_status
+    - age_at_first_engagement
     slot_usage:
       subject_id:
         name: subject_id
         identifier: true
         required: true
     class_uri: cam:Demographics
-  IncludeParticipant:
-    name: IncludeParticipant
-    definition_uri: https://includedcc.org/common-access-model/IncludeParticipant
-    description: Information specific to INCLUDE participants
-    title: INCLUDE Participant
-    from_schema: https://includedcc.org/common-access-model
-    is_a: Demographics
-    slots:
-    - external_id
-    - access_policy_id
-    - study_id
-    - Demographics_subject_id
-    - sex
-    - race
-    - ethnicity
-    - age_at_last_vital_status
-    - vital_status
-    - down_syndrome_status
-    - age_at_first_engagement
-    class_uri: cam:IncludeParticipant
   Family:
     name: Family
     definition_uri: https://includedcc.org/common-access-model/Family
@@ -3281,7 +3234,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-05-08T21:01:33'
-source_file_size: 41402
-generation_date: '2026-05-08T21:01:42'
+source_file_date: '2026-05-08T21:06:48'
+source_file_size: 40748
+generation_date: '2026-05-08T21:06:55'
 
