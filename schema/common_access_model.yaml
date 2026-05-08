@@ -1,16 +1,16 @@
-name: include-access-model
-description: LinkML Schema for the internal INCLUDE DCC Access Model
-title: INCLUDE DCC Access Model
+name: common-access-model
+description: LinkML Schema for the Common Access Model
+title: Common Access Model
 see_also:
-- https://includedcc.github.io/include-access-model
-id: https://includedcc.org/include-access-model
+- https://includedcc.github.io/common-access-model
+id: https://includedcc.org/common-access-model
 imports:
 - linkml:types
 license: MIT
 prefixes:
-  includedcc:
-    prefix_prefix: includedcc
-    prefix_reference: https://includedcc.org/include-access-model/
+  cam:
+    prefix_prefix: cam
+    prefix_reference: https://includedcc.org/common-access-model/
   linkml:
     prefix_prefix: linkml
     prefix_reference: https://w3id.org/linkml/
@@ -59,7 +59,7 @@ prefixes:
   DUO:
     prefix_prefix: DUO
     prefix_reference: http://purl.obolibrary.org/obo/DUO_
-default_prefix: includedcc
+default_prefix: cam
 default_range: string
 types:
   string:
@@ -333,10 +333,10 @@ types:
 enums:
   EnumDataUsePermission:
     name: EnumDataUsePermission
-    definition_uri: https://includedcc.org/include-access-model/EnumDataUsePermission
+    definition_uri: https://includedcc.org/common-access-model/EnumDataUsePermission
     description: Data Use Ontology (DUO) terms for data use permissions.
     title: Data Use Permission
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     reachable_from:
       source_ontology: bioregistry:duo
       source_nodes:
@@ -346,10 +346,10 @@ enums:
       is_direct: false
   EnumDataUseModifier:
     name: EnumDataUseModifier
-    definition_uri: https://includedcc.org/include-access-model/EnumDataUseModifier
+    definition_uri: https://includedcc.org/common-access-model/EnumDataUseModifier
     description: Data Use Ontology (DUO) terms for data use modifiers.
     title: Data Use Modifier
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     reachable_from:
       source_ontology: bioregistry:duo
       source_nodes:
@@ -359,10 +359,10 @@ enums:
       is_direct: false
   EnumProgram:
     name: EnumProgram
-    definition_uri: https://includedcc.org/include-access-model/EnumProgram
+    definition_uri: https://includedcc.org/common-access-model/EnumProgram
     description: Funding programs relevant to inform operations.
     title: Funding Programs
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       include:
         text: include
@@ -375,10 +375,10 @@ enums:
         title: Other
   EnumResearchDomain:
     name: EnumResearchDomain
-    definition_uri: https://includedcc.org/include-access-model/EnumResearchDomain
+    definition_uri: https://includedcc.org/common-access-model/EnumResearchDomain
     description: Domains of Research used to find studies.
     title: Research Domain
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       behavior_and_behavior_mechanisms:
         text: behavior_and_behavior_mechanisms
@@ -417,10 +417,10 @@ enums:
         title: Other
   EnumParticipantLifespanStage:
     name: EnumParticipantLifespanStage
-    definition_uri: https://includedcc.org/include-access-model/EnumParticipantLifespanStage
+    definition_uri: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
     description: Stages of life during which participants may be recruited.
     title: Participant Lifespan Stage
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       fetal:
         text: fetal
@@ -440,11 +440,11 @@ enums:
         title: Adult
   EnumStudyDesign:
     name: EnumStudyDesign
-    definition_uri: https://includedcc.org/include-access-model/EnumStudyDesign
+    definition_uri: https://includedcc.org/common-access-model/EnumStudyDesign
     description: Approaches for collecting data, investigating interventions, and/or
       analyzing data.
     title: Study Design
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       case_control:
         text: case_control
@@ -478,10 +478,10 @@ enums:
         title: Tumor vs Matched Normal
   EnumClinicalDataSourceType:
     name: EnumClinicalDataSourceType
-    definition_uri: https://includedcc.org/include-access-model/EnumClinicalDataSourceType
+    definition_uri: https://includedcc.org/common-access-model/EnumClinicalDataSourceType
     description: Approaches to ascertain clinical information about a participant.
     title: Clinical Data Source Type
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       medical_record:
         text: medical_record
@@ -505,10 +505,10 @@ enums:
         title: Unknown
   EnumDataCategory:
     name: EnumDataCategory
-    definition_uri: https://includedcc.org/include-access-model/EnumDataCategory
+    definition_uri: https://includedcc.org/common-access-model/EnumDataCategory
     description: Categories of data which may be collected about participants.
     title: Data Category
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       unharmonized_demographic_clinical_data:
         text: unharmonized_demographic_clinical_data
@@ -557,9 +557,9 @@ enums:
         title: Sleep Study
   EnumSubjectType:
     name: EnumSubjectType
-    definition_uri: https://includedcc.org/include-access-model/EnumSubjectType
+    definition_uri: https://includedcc.org/common-access-model/EnumSubjectType
     description: Types of Subject entities
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       participant:
         text: participant
@@ -580,27 +580,11 @@ enums:
       other:
         text: other
         description: A different entity type- ideally this will be resolved!
-  EnumDownSyndromeStatus:
-    name: EnumDownSyndromeStatus
-    definition_uri: https://includedcc.org/include-access-model/EnumDownSyndromeStatus
-    description: Down syndrome / chromosome 21 status
-    from_schema: https://includedcc.org/include-access-model
-    permissible_values:
-      d21:
-        text: d21
-        description: Disomy 21 (euploid)
-        meaning: PATO:0001393
-        title: D21
-      t21:
-        text: t21
-        description: Trisomy 21 (Down syndrome)
-        meaning: MONDO:0008608
-        title: T21
   EnumSex:
     name: EnumSex
-    definition_uri: https://includedcc.org/include-access-model/EnumSex
+    definition_uri: https://includedcc.org/common-access-model/EnumSex
     description: Subject Sex
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       female:
         text: female
@@ -620,9 +604,9 @@ enums:
         title: Unknown
   EnumRace:
     name: EnumRace
-    definition_uri: https://includedcc.org/include-access-model/EnumRace
+    definition_uri: https://includedcc.org/common-access-model/EnumRace
     description: Participant Race
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       american_indian_or_alaska_native:
         text: american_indian_or_alaska_native
@@ -682,9 +666,9 @@ enums:
         title: South Asian
   EnumEthnicity:
     name: EnumEthnicity
-    definition_uri: https://includedcc.org/include-access-model/EnumEthnicity
+    definition_uri: https://includedcc.org/common-access-model/EnumEthnicity
     description: Participant ethnicity, specific to Hispanic or Latino.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       hispanic_or_latino:
         text: hispanic_or_latino
@@ -704,9 +688,9 @@ enums:
         title: Unknown
   EnumVitalStatus:
     name: EnumVitalStatus
-    definition_uri: https://includedcc.org/include-access-model/EnumVitalStatus
+    definition_uri: https://includedcc.org/common-access-model/EnumVitalStatus
     description: Descriptions of a Subject's vital status
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: EnumNull
     permissible_values:
       dead:
@@ -719,9 +703,9 @@ enums:
         title: Alive
   EnumNull:
     name: EnumNull
-    definition_uri: https://includedcc.org/include-access-model/EnumNull
+    definition_uri: https://includedcc.org/common-access-model/EnumNull
     description: Base enumeration providing null options.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       unknown:
         text: unknown
@@ -729,9 +713,9 @@ enums:
         title: Unknown
   EnumFamilyType:
     name: EnumFamilyType
-    definition_uri: https://includedcc.org/include-access-model/EnumFamilyType
+    definition_uri: https://includedcc.org/common-access-model/EnumFamilyType
     description: Enumerations describing research family type
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: EnumNull
     permissible_values:
       control_only:
@@ -756,9 +740,9 @@ enums:
         title: Trio+
   EnumConsanguinityAssertion:
     name: EnumConsanguinityAssertion
-    definition_uri: https://includedcc.org/include-access-model/EnumConsanguinityAssertion
+    definition_uri: https://includedcc.org/common-access-model/EnumConsanguinityAssertion
     description: Asserts known or suspected consanguinity in this study family
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       not_suspected:
         text: not_suspected
@@ -782,9 +766,9 @@ enums:
         title: unknown
   EnumAssertionProvenance:
     name: EnumAssertionProvenance
-    definition_uri: https://includedcc.org/include-access-model/EnumAssertionProvenance
+    definition_uri: https://includedcc.org/common-access-model/EnumAssertionProvenance
     description: Possible data sources for assertions.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: EnumNull
     permissible_values:
       medical_record:
@@ -806,9 +790,9 @@ enums:
         title: Other
   EnumAvailabilityStatus:
     name: EnumAvailabilityStatus
-    definition_uri: https://includedcc.org/include-access-model/EnumAvailabilityStatus
+    definition_uri: https://includedcc.org/common-access-model/EnumAvailabilityStatus
     description: Is the biospecimen available for use?
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       available:
         text: available
@@ -822,21 +806,21 @@ enums:
         title: Unavailable
   EnumSampleCollectionMethod:
     name: EnumSampleCollectionMethod
-    definition_uri: https://includedcc.org/include-access-model/EnumSampleCollectionMethod
+    definition_uri: https://includedcc.org/common-access-model/EnumSampleCollectionMethod
     description: The approach used to collect the biospecimen. [LOINC](https://loinc.org)
       is recommended.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
   EnumSite:
     name: EnumSite
-    definition_uri: https://includedcc.org/include-access-model/EnumSite
+    definition_uri: https://includedcc.org/common-access-model/EnumSite
     description: The location of the specimen collection. [SNOMED Body Site](https://hl7.org/fhir/R4B/valueset-body-site.html)
       is recommended.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
   EnumSpatialQualifiers:
     name: EnumSpatialQualifiers
-    definition_uri: https://includedcc.org/include-access-model/EnumSpatialQualifiers
+    definition_uri: https://includedcc.org/common-access-model/EnumSpatialQualifiers
     description: Any spatial/location qualifiers.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     enum_uri: http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
     reachable_from:
       source_ontology: bioregistry:snomedct
@@ -852,14 +836,14 @@ enums:
       is_direct: false
   EnumLaterality:
     name: EnumLaterality
-    definition_uri: https://includedcc.org/include-access-model/EnumLaterality
+    definition_uri: https://includedcc.org/common-access-model/EnumLaterality
     description: Laterality information for the site
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
   EnumEDAMFormats:
     name: EnumEDAMFormats
-    definition_uri: https://includedcc.org/include-access-model/EnumEDAMFormats
+    definition_uri: https://includedcc.org/common-access-model/EnumEDAMFormats
     description: Data formats from the EDAM ontology.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     reachable_from:
       source_ontology: bioregistry:edam
       source_nodes:
@@ -870,9 +854,9 @@ enums:
       include_self: false
   EnumEDAMDataTypes:
     name: EnumEDAMDataTypes
-    definition_uri: https://includedcc.org/include-access-model/EnumEDAMDataTypes
+    definition_uri: https://includedcc.org/common-access-model/EnumEDAMDataTypes
     description: Data types from the EDAM ontology.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     reachable_from:
       source_ontology: bioregistry:edam
       source_nodes:
@@ -883,9 +867,9 @@ enums:
       include_self: false
   EnumFileHashType:
     name: EnumFileHashType
-    definition_uri: https://includedcc.org/include-access-model/EnumFileHashType
+    definition_uri: https://includedcc.org/common-access-model/EnumFileHashType
     description: Types of file hashes supported.
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     permissible_values:
       md5:
         text: md5
@@ -899,11 +883,11 @@ enums:
 slots:
   study_id:
     name: study_id
-    definition_uri: https://includedcc.org/include-access-model/study_id
+    definition_uri: https://includedcc.org/common-access-model/study_id
     description: INCLUDE Global ID for the study
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_id
     owner: StudyMetadata
     domain_of:
     - Record
@@ -912,12 +896,12 @@ slots:
     multivalued: false
   access_policy_id:
     name: access_policy_id
-    definition_uri: https://includedcc.org/include-access-model/access_policy_id
+    definition_uri: https://includedcc.org/common-access-model/access_policy_id
     description: Global identifier for the access policy that applies to this row
       of data.
     title: Access Policy ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:access_policy_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:access_policy_id
     owner: AccessPolicy
     domain_of:
     - Record
@@ -925,22 +909,22 @@ slots:
     range: AccessPolicy
   data_use_accession:
     name: data_use_accession
-    definition_uri: https://includedcc.org/include-access-model/data_use_accession
+    definition_uri: https://includedcc.org/common-access-model/data_use_accession
     description: Accession used to provision access to the record, eg, a dbGaP phsID.
     title: Data Use Accession
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_use_accession
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_use_accession
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
     range: uriorcurie
   data_use_permission:
     name: data_use_permission
-    definition_uri: https://includedcc.org/include-access-model/data_use_permission
+    definition_uri: https://includedcc.org/common-access-model/data_use_permission
     description: Broad category of restrictions on data use.
     title: Data Use Permission
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_use_permission
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_use_permission
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
@@ -948,45 +932,45 @@ slots:
     required: true
   data_use_modifier:
     name: data_use_modifier
-    definition_uri: https://includedcc.org/include-access-model/data_use_modifier
+    definition_uri: https://includedcc.org/common-access-model/data_use_modifier
     description: Additional modifiers that limit data use.
     title: Data Use Modifier
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_use_modifier
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_use_modifier
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
     range: EnumDataUseModifier
   disease_limitation:
     name: disease_limitation
-    definition_uri: https://includedcc.org/include-access-model/disease_limitation
+    definition_uri: https://includedcc.org/common-access-model/disease_limitation
     description: If the access is limited to a specific disease purpose, it is specified
       here.
     title: Data Use Disease Limitation
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:disease_limitation
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:disease_limitation
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
     range: string
   access_description:
     name: access_description
-    definition_uri: https://includedcc.org/include-access-model/access_description
+    definition_uri: https://includedcc.org/common-access-model/access_description
     description: Any additional information to support access requests.
     title: Access Description
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:access_description
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:access_description
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
     range: string
   do_id:
     name: do_id
-    definition_uri: https://includedcc.org/include-access-model/do_id
+    definition_uri: https://includedcc.org/common-access-model/do_id
     description: Digital Object Identifier (DOI) for this Record.
     title: DOI
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:do_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:do_id
     owner: Dataset
     domain_of:
     - Study
@@ -996,11 +980,11 @@ slots:
     multivalued: false
   subject_id:
     name: subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: INCLUDE Global ID for the Subject
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:subject_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:subject_id
     owner: File
     domain_of:
     - Subject
@@ -1014,11 +998,11 @@ slots:
     multivalued: false
   assertion_id:
     name: assertion_id
-    definition_uri: https://includedcc.org/include-access-model/assertion_id
+    definition_uri: https://includedcc.org/common-access-model/assertion_id
     description: INCLUDE Global ID for the Assertion
     title: Assertion ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:assertion_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:assertion_id
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
@@ -1026,12 +1010,12 @@ slots:
     multivalued: false
   external_id:
     name: external_id
-    definition_uri: https://includedcc.org/include-access-model/external_id
+    definition_uri: https://includedcc.org/common-access-model/external_id
     description: Other identifiers for this entity, eg, from the submitting study
       or in systems like dbGaP
     title: External Identifiers
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:external_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:external_id
     owner: Record
     domain_of:
     - Record
@@ -1040,11 +1024,11 @@ slots:
     multivalued: true
   parent_study:
     name: parent_study
-    definition_uri: https://includedcc.org/include-access-model/parent_study
+    definition_uri: https://includedcc.org/common-access-model/parent_study
     description: The parent study for this study, if it is a nested study.
     title: Parent Study
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:parent_study
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:parent_study
     owner: Study
     domain_of:
     - Study
@@ -1053,11 +1037,11 @@ slots:
     multivalued: false
   funding_source:
     name: funding_source
-    definition_uri: https://includedcc.org/include-access-model/funding_source
+    definition_uri: https://includedcc.org/common-access-model/funding_source
     description: The funding source(s) of the study.
     title: Funding Source
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:funding_source
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:funding_source
     owner: Study
     domain_of:
     - Study
@@ -1066,11 +1050,11 @@ slots:
     multivalued: true
   principal_investigator:
     name: principal_investigator
-    definition_uri: https://includedcc.org/include-access-model/principal_investigator
+    definition_uri: https://includedcc.org/common-access-model/principal_investigator
     description: The Principal Investigator(s) responsible for the study.
     title: Principal Investigator
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:principal_investigator
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:principal_investigator
     owner: Study
     domain_of:
     - Study
@@ -1081,10 +1065,10 @@ slots:
     inlined_as_list: true
   study_title:
     name: study_title
-    definition_uri: https://includedcc.org/include-access-model/study_title
+    definition_uri: https://includedcc.org/common-access-model/study_title
     description: Full Study Title
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_title
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_title
     owner: Study
     domain_of:
     - Study
@@ -1093,11 +1077,11 @@ slots:
     multivalued: false
   study_code:
     name: study_code
-    definition_uri: https://includedcc.org/include-access-model/study_code
+    definition_uri: https://includedcc.org/common-access-model/study_code
     description: Unique identifier for the study (generally a short acronym)
     title: Study Code
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_code
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_code
     owner: Study
     domain_of:
     - Study
@@ -1105,11 +1089,11 @@ slots:
     required: true
   study_short_name:
     name: study_short_name
-    definition_uri: https://includedcc.org/include-access-model/study_short_name
+    definition_uri: https://includedcc.org/common-access-model/study_short_name
     description: Short name for the study
     title: Study Code
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_short_name
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_short_name
     owner: Study
     domain_of:
     - Study
@@ -1117,11 +1101,11 @@ slots:
     required: false
   investigator_title:
     name: investigator_title
-    definition_uri: https://includedcc.org/include-access-model/investigator_title
+    definition_uri: https://includedcc.org/common-access-model/investigator_title
     description: The title of the Investigator, eg, "Assistant Professor"
     title: Investigator Title
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:investigator_title
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:investigator_title
     owner: Investigator
     domain_of:
     - Investigator
@@ -1129,11 +1113,11 @@ slots:
     required: false
   name:
     name: name
-    definition_uri: https://includedcc.org/include-access-model/name
+    definition_uri: https://includedcc.org/common-access-model/name
     description: Name of the entity.
     title: Name
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:name
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:name
     owner: Dataset
     domain_of:
     - VirtualBiorepository
@@ -1145,11 +1129,11 @@ slots:
     required: false
   email:
     name: email
-    definition_uri: https://includedcc.org/include-access-model/email
+    definition_uri: https://includedcc.org/common-access-model/email
     description: An email address to reach the entity.
     title: Email Address
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:email
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:email
     owner: Investigator
     domain_of:
     - Investigator
@@ -1157,11 +1141,11 @@ slots:
     required: false
   institution:
     name: institution
-    definition_uri: https://includedcc.org/include-access-model/institution
+    definition_uri: https://includedcc.org/common-access-model/institution
     description: Name of the institution this record is associated with.
     title: Institution
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:institution
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:institution
     owner: Investigator
     domain_of:
     - VirtualBiorepository
@@ -1170,11 +1154,11 @@ slots:
     required: false
   program:
     name: program
-    definition_uri: https://includedcc.org/include-access-model/program
+    definition_uri: https://includedcc.org/common-access-model/program
     description: Funding source(s) for the study
     title: Program
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:program
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:program
     owner: Study
     domain_of:
     - Study
@@ -1183,11 +1167,11 @@ slots:
     multivalued: true
   study_description:
     name: study_description
-    definition_uri: https://includedcc.org/include-access-model/study_description
+    definition_uri: https://includedcc.org/common-access-model/study_description
     description: Brief description of the study (2-4 sentences)
     title: Study Description
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_description
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_description
     owner: Study
     domain_of:
     - Study
@@ -1195,11 +1179,11 @@ slots:
     required: true
   website:
     name: website
-    definition_uri: https://includedcc.org/include-access-model/website
+    definition_uri: https://includedcc.org/common-access-model/website
     description: Website with more information about this entity.
     title: Website
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:website
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:website
     owner: Publication
     domain_of:
     - AccessPolicy
@@ -1209,11 +1193,11 @@ slots:
     range: uri
   contact:
     name: contact
-    definition_uri: https://includedcc.org/include-access-model/contact
+    definition_uri: https://includedcc.org/common-access-model/contact
     description: The individual to contact with questions about this record.
     title: Contact Person
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:contact
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:contact
     owner: VirtualBiorepository
     domain_of:
     - Study
@@ -1225,11 +1209,11 @@ slots:
     inlined_as_list: true
   vbr_id:
     name: vbr_id
-    definition_uri: https://includedcc.org/include-access-model/vbr_id
+    definition_uri: https://includedcc.org/common-access-model/vbr_id
     description: Information about the study's Virtual Biorepository, if participating
     title: Virtual Biorepository
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:vbr_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vbr_id
     owner: VirtualBiorepository
     domain_of:
     - StudyMetadata
@@ -1237,22 +1221,22 @@ slots:
     range: VirtualBiorepository
   vbr_readme:
     name: vbr_readme
-    definition_uri: https://includedcc.org/include-access-model/vbr_readme
+    definition_uri: https://includedcc.org/common-access-model/vbr_readme
     description: Instructions for contacting or requesting samples from Virtual Biorepository,
       if participating
     title: VBR Readme
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:vbr_readme
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vbr_readme
     owner: VirtualBiorepository
     domain_of:
     - VirtualBiorepository
     range: string
   research_domain:
     name: research_domain
-    definition_uri: https://includedcc.org/include-access-model/research_domain
+    definition_uri: https://includedcc.org/common-access-model/research_domain
     description: Main research domain(s) of the study, other than Down syndrome
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:research_domain
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:research_domain
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1261,11 +1245,11 @@ slots:
     multivalued: true
   participant_lifespan_stage:
     name: participant_lifespan_stage
-    definition_uri: https://includedcc.org/include-access-model/participant_lifespan_stage
+    definition_uri: https://includedcc.org/common-access-model/participant_lifespan_stage
     description: Focus age group(s) of the study population
     title: Participant Lifespan Stage
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:participant_lifespan_stage
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:participant_lifespan_stage
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1274,24 +1258,24 @@ slots:
     multivalued: true
   selection_criteria:
     name: selection_criteria
-    definition_uri: https://includedcc.org/include-access-model/selection_criteria
+    definition_uri: https://includedcc.org/common-access-model/selection_criteria
     description: Brief description of inclusion and/or exclusion criteria for the
       study
     title: Selection Criteria
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:selection_criteria
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:selection_criteria
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
     range: string
   study_design:
     name: study_design
-    definition_uri: https://includedcc.org/include-access-model/study_design
+    definition_uri: https://includedcc.org/common-access-model/study_design
     description: Overall design of study, including whether it is longitudinal and
       whether family members/unrelated controls are also enrolled
     title: Study Design
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:study_design
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:study_design
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1300,12 +1284,12 @@ slots:
     multivalued: true
   data_category:
     name: data_category
-    definition_uri: https://includedcc.org/include-access-model/data_category
+    definition_uri: https://includedcc.org/common-access-model/data_category
     description: General category of data in this Record (e.g. Clinical, Genomics,
       etc)
     title: Data Category
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_category
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_category
     owner: File
     domain_of:
     - StudyMetadata
@@ -1313,11 +1297,11 @@ slots:
     range: EnumDataCategory
   clinical_data_source_type:
     name: clinical_data_source_type
-    definition_uri: https://includedcc.org/include-access-model/clinical_data_source_type
+    definition_uri: https://includedcc.org/common-access-model/clinical_data_source_type
     description: Source(s) of data collected from study participants
     title: Clinical Data Source Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:clinical_data_source_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:clinical_data_source_type
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1326,11 +1310,11 @@ slots:
     multivalued: true
   publication:
     name: publication
-    definition_uri: https://includedcc.org/include-access-model/publication
+    definition_uri: https://includedcc.org/common-access-model/publication
     description: Publications associated with this Record.
     title: Publication
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:publication
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:publication
     owner: Dataset
     domain_of:
     - Study
@@ -1341,11 +1325,11 @@ slots:
     inlined_as_list: true
   expected_number_of_participants:
     name: expected_number_of_participants
-    definition_uri: https://includedcc.org/include-access-model/expected_number_of_participants
+    definition_uri: https://includedcc.org/common-access-model/expected_number_of_participants
     description: Total expected number of participants to be recruited.
     title: Expected Number of Participants
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:expected_number_of_participants
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:expected_number_of_participants
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1353,11 +1337,11 @@ slots:
     required: true
   actual_number_of_participants:
     name: actual_number_of_participants
-    definition_uri: https://includedcc.org/include-access-model/actual_number_of_participants
+    definition_uri: https://includedcc.org/common-access-model/actual_number_of_participants
     description: Total participants included at this time.
     title: Actual Number of Participants
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:actual_number_of_participants
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:actual_number_of_participants
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
@@ -1365,18 +1349,18 @@ slots:
     required: true
   acknowledgments:
     name: acknowledgments
-    definition_uri: https://includedcc.org/include-access-model/acknowledgments
+    definition_uri: https://includedcc.org/common-access-model/acknowledgments
     description: Funding statement and acknowledgments for this study
     title: Acknowledgments
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:acknowledgments
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:acknowledgments
     owner: Study
     domain_of:
     - Study
     range: string
   citation_statement:
     name: citation_statement
-    definition_uri: https://includedcc.org/include-access-model/citation_statement
+    definition_uri: https://includedcc.org/common-access-model/citation_statement
     description: Statement that secondary data users should use to acknowledge use
       of this study or dataset. E.g., "The results analyzed and <published or shown>
       here are based in whole or in part upon data generated by the INCLUDE (INvestigation
@@ -1384,19 +1368,19 @@ slots:
       Project <insert accession number(s) and/or study DOI(s)>, and were accessed
       from the INCLUDE Data Hub and <insert other database(s)>."
     title: Citation Statement
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:citation_statement
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:citation_statement
     owner: Study
     domain_of:
     - Study
     range: string
   bibliographic_reference:
     name: bibliographic_reference
-    definition_uri: https://includedcc.org/include-access-model/bibliographic_reference
+    definition_uri: https://includedcc.org/common-access-model/bibliographic_reference
     description: Text use to reference this Record.
     title: Bibiliographic Reference
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:bibliographic_reference
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:bibliographic_reference
     owner: Publication
     domain_of:
     - DOI
@@ -1404,23 +1388,23 @@ slots:
     range: string
   organism_type:
     name: organism_type
-    definition_uri: https://includedcc.org/include-access-model/organism_type
+    definition_uri: https://includedcc.org/common-access-model/organism_type
     description: Organism Type, typically from NCBITaxon. For reference, Human is
       NCBITaxon:9606.
     title: Organism Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:organism_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:organism_type
     owner: Subject
     domain_of:
     - Subject
     range: uriorcurie
   subject_type:
     name: subject_type
-    definition_uri: https://includedcc.org/include-access-model/subject_type
+    definition_uri: https://includedcc.org/common-access-model/subject_type
     description: Type of entity this record represents
     title: Subject Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:subject_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:subject_type
     owner: Subject
     domain_of:
     - Subject
@@ -1428,11 +1412,11 @@ slots:
     required: true
   sex:
     name: sex
-    definition_uri: https://includedcc.org/include-access-model/sex
+    definition_uri: https://includedcc.org/common-access-model/sex
     description: Sex of Participant
     title: Sex
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:sex
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:sex
     owner: Demographics
     domain_of:
     - Demographics
@@ -1440,11 +1424,11 @@ slots:
     required: true
   race:
     name: race
-    definition_uri: https://includedcc.org/include-access-model/race
+    definition_uri: https://includedcc.org/common-access-model/race
     description: Race of Participant
     title: Race
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:race
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:race
     owner: Demographics
     domain_of:
     - Demographics
@@ -1453,40 +1437,28 @@ slots:
     multivalued: true
   ethnicity:
     name: ethnicity
-    definition_uri: https://includedcc.org/include-access-model/ethnicity
+    definition_uri: https://includedcc.org/common-access-model/ethnicity
     description: Ethnicity of Participant
     title: Ethnicity
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:ethnicity
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:ethnicity
     owner: Demographics
     domain_of:
     - Demographics
     range: EnumEthnicity
     required: true
-  down_syndrome_status:
-    name: down_syndrome_status
-    definition_uri: https://includedcc.org/include-access-model/down_syndrome_status
-    description: Down Syndrome status of participant
-    title: Down Syndrome Status
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:down_syndrome_status
-    owner: IncludeParticipant
-    domain_of:
-    - IncludeParticipant
-    range: EnumDownSyndromeStatus
-    required: true
   age_at_first_engagement:
     name: age_at_first_engagement
-    definition_uri: https://includedcc.org/include-access-model/age_at_first_engagement
+    definition_uri: https://includedcc.org/common-access-model/age_at_first_engagement
     description: Age in days of Participant at first recorded study event (enrollment,
       visit, observation, sample collection, survey completion, etc.). Age at enrollment
       is preferred, if available.
     title: Age at First Participant Engagement
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_first_engagement
-    owner: IncludeParticipant
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_first_engagement
+    owner: Demographics
     domain_of:
-    - IncludeParticipant
+    - Demographics
     range: integer
     minimum_value: -365
     maximum_value: 32507
@@ -1494,22 +1466,22 @@ slots:
       ucum_code: d
   vital_status:
     name: vital_status
-    definition_uri: https://includedcc.org/include-access-model/vital_status
+    definition_uri: https://includedcc.org/common-access-model/vital_status
     description: Whether participant is alive or dead
     title: Vital Status
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:vital_status
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vital_status
     owner: Demographics
     domain_of:
     - Demographics
     range: EnumVitalStatus
   age_at_last_vital_status:
     name: age_at_last_vital_status
-    definition_uri: https://includedcc.org/include-access-model/age_at_last_vital_status
+    definition_uri: https://includedcc.org/common-access-model/age_at_last_vital_status
     description: Age in days when participant's vital status was last recorded
     title: Age at Last Vital Status
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_last_vital_status
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_last_vital_status
     owner: Demographics
     domain_of:
     - Demographics
@@ -1520,11 +1492,11 @@ slots:
       ucum_code: d
   family_id:
     name: family_id
-    definition_uri: https://includedcc.org/include-access-model/family_id
+    definition_uri: https://includedcc.org/common-access-model/family_id
     description: Global ID for the Family
     title: Family ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_id
     owner: FamilyMember
     domain_of:
     - Family
@@ -1532,62 +1504,62 @@ slots:
     range: Family
   family_type:
     name: family_type
-    definition_uri: https://includedcc.org/include-access-model/family_type
+    definition_uri: https://includedcc.org/common-access-model/family_type
     description: Describes the 'type' of study family, eg, trio.
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_type
     owner: Family
     domain_of:
     - Family
     range: EnumFamilyType
   family_description:
     name: family_description
-    definition_uri: https://includedcc.org/include-access-model/family_description
+    definition_uri: https://includedcc.org/common-access-model/family_description
     description: Free text describing the study family, such as potential inheritance
       or details about consanguinity
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_description
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_description
     owner: Family
     domain_of:
     - Family
     range: string
   consanguinity:
     name: consanguinity
-    definition_uri: https://includedcc.org/include-access-model/consanguinity
+    definition_uri: https://includedcc.org/common-access-model/consanguinity
     description: Is there known or suspected consanguinity in this study family?
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:consanguinity
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:consanguinity
     owner: Family
     domain_of:
     - Family
     range: EnumConsanguinityAssertion
   family_study_focus:
     name: family_study_focus
-    definition_uri: https://includedcc.org/include-access-model/family_study_focus
+    definition_uri: https://includedcc.org/common-access-model/family_study_focus
     description: The specific focus of the investigation, eg, a condition.
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_study_focus
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_study_focus
     owner: Family
     domain_of:
     - Family
     range: uriorcurie
   family_relationship_id:
     name: family_relationship_id
-    definition_uri: https://includedcc.org/include-access-model/family_relationship_id
+    definition_uri: https://includedcc.org/common-access-model/family_relationship_id
     description: Global ID for the Family Relationship
     title: Family Relationship ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_relationship_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_relationship_id
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
     range: FamilyRelationship
   family_member_id:
     name: family_member_id
-    definition_uri: https://includedcc.org/include-access-model/family_member_id
+    definition_uri: https://includedcc.org/common-access-model/family_member_id
     description: The family member Subject who is the relationship "subject".
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_member_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_member_id
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
@@ -1596,11 +1568,11 @@ slots:
     inlined: false
   relationship:
     name: relationship
-    definition_uri: https://includedcc.org/include-access-model/relationship
+    definition_uri: https://includedcc.org/common-access-model/relationship
     description: Code definting the relationship predicate. Relationship of the "Family
       Member" to the "Subject", eg, mother of.
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:relationship
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:relationship
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
@@ -1608,33 +1580,33 @@ slots:
     required: true
   family_role:
     name: family_role
-    definition_uri: https://includedcc.org/include-access-model/family_role
+    definition_uri: https://includedcc.org/common-access-model/family_role
     description: The "role" of this individual in this family. Could include terms
       like "proband", "mother", etc.
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:family_role
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:family_role
     owner: FamilyMember
     domain_of:
     - FamilyMember
     range: uriorcurie
   assertion_provenance:
     name: assertion_provenance
-    definition_uri: https://includedcc.org/include-access-model/assertion_provenance
+    definition_uri: https://includedcc.org/common-access-model/assertion_provenance
     description: The original source of this assertion
     title: Assertion Provenance
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:assertion_provenance
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:assertion_provenance
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: EnumAssertionProvenance
   age_at_assertion:
     name: age_at_assertion
-    definition_uri: https://includedcc.org/include-access-model/age_at_assertion
+    definition_uri: https://includedcc.org/common-access-model/age_at_assertion
     description: The age in days of the Subject when the assertion was made.
     title: Age at assertion
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_assertion
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_assertion
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
@@ -1643,12 +1615,12 @@ slots:
       ucum_code: d
   age_at_event:
     name: age_at_event
-    definition_uri: https://includedcc.org/include-access-model/age_at_event
+    definition_uri: https://includedcc.org/common-access-model/age_at_event
     description: The age in days of the Subject at the time point which the assertion
       describes, eg, age of onset or when a measurement was performed.
     title: Age at event
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_event
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_event
     owner: Encounter
     domain_of:
     - SubjectAssertion
@@ -1658,11 +1630,11 @@ slots:
       ucum_code: d
   age_at_resolution:
     name: age_at_resolution
-    definition_uri: https://includedcc.org/include-access-model/age_at_resolution
+    definition_uri: https://includedcc.org/common-access-model/age_at_resolution
     description: The age in days of the Subject when the asserted state was resolved.
     title: Age at resolution
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_resolution
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_resolution
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
@@ -1671,11 +1643,11 @@ slots:
       ucum_code: d
   concept:
     name: concept
-    definition_uri: https://includedcc.org/include-access-model/concept
+    definition_uri: https://includedcc.org/common-access-model/concept
     description: The structured term defining the meaning of the assertion.
     title: Concept
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:concept
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concept
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
@@ -1683,44 +1655,44 @@ slots:
     multivalued: true
   concept_curie:
     name: concept_curie
-    definition_uri: https://includedcc.org/include-access-model/concept_curie
+    definition_uri: https://includedcc.org/common-access-model/concept_curie
     description: The standardized curie for the term.
     title: Concept Curie
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:concept_curie
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concept_curie
     owner: Concept
     domain_of:
     - Concept
     range: uriorcurie
   display:
     name: display
-    definition_uri: https://includedcc.org/include-access-model/display
+    definition_uri: https://includedcc.org/common-access-model/display
     description: The friendly display string of the coded term.
     title: Display String
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:display
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:display
     owner: Concept
     domain_of:
     - Concept
     range: string
   concept_source:
     name: concept_source
-    definition_uri: https://includedcc.org/include-access-model/concept_source
+    definition_uri: https://includedcc.org/common-access-model/concept_source
     description: The source text yielding the standardized concept.
     title: Concept Source Text
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:concept_source
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concept_source
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: string
   value_concept:
     name: value_concept
-    definition_uri: https://includedcc.org/include-access-model/value_concept
+    definition_uri: https://includedcc.org/common-access-model/value_concept
     description: The structured term defining the value of the assertion.
     title: Value concept
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:value_concept
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:value_concept
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
@@ -1728,55 +1700,55 @@ slots:
     multivalued: true
   value_number:
     name: value_number
-    definition_uri: https://includedcc.org/include-access-model/value_number
+    definition_uri: https://includedcc.org/common-access-model/value_number
     description: The numeric value of the assertion.
     title: Value Number
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:value_number
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:value_number
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: float
   value_source:
     name: value_source
-    definition_uri: https://includedcc.org/include-access-model/value_source
+    definition_uri: https://includedcc.org/common-access-model/value_source
     description: The source text yielding the value.
     title: Value Source Text
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:value_source
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:value_source
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: string
   value_unit:
     name: value_unit
-    definition_uri: https://includedcc.org/include-access-model/value_unit
+    definition_uri: https://includedcc.org/common-access-model/value_unit
     description: The structured term defining the units of the value.
     title: Value Units
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:value_unit
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:value_unit
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: Concept
   value_unit_source:
     name: value_unit_source
-    definition_uri: https://includedcc.org/include-access-model/value_unit_source
+    definition_uri: https://includedcc.org/common-access-model/value_unit_source
     description: The source text yielding the value's units.
     title: Value Units Source Text
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:value_unit_source
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:value_unit_source
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
     range: string
   sample_id:
     name: sample_id
-    definition_uri: https://includedcc.org/include-access-model/sample_id
+    definition_uri: https://includedcc.org/common-access-model/sample_id
     description: The unique identifier for this Sample.
     title: Sample ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:sample_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:sample_id
     owner: File
     domain_of:
     - Sample
@@ -1785,11 +1757,11 @@ slots:
     range: Sample
   parent_sample_id:
     name: parent_sample_id
-    definition_uri: https://includedcc.org/include-access-model/parent_sample_id
+    definition_uri: https://includedcc.org/common-access-model/parent_sample_id
     description: Sample from which this sample is derived
     title: Parent Sample ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:parent_sample_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:parent_sample_id
     owner: Sample
     domain_of:
     - Sample
@@ -1797,11 +1769,11 @@ slots:
     inlined: false
   biospecimen_collection_id:
     name: biospecimen_collection_id
-    definition_uri: https://includedcc.org/include-access-model/biospecimen_collection_id
+    definition_uri: https://includedcc.org/common-access-model/biospecimen_collection_id
     description: Unique identifier for this Biospecimen Collection.
     title: Biospecimen Collection ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:biospecimen_collection_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:biospecimen_collection_id
     owner: BiospecimenCollection
     domain_of:
     - Sample
@@ -1809,22 +1781,22 @@ slots:
     range: BiospecimenCollection
   aliquot_id:
     name: aliquot_id
-    definition_uri: https://includedcc.org/include-access-model/aliquot_id
+    definition_uri: https://includedcc.org/common-access-model/aliquot_id
     description: Unique identifier for an Aliquot.
     title: Aliquot ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:aliquot_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:aliquot_id
     owner: Aliquot
     domain_of:
     - Aliquot
     range: Aliquot
   sample_type:
     name: sample_type
-    definition_uri: https://includedcc.org/include-access-model/sample_type
+    definition_uri: https://includedcc.org/common-access-model/sample_type
     description: Type of material of which this Sample is comprised. UBERON is recommended.
     title: Sample Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:sample_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:sample_type
     owner: Sample
     domain_of:
     - Sample
@@ -1832,12 +1804,12 @@ slots:
     required: true
   processing:
     name: processing
-    definition_uri: https://includedcc.org/include-access-model/processing
+    definition_uri: https://includedcc.org/common-access-model/processing
     description: Processing that was applied to the Parent Sample or from the Biospecimen
       Collection that yielded this distinct sample. OBI is recommended.
     title: Sample Processing
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:processing
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:processing
     owner: Sample
     domain_of:
     - Sample
@@ -1845,11 +1817,11 @@ slots:
     multivalued: true
   availablity_status:
     name: availablity_status
-    definition_uri: https://includedcc.org/include-access-model/availablity_status
+    definition_uri: https://includedcc.org/common-access-model/availablity_status
     description: Can this Sample be requested for further analysis?
     title: Sample Availability
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:availablity_status
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:availablity_status
     owner: Aliquot
     domain_of:
     - Sample
@@ -1857,12 +1829,12 @@ slots:
     range: EnumAvailabilityStatus
   storage_method:
     name: storage_method
-    definition_uri: https://includedcc.org/include-access-model/storage_method
+    definition_uri: https://includedcc.org/common-access-model/storage_method
     description: Sample storage method, eg, Frozen or with additives. OBI may be suitable,
       or ChEBI for additives.
     title: Sample Storage Method
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:storage_method
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:storage_method
     owner: Sample
     domain_of:
     - Sample
@@ -1870,11 +1842,11 @@ slots:
     multivalued: true
   quantity_number:
     name: quantity_number
-    definition_uri: https://includedcc.org/include-access-model/quantity_number
+    definition_uri: https://includedcc.org/common-access-model/quantity_number
     description: The total quantity of the specimen
     title: Quantity
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:quantity_number
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:quantity_number
     owner: Aliquot
     domain_of:
     - Sample
@@ -1882,11 +1854,11 @@ slots:
     range: float
   quantity_unit:
     name: quantity_unit
-    definition_uri: https://includedcc.org/include-access-model/quantity_unit
+    definition_uri: https://includedcc.org/common-access-model/quantity_unit
     description: The structured term defining the units of the quantity.
     title: Quantity Units
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:quantity_unit
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:quantity_unit
     owner: Aliquot
     domain_of:
     - Sample
@@ -1894,33 +1866,33 @@ slots:
     range: Concept
   concentration_number:
     name: concentration_number
-    definition_uri: https://includedcc.org/include-access-model/concentration_number
+    definition_uri: https://includedcc.org/common-access-model/concentration_number
     description: What is the concentration of the analyte in the Aliquot?
     title: Concentration
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:concentration_number
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concentration_number
     owner: Aliquot
     domain_of:
     - Aliquot
     range: float
   concentration_unit:
     name: concentration_unit
-    definition_uri: https://includedcc.org/include-access-model/concentration_unit
+    definition_uri: https://includedcc.org/common-access-model/concentration_unit
     description: Units associated with the concentration of the analyte in the Aliquot.
     title: Concentration Units
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:concentration_unit
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concentration_unit
     owner: Aliquot
     domain_of:
     - Aliquot
     range: Concept
   age_at_collection:
     name: age_at_collection
-    definition_uri: https://includedcc.org/include-access-model/age_at_collection
+    definition_uri: https://includedcc.org/common-access-model/age_at_collection
     description: The age at which this biospecimen was collected in decimal years.
     title: Age at Biospecimen Collection
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:age_at_collection
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:age_at_collection
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
@@ -1929,57 +1901,57 @@ slots:
       ucum_code: a
   method:
     name: method
-    definition_uri: https://includedcc.org/include-access-model/method
+    definition_uri: https://includedcc.org/common-access-model/method
     description: The approach used to collect the biospecimen.
     title: Biospecimen Collection Method
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:method
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:method
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
     range: EnumSampleCollectionMethod
   site:
     name: site
-    definition_uri: https://includedcc.org/include-access-model/site
+    definition_uri: https://includedcc.org/common-access-model/site
     description: The location of the specimen collection.
     title: Biospecimen Collection Site
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:site
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:site
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
     range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
-    definition_uri: https://includedcc.org/include-access-model/spatial_qualifier
+    definition_uri: https://includedcc.org/common-access-model/spatial_qualifier
     description: Qualifier that further refine the specific location of biospecimen
       collection
     title: Spatial Qualifier
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:spatial_qualifier
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:spatial_qualifier
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
     range: EnumSpatialQualifiers
   laterality:
     name: laterality
-    definition_uri: https://includedcc.org/include-access-model/laterality
+    definition_uri: https://includedcc.org/common-access-model/laterality
     description: Laterality that further refine the specific location of biospecimen
       collection
     title: Location Laterality
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:laterality
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:laterality
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
     range: EnumLaterality
   encounter_id:
     name: encounter_id
-    definition_uri: https://includedcc.org/include-access-model/encounter_id
+    definition_uri: https://includedcc.org/common-access-model/encounter_id
     description: Unique identifier for this Encounter.
     title: Encounter ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:encounter_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:encounter_id
     owner: Encounter
     domain_of:
     - SubjectAssertion
@@ -1988,11 +1960,11 @@ slots:
     range: Encounter
   description:
     name: description
-    definition_uri: https://includedcc.org/include-access-model/description
+    definition_uri: https://includedcc.org/common-access-model/description
     description: Description for this entity.
     title: Description
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:description
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:description
     owner: Dataset
     domain_of:
     - EncounterDefinition
@@ -2001,11 +1973,11 @@ slots:
     range: string
   encounter_definition_id:
     name: encounter_definition_id
-    definition_uri: https://includedcc.org/include-access-model/encounter_definition_id
+    definition_uri: https://includedcc.org/common-access-model/encounter_definition_id
     description: Unique identifier for this Encounter Definition.
     title: Encounter Definition ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:encounter_definition_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:encounter_definition_id
     owner: EncounterDefinition
     domain_of:
     - Encounter
@@ -2013,11 +1985,11 @@ slots:
     range: EncounterDefinition
   activity_definition_id:
     name: activity_definition_id
-    definition_uri: https://includedcc.org/include-access-model/activity_definition_id
+    definition_uri: https://includedcc.org/common-access-model/activity_definition_id
     description: Unique identifier for this Activity Definition.
     title: Activity Definition ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:activity_definition_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:activity_definition_id
     owner: ActivityDefinition
     domain_of:
     - EncounterDefinition
@@ -2025,11 +1997,11 @@ slots:
     range: ActivityDefinition
   file_id:
     name: file_id
-    definition_uri: https://includedcc.org/include-access-model/file_id
+    definition_uri: https://includedcc.org/common-access-model/file_id
     description: Unique identifier for this File.
     title: File ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:file_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:file_id
     owner: Dataset
     domain_of:
     - File
@@ -2037,44 +2009,44 @@ slots:
     range: File
   filename:
     name: filename
-    definition_uri: https://includedcc.org/include-access-model/filename
+    definition_uri: https://includedcc.org/common-access-model/filename
     description: The name of the file.
     title: Filename
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:filename
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:filename
     owner: File
     domain_of:
     - File
     range: string
   format:
     name: format
-    definition_uri: https://includedcc.org/include-access-model/format
+    definition_uri: https://includedcc.org/common-access-model/format
     description: The format of the file.
     title: File Format
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:format
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:format
     owner: File
     domain_of:
     - File
     range: EnumEDAMFormats
   data_type:
     name: data_type
-    definition_uri: https://includedcc.org/include-access-model/data_type
+    definition_uri: https://includedcc.org/common-access-model/data_type
     description: The type of data within this file.
     title: Data Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_type
     owner: File
     domain_of:
     - File
     range: EnumEDAMDataTypes
   size:
     name: size
-    definition_uri: https://includedcc.org/include-access-model/size
+    definition_uri: https://includedcc.org/common-access-model/size
     description: Size of the file, in Bytes.
     title: File Size
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:size
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:size
     owner: File
     domain_of:
     - File
@@ -2083,44 +2055,44 @@ slots:
       ucum_code: By
   staging_url:
     name: staging_url
-    definition_uri: https://includedcc.org/include-access-model/staging_url
+    definition_uri: https://includedcc.org/common-access-model/staging_url
     description: URL for internal access to the data. May be temporary.
     title: Staging Location
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:staging_url
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:staging_url
     owner: File
     domain_of:
     - File
     range: uriorcurie
   release_url:
     name: release_url
-    definition_uri: https://includedcc.org/include-access-model/release_url
+    definition_uri: https://includedcc.org/common-access-model/release_url
     description: URL for controlled or open access to the data.
     title: Release Location
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:release_url
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:release_url
     owner: File
     domain_of:
     - File
     range: uriorcurie
   drs_uri:
     name: drs_uri
-    definition_uri: https://includedcc.org/include-access-model/drs_uri
+    definition_uri: https://includedcc.org/common-access-model/drs_uri
     description: DRS location to access the data.
     title: DRS URI
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:drs_uri
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:drs_uri
     owner: File
     domain_of:
     - File
     range: uriorcurie
   hash:
     name: hash
-    definition_uri: https://includedcc.org/include-access-model/hash
+    definition_uri: https://includedcc.org/common-access-model/hash
     description: File hash information
     title: File Hash
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:hash
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:hash
     owner: File
     domain_of:
     - File
@@ -2129,69 +2101,69 @@ slots:
     inlined_as_list: true
   hash_type:
     name: hash_type
-    definition_uri: https://includedcc.org/include-access-model/hash_type
+    definition_uri: https://includedcc.org/common-access-model/hash_type
     description: The type of file hash, eg, md5
     title: File Hash Type
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:hash_type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:hash_type
     owner: FileHash
     domain_of:
     - FileHash
     range: EnumFileHashType
   hash_value:
     name: hash_value
-    definition_uri: https://includedcc.org/include-access-model/hash_value
+    definition_uri: https://includedcc.org/common-access-model/hash_value
     description: The value of the file hash
     title: File Hash Value
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:hash_value
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:hash_value
     owner: FileHash
     domain_of:
     - FileHash
     range: string
   dataset_id:
     name: dataset_id
-    definition_uri: https://includedcc.org/include-access-model/dataset_id
+    definition_uri: https://includedcc.org/common-access-model/dataset_id
     description: Unique identifier for a Dataset.
     title: Dataset ID
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:dataset_id
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:dataset_id
     owner: Dataset
     domain_of:
     - Dataset
     range: Dataset
   data_collection_start:
     name: data_collection_start
-    definition_uri: https://includedcc.org/include-access-model/data_collection_start
+    definition_uri: https://includedcc.org/common-access-model/data_collection_start
     description: The date that data collection started. May include only a year.
     title: Data Collection Start
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_collection_start
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_collection_start
     owner: Dataset
     domain_of:
     - Dataset
     range: string
   data_collection_end:
     name: data_collection_end
-    definition_uri: https://includedcc.org/include-access-model/data_collection_end
+    definition_uri: https://includedcc.org/common-access-model/data_collection_end
     description: The date that data collection started. May include only a year.
     title: Data Collection End
-    from_schema: https://includedcc.org/include-access-model
-    slot_uri: includedcc:data_collection_end
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:data_collection_end
     owner: Dataset
     domain_of:
     - Dataset
     range: string
   AccessPolicy_access_policy_id:
     name: AccessPolicy_access_policy_id
-    definition_uri: https://includedcc.org/include-access-model/access_policy_id
+    definition_uri: https://includedcc.org/common-access-model/access_policy_id
     description: Global identifier for the access policy that applies to this row
       of data.
     title: Access Policy ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: access_policy_id
     domain: AccessPolicy
-    slot_uri: includedcc:access_policy_id
+    slot_uri: cam:access_policy_id
     identifier: true
     alias: access_policy_id
     owner: AccessPolicy
@@ -2203,13 +2175,13 @@ slots:
     required: true
   Study_study_id:
     name: Study_study_id
-    definition_uri: https://includedcc.org/include-access-model/study_id
+    definition_uri: https://includedcc.org/common-access-model/study_id
     description: INCLUDE Global ID for the study
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: study_id
     domain: Study
-    slot_uri: includedcc:study_id
+    slot_uri: cam:study_id
     identifier: true
     alias: study_id
     owner: Study
@@ -2222,13 +2194,13 @@ slots:
     multivalued: false
   StudyMetadata_study_id:
     name: StudyMetadata_study_id
-    definition_uri: https://includedcc.org/include-access-model/study_id
+    definition_uri: https://includedcc.org/common-access-model/study_id
     description: INCLUDE Global ID for the study
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: study_id
     domain: StudyMetadata
-    slot_uri: includedcc:study_id
+    slot_uri: cam:study_id
     identifier: true
     alias: study_id
     owner: StudyMetadata
@@ -2241,14 +2213,14 @@ slots:
     multivalued: false
   StudyMetadata_data_category:
     name: StudyMetadata_data_category
-    definition_uri: https://includedcc.org/include-access-model/data_category
+    definition_uri: https://includedcc.org/common-access-model/data_category
     description: General category of data in this Record (e.g. Clinical, Genomics,
       etc)
     title: Data Category
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: data_category
     domain: StudyMetadata
-    slot_uri: includedcc:data_category
+    slot_uri: cam:data_category
     alias: data_category
     owner: StudyMetadata
     domain_of:
@@ -2260,13 +2232,13 @@ slots:
     multivalued: true
   VirtualBiorepository_vbr_id:
     name: VirtualBiorepository_vbr_id
-    definition_uri: https://includedcc.org/include-access-model/vbr_id
+    definition_uri: https://includedcc.org/common-access-model/vbr_id
     description: Information about the study's Virtual Biorepository, if participating
     title: Virtual Biorepository
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: vbr_id
     domain: VirtualBiorepository
-    slot_uri: includedcc:vbr_id
+    slot_uri: cam:vbr_id
     identifier: true
     alias: vbr_id
     owner: VirtualBiorepository
@@ -2278,13 +2250,13 @@ slots:
     required: true
   DOI_do_id:
     name: DOI_do_id
-    definition_uri: https://includedcc.org/include-access-model/do_id
+    definition_uri: https://includedcc.org/common-access-model/do_id
     description: Digital Object Identifier (DOI) for this Record.
     title: DOI
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: do_id
     domain: DOI
-    slot_uri: includedcc:do_id
+    slot_uri: cam:do_id
     identifier: true
     alias: do_id
     owner: DOI
@@ -2297,13 +2269,13 @@ slots:
     multivalued: false
   Subject_subject_id:
     name: Subject_subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: INCLUDE Global ID for the Subject
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: subject_id
     domain: Subject
-    slot_uri: includedcc:subject_id
+    slot_uri: cam:subject_id
     identifier: true
     alias: subject_id
     owner: Subject
@@ -2316,13 +2288,13 @@ slots:
     multivalued: false
   Demographics_subject_id:
     name: Demographics_subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: INCLUDE Global ID for the Subject
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: subject_id
     domain: Demographics
-    slot_uri: includedcc:subject_id
+    slot_uri: cam:subject_id
     identifier: true
     alias: subject_id
     owner: Demographics
@@ -2335,13 +2307,13 @@ slots:
     multivalued: false
   Family_family_id:
     name: Family_family_id
-    definition_uri: https://includedcc.org/include-access-model/family_id
+    definition_uri: https://includedcc.org/common-access-model/family_id
     description: Global ID for the Family
     title: Family ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: family_id
     domain: Family
-    slot_uri: includedcc:family_id
+    slot_uri: cam:family_id
     identifier: true
     alias: family_id
     owner: Family
@@ -2353,13 +2325,13 @@ slots:
     required: true
   FamilyRelationship_family_relationship_id:
     name: FamilyRelationship_family_relationship_id
-    definition_uri: https://includedcc.org/include-access-model/family_relationship_id
+    definition_uri: https://includedcc.org/common-access-model/family_relationship_id
     description: Global ID for the Family Relationship
     title: Family Relationship ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: family_relationship_id
     domain: FamilyRelationship
-    slot_uri: includedcc:family_relationship_id
+    slot_uri: cam:family_relationship_id
     identifier: true
     alias: family_relationship_id
     owner: FamilyRelationship
@@ -2371,13 +2343,13 @@ slots:
     required: true
   FamilyRelationship_subject_id:
     name: FamilyRelationship_subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: The family member Subject who is the relationship "object".
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: subject_id
     domain: FamilyRelationship
-    slot_uri: includedcc:subject_id
+    slot_uri: cam:subject_id
     alias: subject_id
     owner: FamilyRelationship
     domain_of:
@@ -2389,13 +2361,13 @@ slots:
     multivalued: false
   FamilyMember_family_id:
     name: FamilyMember_family_id
-    definition_uri: https://includedcc.org/include-access-model/family_id
+    definition_uri: https://includedcc.org/common-access-model/family_id
     description: Global ID for the Family
     title: Family ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: family_id
     domain: FamilyMember
-    slot_uri: includedcc:family_id
+    slot_uri: cam:family_id
     alias: family_id
     owner: FamilyMember
     domain_of:
@@ -2406,13 +2378,13 @@ slots:
     required: true
   FamilyMember_subject_id:
     name: FamilyMember_subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: INCLUDE Global ID for the Subject
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: subject_id
     domain: FamilyMember
-    slot_uri: includedcc:subject_id
+    slot_uri: cam:subject_id
     alias: subject_id
     owner: FamilyMember
     domain_of:
@@ -2424,13 +2396,13 @@ slots:
     multivalued: false
   SubjectAssertion_assertion_id:
     name: SubjectAssertion_assertion_id
-    definition_uri: https://includedcc.org/include-access-model/assertion_id
+    definition_uri: https://includedcc.org/common-access-model/assertion_id
     description: INCLUDE Global ID for the Assertion
     title: Assertion ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: assertion_id
     domain: SubjectAssertion
-    slot_uri: includedcc:assertion_id
+    slot_uri: cam:assertion_id
     identifier: true
     alias: assertion_id
     owner: SubjectAssertion
@@ -2443,13 +2415,13 @@ slots:
     multivalued: false
   Concept_concept_curie:
     name: Concept_concept_curie
-    definition_uri: https://includedcc.org/include-access-model/concept_curie
+    definition_uri: https://includedcc.org/common-access-model/concept_curie
     description: The standardized curie for the term.
     title: Concept Curie
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: concept_curie
     domain: Concept
-    slot_uri: includedcc:concept_curie
+    slot_uri: cam:concept_curie
     identifier: true
     alias: concept_curie
     owner: Concept
@@ -2461,13 +2433,13 @@ slots:
     required: true
   Sample_sample_id:
     name: Sample_sample_id
-    definition_uri: https://includedcc.org/include-access-model/sample_id
+    definition_uri: https://includedcc.org/common-access-model/sample_id
     description: The unique identifier for this Sample.
     title: Sample ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: sample_id
     domain: Sample
-    slot_uri: includedcc:sample_id
+    slot_uri: cam:sample_id
     identifier: true
     alias: sample_id
     owner: Sample
@@ -2479,13 +2451,13 @@ slots:
     required: true
   Sample_biospecimen_collection_id:
     name: Sample_biospecimen_collection_id
-    definition_uri: https://includedcc.org/include-access-model/biospecimen_collection_id
+    definition_uri: https://includedcc.org/common-access-model/biospecimen_collection_id
     description: Biospecimen Collection during which this sample was generated.
     title: Biospecimen Collection ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: biospecimen_collection_id
     domain: Sample
-    slot_uri: includedcc:biospecimen_collection_id
+    slot_uri: cam:biospecimen_collection_id
     alias: biospecimen_collection_id
     owner: Sample
     domain_of:
@@ -2495,13 +2467,13 @@ slots:
     range: BiospecimenCollection
   BiospecimenCollection_biospecimen_collection_id:
     name: BiospecimenCollection_biospecimen_collection_id
-    definition_uri: https://includedcc.org/include-access-model/biospecimen_collection_id
+    definition_uri: https://includedcc.org/common-access-model/biospecimen_collection_id
     description: Unique identifier for this Biospecimen Collection.
     title: Biospecimen Collection ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: biospecimen_collection_id
     domain: BiospecimenCollection
-    slot_uri: includedcc:biospecimen_collection_id
+    slot_uri: cam:biospecimen_collection_id
     identifier: true
     alias: biospecimen_collection_id
     owner: BiospecimenCollection
@@ -2513,13 +2485,13 @@ slots:
     required: true
   Aliquot_aliquot_id:
     name: Aliquot_aliquot_id
-    definition_uri: https://includedcc.org/include-access-model/aliquot_id
+    definition_uri: https://includedcc.org/common-access-model/aliquot_id
     description: Unique identifier for an Aliquot.
     title: Aliquot ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: aliquot_id
     domain: Aliquot
-    slot_uri: includedcc:aliquot_id
+    slot_uri: cam:aliquot_id
     identifier: true
     alias: aliquot_id
     owner: Aliquot
@@ -2531,13 +2503,13 @@ slots:
     required: true
   Encounter_encounter_id:
     name: Encounter_encounter_id
-    definition_uri: https://includedcc.org/include-access-model/encounter_id
+    definition_uri: https://includedcc.org/common-access-model/encounter_id
     description: Unique identifier for this Encounter.
     title: Encounter ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: encounter_id
     domain: Encounter
-    slot_uri: includedcc:encounter_id
+    slot_uri: cam:encounter_id
     identifier: true
     alias: encounter_id
     owner: Encounter
@@ -2549,13 +2521,13 @@ slots:
     required: true
   EncounterDefinition_encounter_definition_id:
     name: EncounterDefinition_encounter_definition_id
-    definition_uri: https://includedcc.org/include-access-model/encounter_definition_id
+    definition_uri: https://includedcc.org/common-access-model/encounter_definition_id
     description: Unique identifier for this Encounter Definition.
     title: Encounter Definition ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: encounter_definition_id
     domain: EncounterDefinition
-    slot_uri: includedcc:encounter_definition_id
+    slot_uri: cam:encounter_definition_id
     identifier: true
     alias: encounter_definition_id
     owner: EncounterDefinition
@@ -2567,13 +2539,13 @@ slots:
     required: true
   EncounterDefinition_activity_definition_id:
     name: EncounterDefinition_activity_definition_id
-    definition_uri: https://includedcc.org/include-access-model/activity_definition_id
+    definition_uri: https://includedcc.org/common-access-model/activity_definition_id
     description: Unique identifier for this Activity Definition.
     title: Activity Definition ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: activity_definition_id
     domain: EncounterDefinition
-    slot_uri: includedcc:activity_definition_id
+    slot_uri: cam:activity_definition_id
     alias: activity_definition_id
     owner: EncounterDefinition
     domain_of:
@@ -2584,13 +2556,13 @@ slots:
     multivalued: true
   ActivityDefinition_activity_definition_id:
     name: ActivityDefinition_activity_definition_id
-    definition_uri: https://includedcc.org/include-access-model/activity_definition_id
+    definition_uri: https://includedcc.org/common-access-model/activity_definition_id
     description: Unique identifier for this Activity Definition.
     title: Activity Definition ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: activity_definition_id
     domain: ActivityDefinition
-    slot_uri: includedcc:activity_definition_id
+    slot_uri: cam:activity_definition_id
     identifier: true
     alias: activity_definition_id
     owner: ActivityDefinition
@@ -2602,13 +2574,13 @@ slots:
     required: true
   File_file_id:
     name: File_file_id
-    definition_uri: https://includedcc.org/include-access-model/file_id
+    definition_uri: https://includedcc.org/common-access-model/file_id
     description: Unique identifier for this File.
     title: File ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: file_id
     domain: File
-    slot_uri: includedcc:file_id
+    slot_uri: cam:file_id
     identifier: true
     alias: file_id
     owner: File
@@ -2620,13 +2592,13 @@ slots:
     required: true
   File_subject_id:
     name: File_subject_id
-    definition_uri: https://includedcc.org/include-access-model/subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
     description: INCLUDE Global ID for the Subject
     title: Study ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: subject_id
     domain: File
-    slot_uri: includedcc:subject_id
+    slot_uri: cam:subject_id
     alias: subject_id
     owner: File
     domain_of:
@@ -2637,13 +2609,13 @@ slots:
     multivalued: true
   File_sample_id:
     name: File_sample_id
-    definition_uri: https://includedcc.org/include-access-model/sample_id
+    definition_uri: https://includedcc.org/common-access-model/sample_id
     description: The unique identifier for this Sample.
     title: Sample ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: sample_id
     domain: File
-    slot_uri: includedcc:sample_id
+    slot_uri: cam:sample_id
     alias: sample_id
     owner: File
     domain_of:
@@ -2654,13 +2626,13 @@ slots:
     multivalued: true
   Dataset_dataset_id:
     name: Dataset_dataset_id
-    definition_uri: https://includedcc.org/include-access-model/dataset_id
+    definition_uri: https://includedcc.org/common-access-model/dataset_id
     description: Unique identifier for a Dataset.
     title: Dataset ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: dataset_id
     domain: Dataset
-    slot_uri: includedcc:dataset_id
+    slot_uri: cam:dataset_id
     identifier: true
     alias: dataset_id
     owner: Dataset
@@ -2672,13 +2644,13 @@ slots:
     required: true
   Dataset_file_id:
     name: Dataset_file_id
-    definition_uri: https://includedcc.org/include-access-model/file_id
+    definition_uri: https://includedcc.org/common-access-model/file_id
     description: The list of files comprising this dataset.
     title: File ID
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: file_id
     domain: Dataset
-    slot_uri: includedcc:file_id
+    slot_uri: cam:file_id
     alias: file_id
     owner: Dataset
     domain_of:
@@ -2690,22 +2662,22 @@ slots:
 classes:
   Record:
     name: Record
-    definition_uri: https://includedcc.org/include-access-model/Record
+    definition_uri: https://includedcc.org/common-access-model/Record
     description: One row / entity within the database
     title: Record
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     abstract: true
     slots:
     - external_id
     - access_policy_id
     - study_id
-    class_uri: includedcc:Record
+    class_uri: cam:Record
   AccessPolicy:
     name: AccessPolicy
-    definition_uri: https://includedcc.org/include-access-model/AccessPolicy
+    definition_uri: https://includedcc.org/common-access-model/AccessPolicy
     description: The access policy that describes the controls around use of data
     title: Access Policy
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     slots:
     - AccessPolicy_access_policy_id
     - data_use_accession
@@ -2720,13 +2692,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:AccessPolicy
+    class_uri: cam:AccessPolicy
   Study:
     name: Study
-    definition_uri: https://includedcc.org/include-access-model/Study
+    definition_uri: https://includedcc.org/common-access-model/Study
     description: Study Metadata
     title: Research Study
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2752,13 +2724,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:Study
+    class_uri: cam:Study
   StudyMetadata:
     name: StudyMetadata
-    definition_uri: https://includedcc.org/include-access-model/StudyMetadata
+    definition_uri: https://includedcc.org/common-access-model/StudyMetadata
     description: Additional features about studies that may not apply to all studies
     title: Study Metadata
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2782,13 +2754,13 @@ classes:
         name: data_category
         required: true
         multivalued: true
-    class_uri: includedcc:StudyMetadata
+    class_uri: cam:StudyMetadata
   VirtualBiorepository:
     name: VirtualBiorepository
-    definition_uri: https://includedcc.org/include-access-model/VirtualBiorepository
+    definition_uri: https://includedcc.org/common-access-model/VirtualBiorepository
     description: An organization that can provide access to specimen for further analysis.
     title: Virtual BioRepository (VBR)
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2806,13 +2778,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:VirtualBiorepository
+    class_uri: cam:VirtualBiorepository
   DOI:
     name: DOI
-    definition_uri: https://includedcc.org/include-access-model/DOI
+    definition_uri: https://includedcc.org/common-access-model/DOI
     description: A DOI is a permanent reference with metadata about a digital object.
     title: Digital Object Identifier (DOI)
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2826,14 +2798,14 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:DOI
+    class_uri: cam:DOI
   Investigator:
     name: Investigator
-    definition_uri: https://includedcc.org/include-access-model/Investigator
+    definition_uri: https://includedcc.org/common-access-model/Investigator
     description: An individual who made contributions to the collection, analysis,
       or sharing of data.
     title: Investigator
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2843,13 +2815,13 @@ classes:
     - institution
     - investigator_title
     - email
-    class_uri: includedcc:Investigator
+    class_uri: cam:Investigator
   Publication:
     name: Publication
-    definition_uri: https://includedcc.org/include-access-model/Publication
+    definition_uri: https://includedcc.org/common-access-model/Publication
     description: Information about a specific publication.
     title: Publication
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2857,15 +2829,15 @@ classes:
     - study_id
     - bibliographic_reference
     - website
-    class_uri: includedcc:Publication
+    class_uri: cam:Publication
   Subject:
     name: Subject
-    definition_uri: https://includedcc.org/include-access-model/Subject
+    definition_uri: https://includedcc.org/common-access-model/Subject
     description: This entity is the subject about which data or references are recorded.
       This includes the idea of a human participant in a study, a cell line, an animal
       model, or any other similar entity.
     title: Subject
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2880,13 +2852,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:Subject
+    class_uri: cam:Subject
   Demographics:
     name: Demographics
-    definition_uri: https://includedcc.org/include-access-model/Demographics
+    definition_uri: https://includedcc.org/common-access-model/Demographics
     description: Basic participant demographics summary
     title: Demographics
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2898,39 +2870,20 @@ classes:
     - ethnicity
     - age_at_last_vital_status
     - vital_status
+    - age_at_first_engagement
     slot_usage:
       subject_id:
         name: subject_id
         identifier: true
         required: true
-    class_uri: includedcc:Demographics
-  IncludeParticipant:
-    name: IncludeParticipant
-    definition_uri: https://includedcc.org/include-access-model/IncludeParticipant
-    description: Information specific to INCLUDE participants
-    title: INCLUDE Participant
-    from_schema: https://includedcc.org/include-access-model
-    is_a: Demographics
-    slots:
-    - external_id
-    - access_policy_id
-    - study_id
-    - Demographics_subject_id
-    - sex
-    - race
-    - ethnicity
-    - age_at_last_vital_status
-    - vital_status
-    - down_syndrome_status
-    - age_at_first_engagement
-    class_uri: includedcc:IncludeParticipant
+    class_uri: cam:Demographics
   Family:
     name: Family
-    definition_uri: https://includedcc.org/include-access-model/Family
+    definition_uri: https://includedcc.org/common-access-model/Family
     description: A group of individuals of some relation who are grouped together
       in a study.
     title: Family
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2947,14 +2900,14 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:Family
+    class_uri: cam:Family
   FamilyRelationship:
     name: FamilyRelationship
-    definition_uri: https://includedcc.org/include-access-model/FamilyRelationship
+    definition_uri: https://includedcc.org/common-access-model/FamilyRelationship
     description: A relationship between two Subjects. Directed as follows <family_member_id>
       <relationship> <subject_id> <Mother's id> <KIN:027 "isBiologicalMotherOf"> <subject_id>
     title: Family Member Relationship
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2974,13 +2927,13 @@ classes:
         name: subject_id
         description: The family member Subject who is the relationship "object".
         required: true
-    class_uri: includedcc:FamilyRelationship
+    class_uri: cam:FamilyRelationship
   FamilyMember:
     name: FamilyMember
-    definition_uri: https://includedcc.org/include-access-model/FamilyMember
+    definition_uri: https://includedcc.org/common-access-model/FamilyMember
     description: Designates a Subject as a member of a family with a specified role.
     title: Family Member
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -2996,7 +2949,7 @@ classes:
       subject_id:
         name: subject_id
         required: true
-    class_uri: includedcc:FamilyMember
+    class_uri: cam:FamilyMember
     unique_keys:
       main:
         unique_key_name: main
@@ -3006,11 +2959,11 @@ classes:
         description: Family membership is defined by family and subject ids.
   SubjectAssertion:
     name: SubjectAssertion
-    definition_uri: https://includedcc.org/include-access-model/SubjectAssertion
+    definition_uri: https://includedcc.org/common-access-model/SubjectAssertion
     description: Assertion about a particular Subject. May include Conditions, Measurements,
       etc.
     title: Subject Assertion
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3036,13 +2989,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:SubjectAssertion
+    class_uri: cam:SubjectAssertion
   Concept:
     name: Concept
-    definition_uri: https://includedcc.org/include-access-model/Concept
+    definition_uri: https://includedcc.org/common-access-model/Concept
     description: A standardized concept with display information.
     title: Concept
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     slots:
     - Concept_concept_curie
     - display
@@ -3051,14 +3004,14 @@ classes:
         name: concept_curie
         identifier: true
         required: true
-    class_uri: includedcc:Concept
+    class_uri: cam:Concept
   Sample:
     name: Sample
-    definition_uri: https://includedcc.org/include-access-model/Sample
+    definition_uri: https://includedcc.org/common-access-model/Sample
     description: A functionally equivalent specimen taken from a participant or processed
       from such a sample.
     title: Sample
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3082,13 +3035,13 @@ classes:
       biospecimen_collection_id:
         name: biospecimen_collection_id
         description: Biospecimen Collection during which this sample was generated.
-    class_uri: includedcc:Sample
+    class_uri: cam:Sample
   BiospecimenCollection:
     name: BiospecimenCollection
-    definition_uri: https://includedcc.org/include-access-model/BiospecimenCollection
+    definition_uri: https://includedcc.org/common-access-model/BiospecimenCollection
     description: A biospecimen collection event which yields one or more Samples.
     title: BiospecimenCollection
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3107,13 +3060,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:BiospecimenCollection
+    class_uri: cam:BiospecimenCollection
   Aliquot:
     name: Aliquot
-    definition_uri: https://includedcc.org/include-access-model/Aliquot
+    definition_uri: https://includedcc.org/common-access-model/Aliquot
     description: A specific tube or amount of a biospecimen associated with a Sample.
     title: Aliquot
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3132,14 +3085,14 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:Aliquot
+    class_uri: cam:Aliquot
   Encounter:
     name: Encounter
-    definition_uri: https://includedcc.org/include-access-model/Encounter
+    definition_uri: https://includedcc.org/common-access-model/Encounter
     description: An event at which data was collected about a participant, an intervention
       was made, or information about a participant was recorded.
     title: Participant Encounter
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3155,16 +3108,16 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:Encounter
+    class_uri: cam:Encounter
   EncounterDefinition:
     name: EncounterDefinition
-    definition_uri: https://includedcc.org/include-access-model/EncounterDefinition
+    definition_uri: https://includedcc.org/common-access-model/EncounterDefinition
     description: A definition of an encounter type in this study, ie, an event at
       which data was collected about a participant, an intervention was made, or information
       about a participant was recorded. This may be something planned by a study or
       a type of data collection.
     title: Encounter Definition
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3183,14 +3136,14 @@ classes:
       activity_definition_id:
         name: activity_definition_id
         multivalued: true
-    class_uri: includedcc:EncounterDefinition
+    class_uri: cam:EncounterDefinition
   ActivityDefinition:
     name: ActivityDefinition
-    definition_uri: https://includedcc.org/include-access-model/ActivityDefinition
+    definition_uri: https://includedcc.org/common-access-model/ActivityDefinition
     description: A definition of an activity in this study, eg, a biospecimen collection,
       intervention, survey, or assessment.
     title: Activity Definition
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3205,13 +3158,13 @@ classes:
         identifier: true
         range: string
         required: true
-    class_uri: includedcc:ActivityDefinition
+    class_uri: cam:ActivityDefinition
   File:
     name: File
-    definition_uri: https://includedcc.org/include-access-model/File
+    definition_uri: https://includedcc.org/common-access-model/File
     description: File
     title: File
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     is_a: Record
     slots:
     - external_id
@@ -3242,23 +3195,23 @@ classes:
       sample_id:
         name: sample_id
         multivalued: true
-    class_uri: includedcc:File
+    class_uri: cam:File
   FileHash:
     name: FileHash
-    definition_uri: https://includedcc.org/include-access-model/FileHash
+    definition_uri: https://includedcc.org/common-access-model/FileHash
     description: Type and value of a file content hash.
     title: File Hash
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     slots:
     - hash_type
     - hash_value
-    class_uri: includedcc:FileHash
+    class_uri: cam:FileHash
   Dataset:
     name: Dataset
-    definition_uri: https://includedcc.org/include-access-model/Dataset
+    definition_uri: https://includedcc.org/common-access-model/Dataset
     description: Set of files grouped together for release.
     title: Dataset
-    from_schema: https://includedcc.org/include-access-model
+    from_schema: https://includedcc.org/common-access-model
     slots:
     - Dataset_dataset_id
     - name
@@ -3278,10 +3231,10 @@ classes:
         name: file_id
         description: The list of files comprising this dataset.
         multivalued: true
-    class_uri: includedcc:Dataset
+    class_uri: cam:Dataset
 metamodel_version: 1.7.0
-source_file: include_access_model.yaml
-source_file_date: '2026-05-05T20:33:55'
-source_file_size: 41439
-generation_date: '2026-05-05T20:34:05'
+source_file: common_access_model.yaml
+source_file_date: '2026-05-08T21:09:21'
+source_file_size: 40748
+generation_date: '2026-05-08T21:09:31'
 
