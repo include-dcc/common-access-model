@@ -4,7 +4,7 @@ import glob
 import pytest
 from pathlib import Path
 
-import include_access_model.datamodel.include_access_model
+import common_access_model.datamodel.common_access_model
 from linkml_runtime.loaders import yaml_loader
 
 DATA_DIR_VALID = Path(__file__).parent / "data" / "valid"
@@ -19,7 +19,7 @@ def test_valid_data_files(filepath):
     """Test loading of all valid data files."""
     target_class_name = Path(filepath).stem.split("-")[0]
     tgt_class = getattr(
-        include_access_model.datamodel.include_access_model,
+        common_access_model.datamodel.common_access_model,
         target_class_name,
     )
     obj = yaml_loader.load(filepath, target_class=tgt_class)
@@ -31,7 +31,7 @@ def test_valid_data_files(filepath):
     """Test loading of all valid data files."""
     target_class_name = Path(filepath).stem.split("-")[0]
     tgt_class = getattr(
-        include_access_model.datamodel.include_access_model,
+        common_access_model.datamodel.common_access_model,
         target_class_name,
     )
     with pytest.raises(ValueError):

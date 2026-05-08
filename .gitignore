@@ -3,8 +3,8 @@
 /docs/schema/*.yaml
 
 # generated pydantic model
-/src/include_access_model/datamodel/include_access_model_pydantic.py
-/src/include_access_model/datamodel/include_access_model.py
+/src/common_access_model/datamodel/common_access_model_pydantic.py
+/src/common_access_model/datamodel/common_access_model.py
 
 # linkml-run-examples output (not useful to have in git in its current form)
 /examples/output/

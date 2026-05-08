@@ -1,4 +1,4 @@
-# Example data for include_access_model
+# Example data for common_access_model
 
 This folder contains example data for testing and demonstrating the datamodel`
 sorted in subfolders:

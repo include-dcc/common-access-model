@@ -6,10 +6,10 @@
 
 # Note:
 # - just works fine with quoted variables of dot-env files like this one
-LINKML_SCHEMA_NAME="include_access_model"
+LINKML_SCHEMA_NAME="common_access_model"
 LINKML_SCHEMA_AUTHOR="Robert Carroll <robert.carroll@vumc.org>"
 LINKML_SCHEMA_DESCRIPTION="Internal Access model for the INCLUDE DCC."
-LINKML_SCHEMA_SOURCE_DIR="src/include_access_model/schema"
+LINKML_SCHEMA_SOURCE_DIR="src/common_access_model/schema"
 
 ###### linkml generator variables, used by justfile
 

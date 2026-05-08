@@ -1,1 +1,1 @@
-"""Tests for include-access-model."""
+"""Tests for common-access-model."""

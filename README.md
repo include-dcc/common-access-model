@@ -1,12 +1,12 @@
 <a href="https://github.com/dalito/linkml-project-copier"><img src="https://img.shields.io/endpoint?url=https://raw.githubusercontent.com/copier-org/copier/master/img/badge/badge-grayscale-inverted-border-teal.json" alt="Copier Badge" style="max-width:100%;"/></a>
 
-# include-access-model
+# common-access-model
 
-Internal Access model for the INCLUDE DCC.
+Common Access Model designed to support core data operations for cloud repositories.
 
 ## Documentation Website
 
-[https://include-dcc.github.io/include-access-model](https://include-dcc.github.io/include-access-model)
+[https://include-dcc.github.io/common-access-model](https://include-dcc.github.io/common-access-model)
 
 ## Repository Structure
 
@@ -15,10 +15,10 @@ Internal Access model for the INCLUDE DCC.
 * [examples/](examples/) - Examples of using the schema
 * [project/](project/) - project files (these files are auto-generated, do not edit)
 * [src/](src/) - source files (edit these)
-  * [include_access_model](src/include_access_model)
-    * [schema/](src/include_access_model/schema) -- LinkML schema
+  * [common_access_model](src/common_access_model)
+    * [schema/](src/common_access_model/schema) -- LinkML schema
       (edit this)
-    * [datamodel/](src/include_access_model/datamodel) -- generated
+    * [datamodel/](src/common_access_model/datamodel) -- generated
       Python datamodel
 * [tests/](tests/) - Python tests
   * [data/](tests/data) - Example data
