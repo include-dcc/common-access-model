@@ -1,4 +1,4 @@
-# Examples of using include-access-model
+# Examples of using common-access-model
 
 This folder contains examples using the datamodel.
 

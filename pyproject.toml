@@ -3,7 +3,7 @@ requires = ["hatchling", "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
 
 [project]
-name = "include_access_model"
+name = "common_access_model"
 description = "Internal Access model for the INCLUDE DCC."
 authors = [
   {name = "Robert Carroll", email = "robert.carroll@vumc.org"},
@@ -51,8 +51,8 @@ skip = [
   "pyproject.toml",
   "uv.lock",
   "project/*",
-  "src/include_access_model/datamodel/include_access_model_pydantic.py",
-  "src/include_access_model/datamodel/include_access_model.py",
+  "src/common_access_model/datamodel/common_access_model_pydantic.py",
+  "src/common_access_model/datamodel/common_access_model.py",
 ]
 
 # Reminder: words have to be lowercased for the ignore-words-list
@@ -68,6 +68,6 @@ extend-exclude = [
   "uv.lock",
   "pyproject.toml",
   "project/*",
-  "src/include_access_model/datamodel/include_access_model_pydantic.py",
-  "src/include_access_model/datamodel/include_access_model.py",
+  "src/common_access_model/datamodel/common_access_model_pydantic.py",
+  "src/common_access_model/datamodel/common_access_model.py",
 ]

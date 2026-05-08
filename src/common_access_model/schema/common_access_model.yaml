@@ -1,14 +1,14 @@
 ---
-id: https://includedcc.org/include-access-model
-name: include-access-model
-title: INCLUDE DCC Access Model
-description: LinkML Schema for the internal INCLUDE DCC Access Model
+id: https://includedcc.org/common-access-model
+name: common-access-model
+title: Common Access Model
+description: LinkML Schema for the Common Access Model
 license: MIT
 see_also:
-  - https://includedcc.github.io/include-access-model
+  - https://includedcc.github.io/common-access-model
 
 prefixes:
-  includedcc: https://includedcc.org/include-access-model/
+  cam: https://includedcc.org/common-access-model/
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
   # subset of CDC Race and Ethnicity Code Set Version 1.0
@@ -27,7 +27,7 @@ prefixes:
   PATO: http://purl.obolibrary.org/obo/PATO_
   DUO: http://purl.obolibrary.org/obo/DUO_
 
-default_prefix: includedcc
+default_prefix: cam
 default_range: string
 
 imports:
@@ -182,7 +182,6 @@ classes:
       - sex
       - race
       - ethnicity
-      - down_syndrome_status
       - age_at_last_vital_status 
       - vital_status
       - age_at_first_engagement
@@ -666,11 +665,6 @@ slots:
     description: Ethnicity of Participant
     range: EnumEthnicity
     required: true
-  down_syndrome_status:
-    title: Down Syndrome Status
-    description: Down Syndrome status of participant
-    range: EnumDownSyndromeStatus
-    required: true
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
     title: Age at First Participant Engagement
@@ -1117,17 +1111,6 @@ enums:
         description: A group of individuals or entities.
       other:
         description: A different entity type- ideally this will be resolved!
-  EnumDownSyndromeStatus:
-    description: Down syndrome / chromosome 21 status
-    permissible_values:
-      d21:
-        title: D21
-        description: Disomy 21 (euploid)
-        meaning: PATO:0001393
-      t21:
-        title: T21
-        description: Trisomy 21 (Down syndrome)
-        meaning: MONDO:0008608
   EnumSex:
     description: Subject Sex
     permissible_values:

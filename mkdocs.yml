@@ -1,5 +1,5 @@
 ---
-site_name: "include-access-model"
+site_name: "common-access-model"
 theme:
   name: material
   # palette:
@@ -22,7 +22,7 @@ plugins:
   #       - gen_pages.py  # or any other name or path
 
 watch:
-  - src/include_access_model/schema
+  - src/common_access_model/schema
 
 nav:
 #  - Home: index.md
@@ -33,8 +33,8 @@ nav:
 exclude_docs: |
   /templates-linkml/
 
-site_url: https://include-dcc.github.io/include-access-model
-repo_url: https://github.com/include-dcc/include-access-model
+site_url: https://include-dcc.github.io/common-access-model
+repo_url: https://github.com/include-dcc/common-access-model
 
 # Uncomment this block to enable use of Google Analytics.
 # Replace the property value with your own ID.

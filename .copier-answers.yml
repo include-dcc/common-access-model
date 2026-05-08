@@ -10,6 +10,5 @@ gh_action_pypi: false
 github_org: include-dcc
 license: MIT
 project_description: Internal Access model for the INCLUDE DCC.
-project_name: include-access-model
-project_slug: include_access_model
-
+project_name: common-access-model
+project_slug: common_access_model
