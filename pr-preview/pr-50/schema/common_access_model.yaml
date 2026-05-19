@@ -1678,13 +1678,8 @@ slots:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Any
+    range: Concept
     multivalued: true
-    inlined: true
-    inlined_as_list: true
-    any_of:
-    - range: Concept
-    - range: EnumPresentAbsent
   concept_curie:
     name: concept_curie
     definition_uri: https://includedcc.org/common-access-model/concept_curie
@@ -1728,8 +1723,13 @@ slots:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Concept
+    range: Any
     multivalued: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: Concept
+    - range: EnumPresentAbsent
   value_number:
     name: value_number
     definition_uri: https://includedcc.org/common-access-model/value_number
@@ -3273,7 +3273,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-05-19T14:57:35'
+source_file_date: '2026-05-19T16:26:27'
 source_file_size: 41577
-generation_date: '2026-05-19T14:57:44'
+generation_date: '2026-05-19T16:26:36'
 
