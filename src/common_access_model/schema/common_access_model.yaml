@@ -751,10 +751,7 @@ slots:
   concept:
     title: Concept
     description: The structured term defining the meaning of the assertion.
-    range: Any
-    any_of:
-      - range: Concept
-      - range: EnumPresentAbsent
+    range: Concept
     multivalued: true
   concept_curie:
     title: Concept Curie
@@ -771,7 +768,10 @@ slots:
   value_concept:
     title: Value concept
     description: The structured term defining the value of the assertion.
-    range: Concept
+    range: Any
+    any_of:
+      - range: Concept
+      - range: EnumPresentAbsent
     multivalued: true
   value_number:
     title: Value Number
