@@ -1723,12 +1723,9 @@ slots:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Any
+    range: Concept
     multivalued: true
-    inlined: true
-    inlined_as_list: true
     any_of:
-    - range: Concept
     - range: EnumPresentAbsent
   value_number:
     name: value_number
@@ -3273,7 +3270,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-05-19T16:26:27'
-source_file_size: 41577
-generation_date: '2026-05-19T16:26:36'
+source_file_date: '2026-05-29T20:16:02'
+source_file_size: 41558
+generation_date: '2026-05-29T20:16:13'
 

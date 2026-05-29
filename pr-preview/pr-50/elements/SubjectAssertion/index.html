@@ -322,8 +322,8 @@
 
 
 
-        SubjectAssertion --&gt; "*" Any : value_concept
-        click Any href "../Any/"
+        SubjectAssertion --&gt; "*" Concept : value_concept
+        click Concept href "../Concept/"
 
 
 
@@ -420,7 +420,7 @@
 </tr>
 <tr>
 <td><a href="../value_concept/">value_concept</a></td>
-<td>* <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
+<td>* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
 <td>The structured term defining the value of the assertion</td>
 <td>direct</td>
 </tr>
@@ -671,10 +671,9 @@ attributes:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Any
+    range: Concept
     multivalued: true
     any_of:
-    - range: Concept
     - range: EnumPresentAbsent
   value_number:
     name: value_number
