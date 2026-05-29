@@ -33,6 +33,16 @@ default_range: string
 imports:
   - linkml:types
 
+types:
+  ptGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle pt global ID. For FHIR Patient Resources.
+  obGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle ob global ID. For FHIR Observation Resources.
+
 classes:
   Record:
     description: One row / entity within the database
@@ -170,7 +180,7 @@ classes:
       - organism_type
     slot_usage:
       subject_id:
-        range: string
+        range: ptGlobalID
         required: true
         identifier: true
   Demographics:
@@ -263,7 +273,7 @@ classes:
       - value_unit_source
     slot_usage:
       assertion_id:
-        range: string
+        range: obGlobalID
         required: true
         identifier: true
   Concept:
