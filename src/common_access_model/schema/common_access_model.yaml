@@ -768,9 +768,8 @@ slots:
   value_concept:
     title: Value concept
     description: The structured term defining the value of the assertion.
-    range: Any
+    range: Concept
     any_of:
-      - range: Concept
       - range: EnumPresentAbsent
     multivalued: true
   value_number:
