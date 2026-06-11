@@ -1,3 +1,7 @@
+# local stuff
+.bash_history_local
+.envrc
+
 # generated part of documentation
 /docs/elements/*.md
 /docs/schema/*.yaml
