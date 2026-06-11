@@ -26,6 +26,8 @@ dev = [
     "mkdocs-mermaid2-plugin>=1.1.1",
     "jupyter>=1.0.0",
     "mknotebooks>= 0.8.0",
+    "hatchling>=1.27.0",
+    "tomli>=2.0.0"
 ]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection for how to
@@ -39,6 +41,22 @@ source = "uv-dynamic-versioning"
 vcs = "git"
 style = "pep440"
 fallback-version = "0.0.0"
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+  ".direnv",
+  ".venv",
+  "scratch"
+]
+include = [
+  "project/sqlalchemy/",
+  "scripts/",
+]
+
+# Release the SQL Alchemy files
+[tool.hatch.build.hooks.custom]
+path = "scripts/hatch_build.py"
+
 
 # Ref.: https://docs.pytest.org/en/stable/reference/reference.html#configuration-options
 [tool.pytest.ini_options]
