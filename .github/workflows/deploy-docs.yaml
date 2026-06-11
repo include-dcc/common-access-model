@@ -1,6 +1,6 @@
 ---
 name: Deploy docs
-on:  # yamllint disable-line rule:truthy
+on: # yamllint disable-line rule:truthy
   push:
     branches: [main]
   workflow_dispatch:
@@ -13,16 +13,16 @@ jobs:
 
     # Grant GITHUB_TOKEN the permissions required to make a gh-pages deployment
     permissions:
-      contents: write  # to let mkdocs write the new docs
-      pages: write     # to deploy to Pages
-      id-token: write  # allow to generate an OpenID Connect (OIDC) token
+      contents: write # to let mkdocs write the new docs
+      pages: write # to deploy to Pages
+      id-token: write # allow to generate an OpenID Connect (OIDC) token
 
     steps:
       # https://github.com/actions/checkout
       - name: Checkout
         uses: actions/checkout@v6.0.2
         with:
-          fetch-depth: 0  # otherwise, you will fail to push refs to dest repo
+          fetch-depth: 0 # otherwise, you will fail to push refs to dest repo
 
       - name: Configure git for the bot
         # Gives the bot that commits to gh-pages a name & email address
@@ -48,6 +48,9 @@ jobs:
       - name: Install just
         run: |
           uv tool install rust-just
+
+      - name: Install gen-sqla
+        run: uv tool install linkml
 
       - name: Install dependencies
         run: uv sync --dev --no-progress
