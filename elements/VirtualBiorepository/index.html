@@ -312,7 +312,7 @@
 <tbody>
 <tr>
 <td><a href="../vbr_id/">vbr_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../OrGlobalID/">OrGlobalID</a></td>
 <td>Information about the study's Virtual Biorepository, if participating</td>
 <td>direct</td>
 </tr>
@@ -429,7 +429,7 @@ slot_usage:
   vbr_id:
     name: vbr_id
     identifier: true
-    range: string
+    range: orGlobalID
     required: true
 
 </code></pre>
@@ -445,7 +445,7 @@ slot_usage:
   vbr_id:
     name: vbr_id
     identifier: true
-    range: string
+    range: orGlobalID
     required: true
 attributes:
   vbr_id:
@@ -460,7 +460,7 @@ attributes:
     domain_of:
     - StudyMetadata
     - VirtualBiorepository
-    range: string
+    range: orGlobalID
     required: true
   name:
     name: name

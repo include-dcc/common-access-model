@@ -62,6 +62,111 @@ prefixes:
 default_prefix: cam
 default_range: string
 types:
+  ptGlobalID:
+    name: ptGlobalID
+    definition_uri: https://includedcc.org/common-access-model/PtGlobalID
+    description: Dewrangle pt global ID. For FHIR Patient Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  obGlobalID:
+    name: obGlobalID
+    definition_uri: https://includedcc.org/common-access-model/ObGlobalID
+    description: Dewrangle ob global ID. For FHIR Observation Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  lsGlobalID:
+    name: lsGlobalID
+    definition_uri: https://includedcc.org/common-access-model/LsGlobalID
+    description: Dewrangle ls global ID. For FHIR List Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  orGlobalID:
+    name: orGlobalID
+    definition_uri: https://includedcc.org/common-access-model/OrGlobalID
+    description: Dewrangle or global ID. For FHIR Organization Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  grGlobalID:
+    name: grGlobalID
+    definition_uri: https://includedcc.org/common-access-model/GrGlobalID
+    description: Dewrangle gr global ID. For FHIR Group Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  sdGlobalID:
+    name: sdGlobalID
+    definition_uri: https://includedcc.org/common-access-model/SdGlobalID
+    description: Dewrangle sd global ID. For FHIR ResearchStudy Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  deGlobalID:
+    name: deGlobalID
+    definition_uri: https://includedcc.org/common-access-model/DeGlobalID
+    description: Dewrangle de global ID. For FHIR Device Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  bsGlobalID:
+    name: bsGlobalID
+    definition_uri: https://includedcc.org/common-access-model/BsGlobalID
+    description: Dewrangle bs global ID. For FHIR Specimen Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  adGlobalID:
+    name: adGlobalID
+    definition_uri: https://includedcc.org/common-access-model/AdGlobalID
+    description: Dewrangle ad global ID. For FHIR ActivityDefinition Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  drGlobalID:
+    name: drGlobalID
+    definition_uri: https://includedcc.org/common-access-model/DrGlobalID
+    description: Dewrangle dr global ID. For FHIR DocumentReference Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  enGlobalID:
+    name: enGlobalID
+    definition_uri: https://includedcc.org/common-access-model/EnGlobalID
+    description: Dewrangle en global ID. For FHIR Encounter Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  coGlobalID:
+    name: coGlobalID
+    definition_uri: https://includedcc.org/common-access-model/CoGlobalID
+    description: Dewrangle co global ID. For FHIR Consent Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  fmGlobalID:
+    name: fmGlobalID
+    definition_uri: https://includedcc.org/common-access-model/FmGlobalID
+    description: Dewrangle __ global ID. For FHIR FamilyMemberHistory Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  pdGlobalID:
+    name: pdGlobalID
+    definition_uri: https://includedcc.org/common-access-model/PdGlobalID
+    description: Dewrangle __ global ID. For FHIR PlanDefinition Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
+  msGlobalID:
+    name: msGlobalID
+    definition_uri: https://includedcc.org/common-access-model/MsGlobalID
+    description: Dewrangle __ global ID. For FHIR MedicationStatement Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
   string:
     name: string
     definition_uri: https://w3id.org/linkml/String
@@ -2171,7 +2276,7 @@ slots:
     - AccessPolicy
     is_usage_slot: true
     usage_slot_name: access_policy_id
-    range: string
+    range: coGlobalID
     required: true
   Study_study_id:
     name: Study_study_id
@@ -2189,7 +2294,7 @@ slots:
     - Study
     is_usage_slot: true
     usage_slot_name: study_id
-    range: string
+    range: sdGlobalID
     required: true
     multivalued: false
   StudyMetadata_study_id:
@@ -2246,7 +2351,7 @@ slots:
     - VirtualBiorepository
     is_usage_slot: true
     usage_slot_name: vbr_id
-    range: string
+    range: orGlobalID
     required: true
   DOI_do_id:
     name: DOI_do_id
@@ -2283,7 +2388,7 @@ slots:
     - Subject
     is_usage_slot: true
     usage_slot_name: subject_id
-    range: string
+    range: ptGlobalID
     required: true
     multivalued: false
   Demographics_subject_id:
@@ -2321,7 +2426,7 @@ slots:
     - Family
     is_usage_slot: true
     usage_slot_name: family_id
-    range: string
+    range: grGlobalID
     required: true
   FamilyRelationship_family_relationship_id:
     name: FamilyRelationship_family_relationship_id
@@ -2339,7 +2444,7 @@ slots:
     - FamilyRelationship
     is_usage_slot: true
     usage_slot_name: family_relationship_id
-    range: string
+    range: fmGlobalID
     required: true
   FamilyRelationship_subject_id:
     name: FamilyRelationship_subject_id
@@ -2410,9 +2515,12 @@ slots:
     - SubjectAssertion
     is_usage_slot: true
     usage_slot_name: assertion_id
-    range: string
+    range: obGlobalID
     required: true
     multivalued: false
+    any_of:
+    - range: deGlobalID
+    - range: msGlobalID
   Concept_concept_curie:
     name: Concept_concept_curie
     definition_uri: https://includedcc.org/common-access-model/concept_curie
@@ -2447,7 +2555,7 @@ slots:
     - Sample
     is_usage_slot: true
     usage_slot_name: sample_id
-    range: string
+    range: bsGlobalID
     required: true
   Sample_biospecimen_collection_id:
     name: Sample_biospecimen_collection_id
@@ -2517,7 +2625,7 @@ slots:
     - Encounter
     is_usage_slot: true
     usage_slot_name: encounter_id
-    range: string
+    range: enGlobalID
     required: true
   EncounterDefinition_encounter_definition_id:
     name: EncounterDefinition_encounter_definition_id
@@ -2535,7 +2643,7 @@ slots:
     - EncounterDefinition
     is_usage_slot: true
     usage_slot_name: encounter_definition_id
-    range: string
+    range: pdGlobalID
     required: true
   EncounterDefinition_activity_definition_id:
     name: EncounterDefinition_activity_definition_id
@@ -2570,7 +2678,7 @@ slots:
     - ActivityDefinition
     is_usage_slot: true
     usage_slot_name: activity_definition_id
-    range: string
+    range: adGlobalID
     required: true
   File_file_id:
     name: File_file_id
@@ -2588,7 +2696,7 @@ slots:
     - File
     is_usage_slot: true
     usage_slot_name: file_id
-    range: string
+    range: drGlobalID
     required: true
   File_subject_id:
     name: File_subject_id
@@ -2640,7 +2748,7 @@ slots:
     - Dataset
     is_usage_slot: true
     usage_slot_name: dataset_id
-    range: string
+    range: lsGlobalID
     required: true
   Dataset_file_id:
     name: Dataset_file_id
@@ -2690,7 +2798,7 @@ classes:
       access_policy_id:
         name: access_policy_id
         identifier: true
-        range: string
+        range: coGlobalID
         required: true
     class_uri: cam:AccessPolicy
   Study:
@@ -2722,7 +2830,7 @@ classes:
       study_id:
         name: study_id
         identifier: true
-        range: string
+        range: sdGlobalID
         required: true
     class_uri: cam:Study
   StudyMetadata:
@@ -2776,7 +2884,7 @@ classes:
       vbr_id:
         name: vbr_id
         identifier: true
-        range: string
+        range: orGlobalID
         required: true
     class_uri: cam:VirtualBiorepository
   DOI:
@@ -2850,7 +2958,7 @@ classes:
       subject_id:
         name: subject_id
         identifier: true
-        range: string
+        range: ptGlobalID
         required: true
     class_uri: cam:Subject
   Demographics:
@@ -2898,7 +3006,7 @@ classes:
       family_id:
         name: family_id
         identifier: true
-        range: string
+        range: grGlobalID
         required: true
     class_uri: cam:Family
   FamilyRelationship:
@@ -2921,7 +3029,7 @@ classes:
       family_relationship_id:
         name: family_relationship_id
         identifier: true
-        range: string
+        range: fmGlobalID
         required: true
       subject_id:
         name: subject_id
@@ -2987,8 +3095,11 @@ classes:
       assertion_id:
         name: assertion_id
         identifier: true
-        range: string
+        range: obGlobalID
         required: true
+        any_of:
+        - range: deGlobalID
+        - range: msGlobalID
     class_uri: cam:SubjectAssertion
   Concept:
     name: Concept
@@ -3030,7 +3141,7 @@ classes:
       sample_id:
         name: sample_id
         identifier: true
-        range: string
+        range: bsGlobalID
         required: true
       biospecimen_collection_id:
         name: biospecimen_collection_id
@@ -3106,7 +3217,7 @@ classes:
       encounter_id:
         name: encounter_id
         identifier: true
-        range: string
+        range: enGlobalID
         required: true
     class_uri: cam:Encounter
   EncounterDefinition:
@@ -3131,7 +3242,7 @@ classes:
       encounter_definition_id:
         name: encounter_definition_id
         identifier: true
-        range: string
+        range: pdGlobalID
         required: true
       activity_definition_id:
         name: activity_definition_id
@@ -3156,7 +3267,7 @@ classes:
       activity_definition_id:
         name: activity_definition_id
         identifier: true
-        range: string
+        range: adGlobalID
         required: true
     class_uri: cam:ActivityDefinition
   File:
@@ -3187,7 +3298,7 @@ classes:
       file_id:
         name: file_id
         identifier: true
-        range: string
+        range: drGlobalID
         required: true
       subject_id:
         name: subject_id
@@ -3225,7 +3336,7 @@ classes:
       dataset_id:
         name: dataset_id
         identifier: true
-        range: string
+        range: lsGlobalID
         required: true
       file_id:
         name: file_id
@@ -3234,7 +3345,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-06-11T16:49:40'
-source_file_size: 40748
-generation_date: '2026-06-11T16:49:56'
+source_file_date: '2026-06-15T12:39:24'
+source_file_size: 42719
+generation_date: '2026-06-15T12:39:39'
 

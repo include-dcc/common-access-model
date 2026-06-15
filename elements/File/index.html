@@ -369,7 +369,7 @@
 <tbody>
 <tr>
 <td><a href="../file_id/">file_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../DrGlobalID/">DrGlobalID</a></td>
 <td>Unique identifier for this File</td>
 <td>direct</td>
 </tr>
@@ -535,7 +535,7 @@ slot_usage:
   file_id:
     name: file_id
     identifier: true
-    range: string
+    range: drGlobalID
     required: true
   subject_id:
     name: subject_id
@@ -557,7 +557,7 @@ slot_usage:
   file_id:
     name: file_id
     identifier: true
-    range: string
+    range: drGlobalID
     required: true
   subject_id:
     name: subject_id
@@ -578,7 +578,7 @@ attributes:
     domain_of:
     - File
     - Dataset
-    range: string
+    range: drGlobalID
     required: true
   subject_id:
     name: subject_id

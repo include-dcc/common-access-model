@@ -345,7 +345,7 @@
 <tbody>
 <tr>
 <td><a href="../sample_id/">sample_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../BsGlobalID/">BsGlobalID</a></td>
 <td>The unique identifier for this Sample</td>
 <td>direct</td>
 </tr>
@@ -496,7 +496,7 @@ slot_usage:
   sample_id:
     name: sample_id
     identifier: true
-    range: string
+    range: bsGlobalID
     required: true
   biospecimen_collection_id:
     name: biospecimen_collection_id
@@ -516,7 +516,7 @@ slot_usage:
   sample_id:
     name: sample_id
     identifier: true
-    range: string
+    range: bsGlobalID
     required: true
   biospecimen_collection_id:
     name: biospecimen_collection_id
@@ -535,7 +535,7 @@ attributes:
     - Sample
     - Aliquot
     - File
-    range: string
+    range: bsGlobalID
     required: true
   biospecimen_collection_id:
     name: biospecimen_collection_id

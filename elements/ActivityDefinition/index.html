@@ -297,7 +297,7 @@
 <tbody>
 <tr>
 <td><a href="../activity_definition_id/">activity_definition_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../AdGlobalID/">AdGlobalID</a></td>
 <td>Unique identifier for this Activity Definition</td>
 <td>direct</td>
 </tr>
@@ -394,7 +394,7 @@ slot_usage:
   activity_definition_id:
     name: activity_definition_id
     identifier: true
-    range: string
+    range: adGlobalID
     required: true
 
 </code></pre>
@@ -411,7 +411,7 @@ slot_usage:
   activity_definition_id:
     name: activity_definition_id
     identifier: true
-    range: string
+    range: adGlobalID
     required: true
 attributes:
   activity_definition_id:
@@ -426,7 +426,7 @@ attributes:
     domain_of:
     - EncounterDefinition
     - ActivityDefinition
-    range: string
+    range: adGlobalID
     required: true
   name:
     name: name

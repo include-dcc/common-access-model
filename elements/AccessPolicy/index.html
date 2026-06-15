@@ -283,7 +283,7 @@
 <tbody>
 <tr>
 <td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../CoGlobalID/">CoGlobalID</a></td>
 <td>Global identifier for the access policy that applies to this row of data</td>
 <td>direct</td>
 </tr>
@@ -502,7 +502,7 @@ slot_usage:
   access_policy_id:
     name: access_policy_id
     identifier: true
-    range: string
+    range: coGlobalID
     required: true
 
 </code></pre>
@@ -517,7 +517,7 @@ slot_usage:
   access_policy_id:
     name: access_policy_id
     identifier: true
-    range: string
+    range: coGlobalID
     required: true
 attributes:
   access_policy_id:
@@ -533,7 +533,7 @@ attributes:
     domain_of:
     - Record
     - AccessPolicy
-    range: string
+    range: coGlobalID
     required: true
   data_use_accession:
     name: data_use_accession

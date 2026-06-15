@@ -308,7 +308,7 @@
 <tbody>
 <tr>
 <td><a href="../encounter_definition_id/">encounter_definition_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../PdGlobalID/">PdGlobalID</a></td>
 <td>Unique identifier for this Encounter Definition</td>
 <td>direct</td>
 </tr>
@@ -414,7 +414,7 @@ slot_usage:
   encounter_definition_id:
     name: encounter_definition_id
     identifier: true
-    range: string
+    range: pdGlobalID
     required: true
   activity_definition_id:
     name: activity_definition_id
@@ -436,7 +436,7 @@ slot_usage:
   encounter_definition_id:
     name: encounter_definition_id
     identifier: true
-    range: string
+    range: pdGlobalID
     required: true
   activity_definition_id:
     name: activity_definition_id
@@ -454,7 +454,7 @@ attributes:
     domain_of:
     - Encounter
     - EncounterDefinition
-    range: string
+    range: pdGlobalID
     required: true
   name:
     name: name

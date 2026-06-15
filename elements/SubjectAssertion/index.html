@@ -366,7 +366,7 @@
 <tbody>
 <tr>
 <td><a href="../assertion_id/">assertion_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
 <td>INCLUDE Global ID for the Assertion</td>
 <td>direct</td>
 </tr>
@@ -521,8 +521,11 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: string
+    range: obGlobalID
     required: true
+    any_of:
+    - range: deGlobalID
+    - range: msGlobalID
 
 </code></pre>
 </details>
@@ -538,8 +541,11 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: string
+    range: obGlobalID
     required: true
+    any_of:
+    - range: deGlobalID
+    - range: msGlobalID
 attributes:
   assertion_id:
     name: assertion_id
@@ -552,9 +558,12 @@ attributes:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: string
+    range: obGlobalID
     required: true
     multivalued: false
+    any_of:
+    - range: deGlobalID
+    - range: msGlobalID
   subject_id:
     name: subject_id
     description: INCLUDE Global ID for the Subject

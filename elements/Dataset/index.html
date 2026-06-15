@@ -287,7 +287,7 @@
 <tbody>
 <tr>
 <td><a href="../dataset_id/">dataset_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../LsGlobalID/">LsGlobalID</a></td>
 <td>Unique identifier for a Dataset</td>
 <td>direct</td>
 </tr>
@@ -380,7 +380,7 @@ slot_usage:
   dataset_id:
     name: dataset_id
     identifier: true
-    range: string
+    range: lsGlobalID
     required: true
   file_id:
     name: file_id
@@ -399,7 +399,7 @@ slot_usage:
   dataset_id:
     name: dataset_id
     identifier: true
-    range: string
+    range: lsGlobalID
     required: true
   file_id:
     name: file_id
@@ -417,7 +417,7 @@ attributes:
     owner: Dataset
     domain_of:
     - Dataset
-    range: string
+    range: lsGlobalID
     required: true
   name:
     name: name

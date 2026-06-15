@@ -319,7 +319,7 @@
 <tbody>
 <tr>
 <td><a href="../family_id/">family_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../GrGlobalID/">GrGlobalID</a></td>
 <td>Global ID for the Family</td>
 <td>direct</td>
 </tr>
@@ -430,7 +430,7 @@ slot_usage:
   family_id:
     name: family_id
     identifier: true
-    range: string
+    range: grGlobalID
     required: true
 
 </code></pre>
@@ -447,7 +447,7 @@ slot_usage:
   family_id:
     name: family_id
     identifier: true
-    range: string
+    range: grGlobalID
     required: true
 attributes:
   family_id:
@@ -462,7 +462,7 @@ attributes:
     domain_of:
     - Family
     - FamilyMember
-    range: string
+    range: grGlobalID
     required: true
   family_type:
     name: family_type

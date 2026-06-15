@@ -460,7 +460,7 @@
 </tr>
 <tr>
 <td><a href="../study_id/">study_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../SdGlobalID/">SdGlobalID</a></td>
 <td>INCLUDE Global ID for the study</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
@@ -651,7 +651,7 @@ slot_usage:
   study_id:
     name: study_id
     identifier: true
-    range: string
+    range: sdGlobalID
     required: true
 
 </code></pre>
@@ -667,7 +667,7 @@ slot_usage:
   study_id:
     name: study_id
     identifier: true
-    range: string
+    range: sdGlobalID
     required: true
 attributes:
   parent_study:
@@ -891,7 +891,7 @@ attributes:
     domain_of:
     - Record
     - StudyMetadata
-    range: string
+    range: sdGlobalID
     required: true
     multivalued: false
 

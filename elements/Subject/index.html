@@ -306,7 +306,7 @@
 <tbody>
 <tr>
 <td><a href="../subject_id/">subject_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../PtGlobalID/">PtGlobalID</a></td>
 <td>INCLUDE Global ID for the Subject</td>
 <td>direct</td>
 </tr>
@@ -440,7 +440,7 @@ slot_usage:
   subject_id:
     name: subject_id
     identifier: true
-    range: string
+    range: ptGlobalID
     required: true
 
 </code></pre>
@@ -458,7 +458,7 @@ slot_usage:
   subject_id:
     name: subject_id
     identifier: true
-    range: string
+    range: ptGlobalID
     required: true
 attributes:
   subject_id:
@@ -478,7 +478,7 @@ attributes:
     - SubjectAssertion
     - Encounter
     - File
-    range: string
+    range: ptGlobalID
     required: true
     multivalued: false
   subject_type:

@@ -162,7 +162,7 @@
 <h1>ER Diagram</h1>
 <div class="mermaid">erDiagram
 AccessPolicy {
-    string access_policy_id  
+    coGlobalID access_policy_id  
     uriorcurie data_use_accession  
     EnumDataUsePermission data_use_permission  
     EnumDataUseModifier data_use_modifier  
@@ -171,7 +171,7 @@ AccessPolicy {
     uri website  
 }
 ActivityDefinition {
-    string activity_definition_id  
+    adGlobalID activity_definition_id  
     string name  
     string description  
     uriorcurieList external_id  
@@ -202,7 +202,7 @@ DOI {
     uriorcurieList external_id  
 }
 Dataset {
-    string dataset_id  
+    lsGlobalID dataset_id  
     string name  
     string description  
     string data_collection_start  
@@ -218,18 +218,18 @@ Demographics {
     uriorcurieList external_id  
 }
 Encounter {
-    string encounter_id  
+    enGlobalID encounter_id  
     integer age_at_event  
     uriorcurieList external_id  
 }
 EncounterDefinition {
-    string encounter_definition_id  
+    pdGlobalID encounter_definition_id  
     string name  
     string description  
     uriorcurieList external_id  
 }
 Family {
-    string family_id  
+    grGlobalID family_id  
     EnumFamilyType family_type  
     string family_description  
     EnumConsanguinityAssertion consanguinity  
@@ -241,12 +241,12 @@ FamilyMember {
     uriorcurieList external_id  
 }
 FamilyRelationship {
-    string family_relationship_id  
+    fmGlobalID family_relationship_id  
     uriorcurie relationship  
     uriorcurieList external_id  
 }
 File {
-    string file_id  
+    drGlobalID file_id  
     string filename  
     EnumEDAMFormats format  
     EnumDataCategory data_category  
@@ -277,7 +277,7 @@ Record {
     uriorcurieList external_id  
 }
 Sample {
-    string sample_id  
+    bsGlobalID sample_id  
     uriorcurie sample_type  
     uriorcurieList processing  
     EnumAvailabilityStatus availablity_status  
@@ -296,7 +296,7 @@ Study {
     string acknowledgments  
     string citation_statement  
     uriorcurieList external_id  
-    string study_id  
+    sdGlobalID study_id  
 }
 StudyMetadata {
     EnumParticipantLifespanStageList participant_lifespan_stage  
@@ -310,13 +310,13 @@ StudyMetadata {
     uriorcurieList external_id  
 }
 Subject {
-    string subject_id  
+    ptGlobalID subject_id  
     EnumSubjectType subject_type  
     uriorcurie organism_type  
     uriorcurieList external_id  
 }
 SubjectAssertion {
-    string assertion_id  
+    obGlobalID assertion_id  
     EnumAssertionProvenance assertion_provenance  
     integer age_at_assertion  
     integer age_at_event  
@@ -328,7 +328,7 @@ SubjectAssertion {
     uriorcurieList external_id  
 }
 VirtualBiorepository {
-    string vbr_id  
+    orGlobalID vbr_id  
     string name  
     string institution  
     uri website  

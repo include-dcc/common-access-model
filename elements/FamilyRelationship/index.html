@@ -310,7 +310,7 @@
 <tbody>
 <tr>
 <td><a href="../family_relationship_id/">family_relationship_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
+<td>1 <br/> <a href="../FmGlobalID/">FmGlobalID</a></td>
 <td>Global ID for the Family Relationship</td>
 <td>direct</td>
 </tr>
@@ -395,7 +395,7 @@ slot_usage:
   family_relationship_id:
     name: family_relationship_id
     identifier: true
-    range: string
+    range: fmGlobalID
     required: true
   subject_id:
     name: subject_id
@@ -416,7 +416,7 @@ slot_usage:
   family_relationship_id:
     name: family_relationship_id
     identifier: true
-    range: string
+    range: fmGlobalID
     required: true
   subject_id:
     name: subject_id
@@ -434,7 +434,7 @@ attributes:
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
-    range: string
+    range: fmGlobalID
     required: true
   family_member_id:
     name: family_member_id
