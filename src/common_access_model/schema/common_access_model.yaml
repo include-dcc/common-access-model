@@ -33,6 +33,71 @@ default_range: string
 imports:
   - linkml:types
 
+types:
+  ptGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle pt global ID. For FHIR Patient Resources.
+  obGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle ob global ID. For FHIR Observation Resources.
+  lsGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle ls global ID. For FHIR List Resources.
+  orGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle or global ID. For FHIR Organization Resources.
+  grGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle gr global ID. For FHIR Group Resources.
+  sdGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle sd global ID. For FHIR ResearchStudy Resources.
+  deGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle de global ID. For FHIR Device Resources.
+  bsGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle bs global ID. For FHIR Specimen Resources.
+  adGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle ad global ID. For FHIR ActivityDefinition Resources.
+  drGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle dr global ID. For FHIR DocumentReference Resources.
+  enGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle en global ID. For FHIR Encounter Resources.
+  coGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle co global ID. For FHIR Consent Resources.
+
+# To be created
+  fmGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle __ global ID. For FHIR FamilyMemberHistory Resources.
+  pdGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle __ global ID. For FHIR PlanDefinition Resources.
+  msGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle __ global ID. For FHIR MedicationStatement Resources.
+
+
 classes:
   Record:
     description: One row / entity within the database
@@ -55,7 +120,7 @@ classes:
     - website
     slot_usage:
       access_policy_id:
-        range: string
+        range: coGlobalID
         required: true
         identifier: true
   Study:
@@ -82,7 +147,7 @@ classes:
       - do_id
     slot_usage:
       study_id:
-        range: string
+        range: sdGlobalID
         required: true
         identifier: true
   StudyMetadata:
@@ -124,7 +189,7 @@ classes:
       - vbr_readme
     slot_usage:
       vbr_id:
-        range: string
+        range: orGlobalID
         required: true
         identifier: true
 
@@ -170,7 +235,7 @@ classes:
       - organism_type
     slot_usage:
       subject_id:
-        range: string
+        range: ptGlobalID
         required: true
         identifier: true
   Demographics:
@@ -201,7 +266,7 @@ classes:
     - family_study_focus
     slot_usage:
       family_id:
-        range: string
+        range: grGlobalID
         required: true
         identifier: true
   FamilyRelationship:
@@ -217,7 +282,7 @@ classes:
     - subject_id
     slot_usage:
       family_relationship_id:
-        range: string
+        range: fmGlobalID
         required: true
         identifier: true
       subject_id:
@@ -263,7 +328,10 @@ classes:
       - value_unit_source
     slot_usage:
       assertion_id:
-        range: string
+        range: obGlobalID
+        any_of:
+         - range: deGlobalID
+         - range: msGlobalID
         required: true
         identifier: true
   Concept:
@@ -292,7 +360,7 @@ classes:
       - quantity_unit 
     slot_usage:
       sample_id:
-        range: string
+        range: bsGlobalID
         required: true
         identifier: true
       biospecimen_collection_id:
@@ -344,7 +412,7 @@ classes:
       - age_at_event
     slot_usage:
       encounter_id:
-        range: string
+        range: enGlobalID
         required: true
         identifier: true
   EncounterDefinition:
@@ -362,7 +430,7 @@ classes:
       - activity_definition_id
     slot_usage:
       encounter_definition_id:
-        range: string
+        range: pdGlobalID
         required: true
         identifier: true
       activity_definition_id:
@@ -381,7 +449,7 @@ classes:
       #observation definitions or dd refs
     slot_usage:
       activity_definition_id:
-        range: string
+        range: adGlobalID
         required: true
         identifier: true
   File:
@@ -405,7 +473,7 @@ classes:
       - hash
     slot_usage:
       file_id:
-        range: string
+        range: drGlobalID
         required: true
         identifier: true
       subject_id:
@@ -434,7 +502,7 @@ classes:
       
     slot_usage:
       dataset_id:
-        range: string
+        range: lsGlobalID
         required: true
         identifier: true
       file_id: 
