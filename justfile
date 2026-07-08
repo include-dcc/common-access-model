@@ -94,7 +94,7 @@ test: _test-schema _test-python _test-examples
 # Run linting
 [group('model development')]
 lint:
-  uv run linkml-lint {{source_schema_dir}}
+  uv run linkml-lint --config .linkml-linter.yaml {{source_schema_dir}}
 
 # Generate md documentation for the schema
 [group('model development')]
