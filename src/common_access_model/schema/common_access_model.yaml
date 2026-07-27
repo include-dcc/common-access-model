@@ -26,6 +26,7 @@ prefixes:
   NCIT: http://purl.obolibrary.org/obo/NCIT_
   PATO: http://purl.obolibrary.org/obo/PATO_
   DUO: http://purl.obolibrary.org/obo/DUO_
+  loinc: https://loinc.org/
 
 default_prefix: cam
 default_range: string
@@ -99,6 +100,8 @@ types:
 
 
 classes:
+  Any:
+    class_uri: linkml:Any
   Record:
     description: One row / entity within the database
     title: Record
@@ -834,6 +837,8 @@ slots:
     title: Value concept
     description: The structured term defining the value of the assertion.
     range: Concept
+    any_of:
+      - range: EnumPresentAbsent
     multivalued: true
   value_number:
     title: Value Number
@@ -1391,5 +1396,24 @@ enums:
         title: ETag
       sha1:
         title: SHA-1
+  EnumPresentAbsent:
+    description: Options for Phenotypic Feature Assertions that may be
+      present, absent, or indeterminate. Derived from https://loinc.org/LL750-1
+    is_a: EnumNull
+    permissible_values:
+      "loinc:LA9633-4":
+        title: Present 
+        meaning: loinc:LA9633-4
+        description: This feature was determined to be present.
+      "loinc:LA9634-2":
+        title: Absent 
+        meaning: loinc:LA9634-2
+        description: This feature was determined to be absent.
+      "loinc:LA11884-6":
+        title: Indeterminate 
+        meaning: loinc:LA11884-6
+        description: This feature was assessed, but unable to be determined 
+          as present or absent.
+     
 
 
