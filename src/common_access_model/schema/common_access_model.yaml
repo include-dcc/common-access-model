@@ -281,7 +281,7 @@ classes:
     slots:
     - family_relationship_id
     - family_member_id
-    - relationship
+    - relation
     - subject_id
     slot_usage:
       family_relationship_id:
@@ -785,7 +785,7 @@ slots:
     required: true
     range: Subject
     inlined: false
-  relationship:
+  relation:
     description: Code definting the relationship predicate. Relationship of the "Family Member" 
      to the "Subject", eg, mother of.
     required: true
