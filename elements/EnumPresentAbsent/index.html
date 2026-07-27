@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/age_at_event/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumPresentAbsent/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: Age at event (age_at_event) - common-access-model</title>
+        <title>Enum: EnumPresentAbsent - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-age-at-event-age_at_event" class="md-skip">
+        <a href="#enum-enumpresentabsent" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: Age at event (age_at_event)
+              Enum: EnumPresentAbsent
             
           </span>
         </div>
@@ -308,18 +308,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
+      Permissible Values
     </span>
   </a>
   
@@ -346,15 +337,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
   
 </li>
       
@@ -386,78 +368,67 @@
   
 
 
-<h1 id="slot-age-at-event-age_at_event">Slot: Age at event (age_at_event)</h1>
-<p><em>The age in days of the Subject at the time point which the assertion describes, eg, age of onset or when a measurement was performed.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/age_at_event">cam:age_at_event</a>
-Alias: age_at_event</p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-enumpresentabsent">Enum: EnumPresentAbsent</h1>
+<p><em>Options for Phenotypic Feature Assertions that may be present, absent, or indeterminate. Derived from https://loinc.org/LL750-1</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumPresentAbsent">cam:EnumPresentAbsent</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td>Assertion about a particular Subject</td>
-<td>no</td>
+<td>loinc:LA9633-4</td>
+<td>loinc:LA9633-4</td>
+<td>This feature was determined to be present</td>
 </tr>
 <tr>
-<td><a href="../Encounter/">Encounter</a></td>
-<td>An event at which data was collected about a participant, an intervention was...</td>
-<td>no</td>
+<td>loinc:LA9634-2</td>
+<td>loinc:LA9634-2</td>
+<td>This feature was determined to be absent</td>
+</tr>
+<tr>
+<td>loinc:LA11884-6</td>
+<td>loinc:LA11884-6</td>
+<td>This feature was assessed, but unable to be determined as present or absent</td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Integer/">Integer</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://includedcc.org/common-access-model</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:age_at_event</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:age_at_event</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: age_at_event
-description: The age in days of the Subject at the time point which the assertion
-  describes, eg, age of onset or when a measurement was performed.
-title: Age at event
+<pre><code class="language-yaml">name: EnumPresentAbsent
+description: Options for Phenotypic Feature Assertions that may be present, absent,
+  or indeterminate. Derived from https://loinc.org/LL750-1
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: age_at_event
-domain_of:
-- SubjectAssertion
-- Encounter
-range: integer
-unit:
-  ucum_code: d
+is_a: EnumNull
+permissible_values:
+  loinc:LA9633-4:
+    text: loinc:LA9633-4
+    description: This feature was determined to be present.
+    meaning: loinc:LA9633-4
+    title: Present
+  loinc:LA9634-2:
+    text: loinc:LA9634-2
+    description: This feature was determined to be absent.
+    meaning: loinc:LA9634-2
+    title: Absent
+  loinc:LA11884-6:
+    text: loinc:LA11884-6
+    description: This feature was assessed, but unable to be determined as present
+      or absent.
+    meaning: loinc:LA11884-6
+    title: Indeterminate
 
 </code></pre>
 

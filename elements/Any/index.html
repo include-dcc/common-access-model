@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://include-dcc.github.io/common-access-model/elements/SubjectAssertion/" rel="canonical"/>
+<link href="https://include-dcc.github.io/common-access-model/elements/Any/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
-<title>Class: Subject Assertion (SubjectAssertion) - common-access-model</title>
+<title>Class: Any - common-access-model</title>
 <link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
@@ -23,7 +23,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-subject-assertion-subjectassertion">
+<a class="md-skip" href="#class-any">
           Skip to content
         </a>
 </div>
@@ -47,7 +47,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: Subject Assertion (SubjectAssertion)
+              Class: Any
             
           </span>
 </div>
@@ -159,13 +159,6 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      Inheritance
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#slots">
 <span class="md-ellipsis">
       Slots
@@ -229,130 +222,14 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-subject-assertion-subjectassertion">Class: Subject Assertion (SubjectAssertion)</h1>
-<p><em>Assertion about a particular Subject. May include Conditions, Measurements, etc.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/SubjectAssertion">cam:SubjectAssertion</a></p>
+<h1 id="class-any">Class: Any</h1>
+<p>URI: <a href="https://w3id.org/linkml/Any">linkml:Any</a></p>
 <div class="mermaid"> classDiagram
-    class SubjectAssertion
-    click SubjectAssertion href "../SubjectAssertion/"
-      Record &lt;|-- SubjectAssertion
-        click Record href "../Record/"
-
-      SubjectAssertion : access_policy_id
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" AccessPolicy : access_policy_id
-        click AccessPolicy href "../AccessPolicy/"
-
-
-
-      SubjectAssertion : age_at_assertion
-
-      SubjectAssertion : age_at_event
-
-      SubjectAssertion : age_at_resolution
-
-      SubjectAssertion : assertion_id
-
-      SubjectAssertion : assertion_provenance
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" EnumAssertionProvenance : assertion_provenance
-        click EnumAssertionProvenance href "../EnumAssertionProvenance/"
-
-
-
-      SubjectAssertion : concept
-
-
-
-
-
-        SubjectAssertion --&gt; "*" Concept : concept
-        click Concept href "../Concept/"
-
-
-
-      SubjectAssertion : concept_source
-
-      SubjectAssertion : encounter_id
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" Encounter : encounter_id
-        click Encounter href "../Encounter/"
-
-
-
-      SubjectAssertion : external_id
-
-      SubjectAssertion : study_id
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" Study : study_id
-        click Study href "../Study/"
-
-
-
-      SubjectAssertion : subject_id
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" Subject : subject_id
-        click Subject href "../Subject/"
-
-
-
-      SubjectAssertion : value_concept
-
-
-
-
-
-        SubjectAssertion --&gt; "*" Concept : value_concept
-        click Concept href "../Concept/"
-
-
-
-      SubjectAssertion : value_number
-
-      SubjectAssertion : value_source
-
-      SubjectAssertion : value_unit
-
-
-
-
-
-        SubjectAssertion --&gt; "0..1" Concept : value_unit
-        click Concept href "../Concept/"
-
-
-
-      SubjectAssertion : value_unit_source
-
+    class Any
+    click Any href "../Any/"
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>SubjectAssertion</strong></li>
-</ul>
-</li>
-</ul>
+<!-- no inheritance hierarchy -->
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -365,106 +242,10 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../assertion_id/">assertion_id</a></td>
-<td>1 <br/> <a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
-<td>INCLUDE Global ID for the Assertion</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>0..1 <br/> <a href="../Subject/">Subject</a></td>
-<td>INCLUDE Global ID for the Subject</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../encounter_id/">encounter_id</a></td>
-<td>0..1 <br/> <a href="../Encounter/">Encounter</a></td>
-<td>Unique identifier for this Encounter</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../assertion_provenance/">assertion_provenance</a></td>
-<td>0..1 <br/> <a href="../EnumAssertionProvenance/">EnumAssertionProvenance</a></td>
-<td>The original source of this assertion</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../age_at_assertion/">age_at_assertion</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The age in days of the Subject when the assertion was made</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../age_at_event/">age_at_event</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The age in days of the Subject at the time point which the assertion describe...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../age_at_resolution/">age_at_resolution</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The age in days of the Subject when the asserted state was resolved</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../concept/">concept</a></td>
-<td>* <br/> <a href="../Concept/">Concept</a></td>
-<td>The structured term defining the meaning of the assertion</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../concept_source/">concept_source</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The source text yielding the standardized concept</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_concept/">value_concept</a></td>
-<td>* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
-<td>The structured term defining the value of the assertion</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_number/">value_number</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td>The numeric value of the assertion</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_source/">value_source</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The source text yielding the value</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_unit/">value_unit</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
-<td>The structured term defining the units of the value</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../value_unit_source/">value_unit_source</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The source text yielding the value's units</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../external_id/">external_id</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>Global identifier for the access policy that applies to this row of data</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
-<td>INCLUDE Global ID for the study</td>
-<td><a href="../Record/">Record</a></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -484,11 +265,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>cam:SubjectAssertion</td>
+<td>linkml:Any</td>
 </tr>
 <tr>
 <td>native</td>
-<td>cam:SubjectAssertion</td>
+<td>cam:Any</td>
 </tr>
 </tbody>
 </table>
@@ -496,278 +277,17 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: SubjectAssertion
-description: Assertion about a particular Subject. May include Conditions, Measurements,
-  etc.
-title: Subject Assertion
+<pre><code class="language-yaml">name: Any
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
-slots:
-- assertion_id
-- subject_id
-- encounter_id
-- assertion_provenance
-- age_at_assertion
-- age_at_event
-- age_at_resolution
-- concept
-- concept_source
-- value_concept
-- value_number
-- value_source
-- value_unit
-- value_unit_source
-slot_usage:
-  assertion_id:
-    name: assertion_id
-    identifier: true
-    range: obGlobalID
-    required: true
-    any_of:
-    - range: deGlobalID
-    - range: msGlobalID
+class_uri: linkml:Any
 
 </code></pre>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: SubjectAssertion
-description: Assertion about a particular Subject. May include Conditions, Measurements,
-  etc.
-title: Subject Assertion
+<pre><code class="language-yaml">name: Any
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
-slot_usage:
-  assertion_id:
-    name: assertion_id
-    identifier: true
-    range: obGlobalID
-    required: true
-    any_of:
-    - range: deGlobalID
-    - range: msGlobalID
-attributes:
-  assertion_id:
-    name: assertion_id
-    description: INCLUDE Global ID for the Assertion
-    title: Assertion ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    identifier: true
-    alias: assertion_id
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: obGlobalID
-    required: true
-    multivalued: false
-    any_of:
-    - range: deGlobalID
-    - range: msGlobalID
-  subject_id:
-    name: subject_id
-    description: INCLUDE Global ID for the Subject
-    title: Study ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: subject_id
-    owner: SubjectAssertion
-    domain_of:
-    - Subject
-    - Demographics
-    - FamilyRelationship
-    - FamilyMember
-    - SubjectAssertion
-    - Encounter
-    - File
-    range: Subject
-    multivalued: false
-  encounter_id:
-    name: encounter_id
-    description: Unique identifier for this Encounter.
-    title: Encounter ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: encounter_id
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    - BiospecimenCollection
-    - Encounter
-    range: Encounter
-  assertion_provenance:
-    name: assertion_provenance
-    description: The original source of this assertion
-    title: Assertion Provenance
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: assertion_provenance
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: EnumAssertionProvenance
-  age_at_assertion:
-    name: age_at_assertion
-    description: The age in days of the Subject when the assertion was made.
-    title: Age at assertion
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: age_at_assertion
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: integer
-    unit:
-      ucum_code: d
-  age_at_event:
-    name: age_at_event
-    description: The age in days of the Subject at the time point which the assertion
-      describes, eg, age of onset or when a measurement was performed.
-    title: Age at event
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: age_at_event
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    - Encounter
-    range: integer
-    unit:
-      ucum_code: d
-  age_at_resolution:
-    name: age_at_resolution
-    description: The age in days of the Subject when the asserted state was resolved.
-    title: Age at resolution
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: age_at_resolution
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: integer
-    unit:
-      ucum_code: d
-  concept:
-    name: concept
-    description: The structured term defining the meaning of the assertion.
-    title: Concept
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: concept
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: Concept
-    multivalued: true
-  concept_source:
-    name: concept_source
-    description: The source text yielding the standardized concept.
-    title: Concept Source Text
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: concept_source
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: string
-  value_concept:
-    name: value_concept
-    description: The structured term defining the value of the assertion.
-    title: Value concept
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: value_concept
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: Concept
-    multivalued: true
-    any_of:
-    - range: EnumPresentAbsent
-  value_number:
-    name: value_number
-    description: The numeric value of the assertion.
-    title: Value Number
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: value_number
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: float
-  value_source:
-    name: value_source
-    description: The source text yielding the value.
-    title: Value Source Text
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: value_source
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: string
-  value_unit:
-    name: value_unit
-    description: The structured term defining the units of the value.
-    title: Value Units
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: value_unit
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: Concept
-  value_unit_source:
-    name: value_unit_source
-    description: The source text yielding the value's units.
-    title: Value Units Source Text
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: value_unit_source
-    owner: SubjectAssertion
-    domain_of:
-    - SubjectAssertion
-    range: string
-  external_id:
-    name: external_id
-    description: Other identifiers for this entity, eg, from the submitting study
-      or in systems like dbGaP
-    title: External Identifiers
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: external_id
-    owner: SubjectAssertion
-    domain_of:
-    - Record
-    range: uriorcurie
-    required: false
-    multivalued: true
-  access_policy_id:
-    name: access_policy_id
-    description: Global identifier for the access policy that applies to this row
-      of data.
-    title: Access Policy ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: access_policy_id
-    owner: SubjectAssertion
-    domain_of:
-    - Record
-    - AccessPolicy
-    range: AccessPolicy
-  study_id:
-    name: study_id
-    description: INCLUDE Global ID for the study
-    title: Study ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    alias: study_id
-    owner: SubjectAssertion
-    domain_of:
-    - Record
-    - StudyMetadata
-    range: Study
-    multivalued: false
+class_uri: linkml:Any
 
 </code></pre>
 </details>
