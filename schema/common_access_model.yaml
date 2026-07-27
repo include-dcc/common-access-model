@@ -3381,7 +3381,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-07-27T17:30:50'
+source_file_date: '2026-07-27T17:31:32'
 source_file_size: 43529
-generation_date: '2026-07-27T17:31:04'
+generation_date: '2026-07-27T17:31:47'
 
