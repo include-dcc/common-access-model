@@ -13,6 +13,10 @@
 # linkml-run-examples output (not useful to have in git in its current form)
 /examples/output/
 
+# Local stuff
+.bash_history_local
+.envrc
+
 # Derived schemas, generated from the schema.yaml
 tmp/
 project/
