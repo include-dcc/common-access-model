@@ -264,7 +264,7 @@
 
       FamilyRelationship : family_relationship_id
 
-      FamilyRelationship : relationship
+      FamilyRelationship : relation
 
       FamilyRelationship : study_id
 
@@ -321,7 +321,7 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../relationship/">relationship</a></td>
+<td><a href="../relation/">relation</a></td>
 <td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>Code definting the relationship predicate</td>
 <td>direct</td>
@@ -389,7 +389,7 @@ is_a: Record
 slots:
 - family_relationship_id
 - family_member_id
-- relationship
+- relation
 - subject_id
 slot_usage:
   family_relationship_id:
@@ -448,13 +448,13 @@ attributes:
     range: Subject
     required: true
     inlined: false
-  relationship:
-    name: relationship
+  relation:
+    name: relation
     description: Code definting the relationship predicate. Relationship of the "Family
       Member" to the "Subject", eg, mother of.
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: relationship
+    alias: relation
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship

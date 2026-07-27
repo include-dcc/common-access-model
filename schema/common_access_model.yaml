@@ -1698,13 +1698,13 @@ slots:
     range: Subject
     required: true
     inlined: false
-  relationship:
-    name: relationship
-    definition_uri: https://includedcc.org/common-access-model/relationship
+  relation:
+    name: relation
+    definition_uri: https://includedcc.org/common-access-model/relation
     description: Code definting the relationship predicate. Relationship of the "Family
       Member" to the "Subject", eg, mother of.
     from_schema: https://includedcc.org/common-access-model
-    slot_uri: cam:relationship
+    slot_uri: cam:relation
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
@@ -3059,7 +3059,7 @@ classes:
     - study_id
     - FamilyRelationship_family_relationship_id
     - family_member_id
-    - relationship
+    - relation
     - FamilyRelationship_subject_id
     slot_usage:
       family_relationship_id:
@@ -3381,7 +3381,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-07-27T17:31:32'
-source_file_size: 43529
-generation_date: '2026-07-27T17:31:47'
+source_file_date: '2026-07-27T18:33:25'
+source_file_size: 43521
+generation_date: '2026-07-27T18:33:39'
 
