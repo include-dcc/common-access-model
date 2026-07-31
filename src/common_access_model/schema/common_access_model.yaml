@@ -27,6 +27,7 @@ prefixes:
   PATO: http://purl.obolibrary.org/obo/PATO_
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
+  KIN: http://purl.org/ga4gh/kin.owl#
 
 default_prefix: cam
 default_range: string
@@ -788,7 +789,7 @@ slots:
     description: Code definting the relationship predicate. Relationship of the "Family Member" 
      to the "Subject", eg, mother of. Ideally uses KIN ontology.
     required: true
-    range: uriorcurie
+    range: EnumFamilyRelation
   family_membership_id:
     title: Family Relationship ID
     description: ID for the Family Relationship
@@ -1417,6 +1418,17 @@ enums:
         meaning: loinc:LA11884-6
         description: This feature was assessed, but unable to be determined 
           as present or absent.
-     
+  EnumFamilyRelation:
+    description: Definitions of family relations as provided by KIN Ontology.
+    is_a: EnumNull
+    reachable_from:
+      source_ontology: http://purl.org/ga4gh/kin.owl
+      source_nodes:
+        - KIN:KIN_001
+      is_direct: false
+      include_self: true
+      relationship_types:
+        - rdfs:subClassOf
+
 
 
