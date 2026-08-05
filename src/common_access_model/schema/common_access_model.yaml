@@ -27,6 +27,7 @@ prefixes:
   PATO: http://purl.obolibrary.org/obo/PATO_
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
+  KIN: http://purl.org/ga4gh/kin.owl#
 
 default_prefix: cam
 default_range: string
@@ -295,21 +296,20 @@ classes:
       subject_id:
         required: true
         description: The family member Subject who is the relationship "object".
-  FamilyMember:
-    title: Family Member
+  FamilyMembership:
+    title: Family Membership
     description: Designates a Subject as a member of a family with a specified role.
     is_a: Record
     slots:
+      - family_membership_id
       - family_id
       - subject_id
       - family_role
-    unique_keys:
-      main:
-        description: Family membership is defined by family and subject ids.
-        unique_key_slots:
-          - family_id
-          - subject_id
     slot_usage:
+      family_membership_id:
+        range: string
+        required: true
+        identifier: true
       family_id:
         required: true
       subject_id:
@@ -823,9 +823,13 @@ slots:
     inlined: false
   relation:
     description: Code definting the relationship predicate. Relationship of the "Family Member" 
-     to the "Subject", eg, mother of.
+     to the "Subject", eg, mother of. Ideally uses KIN ontology.
     required: true
-    range: uriorcurie
+    range: EnumFamilyRelation
+  family_membership_id:
+    title: Family Relationship ID
+    description: ID for the Family Relationship
+    range: FamilyMembership
   family_role: 
     description: The "role" of this individual in this family. Could include terms like "proband", "mother", etc.
     range: uriorcurie
@@ -1500,4 +1504,17 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
+  EnumFamilyRelation:
+    description: Definitions of family relations as provided by KIN Ontology.
+    is_a: EnumNull
+    reachable_from:
+      source_ontology: http://purl.org/ga4gh/kin.owl
+      source_nodes:
+        - KIN:KIN_001
+      is_direct: false
+      include_self: true
+      relationship_types:
+        - rdfs:subClassOf
+
+
 
