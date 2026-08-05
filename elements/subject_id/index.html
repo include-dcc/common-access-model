@@ -403,13 +403,8 @@ Alias: subject_id</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../FamilyMember/">FamilyMember</a></td>
-<td>Designates a Subject as a member of a family with a specified role</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../Subject/">Subject</a></td>
-<td>This entity is the subject about which data or references are recorded</td>
+<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
+<td>A relationship between two Subjects</td>
 <td>yes</td>
 </tr>
 <tr>
@@ -423,11 +418,6 @@ Alias: subject_id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td>A relationship between two Subjects</td>
-<td>yes</td>
-</tr>
-<tr>
 <td><a href="../File/">File</a></td>
 <td>File</td>
 <td>yes</td>
@@ -436,6 +426,16 @@ Alias: subject_id</p>
 <td><a href="../Encounter/">Encounter</a></td>
 <td>An event at which data was collected about a participant, an intervention was...</td>
 <td>no</td>
+</tr>
+<tr>
+<td><a href="../FamilyMembership/">FamilyMembership</a></td>
+<td>Designates a Subject as a member of a family with a specified role</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../Subject/">Subject</a></td>
+<td>This entity is the subject about which data or references are recorded</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -480,7 +480,7 @@ domain_of:
 - Subject
 - Demographics
 - FamilyRelationship
-- FamilyMember
+- FamilyMembership
 - SubjectAssertion
 - Encounter
 - File

@@ -239,13 +239,14 @@ Family {
     uriorcurie family_study_focus  
     uriorcurieList external_id  
 }
-FamilyMember {
+FamilyMembership {
+    string family_membership_id  
     uriorcurie family_role  
     uriorcurieList external_id  
 }
 FamilyRelationship {
     fmGlobalID family_relationship_id  
-    uriorcurie relation  
+    EnumFamilyRelation relation  
     uriorcurieList external_id  
 }
 File {
@@ -366,10 +367,10 @@ EncounterDefinition ||--|o Study : "study_id"
 EncounterDefinition ||--}o ActivityDefinition : "activity_definition_id"
 Family ||--|o AccessPolicy : "access_policy_id"
 Family ||--|o Study : "study_id"
-FamilyMember ||--|o AccessPolicy : "access_policy_id"
-FamilyMember ||--|o Study : "study_id"
-FamilyMember ||--|| Family : "family_id"
-FamilyMember ||--|| Subject : "subject_id"
+FamilyMembership ||--|o AccessPolicy : "access_policy_id"
+FamilyMembership ||--|o Study : "study_id"
+FamilyMembership ||--|| Family : "family_id"
+FamilyMembership ||--|| Subject : "subject_id"
 FamilyRelationship ||--|o AccessPolicy : "access_policy_id"
 FamilyRelationship ||--|o Study : "study_id"
 FamilyRelationship ||--|| Subject : "family_member_id"

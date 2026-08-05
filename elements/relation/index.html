@@ -387,7 +387,7 @@
 
 
 <h1 id="slot-relation">Slot: relation</h1>
-<p><em>Code definting the relationship predicate. Relationship of the "Family Member" to the "Subject", eg, mother of.</em></p>
+<p><em>Code definting the relationship predicate. Relationship of the "Family Member" to the "Subject", eg, mother of. Ideally uses KIN ontology.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/relation">cam:relation</a>
 Alias: relation</p>
 <!-- no inheritance hierarchy -->
@@ -412,7 +412,7 @@ Alias: relation</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../Uriorcurie/">Uriorcurie</a></p>
+<p>Range: <a href="../EnumFamilyRelation/">EnumFamilyRelation</a></p>
 </li>
 <li>
 <p>Required: True</p>
@@ -447,13 +447,13 @@ Alias: relation</p>
 
 <pre><code class="language-yaml">name: relation
 description: Code definting the relationship predicate. Relationship of the &quot;Family
-  Member&quot; to the &quot;Subject&quot;, eg, mother of.
+  Member&quot; to the &quot;Subject&quot;, eg, mother of. Ideally uses KIN ontology.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 alias: relation
 domain_of:
 - FamilyRelationship
-range: uriorcurie
+range: EnumFamilyRelation
 required: true
 
 </code></pre>

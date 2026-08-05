@@ -266,6 +266,15 @@
 
       FamilyRelationship : relation
 
+
+
+
+
+        FamilyRelationship --&gt; "1" EnumFamilyRelation : relation
+        click EnumFamilyRelation href "../EnumFamilyRelation/"
+
+
+
       FamilyRelationship : study_id
 
 
@@ -322,7 +331,7 @@
 </tr>
 <tr>
 <td><a href="../relation/">relation</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>1 <br/> <a href="../EnumFamilyRelation/">EnumFamilyRelation</a></td>
 <td>Code definting the relationship predicate</td>
 <td>direct</td>
 </tr>
@@ -451,14 +460,14 @@ attributes:
   relation:
     name: relation
     description: Code definting the relationship predicate. Relationship of the "Family
-      Member" to the "Subject", eg, mother of.
+      Member" to the "Subject", eg, mother of. Ideally uses KIN ontology.
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     alias: relation
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
-    range: uriorcurie
+    range: EnumFamilyRelation
     required: true
   subject_id:
     name: subject_id
@@ -472,7 +481,7 @@ attributes:
     - Subject
     - Demographics
     - FamilyRelationship
-    - FamilyMember
+    - FamilyMembership
     - SubjectAssertion
     - Encounter
     - File
