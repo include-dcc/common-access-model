@@ -84,6 +84,10 @@ types:
     uri: xsd:string
     base: str
     description: Dewrangle co global ID. For FHIR Consent Resources.
+  diGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle di global ID. For FHIR Diagnostic Report Resources.
 
 # To be created
   fmGlobalID:
@@ -441,7 +445,7 @@ classes:
   ActivityDefinition:
     title: Activity Definition
     description: A definition of an activity in this study, eg, 
-      a biospecimen collection, intervention, survey, or assessment.
+      a biospecimen collection, assay, intervention, survey, or assessment.
     #TODO: These are metadata and may not need the same Record basis.
     is_a: Record
     slots:
@@ -465,15 +469,17 @@ classes:
       - sample_id
       - filename
       - format
+      - file_extension
       - data_category
       - data_type
       - format
       - size
-      #TODO: I'm not convinced this is the right strategy- access model vs operations
-      - staging_url
-      - release_url
+      - internal_uri #I'm keeping this for now, but it likely should not be here
+      - release_uri
       - drs_uri
+      - storage_class #Taking out the autoclass part as it can change dynamically
       - hash
+      - availability
     slot_usage:
       file_id:
         range: drGlobalID
@@ -483,12 +489,43 @@ classes:
         multivalued: true
       sample_id:
         multivalued: true
+
   FileHash:
     title: File Hash
     description: Type and value of a file content hash.
     slots:
       - hash_type
       - hash_value
+      
+  Assay:
+    title: Assay
+    description: A specific assay that was performed on given subject(s) or sample(s).
+    is_a: Record 
+    slots: 
+      - assay_id
+      - subject_id
+      - sample_id
+      - file_id
+      - assay_type
+      #Could set this up as an assay definition- not sure if we need a more specific entity
+      - assay_source
+      - activity_definition_id
+
+    slot_usage:
+      assay_id:
+        range: diGlobalID
+        required: true
+        identifier: true
+      file_id:
+        multivalued: true
+      subject_id:
+        multivalued: true
+      sample_id:
+        multivalued: true
+      assay_type:
+        required: true
+
+  
   Dataset:
     title: Dataset
     description: Set of files grouped together for release.
@@ -502,7 +539,6 @@ classes:
       #TODO: Are these good elements for the core entity?
       - data_collection_start
       - data_collection_end
-      
     slot_usage:
       dataset_id:
         range: lsGlobalID
@@ -963,32 +999,47 @@ slots:
     title: File Format
     description: The format of the file.
     range: EnumEDAMFormats
+  file_extension:
+    title: File Extension
+    description: Typically a 3-4 letter code at the end of a filename that identifies the file format.
+      Empty string for no extension.
+    range: string
+    required: true
   data_type:
     title: Data Type
     description: The type of data within this file.
     range: EnumEDAMDataTypes
   size:
     title: File Size
-    description: Size of the file, in Bytes.
+    description: Size of the file, in Bytes. May require BigInt or similar.
     range: integer
     unit:
       ucum_code: By   
-  staging_url:
-    title: Staging Location
-    description: URL for internal access to the data. May be temporary.
+  internal_uri:
+    title: Internal Staging Location
+    description: URI/URL for internal access to the data. May be temporary.
     range: uriorcurie
-  release_url:
+  release_uri:
     title: Release Location
-    description: URL for controlled or open access to the data.
+    description: URI/URL for controlled or open access to the data.
     range: uriorcurie  
   drs_uri:
     title: DRS URI
     description: DRS location to access the data.
     range: uriorcurie
+  storage_class:
+    title: Storage Class
+    description: Storage class of the object, reflecting cost and access characteristics.
+    range: string
+  availability:
+    title: File Availability
+    description: Is or was this file available to users?
+    range: EnumFileAvailability
   hash:
     title: File Hash
     description: File hash information
     range: FileHash
+    multivalued: true
   hash_type:
     title: File Hash Type
     description: The type of file hash, eg, md5
@@ -996,6 +1047,18 @@ slots:
   hash_value:
     title: File Hash Value
     description: The value of the file hash
+    range: string
+  assay_id:
+    title: Assay ID
+    description: The unique identifier for the Assay.
+    range: Assay 
+  assay_type:
+    title: Assay Type
+    description: The type of assay performed.
+    range: EnumAssayType 
+  assay_source:
+    title: Assay Source Text
+    description: The original description of the Assay performed.
     range: string
   dataset_id:
     title: Dataset ID
@@ -1418,6 +1481,29 @@ enums:
         meaning: loinc:LA11884-6
         description: This feature was assessed, but unable to be determined 
           as present or absent.
+  EnumFileAvailability:
+    description: Options describing file availability
+    is_a: EnumNull
+    permissible_values:
+      "snomed_ct:103328004":
+        title: Available
+        meaning: snomed_ct:103328004
+        description: The file is available to users, authorization permitting.
+      "snomed_ct:103329007":
+        title: Unavailable
+        meaning: snomed_ct:103329007
+        description: The file is not available to users.
+  EnumAssayType:
+    description: Type of assays performed
+    is_a: EnumNull
+    reachable_from:
+      source_ontology: bioregistry:obi
+      source_nodes:
+        - obi:0000070 #Assay
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
   EnumFamilyRelation:
     description: Definitions of family relations as provided by KIN Ontology.
     is_a: EnumNull
