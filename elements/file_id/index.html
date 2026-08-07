@@ -403,13 +403,18 @@ Alias: file_id</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../File/">File</a></td>
-<td>File</td>
+<td><a href="../Assay/">Assay</a></td>
+<td>A specific assay that was performed on given subject(s) or sample(s)</td>
 <td>yes</td>
 </tr>
 <tr>
 <td><a href="../Dataset/">Dataset</a></td>
 <td>Set of files grouped together for release</td>
+<td>yes</td>
+</tr>
+<tr>
+<td><a href="../File/">File</a></td>
+<td>File</td>
 <td>yes</td>
 </tr>
 </tbody>
@@ -453,6 +458,7 @@ rank: 1000
 alias: file_id
 domain_of:
 - File
+- Assay
 - Dataset
 range: File
 

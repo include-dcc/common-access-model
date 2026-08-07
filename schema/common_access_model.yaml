@@ -152,6 +152,13 @@ types:
     from_schema: https://includedcc.org/common-access-model
     base: str
     uri: xsd:string
+  diGlobalID:
+    name: diGlobalID
+    definition_uri: https://includedcc.org/common-access-model/DiGlobalID
+    description: Dewrangle di global ID. For FHIR Diagnostic Report Resources.
+    from_schema: https://includedcc.org/common-access-model
+    base: str
+    uri: xsd:string
   fmGlobalID:
     name: fmGlobalID
     definition_uri: https://includedcc.org/common-access-model/FmGlobalID
@@ -1015,6 +1022,37 @@ enums:
           or absent.
         meaning: loinc:LA11884-6
         title: Indeterminate
+  EnumFileAvailability:
+    name: EnumFileAvailability
+    definition_uri: https://includedcc.org/common-access-model/EnumFileAvailability
+    description: Options describing file availability
+    from_schema: https://includedcc.org/common-access-model
+    is_a: EnumNull
+    permissible_values:
+      snomed_ct:103328004:
+        text: snomed_ct:103328004
+        description: The file is available to users, authorization permitting.
+        meaning: snomed_ct:103328004
+        title: Available
+      snomed_ct:103329007:
+        text: snomed_ct:103329007
+        description: The file is not available to users.
+        meaning: snomed_ct:103329007
+        title: Unavailable
+  EnumAssayType:
+    name: EnumAssayType
+    definition_uri: https://includedcc.org/common-access-model/EnumAssayType
+    description: Type of assays performed
+    from_schema: https://includedcc.org/common-access-model
+    is_a: EnumNull
+    reachable_from:
+      source_ontology: bioregistry:obi
+      source_nodes:
+      - obi:0000070
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: true
   EnumFamilyRelation:
     name: EnumFamilyRelation
     definition_uri: https://includedcc.org/common-access-model/EnumFamilyRelation
@@ -1134,7 +1172,7 @@ slots:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:subject_id
-    owner: File
+    owner: Assay
     domain_of:
     - Subject
     - Demographics
@@ -1143,6 +1181,7 @@ slots:
     - SubjectAssertion
     - Encounter
     - File
+    - Assay
     range: Subject
     multivalued: false
   assertion_id:
@@ -1911,11 +1950,12 @@ slots:
     title: Sample ID
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:sample_id
-    owner: File
+    owner: Assay
     domain_of:
     - Sample
     - Aliquot
     - File
+    - Assay
     range: Sample
   parent_sample_id:
     name: parent_sample_id
@@ -2152,10 +2192,11 @@ slots:
     title: Activity Definition ID
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:activity_definition_id
-    owner: ActivityDefinition
+    owner: Assay
     domain_of:
     - EncounterDefinition
     - ActivityDefinition
+    - Assay
     range: ActivityDefinition
   file_id:
     name: file_id
@@ -2167,6 +2208,7 @@ slots:
     owner: Dataset
     domain_of:
     - File
+    - Assay
     - Dataset
     range: File
   filename:
@@ -2191,6 +2233,19 @@ slots:
     domain_of:
     - File
     range: EnumEDAMFormats
+  file_extension:
+    name: file_extension
+    definition_uri: https://includedcc.org/common-access-model/file_extension
+    description: Typically a 3-4 letter code at the end of a filename that identifies
+      the file format. Empty string for no extension.
+    title: File Extension
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:file_extension
+    owner: File
+    domain_of:
+    - File
+    range: string
+    required: true
   data_type:
     name: data_type
     definition_uri: https://includedcc.org/common-access-model/data_type
@@ -2205,7 +2260,7 @@ slots:
   size:
     name: size
     definition_uri: https://includedcc.org/common-access-model/size
-    description: Size of the file, in Bytes.
+    description: Size of the file, in Bytes. May require BigInt or similar.
     title: File Size
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:size
@@ -2215,24 +2270,24 @@ slots:
     range: integer
     unit:
       ucum_code: By
-  staging_url:
-    name: staging_url
-    definition_uri: https://includedcc.org/common-access-model/staging_url
-    description: URL for internal access to the data. May be temporary.
-    title: Staging Location
+  internal_uri:
+    name: internal_uri
+    definition_uri: https://includedcc.org/common-access-model/internal_uri
+    description: URI/URL for internal access to the data. May be temporary.
+    title: Internal Staging Location
     from_schema: https://includedcc.org/common-access-model
-    slot_uri: cam:staging_url
+    slot_uri: cam:internal_uri
     owner: File
     domain_of:
     - File
     range: uriorcurie
-  release_url:
-    name: release_url
-    definition_uri: https://includedcc.org/common-access-model/release_url
-    description: URL for controlled or open access to the data.
+  release_uri:
+    name: release_uri
+    definition_uri: https://includedcc.org/common-access-model/release_uri
+    description: URI/URL for controlled or open access to the data.
     title: Release Location
     from_schema: https://includedcc.org/common-access-model
-    slot_uri: cam:release_url
+    slot_uri: cam:release_uri
     owner: File
     domain_of:
     - File
@@ -2248,6 +2303,28 @@ slots:
     domain_of:
     - File
     range: uriorcurie
+  storage_class:
+    name: storage_class
+    definition_uri: https://includedcc.org/common-access-model/storage_class
+    description: Storage class of the object, reflecting cost and access characteristics.
+    title: Storage Class
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:storage_class
+    owner: File
+    domain_of:
+    - File
+    range: string
+  availability:
+    name: availability
+    definition_uri: https://includedcc.org/common-access-model/availability
+    description: Is or was this file available to users?
+    title: File Availability
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:availability
+    owner: File
+    domain_of:
+    - File
+    range: EnumFileAvailability
   hash:
     name: hash
     definition_uri: https://includedcc.org/common-access-model/hash
@@ -2259,6 +2336,7 @@ slots:
     domain_of:
     - File
     range: FileHash
+    multivalued: true
     inlined: true
     inlined_as_list: true
   hash_type:
@@ -2282,6 +2360,39 @@ slots:
     owner: FileHash
     domain_of:
     - FileHash
+    range: string
+  assay_id:
+    name: assay_id
+    definition_uri: https://includedcc.org/common-access-model/assay_id
+    description: The unique identifier for the Assay.
+    title: Assay ID
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:assay_id
+    owner: Assay
+    domain_of:
+    - Assay
+    range: Assay
+  assay_type:
+    name: assay_type
+    definition_uri: https://includedcc.org/common-access-model/assay_type
+    description: The type of assay performed.
+    title: Assay Type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:assay_type
+    owner: Assay
+    domain_of:
+    - Assay
+    range: EnumAssayType
+  assay_source:
+    name: assay_source
+    definition_uri: https://includedcc.org/common-access-model/assay_source
+    description: The original description of the Assay performed.
+    title: Assay Source Text
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:assay_source
+    owner: Assay
+    domain_of:
+    - Assay
     range: string
   dataset_id:
     name: dataset_id
@@ -2807,6 +2918,92 @@ slots:
     usage_slot_name: sample_id
     range: Sample
     multivalued: true
+  Assay_assay_id:
+    name: Assay_assay_id
+    definition_uri: https://includedcc.org/common-access-model/assay_id
+    description: The unique identifier for the Assay.
+    title: Assay ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: assay_id
+    domain: Assay
+    slot_uri: cam:assay_id
+    identifier: true
+    alias: assay_id
+    owner: Assay
+    domain_of:
+    - Assay
+    is_usage_slot: true
+    usage_slot_name: assay_id
+    range: diGlobalID
+    required: true
+  Assay_file_id:
+    name: Assay_file_id
+    definition_uri: https://includedcc.org/common-access-model/file_id
+    description: Unique identifier for this File.
+    title: File ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: file_id
+    domain: Assay
+    slot_uri: cam:file_id
+    alias: file_id
+    owner: Assay
+    domain_of:
+    - Assay
+    is_usage_slot: true
+    usage_slot_name: file_id
+    range: File
+    multivalued: true
+  Assay_subject_id:
+    name: Assay_subject_id
+    definition_uri: https://includedcc.org/common-access-model/subject_id
+    description: INCLUDE Global ID for the Subject
+    title: Study ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: subject_id
+    domain: Assay
+    slot_uri: cam:subject_id
+    alias: subject_id
+    owner: Assay
+    domain_of:
+    - Assay
+    is_usage_slot: true
+    usage_slot_name: subject_id
+    range: Subject
+    multivalued: true
+  Assay_sample_id:
+    name: Assay_sample_id
+    definition_uri: https://includedcc.org/common-access-model/sample_id
+    description: The unique identifier for this Sample.
+    title: Sample ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: sample_id
+    domain: Assay
+    slot_uri: cam:sample_id
+    alias: sample_id
+    owner: Assay
+    domain_of:
+    - Assay
+    is_usage_slot: true
+    usage_slot_name: sample_id
+    range: Sample
+    multivalued: true
+  Assay_assay_type:
+    name: Assay_assay_type
+    definition_uri: https://includedcc.org/common-access-model/assay_type
+    description: The type of assay performed.
+    title: Assay Type
+    from_schema: https://includedcc.org/common-access-model
+    is_a: assay_type
+    domain: Assay
+    slot_uri: cam:assay_type
+    alias: assay_type
+    owner: Assay
+    domain_of:
+    - Assay
+    is_usage_slot: true
+    usage_slot_name: assay_type
+    range: EnumAssayType
+    required: true
   Dataset_dataset_id:
     name: Dataset_dataset_id
     definition_uri: https://includedcc.org/common-access-model/dataset_id
@@ -3333,7 +3530,7 @@ classes:
     name: ActivityDefinition
     definition_uri: https://includedcc.org/common-access-model/ActivityDefinition
     description: A definition of an activity in this study, eg, a biospecimen collection,
-      intervention, survey, or assessment.
+      assay, intervention, survey, or assessment.
     title: Activity Definition
     from_schema: https://includedcc.org/common-access-model
     is_a: Record
@@ -3367,14 +3564,17 @@ classes:
     - File_sample_id
     - filename
     - format
+    - file_extension
     - data_category
     - data_type
     - format
     - size
-    - staging_url
-    - release_url
+    - internal_uri
+    - release_uri
     - drs_uri
+    - storage_class
     - hash
+    - availability
     slot_usage:
       file_id:
         name: file_id
@@ -3398,6 +3598,43 @@ classes:
     - hash_type
     - hash_value
     class_uri: cam:FileHash
+  Assay:
+    name: Assay
+    definition_uri: https://includedcc.org/common-access-model/Assay
+    description: A specific assay that was performed on given subject(s) or sample(s).
+    title: Assay
+    from_schema: https://includedcc.org/common-access-model
+    is_a: Record
+    slots:
+    - external_id
+    - access_policy_id
+    - study_id
+    - Assay_assay_id
+    - Assay_subject_id
+    - Assay_sample_id
+    - Assay_file_id
+    - Assay_assay_type
+    - assay_source
+    - activity_definition_id
+    slot_usage:
+      assay_id:
+        name: assay_id
+        identifier: true
+        range: diGlobalID
+        required: true
+      file_id:
+        name: file_id
+        multivalued: true
+      subject_id:
+        name: subject_id
+        multivalued: true
+      sample_id:
+        name: sample_id
+        multivalued: true
+      assay_type:
+        name: assay_type
+        required: true
+    class_uri: cam:Assay
   Dataset:
     name: Dataset
     definition_uri: https://includedcc.org/common-access-model/Dataset
@@ -3426,7 +3663,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-05T18:27:00'
-source_file_size: 44015
-generation_date: '2026-08-05T18:27:16'
+source_file_date: '2026-08-07T18:49:26'
+source_file_size: 46551
+generation_date: '2026-08-07T18:49:42'
 

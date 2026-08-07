@@ -237,7 +237,7 @@
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
 <h1 id="class-activity-definition-activitydefinition">Class: Activity Definition (ActivityDefinition)</h1>
-<p><em>A definition of an activity in this study, eg, a biospecimen collection, intervention, survey, or assessment.</em></p>
+<p><em>A definition of an activity in this study, eg, a biospecimen collection, assay, intervention, survey, or assessment.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/ActivityDefinition">cam:ActivityDefinition</a></p>
 <div class="mermaid"> classDiagram
     class ActivityDefinition
@@ -350,6 +350,12 @@
 <td>range</td>
 <td><a href="./">ActivityDefinition</a></td>
 </tr>
+<tr>
+<td><a href="../Assay/">Assay</a></td>
+<td><a href="../activity_definition_id/">activity_definition_id</a></td>
+<td>range</td>
+<td><a href="./">ActivityDefinition</a></td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -382,7 +388,7 @@
 <details>
 <pre><code class="language-yaml">name: ActivityDefinition
 description: A definition of an activity in this study, eg, a biospecimen collection,
-  intervention, survey, or assessment.
+  assay, intervention, survey, or assessment.
 title: Activity Definition
 from_schema: https://includedcc.org/common-access-model
 is_a: Record
@@ -403,7 +409,7 @@ slot_usage:
 <details>
 <pre><code class="language-yaml">name: ActivityDefinition
 description: A definition of an activity in this study, eg, a biospecimen collection,
-  intervention, survey, or assessment.
+  assay, intervention, survey, or assessment.
 title: Activity Definition
 from_schema: https://includedcc.org/common-access-model
 is_a: Record
@@ -426,6 +432,7 @@ attributes:
     domain_of:
     - EncounterDefinition
     - ActivityDefinition
+    - Assay
     range: adGlobalID
     required: true
   name:

@@ -256,6 +256,17 @@
 
 
 
+      File : availability
+
+
+
+
+
+        File --&gt; "0..1" EnumFileAvailability : availability
+        click EnumFileAvailability href "../EnumFileAvailability/"
+
+
+
       File : data_category
 
 
@@ -282,6 +293,8 @@
 
       File : external_id
 
+      File : file_extension
+
       File : file_id
 
       File : filename
@@ -303,12 +316,14 @@
 
 
 
-        File --&gt; "0..1" FileHash : hash
+        File --&gt; "*" FileHash : hash
         click FileHash href "../FileHash/"
 
 
 
-      File : release_url
+      File : internal_uri
+
+      File : release_uri
 
       File : sample_id
 
@@ -323,7 +338,7 @@
 
       File : size
 
-      File : staging_url
+      File : storage_class
 
       File : study_id
 
@@ -398,6 +413,12 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../file_extension/">file_extension</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>Typically a 3-4 letter code at the end of a filename that identifies the file...</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../data_category/">data_category</a></td>
 <td>0..1 <br/> <a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
@@ -422,15 +443,15 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../staging_url/">staging_url</a></td>
+<td><a href="../internal_uri/">internal_uri</a></td>
 <td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>URL for internal access to the data</td>
+<td>URI/URL for internal access to the data</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../release_url/">release_url</a></td>
+<td><a href="../release_uri/">release_uri</a></td>
 <td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>URL for controlled or open access to the data</td>
+<td>URI/URL for controlled or open access to the data</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -440,9 +461,21 @@
 <td>direct</td>
 </tr>
 <tr>
+<td><a href="../storage_class/">storage_class</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Storage class of the object, reflecting cost and access characteristics</td>
+<td>direct</td>
+</tr>
+<tr>
 <td><a href="../hash/">hash</a></td>
-<td>0..1 <br/> <a href="../FileHash/">FileHash</a></td>
+<td>* <br/> <a href="../FileHash/">FileHash</a></td>
 <td>File hash information</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../availability/">availability</a></td>
+<td>0..1 <br/> <a href="../EnumFileAvailability/">EnumFileAvailability</a></td>
+<td>Is or was this file available to users?</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -476,6 +509,12 @@
 </tr>
 </thead>
 <tbody>
+<tr>
+<td><a href="../Assay/">Assay</a></td>
+<td><a href="../file_id/">file_id</a></td>
+<td>range</td>
+<td><a href="./">File</a></td>
+</tr>
 <tr>
 <td><a href="../Dataset/">Dataset</a></td>
 <td><a href="../file_id/">file_id</a></td>
@@ -523,14 +562,17 @@ slots:
 - sample_id
 - filename
 - format
+- file_extension
 - data_category
 - data_type
 - format
 - size
-- staging_url
-- release_url
+- internal_uri
+- release_uri
 - drs_uri
+- storage_class
 - hash
+- availability
 slot_usage:
   file_id:
     name: file_id
@@ -577,6 +619,7 @@ attributes:
     owner: File
     domain_of:
     - File
+    - Assay
     - Dataset
     range: drGlobalID
     required: true
@@ -596,6 +639,7 @@ attributes:
     - SubjectAssertion
     - Encounter
     - File
+    - Assay
     range: Subject
     multivalued: true
   sample_id:
@@ -610,6 +654,7 @@ attributes:
     - Sample
     - Aliquot
     - File
+    - Assay
     range: Sample
     multivalued: true
   filename:
@@ -634,6 +679,19 @@ attributes:
     domain_of:
     - File
     range: EnumEDAMFormats
+  file_extension:
+    name: file_extension
+    description: Typically a 3-4 letter code at the end of a filename that identifies
+      the file format. Empty string for no extension.
+    title: File Extension
+    from_schema: https://includedcc.org/common-access-model
+    rank: 1000
+    alias: file_extension
+    owner: File
+    domain_of:
+    - File
+    range: string
+    required: true
   data_category:
     name: data_category
     description: General category of data in this Record (e.g. Clinical, Genomics,
@@ -660,7 +718,7 @@ attributes:
     range: EnumEDAMDataTypes
   size:
     name: size
-    description: Size of the file, in Bytes.
+    description: Size of the file, in Bytes. May require BigInt or similar.
     title: File Size
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
@@ -671,24 +729,24 @@ attributes:
     range: integer
     unit:
       ucum_code: By
-  staging_url:
-    name: staging_url
-    description: URL for internal access to the data. May be temporary.
-    title: Staging Location
+  internal_uri:
+    name: internal_uri
+    description: URI/URL for internal access to the data. May be temporary.
+    title: Internal Staging Location
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: staging_url
+    alias: internal_uri
     owner: File
     domain_of:
     - File
     range: uriorcurie
-  release_url:
-    name: release_url
-    description: URL for controlled or open access to the data.
+  release_uri:
+    name: release_uri
+    description: URI/URL for controlled or open access to the data.
     title: Release Location
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: release_url
+    alias: release_uri
     owner: File
     domain_of:
     - File
@@ -704,6 +762,17 @@ attributes:
     domain_of:
     - File
     range: uriorcurie
+  storage_class:
+    name: storage_class
+    description: Storage class of the object, reflecting cost and access characteristics.
+    title: Storage Class
+    from_schema: https://includedcc.org/common-access-model
+    rank: 1000
+    alias: storage_class
+    owner: File
+    domain_of:
+    - File
+    range: string
   hash:
     name: hash
     description: File hash information
@@ -715,6 +784,18 @@ attributes:
     domain_of:
     - File
     range: FileHash
+    multivalued: true
+  availability:
+    name: availability
+    description: Is or was this file available to users?
+    title: File Availability
+    from_schema: https://includedcc.org/common-access-model
+    rank: 1000
+    alias: availability
+    owner: File
+    domain_of:
+    - File
+    range: EnumFileAvailability
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

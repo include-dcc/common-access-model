@@ -186,6 +186,12 @@ Aliquot {
 Any {
 
 }
+Assay {
+    diGlobalID assay_id  
+    EnumAssayType assay_type  
+    string assay_source  
+    uriorcurieList external_id  
+}
 BiospecimenCollection {
     string biospecimen_collection_id  
     float age_at_collection  
@@ -253,12 +259,15 @@ File {
     drGlobalID file_id  
     string filename  
     EnumEDAMFormats format  
+    string file_extension  
     EnumDataCategory data_category  
     EnumEDAMDataTypes data_type  
     integer size  
-    uriorcurie staging_url  
-    uriorcurie release_url  
+    uriorcurie internal_uri  
+    uriorcurie release_uri  
     uriorcurie drs_uri  
+    string storage_class  
+    EnumFileAvailability availability  
     uriorcurieList external_id  
 }
 FileHash {
@@ -347,6 +356,12 @@ Aliquot ||--|o Concept : "concentration_unit"
 Aliquot ||--|o Concept : "quantity_unit"
 Aliquot ||--|o Sample : "sample_id"
 Aliquot ||--|o Study : "study_id"
+Assay ||--|o AccessPolicy : "access_policy_id"
+Assay ||--|o ActivityDefinition : "activity_definition_id"
+Assay ||--|o Study : "study_id"
+Assay ||--}o File : "file_id"
+Assay ||--}o Sample : "sample_id"
+Assay ||--}o Subject : "subject_id"
 BiospecimenCollection ||--|o AccessPolicy : "access_policy_id"
 BiospecimenCollection ||--|o Encounter : "encounter_id"
 BiospecimenCollection ||--|o Study : "study_id"
@@ -376,8 +391,8 @@ FamilyRelationship ||--|o Study : "study_id"
 FamilyRelationship ||--|| Subject : "family_member_id"
 FamilyRelationship ||--|| Subject : "subject_id"
 File ||--|o AccessPolicy : "access_policy_id"
-File ||--|o FileHash : "hash"
 File ||--|o Study : "study_id"
+File ||--}o FileHash : "hash"
 File ||--}o Sample : "sample_id"
 File ||--}o Subject : "subject_id"
 Investigator ||--|o AccessPolicy : "access_policy_id"

@@ -499,11 +499,15 @@
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="ActivityDefinition/">ActivityDefinition</a></td>
-<td>A definition of an activity in this study, eg, a biospecimen collection, inte...</td>
+<td>A definition of an activity in this study, eg, a biospecimen collection, assa...</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Aliquot/">Aliquot</a></td>
 <td>A specific tube or amount of a biospecimen associated with a Sample</td>
+</tr>
+<tr>
+<td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="Assay/">Assay</a></td>
+<td>A specific assay that was performed on given subject(s) or sample(s)</td>
 </tr>
 <tr>
 <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="BiospecimenCollection/">BiospecimenCollection</a></td>
@@ -633,12 +637,28 @@
 <td>Unique identifier for an Aliquot</td>
 </tr>
 <tr>
+<td><a href="assay_id/">assay_id</a></td>
+<td>The unique identifier for the Assay</td>
+</tr>
+<tr>
+<td><a href="assay_source/">assay_source</a></td>
+<td>The original description of the Assay performed</td>
+</tr>
+<tr>
+<td><a href="assay_type/">assay_type</a></td>
+<td>The type of assay performed</td>
+</tr>
+<tr>
 <td><a href="assertion_id/">assertion_id</a></td>
 <td>INCLUDE Global ID for the Assertion</td>
 </tr>
 <tr>
 <td><a href="assertion_provenance/">assertion_provenance</a></td>
 <td>The original source of this assertion</td>
+</tr>
+<tr>
+<td><a href="availability/">availability</a></td>
+<td>Is or was this file available to users?</td>
 </tr>
 <tr>
 <td><a href="availablity_status/">availablity_status</a></td>
@@ -797,6 +817,10 @@
 <td>Describes the 'type' of study family, eg, trio</td>
 </tr>
 <tr>
+<td><a href="file_extension/">file_extension</a></td>
+<td>Typically a 3-4 letter code at the end of a filename that identifies the file...</td>
+</tr>
+<tr>
 <td><a href="file_id/">file_id</a></td>
 <td>Unique identifier for this File</td>
 </tr>
@@ -827,6 +851,10 @@
 <tr>
 <td><a href="institution/">institution</a></td>
 <td>Name of the institution this record is associated with</td>
+</tr>
+<tr>
+<td><a href="internal_uri/">internal_uri</a></td>
+<td>URI/URL for internal access to the data</td>
 </tr>
 <tr>
 <td><a href="investigator_title/">investigator_title</a></td>
@@ -893,8 +921,8 @@
 <td>Code definting the relationship predicate</td>
 </tr>
 <tr>
-<td><a href="release_url/">release_url</a></td>
-<td>URL for controlled or open access to the data</td>
+<td><a href="release_uri/">release_uri</a></td>
+<td>URI/URL for controlled or open access to the data</td>
 </tr>
 <tr>
 <td><a href="research_domain/">research_domain</a></td>
@@ -929,8 +957,8 @@
 <td>Qualifier that further refine the specific location of biospecimen collection</td>
 </tr>
 <tr>
-<td><a href="staging_url/">staging_url</a></td>
-<td>URL for internal access to the data</td>
+<td><a href="storage_class/">storage_class</a></td>
+<td>Storage class of the object, reflecting cost and access characteristics</td>
 </tr>
 <tr>
 <td><a href="storage_method/">storage_method</a></td>
@@ -1016,6 +1044,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="EnumAssayType/">EnumAssayType</a></td>
+<td>Type of assays performed</td>
+</tr>
+<tr>
 <td><a href="EnumAssertionProvenance/">EnumAssertionProvenance</a></td>
 <td>Possible data sources for assertions</td>
 </tr>
@@ -1062,6 +1094,10 @@
 <tr>
 <td><a href="EnumFamilyType/">EnumFamilyType</a></td>
 <td>Enumerations describing research family type</td>
+</tr>
+<tr>
+<td><a href="EnumFileAvailability/">EnumFileAvailability</a></td>
+<td>Options describing file availability</td>
 </tr>
 <tr>
 <td><a href="EnumFileHashType/">EnumFileHashType</a></td>
@@ -1173,6 +1209,10 @@
 <tr>
 <td><a href="DeGlobalID/">DeGlobalID</a></td>
 <td>Dewrangle de global ID</td>
+</tr>
+<tr>
+<td><a href="DiGlobalID/">DiGlobalID</a></td>
+<td>Dewrangle di global ID</td>
 </tr>
 <tr>
 <td><a href="Double/">Double</a></td>
