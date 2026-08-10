@@ -1,0 +1,14 @@
+---
+id: https://includedcc.org/common-access-model/EnumProgram
+name: EnumProgram
+enums:
+  EnumProgram:
+    title: Funding Programs
+    description: Funding programs relevant to inform operations.
+    permissible_values:
+      include:
+        title: INCLUDE
+      kf:
+        title: KF
+      other:
+        title: Other

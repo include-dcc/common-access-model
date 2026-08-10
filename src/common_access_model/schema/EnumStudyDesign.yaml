@@ -1,0 +1,30 @@
+---
+id: https://includedcc.org/common-access-model/EnumStudyDesign
+name: EnumStudyDesign
+enums:
+  EnumStudyDesign:
+    title: Study Design
+    description: Approaches for collecting data, investigating interventions, 
+      and/or analyzing data.
+    #TODO: Add meanings
+    permissible_values:
+      case_control:
+        title: Case-Control
+      case_set:
+        title: Case Set
+      control_set:
+        title: Control Set
+      clinical_trial:
+        title: Clinical Trial
+      cross_sectional:
+        title: Cross-Sectional
+      family_twins_trios:
+        title: Family/Twins/Trios
+      interventional:
+        title: Interventional
+      longitudinal:
+        title: Longitudinal
+      trial_readiness_study:
+        title: Trial Readiness Study
+      tumor_vs_matched_normal:
+        title: Tumor vs Matched Normal

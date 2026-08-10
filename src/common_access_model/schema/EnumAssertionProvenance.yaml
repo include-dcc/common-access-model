@@ -1,0 +1,23 @@
+---
+id: https://includedcc.org/common-access-model/EnumAssertionProvenance
+name: EnumAssertionProvenance
+enums:
+  EnumAssertionProvenance:
+    description: Possible data sources for assertions.
+    is_a: EnumNull
+    permissible_values:
+      medical_record:
+        title: Medical Record
+        description: Data obtained from a medical record
+      investigator_assessment:
+        title: Investigator Assessment
+        description: Data obtained by examination, interview, etc. with 
+          investigator
+      participant_or_caregiver_report:
+        title: Participant or Caregiver Report
+        description: Data obtained from survey, questionnaire, etc. filled out 
+          by participant or caregiver
+      other:
+        title: Other
+        description: Data obtained from other source, such as tissue bank
+  #TODO: Revisit these bindings / enumerations

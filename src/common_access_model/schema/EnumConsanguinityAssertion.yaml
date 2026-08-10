@@ -1,0 +1,23 @@
+---
+id: https://includedcc.org/common-access-model/EnumConsanguinityAssertion
+name: EnumConsanguinityAssertion
+enums:
+  EnumConsanguinityAssertion:
+    description: Asserts known or suspected consanguinity in this study family
+    permissible_values:
+      not_suspected:
+        title: not-suspected
+        description: Not suspected
+        meaning: snomed_ct:428263003
+      suspected:
+        title: suspected
+        description: Suspected
+        meaning: snomed_ct:415684004
+      known_present:
+        title: known-present
+        description: Known Present
+        meaning: snomed_ct:410515003
+      unknown:
+        title: unknown
+        description: Unknown
+        meaning: snomed_ct:261665006

@@ -1,0 +1,14 @@
+---
+id: https://includedcc.org/common-access-model/EnumVitalStatus
+name: EnumVitalStatus
+enums:
+  EnumVitalStatus:
+    description: Descriptions of a Subject's vital status
+    is_a: EnumNull
+    permissible_values:
+      dead:
+        title: Dead
+        meaning: NCIT:C28554
+      alive:
+        title: Alive
+        meaning: NCIT:C37987

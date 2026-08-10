@@ -1,0 +1,19 @@
+---
+id: https://includedcc.org/common-access-model/EnumSex
+name: EnumSex
+enums:
+  EnumSex:
+    description: Subject Sex
+    permissible_values:
+      female:
+        title: Female
+        meaning: NCIT:C16576
+      male:
+        title: Male
+        meaning: NCIT:C20197
+      other:
+        title: Other
+        meaning: NCIT:C17649
+      unknown:
+        title: Unknown
+        meaning: NCIT:C17998

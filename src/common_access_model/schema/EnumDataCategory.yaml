@@ -1,0 +1,41 @@
+---
+id: https://includedcc.org/common-access-model/EnumDataCategory
+name: EnumDataCategory
+enums:
+  EnumDataCategory:
+    title: Data Category
+    description: Categories of data which may be collected about participants.
+    #TODO: Add meanings
+    permissible_values:
+    #Should we have these two demo/clinical data categories?
+      unharmonized_demographic_clinical_data:
+        title: Unharmonized Demographic/Clinical Data
+      harmonized_demographic_clinical_data:
+        title: Harmonized Demographic/Clinical Data
+      genomics:
+        title: Genomics
+      transcriptomics:
+        title: Transcriptomics
+      epigenomics:
+        title: Epigenomics
+      proteomics:
+        title: Proteomics
+      metabolomics:
+        title: Metabolomics
+      cognitive_behavioral:
+        title: Cognitive/Behavioral
+      immune_profiling:
+        title: Immune Profiling
+      imaging:
+        title: Imaging
+      microbiome:
+        title: Microbiome
+      #What is the difference between these two?
+      fitness:
+        title: Fitness
+      physical_activity:
+        title: Physical Activity
+      other:
+        title: Other
+      sleep_study:
+        title: Sleep Study

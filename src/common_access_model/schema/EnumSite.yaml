@@ -1,0 +1,7 @@
+---
+id: https://includedcc.org/common-access-model/EnumSite
+name: EnumSite
+enums:
+  EnumSite:
+    description: The location of the specimen collection. [SNOMED Body 
+      Site](https://hl7.org/fhir/R4B/valueset-body-site.html) is recommended.

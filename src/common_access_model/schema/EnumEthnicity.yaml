@@ -1,0 +1,23 @@
+---
+id: https://includedcc.org/common-access-model/EnumEthnicity
+name: EnumEthnicity
+enums:
+  EnumEthnicity:
+    description: Participant ethnicity, specific to Hispanic or Latino.
+    permissible_values:
+      # asked_but_unknown:
+      #   text: asked_but_unknown
+      #   title: Asked but unknown
+      hispanic_or_latino:
+        title: Hispanic or Latino
+        meaning: NCIT:C17459
+      not_hispanic_or_latino:
+        title: Not Hispanic or Latino
+        meaning: NCIT:C41222
+      #This should likely be rolled into a null flavor
+      prefer_not_to_answer:
+        title: Prefer not to answer
+        meaning: NCIT:C132222
+      unknown:
+        title: Unknown
+        meaning: NCIT:C17998

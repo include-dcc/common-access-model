@@ -1,0 +1,50 @@
+---
+id: https://includedcc.org/common-access-model/EnumRace
+name: EnumRace
+enums:
+  EnumRace:
+    description: Participant Race
+    permissible_values:
+      american_indian_or_alaska_native:
+        title: American Indian or Alaska Native
+        meaning: NCIT:C41259
+      asian:
+        title: Asian
+        meaning: NCIT:C41260
+      black_or_african_american:
+        title: Black or African American
+        meaning: NCIT:C16352
+      more_than_one_race:
+        title: More than one race
+        meaning: NCIT:C67109
+      native_hawaiian_or_other_pacific_islander:
+        title: Native Hawaiian or Other Pacific Islander
+        meaning: NCIT:C41219
+      other:
+        title: Other
+        meaning: NCIT:C17649
+      white:
+        title: White
+        meaning: NCIT:C41261
+      prefer_not_to_answer:
+        title: Prefer not to answer
+        meaning: NCIT:C132222
+      unknown:
+        title: Unknown
+        meaning: NCIT:C17998
+      east_asian:
+        title: East Asian
+        description: UK only; do not use for US data
+        meaning: NCIT:C161419
+      latin_american:
+        title: Latin American
+        description: UK only; do not use for US data
+        meaning: NCIT:C126531
+      middle_eastern_or_north_african:
+        title: Middle Eastern or North African
+        description: UK only; do not use for US data
+        meaning: NCIT:C43866
+      south_asian:
+        title: South Asian
+        description: UK only; do not use for US data
+        meaning: NCIT:C41263

@@ -1,0 +1,20 @@
+---
+id: https://includedcc.org/common-access-model/EnumSpatialQualifiers
+name: EnumSpatialQualifiers
+enums:
+  EnumSpatialQualifiers:
+    description: Any spatial/location qualifiers.
+    enum_uri: 
+      http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+      source_nodes:
+      - snomedct:106233006
+      - snomedct:272424004
+      - snomedct:51440002
+      - snomedct:399488007
+      - snomedct:24028007
+      - snomedct:7771000
+      is_direct: false
+      relationship_types:
+      - rdfs:subClassOf

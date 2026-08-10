@@ -1,0 +1,20 @@
+---
+id: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
+name: EnumParticipantLifespanStage
+enums:
+  EnumParticipantLifespanStage:
+    title: Participant Lifespan Stage
+    description: Stages of life during which participants may be recruited.
+    permissible_values:
+      fetal:
+        title: Fetal
+        description: Before birth
+      neonatal:
+        title: Neonatal
+        description: 0-28 days old
+      pediatric:
+        title: Pediatric
+        description: Birth-17 years old
+      adult:
+        title: Adult
+        description: 18+ years old

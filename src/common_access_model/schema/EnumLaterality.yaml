@@ -1,0 +1,6 @@
+---
+id: https://includedcc.org/common-access-model/EnumLaterality
+name: EnumLaterality
+enums:
+  EnumLaterality:
+    description: Laterality information for the site

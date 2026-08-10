@@ -1,0 +1,16 @@
+---
+id: https://includedcc.org/common-access-model/EnumFileAvailability
+name: EnumFileAvailability
+enums:
+  EnumFileAvailability:
+    description: Options describing file availability
+    is_a: EnumNull
+    permissible_values:
+      snomed_ct:103328004:
+        title: Available
+        meaning: snomed_ct:103328004
+        description: The file is available to users, authorization permitting.
+      snomed_ct:103329007:
+        title: Unavailable
+        meaning: snomed_ct:103329007
+        description: The file is not available to users.

@@ -1,0 +1,7 @@
+---
+id: https://includedcc.org/common-access-model/EnumSampleCollectionMethod
+name: EnumSampleCollectionMethod
+enums:
+  EnumSampleCollectionMethod:
+    description: The approach used to collect the biospecimen. 
+      [LOINC](https://loinc.org) is recommended.

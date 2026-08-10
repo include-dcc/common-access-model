@@ -1,0 +1,14 @@
+---
+id: https://includedcc.org/common-access-model/EnumDataUseModifier
+name: EnumDataUseModifier
+enums:
+  EnumDataUseModifier:
+    title: Data Use Modifier
+    description: Data Use Ontology (DUO) terms for data use modifiers.
+    reachable_from:
+      source_ontology: bioregistry:duo
+      source_nodes:
+      - DUO:0000017
+      is_direct: false
+      relationship_types:
+      - rdfs:subClassOf

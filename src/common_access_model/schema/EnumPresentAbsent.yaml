@@ -1,0 +1,22 @@
+---
+id: https://includedcc.org/common-access-model/EnumPresentAbsent
+name: EnumPresentAbsent
+enums:
+  EnumPresentAbsent:
+    description: Options for Phenotypic Feature Assertions that may be present, 
+      absent, or indeterminate. Derived from https://loinc.org/LL750-1
+    is_a: EnumNull
+    permissible_values:
+      loinc:LA9633-4:
+        title: Present
+        meaning: loinc:LA9633-4
+        description: This feature was determined to be present.
+      loinc:LA9634-2:
+        title: Absent
+        meaning: loinc:LA9634-2
+        description: This feature was determined to be absent.
+      loinc:LA11884-6:
+        title: Indeterminate
+        meaning: loinc:LA11884-6
+        description: This feature was assessed, but unable to be determined as 
+          present or absent.

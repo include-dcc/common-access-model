@@ -1,0 +1,35 @@
+---
+id: https://includedcc.org/common-access-model/EnumResearchDomain
+name: EnumResearchDomain
+enums:
+  EnumResearchDomain:
+    title: Research Domain
+    description: Domains of Research used to find studies.
+    #TODO: replace/add NIH internal categories from Huiqing
+    permissible_values:
+      behavior_and_behavior_mechanisms:
+        title: Behavior and Behavior Mechanisms
+        meaning: mesh:D001520
+      congenital_heart_defects:
+        title: Congenital Heart Defects
+        meaning: mesh:D006330
+      immune_system_diseases:
+        title: Immune System Diseases
+        meaning: mesh:D007154
+      hematologic_diseases:
+        title: Hematologic Diseases
+        meaning: mesh:D006402
+      neurodevelopment:
+        title: Neurodevelopment
+        meaning: mesh:D065886
+      sleep_wake_disorders:
+        title: Sleep Wake Disorders
+        meaning: mesh:D012893
+      all_co_occurring_conditions:
+        title: All Co-occurring Conditions
+        meaning: mesh:D013568
+      physical_fitness:
+        title: Physical Fitness
+        meaning: mesh:D010809
+      other:
+        title: Other

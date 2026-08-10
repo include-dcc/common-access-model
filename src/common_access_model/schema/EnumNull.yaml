@@ -1,0 +1,10 @@
+---
+id: https://includedcc.org/common-access-model/EnumNull
+name: EnumNull
+enums:
+  EnumNull:
+    description: Base enumeration providing null options.
+    permissible_values:
+      unknown:
+        title: Unknown
+        meaning: NCIT:C17998
