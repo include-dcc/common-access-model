@@ -1,4 +1,3 @@
----
 id: https://includedcc.org/common-access-model/EnumFamilyType
 name: EnumFamilyType
 enums:
@@ -6,18 +5,33 @@ enums:
     description: Enumerations describing research family type
     is_a: EnumNull
     permissible_values:
-      control_only:
+      CAM:0000044:
         title: Control-only
         description: Control Only
-      duo:
+        meaning: CAM:0000044
+        aliases:
+        - control_only
+      CAM:0000045:
         title: Duo
         description: Duo
-      proband_only:
+        meaning: CAM:0000045
+        aliases:
+        - duo
+      CAM:0000046:
         title: Proband-only
         description: Proband Only
-      trio:
+        meaning: CAM:0000046
+        aliases:
+        - proband_only
+      CAM:0000047:
         title: Trio
         description: Trio (2 parents and affected child)
-      trio_plus:
+        meaning: CAM:0000047
+        aliases:
+        - trio
+      CAM:0000048:
         title: Trio+
         description: 2 Parents and 2 or more children
+        meaning: CAM:0000048
+        aliases:
+        - trio_plus

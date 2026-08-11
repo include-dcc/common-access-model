@@ -1,4 +1,3 @@
----
 id: https://includedcc.org/common-access-model/EnumProgram
 name: EnumProgram
 enums:
@@ -6,9 +5,18 @@ enums:
     title: Funding Programs
     description: Funding programs relevant to inform operations.
     permissible_values:
-      include:
+      CAM:0000001:
         title: INCLUDE
-      kf:
+        meaning: CAM:0000001
+        aliases:
+        - include
+      CAM:0000002:
         title: KF
-      other:
+        meaning: CAM:0000002
+        aliases:
+        - kf
+      CAM:0000003:
         title: Other
+        meaning: CAM:0000003
+        aliases:
+        - other

@@ -1,41 +1,82 @@
----
 id: https://includedcc.org/common-access-model/EnumDataCategory
 name: EnumDataCategory
 enums:
   EnumDataCategory:
     title: Data Category
     description: Categories of data which may be collected about participants.
-    #TODO: Add meanings
     permissible_values:
-    #Should we have these two demo/clinical data categories?
-      unharmonized_demographic_clinical_data:
+      CAM:0000023:
         title: Unharmonized Demographic/Clinical Data
-      harmonized_demographic_clinical_data:
+        meaning: CAM:0000023
+        aliases:
+        - unharmonized_demographic_clinical_data
+      CAM:0000024:
         title: Harmonized Demographic/Clinical Data
-      genomics:
+        meaning: CAM:0000024
+        aliases:
+        - harmonized_demographic_clinical_data
+      CAM:0000025:
         title: Genomics
-      transcriptomics:
+        meaning: CAM:0000025
+        aliases:
+        - genomics
+      CAM:0000026:
         title: Transcriptomics
-      epigenomics:
+        meaning: CAM:0000026
+        aliases:
+        - transcriptomics
+      CAM:0000027:
         title: Epigenomics
-      proteomics:
+        meaning: CAM:0000027
+        aliases:
+        - epigenomics
+      CAM:0000028:
         title: Proteomics
-      metabolomics:
+        meaning: CAM:0000028
+        aliases:
+        - proteomics
+      CAM:0000029:
         title: Metabolomics
-      cognitive_behavioral:
+        meaning: CAM:0000029
+        aliases:
+        - metabolomics
+      CAM:0000030:
         title: Cognitive/Behavioral
-      immune_profiling:
+        meaning: CAM:0000030
+        aliases:
+        - cognitive_behavioral
+      CAM:0000031:
         title: Immune Profiling
-      imaging:
+        meaning: CAM:0000031
+        aliases:
+        - immune_profiling
+      CAM:0000032:
         title: Imaging
-      microbiome:
+        meaning: CAM:0000032
+        aliases:
+        - imaging
+      CAM:0000033:
         title: Microbiome
-      #What is the difference between these two?
-      fitness:
+        meaning: CAM:0000033
+        aliases:
+        - microbiome
+      CAM:0000034:
         title: Fitness
-      physical_activity:
+        meaning: CAM:0000034
+        aliases:
+        - fitness
+      CAM:0000035:
         title: Physical Activity
-      other:
+        meaning: CAM:0000035
+        aliases:
+        - physical_activity
+      CAM:0000036:
         title: Other
-      sleep_study:
+        meaning: CAM:0000036
+        aliases:
+        - other
+      CAM:0000037:
         title: Sleep Study
+        meaning: CAM:0000037
+        aliases:
+        - sleep_study
