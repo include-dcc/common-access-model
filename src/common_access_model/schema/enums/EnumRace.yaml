@@ -1,50 +1,62 @@
----
 id: https://includedcc.org/common-access-model/EnumRace
 name: EnumRace
 enums:
   EnumRace:
     description: Participant Race
     permissible_values:
-      american_indian_or_alaska_native:
+      NCIT:C41259:
         title: American Indian or Alaska Native
-        meaning: NCIT:C41259
-      asian:
+        aliases:
+          - american_indian_or_alaska_native
+      NCIT:C41260:
         title: Asian
-        meaning: NCIT:C41260
-      black_or_african_american:
+        aliases:
+          - asian
+      NCIT:C16352:
         title: Black or African American
-        meaning: NCIT:C16352
-      more_than_one_race:
+        aliases:
+          - black_or_african_american
+      NCIT:C67109:
         title: More than one race
-        meaning: NCIT:C67109
-      native_hawaiian_or_other_pacific_islander:
+        aliases:
+          - more_than_one_race
+      NCIT:C41219:
         title: Native Hawaiian or Other Pacific Islander
-        meaning: NCIT:C41219
-      other:
+        aliases:
+          - native_hawaiian_or_other_pacific_islander
+      NCIT:C17649:
         title: Other
-        meaning: NCIT:C17649
-      white:
+        aliases:
+          - other
+      NCIT:C41261:
         title: White
-        meaning: NCIT:C41261
-      prefer_not_to_answer:
+        aliases:
+          - white
+      NCIT:C132222:
         title: Prefer not to answer
-        meaning: NCIT:C132222
-      unknown:
+        aliases:
+          - prefer_not_to_answer
+      NCIT:C17998:
         title: Unknown
-        meaning: NCIT:C17998
-      east_asian:
+        aliases:
+          - unknown
+      NCIT:C161419:
         title: East Asian
         description: UK only; do not use for US data
-        meaning: NCIT:C161419
-      latin_american:
+        aliases:
+          - east_asian
+      NCIT:C126531:
         title: Latin American
         description: UK only; do not use for US data
-        meaning: NCIT:C126531
-      middle_eastern_or_north_african:
+        aliases:
+          - latin_american
+      NCIT:C43866:
         title: Middle Eastern or North African
         description: UK only; do not use for US data
-        meaning: NCIT:C43866
-      south_asian:
+        aliases:
+          - middle_eastern_or_north_african
+      NCIT:C41263:
         title: South Asian
         description: UK only; do not use for US data
-        meaning: NCIT:C41263
+        aliases:
+          - south_asian

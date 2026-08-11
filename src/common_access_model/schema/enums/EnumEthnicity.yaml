@@ -1,4 +1,3 @@
----
 id: https://includedcc.org/common-access-model/EnumEthnicity
 name: EnumEthnicity
 enums:
@@ -8,16 +7,19 @@ enums:
       # asked_but_unknown:
       #   text: asked_but_unknown
       #   title: Asked but unknown
-      hispanic_or_latino:
+      NCIT:C17459:
         title: Hispanic or Latino
-        meaning: NCIT:C17459
-      not_hispanic_or_latino:
+        aliases:
+          - hispanic_or_latino
+      NCIT:C41222:
         title: Not Hispanic or Latino
-        meaning: NCIT:C41222
-      #This should likely be rolled into a null flavor
-      prefer_not_to_answer:
+        aliases:
+          - not_hispanic_or_latino
+      NCIT:C132222:
         title: Prefer not to answer
-        meaning: NCIT:C132222
-      unknown:
+        aliases:
+          - prefer_not_to_answer
+      NCIT:C17998:
         title: Unknown
-        meaning: NCIT:C17998
+        aliases:
+          - unknown
