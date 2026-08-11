@@ -391,43 +391,43 @@
 </thead>
 <tbody>
 <tr>
-<td>behavior_and_behavior_mechanisms</td>
 <td>mesh:D001520</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>congenital_heart_defects</td>
 <td>mesh:D006330</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>immune_system_diseases</td>
 <td>mesh:D007154</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>hematologic_diseases</td>
 <td>mesh:D006402</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>neurodevelopment</td>
 <td>mesh:D065886</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>sleep_wake_disorders</td>
 <td>mesh:D012893</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>all_co_occurring_conditions</td>
 <td>mesh:D013568</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>physical_fitness</td>
 <td>mesh:D010809</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
@@ -466,38 +466,46 @@ title: Research Domain
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  behavior_and_behavior_mechanisms:
-    text: behavior_and_behavior_mechanisms
-    meaning: mesh:D001520
+  mesh:D001520:
+    text: mesh:D001520
     title: Behavior and Behavior Mechanisms
-  congenital_heart_defects:
-    text: congenital_heart_defects
-    meaning: mesh:D006330
+    aliases:
+    - behavior_and_behavior_mechanisms
+  mesh:D006330:
+    text: mesh:D006330
     title: Congenital Heart Defects
-  immune_system_diseases:
-    text: immune_system_diseases
-    meaning: mesh:D007154
+    aliases:
+    - congenital_heart_defects
+  mesh:D007154:
+    text: mesh:D007154
     title: Immune System Diseases
-  hematologic_diseases:
-    text: hematologic_diseases
-    meaning: mesh:D006402
+    aliases:
+    - immune_system_diseases
+  mesh:D006402:
+    text: mesh:D006402
     title: Hematologic Diseases
-  neurodevelopment:
-    text: neurodevelopment
-    meaning: mesh:D065886
+    aliases:
+    - hematologic_diseases
+  mesh:D065886:
+    text: mesh:D065886
     title: Neurodevelopment
-  sleep_wake_disorders:
-    text: sleep_wake_disorders
-    meaning: mesh:D012893
+    aliases:
+    - neurodevelopment
+  mesh:D012893:
+    text: mesh:D012893
     title: Sleep Wake Disorders
-  all_co_occurring_conditions:
-    text: all_co_occurring_conditions
-    meaning: mesh:D013568
+    aliases:
+    - sleep_wake_disorders
+  mesh:D013568:
+    text: mesh:D013568
     title: All Co-occurring Conditions
-  physical_fitness:
-    text: physical_fitness
-    meaning: mesh:D010809
+    aliases:
+    - all_co_occurring_conditions
+  mesh:D010809:
+    text: mesh:D010809
     title: Physical Fitness
+    aliases:
+    - physical_fitness
   other:
     text: other
     title: Other

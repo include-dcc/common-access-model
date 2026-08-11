@@ -391,68 +391,68 @@
 </thead>
 <tbody>
 <tr>
-<td>american_indian_or_alaska_native</td>
 <td>NCIT:C41259</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>asian</td>
 <td>NCIT:C41260</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>black_or_african_american</td>
 <td>NCIT:C16352</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>more_than_one_race</td>
 <td>NCIT:C67109</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>native_hawaiian_or_other_pacific_islander</td>
 <td>NCIT:C41219</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>other</td>
 <td>NCIT:C17649</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>white</td>
 <td>NCIT:C41261</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>prefer_not_to_answer</td>
 <td>NCIT:C132222</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>unknown</td>
 <td>NCIT:C17998</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>east_asian</td>
 <td>NCIT:C161419</td>
+<td>None</td>
 <td>UK only; do not use for US data</td>
 </tr>
 <tr>
-<td>latin_american</td>
 <td>NCIT:C126531</td>
+<td>None</td>
 <td>UK only; do not use for US data</td>
 </tr>
 <tr>
-<td>middle_eastern_or_north_african</td>
 <td>NCIT:C43866</td>
+<td>None</td>
 <td>UK only; do not use for US data</td>
 </tr>
 <tr>
-<td>south_asian</td>
 <td>NCIT:C41263</td>
+<td>None</td>
 <td>UK only; do not use for US data</td>
 </tr>
 </tbody>
@@ -485,62 +485,75 @@ description: Participant Race
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  american_indian_or_alaska_native:
-    text: american_indian_or_alaska_native
-    meaning: NCIT:C41259
+  NCIT:C41259:
+    text: NCIT:C41259
     title: American Indian or Alaska Native
-  asian:
-    text: asian
-    meaning: NCIT:C41260
+    aliases:
+    - american_indian_or_alaska_native
+  NCIT:C41260:
+    text: NCIT:C41260
     title: Asian
-  black_or_african_american:
-    text: black_or_african_american
-    meaning: NCIT:C16352
+    aliases:
+    - asian
+  NCIT:C16352:
+    text: NCIT:C16352
     title: Black or African American
-  more_than_one_race:
-    text: more_than_one_race
-    meaning: NCIT:C67109
+    aliases:
+    - black_or_african_american
+  NCIT:C67109:
+    text: NCIT:C67109
     title: More than one race
-  native_hawaiian_or_other_pacific_islander:
-    text: native_hawaiian_or_other_pacific_islander
-    meaning: NCIT:C41219
+    aliases:
+    - more_than_one_race
+  NCIT:C41219:
+    text: NCIT:C41219
     title: Native Hawaiian or Other Pacific Islander
-  other:
-    text: other
-    meaning: NCIT:C17649
+    aliases:
+    - native_hawaiian_or_other_pacific_islander
+  NCIT:C17649:
+    text: NCIT:C17649
     title: Other
-  white:
-    text: white
-    meaning: NCIT:C41261
+    aliases:
+    - other
+  NCIT:C41261:
+    text: NCIT:C41261
     title: White
-  prefer_not_to_answer:
-    text: prefer_not_to_answer
-    meaning: NCIT:C132222
+    aliases:
+    - white
+  NCIT:C132222:
+    text: NCIT:C132222
     title: Prefer not to answer
-  unknown:
-    text: unknown
-    meaning: NCIT:C17998
+    aliases:
+    - prefer_not_to_answer
+  NCIT:C17998:
+    text: NCIT:C17998
     title: Unknown
-  east_asian:
-    text: east_asian
+    aliases:
+    - unknown
+  NCIT:C161419:
+    text: NCIT:C161419
     description: UK only; do not use for US data
-    meaning: NCIT:C161419
     title: East Asian
-  latin_american:
-    text: latin_american
+    aliases:
+    - east_asian
+  NCIT:C126531:
+    text: NCIT:C126531
     description: UK only; do not use for US data
-    meaning: NCIT:C126531
     title: Latin American
-  middle_eastern_or_north_african:
-    text: middle_eastern_or_north_african
+    aliases:
+    - latin_american
+  NCIT:C43866:
+    text: NCIT:C43866
     description: UK only; do not use for US data
-    meaning: NCIT:C43866
     title: Middle Eastern or North African
-  south_asian:
-    text: south_asian
+    aliases:
+    - middle_eastern_or_north_african
+  NCIT:C41263:
+    text: NCIT:C41263
     description: UK only; do not use for US data
-    meaning: NCIT:C41263
     title: South Asian
+    aliases:
+    - south_asian
 
 </code></pre>
 

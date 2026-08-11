@@ -391,23 +391,23 @@
 </thead>
 <tbody>
 <tr>
-<td>not_suspected</td>
-<td>snomed_ct:428263003</td>
+<td>snomedct:428263003</td>
+<td>None</td>
 <td>Not suspected</td>
 </tr>
 <tr>
-<td>suspected</td>
-<td>snomed_ct:415684004</td>
+<td>snomedct:415684004</td>
+<td>None</td>
 <td>Suspected</td>
 </tr>
 <tr>
-<td>known_present</td>
-<td>snomed_ct:410515003</td>
+<td>snomedct:410515003</td>
+<td>None</td>
 <td>Known Present</td>
 </tr>
 <tr>
-<td>unknown</td>
-<td>snomed_ct:261665006</td>
+<td>snomedct:261665006</td>
+<td>None</td>
 <td>Unknown</td>
 </tr>
 </tbody>
@@ -440,26 +440,30 @@ description: Asserts known or suspected consanguinity in this study family
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  not_suspected:
-    text: not_suspected
+  snomedct:428263003:
+    text: snomedct:428263003
     description: Not suspected
-    meaning: snomed_ct:428263003
     title: not-suspected
-  suspected:
-    text: suspected
+    aliases:
+    - not_suspected
+  snomedct:415684004:
+    text: snomedct:415684004
     description: Suspected
-    meaning: snomed_ct:415684004
     title: suspected
-  known_present:
-    text: known_present
+    aliases:
+    - suspected
+  snomedct:410515003:
+    text: snomedct:410515003
     description: Known Present
-    meaning: snomed_ct:410515003
     title: known-present
-  unknown:
-    text: unknown
+    aliases:
+    - known_present
+  snomedct:261665006:
+    text: snomedct:261665006
     description: Unknown
-    meaning: snomed_ct:261665006
     title: unknown
+    aliases:
+    - unknown
 
 </code></pre>
 

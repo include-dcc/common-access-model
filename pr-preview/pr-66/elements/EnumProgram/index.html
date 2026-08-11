@@ -391,17 +391,17 @@
 </thead>
 <tbody>
 <tr>
-<td>include</td>
+<td>CAM:0000001</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>kf</td>
+<td>CAM:0000002</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>other</td>
+<td>CAM:0000003</td>
 <td>None</td>
 <td></td>
 </tr>
@@ -436,15 +436,21 @@ title: Funding Programs
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  include:
-    text: include
+  CAM:0000001:
+    text: CAM:0000001
     title: INCLUDE
-  kf:
-    text: kf
+    aliases:
+    - include
+  CAM:0000002:
+    text: CAM:0000002
     title: KF
-  other:
-    text: other
+    aliases:
+    - kf
+  CAM:0000003:
+    text: CAM:0000003
     title: Other
+    aliases:
+    - other
 
 </code></pre>
 

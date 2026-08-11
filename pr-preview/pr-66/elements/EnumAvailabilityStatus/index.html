@@ -391,13 +391,13 @@
 </thead>
 <tbody>
 <tr>
-<td>available</td>
 <td>ig2_biospecimen_availability:available</td>
+<td>None</td>
 <td>Biospecimen is Available</td>
 </tr>
 <tr>
-<td>unavailable</td>
 <td>ig2_biospecimen_availability:unavailable</td>
+<td>None</td>
 <td>Biospecimen is Unavailable</td>
 </tr>
 </tbody>
@@ -430,16 +430,18 @@ description: Is the biospecimen available for use?
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  available:
-    text: available
+  ig2_biospecimen_availability:available:
+    text: ig2_biospecimen_availability:available
     description: Biospecimen is Available
-    meaning: ig2_biospecimen_availability:available
     title: Available
-  unavailable:
-    text: unavailable
+    aliases:
+    - available
+  ig2_biospecimen_availability:unavailable:
+    text: ig2_biospecimen_availability:unavailable
     description: Biospecimen is Unavailable
-    meaning: ig2_biospecimen_availability:unavailable
     title: Unavailable
+    aliases:
+    - unavailable
 
 </code></pre>
 

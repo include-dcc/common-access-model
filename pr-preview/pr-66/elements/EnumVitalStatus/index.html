@@ -391,13 +391,13 @@
 </thead>
 <tbody>
 <tr>
-<td>dead</td>
 <td>NCIT:C28554</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>alive</td>
 <td>NCIT:C37987</td>
+<td>None</td>
 <td></td>
 </tr>
 </tbody>
@@ -431,14 +431,16 @@ from_schema: https://includedcc.org/common-access-model
 rank: 1000
 is_a: EnumNull
 permissible_values:
-  dead:
-    text: dead
-    meaning: NCIT:C28554
+  NCIT:C28554:
+    text: NCIT:C28554
     title: Dead
-  alive:
-    text: alive
-    meaning: NCIT:C37987
+    aliases:
+    - dead
+  NCIT:C37987:
+    text: NCIT:C37987
     title: Alive
+    aliases:
+    - alive
 
 </code></pre>
 

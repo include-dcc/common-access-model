@@ -391,23 +391,23 @@
 </thead>
 <tbody>
 <tr>
-<td>female</td>
 <td>NCIT:C16576</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>male</td>
 <td>NCIT:C20197</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>other</td>
 <td>NCIT:C17649</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>unknown</td>
 <td>NCIT:C17998</td>
+<td>None</td>
 <td></td>
 </tr>
 </tbody>
@@ -440,22 +440,26 @@ description: Subject Sex
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  female:
-    text: female
-    meaning: NCIT:C16576
+  NCIT:C16576:
+    text: NCIT:C16576
     title: Female
-  male:
-    text: male
-    meaning: NCIT:C20197
+    aliases:
+    - female
+  NCIT:C20197:
+    text: NCIT:C20197
     title: Male
-  other:
-    text: other
-    meaning: NCIT:C17649
+    aliases:
+    - male
+  NCIT:C17649:
+    text: NCIT:C17649
     title: Other
-  unknown:
-    text: unknown
-    meaning: NCIT:C17998
+    aliases:
+    - other
+  NCIT:C17998:
+    text: NCIT:C17998
     title: Unknown
+    aliases:
+    - unknown
 
 </code></pre>
 

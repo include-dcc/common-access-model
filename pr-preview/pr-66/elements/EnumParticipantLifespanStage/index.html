@@ -391,22 +391,22 @@
 </thead>
 <tbody>
 <tr>
-<td>fetal</td>
+<td>CAM:0000004</td>
 <td>None</td>
 <td>Before birth</td>
 </tr>
 <tr>
-<td>neonatal</td>
+<td>CAM:0000005</td>
 <td>None</td>
 <td>0-28 days old</td>
 </tr>
 <tr>
-<td>pediatric</td>
+<td>CAM:0000006</td>
 <td>None</td>
 <td>Birth-17 years old</td>
 </tr>
 <tr>
-<td>adult</td>
+<td>CAM:0000007</td>
 <td>None</td>
 <td>18+ years old</td>
 </tr>
@@ -441,22 +441,30 @@ title: Participant Lifespan Stage
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  fetal:
-    text: fetal
+  CAM:0000004:
+    text: CAM:0000004
     description: Before birth
     title: Fetal
-  neonatal:
-    text: neonatal
+    aliases:
+    - fetal
+  CAM:0000005:
+    text: CAM:0000005
     description: 0-28 days old
     title: Neonatal
-  pediatric:
-    text: pediatric
+    aliases:
+    - neonatal
+  CAM:0000006:
+    text: CAM:0000006
     description: Birth-17 years old
     title: Pediatric
-  adult:
-    text: adult
+    aliases:
+    - pediatric
+  CAM:0000007:
+    text: CAM:0000007
     description: 18+ years old
     title: Adult
+    aliases:
+    - adult
 
 </code></pre>
 

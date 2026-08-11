@@ -391,17 +391,17 @@
 </thead>
 <tbody>
 <tr>
-<td>md5</td>
+<td>CAM:0000053</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>etag</td>
+<td>CAM:0000054</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>sha1</td>
+<td>CAM:0000055</td>
 <td>None</td>
 <td></td>
 </tr>
@@ -435,15 +435,21 @@ description: Types of file hashes supported.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  md5:
-    text: md5
+  CAM:0000053:
+    text: CAM:0000053
     title: MD5
-  etag:
-    text: etag
+    aliases:
+    - md5
+  CAM:0000054:
+    text: CAM:0000054
     title: ETag
-  sha1:
-    text: sha1
+    aliases:
+    - etag
+  CAM:0000055:
+    text: CAM:0000055
     title: SHA-1
+    aliases:
+    - sha1
 
 </code></pre>
 

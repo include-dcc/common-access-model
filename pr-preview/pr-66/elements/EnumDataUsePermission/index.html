@@ -308,6 +308,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissible Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       Slots
@@ -371,7 +380,43 @@
 <h1 id="enum-enumdatausepermission">Enum: EnumDataUsePermission</h1>
 <p><em>Data Use Ontology (DUO) terms for data use permissions.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumDataUsePermission">cam:EnumDataUsePermission</a></p>
-<p><em>This is a dynamic enum</em></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DUO:0000004</td>
+<td>DUO:0000004</td>
+<td>This data use permission indicates there is no restriction on use</td>
+</tr>
+<tr>
+<td>DUO:0000006</td>
+<td>DUO:0000006</td>
+<td>This data use permission indicates that use is allowed for health/medical/bio...</td>
+</tr>
+<tr>
+<td>DUO:0000007</td>
+<td>DUO:0000007</td>
+<td>This data use permission indicates that use is allowed provided it is related...</td>
+</tr>
+<tr>
+<td>DUO:0000011</td>
+<td>DUO:0000011</td>
+<td>This data use permission indicates that use of the data is limited to the stu...</td>
+</tr>
+<tr>
+<td>DUO:0000042</td>
+<td>DUO:0000042</td>
+<td>This data use permission indicates that use is allowed for general research u...</td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -400,6 +445,46 @@ description: Data Use Ontology (DUO) terms for data use permissions.
 title: Data Use Permission
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
+permissible_values:
+  DUO:0000004:
+    text: DUO:0000004
+    description: This data use permission indicates there is no restriction on use.
+    meaning: DUO:0000004
+    title: no restriction
+  DUO:0000006:
+    text: DUO:0000006
+    description: This data use permission indicates that use is allowed for health/medical/biomedical
+      purposes; does not include the study of population origins or ancestry.
+    meaning: DUO:0000006
+    title: health or medical or biomedical research
+  DUO:0000007:
+    text: DUO:0000007
+    description: &quot;This data use permission indicates that use is allowed provided\
+      \ it is related to the specified disease.\nThis term should be coupled with\
+      \ a term describing a disease from an ontology to specify the disease the restriction\
+      \ applies to. \n\nDUO recommends MONDO be used, to provide the basis for automated\
+      \ evaluation. For more information see https://github.com/EBISPOT/DUO/blob/master/MONDO_Overview.md\n\
+      \nOther resources, such as the Disease Ontology, HPO, SNOMED-CT or others, can\
+      \ also be used. When those other resources are being used, this may require\
+      \ an extra mapping step to leverage automated matching algorithms.&quot;
+    meaning: DUO:0000007
+    title: disease specific research
+  DUO:0000011:
+    text: DUO:0000011
+    description: This data use permission indicates that use of the data is limited
+      to the study of population origins or ancestry.
+    meaning: DUO:0000011
+    title: population origins or ancestry research only
+  DUO:0000042:
+    text: DUO:0000042
+    description: 'This data use permission indicates that use is allowed for general
+      research use for any research purpose.
+
+      This includes but is not limited to: health/medical/biomedical purposes, fundamental
+      biology research, the study of population origins or ancestry, statistical methods
+      and algorithms development, and social-sciences research.'
+    meaning: DUO:0000042
+    title: general research use
 reachable_from:
   source_ontology: bioregistry:duo
   source_nodes:
