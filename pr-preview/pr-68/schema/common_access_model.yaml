@@ -511,15 +511,21 @@ enums:
     title: Funding Programs
     from_schema: https://includedcc.org/common-access-model/EnumProgram
     permissible_values:
-      include:
-        text: include
+      CAM:0000001:
+        text: CAM:0000001
         title: INCLUDE
-      kf:
-        text: kf
+        aliases:
+        - include
+      CAM:0000002:
+        text: CAM:0000002
         title: KF
-      other:
-        text: other
+        aliases:
+        - kf
+      CAM:0000003:
+        text: CAM:0000003
         title: Other
+        aliases:
+        - other
   EnumResearchDomain:
     name: EnumResearchDomain
     definition_uri: https://includedcc.org/common-access-model/EnumResearchDomain/EnumResearchDomain
@@ -577,22 +583,30 @@ enums:
     title: Participant Lifespan Stage
     from_schema: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
     permissible_values:
-      fetal:
-        text: fetal
+      CAM:0000004:
+        text: CAM:0000004
         description: Before birth
         title: Fetal
-      neonatal:
-        text: neonatal
+        aliases:
+        - fetal
+      CAM:0000005:
+        text: CAM:0000005
         description: 0-28 days old
         title: Neonatal
-      pediatric:
-        text: pediatric
+        aliases:
+        - neonatal
+      CAM:0000006:
+        text: CAM:0000006
         description: Birth-17 years old
         title: Pediatric
-      adult:
-        text: adult
+        aliases:
+        - pediatric
+      CAM:0000007:
+        text: CAM:0000007
         description: 18+ years old
         title: Adult
+        aliases:
+        - adult
   EnumStudyDesign:
     name: EnumStudyDesign
     definition_uri: https://includedcc.org/common-access-model/EnumStudyDesign/EnumStudyDesign
@@ -601,36 +615,56 @@ enums:
     title: Study Design
     from_schema: https://includedcc.org/common-access-model/EnumStudyDesign
     permissible_values:
-      case_control:
-        text: case_control
+      CAM:0000008:
+        text: CAM:0000008
         title: Case-Control
-      case_set:
-        text: case_set
+        aliases:
+        - case_control
+      CAM:0000009:
+        text: CAM:0000009
         title: Case Set
-      control_set:
-        text: control_set
+        aliases:
+        - case_set
+      CAM:0000010:
+        text: CAM:0000010
         title: Control Set
-      clinical_trial:
-        text: clinical_trial
+        aliases:
+        - control_set
+      CAM:0000011:
+        text: CAM:0000011
         title: Clinical Trial
-      cross_sectional:
-        text: cross_sectional
+        aliases:
+        - clinical_trial
+      CAM:0000012:
+        text: CAM:0000012
         title: Cross-Sectional
-      family_twins_trios:
-        text: family_twins_trios
+        aliases:
+        - cross_sectional
+      CAM:0000013:
+        text: CAM:0000013
         title: Family/Twins/Trios
-      interventional:
-        text: interventional
+        aliases:
+        - family_twins_trios
+      CAM:0000014:
+        text: CAM:0000014
         title: Interventional
-      longitudinal:
-        text: longitudinal
+        aliases:
+        - interventional
+      CAM:0000015:
+        text: CAM:0000015
         title: Longitudinal
-      trial_readiness_study:
-        text: trial_readiness_study
+        aliases:
+        - longitudinal
+      CAM:0000016:
+        text: CAM:0000016
         title: Trial Readiness Study
-      tumor_vs_matched_normal:
-        text: tumor_vs_matched_normal
+        aliases:
+        - trial_readiness_study
+      CAM:0000017:
+        text: CAM:0000017
         title: Tumor vs Matched Normal
+        aliases:
+        - tumor_vs_matched_normal
   EnumClinicalDataSourceType:
     name: EnumClinicalDataSourceType
     definition_uri: https://includedcc.org/common-access-model/EnumClinicalDataSourceType/EnumClinicalDataSourceType
@@ -638,26 +672,36 @@ enums:
     title: Clinical Data Source Type
     from_schema: https://includedcc.org/common-access-model/EnumClinicalDataSourceType
     permissible_values:
-      medical_record:
-        text: medical_record
+      CAM:0000018:
+        text: CAM:0000018
         description: Data obtained directly from medical record
         title: Medical Record
-      investigator_assessment:
-        text: investigator_assessment
+        aliases:
+        - medical_record
+      CAM:0000019:
+        text: CAM:0000019
         description: Data obtained by examination, interview, etc. with investigator
         title: Investigator Assessment
-      participant_or_caregiver_report:
-        text: participant_or_caregiver_report
+        aliases:
+        - investigator_assessment
+      CAM:0000020:
+        text: CAM:0000020
         description: Data obtained from survey, questionnaire, etc. filled out by
           participant or caregiver
         title: Participant or Caregiver Report
-      other:
-        text: other
+        aliases:
+        - participant_or_caregiver_report
+      CAM:0000021:
+        text: CAM:0000021
         description: Data obtained from other source, such as tissue bank
         title: Other
-      unknown:
-        text: unknown
+        aliases:
+        - other
+      CAM:0000022:
+        text: CAM:0000022
         title: Unknown
+        aliases:
+        - unknown
   EnumDataCategory:
     name: EnumDataCategory
     definition_uri: https://includedcc.org/common-access-model/EnumDataCategory/EnumDataCategory
@@ -665,76 +709,124 @@ enums:
     title: Data Category
     from_schema: https://includedcc.org/common-access-model/EnumDataCategory
     permissible_values:
-      unharmonized_demographic_clinical_data:
-        text: unharmonized_demographic_clinical_data
+      CAM:0000023:
+        text: CAM:0000023
         title: Unharmonized Demographic/Clinical Data
-      harmonized_demographic_clinical_data:
-        text: harmonized_demographic_clinical_data
+        aliases:
+        - unharmonized_demographic_clinical_data
+      CAM:0000024:
+        text: CAM:0000024
         title: Harmonized Demographic/Clinical Data
-      genomics:
-        text: genomics
+        aliases:
+        - harmonized_demographic_clinical_data
+      CAM:0000025:
+        text: CAM:0000025
         title: Genomics
-      transcriptomics:
-        text: transcriptomics
+        aliases:
+        - genomics
+      CAM:0000026:
+        text: CAM:0000026
         title: Transcriptomics
-      epigenomics:
-        text: epigenomics
+        aliases:
+        - transcriptomics
+      CAM:0000027:
+        text: CAM:0000027
         title: Epigenomics
-      proteomics:
-        text: proteomics
+        aliases:
+        - epigenomics
+      CAM:0000028:
+        text: CAM:0000028
         title: Proteomics
-      metabolomics:
-        text: metabolomics
+        aliases:
+        - proteomics
+      CAM:0000029:
+        text: CAM:0000029
         title: Metabolomics
-      cognitive_behavioral:
-        text: cognitive_behavioral
+        aliases:
+        - metabolomics
+      CAM:0000030:
+        text: CAM:0000030
         title: Cognitive/Behavioral
-      immune_profiling:
-        text: immune_profiling
+        aliases:
+        - cognitive_behavioral
+      CAM:0000031:
+        text: CAM:0000031
         title: Immune Profiling
-      imaging:
-        text: imaging
+        aliases:
+        - immune_profiling
+      CAM:0000032:
+        text: CAM:0000032
         title: Imaging
-      microbiome:
-        text: microbiome
+        aliases:
+        - imaging
+      CAM:0000033:
+        text: CAM:0000033
         title: Microbiome
-      fitness:
-        text: fitness
+        aliases:
+        - microbiome
+      CAM:0000034:
+        text: CAM:0000034
         title: Fitness
-      physical_activity:
-        text: physical_activity
+        aliases:
+        - fitness
+      CAM:0000035:
+        text: CAM:0000035
         title: Physical Activity
-      other:
-        text: other
+        aliases:
+        - physical_activity
+      CAM:0000036:
+        text: CAM:0000036
         title: Other
-      sleep_study:
-        text: sleep_study
+        aliases:
+        - other
+      CAM:0000037:
+        text: CAM:0000037
         title: Sleep Study
+        aliases:
+        - sleep_study
   EnumSubjectType:
     name: EnumSubjectType
     definition_uri: https://includedcc.org/common-access-model/EnumSubjectType/EnumSubjectType
     description: Types of Subject entities
     from_schema: https://includedcc.org/common-access-model/EnumSubjectType
     permissible_values:
-      participant:
-        text: participant
+      CAM:0000038:
+        text: CAM:0000038
         description: Study participant with consent, assent, or waiver of consent.
-      non_participant:
-        text: non_participant
+        title: participant
+        aliases:
+        - participant
+      CAM:0000039:
+        text: CAM:0000039
         description: An individual associated with a study who was not explictly consented,
           eg, the subject of a reported family history.
-      cell_line:
-        text: cell_line
+        title: non_participant
+        aliases:
+        - non_participant
+      CAM:0000040:
+        text: CAM:0000040
         description: Cell Line
-      animal_model:
-        text: animal_model
+        title: cell_line
+        aliases:
+        - cell_line
+      CAM:0000041:
+        text: CAM:0000041
         description: Animal model
-      group:
-        text: group
+        title: animal_model
+        aliases:
+        - animal_model
+      CAM:0000042:
+        text: CAM:0000042
         description: A group of individuals or entities.
-      other:
-        text: other
+        title: group
+        aliases:
+        - group
+      CAM:0000043:
+        text: CAM:0000043
         description: A different entity type- ideally this will be resolved!
+        title: other
+        aliases:
+        - other
   EnumSex:
     name: EnumSex
     definition_uri: https://includedcc.org/common-access-model/EnumSex/EnumSex
@@ -897,26 +989,36 @@ enums:
     from_schema: https://includedcc.org/common-access-model/EnumFamilyType
     is_a: EnumNull
     permissible_values:
-      control_only:
-        text: control_only
+      CAM:0000044:
+        text: CAM:0000044
         description: Control Only
         title: Control-only
-      duo:
-        text: duo
+        aliases:
+        - control_only
+      CAM:0000045:
+        text: CAM:0000045
         description: Duo
         title: Duo
-      proband_only:
-        text: proband_only
+        aliases:
+        - duo
+      CAM:0000046:
+        text: CAM:0000046
         description: Proband Only
         title: Proband-only
-      trio:
-        text: trio
+        aliases:
+        - proband_only
+      CAM:0000047:
+        text: CAM:0000047
         description: Trio (2 parents and affected child)
         title: Trio
-      trio_plus:
-        text: trio_plus
+        aliases:
+        - trio
+      CAM:0000048:
+        text: CAM:0000048
         description: 2 Parents and 2 or more children
         title: Trio+
+        aliases:
+        - trio_plus
   EnumConsanguinityAssertion:
     name: EnumConsanguinityAssertion
     definition_uri: https://includedcc.org/common-access-model/EnumConsanguinityAssertion/EnumConsanguinityAssertion
@@ -954,23 +1056,31 @@ enums:
     from_schema: https://includedcc.org/common-access-model/EnumAssertionProvenance
     is_a: EnumNull
     permissible_values:
-      medical_record:
-        text: medical_record
+      CAM:0000049:
+        text: CAM:0000049
         description: Data obtained from a medical record
         title: Medical Record
-      investigator_assessment:
-        text: investigator_assessment
+        aliases:
+        - medical_record
+      CAM:0000050:
+        text: CAM:0000050
         description: Data obtained by examination, interview, etc. with investigator
         title: Investigator Assessment
-      participant_or_caregiver_report:
-        text: participant_or_caregiver_report
+        aliases:
+        - investigator_assessment
+      CAM:0000051:
+        text: CAM:0000051
         description: Data obtained from survey, questionnaire, etc. filled out by
           participant or caregiver
         title: Participant or Caregiver Report
-      other:
-        text: other
+        aliases:
+        - participant_or_caregiver_report
+      CAM:0000052:
+        text: CAM:0000052
         description: Data obtained from other source, such as tissue bank
         title: Other
+        aliases:
+        - other
   EnumAvailabilityStatus:
     name: EnumAvailabilityStatus
     definition_uri: https://includedcc.org/common-access-model/EnumAvailabilityStatus/EnumAvailabilityStatus
@@ -1056,15 +1166,21 @@ enums:
     description: Types of file hashes supported.
     from_schema: https://includedcc.org/common-access-model/EnumFileHashType
     permissible_values:
-      md5:
-        text: md5
+      CAM:0000053:
+        text: CAM:0000053
         title: MD5
-      etag:
-        text: etag
+        aliases:
+        - md5
+      CAM:0000054:
+        text: CAM:0000054
         title: ETag
-      sha1:
-        text: sha1
+        aliases:
+        - etag
+      CAM:0000055:
+        text: CAM:0000055
         title: SHA-1
+        aliases:
+        - sha1
   EnumPresentAbsent:
     name: EnumPresentAbsent
     definition_uri: https://includedcc.org/common-access-model/EnumPresentAbsent/EnumPresentAbsent
@@ -3730,7 +3846,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-11T19:38:23'
+source_file_date: '2026-08-11T20:27:18'
 source_file_size: 33158
-generation_date: '2026-08-11T19:38:57'
+generation_date: '2026-08-11T20:27:52'
 

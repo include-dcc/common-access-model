@@ -391,27 +391,27 @@
 </thead>
 <tbody>
 <tr>
-<td>control_only</td>
+<td>CAM:0000044</td>
 <td>None</td>
 <td>Control Only</td>
 </tr>
 <tr>
-<td>duo</td>
+<td>CAM:0000045</td>
 <td>None</td>
 <td>Duo</td>
 </tr>
 <tr>
-<td>proband_only</td>
+<td>CAM:0000046</td>
 <td>None</td>
 <td>Proband Only</td>
 </tr>
 <tr>
-<td>trio</td>
+<td>CAM:0000047</td>
 <td>None</td>
 <td>Trio (2 parents and affected child)</td>
 </tr>
 <tr>
-<td>trio_plus</td>
+<td>CAM:0000048</td>
 <td>None</td>
 <td>2 Parents and 2 or more children</td>
 </tr>
@@ -446,26 +446,36 @@ from_schema: https://includedcc.org/common-access-model
 rank: 1000
 is_a: EnumNull
 permissible_values:
-  control_only:
-    text: control_only
+  CAM:0000044:
+    text: CAM:0000044
     description: Control Only
     title: Control-only
-  duo:
-    text: duo
+    aliases:
+    - control_only
+  CAM:0000045:
+    text: CAM:0000045
     description: Duo
     title: Duo
-  proband_only:
-    text: proband_only
+    aliases:
+    - duo
+  CAM:0000046:
+    text: CAM:0000046
     description: Proband Only
     title: Proband-only
-  trio:
-    text: trio
+    aliases:
+    - proband_only
+  CAM:0000047:
+    text: CAM:0000047
     description: Trio (2 parents and affected child)
     title: Trio
-  trio_plus:
-    text: trio_plus
+    aliases:
+    - trio
+  CAM:0000048:
+    text: CAM:0000048
     description: 2 Parents and 2 or more children
     title: Trio+
+    aliases:
+    - trio_plus
 
 </code></pre>
 

@@ -391,22 +391,22 @@
 </thead>
 <tbody>
 <tr>
-<td>medical_record</td>
+<td>CAM:0000049</td>
 <td>None</td>
 <td>Data obtained from a medical record</td>
 </tr>
 <tr>
-<td>investigator_assessment</td>
+<td>CAM:0000050</td>
 <td>None</td>
 <td>Data obtained by examination, interview, etc</td>
 </tr>
 <tr>
-<td>participant_or_caregiver_report</td>
+<td>CAM:0000051</td>
 <td>None</td>
 <td>Data obtained from survey, questionnaire, etc</td>
 </tr>
 <tr>
-<td>other</td>
+<td>CAM:0000052</td>
 <td>None</td>
 <td>Data obtained from other source, such as tissue bank</td>
 </tr>
@@ -441,23 +441,31 @@ from_schema: https://includedcc.org/common-access-model
 rank: 1000
 is_a: EnumNull
 permissible_values:
-  medical_record:
-    text: medical_record
+  CAM:0000049:
+    text: CAM:0000049
     description: Data obtained from a medical record
     title: Medical Record
-  investigator_assessment:
-    text: investigator_assessment
+    aliases:
+    - medical_record
+  CAM:0000050:
+    text: CAM:0000050
     description: Data obtained by examination, interview, etc. with investigator
     title: Investigator Assessment
-  participant_or_caregiver_report:
-    text: participant_or_caregiver_report
+    aliases:
+    - investigator_assessment
+  CAM:0000051:
+    text: CAM:0000051
     description: Data obtained from survey, questionnaire, etc. filled out by participant
       or caregiver
     title: Participant or Caregiver Report
-  other:
-    text: other
+    aliases:
+    - participant_or_caregiver_report
+  CAM:0000052:
+    text: CAM:0000052
     description: Data obtained from other source, such as tissue bank
     title: Other
+    aliases:
+    - other
 
 </code></pre>
 
