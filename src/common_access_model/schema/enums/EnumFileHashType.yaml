@@ -1,13 +1,18 @@
----
 id: https://includedcc.org/common-access-model/EnumFileHashType
 name: EnumFileHashType
 enums:
   EnumFileHashType:
     description: Types of file hashes supported.
     permissible_values:
-      md5:
+      CAM:0000053:
         title: MD5
-      etag:
+        aliases:
+        - md5
+      CAM:0000054:
         title: ETag
-      sha1:
+        aliases:
+        - etag
+      CAM:0000055:
         title: SHA-1
+        aliases:
+        - sha1

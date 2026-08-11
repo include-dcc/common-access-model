@@ -1,41 +1,67 @@
----
 id: https://includedcc.org/common-access-model/EnumDataCategory
 name: EnumDataCategory
 enums:
   EnumDataCategory:
     title: Data Category
     description: Categories of data which may be collected about participants.
-    #TODO: Add meanings
     permissible_values:
-    #Should we have these two demo/clinical data categories?
-      unharmonized_demographic_clinical_data:
+      CAM:0000023:
         title: Unharmonized Demographic/Clinical Data
-      harmonized_demographic_clinical_data:
+        aliases:
+        - unharmonized_demographic_clinical_data
+      CAM:0000024:
         title: Harmonized Demographic/Clinical Data
-      genomics:
+        aliases:
+        - harmonized_demographic_clinical_data
+      CAM:0000025:
         title: Genomics
-      transcriptomics:
+        aliases:
+        - genomics
+      CAM:0000026:
         title: Transcriptomics
-      epigenomics:
+        aliases:
+        - transcriptomics
+      CAM:0000027:
         title: Epigenomics
-      proteomics:
+        aliases:
+        - epigenomics
+      CAM:0000028:
         title: Proteomics
-      metabolomics:
+        aliases:
+        - proteomics
+      CAM:0000029:
         title: Metabolomics
-      cognitive_behavioral:
+        aliases:
+        - metabolomics
+      CAM:0000030:
         title: Cognitive/Behavioral
-      immune_profiling:
+        aliases:
+        - cognitive_behavioral
+      CAM:0000031:
         title: Immune Profiling
-      imaging:
+        aliases:
+        - immune_profiling
+      CAM:0000032:
         title: Imaging
-      microbiome:
+        aliases:
+        - imaging
+      CAM:0000033:
         title: Microbiome
-      #What is the difference between these two?
-      fitness:
+        aliases:
+        - microbiome
+      CAM:0000034:
         title: Fitness
-      physical_activity:
+        aliases:
+        - fitness
+      CAM:0000035:
         title: Physical Activity
-      other:
+        aliases:
+        - physical_activity
+      CAM:0000036:
         title: Other
-      sleep_study:
+        aliases:
+        - other
+      CAM:0000037:
         title: Sleep Study
+        aliases:
+        - sleep_study

@@ -1,15 +1,16 @@
----
 id: https://includedcc.org/common-access-model/EnumAvailabilityStatus
 name: EnumAvailabilityStatus
 enums:
   EnumAvailabilityStatus:
     description: Is the biospecimen available for use?
     permissible_values:
-      available:
+      ig2_biospecimen_availability:available:
         title: Available
-        meaning: ig2_biospecimen_availability:available
         description: Biospecimen is Available
-      unavailable:
+        aliases:
+          - available
+      ig2_biospecimen_availability:unavailable:
         title: Unavailable
-        meaning: ig2_biospecimen_availability:unavailable
         description: Biospecimen is Unavailable
+        aliases:
+          - unavailable
