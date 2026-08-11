@@ -403,18 +403,8 @@ Alias: access_policy_id</p>
 </thead>
 <tbody>
 <tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td>A specific tube or amount of a biospecimen associated with a Sample</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td>Assertion about a particular Subject</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td>A biospecimen collection event which yields one or more Samples</td>
+<td><a href="../ActivityDefinition/">ActivityDefinition</a></td>
+<td>A definition of an activity in this study, eg, a biospecimen collection, assa...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -423,8 +413,28 @@ Alias: access_policy_id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Investigator/">Investigator</a></td>
-<td>An individual who made contributions to the collection, analysis, or sharing ...</td>
+<td><a href="../EncounterDefinition/">EncounterDefinition</a></td>
+<td>A definition of an encounter type in this study, ie, an event at which data w...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Family/">Family</a></td>
+<td>A group of individuals of some relation who are grouped together in a study</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
+<td>Assertion about a particular Subject</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../DOI/">DOI</a></td>
+<td>A DOI is a permanent reference with metadata about a digital object</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Study/">Study</a></td>
+<td>Study Metadata</td>
 <td>no</td>
 </tr>
 <tr>
@@ -433,13 +443,28 @@ Alias: access_policy_id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../EncounterDefinition/">EncounterDefinition</a></td>
-<td>A definition of an encounter type in this study, ie, an event at which data w...</td>
+<td><a href="../Record/">Record</a></td>
+<td>One row / entity within the database</td>
 <td>no</td>
 </tr>
 <tr>
 <td><a href="../VirtualBiorepository/">VirtualBiorepository</a></td>
 <td>An organization that can provide access to specimen for further analysis</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
+<td>A relationship between two Subjects</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
+<td>A biospecimen collection event which yields one or more Samples</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Encounter/">Encounter</a></td>
+<td>An event at which data was collected about a participant, an intervention was...</td>
 <td>no</td>
 </tr>
 <tr>
@@ -453,51 +478,6 @@ Alias: access_policy_id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../Family/">Family</a></td>
-<td>A group of individuals of some relation who are grouped together in a study</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td>Basic participant demographics summary</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>Study Metadata</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Encounter/">Encounter</a></td>
-<td>An event at which data was collected about a participant, an intervention was...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DOI/">DOI</a></td>
-<td>A DOI is a permanent reference with metadata about a digital object</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Record/">Record</a></td>
-<td>One row / entity within the database</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ActivityDefinition/">ActivityDefinition</a></td>
-<td>A definition of an activity in this study, eg, a biospecimen collection, assa...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>The access policy that describes the controls around use of data</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../Sample/">Sample</a></td>
-<td>A functionally equivalent specimen taken from a participant or processed from...</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../StudyMetadata/">StudyMetadata</a></td>
 <td>Additional features about studies that may not apply to all studies</td>
 <td>no</td>
@@ -508,9 +488,29 @@ Alias: access_policy_id</p>
 <td>no</td>
 </tr>
 <tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td>A relationship between two Subjects</td>
+<td><a href="../Aliquot/">Aliquot</a></td>
+<td>A specific tube or amount of a biospecimen associated with a Sample</td>
 <td>no</td>
+</tr>
+<tr>
+<td><a href="../Sample/">Sample</a></td>
+<td>A functionally equivalent specimen taken from a participant or processed from...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Investigator/">Investigator</a></td>
+<td>An individual who made contributions to the collection, analysis, or sharing ...</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../Demographics/">Demographics</a></td>
+<td>Basic participant demographics summary</td>
+<td>no</td>
+</tr>
+<tr>
+<td><a href="../AccessPolicy/">AccessPolicy</a></td>
+<td>The access policy that describes the controls around use of data</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
