@@ -13,8 +13,3 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
-    permissible_values:
-      OBIB:0000070:
-        title: standard operating procedure
-        description: standard operating procedure
-        meaning: OBIB:0000070

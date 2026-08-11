@@ -4,22 +4,22 @@ enums:
   EnumConsanguinityAssertion:
     description: Asserts known or suspected consanguinity in this study family
     permissible_values:
-      snomed_ct:428263003:
+      snomedct:428263003:
         title: not-suspected
         description: Not suspected
         aliases:
           - not_suspected
-      snomed_ct:415684004:
+      snomedct:415684004:
         title: suspected
         description: Suspected
         aliases:
           - suspected
-      snomed_ct:410515003:
+      snomedct:410515003:
         title: known-present
         description: Known Present
         aliases:
           - known_present
-      snomed_ct:261665006:
+      snomedct:261665006:
         title: unknown
         description: Unknown
         aliases:
