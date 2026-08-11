@@ -1,5 +1,5 @@
 subject_id: subject000
-sex: male
-race: 
- - american_indian_or_alaska_native
-ethnicity: hispanic_or_latino
+sex: NCIT:C20197
+race:
+ - NCIT:C41259
+ethnicity: NCIT:C17459
