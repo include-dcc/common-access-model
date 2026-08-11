@@ -67,8 +67,8 @@ prefixes:
   ig2_biospecimen_availability:
     prefix_prefix: ig2_biospecimen_availability
     prefix_reference: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability/
-  snomed_ct:
-    prefix_prefix: snomed_ct
+  snomedct:
+    prefix_prefix: snomedct
     prefix_reference: http://snomed.info/id/
   MONDO:
     prefix_prefix: MONDO
@@ -94,6 +94,12 @@ prefixes:
   KIN:
     prefix_prefix: KIN
     prefix_reference: http://purl.org/ga4gh/kin.owl#
+  edam:
+    prefix_prefix: edam
+    prefix_reference: http://edamontology.org
+  OBI:
+    prefix_prefix: OBI
+    prefix_reference: http://purl.obolibrary.org/obo/OBI_
 default_prefix: cam
 default_range: string
 types:
@@ -1193,26 +1199,26 @@ enums:
     description: Asserts known or suspected consanguinity in this study family
     from_schema: https://includedcc.org/common-access-model/EnumConsanguinityAssertion
     permissible_values:
-      snomed_ct:428263003:
-        text: snomed_ct:428263003
+      snomedct:428263003:
+        text: snomedct:428263003
         description: Not suspected
         title: not-suspected
         aliases:
         - not_suspected
-      snomed_ct:415684004:
-        text: snomed_ct:415684004
+      snomedct:415684004:
+        text: snomedct:415684004
         description: Suspected
         title: suspected
         aliases:
         - suspected
-      snomed_ct:410515003:
-        text: snomed_ct:410515003
+      snomedct:410515003:
+        text: snomedct:410515003
         description: Known Present
         title: known-present
         aliases:
         - known_present
-      snomed_ct:261665006:
-        text: snomed_ct:261665006
+      snomedct:261665006:
+        text: snomedct:261665006
         description: Unknown
         title: unknown
         aliases:
@@ -13419,15 +13425,15 @@ enums:
     from_schema: https://includedcc.org/common-access-model/EnumFileAvailability
     is_a: EnumNull
     permissible_values:
-      snomed_ct:103328004:
-        text: snomed_ct:103328004
+      snomedct:103328004:
+        text: snomedct:103328004
         description: The file is available to users, authorization permitting.
-        meaning: snomed_ct:103328004
+        meaning: snomedct:103328004
         title: Available
-      snomed_ct:103329007:
-        text: snomed_ct:103329007
+      snomedct:103329007:
+        text: snomedct:103329007
         description: The file is not available to users.
-        meaning: snomed_ct:103329007
+        meaning: snomedct:103329007
         title: Unavailable
   EnumAssayType:
     name: EnumAssayType
@@ -13435,12 +13441,6 @@ enums:
     description: Type of assays performed
     from_schema: https://includedcc.org/common-access-model/EnumAssayType
     is_a: EnumNull
-    permissible_values:
-      OBIB:0000070:
-        text: OBIB:0000070
-        description: standard operating procedure
-        meaning: OBIB:0000070
-        title: standard operating procedure
     reachable_from:
       source_ontology: bioregistry:obi
       source_nodes:
@@ -16059,7 +16059,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-11T21:17:24'
-source_file_size: 33158
-generation_date: '2026-08-11T21:17:41'
+source_file_date: '2026-08-11T21:30:23'
+source_file_size: 33175
+generation_date: '2026-08-11T21:30:41'
 
