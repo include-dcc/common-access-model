@@ -13,17 +13,17 @@ prefixes:
   # subset of CDC Race and Ethnicity Code Set Version 1.0
   cdc_race_eth: urn:oid:2.16.840.1.113883.6.238/
   hl7_null: http://terminology.hl7.org/CodeSystem/v3-NullFlavor/
-  ig_dob_method: 
+  ig_dob_method:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method/
-  igcondtype: 
+  igcondtype:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type/
-  ig2dac: 
+  ig2dac:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code/
-  ig2dat: 
+  ig2dat:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type/
-  ig2_biospecimen_availability: 
+  ig2_biospecimen_availability:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability/
-  snomed_ct: http://snomed.info/id/
+  snomedct: http://snomed.info/id/
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
   mesh: http://id.nlm.nih.gov/mesh/
@@ -32,6 +32,8 @@ prefixes:
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
   KIN: http://purl.org/ga4gh/kin.owl#
+  edam: http://edamontology.org
+  OBI: http://purl.obolibrary.org/obo/OBI_
 
 default_prefix: cam
 default_range: string
@@ -149,7 +151,7 @@ classes:
     - study_id
   AccessPolicy:
     title: Access Policy
-    description: The access policy that describes the controls around use of 
+    description: The access policy that describes the controls around use of
       data
     slots:
     - access_policy_id
@@ -193,7 +195,7 @@ classes:
         identifier: true
   StudyMetadata:
     title: Study Metadata
-    description: Additional features about studies that may not apply to all 
+    description: Additional features about studies that may not apply to all
       studies
     is_a: Record
     slots:
@@ -238,7 +240,7 @@ classes:
 
   DOI:
     title: Digital Object Identifier (DOI)
-    description: A DOI is a permanent reference with metadata about a digital 
+    description: A DOI is a permanent reference with metadata about a digital
       object.
     is_a: Record
     slots:
@@ -251,7 +253,7 @@ classes:
         identifier: true
   Investigator:
     title: Investigator
-    description: An individual who made contributions to the collection, 
+    description: An individual who made contributions to the collection,
       analysis, or sharing of data.
     is_a: Record
     slots:
@@ -270,7 +272,7 @@ classes:
     - website
   Subject:
     title: Subject
-    description: This entity is the subject about which data or references are 
+    description: This entity is the subject about which data or references are
       recorded. This includes the idea of a human participant in a study, a cell
       line, an animal model, or any other similar entity.
     is_a: Record
@@ -301,7 +303,7 @@ classes:
         identifier: true
   Family:
     title: Family
-    description: A group of individuals of some relation who are grouped 
+    description: A group of individuals of some relation who are grouped
       together in a study.
     is_a: Record
     slots:
@@ -317,8 +319,8 @@ classes:
         identifier: true
   FamilyRelationship:
     title: Family Member Relationship
-    description: A relationship between two Subjects. Directed as follows 
-      <family_member_id> <relationship> <subject_id> <Mother's id> <KIN:027 
+    description: A relationship between two Subjects. Directed as follows
+      <family_member_id> <relationship> <subject_id> <Mother's id> <KIN:027
       "isBiologicalMotherOf"> <subject_id>
     is_a: Record
     slots:
@@ -336,7 +338,7 @@ classes:
         description: The family member Subject who is the relationship "object".
   FamilyMembership:
     title: Family Membership
-    description: Designates a Subject as a member of a family with a specified 
+    description: Designates a Subject as a member of a family with a specified
       role.
     is_a: Record
     slots:
@@ -355,7 +357,7 @@ classes:
         required: true
   SubjectAssertion:
     title: Subject Assertion
-    description: Assertion about a particular Subject. May include Conditions, 
+    description: Assertion about a particular Subject. May include Conditions,
       Measurements, etc.
     is_a: Record
     slots:
@@ -393,7 +395,7 @@ classes:
         identifier: true
   Sample:
     title: Sample
-    description: A functionally equivalent specimen taken from a participant or 
+    description: A functionally equivalent specimen taken from a participant or
       processed from such a sample.
     is_a: Record
     slots:
@@ -412,11 +414,11 @@ classes:
         required: true
         identifier: true
       biospecimen_collection_id:
-        description: Biospecimen Collection during which this sample was 
+        description: Biospecimen Collection during which this sample was
           generated.
   BiospecimenCollection:
     title: BiospecimenCollection
-    description: A biospecimen collection event which yields one or more 
+    description: A biospecimen collection event which yields one or more
       Samples.
     is_a: Record
     slots:
@@ -434,7 +436,7 @@ classes:
         identifier: true
   Aliquot:
     title: Aliquot
-    description: A specific tube or amount of a biospecimen associated with a 
+    description: A specific tube or amount of a biospecimen associated with a
       Sample.
     is_a: Record
     slots:
@@ -452,7 +454,7 @@ classes:
         identifier: true
   Encounter:
     title: Participant Encounter
-    description: An event at which data was collected about a participant, an 
+    description: An event at which data was collected about a participant, an
       intervention was made, or information about a participant was recorded.
     is_a: Record
     slots:
@@ -468,9 +470,9 @@ classes:
         identifier: true
   EncounterDefinition:
     title: Encounter Definition
-    description: A definition of an encounter type in this study, ie, an event 
+    description: A definition of an encounter type in this study, ie, an event
       at which data was collected about a participant, an intervention was made,
-      or information about a participant was recorded. This may be something 
+      or information about a participant was recorded. This may be something
       planned by a study or a type of data collection.
     #TODO: These are metadata and may not need the same Record basis.
     is_a: Record
@@ -488,7 +490,7 @@ classes:
         multivalued: true
   ActivityDefinition:
     title: Activity Definition
-    description: A definition of an activity in this study, eg, a biospecimen 
+    description: A definition of an activity in this study, eg, a biospecimen
       collection, assay, intervention, survey, or assessment.
     #TODO: These are metadata and may not need the same Record basis.
     is_a: Record
@@ -543,7 +545,7 @@ classes:
 
   Assay:
     title: Assay
-    description: A specific assay that was performed on given subject(s) or 
+    description: A specific assay that was performed on given subject(s) or
       sample(s).
     is_a: Record
     slots:
@@ -602,12 +604,12 @@ slots:
     multivalued: false
   access_policy_id:
     title: Access Policy ID
-    description: Global identifier for the access policy that applies to this 
+    description: Global identifier for the access policy that applies to this
       row of data.
     range: AccessPolicy
   data_use_accession:
     title: Data Use Accession
-    description: Accession used to provision access to the record, eg, a dbGaP 
+    description: Accession used to provision access to the record, eg, a dbGaP
       phsID.
     range: uriorcurie
   data_use_permission:
@@ -621,7 +623,7 @@ slots:
     range: EnumDataUseModifier
   disease_limitation:
     title: Data Use Disease Limitation
-    description: If the access is limited to a specific disease purpose, it is 
+    description: If the access is limited to a specific disease purpose, it is
       specified here.
     range: string
   access_description:
@@ -645,7 +647,7 @@ slots:
     multivalued: false
   external_id:
     title: External Identifiers
-    description: Other identifiers for this entity, eg, from the submitting 
+    description: Other identifiers for this entity, eg, from the submitting
       study or in systems like dbGaP
     required: false
     range: uriorcurie
@@ -726,12 +728,12 @@ slots:
     multivalued: true
   vbr_id:
     title: Virtual Biorepository
-    description: Information about the study's Virtual Biorepository, if 
+    description: Information about the study's Virtual Biorepository, if
       participating
     range: VirtualBiorepository
   vbr_readme:
     title: VBR Readme
-    description: Instructions for contacting or requesting samples from Virtual 
+    description: Instructions for contacting or requesting samples from Virtual
       Biorepository, if participating
     range: string
   research_domain:
@@ -747,19 +749,19 @@ slots:
     multivalued: true
   selection_criteria:
     title: Selection Criteria
-    description: Brief description of inclusion and/or exclusion criteria for 
+    description: Brief description of inclusion and/or exclusion criteria for
       the study
     range: string
   study_design:
     title: Study Design
-    description: Overall design of study, including whether it is longitudinal 
+    description: Overall design of study, including whether it is longitudinal
       and whether family members/unrelated controls are also enrolled
     range: EnumStudyDesign
     required: true
     multivalued: true
   data_category:
     title: Data Category
-    description: General category of data in this Record (e.g. Clinical, 
+    description: General category of data in this Record (e.g. Clinical,
       Genomics, etc)
     range: EnumDataCategory
   clinical_data_source_type:
@@ -789,12 +791,12 @@ slots:
     range: string
   citation_statement:
     title: Citation Statement
-    description: Statement that secondary data users should use to acknowledge 
-      use of this study or dataset. E.g., "The results analyzed and <published 
-      or shown> here are based in whole or in part upon data generated by the 
-      INCLUDE (INvestigation of Co-occurring conditions across the Lifespan to 
+    description: Statement that secondary data users should use to acknowledge
+      use of this study or dataset. E.g., "The results analyzed and <published
+      or shown> here are based in whole or in part upon data generated by the
+      INCLUDE (INvestigation of Co-occurring conditions across the Lifespan to
       Understand Down syndromE) Project <insert accession number(s) and/or study
-      DOI(s)>, and were accessed from the INCLUDE Data Hub and <insert other 
+      DOI(s)>, and were accessed from the INCLUDE Data Hub and <insert other
       database(s)>."
     range: string
   bibliographic_reference:
@@ -803,7 +805,7 @@ slots:
     range: string
   organism_type:
     title: Organism Type
-    description: Organism Type, typically from NCBITaxon. For reference, Human 
+    description: Organism Type, typically from NCBITaxon. For reference, Human
       is NCBITaxon:9606.
     range: uriorcurie
   subject_type:
@@ -830,8 +832,8 @@ slots:
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
     title: Age at First Participant Engagement
-    description: Age in days of Participant at first recorded study event 
-      (enrollment, visit, observation, sample collection, survey completion, 
+    description: Age in days of Participant at first recorded study event
+      (enrollment, visit, observation, sample collection, survey completion,
       etc.). Age at enrollment is preferred, if available.
     range: integer
     unit:
@@ -859,7 +861,7 @@ slots:
     description: Describes the 'type' of study family, eg, trio.
     range: EnumFamilyType
   family_description:
-    description: Free text describing the study family, such as potential 
+    description: Free text describing the study family, such as potential
       inheritance or details about consanguinity
     range: string
   consanguinity:
@@ -878,8 +880,8 @@ slots:
     range: Subject
     inlined: false
   relation:
-    description: Code definting the relationship predicate. Relationship of the 
-      "Family Member" to the "Subject", eg, mother of. Ideally uses KIN 
+    description: Code definting the relationship predicate. Relationship of the
+      "Family Member" to the "Subject", eg, mother of. Ideally uses KIN
       ontology.
     required: true
     range: EnumFamilyRelation
@@ -888,7 +890,7 @@ slots:
     description: ID for the Family Relationship
     range: FamilyMembership
   family_role:
-    description: The "role" of this individual in this family. Could include 
+    description: The "role" of this individual in this family. Could include
       terms like "proband", "mother", etc.
     range: uriorcurie
   assertion_provenance:
@@ -903,14 +905,14 @@ slots:
       ucum_code: d
   age_at_event:
     title: Age at event
-    description: The age in days of the Subject at the time point which the 
+    description: The age in days of the Subject at the time point which the
       assertion describes, eg, age of onset or when a measurement was performed.
     range: integer
     unit:
       ucum_code: d
   age_at_resolution:
     title: Age at resolution
-    description: The age in days of the Subject when the asserted state was 
+    description: The age in days of the Subject when the asserted state was
       resolved.
     range: integer
     unit:
@@ -974,14 +976,14 @@ slots:
     range: Aliquot
   sample_type:
     title: Sample Type
-    description: Type of material of which this Sample is comprised. UBERON is 
+    description: Type of material of which this Sample is comprised. UBERON is
       recommended.
     required: true
     range: uriorcurie
   processing:
     title: Sample Processing
-    description: Processing that was applied to the Parent Sample or from the 
-      Biospecimen Collection that yielded this distinct sample. OBI is 
+    description: Processing that was applied to the Parent Sample or from the
+      Biospecimen Collection that yielded this distinct sample. OBI is
       recommended.
     range: uriorcurie
     multivalued: true
@@ -1009,12 +1011,12 @@ slots:
     range: float
   concentration_unit:
     title: Concentration Units
-    description: Units associated with the concentration of the analyte in the 
+    description: Units associated with the concentration of the analyte in the
       Aliquot.
     range: Concept
   age_at_collection:
     title: Age at Biospecimen Collection
-    description: The age at which this biospecimen was collected in decimal 
+    description: The age at which this biospecimen was collected in decimal
       years.
     range: float
     unit:
@@ -1029,12 +1031,12 @@ slots:
     range: EnumSite
   spatial_qualifier:
     title: Spatial Qualifier
-    description: Qualifier that further refine the specific location of 
+    description: Qualifier that further refine the specific location of
       biospecimen collection
     range: EnumSpatialQualifiers
   laterality:
     title: Location Laterality
-    description: Laterality that further refine the specific location of 
+    description: Laterality that further refine the specific location of
       biospecimen collection
     range: EnumLaterality
   encounter_id:
@@ -1067,7 +1069,7 @@ slots:
     range: EnumEDAMFormats
   file_extension:
     title: File Extension
-    description: Typically a 3-4 letter code at the end of a filename that 
+    description: Typically a 3-4 letter code at the end of a filename that
       identifies the file format. Empty string for no extension.
     range: string
     required: true
@@ -1095,7 +1097,7 @@ slots:
     range: uriorcurie
   storage_class:
     title: Storage Class
-    description: Storage class of the object, reflecting cost and access 
+    description: Storage class of the object, reflecting cost and access
       characteristics.
     range: string
   availability:
@@ -1141,4 +1143,3 @@ slots:
     description: The date that data collection started. May include only a year.
     #TODO: We could re-evaluate these as dates, but that may be too implementation specific
     range: string
-
