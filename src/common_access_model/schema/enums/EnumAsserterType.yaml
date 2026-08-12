@@ -1,18 +1,17 @@
-id: https://includedcc.org/common-access-model/EnumAssertionProvenance
-name: EnumAssertionProvenance
+id: https://includedcc.org/common-access-model/EnumAsserterType
+name: EnumAsserterType
 enums:
-  EnumAssertionProvenance:
-    description: Possible data sources for assertions.
-    is_a: EnumNull
+  EnumAsserterType:
+    description: Individuals or organizations making assertions.
     permissible_values:
       CAM:0000049:
-        title: Medical Record
-        description: Data obtained from a medical record
+        title: Healthcare Organization
+        description: Assertion documented by a healthcare system.
         aliases:
         - medical_record
       CAM:0000050:
-        title: Investigator Assessment
-        description: Data obtained by examination, interview, etc. with investigator
+        title: Investigator
+        description: Assertion documented by an investigator, eg, through an examination.
         aliases:
         - investigator_assessment
       CAM:0000051:

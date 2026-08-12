@@ -1,9 +1,9 @@
-id: https://includedcc.org/common-access-model/EnumClinicalDataSourceType
-name: EnumClinicalDataSourceType
+id: https://includedcc.org/common-access-model/EnumDataSourceType
+name: EnumDataSourceType
 enums:
-  EnumClinicalDataSourceType:
-    title: Clinical Data Source Type
-    description: Approaches to ascertain clinical information about a participant.
+  EnumDataSourceType:
+    title: Data Source Type
+    description: Approaches to ascertain information about a participant.
     permissible_values:
       CAM:0000018:
         title: Medical Record
@@ -11,7 +11,7 @@ enums:
         aliases:
         - medical_record
       CAM:0000019:
-        title: Investigator Assessment
+        title: Assessment
         description: Data obtained by examination, interview, etc. with investigator
         aliases:
         - investigator_assessment
@@ -22,7 +22,7 @@ enums:
         aliases:
         - participant_or_caregiver_report
       CAM:0000021:
-        title: Other
+        title: Participant Self-Report
         description: Data obtained from other source, such as tissue bank
         aliases:
         - other

@@ -4,7 +4,7 @@ enums:
   EnumNull:
     description: Base enumeration providing null options.
     permissible_values:
-      NCIT:C17998:
+      snomedct:261665006:
         title: Unknown
         aliases:
           - unknown

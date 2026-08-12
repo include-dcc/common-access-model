@@ -19,8 +19,3 @@ enums:
         description: Known Present
         aliases:
           - known_present
-      snomedct:261665006:
-        title: unknown
-        description: Unknown
-        aliases:
-          - unknown

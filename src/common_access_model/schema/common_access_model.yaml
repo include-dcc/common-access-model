@@ -40,35 +40,35 @@ default_range: string
 imports:
 - linkml:types
 
-- enums/EnumDataUsePermission
-- enums/EnumDataUseModifier
-- enums/EnumProgram
-- enums/EnumResearchDomain
-- enums/EnumParticipantLifespanStage
-- enums/EnumStudyDesign
-- enums/EnumClinicalDataSourceType
-- enums/EnumDataCategory
-- enums/EnumSubjectType
-- enums/EnumSex
-- enums/EnumRace
-- enums/EnumEthnicity
-- enums/EnumVitalStatus
-- enums/EnumNull
-- enums/EnumFamilyType
-- enums/EnumConsanguinityAssertion
-- enums/EnumAssertionProvenance
+- enums/EnumAssayType
+- enums/EnumAsserterType
 - enums/EnumAvailabilityStatus
+- enums/EnumConsanguinityAssertion
+- enums/EnumDataCategory
+- enums/EnumDataSourceType
+- enums/EnumDataUseModifier
+- enums/EnumDataUsePermission
+- enums/EnumEDAMDataTypes
+- enums/EnumEDAMFormats
+- enums/EnumEthnicity
+- enums/EnumFamilyRelation
+- enums/EnumFamilyType
+- enums/EnumFileHashType
+- enums/EnumLaterality
+- enums/EnumNull
+- enums/EnumParticipantLifespanStage
+- enums/EnumPresentAbsent
+- enums/EnumProgram
+- enums/EnumRace
+- enums/EnumResearchDomain
 - enums/EnumSampleCollectionMethod
+- enums/EnumSex
 - enums/EnumSite
 - enums/EnumSpatialQualifiers
-- enums/EnumLaterality
-- enums/EnumEDAMFormats
-- enums/EnumEDAMDataTypes
-- enums/EnumFileHashType
-- enums/EnumPresentAbsent
-- enums/EnumFileAvailability
-- enums/EnumAssayType
-- enums/EnumFamilyRelation
+- enums/EnumStudyDesign
+- enums/EnumSubjectType
+- enums/EnumVitalStatus
+
 types:
   ptGlobalID:
     uri: xsd:string
@@ -364,7 +364,8 @@ classes:
     - assertion_id
     - subject_id
     - encounter_id
-    - assertion_provenance
+    - asserter_type
+    - assertion_source_type
     - age_at_assertion
     - age_at_event
     - age_at_resolution
@@ -767,7 +768,7 @@ slots:
   clinical_data_source_type:
     title: Clinical Data Source Type
     description: Source(s) of data collected from study participants
-    range: EnumClinicalDataSourceType
+    range: EnumDataSourceType
     required: true
     multivalued: true
   publication:
@@ -893,10 +894,14 @@ slots:
     description: The "role" of this individual in this family. Could include
       terms like "proband", "mother", etc.
     range: uriorcurie
-  assertion_provenance:
-    title: Assertion Provenance
-    description: The original source of this assertion
-    range: EnumAssertionProvenance
+  asserter_type:
+    title: Asserter Type
+    description: The original asserter of this information
+    range: EnumAsserterType
+  assertion_source_type:
+    title: Assertion Source
+    description: The source of this assertion from the original data
+    range: EnumDataSourceType
   age_at_assertion:
     title: Age at assertion
     description: The age in days of the Subject when the assertion was made.
@@ -1103,7 +1108,7 @@ slots:
   availability:
     title: File Availability
     description: Is or was this file available to users?
-    range: EnumFileAvailability
+    range: EnumAvailabilityStatus
   hash:
     title: File Hash
     description: File hash information
