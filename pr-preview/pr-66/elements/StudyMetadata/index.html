@@ -265,8 +265,8 @@
 
 
 
-        StudyMetadata --&gt; "1..*" EnumClinicalDataSourceType : clinical_data_source_type
-        click EnumClinicalDataSourceType href "../EnumClinicalDataSourceType/"
+        StudyMetadata --&gt; "1..*" EnumDataSourceType : clinical_data_source_type
+        click EnumDataSourceType href "../EnumDataSourceType/"
 
 
 
@@ -388,7 +388,7 @@
 </tr>
 <tr>
 <td><a href="../clinical_data_source_type/">clinical_data_source_type</a></td>
-<td>1..* <br/> <a href="../EnumClinicalDataSourceType/">EnumClinicalDataSourceType</a></td>
+<td>1..* <br/> <a href="../EnumDataSourceType/">EnumDataSourceType</a></td>
 <td>Source(s) of data collected from study participants</td>
 <td>direct</td>
 </tr>
@@ -573,7 +573,7 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumClinicalDataSourceType
+    range: EnumDataSourceType
     required: true
     multivalued: true
   data_category:

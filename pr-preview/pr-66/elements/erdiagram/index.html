@@ -275,7 +275,7 @@ File {
     uriorcurie release_uri  
     uriorcurie drs_uri  
     string storage_class  
-    EnumFileAvailability availability  
+    EnumAvailabilityStatus availability  
     uriorcurieList external_id  
 }
 FileHash {
@@ -323,7 +323,7 @@ StudyMetadata {
     EnumParticipantLifespanStageList participant_lifespan_stage  
     string selection_criteria  
     EnumStudyDesignList study_design  
-    EnumClinicalDataSourceTypeList clinical_data_source_type  
+    EnumDataSourceTypeList clinical_data_source_type  
     EnumDataCategoryList data_category  
     EnumResearchDomainList research_domain  
     integer expected_number_of_participants  
@@ -338,7 +338,8 @@ Subject {
 }
 SubjectAssertion {
     obGlobalID assertion_id  
-    EnumAssertionProvenance assertion_provenance  
+    EnumAsserterType asserter_type  
+    EnumDataSourceType assertion_source_type  
     integer age_at_assertion  
     integer age_at_event  
     integer age_at_resolution  

@@ -270,8 +270,8 @@
 
 
 
-        File --&gt; "0..1" EnumFileAvailability : availability
-        click EnumFileAvailability href "../EnumFileAvailability/"
+        File --&gt; "0..1" EnumAvailabilityStatus : availability
+        click EnumAvailabilityStatus href "../EnumAvailabilityStatus/"
 
 
 
@@ -482,7 +482,7 @@
 </tr>
 <tr>
 <td><a href="../availability/">availability</a></td>
-<td>0..1 <br/> <a href="../EnumFileAvailability/">EnumFileAvailability</a></td>
+<td>0..1 <br/> <a href="../EnumAvailabilityStatus/">EnumAvailabilityStatus</a></td>
 <td>Is or was this file available to users?</td>
 <td>direct</td>
 </tr>
@@ -803,7 +803,7 @@ attributes:
     owner: File
     domain_of:
     - File
-    range: EnumFileAvailability
+    range: EnumAvailabilityStatus
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

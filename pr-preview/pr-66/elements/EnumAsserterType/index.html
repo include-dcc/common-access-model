@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumAssertionProvenance/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumAsserterType/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumAssertionProvenance - common-access-model</title>
+        <title>Enum: EnumAsserterType - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumassertionprovenance" class="md-skip">
+        <a href="#enum-enumassertertype" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumAssertionProvenance
+              Enum: EnumAsserterType
             
           </span>
         </div>
@@ -399,9 +399,9 @@
   
 
 
-<h1 id="enum-enumassertionprovenance">Enum: EnumAssertionProvenance</h1>
-<p><em>Possible data sources for assertions.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumAssertionProvenance">cam:EnumAssertionProvenance</a></p>
+<h1 id="enum-enumassertertype">Enum: EnumAsserterType</h1>
+<p><em>Individuals or organizations making assertions.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumAsserterType">cam:EnumAsserterType</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -415,12 +415,12 @@
 <tr>
 <td>CAM:0000049</td>
 <td>None</td>
-<td>Data obtained from a medical record</td>
+<td>Assertion documented by a healthcare system</td>
 </tr>
 <tr>
 <td>CAM:0000050</td>
 <td>None</td>
-<td>Data obtained by examination, interview, etc</td>
+<td>Assertion documented by an investigator, eg, through an examination</td>
 </tr>
 <tr>
 <td>CAM:0000051</td>
@@ -444,8 +444,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../assertion_provenance/">assertion_provenance</a></td>
-<td>The original source of this assertion</td>
+<td><a href="../asserter_type/">asserter_type</a></td>
+<td>The original asserter of this information</td>
 </tr>
 </tbody>
 </table>
@@ -457,22 +457,21 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumAssertionProvenance
-description: Possible data sources for assertions.
+<pre><code class="language-yaml">name: EnumAsserterType
+description: Individuals or organizations making assertions.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
 permissible_values:
   CAM:0000049:
     text: CAM:0000049
-    description: Data obtained from a medical record
-    title: Medical Record
+    description: Assertion documented by a healthcare system.
+    title: Healthcare Organization
     aliases:
     - medical_record
   CAM:0000050:
     text: CAM:0000050
-    description: Data obtained by examination, interview, etc. with investigator
-    title: Investigator Assessment
+    description: Assertion documented by an investigator, eg, through an examination.
+    title: Investigator
     aliases:
     - investigator_assessment
   CAM:0000051:

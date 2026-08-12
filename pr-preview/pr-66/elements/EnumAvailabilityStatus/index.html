@@ -400,7 +400,7 @@
 
 
 <h1 id="enum-enumavailabilitystatus">Enum: EnumAvailabilityStatus</h1>
-<p><em>Is the biospecimen available for use?</em></p>
+<p><em>Is this item available for use?</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumAvailabilityStatus">cam:EnumAvailabilityStatus</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
@@ -413,14 +413,14 @@
 </thead>
 <tbody>
 <tr>
-<td>ig2_biospecimen_availability:available</td>
-<td>None</td>
-<td>Biospecimen is Available</td>
+<td>snomedct:103328004</td>
+<td>snomedct:103328004</td>
+<td>The item is available to users, authorization/request permitting</td>
 </tr>
 <tr>
-<td>ig2_biospecimen_availability:unavailable</td>
-<td>None</td>
-<td>Biospecimen is Unavailable</td>
+<td>snomedct:103329007</td>
+<td>snomedct:103329007</td>
+<td>The item is not available to users</td>
 </tr>
 </tbody>
 </table>
@@ -437,6 +437,10 @@
 <td><a href="../availablity_status/">availablity_status</a></td>
 <td>Can this Sample be requested for further analysis?</td>
 </tr>
+<tr>
+<td><a href="../availability/">availability</a></td>
+<td>Is or was this file available to users?</td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -448,22 +452,20 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumAvailabilityStatus
-description: Is the biospecimen available for use?
+description: Is this item available for use?
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  ig2_biospecimen_availability:available:
-    text: ig2_biospecimen_availability:available
-    description: Biospecimen is Available
+  snomedct:103328004:
+    text: snomedct:103328004
+    description: The item is available to users, authorization/request permitting.
+    meaning: snomedct:103328004
     title: Available
-    aliases:
-    - available
-  ig2_biospecimen_availability:unavailable:
-    text: ig2_biospecimen_availability:unavailable
-    description: Biospecimen is Unavailable
+  snomedct:103329007:
+    text: snomedct:103329007
+    description: The item is not available to users.
+    meaning: snomedct:103329007
     title: Unavailable
-    aliases:
-    - unavailable
 
 </code></pre>
 
