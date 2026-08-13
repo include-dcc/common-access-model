@@ -497,10 +497,9 @@ enums:
     permissible_values:
       OBI:0000070:
         text: OBI:0000070
-        description: A protocol that is a set of step-by-step instructions compiled
-          by an organization for carrying out routine operations.
+        description: assay
         meaning: OBI:0000070
-        title: standard operating procedure
+        title: assay
       CHMO:0000087:
         text: CHMO:0000087
         description: Any type of light microscopy assay where the specimen can be
@@ -27934,7 +27933,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-13T17:05:03'
+source_file_date: '2026-08-13T18:12:00'
 source_file_size: 33318
-generation_date: '2026-08-13T17:05:17'
+generation_date: '2026-08-13T18:12:09'
 
