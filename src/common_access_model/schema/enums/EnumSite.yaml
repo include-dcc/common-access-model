@@ -3,5 +3,12 @@ id: https://includedcc.org/common-access-model/EnumSite
 name: EnumSite
 enums:
   EnumSite:
-    description: The location of the specimen collection. [SNOMED Body 
-      Site](https://hl7.org/fhir/R4B/valueset-body-site.html) is recommended.
+    description: The location of the specimen collection.
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+      source_nodes:
+        - snomedct:442083009
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf

@@ -761,7 +761,9 @@ slots:
     title: Study Design
     description: Overall design of study, including whether it is longitudinal
       and whether family members/unrelated controls are also enrolled
-    range: EnumStudyDesign
+    range: uriorcurie
+    any_of:
+      - range: EnumStudyDesign
     required: true
     multivalued: true
   data_category:
@@ -850,6 +852,8 @@ slots:
     title: Vital Status
     description: Whether participant is alive or dead
     range: EnumVitalStatus
+    any_of:
+      - range: EnumNull
   age_at_last_vital_status:
     title: Age at Last Vital Status
     description: Age in days when participant's vital status was last recorded
@@ -1033,11 +1037,15 @@ slots:
   method:
     title: Biospecimen Collection Method
     description: The approach used to collect the biospecimen.
-    range: EnumSampleCollectionMethod
+    range: uriorcurie
+    any_of:
+      - range: EnumSampleCollectionMethod
   site:
     title: Biospecimen Collection Site
     description: The location of the specimen collection.
-    range: EnumSite
+    range: uriorcurie
+    any_of:
+      - range: EnumSite
   spatial_qualifier:
     title: Spatial Qualifier
     description: Qualifier that further refine the specific location of

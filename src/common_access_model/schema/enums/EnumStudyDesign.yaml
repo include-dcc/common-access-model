@@ -5,44 +5,12 @@ enums:
     title: Study Design
     description: Approaches for collecting data, investigating interventions, and/or
       analyzing data.
-    permissible_values:
-      CAM:0000008:
-        title: Case-Control
-        aliases:
-        - case_control
-      CAM:0000009:
-        title: Case Set
-        aliases:
-        - case_set
-      CAM:0000010:
-        title: Control Set
-        aliases:
-        - control_set
-      CAM:0000011:
-        title: Clinical Trial
-        aliases:
-        - clinical_trial
-      CAM:0000012:
-        title: Cross-Sectional
-        aliases:
-        - cross_sectional
-      CAM:0000013:
-        title: Family/Twins/Trios
-        aliases:
-        - family_twins_trios
-      CAM:0000014:
-        title: Interventional
-        aliases:
-        - interventional
-      CAM:0000015:
-        title: Longitudinal
-        aliases:
-        - longitudinal
-      CAM:0000016:
-        title: Trial Readiness Study
-        aliases:
-        - trial_readiness_study
-      CAM:0000017:
-        title: Tumor vs Matched Normal
-        aliases:
-        - tumor_vs_matched_normal
+    reachable_from:
+      source_ontology: bioregistry:mesh
+      source_nodes:
+        - mesh:D016021
+        - mesh:D052182
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf

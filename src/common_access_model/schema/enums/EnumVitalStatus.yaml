@@ -3,13 +3,12 @@ name: EnumVitalStatus
 enums:
   EnumVitalStatus:
     description: Descriptions of a Subject's vital status
-    is_a: EnumNull
     permissible_values:
-      NCIT:C28554:
+      snomedct:419099009:
         title: Dead
         aliases:
           - dead
-      NCIT:C37987:
+      snomedct:438949009:
         title: Alive
         aliases:
           - alive
