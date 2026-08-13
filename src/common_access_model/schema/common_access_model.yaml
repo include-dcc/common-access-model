@@ -709,7 +709,9 @@ slots:
   program:
     title: Program
     description: Funding source(s) for the study
-    range: EnumProgram
+    range: uriorcurie
+    any_of: 
+    - range: EnumProgram
     required: true
     multivalued: true
   study_description:
@@ -738,8 +740,10 @@ slots:
       Biorepository, if participating
     range: string
   research_domain:
-    description: Main research domain(s) of the study, other than Down syndrome
-    range: EnumResearchDomain
+    description: Main research domain(s) of the study
+    range: uriorcurie
+    any_of: 
+      - range: EnumResearchDomain
     required: true
     multivalued: true
   participant_lifespan_stage:

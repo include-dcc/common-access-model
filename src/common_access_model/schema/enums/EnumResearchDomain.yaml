@@ -3,8 +3,7 @@ name: EnumResearchDomain
 enums:
   EnumResearchDomain:
     title: Research Domain
-    description: Domains of Research used to find studies.
-    #TODO: replace/add NIH internal categories from Huiqing
+    description: Domains of research activities.
     permissible_values:
       mesh:D001520:
         title: Behavior and Behavior Mechanisms
@@ -38,5 +37,3 @@ enums:
         title: Physical Fitness
         aliases:
           - physical_fitness
-      other:
-        title: Other

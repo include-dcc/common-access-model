@@ -3,25 +3,14 @@ name: EnumParticipantLifespanStage
 enums:
   EnumParticipantLifespanStage:
     title: Participant Lifespan Stage
-    description: Stages of life during which participants may be recruited.
-    permissible_values:
-      CAM:0000004:
-        title: Fetal
-        description: Before birth
-        aliases:
-        - fetal
-      CAM:0000005:
-        title: Neonatal
-        description: 0-28 days old
-        aliases:
-        - neonatal
-      CAM:0000006:
-        title: Pediatric
-        description: Birth-17 years old
-        aliases:
-        - pediatric
-      CAM:0000007:
-        title: Adult
-        description: 18+ years old
-        aliases:
-        - adult
+    description: Stages of life during which participants may be recruited. From NICHD
+      Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html
+    reachable_from:
+      source_ontology: bioregistry:ncit
+      source_nodes:
+        - NCIT:C89335
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+ 
