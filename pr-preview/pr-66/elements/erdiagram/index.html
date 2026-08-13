@@ -203,8 +203,8 @@ Assay {
 BiospecimenCollection {
     string biospecimen_collection_id  
     float age_at_collection  
-    EnumSampleCollectionMethod method  
-    EnumSite site  
+    uriorcurie method  
+    uriorcurie site  
     EnumSpatialQualifiers spatial_qualifier  
     EnumLaterality laterality  
     uriorcurieList external_id  
@@ -322,7 +322,7 @@ Study {
 StudyMetadata {
     EnumParticipantLifespanStageList participant_lifespan_stage  
     string selection_criteria  
-    EnumStudyDesignList study_design  
+    uriorcurieList study_design  
     EnumDataSourceTypeList clinical_data_source_type  
     EnumDataCategoryList data_category  
     uriorcurieList research_domain  

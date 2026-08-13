@@ -330,24 +330,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     <span class="md-ellipsis">
       Identifier and Mapping Information
@@ -402,83 +384,7 @@
 <h1 id="enum-enumstudydesign">Enum: EnumStudyDesign</h1>
 <p><em>Approaches for collecting data, investigating interventions, and/or analyzing data.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumStudyDesign">cam:EnumStudyDesign</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAM:0000008</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000009</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000010</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000011</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000012</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000013</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000014</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000015</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000016</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000017</td>
-<td>None</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../study_design/">study_design</a></td>
-<td>Overall design of study, including whether it is longitudinal and whether fam...</td>
-</tr>
-</tbody>
-</table>
+<p><em>This is a dynamic enum</em></p>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -493,57 +399,15 @@ description: Approaches for collecting data, investigating interventions, and/or
 title: Study Design
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-permissible_values:
-  CAM:0000008:
-    text: CAM:0000008
-    title: Case-Control
-    aliases:
-    - case_control
-  CAM:0000009:
-    text: CAM:0000009
-    title: Case Set
-    aliases:
-    - case_set
-  CAM:0000010:
-    text: CAM:0000010
-    title: Control Set
-    aliases:
-    - control_set
-  CAM:0000011:
-    text: CAM:0000011
-    title: Clinical Trial
-    aliases:
-    - clinical_trial
-  CAM:0000012:
-    text: CAM:0000012
-    title: Cross-Sectional
-    aliases:
-    - cross_sectional
-  CAM:0000013:
-    text: CAM:0000013
-    title: Family/Twins/Trios
-    aliases:
-    - family_twins_trios
-  CAM:0000014:
-    text: CAM:0000014
-    title: Interventional
-    aliases:
-    - interventional
-  CAM:0000015:
-    text: CAM:0000015
-    title: Longitudinal
-    aliases:
-    - longitudinal
-  CAM:0000016:
-    text: CAM:0000016
-    title: Trial Readiness Study
-    aliases:
-    - trial_readiness_study
-  CAM:0000017:
-    text: CAM:0000017
-    title: Tumor vs Matched Normal
-    aliases:
-    - tumor_vs_matched_normal
+reachable_from:
+  source_ontology: bioregistry:mesh
+  source_nodes:
+  - mesh:D016021
+  - mesh:D052182
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 

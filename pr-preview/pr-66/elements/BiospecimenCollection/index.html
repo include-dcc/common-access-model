@@ -294,25 +294,7 @@
 
       BiospecimenCollection : method
 
-
-
-
-
-        BiospecimenCollection --&gt; "0..1" EnumSampleCollectionMethod : method
-        click EnumSampleCollectionMethod href "../EnumSampleCollectionMethod/"
-
-
-
       BiospecimenCollection : site
-
-
-
-
-
-        BiospecimenCollection --&gt; "0..1" EnumSite : site
-        click EnumSite href "../EnumSite/"
-
-
 
       BiospecimenCollection : spatial_qualifier
 
@@ -370,13 +352,13 @@
 </tr>
 <tr>
 <td><a href="../method/">method</a></td>
-<td>0..1 <br/> <a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
 <td>The approach used to collect the biospecimen</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../site/">site</a></td>
-<td>0..1 <br/> <a href="../EnumSite/">EnumSite</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
 <td>The location of the specimen collection</td>
 <td>direct</td>
 </tr>
@@ -538,7 +520,9 @@ attributes:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumSampleCollectionMethod
+    range: uriorcurie
+    any_of:
+    - range: EnumSampleCollectionMethod
   site:
     name: site
     description: The location of the specimen collection.
@@ -549,7 +533,9 @@ attributes:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumSite
+    range: uriorcurie
+    any_of:
+    - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
     description: Qualifier that further refine the specific location of biospecimen

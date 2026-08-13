@@ -302,15 +302,6 @@
 
       StudyMetadata : study_design
 
-
-
-
-
-        StudyMetadata --&gt; "1..*" EnumStudyDesign : study_design
-        click EnumStudyDesign href "../EnumStudyDesign/"
-
-
-
       StudyMetadata : study_id
 
 
@@ -373,7 +364,7 @@
 </tr>
 <tr>
 <td><a href="../study_design/">study_design</a></td>
-<td>1..* <br/> <a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
+<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
 <td>Overall design of study, including whether it is longitudinal and whether fam...</td>
 <td>direct</td>
 </tr>
@@ -551,9 +542,11 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumStudyDesign
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumStudyDesign
   clinical_data_source_type:
     name: clinical_data_source_type
     description: Source(s) of data collected from study participants

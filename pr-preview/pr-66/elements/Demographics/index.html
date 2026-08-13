@@ -381,7 +381,7 @@
 </tr>
 <tr>
 <td><a href="../vital_status/">vital_status</a></td>
-<td>0..1 <br/> <a href="../EnumVitalStatus/">EnumVitalStatus</a></td>
+<td>0..1 <br/> <a href="../EnumVitalStatus/">EnumVitalStatus</a> or <br/><a href="../EnumNull/">EnumNull</a></td>
 <td>Whether participant is alive or dead</td>
 <td>direct</td>
 </tr>
@@ -557,6 +557,8 @@ attributes:
     domain_of:
     - Demographics
     range: EnumVitalStatus
+    any_of:
+    - range: EnumNull
   age_at_first_engagement:
     name: age_at_first_engagement
     description: Age in days of Participant at first recorded study event (enrollment,

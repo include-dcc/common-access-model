@@ -10092,9 +10092,16 @@ enums:
   EnumSampleCollectionMethod:
     name: EnumSampleCollectionMethod
     definition_uri: https://includedcc.org/common-access-model/EnumSampleCollectionMethod/EnumSampleCollectionMethod
-    description: The approach used to collect the biospecimen. [LOINC](https://loinc.org)
-      is recommended.
+    description: The approach used to collect the biospecimen.
     from_schema: https://includedcc.org/common-access-model/EnumSampleCollectionMethod
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+      source_nodes:
+      - snomedct:17636008
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumSex:
     name: EnumSex
     definition_uri: https://includedcc.org/common-access-model/EnumSex/EnumSex
@@ -10124,9 +10131,16 @@ enums:
   EnumSite:
     name: EnumSite
     definition_uri: https://includedcc.org/common-access-model/EnumSite/EnumSite
-    description: The location of the specimen collection. [SNOMED Body Site](https://hl7.org/fhir/R4B/valueset-body-site.html)
-      is recommended.
+    description: The location of the specimen collection.
     from_schema: https://includedcc.org/common-access-model/EnumSite
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+      source_nodes:
+      - snomedct:442083009
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumSpatialQualifiers:
     name: EnumSpatialQualifiers
     definition_uri: https://includedcc.org/common-access-model/EnumSpatialQualifiers/EnumSpatialQualifiers
@@ -13257,57 +13271,15 @@ enums:
       analyzing data.
     title: Study Design
     from_schema: https://includedcc.org/common-access-model/EnumStudyDesign
-    permissible_values:
-      CAM:0000008:
-        text: CAM:0000008
-        title: Case-Control
-        aliases:
-        - case_control
-      CAM:0000009:
-        text: CAM:0000009
-        title: Case Set
-        aliases:
-        - case_set
-      CAM:0000010:
-        text: CAM:0000010
-        title: Control Set
-        aliases:
-        - control_set
-      CAM:0000011:
-        text: CAM:0000011
-        title: Clinical Trial
-        aliases:
-        - clinical_trial
-      CAM:0000012:
-        text: CAM:0000012
-        title: Cross-Sectional
-        aliases:
-        - cross_sectional
-      CAM:0000013:
-        text: CAM:0000013
-        title: Family/Twins/Trios
-        aliases:
-        - family_twins_trios
-      CAM:0000014:
-        text: CAM:0000014
-        title: Interventional
-        aliases:
-        - interventional
-      CAM:0000015:
-        text: CAM:0000015
-        title: Longitudinal
-        aliases:
-        - longitudinal
-      CAM:0000016:
-        text: CAM:0000016
-        title: Trial Readiness Study
-        aliases:
-        - trial_readiness_study
-      CAM:0000017:
-        text: CAM:0000017
-        title: Tumor vs Matched Normal
-        aliases:
-        - tumor_vs_matched_normal
+    reachable_from:
+      source_ontology: bioregistry:mesh
+      source_nodes:
+      - mesh:D016021
+      - mesh:D052182
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumSubjectType:
     name: EnumSubjectType
     definition_uri: https://includedcc.org/common-access-model/EnumSubjectType/EnumSubjectType
@@ -13356,15 +13328,14 @@ enums:
     definition_uri: https://includedcc.org/common-access-model/EnumVitalStatus/EnumVitalStatus
     description: Descriptions of a Subject's vital status
     from_schema: https://includedcc.org/common-access-model/EnumVitalStatus
-    is_a: EnumNull
     permissible_values:
-      NCIT:C28554:
-        text: NCIT:C28554
+      snomedct:419099009:
+        text: snomedct:419099009
         title: Dead
         aliases:
         - dead
-      NCIT:C37987:
-        text: NCIT:C37987
+      snomedct:438949009:
+        text: snomedct:438949009
         title: Alive
         aliases:
         - alive
@@ -13772,9 +13743,11 @@ slots:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumStudyDesign
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumStudyDesign
   data_category:
     name: data_category
     definition_uri: https://includedcc.org/common-access-model/data_category
@@ -13968,6 +13941,8 @@ slots:
     domain_of:
     - Demographics
     range: EnumVitalStatus
+    any_of:
+    - range: EnumNull
   age_at_last_vital_status:
     name: age_at_last_vital_status
     definition_uri: https://includedcc.org/common-access-model/age_at_last_vital_status
@@ -14427,7 +14402,9 @@ slots:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumSampleCollectionMethod
+    range: uriorcurie
+    any_of:
+    - range: EnumSampleCollectionMethod
   site:
     name: site
     definition_uri: https://includedcc.org/common-access-model/site
@@ -14438,7 +14415,9 @@ slots:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumSite
+    range: uriorcurie
+    any_of:
+    - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
     definition_uri: https://includedcc.org/common-access-model/spatial_qualifier
@@ -15980,7 +15959,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-13T18:57:41'
-source_file_size: 33323
-generation_date: '2026-08-13T18:57:50'
+source_file_date: '2026-08-13T21:32:49'
+source_file_size: 33473
+generation_date: '2026-08-13T21:32:59'
 
