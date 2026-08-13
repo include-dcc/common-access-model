@@ -8,7 +8,7 @@ enums:
     reachable_from:
       source_ontology: bioregistry:obi
       source_nodes:
-        - obi:0000070
+        - OBI:0000070
       include_self: true
       is_direct: false
       relationship_types:
