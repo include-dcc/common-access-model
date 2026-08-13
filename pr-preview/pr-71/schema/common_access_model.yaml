@@ -101,6 +101,9 @@ prefixes:
   MS:
     prefix_prefix: MS
     prefix_reference: http://purl.obolibrary.org/obo/MS_
+  CHMO:
+    prefix_prefix: CHMO
+    prefix_reference: http://purl.obolibrary.org/obo/CHMO_
 default_prefix: cam
 default_range: string
 types:
@@ -27930,7 +27933,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-13T16:12:32'
-source_file_size: 33273
-generation_date: '2026-08-13T16:12:41'
+source_file_date: '2026-08-13T16:32:38'
+source_file_size: 33318
+generation_date: '2026-08-13T16:32:53'
 
