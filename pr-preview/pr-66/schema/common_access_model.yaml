@@ -98,6 +98,9 @@ prefixes:
   OBI:
     prefix_prefix: OBI
     prefix_reference: http://purl.obolibrary.org/obo/OBI_
+  MS:
+    prefix_prefix: MS
+    prefix_reference: http://purl.obolibrary.org/obo/MS_
 default_prefix: cam
 default_range: string
 types:
@@ -491,7 +494,7 @@ enums:
     reachable_from:
       source_ontology: bioregistry:obi
       source_nodes:
-      - obi:0000070
+      - OBI:0000070
       relationship_types:
       - rdfs:subClassOf
       is_direct: false
@@ -9889,26 +9892,50 @@ enums:
     description: Types of file hashes supported.
     from_schema: https://includedcc.org/common-access-model/EnumFileHashType
     permissible_values:
-      CAM:0000053:
-        text: CAM:0000053
+      MS:1000568:
+        text: MS:1000568
+        description: MD5 (Message-Digest algorithm 5) is a (now deprecated) cryptographic
+          hash function with a 128-bit hash value used to check the integrity of files.
         title: MD5
         aliases:
         - md5
-      CAM:0000054:
-        text: CAM:0000054
+      CAM:0000022:
+        text: CAM:0000022
+        description: The entity tag is a hash of the object. The ETag reflects changes
+          only to the contents of an object, not its metadata. The ETag may or may
+          not be an MD5 digest of the object data.
         title: ETag
         aliases:
         - etag
-      CAM:0000055:
-        text: CAM:0000055
+      MS:1000569:
+        text: MS:1000569
+        description: SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash function
+          designed by the National Security Agency (NSA). It is also used to verify
+          file integrity. Since 2011 it has been deprecated by the NIST as a U. S.
+          government standard.
         title: SHA-1
         aliases:
         - sha1
+      MS:1003151:
+        text: MS:1003151
+        description: SHA-256 (member of Secure Hash Algorithm-2 family) is a cryptographic
+          hash function designed by the National Security Agency (NSA) and published
+          by the NIST as a U. S. government standard. It is also used to verify file
+          integrity.
+        title: SHA-256
   EnumLaterality:
     name: EnumLaterality
     definition_uri: https://includedcc.org/common-access-model/EnumLaterality/EnumLaterality
     description: Laterality information for the site
     from_schema: https://includedcc.org/common-access-model/EnumLaterality
+    reachable_from:
+      source_ontology: bioregistry:hp
+      source_nodes:
+      - HP:0012831
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumNull:
     name: EnumNull
     definition_uri: https://includedcc.org/common-access-model/EnumNull/EnumNull
@@ -15961,7 +15988,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-13T14:07:40'
-source_file_size: 33232
-generation_date: '2026-08-13T14:07:50'
+source_file_date: '2026-08-13T15:59:18'
+source_file_size: 33273
+generation_date: '2026-08-13T15:59:27'
 
