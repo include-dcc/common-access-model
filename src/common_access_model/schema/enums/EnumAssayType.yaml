@@ -15,8 +15,8 @@ enums:
         - rdfs:subClassOf
     permissible_values:
       OBI:0000070:
-        title: standard operating procedure
-        description: A protocol that is a set of step-by-step instructions compiled by an organization for carrying out routine operations.
+        title: assay
+        description: assay
         meaning: OBI:0000070
       CHMO:0000087:
         title: fluorescence microscopy assay
