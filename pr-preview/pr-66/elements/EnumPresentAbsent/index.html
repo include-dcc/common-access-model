@@ -330,9 +330,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
+  <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
-      Permissible Values
+      Slots
     </span>
   </a>
   
@@ -391,32 +391,21 @@
 
 
 <h1 id="enum-enumpresentabsent">Enum: EnumPresentAbsent</h1>
-<p><em>Options for Phenotypic Feature Assertions that may be present, absent, or indeterminate. Derived from https://loinc.org/LL750-1</em></p>
+<p><em>Options for describing presence or absence. Derived from SNOMED CT Known codes. The "Known" codes and "Not suspected" are the broadest terms and suitable for general use.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumPresentAbsent">cam:EnumPresentAbsent</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
+<p><em>This is a dynamic enum</em></p>
+<h2 id="slots">Slots</h2>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Meaning</th>
+<th>Name</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>loinc:LA9633-4</td>
-<td>loinc:LA9633-4</td>
-<td>This feature was determined to be present</td>
-</tr>
-<tr>
-<td>loinc:LA9634-2</td>
-<td>loinc:LA9634-2</td>
-<td>This feature was determined to be absent</td>
-</tr>
-<tr>
-<td>loinc:LA11884-6</td>
-<td>loinc:LA11884-6</td>
-<td>This feature was assessed, but unable to be determined as present or absent</td>
+<td><a href="../consanguinity/">consanguinity</a></td>
+<td>Is there known or suspected consanguinity in this study family?</td>
 </tr>
 </tbody>
 </table>
@@ -429,28 +418,19 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumPresentAbsent
-description: Options for Phenotypic Feature Assertions that may be present, absent,
-  or indeterminate. Derived from https://loinc.org/LL750-1
+description: Options for describing presence or absence. Derived from SNOMED CT Known
+  codes. The &quot;Known&quot; codes and &quot;Not suspected&quot; are the broadest terms and suitable
+  for general use.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
-permissible_values:
-  loinc:LA9633-4:
-    text: loinc:LA9633-4
-    description: This feature was determined to be present.
-    meaning: loinc:LA9633-4
-    title: Present
-  loinc:LA9634-2:
-    text: loinc:LA9634-2
-    description: This feature was determined to be absent.
-    meaning: loinc:LA9634-2
-    title: Absent
-  loinc:LA11884-6:
-    text: loinc:LA11884-6
-    description: This feature was assessed, but unable to be determined as present
-      or absent.
-    meaning: loinc:LA11884-6
-    title: Indeterminate
+reachable_from:
+  source_ontology: bioregistry:snomedct
+  source_nodes:
+  - snomedct:36692007
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 

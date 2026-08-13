@@ -9,7 +9,6 @@ imports:
 - enums/EnumAssayType
 - enums/EnumAsserterType
 - enums/EnumAvailabilityStatus
-- enums/EnumConsanguinityAssertion
 - enums/EnumDataCategory
 - enums/EnumDataSourceType
 - enums/EnumDataUseModifier
@@ -45,8 +44,8 @@ prefixes:
   schema:
     prefix_prefix: schema
     prefix_reference: http://schema.org/
-  cdc_race_eth:
-    prefix_prefix: cdc_race_eth
+  CDCREC:
+    prefix_prefix: CDCREC
     prefix_reference: urn:oid:2.16.840.1.113883.6.238/
   hl7_null:
     prefix_prefix: hl7_null
@@ -544,30 +543,6 @@ enums:
         description: The item is not available to users.
         meaning: snomedct:103329007
         title: Unavailable
-  EnumConsanguinityAssertion:
-    name: EnumConsanguinityAssertion
-    definition_uri: https://includedcc.org/common-access-model/EnumConsanguinityAssertion/EnumConsanguinityAssertion
-    description: Asserts known or suspected consanguinity in this study family
-    from_schema: https://includedcc.org/common-access-model/EnumConsanguinityAssertion
-    permissible_values:
-      snomedct:428263003:
-        text: snomedct:428263003
-        description: Not suspected
-        title: not-suspected
-        aliases:
-        - not_suspected
-      snomedct:415684004:
-        text: snomedct:415684004
-        description: Suspected
-        title: suspected
-        aliases:
-        - suspected
-      snomedct:410515003:
-        text: snomedct:410515003
-        description: Known Present
-        title: known-present
-        aliases:
-        - known_present
   EnumDataCategory:
     name: EnumDataCategory
     definition_uri: https://includedcc.org/common-access-model/EnumDataCategory/EnumDataCategory
@@ -9847,26 +9822,16 @@ enums:
     description: Participant ethnicity, specific to Hispanic or Latino.
     from_schema: https://includedcc.org/common-access-model/EnumEthnicity
     permissible_values:
-      NCIT:C17459:
-        text: NCIT:C17459
+      CDCREC:2135-2:
+        text: CDCREC:2135-2
         title: Hispanic or Latino
         aliases:
         - hispanic_or_latino
-      NCIT:C41222:
-        text: NCIT:C41222
+      CDCREC:2186-5:
+        text: CDCREC:2186-5
         title: Not Hispanic or Latino
         aliases:
         - not_hispanic_or_latino
-      NCIT:C132222:
-        text: NCIT:C132222
-        title: Prefer not to answer
-        aliases:
-        - prefer_not_to_answer
-      NCIT:C17998:
-        text: NCIT:C17998
-        title: Unknown
-        aliases:
-        - unknown
   EnumFamilyRelation:
     name: EnumFamilyRelation
     definition_uri: https://includedcc.org/common-access-model/EnumFamilyRelation/EnumFamilyRelation
@@ -9989,27 +9954,18 @@ enums:
   EnumPresentAbsent:
     name: EnumPresentAbsent
     definition_uri: https://includedcc.org/common-access-model/EnumPresentAbsent/EnumPresentAbsent
-    description: Options for Phenotypic Feature Assertions that may be present, absent,
-      or indeterminate. Derived from https://loinc.org/LL750-1
+    description: Options for describing presence or absence. Derived from SNOMED CT
+      Known codes. The "Known" codes and "Not suspected" are the broadest terms and
+      suitable for general use.
     from_schema: https://includedcc.org/common-access-model/EnumPresentAbsent
-    is_a: EnumNull
-    permissible_values:
-      loinc:LA9633-4:
-        text: loinc:LA9633-4
-        description: This feature was determined to be present.
-        meaning: loinc:LA9633-4
-        title: Present
-      loinc:LA9634-2:
-        text: loinc:LA9634-2
-        description: This feature was determined to be absent.
-        meaning: loinc:LA9634-2
-        title: Absent
-      loinc:LA11884-6:
-        text: loinc:LA11884-6
-        description: This feature was assessed, but unable to be determined as present
-          or absent.
-        meaning: loinc:LA11884-6
-        title: Indeterminate
+    reachable_from:
+      source_ontology: bioregistry:snomedct
+      source_nodes:
+      - snomedct:36692007
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumProgram:
     name: EnumProgram
     definition_uri: https://includedcc.org/common-access-model/EnumProgram/EnumProgram
@@ -10038,75 +9994,36 @@ enums:
     description: Participant Race
     from_schema: https://includedcc.org/common-access-model/EnumRace
     permissible_values:
-      NCIT:C41259:
-        text: NCIT:C41259
+      CDCREC:1002-5:
+        text: CDCREC:1002-5
         title: American Indian or Alaska Native
         aliases:
         - american_indian_or_alaska_native
-      NCIT:C41260:
-        text: NCIT:C41260
+      CDCREC:2028-9:
+        text: CDCREC:2028-9
         title: Asian
         aliases:
         - asian
-      NCIT:C16352:
-        text: NCIT:C16352
+      CDCREC:2054-5:
+        text: CDCREC:2054-5
         title: Black or African American
         aliases:
         - black_or_african_american
-      NCIT:C67109:
-        text: NCIT:C67109
-        title: More than one race
-        aliases:
-        - more_than_one_race
-      NCIT:C41219:
-        text: NCIT:C41219
+      CDCREC:2076-8:
+        text: CDCREC:2076-8
         title: Native Hawaiian or Other Pacific Islander
         aliases:
         - native_hawaiian_or_other_pacific_islander
-      NCIT:C17649:
-        text: NCIT:C17649
-        title: Other
-        aliases:
-        - other
-      NCIT:C41261:
-        text: NCIT:C41261
+      CDCREC:2106-3:
+        text: CDCREC:2106-3
         title: White
         aliases:
         - white
-      NCIT:C132222:
-        text: NCIT:C132222
-        title: Prefer not to answer
-        aliases:
-        - prefer_not_to_answer
-      NCIT:C17998:
-        text: NCIT:C17998
-        title: Unknown
-        aliases:
-        - unknown
-      NCIT:C161419:
-        text: NCIT:C161419
-        description: UK only; do not use for US data
-        title: East Asian
-        aliases:
-        - east_asian
-      NCIT:C126531:
-        text: NCIT:C126531
-        description: UK only; do not use for US data
-        title: Latin American
-        aliases:
-        - latin_american
-      NCIT:C43866:
-        text: NCIT:C43866
-        description: UK only; do not use for US data
+      CDCREC:2118-8:
+        text: CDCREC:2118-8
         title: Middle Eastern or North African
         aliases:
         - middle_eastern_or_north_african
-      NCIT:C41263:
-        text: NCIT:C41263
-        description: UK only; do not use for US data
-        title: South Asian
-        aliases:
-        - south_asian
   EnumResearchDomain:
     name: EnumResearchDomain
     definition_uri: https://includedcc.org/common-access-model/EnumResearchDomain/EnumResearchDomain
@@ -14089,7 +14006,7 @@ slots:
     owner: Family
     domain_of:
     - Family
-    range: EnumConsanguinityAssertion
+    range: EnumPresentAbsent
   family_study_focus:
     name: family_study_focus
     definition_uri: https://includedcc.org/common-access-model/family_study_focus
@@ -16044,7 +15961,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-12T22:22:42'
-source_file_size: 33282
-generation_date: '2026-08-12T22:22:52'
+source_file_date: '2026-08-13T14:07:40'
+source_file_size: 33232
+generation_date: '2026-08-13T14:07:50'
 

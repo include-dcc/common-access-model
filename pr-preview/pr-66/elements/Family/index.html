@@ -270,8 +270,8 @@
 
 
 
-        Family --&gt; "0..1" EnumConsanguinityAssertion : consanguinity
-        click EnumConsanguinityAssertion href "../EnumConsanguinityAssertion/"
+        Family --&gt; "0..1" EnumPresentAbsent : consanguinity
+        click EnumPresentAbsent href "../EnumPresentAbsent/"
 
 
 
@@ -345,7 +345,7 @@
 </tr>
 <tr>
 <td><a href="../consanguinity/">consanguinity</a></td>
-<td>0..1 <br/> <a href="../EnumConsanguinityAssertion/">EnumConsanguinityAssertion</a></td>
+<td>0..1 <br/> <a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
 <td>Is there known or suspected consanguinity in this study family?</td>
 <td>direct</td>
 </tr>
@@ -502,7 +502,7 @@ attributes:
     owner: Family
     domain_of:
     - Family
-    range: EnumConsanguinityAssertion
+    range: EnumPresentAbsent
   family_study_focus:
     name: family_study_focus
     description: The specific focus of the investigation, eg, a condition.
