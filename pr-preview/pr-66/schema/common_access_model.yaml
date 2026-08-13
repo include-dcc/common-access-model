@@ -9950,34 +9950,18 @@ enums:
   EnumParticipantLifespanStage:
     name: EnumParticipantLifespanStage
     definition_uri: https://includedcc.org/common-access-model/EnumParticipantLifespanStage/EnumParticipantLifespanStage
-    description: Stages of life during which participants may be recruited.
+    description: Stages of life during which participants may be recruited. From NICHD
+      Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html
     title: Participant Lifespan Stage
     from_schema: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
-    permissible_values:
-      CAM:0000004:
-        text: CAM:0000004
-        description: Before birth
-        title: Fetal
-        aliases:
-        - fetal
-      CAM:0000005:
-        text: CAM:0000005
-        description: 0-28 days old
-        title: Neonatal
-        aliases:
-        - neonatal
-      CAM:0000006:
-        text: CAM:0000006
-        description: Birth-17 years old
-        title: Pediatric
-        aliases:
-        - pediatric
-      CAM:0000007:
-        text: CAM:0000007
-        description: 18+ years old
-        title: Adult
-        aliases:
-        - adult
+    reachable_from:
+      source_ontology: bioregistry:ncit
+      source_nodes:
+      - NCIT:C89335
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumPresentAbsent:
     name: EnumPresentAbsent
     definition_uri: https://includedcc.org/common-access-model/EnumPresentAbsent/EnumPresentAbsent
@@ -9996,25 +9980,32 @@ enums:
   EnumProgram:
     name: EnumProgram
     definition_uri: https://includedcc.org/common-access-model/EnumProgram/EnumProgram
-    description: Funding programs relevant to inform operations.
+    description: Specific funding program examples.
     title: Funding Programs
     from_schema: https://includedcc.org/common-access-model/EnumProgram
     permissible_values:
-      CAM:0000001:
-        text: CAM:0000001
+      https://www.nih.gov/include-project:
+        text: https://www.nih.gov/include-project
+        description: The INCLUDE (INvestigation of Co-occurring conditions across
+          the Lifespan to Understand Down syndromE) Project was launched in June 2018
+          in support of a Congressional directive in the fiscal year (FY) 2018 Omnibus
+          Appropriations. The directive called for a new trans-NIH research initiative
+          on critical health and quality-of-life needs for individuals with Down syndrome.
         title: INCLUDE
         aliases:
         - include
-      CAM:0000002:
-        text: CAM:0000002
-        title: KF
+      https://commonfund.nih.gov/KidsFirst:
+        text: https://commonfund.nih.gov/KidsFirst
+        description: The goal of the Gabriella Miller Kids First Pediatric Research
+          Program (Kids First) is to help researchers uncover new insights into the
+          biology of childhood cancer and congenital anomalies, including the discovery
+          of shared genetic pathways between these disorders. Children with birth
+          defects have an increased risk of developing childhood cancer. This suggests
+          there are shared genetic pathways underlying some types of childhood cancer
+          and congenital anomalies.
+        title: Kids First
         aliases:
         - kf
-      CAM:0000003:
-        text: CAM:0000003
-        title: Other
-        aliases:
-        - other
   EnumRace:
     name: EnumRace
     definition_uri: https://includedcc.org/common-access-model/EnumRace/EnumRace
@@ -10054,7 +10045,7 @@ enums:
   EnumResearchDomain:
     name: EnumResearchDomain
     definition_uri: https://includedcc.org/common-access-model/EnumResearchDomain/EnumResearchDomain
-    description: Domains of Research used to find studies.
+    description: Domains of research activities.
     title: Research Domain
     from_schema: https://includedcc.org/common-access-model/EnumResearchDomain
     permissible_values:
@@ -10098,9 +10089,6 @@ enums:
         title: Physical Fitness
         aliases:
         - physical_fitness
-      other:
-        text: other
-        title: Other
   EnumSampleCollectionMethod:
     name: EnumSampleCollectionMethod
     definition_uri: https://includedcc.org/common-access-model/EnumSampleCollectionMethod/EnumSampleCollectionMethod
@@ -13663,9 +13651,11 @@ slots:
     owner: Study
     domain_of:
     - Study
-    range: EnumProgram
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumProgram
   study_description:
     name: study_description
     definition_uri: https://includedcc.org/common-access-model/study_description
@@ -13735,15 +13725,17 @@ slots:
   research_domain:
     name: research_domain
     definition_uri: https://includedcc.org/common-access-model/research_domain
-    description: Main research domain(s) of the study, other than Down syndrome
+    description: Main research domain(s) of the study
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:research_domain
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumResearchDomain
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumResearchDomain
   participant_lifespan_stage:
     name: participant_lifespan_stage
     definition_uri: https://includedcc.org/common-access-model/participant_lifespan_stage
@@ -15988,7 +15980,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-13T16:00:24'
-source_file_size: 33273
-generation_date: '2026-08-13T16:00:35'
+source_file_date: '2026-08-13T18:57:41'
+source_file_size: 33323
+generation_date: '2026-08-13T18:57:50'
 

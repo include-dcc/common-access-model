@@ -330,15 +330,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       Slots
@@ -400,40 +391,9 @@
 
 
 <h1 id="enum-enumparticipantlifespanstage">Enum: EnumParticipantLifespanStage</h1>
-<p><em>Stages of life during which participants may be recruited.</em></p>
+<p><em>Stages of life during which participants may be recruited. From NICHD Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumParticipantLifespanStage">cam:EnumParticipantLifespanStage</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAM:0000004</td>
-<td>None</td>
-<td>Before birth</td>
-</tr>
-<tr>
-<td>CAM:0000005</td>
-<td>None</td>
-<td>0-28 days old</td>
-</tr>
-<tr>
-<td>CAM:0000006</td>
-<td>None</td>
-<td>Birth-17 years old</td>
-</tr>
-<tr>
-<td>CAM:0000007</td>
-<td>None</td>
-<td>18+ years old</td>
-</tr>
-</tbody>
-</table>
+<p><em>This is a dynamic enum</em></p>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -458,35 +418,19 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumParticipantLifespanStage
-description: Stages of life during which participants may be recruited.
+description: Stages of life during which participants may be recruited. From NICHD
+  Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html
 title: Participant Lifespan Stage
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-permissible_values:
-  CAM:0000004:
-    text: CAM:0000004
-    description: Before birth
-    title: Fetal
-    aliases:
-    - fetal
-  CAM:0000005:
-    text: CAM:0000005
-    description: 0-28 days old
-    title: Neonatal
-    aliases:
-    - neonatal
-  CAM:0000006:
-    text: CAM:0000006
-    description: Birth-17 years old
-    title: Pediatric
-    aliases:
-    - pediatric
-  CAM:0000007:
-    text: CAM:0000007
-    description: 18+ years old
-    title: Adult
-    aliases:
-    - adult
+reachable_from:
+  source_ontology: bioregistry:ncit
+  source_nodes:
+  - NCIT:C89335
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 

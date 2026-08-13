@@ -298,15 +298,6 @@
 
       StudyMetadata : research_domain
 
-
-
-
-
-        StudyMetadata --&gt; "1..*" EnumResearchDomain : research_domain
-        click EnumResearchDomain href "../EnumResearchDomain/"
-
-
-
       StudyMetadata : selection_criteria
 
       StudyMetadata : study_design
@@ -406,8 +397,8 @@
 </tr>
 <tr>
 <td><a href="../research_domain/">research_domain</a></td>
-<td>1..* <br/> <a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
-<td>Main research domain(s) of the study, other than Down syndrome</td>
+<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
+<td>Main research domain(s) of the study</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -605,16 +596,18 @@ attributes:
     range: VirtualBiorepository
   research_domain:
     name: research_domain
-    description: Main research domain(s) of the study, other than Down syndrome
+    description: Main research domain(s) of the study
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     alias: research_domain
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumResearchDomain
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumResearchDomain
   expected_number_of_participants:
     name: expected_number_of_participants
     description: Total expected number of participants to be recruited.
