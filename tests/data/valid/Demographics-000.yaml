@@ -1,5 +1,5 @@
 subject_id: subject000
 sex: NCIT:C20197
 race:
- - NCIT:C41259
-ethnicity: NCIT:C17459
+ - CDCREC:2054-5
+ethnicity: CDCREC:2186-5

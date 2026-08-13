@@ -2,61 +2,30 @@ id: https://includedcc.org/common-access-model/EnumRace
 name: EnumRace
 enums:
   EnumRace:
+  # Could set these up for concept expansion in theory.
     description: Participant Race
     permissible_values:
-      NCIT:C41259:
+      CDCREC:1002-5:
         title: American Indian or Alaska Native
         aliases:
           - american_indian_or_alaska_native
-      NCIT:C41260:
+      CDCREC:2028-9:
         title: Asian
         aliases:
           - asian
-      NCIT:C16352:
+      CDCREC:2054-5:
         title: Black or African American
         aliases:
           - black_or_african_american
-      NCIT:C67109:
-        title: More than one race
-        aliases:
-          - more_than_one_race
-      NCIT:C41219:
+      CDCREC:2076-8:
         title: Native Hawaiian or Other Pacific Islander
         aliases:
           - native_hawaiian_or_other_pacific_islander
-      NCIT:C17649:
-        title: Other
-        aliases:
-          - other
-      NCIT:C41261:
+      CDCREC:2106-3:
         title: White
         aliases:
           - white
-      NCIT:C132222:
-        title: Prefer not to answer
-        aliases:
-          - prefer_not_to_answer
-      NCIT:C17998:
-        title: Unknown
-        aliases:
-          - unknown
-      NCIT:C161419:
-        title: East Asian
-        description: UK only; do not use for US data
-        aliases:
-          - east_asian
-      NCIT:C126531:
-        title: Latin American
-        description: UK only; do not use for US data
-        aliases:
-          - latin_american
-      NCIT:C43866:
+      CDCREC:2118-8:
         title: Middle Eastern or North African
-        description: UK only; do not use for US data
         aliases:
           - middle_eastern_or_north_african
-      NCIT:C41263:
-        title: South Asian
-        description: UK only; do not use for US data
-        aliases:
-          - south_asian

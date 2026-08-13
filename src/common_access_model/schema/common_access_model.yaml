@@ -11,7 +11,7 @@ prefixes:
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
   # subset of CDC Race and Ethnicity Code Set Version 1.0
-  cdc_race_eth: urn:oid:2.16.840.1.113883.6.238/
+  CDCREC: urn:oid:2.16.840.1.113883.6.238/
   hl7_null: http://terminology.hl7.org/CodeSystem/v3-NullFlavor/
   ig_dob_method:
     https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method/
@@ -43,7 +43,6 @@ imports:
 - enums/EnumAssayType
 - enums/EnumAsserterType
 - enums/EnumAvailabilityStatus
-- enums/EnumConsanguinityAssertion
 - enums/EnumDataCategory
 - enums/EnumDataSourceType
 - enums/EnumDataUseModifier
@@ -867,7 +866,7 @@ slots:
     range: string
   consanguinity:
     description: Is there known or suspected consanguinity in this study family?
-    range: EnumConsanguinityAssertion
+    range: EnumPresentAbsent
   family_study_focus:
     description: The specific focus of the investigation, eg, a condition.
     range: uriorcurie
