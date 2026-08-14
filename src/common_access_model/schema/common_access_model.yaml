@@ -35,6 +35,7 @@ prefixes:
   edam: http://edamontology.org
   OBI: http://purl.obolibrary.org/obo/OBI_
   MS: http://purl.obolibrary.org/obo/MS_
+  CHMO: http://purl.obolibrary.org/obo/CHMO_
 
 default_prefix: cam
 default_range: string

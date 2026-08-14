@@ -3,9 +3,9 @@ id: https://includedcc.org/common-access-model/EnumPresentAbsent
 name: EnumPresentAbsent
 enums:
   EnumPresentAbsent:
-    description: Options for describing presence or absence. Derived from
-      SNOMED CT Known codes. The "Known" codes and "Not suspected" are the 
-      broadest terms and suitable for general use.
+    description: Options for describing presence or absence. Derived from SNOMED CT
+      Known codes. The "Known" codes and "Not suspected" are the broadest terms and
+      suitable for general use.
     reachable_from:
       source_ontology: bioregistry:snomedct
       source_nodes:
@@ -14,3 +14,37 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
+    permissible_values:
+      snomedct:410515003:
+        title: Known present
+        meaning: snomedct:410515003
+      snomedct:410516002:
+        title: Known absent
+        meaning: snomedct:410516002
+      snomedct:410590009:
+        title: Known possible
+        meaning: snomedct:410590009
+      snomedct:410591008:
+        title: Definitely present
+        meaning: snomedct:410591008
+      snomedct:410592001:
+        title: Probably present
+        meaning: snomedct:410592001
+      snomedct:410593006:
+        title: Probably not present
+        meaning: snomedct:410593006
+      snomedct:410594000:
+        title: Definitely not present
+        meaning: snomedct:410594000
+      snomedct:410605003:
+        title: Confirmed present
+        meaning: snomedct:410605003
+      snomedct:415684004:
+        title: Suspected
+        meaning: snomedct:415684004
+      snomedct:428263003:
+        title: Not suspected
+        meaning: snomedct:428263003
+      snomedct:723511001:
+        title: Refuted
+        meaning: snomedct:723511001
