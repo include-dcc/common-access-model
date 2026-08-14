@@ -4,7 +4,6 @@ name: EnumFamilyRelation
 enums:
   EnumFamilyRelation:
     description: Definitions of family relations as provided by KIN Ontology.
-    is_a: EnumNull
     reachable_from:
       source_ontology: http://purl.org/ga4gh/kin.owl
       source_nodes:

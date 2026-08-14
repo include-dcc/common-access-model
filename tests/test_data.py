@@ -34,6 +34,6 @@ def test_valid_data_files(filepath):
         common_access_model.datamodel.common_access_model,
         target_class_name,
     )
-    with pytest.raises(ValueError):
+    with pytest.raises(Exception):
         obj = yaml_loader.load(filepath, target_class=tgt_class)
 

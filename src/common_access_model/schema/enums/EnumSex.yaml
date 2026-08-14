@@ -4,19 +4,11 @@ enums:
   EnumSex:
     description: Subject Sex
     permissible_values:
-      NCIT:C16576:
+      snomedct:248152002:
         title: Female
         aliases:
           - female
-      NCIT:C20197:
+      snomedct:248153007:
         title: Male
         aliases:
           - male
-      NCIT:C17649:
-        title: Other
-        aliases:
-          - other
-      NCIT:C17998:
-        title: Unknown
-        aliases:
-          - unknown

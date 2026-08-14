@@ -3,7 +3,6 @@ name: EnumFamilyType
 enums:
   EnumFamilyType:
     description: Enumerations describing research family type
-    is_a: EnumNull
     permissible_values:
       CAM:0000044:
         title: Control-only

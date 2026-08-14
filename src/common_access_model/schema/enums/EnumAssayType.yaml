@@ -4,7 +4,6 @@ name: EnumAssayType
 enums:
   EnumAssayType:
     description: Type of assays performed
-    is_a: EnumNull
     reachable_from:
       source_ontology: bioregistry:obi
       source_nodes:

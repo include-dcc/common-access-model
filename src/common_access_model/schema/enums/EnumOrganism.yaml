@@ -1,0 +1,21 @@
+---
+id: https://includedcc.org/common-access-model/EnumOrganism
+name: EnumOrganism
+enums:
+  EnumOrganism:
+    description: Common Organism types.
+    permissible_values:
+      NCBITaxon:9606:
+        title: Human
+        aliases:
+          - human
+      NCBITaxon:10090:
+        title: Mus musculus
+        aliases:
+          - mouse
+          - house_mouse
+
+
+
+ 
+

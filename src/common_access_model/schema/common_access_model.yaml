@@ -36,6 +36,7 @@ prefixes:
   OBI: http://purl.obolibrary.org/obo/OBI_
   MS: http://purl.obolibrary.org/obo/MS_
   CHMO: http://purl.obolibrary.org/obo/CHMO_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
 
 default_prefix: cam
 default_range: string
@@ -53,10 +54,11 @@ imports:
 - enums/EnumEDAMFormats
 - enums/EnumEthnicity
 - enums/EnumFamilyRelation
+- enums/EnumFamilyRole
 - enums/EnumFamilyType
 - enums/EnumFileHashType
 - enums/EnumLaterality
-- enums/EnumNull
+- enums/EnumOrganism
 - enums/EnumParticipantLifespanStage
 - enums/EnumPresentAbsent
 - enums/EnumProgram
@@ -68,6 +70,8 @@ imports:
 - enums/EnumSpatialQualifiers
 - enums/EnumStudyDesign
 - enums/EnumSubjectType
+- enums/EnumUnknown
+- enums/EnumUnknownOther
 - enums/EnumVitalStatus
 
 types:
@@ -379,8 +383,9 @@ classes:
     - value_unit_source
     slot_usage:
       assertion_id:
-        range: obGlobalID
+        range: string
         any_of:
+        - range: obGlobalID
         - range: deGlobalID
         - range: msGlobalID
         required: true
@@ -710,8 +715,9 @@ slots:
   program:
     title: Program
     description: Funding source(s) for the study
-    range: uriorcurie
+    range: Any
     any_of: 
+    - range: uriorcurie
     - range: EnumProgram
     required: true
     multivalued: true
@@ -742,8 +748,9 @@ slots:
     range: string
   research_domain:
     description: Main research domain(s) of the study
-    range: uriorcurie
+    range: Any
     any_of: 
+      - range: Concept
       - range: EnumResearchDomain
     required: true
     multivalued: true
@@ -762,8 +769,9 @@ slots:
     title: Study Design
     description: Overall design of study, including whether it is longitudinal
       and whether family members/unrelated controls are also enrolled
-    range: uriorcurie
+    range: Any
     any_of:
+      - range: Concept
       - range: EnumStudyDesign
     required: true
     multivalued: true
@@ -771,7 +779,9 @@ slots:
     title: Data Category
     description: General category of data in this Record (e.g. Clinical,
       Genomics, etc)
-    range: EnumDataCategory
+    range: uriorcurie
+    any_of:
+      - range: EnumDataCategory
   clinical_data_source_type:
     title: Clinical Data Source Type
     description: Source(s) of data collected from study participants
@@ -813,29 +823,43 @@ slots:
     range: string
   organism_type:
     title: Organism Type
-    description: Organism Type, typically from NCBITaxon. For reference, Human
-      is NCBITaxon:9606.
-    range: uriorcurie
+    description: Organism Type, typically from NCBITaxon.
+    range: Any
+    any_of:
+      - range: Concept
+      - range: EnumOrganism
   subject_type:
     title: Subject Type
     description: Type of entity this record represents
     required: true
-    range: EnumSubjectType
+    range: Any
+    any_of:
+      - range: EnumSubjectType
+      - range: EnumUnknownOther
   sex:
     title: Sex
     description: Sex of Participant
-    range: EnumSex
+    range: Any
+    any_of:
+      - range: EnumSex
+      - range: EnumUnknownOther
     required: true
   race:
     title: Race
     description: Race of Participant
-    range: EnumRace
+    range: Any
+    any_of:
+      - range: EnumRace
+      - range: EnumUnknownOther
     required: true
     multivalued: true
   ethnicity:
     title: Ethnicity
     description: Ethnicity of Participant
-    range: EnumEthnicity
+    range: Any
+    any_of:
+      - range: EnumEthnicity
+      - range: EnumUnknownOther
     required: true
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
@@ -852,9 +876,10 @@ slots:
   vital_status:
     title: Vital Status
     description: Whether participant is alive or dead
-    range: EnumVitalStatus
+    range: Any
     any_of:
-      - range: EnumNull
+      - range: EnumVitalStatus
+      - range: EnumUnknown
   age_at_last_vital_status:
     title: Age at Last Vital Status
     description: Age in days when participant's vital status was last recorded
@@ -894,7 +919,10 @@ slots:
       "Family Member" to the "Subject", eg, mother of. Ideally uses KIN
       ontology.
     required: true
-    range: EnumFamilyRelation
+    range: Any
+    any_of:
+      - range: EnumFamilyRelation
+      - range: EnumUnknown
   family_membership_id:
     title: Family Relationship ID
     description: ID for the Family Relationship
@@ -902,7 +930,10 @@ slots:
   family_role:
     description: The "role" of this individual in this family. Could include
       terms like "proband", "mother", etc.
-    range: uriorcurie
+    range: Any
+    any_of:
+      - range: uriorcurie
+      - range: EnumFamilyRole
   asserter_type:
     title: Asserter Type
     description: The original asserter of this information
@@ -951,8 +982,9 @@ slots:
   value_concept:
     title: Value concept
     description: The structured term defining the value of the assertion.
-    range: Concept
+    range: Any
     any_of:
+    - range: Concept
     - range: EnumPresentAbsent
     multivalued: true
   value_number:
@@ -1038,14 +1070,16 @@ slots:
   method:
     title: Biospecimen Collection Method
     description: The approach used to collect the biospecimen.
-    range: uriorcurie
+    range: Any
     any_of:
+      - range: Concept
       - range: EnumSampleCollectionMethod
   site:
     title: Biospecimen Collection Site
     description: The location of the specimen collection.
-    range: uriorcurie
+    range: Any
     any_of:
+      - range: Concept
       - range: EnumSite
   spatial_qualifier:
     title: Spatial Qualifier

@@ -30,8 +30,4 @@ enums:
         description: A group of individuals or entities.
         aliases:
         - group
-      CAM:0000043:
-        title: other
-        description: A different entity type- ideally this will be resolved!
-        aliases:
-        - other
+

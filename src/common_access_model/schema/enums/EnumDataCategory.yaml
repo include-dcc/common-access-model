@@ -4,64 +4,11 @@ enums:
   EnumDataCategory:
     title: Data Category
     description: Categories of data which may be collected about participants.
-    permissible_values:
-      CAM:0000023:
-        title: Unharmonized Demographic/Clinical Data
-        aliases:
-        - unharmonized_demographic_clinical_data
-      CAM:0000024:
-        title: Harmonized Demographic/Clinical Data
-        aliases:
-        - harmonized_demographic_clinical_data
-      CAM:0000025:
-        title: Genomics
-        aliases:
-        - genomics
-      CAM:0000026:
-        title: Transcriptomics
-        aliases:
-        - transcriptomics
-      CAM:0000027:
-        title: Epigenomics
-        aliases:
-        - epigenomics
-      CAM:0000028:
-        title: Proteomics
-        aliases:
-        - proteomics
-      CAM:0000029:
-        title: Metabolomics
-        aliases:
-        - metabolomics
-      CAM:0000030:
-        title: Cognitive/Behavioral
-        aliases:
-        - cognitive_behavioral
-      CAM:0000031:
-        title: Immune Profiling
-        aliases:
-        - immune_profiling
-      CAM:0000032:
-        title: Imaging
-        aliases:
-        - imaging
-      CAM:0000033:
-        title: Microbiome
-        aliases:
-        - microbiome
-      CAM:0000034:
-        title: Fitness
-        aliases:
-        - fitness
-      CAM:0000035:
-        title: Physical Activity
-        aliases:
-        - physical_activity
-      CAM:0000036:
-        title: Other
-        aliases:
-        - other
-      CAM:0000037:
-        title: Sleep Study
-        aliases:
-        - sleep_study
+    reachable_from:
+      source_ontology: bioregistry:edam
+      source_nodes:
+        - edam:topic_0003
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
