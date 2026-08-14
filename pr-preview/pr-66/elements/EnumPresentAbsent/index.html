@@ -330,6 +330,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Permissible Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#slots" class="md-nav__link">
     <span class="md-ellipsis">
       Slots
@@ -393,7 +402,73 @@
 <h1 id="enum-enumpresentabsent">Enum: EnumPresentAbsent</h1>
 <p><em>Options for describing presence or absence. Derived from SNOMED CT Known codes. The "Known" codes and "Not suspected" are the broadest terms and suitable for general use.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumPresentAbsent">cam:EnumPresentAbsent</a></p>
-<p><em>This is a dynamic enum</em></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>snomedct:410515003</td>
+<td>snomedct:410515003</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410516002</td>
+<td>snomedct:410516002</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410590009</td>
+<td>snomedct:410590009</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410591008</td>
+<td>snomedct:410591008</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410592001</td>
+<td>snomedct:410592001</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410593006</td>
+<td>snomedct:410593006</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410594000</td>
+<td>snomedct:410594000</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:410605003</td>
+<td>snomedct:410605003</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:415684004</td>
+<td>snomedct:415684004</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:428263003</td>
+<td>snomedct:428263003</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:723511001</td>
+<td>snomedct:723511001</td>
+<td></td>
+</tr>
+</tbody>
+</table>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -423,6 +498,51 @@ description: Options for describing presence or absence. Derived from SNOMED CT 
   for general use.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
+permissible_values:
+  snomedct:410515003:
+    text: snomedct:410515003
+    meaning: snomedct:410515003
+    title: Known present
+  snomedct:410516002:
+    text: snomedct:410516002
+    meaning: snomedct:410516002
+    title: Known absent
+  snomedct:410590009:
+    text: snomedct:410590009
+    meaning: snomedct:410590009
+    title: Known possible
+  snomedct:410591008:
+    text: snomedct:410591008
+    meaning: snomedct:410591008
+    title: Definitely present
+  snomedct:410592001:
+    text: snomedct:410592001
+    meaning: snomedct:410592001
+    title: Probably present
+  snomedct:410593006:
+    text: snomedct:410593006
+    meaning: snomedct:410593006
+    title: Probably not present
+  snomedct:410594000:
+    text: snomedct:410594000
+    meaning: snomedct:410594000
+    title: Definitely not present
+  snomedct:410605003:
+    text: snomedct:410605003
+    meaning: snomedct:410605003
+    title: Confirmed present
+  snomedct:415684004:
+    text: snomedct:415684004
+    meaning: snomedct:415684004
+    title: Suspected
+  snomedct:428263003:
+    text: snomedct:428263003
+    meaning: snomedct:428263003
+    title: Not suspected
+  snomedct:723511001:
+    text: snomedct:723511001
+    meaning: snomedct:723511001
+    title: Refuted
 reachable_from:
   source_ontology: bioregistry:snomedct
   source_nodes:
