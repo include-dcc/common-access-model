@@ -409,7 +409,7 @@
 
 
 <h1 id="slot-organism-type-organism_type">Slot: Organism Type (organism_type)</h1>
-<p><em>Organism Type, typically from NCBITaxon. For reference, Human is NCBITaxon:9606.</em></p>
+<p><em>Organism Type, typically from NCBITaxon.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/organism_type">cam:organism_type</a>
 Alias: organism_type</p>
 <!-- no inheritance hierarchy -->
@@ -433,7 +433,7 @@ Alias: organism_type</p>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../Uriorcurie/">Uriorcurie</a></li>
+<li>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumOrganism/">EnumOrganism</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -463,14 +463,17 @@ Alias: organism_type</p>
 <details>
 
 <pre><code class="language-yaml">name: organism_type
-description: Organism Type, typically from NCBITaxon. For reference, Human is NCBITaxon:9606.
+description: Organism Type, typically from NCBITaxon.
 title: Organism Type
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 alias: organism_type
 domain_of:
 - Subject
-range: uriorcurie
+range: Any
+any_of:
+- range: Concept
+- range: EnumOrganism
 
 </code></pre>
 

@@ -434,7 +434,7 @@ Alias: value_concept</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></p>
 </li>
 <li>
 <p>Multivalued: True</p>
@@ -475,9 +475,10 @@ rank: 1000
 alias: value_concept
 domain_of:
 - SubjectAssertion
-range: Concept
+range: Any
 multivalued: true
 any_of:
+- range: Concept
 - range: EnumPresentAbsent
 
 </code></pre>

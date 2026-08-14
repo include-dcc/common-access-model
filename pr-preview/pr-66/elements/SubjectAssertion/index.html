@@ -341,8 +341,8 @@
 
 
 
-        SubjectAssertion --&gt; "*" Concept : value_concept
-        click Concept href "../Concept/"
+        SubjectAssertion --&gt; "*" Any : value_concept
+        click Any href "../Any/"
 
 
 
@@ -385,7 +385,7 @@
 <tbody>
 <tr>
 <td><a href="../assertion_id/">assertion_id</a></td>
-<td>1 <br/> <a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
+<td>1 <br/> <a href="../String/">String</a> or <br/><a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
 <td>INCLUDE Global ID for the Assertion</td>
 <td>direct</td>
 </tr>
@@ -445,7 +445,7 @@
 </tr>
 <tr>
 <td><a href="../value_concept/">value_concept</a></td>
-<td>* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
+<td>* <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
 <td>The structured term defining the value of the assertion</td>
 <td>direct</td>
 </tr>
@@ -547,9 +547,10 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: obGlobalID
+    range: string
     required: true
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
 
@@ -567,9 +568,10 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: obGlobalID
+    range: string
     required: true
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
 attributes:
@@ -584,10 +586,11 @@ attributes:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: obGlobalID
+    range: string
     required: true
     multivalued: false
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
   subject_id:
@@ -718,9 +721,10 @@ attributes:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Concept
+    range: Any
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumPresentAbsent
   value_number:
     name: value_number

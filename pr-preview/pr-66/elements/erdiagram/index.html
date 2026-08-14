@@ -203,8 +203,6 @@ Assay {
 BiospecimenCollection {
     string biospecimen_collection_id  
     float age_at_collection  
-    uriorcurie method  
-    uriorcurie site  
     EnumSpatialQualifiers spatial_qualifier  
     EnumLaterality laterality  
     uriorcurieList external_id  
@@ -226,11 +224,7 @@ Dataset {
     string data_collection_end  
 }
 Demographics {
-    EnumSex sex  
-    EnumRaceList race  
-    EnumEthnicity ethnicity  
     integer age_at_last_vital_status  
-    EnumVitalStatus vital_status  
     integer age_at_first_engagement  
     uriorcurieList external_id  
 }
@@ -255,12 +249,10 @@ Family {
 }
 FamilyMembership {
     string family_membership_id  
-    uriorcurie family_role  
     uriorcurieList external_id  
 }
 FamilyRelationship {
     fmGlobalID family_relationship_id  
-    EnumFamilyRelation relation  
     uriorcurieList external_id  
 }
 File {
@@ -268,7 +260,7 @@ File {
     string filename  
     EnumEDAMFormats format  
     string file_extension  
-    EnumDataCategory data_category  
+    uriorcurie data_category  
     EnumEDAMDataTypes data_type  
     integer size  
     uriorcurie internal_uri  
@@ -310,7 +302,6 @@ Study {
     string study_title  
     string study_code  
     string study_short_name  
-    uriorcurieList program  
     stringList funding_source  
     string study_description  
     uri website  
@@ -322,22 +313,18 @@ Study {
 StudyMetadata {
     EnumParticipantLifespanStageList participant_lifespan_stage  
     string selection_criteria  
-    uriorcurieList study_design  
     EnumDataSourceTypeList clinical_data_source_type  
-    EnumDataCategoryList data_category  
-    uriorcurieList research_domain  
+    uriorcurieList data_category  
     integer expected_number_of_participants  
     integer actual_number_of_participants  
     uriorcurieList external_id  
 }
 Subject {
     ptGlobalID subject_id  
-    EnumSubjectType subject_type  
-    uriorcurie organism_type  
     uriorcurieList external_id  
 }
 SubjectAssertion {
-    obGlobalID assertion_id  
+    string assertion_id  
     EnumAsserterType asserter_type  
     EnumDataSourceType assertion_source_type  
     integer age_at_assertion  
@@ -372,6 +359,8 @@ Assay ||--}o File : "file_id"
 Assay ||--}o Sample : "sample_id"
 Assay ||--}o Subject : "subject_id"
 BiospecimenCollection ||--|o AccessPolicy : "access_policy_id"
+BiospecimenCollection ||--|o Any : "method"
+BiospecimenCollection ||--|o Any : "site"
 BiospecimenCollection ||--|o Encounter : "encounter_id"
 BiospecimenCollection ||--|o Study : "study_id"
 DOI ||--|o AccessPolicy : "access_policy_id"
@@ -380,8 +369,12 @@ Dataset ||--|o DOI : "do_id"
 Dataset ||--}o File : "file_id"
 Dataset ||--}o Publication : "publication"
 Demographics ||--|o AccessPolicy : "access_policy_id"
+Demographics ||--|o Any : "vital_status"
 Demographics ||--|o Study : "study_id"
+Demographics ||--|| Any : "ethnicity"
+Demographics ||--|| Any : "sex"
 Demographics ||--|| Subject : "subject_id"
+Demographics ||--}| Any : "race"
 Encounter ||--|o AccessPolicy : "access_policy_id"
 Encounter ||--|o EncounterDefinition : "encounter_definition_id"
 Encounter ||--|o Study : "study_id"
@@ -392,11 +385,13 @@ EncounterDefinition ||--}o ActivityDefinition : "activity_definition_id"
 Family ||--|o AccessPolicy : "access_policy_id"
 Family ||--|o Study : "study_id"
 FamilyMembership ||--|o AccessPolicy : "access_policy_id"
+FamilyMembership ||--|o Any : "family_role"
 FamilyMembership ||--|o Study : "study_id"
 FamilyMembership ||--|| Family : "family_id"
 FamilyMembership ||--|| Subject : "subject_id"
 FamilyRelationship ||--|o AccessPolicy : "access_policy_id"
 FamilyRelationship ||--|o Study : "study_id"
+FamilyRelationship ||--|| Any : "relation"
 FamilyRelationship ||--|| Subject : "family_member_id"
 FamilyRelationship ||--|| Subject : "subject_id"
 File ||--|o AccessPolicy : "access_policy_id"
@@ -419,20 +414,25 @@ Study ||--|o AccessPolicy : "access_policy_id"
 Study ||--|o DOI : "do_id"
 Study ||--|o Study : "parent_study"
 Study ||--}o Publication : "publication"
+Study ||--}| Any : "program"
 Study ||--}| Investigator : "contact"
 Study ||--}| Investigator : "principal_investigator"
 StudyMetadata ||--|o AccessPolicy : "access_policy_id"
 StudyMetadata ||--|o VirtualBiorepository : "vbr_id"
 StudyMetadata ||--|| Study : "study_id"
+StudyMetadata ||--}| Any : "research_domain"
+StudyMetadata ||--}| Any : "study_design"
 Subject ||--|o AccessPolicy : "access_policy_id"
+Subject ||--|o Any : "organism_type"
 Subject ||--|o Study : "study_id"
+Subject ||--|| Any : "subject_type"
 SubjectAssertion ||--|o AccessPolicy : "access_policy_id"
 SubjectAssertion ||--|o Concept : "value_unit"
 SubjectAssertion ||--|o Encounter : "encounter_id"
 SubjectAssertion ||--|o Study : "study_id"
 SubjectAssertion ||--|o Subject : "subject_id"
+SubjectAssertion ||--}o Any : "value_concept"
 SubjectAssertion ||--}o Concept : "concept"
-SubjectAssertion ||--}o Concept : "value_concept"
 VirtualBiorepository ||--|o AccessPolicy : "access_policy_id"
 VirtualBiorepository ||--|o Study : "study_id"
 VirtualBiorepository ||--}| Investigator : "contact"

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumVitalStatus/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumOrganism/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumVitalStatus - common-access-model</title>
+        <title>Enum: EnumOrganism - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumvitalstatus" class="md-skip">
+        <a href="#enum-enumorganism" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumVitalStatus
+              Enum: EnumOrganism
             
           </span>
         </div>
@@ -390,9 +390,9 @@
   
 
 
-<h1 id="enum-enumvitalstatus">Enum: EnumVitalStatus</h1>
-<p><em>Descriptions of a Subject's vital status</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumVitalStatus">cam:EnumVitalStatus</a></p>
+<h1 id="enum-enumorganism">Enum: EnumOrganism</h1>
+<p><em>Common Organism types.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumOrganism">cam:EnumOrganism</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -404,12 +404,12 @@
 </thead>
 <tbody>
 <tr>
-<td>snomedct:419099009</td>
+<td>NCBITaxon:9606</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>snomedct:438949009</td>
+<td>NCBITaxon:10090</td>
 <td>None</td>
 <td></td>
 </tr>
@@ -423,21 +423,22 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumVitalStatus
-description: Descriptions of a Subject's vital status
+<pre><code class="language-yaml">name: EnumOrganism
+description: Common Organism types.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  snomedct:419099009:
-    text: snomedct:419099009
-    title: Dead
+  NCBITaxon:9606:
+    text: NCBITaxon:9606
+    title: Human
     aliases:
-    - dead
-  snomedct:438949009:
-    text: snomedct:438949009
-    title: Alive
+    - human
+  NCBITaxon:10090:
+    text: NCBITaxon:10090
+    title: Mus musculus
     aliases:
-    - alive
+    - mouse
+    - house_mouse
 
 </code></pre>
 

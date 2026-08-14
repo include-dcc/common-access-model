@@ -274,6 +274,15 @@
 
       FamilyMembership : family_role
 
+
+
+
+
+        FamilyMembership --&gt; "0..1" Any : family_role
+        click Any href "../Any/"
+
+
+
       FamilyMembership : study_id
 
 
@@ -336,7 +345,7 @@
 </tr>
 <tr>
 <td><a href="../family_role/">family_role</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>0..1 <br/> <a href="../Any/">Any</a> or <br/><a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumFamilyRole/">EnumFamilyRole</a></td>
 <td>The "role" of this individual in this family</td>
 <td>direct</td>
 </tr>
@@ -489,7 +498,10 @@ attributes:
     owner: FamilyMembership
     domain_of:
     - FamilyMembership
-    range: uriorcurie
+    range: Any
+    any_of:
+    - range: uriorcurie
+    - range: EnumFamilyRole
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

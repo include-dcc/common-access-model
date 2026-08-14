@@ -434,7 +434,7 @@ Alias: relation</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumFamilyRelation/">EnumFamilyRelation</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../EnumFamilyRelation/">EnumFamilyRelation</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknown/">EnumUnknown</a></p>
 </li>
 <li>
 <p>Required: True</p>
@@ -475,8 +475,11 @@ rank: 1000
 alias: relation
 domain_of:
 - FamilyRelationship
-range: EnumFamilyRelation
+range: Any
 required: true
+any_of:
+- range: EnumFamilyRelation
+- range: EnumUnknown
 
 </code></pre>
 

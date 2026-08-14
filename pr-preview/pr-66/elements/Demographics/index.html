@@ -267,8 +267,8 @@
 
 
 
-        Demographics --&gt; "1" EnumEthnicity : ethnicity
-        click EnumEthnicity href "../EnumEthnicity/"
+        Demographics --&gt; "1" Any : ethnicity
+        click Any href "../Any/"
 
 
 
@@ -280,8 +280,8 @@
 
 
 
-        Demographics --&gt; "1..*" EnumRace : race
-        click EnumRace href "../EnumRace/"
+        Demographics --&gt; "1..*" Any : race
+        click Any href "../Any/"
 
 
 
@@ -291,8 +291,8 @@
 
 
 
-        Demographics --&gt; "1" EnumSex : sex
-        click EnumSex href "../EnumSex/"
+        Demographics --&gt; "1" Any : sex
+        click Any href "../Any/"
 
 
 
@@ -324,8 +324,8 @@
 
 
 
-        Demographics --&gt; "0..1" EnumVitalStatus : vital_status
-        click EnumVitalStatus href "../EnumVitalStatus/"
+        Demographics --&gt; "0..1" Any : vital_status
+        click Any href "../Any/"
 
 
 
@@ -357,19 +357,19 @@
 </tr>
 <tr>
 <td><a href="../sex/">sex</a></td>
-<td>1 <br/> <a href="../EnumSex/">EnumSex</a></td>
+<td>1 <br/> <a href="../Any/">Any</a> or <br/><a href="../EnumSex/">EnumSex</a> or <br/><a href="../EnumUnknownOther/">EnumUnknownOther</a></td>
 <td>Sex of Participant</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../race/">race</a></td>
-<td>1..* <br/> <a href="../EnumRace/">EnumRace</a></td>
+<td>1..* <br/> <a href="../Any/">Any</a> or <br/><a href="../EnumRace/">EnumRace</a> or <br/><a href="../EnumUnknownOther/">EnumUnknownOther</a></td>
 <td>Race of Participant</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../ethnicity/">ethnicity</a></td>
-<td>1 <br/> <a href="../EnumEthnicity/">EnumEthnicity</a></td>
+<td>1 <br/> <a href="../Any/">Any</a> or <br/><a href="../EnumEthnicity/">EnumEthnicity</a> or <br/><a href="../EnumUnknownOther/">EnumUnknownOther</a></td>
 <td>Ethnicity of Participant</td>
 <td>direct</td>
 </tr>
@@ -381,7 +381,7 @@
 </tr>
 <tr>
 <td><a href="../vital_status/">vital_status</a></td>
-<td>0..1 <br/> <a href="../EnumVitalStatus/">EnumVitalStatus</a> or <br/><a href="../EnumNull/">EnumNull</a></td>
+<td>0..1 <br/> <a href="../Any/">Any</a> or <br/><a href="../EnumVitalStatus/">EnumVitalStatus</a> or <br/><a href="../EnumUnknown/">EnumUnknown</a></td>
 <td>Whether participant is alive or dead</td>
 <td>direct</td>
 </tr>
@@ -504,8 +504,11 @@ attributes:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumSex
+    range: Any
     required: true
+    any_of:
+    - range: EnumSex
+    - range: EnumUnknownOther
   race:
     name: race
     description: Race of Participant
@@ -516,9 +519,12 @@ attributes:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumRace
+    range: Any
     required: true
     multivalued: true
+    any_of:
+    - range: EnumRace
+    - range: EnumUnknownOther
   ethnicity:
     name: ethnicity
     description: Ethnicity of Participant
@@ -529,8 +535,11 @@ attributes:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumEthnicity
+    range: Any
     required: true
+    any_of:
+    - range: EnumEthnicity
+    - range: EnumUnknownOther
   age_at_last_vital_status:
     name: age_at_last_vital_status
     description: Age in days when participant's vital status was last recorded
@@ -556,9 +565,10 @@ attributes:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumVitalStatus
+    range: Any
     any_of:
-    - range: EnumNull
+    - range: EnumVitalStatus
+    - range: EnumUnknown
   age_at_first_engagement:
     name: age_at_first_engagement
     description: Age in days of Participant at first recorded study event (enrollment,

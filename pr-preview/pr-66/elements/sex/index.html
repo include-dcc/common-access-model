@@ -434,7 +434,7 @@ Alias: sex</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumSex/">EnumSex</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../EnumSex/">EnumSex</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknownOther/">EnumUnknownOther</a></p>
 </li>
 <li>
 <p>Required: True</p>
@@ -475,8 +475,11 @@ rank: 1000
 alias: sex
 domain_of:
 - Demographics
-range: EnumSex
+range: Any
 required: true
+any_of:
+- range: EnumSex
+- range: EnumUnknownOther
 
 </code></pre>
 

@@ -434,7 +434,7 @@ Alias: program</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../EnumProgram/">EnumProgram</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../EnumProgram/">EnumProgram</a></p>
 </li>
 <li>
 <p>Multivalued: True</p>
@@ -478,10 +478,11 @@ rank: 1000
 alias: program
 domain_of:
 - Study
-range: uriorcurie
+range: Any
 required: true
 multivalued: true
 any_of:
+- range: uriorcurie
 - range: EnumProgram
 
 </code></pre>

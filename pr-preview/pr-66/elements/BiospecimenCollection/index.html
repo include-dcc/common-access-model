@@ -294,7 +294,25 @@
 
       BiospecimenCollection : method
 
+
+
+
+
+        BiospecimenCollection --&gt; "0..1" Any : method
+        click Any href "../Any/"
+
+
+
       BiospecimenCollection : site
+
+
+
+
+
+        BiospecimenCollection --&gt; "0..1" Any : site
+        click Any href "../Any/"
+
+
 
       BiospecimenCollection : spatial_qualifier
 
@@ -352,13 +370,13 @@
 </tr>
 <tr>
 <td><a href="../method/">method</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
+<td>0..1 <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
 <td>The approach used to collect the biospecimen</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../site/">site</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
+<td>0..1 <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
 <td>The location of the specimen collection</td>
 <td>direct</td>
 </tr>
@@ -520,8 +538,9 @@ attributes:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: uriorcurie
+    range: Any
     any_of:
+    - range: Concept
     - range: EnumSampleCollectionMethod
   site:
     name: site
@@ -533,8 +552,9 @@ attributes:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: uriorcurie
+    range: Any
     any_of:
+    - range: Concept
     - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier

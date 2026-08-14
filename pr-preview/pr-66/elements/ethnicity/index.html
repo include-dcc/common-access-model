@@ -434,7 +434,7 @@ Alias: ethnicity</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumEthnicity/">EnumEthnicity</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../EnumEthnicity/">EnumEthnicity</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknownOther/">EnumUnknownOther</a></p>
 </li>
 <li>
 <p>Required: True</p>
@@ -475,8 +475,11 @@ rank: 1000
 alias: ethnicity
 domain_of:
 - Demographics
-range: EnumEthnicity
+range: Any
 required: true
+any_of:
+- range: EnumEthnicity
+- range: EnumUnknownOther
 
 </code></pre>
 

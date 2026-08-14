@@ -434,7 +434,7 @@ Alias: study_design</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../EnumStudyDesign/">EnumStudyDesign</a></p>
+<p>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumStudyDesign/">EnumStudyDesign</a></p>
 </li>
 <li>
 <p>Multivalued: True</p>
@@ -479,10 +479,11 @@ rank: 1000
 alias: study_design
 domain_of:
 - StudyMetadata
-range: uriorcurie
+range: Any
 required: true
 multivalued: true
 any_of:
+- range: Concept
 - range: EnumStudyDesign
 
 </code></pre>

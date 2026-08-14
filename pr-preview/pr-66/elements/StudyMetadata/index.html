@@ -272,15 +272,6 @@
 
       StudyMetadata : data_category
 
-
-
-
-
-        StudyMetadata --&gt; "1..*" EnumDataCategory : data_category
-        click EnumDataCategory href "../EnumDataCategory/"
-
-
-
       StudyMetadata : expected_number_of_participants
 
       StudyMetadata : external_id
@@ -298,9 +289,27 @@
 
       StudyMetadata : research_domain
 
+
+
+
+
+        StudyMetadata --&gt; "1..*" Any : research_domain
+        click Any href "../Any/"
+
+
+
       StudyMetadata : selection_criteria
 
       StudyMetadata : study_design
+
+
+
+
+
+        StudyMetadata --&gt; "1..*" Any : study_design
+        click Any href "../Any/"
+
+
 
       StudyMetadata : study_id
 
@@ -364,7 +373,7 @@
 </tr>
 <tr>
 <td><a href="../study_design/">study_design</a></td>
-<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
+<td>1..* <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
 <td>Overall design of study, including whether it is longitudinal and whether fam...</td>
 <td>direct</td>
 </tr>
@@ -376,7 +385,7 @@
 </tr>
 <tr>
 <td><a href="../data_category/">data_category</a></td>
-<td>1..* <br/> <a href="../EnumDataCategory/">EnumDataCategory</a></td>
+<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
 <td>direct</td>
 </tr>
@@ -388,7 +397,7 @@
 </tr>
 <tr>
 <td><a href="../research_domain/">research_domain</a></td>
-<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
+<td>1..* <br/> <a href="../Any/">Any</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
 <td>Main research domain(s) of the study</td>
 <td>direct</td>
 </tr>
@@ -542,10 +551,11 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumStudyDesign
   clinical_data_source_type:
     name: clinical_data_source_type
@@ -572,9 +582,11 @@ attributes:
     domain_of:
     - StudyMetadata
     - File
-    range: EnumDataCategory
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumDataCategory
   vbr_id:
     name: vbr_id
     description: Information about the study's Virtual Biorepository, if participating
@@ -596,10 +608,11 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumResearchDomain
   expected_number_of_participants:
     name: expected_number_of_participants

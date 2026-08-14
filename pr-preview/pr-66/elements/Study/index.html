@@ -318,6 +318,15 @@
 
       Study : program
 
+
+
+
+
+        Study --&gt; "1..*" Any : program
+        click Any href "../Any/"
+
+
+
       Study : publication
 
 
@@ -387,7 +396,7 @@
 </tr>
 <tr>
 <td><a href="../program/">program</a></td>
-<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumProgram/">EnumProgram</a></td>
+<td>1..* <br/> <a href="../Any/">Any</a> or <br/><a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumProgram/">EnumProgram</a></td>
 <td>Funding source(s) for the study</td>
 <td>direct</td>
 </tr>
@@ -734,10 +743,11 @@ attributes:
     owner: Study
     domain_of:
     - Study
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
     any_of:
+    - range: uriorcurie
     - range: EnumProgram
   funding_source:
     name: funding_source

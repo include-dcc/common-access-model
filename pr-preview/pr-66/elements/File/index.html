@@ -277,15 +277,6 @@
 
       File : data_category
 
-
-
-
-
-        File --&gt; "0..1" EnumDataCategory : data_category
-        click EnumDataCategory href "../EnumDataCategory/"
-
-
-
       File : data_type
 
 
@@ -428,7 +419,7 @@
 </tr>
 <tr>
 <td><a href="../data_category/">data_category</a></td>
-<td>0..1 <br/> <a href="../EnumDataCategory/">EnumDataCategory</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
 <td>direct</td>
 </tr>
@@ -712,7 +703,9 @@ attributes:
     domain_of:
     - StudyMetadata
     - File
-    range: EnumDataCategory
+    range: uriorcurie
+    any_of:
+    - range: EnumDataCategory
   data_type:
     name: data_type
     description: The type of data within this file.

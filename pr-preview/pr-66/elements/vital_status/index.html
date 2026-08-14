@@ -433,7 +433,7 @@ Alias: vital_status</p>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../EnumVitalStatus/">EnumVitalStatus</a>&nbsp;or&nbsp;<br /><a href="../EnumNull/">EnumNull</a></li>
+<li>Range: <a href="../Any/">Any</a>&nbsp;or&nbsp;<br /><a href="../EnumVitalStatus/">EnumVitalStatus</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknown/">EnumUnknown</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -470,9 +470,10 @@ rank: 1000
 alias: vital_status
 domain_of:
 - Demographics
-range: EnumVitalStatus
+range: Any
 any_of:
-- range: EnumNull
+- range: EnumVitalStatus
+- range: EnumUnknown
 
 </code></pre>
 

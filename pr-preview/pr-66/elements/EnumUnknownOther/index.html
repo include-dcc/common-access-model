@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumNull/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumUnknownOther/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumNull - common-access-model</title>
+        <title>Enum: EnumUnknownOther - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumnull" class="md-skip">
+        <a href="#enum-enumunknownother" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumNull
+              Enum: EnumUnknownOther
             
           </span>
         </div>
@@ -390,9 +390,9 @@
   
 
 
-<h1 id="enum-enumnull">Enum: EnumNull</h1>
-<p><em>Base enumeration providing null options.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumNull">cam:EnumNull</a></p>
+<h1 id="enum-enumunknownother">Enum: EnumUnknownOther</h1>
+<p><em>Base enumeration providing Unknown and Other options.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumUnknownOther">cam:EnumUnknownOther</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -408,6 +408,11 @@
 <td>None</td>
 <td></td>
 </tr>
+<tr>
+<td>snomedct:74964007</td>
+<td>None</td>
+<td></td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -418,8 +423,8 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumNull
-description: Base enumeration providing null options.
+<pre><code class="language-yaml">name: EnumUnknownOther
+description: Base enumeration providing Unknown and Other options.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
@@ -428,6 +433,11 @@ permissible_values:
     title: Unknown
     aliases:
     - unknown
+  snomedct:74964007:
+    text: snomedct:74964007
+    title: Other
+    aliases:
+    - other
 
 </code></pre>
 

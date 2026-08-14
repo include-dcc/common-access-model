@@ -278,8 +278,8 @@
 
 
 
-        FamilyRelationship --&gt; "1" EnumFamilyRelation : relation
-        click EnumFamilyRelation href "../EnumFamilyRelation/"
+        FamilyRelationship --&gt; "1" Any : relation
+        click Any href "../Any/"
 
 
 
@@ -339,7 +339,7 @@
 </tr>
 <tr>
 <td><a href="../relation/">relation</a></td>
-<td>1 <br/> <a href="../EnumFamilyRelation/">EnumFamilyRelation</a></td>
+<td>1 <br/> <a href="../Any/">Any</a> or <br/><a href="../EnumFamilyRelation/">EnumFamilyRelation</a> or <br/><a href="../EnumUnknown/">EnumUnknown</a></td>
 <td>Code definting the relationship predicate</td>
 <td>direct</td>
 </tr>
@@ -475,8 +475,11 @@ attributes:
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
-    range: EnumFamilyRelation
+    range: Any
     required: true
+    any_of:
+    - range: EnumFamilyRelation
+    - range: EnumUnknown
   subject_id:
     name: subject_id
     description: The family member Subject who is the relationship "object".

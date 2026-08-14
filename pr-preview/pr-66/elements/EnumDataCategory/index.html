@@ -330,24 +330,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
     <span class="md-ellipsis">
       Identifier and Mapping Information
@@ -402,108 +384,7 @@
 <h1 id="enum-enumdatacategory">Enum: EnumDataCategory</h1>
 <p><em>Categories of data which may be collected about participants.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumDataCategory">cam:EnumDataCategory</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAM:0000023</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000024</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000025</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000026</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000027</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000028</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000029</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000030</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000031</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000032</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000033</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000034</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000035</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000036</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAM:0000037</td>
-<td>None</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../data_category/">data_category</a></td>
-<td>General category of data in this Record (e</td>
-</tr>
-</tbody>
-</table>
+<p><em>This is a dynamic enum</em></p>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -517,82 +398,14 @@ description: Categories of data which may be collected about participants.
 title: Data Category
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-permissible_values:
-  CAM:0000023:
-    text: CAM:0000023
-    title: Unharmonized Demographic/Clinical Data
-    aliases:
-    - unharmonized_demographic_clinical_data
-  CAM:0000024:
-    text: CAM:0000024
-    title: Harmonized Demographic/Clinical Data
-    aliases:
-    - harmonized_demographic_clinical_data
-  CAM:0000025:
-    text: CAM:0000025
-    title: Genomics
-    aliases:
-    - genomics
-  CAM:0000026:
-    text: CAM:0000026
-    title: Transcriptomics
-    aliases:
-    - transcriptomics
-  CAM:0000027:
-    text: CAM:0000027
-    title: Epigenomics
-    aliases:
-    - epigenomics
-  CAM:0000028:
-    text: CAM:0000028
-    title: Proteomics
-    aliases:
-    - proteomics
-  CAM:0000029:
-    text: CAM:0000029
-    title: Metabolomics
-    aliases:
-    - metabolomics
-  CAM:0000030:
-    text: CAM:0000030
-    title: Cognitive/Behavioral
-    aliases:
-    - cognitive_behavioral
-  CAM:0000031:
-    text: CAM:0000031
-    title: Immune Profiling
-    aliases:
-    - immune_profiling
-  CAM:0000032:
-    text: CAM:0000032
-    title: Imaging
-    aliases:
-    - imaging
-  CAM:0000033:
-    text: CAM:0000033
-    title: Microbiome
-    aliases:
-    - microbiome
-  CAM:0000034:
-    text: CAM:0000034
-    title: Fitness
-    aliases:
-    - fitness
-  CAM:0000035:
-    text: CAM:0000035
-    title: Physical Activity
-    aliases:
-    - physical_activity
-  CAM:0000036:
-    text: CAM:0000036
-    title: Other
-    aliases:
-    - other
-  CAM:0000037:
-    text: CAM:0000037
-    title: Sleep Study
-    aliases:
-    - sleep_study
+reachable_from:
+  source_ontology: bioregistry:edam
+  source_nodes:
+  - edam:topic_0003
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 

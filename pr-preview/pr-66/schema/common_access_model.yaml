@@ -17,10 +17,11 @@ imports:
 - enums/EnumEDAMFormats
 - enums/EnumEthnicity
 - enums/EnumFamilyRelation
+- enums/EnumFamilyRole
 - enums/EnumFamilyType
 - enums/EnumFileHashType
 - enums/EnumLaterality
-- enums/EnumNull
+- enums/EnumOrganism
 - enums/EnumParticipantLifespanStage
 - enums/EnumPresentAbsent
 - enums/EnumProgram
@@ -32,6 +33,8 @@ imports:
 - enums/EnumSpatialQualifiers
 - enums/EnumStudyDesign
 - enums/EnumSubjectType
+- enums/EnumUnknown
+- enums/EnumUnknownOther
 - enums/EnumVitalStatus
 license: MIT
 prefixes:
@@ -104,6 +107,9 @@ prefixes:
   CHMO:
     prefix_prefix: CHMO
     prefix_reference: http://purl.obolibrary.org/obo/CHMO_
+  NCBITaxon:
+    prefix_prefix: NCBITaxon
+    prefix_reference: http://purl.obolibrary.org/obo/NCBITaxon_
 default_prefix: cam
 default_range: string
 types:
@@ -493,7 +499,6 @@ enums:
     definition_uri: https://includedcc.org/common-access-model/EnumAssayType/EnumAssayType
     description: Type of assays performed
     from_schema: https://includedcc.org/common-access-model/EnumAssayType
-    is_a: EnumNull
     permissible_values:
       OBI:0000070:
         text: OBI:0000070
@@ -12452,82 +12457,14 @@ enums:
     description: Categories of data which may be collected about participants.
     title: Data Category
     from_schema: https://includedcc.org/common-access-model/EnumDataCategory
-    permissible_values:
-      CAM:0000023:
-        text: CAM:0000023
-        title: Unharmonized Demographic/Clinical Data
-        aliases:
-        - unharmonized_demographic_clinical_data
-      CAM:0000024:
-        text: CAM:0000024
-        title: Harmonized Demographic/Clinical Data
-        aliases:
-        - harmonized_demographic_clinical_data
-      CAM:0000025:
-        text: CAM:0000025
-        title: Genomics
-        aliases:
-        - genomics
-      CAM:0000026:
-        text: CAM:0000026
-        title: Transcriptomics
-        aliases:
-        - transcriptomics
-      CAM:0000027:
-        text: CAM:0000027
-        title: Epigenomics
-        aliases:
-        - epigenomics
-      CAM:0000028:
-        text: CAM:0000028
-        title: Proteomics
-        aliases:
-        - proteomics
-      CAM:0000029:
-        text: CAM:0000029
-        title: Metabolomics
-        aliases:
-        - metabolomics
-      CAM:0000030:
-        text: CAM:0000030
-        title: Cognitive/Behavioral
-        aliases:
-        - cognitive_behavioral
-      CAM:0000031:
-        text: CAM:0000031
-        title: Immune Profiling
-        aliases:
-        - immune_profiling
-      CAM:0000032:
-        text: CAM:0000032
-        title: Imaging
-        aliases:
-        - imaging
-      CAM:0000033:
-        text: CAM:0000033
-        title: Microbiome
-        aliases:
-        - microbiome
-      CAM:0000034:
-        text: CAM:0000034
-        title: Fitness
-        aliases:
-        - fitness
-      CAM:0000035:
-        text: CAM:0000035
-        title: Physical Activity
-        aliases:
-        - physical_activity
-      CAM:0000036:
-        text: CAM:0000036
-        title: Other
-        aliases:
-        - other
-      CAM:0000037:
-        text: CAM:0000037
-        title: Sleep Study
-        aliases:
-        - sleep_study
+    reachable_from:
+      source_ontology: bioregistry:edam
+      source_nodes:
+      - edam:topic_0003
+      relationship_types:
+      - rdfs:subClassOf
+      is_direct: false
+      include_self: false
   EnumDataSourceType:
     name: EnumDataSourceType
     definition_uri: https://includedcc.org/common-access-model/EnumDataSourceType/EnumDataSourceType
@@ -21740,7 +21677,6 @@ enums:
     definition_uri: https://includedcc.org/common-access-model/EnumFamilyRelation/EnumFamilyRelation
     description: Definitions of family relations as provided by KIN Ontology.
     from_schema: https://includedcc.org/common-access-model/EnumFamilyRelation
-    is_a: EnumNull
     reachable_from:
       source_ontology: http://purl.org/ga4gh/kin.owl
       source_nodes:
@@ -21749,12 +21685,32 @@ enums:
       - rdfs:subClassOf
       is_direct: false
       include_self: true
+  EnumFamilyRole:
+    name: EnumFamilyRole
+    definition_uri: https://includedcc.org/common-access-model/EnumFamilyRole/EnumFamilyRole
+    description: Example terms related to an individual's role in a family study.
+    from_schema: https://includedcc.org/common-access-model/EnumFamilyRole
+    permissible_values:
+      snomedct:85900004:
+        text: snomedct:85900004
+        title: Proband
+        aliases:
+        - proband
+      KIN:027:
+        text: KIN:027
+        description: A relation that indicates that a person is the biological mother
+          of another person.
+        title: isBiologicalMotherOf
+      snomedct:72705000:
+        text: snomedct:72705000
+        title: Mother
+        aliases:
+        - mother
   EnumFamilyType:
     name: EnumFamilyType
     definition_uri: https://includedcc.org/common-access-model/EnumFamilyType/EnumFamilyType
     description: Enumerations describing research family type
     from_schema: https://includedcc.org/common-access-model/EnumFamilyType
-    is_a: EnumNull
     permissible_values:
       CAM:0000044:
         text: CAM:0000044
@@ -21836,17 +21792,23 @@ enums:
       - rdfs:subClassOf
       is_direct: false
       include_self: false
-  EnumNull:
-    name: EnumNull
-    definition_uri: https://includedcc.org/common-access-model/EnumNull/EnumNull
-    description: Base enumeration providing null options.
-    from_schema: https://includedcc.org/common-access-model/EnumNull
+  EnumOrganism:
+    name: EnumOrganism
+    definition_uri: https://includedcc.org/common-access-model/EnumOrganism/EnumOrganism
+    description: Common Organism types.
+    from_schema: https://includedcc.org/common-access-model/EnumOrganism
     permissible_values:
-      snomedct:261665006:
-        text: snomedct:261665006
-        title: Unknown
+      NCBITaxon:9606:
+        text: NCBITaxon:9606
+        title: Human
         aliases:
-        - unknown
+        - human
+      NCBITaxon:10090:
+        text: NCBITaxon:10090
+        title: Mus musculus
+        aliases:
+        - mouse
+        - house_mouse
   EnumParticipantLifespanStage:
     name: EnumParticipantLifespanStage
     definition_uri: https://includedcc.org/common-access-model/EnumParticipantLifespanStage/EnumParticipantLifespanStage
@@ -22053,26 +22015,16 @@ enums:
     description: Subject Sex
     from_schema: https://includedcc.org/common-access-model/EnumSex
     permissible_values:
-      NCIT:C16576:
-        text: NCIT:C16576
+      snomedct:248152002:
+        text: snomedct:248152002
         title: Female
         aliases:
         - female
-      NCIT:C20197:
-        text: NCIT:C20197
+      snomedct:248153007:
+        text: snomedct:248153007
         title: Male
         aliases:
         - male
-      NCIT:C17649:
-        text: NCIT:C17649
-        title: Other
-        aliases:
-        - other
-      NCIT:C17998:
-        text: NCIT:C17998
-        title: Unknown
-        aliases:
-        - unknown
   EnumSite:
     name: EnumSite
     definition_uri: https://includedcc.org/common-access-model/EnumSite/EnumSite
@@ -25262,10 +25214,31 @@ enums:
         title: group
         aliases:
         - group
-      CAM:0000043:
-        text: CAM:0000043
-        description: A different entity type- ideally this will be resolved!
-        title: other
+  EnumUnknown:
+    name: EnumUnknown
+    definition_uri: https://includedcc.org/common-access-model/EnumUnknown/EnumUnknown
+    description: Base enumeration providing an Unknown option.
+    from_schema: https://includedcc.org/common-access-model/EnumUnknown
+    permissible_values:
+      snomedct:261665006:
+        text: snomedct:261665006
+        title: Unknown
+        aliases:
+        - unknown
+  EnumUnknownOther:
+    name: EnumUnknownOther
+    definition_uri: https://includedcc.org/common-access-model/EnumUnknownOther/EnumUnknownOther
+    description: Base enumeration providing Unknown and Other options.
+    from_schema: https://includedcc.org/common-access-model/EnumUnknownOther
+    permissible_values:
+      snomedct:261665006:
+        text: snomedct:261665006
+        title: Unknown
+        aliases:
+        - unknown
+      snomedct:74964007:
+        text: snomedct:74964007
+        title: Other
         aliases:
         - other
   EnumVitalStatus:
@@ -25567,10 +25540,13 @@ slots:
     owner: Study
     domain_of:
     - Study
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: uriorcurie
     - range: EnumProgram
   study_description:
     name: study_description
@@ -25647,10 +25623,13 @@ slots:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: Concept
     - range: EnumResearchDomain
   participant_lifespan_stage:
     name: participant_lifespan_stage
@@ -25688,10 +25667,13 @@ slots:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: uriorcurie
+    range: Any
     required: true
     multivalued: true
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: Concept
     - range: EnumStudyDesign
   data_category:
     name: data_category
@@ -25705,7 +25687,9 @@ slots:
     domain_of:
     - StudyMetadata
     - File
-    range: EnumDataCategory
+    range: uriorcurie
+    any_of:
+    - range: EnumDataCategory
   clinical_data_source_type:
     name: clinical_data_source_type
     definition_uri: https://includedcc.org/common-access-model/clinical_data_source_type
@@ -25800,15 +25784,19 @@ slots:
   organism_type:
     name: organism_type
     definition_uri: https://includedcc.org/common-access-model/organism_type
-    description: Organism Type, typically from NCBITaxon. For reference, Human is
-      NCBITaxon:9606.
+    description: Organism Type, typically from NCBITaxon.
     title: Organism Type
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:organism_type
     owner: Subject
     domain_of:
     - Subject
-    range: uriorcurie
+    range: Any
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: Concept
+    - range: EnumOrganism
   subject_type:
     name: subject_type
     definition_uri: https://includedcc.org/common-access-model/subject_type
@@ -25819,8 +25807,13 @@ slots:
     owner: Subject
     domain_of:
     - Subject
-    range: EnumSubjectType
+    range: Any
     required: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: EnumSubjectType
+    - range: EnumUnknownOther
   sex:
     name: sex
     definition_uri: https://includedcc.org/common-access-model/sex
@@ -25831,8 +25824,13 @@ slots:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumSex
+    range: Any
     required: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: EnumSex
+    - range: EnumUnknownOther
   race:
     name: race
     definition_uri: https://includedcc.org/common-access-model/race
@@ -25843,9 +25841,14 @@ slots:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumRace
+    range: Any
     required: true
     multivalued: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: EnumRace
+    - range: EnumUnknownOther
   ethnicity:
     name: ethnicity
     definition_uri: https://includedcc.org/common-access-model/ethnicity
@@ -25856,8 +25859,13 @@ slots:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumEthnicity
+    range: Any
     required: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: EnumEthnicity
+    - range: EnumUnknownOther
   age_at_first_engagement:
     name: age_at_first_engagement
     definition_uri: https://includedcc.org/common-access-model/age_at_first_engagement
@@ -25885,9 +25893,12 @@ slots:
     owner: Demographics
     domain_of:
     - Demographics
-    range: EnumVitalStatus
+    range: Any
+    inlined: true
+    inlined_as_list: true
     any_of:
-    - range: EnumNull
+    - range: EnumVitalStatus
+    - range: EnumUnknown
   age_at_last_vital_status:
     name: age_at_last_vital_status
     definition_uri: https://includedcc.org/common-access-model/age_at_last_vital_status
@@ -25989,8 +26000,13 @@ slots:
     owner: FamilyRelationship
     domain_of:
     - FamilyRelationship
-    range: EnumFamilyRelation
+    range: Any
     required: true
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: EnumFamilyRelation
+    - range: EnumUnknown
   family_membership_id:
     name: family_membership_id
     definition_uri: https://includedcc.org/common-access-model/family_membership_id
@@ -26012,7 +26028,12 @@ slots:
     owner: FamilyMembership
     domain_of:
     - FamilyMembership
-    range: uriorcurie
+    range: Any
+    inlined: true
+    inlined_as_list: true
+    any_of:
+    - range: uriorcurie
+    - range: EnumFamilyRole
   asserter_type:
     name: asserter_type
     definition_uri: https://includedcc.org/common-access-model/asserter_type
@@ -26131,9 +26152,12 @@ slots:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: Concept
+    range: Any
     multivalued: true
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: Concept
     - range: EnumPresentAbsent
   value_number:
     name: value_number
@@ -26347,8 +26371,11 @@ slots:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: uriorcurie
+    range: Any
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: Concept
     - range: EnumSampleCollectionMethod
   site:
     name: site
@@ -26360,8 +26387,11 @@ slots:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: uriorcurie
+    range: Any
+    inlined: true
+    inlined_as_list: true
     any_of:
+    - range: Concept
     - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
@@ -26740,9 +26770,11 @@ slots:
     - StudyMetadata
     is_usage_slot: true
     usage_slot_name: data_category
-    range: EnumDataCategory
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumDataCategory
   VirtualBiorepository_vbr_id:
     name: VirtualBiorepository_vbr_id
     definition_uri: https://includedcc.org/common-access-model/vbr_id
@@ -26941,10 +26973,11 @@ slots:
     - SubjectAssertion
     is_usage_slot: true
     usage_slot_name: assertion_id
-    range: obGlobalID
+    range: string
     required: true
     multivalued: false
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
   Concept_concept_curie:
@@ -27614,9 +27647,10 @@ classes:
       assertion_id:
         name: assertion_id
         identifier: true
-        range: obGlobalID
+        range: string
         required: true
         any_of:
+        - range: obGlobalID
         - range: deGlobalID
         - range: msGlobalID
     class_uri: cam:SubjectAssertion
@@ -27904,7 +27938,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-14T16:25:54'
-source_file_size: 33518
-generation_date: '2026-08-14T16:26:06'
+source_file_date: '2026-08-14T20:22:32'
+source_file_size: 34208
+generation_date: '2026-08-14T20:22:45'
 

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumVitalStatus/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumFamilyRole/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumVitalStatus - common-access-model</title>
+        <title>Enum: EnumFamilyRole - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumvitalstatus" class="md-skip">
+        <a href="#enum-enumfamilyrole" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumVitalStatus
+              Enum: EnumFamilyRole
             
           </span>
         </div>
@@ -390,9 +390,9 @@
   
 
 
-<h1 id="enum-enumvitalstatus">Enum: EnumVitalStatus</h1>
-<p><em>Descriptions of a Subject's vital status</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumVitalStatus">cam:EnumVitalStatus</a></p>
+<h1 id="enum-enumfamilyrole">Enum: EnumFamilyRole</h1>
+<p><em>Example terms related to an individual's role in a family study.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumFamilyRole">cam:EnumFamilyRole</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -404,12 +404,17 @@
 </thead>
 <tbody>
 <tr>
-<td>snomedct:419099009</td>
+<td>snomedct:85900004</td>
 <td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>snomedct:438949009</td>
+<td>KIN:027</td>
+<td>None</td>
+<td>A relation that indicates that a person is the biological mother of another p...</td>
+</tr>
+<tr>
+<td>snomedct:72705000</td>
 <td>None</td>
 <td></td>
 </tr>
@@ -423,21 +428,26 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumVitalStatus
-description: Descriptions of a Subject's vital status
+<pre><code class="language-yaml">name: EnumFamilyRole
+description: Example terms related to an individual's role in a family study.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  snomedct:419099009:
-    text: snomedct:419099009
-    title: Dead
+  snomedct:85900004:
+    text: snomedct:85900004
+    title: Proband
     aliases:
-    - dead
-  snomedct:438949009:
-    text: snomedct:438949009
-    title: Alive
+    - proband
+  KIN:027:
+    text: KIN:027
+    description: A relation that indicates that a person is the biological mother
+      of another person.
+    title: isBiologicalMotherOf
+  snomedct:72705000:
+    text: snomedct:72705000
+    title: Mother
     aliases:
-    - alive
+    - mother
 
 </code></pre>
 

@@ -165,6 +165,10 @@
          <lastmod>2026-08-14</lastmod>
     </url>
     <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumFamilyRole/</loc>
+         <lastmod>2026-08-14</lastmod>
+    </url>
+    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/EnumFamilyType/</loc>
          <lastmod>2026-08-14</lastmod>
     </url>
@@ -177,7 +181,7 @@
          <lastmod>2026-08-14</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumNull/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumOrganism/</loc>
          <lastmod>2026-08-14</lastmod>
     </url>
     <url>
@@ -222,6 +226,14 @@
     </url>
     <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/EnumSubjectType/</loc>
+         <lastmod>2026-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumUnknown/</loc>
+         <lastmod>2026-08-14</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumUnknownOther/</loc>
          <lastmod>2026-08-14</lastmod>
     </url>
     <url>

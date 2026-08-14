@@ -438,7 +438,7 @@ Alias: data_category</p>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../EnumDataCategory/">EnumDataCategory</a></li>
+<li>Range: <a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../EnumDataCategory/">EnumDataCategory</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -476,7 +476,9 @@ alias: data_category
 domain_of:
 - StudyMetadata
 - File
-range: EnumDataCategory
+range: uriorcurie
+any_of:
+- range: EnumDataCategory
 
 </code></pre>
 
