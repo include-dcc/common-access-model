@@ -346,10 +346,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Study</strong></li>
-</ul>
-</li>
+<li><strong>Study</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -637,7 +634,8 @@
 description: Study Metadata
 title: Research Study
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - parent_study
 - study_title
@@ -668,7 +666,8 @@ slot_usage:
 description: Study Metadata
 title: Research Study
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   study_id:
     name: study_id

@@ -288,10 +288,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Subject</strong></li>
-</ul>
-</li>
+<li><strong>Subject</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -437,7 +434,8 @@ description: This entity is the subject about which data or references are recor
   model, or any other similar entity.
 title: Subject
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - subject_id
 - subject_type
@@ -459,7 +457,8 @@ description: This entity is the subject about which data or references are recor
   model, or any other similar entity.
 title: Subject
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   subject_id:
     name: subject_id

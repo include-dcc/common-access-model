@@ -292,10 +292,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>FamilyMembership</strong></li>
-</ul>
-</li>
+<li><strong>FamilyMembership</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -384,7 +381,8 @@
 description: Designates a Subject as a member of a family with a specified role.
 title: Family Membership
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - family_membership_id
 - family_id
@@ -411,7 +409,8 @@ slot_usage:
 description: Designates a Subject as a member of a family with a specified role.
 title: Family Membership
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   family_membership_id:
     name: family_membership_id

@@ -301,10 +301,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>FamilyRelationship</strong></li>
-</ul>
-</li>
+<li><strong>FamilyRelationship</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -394,7 +391,8 @@ description: A relationship between two Subjects. Directed as follows &lt;family
   &lt;relationship&gt; &lt;subject_id&gt; &lt;Mother's id&gt; &lt;KIN:027 "isBiologicalMotherOf"&gt; &lt;subject_id&gt;
 title: Family Member Relationship
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - family_relationship_id
 - family_member_id
@@ -420,7 +418,8 @@ description: A relationship between two Subjects. Directed as follows &lt;family
   &lt;relationship&gt; &lt;subject_id&gt; &lt;Mother's id&gt; &lt;KIN:027 "isBiologicalMotherOf"&gt; &lt;subject_id&gt;
 title: Family Member Relationship
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   family_relationship_id:
     name: family_relationship_id

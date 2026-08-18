@@ -3086,10 +3086,9 @@ classes:
     description: Study Metadata
     title: Research Study
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
     - parent_study
     - study_title
     - study_code
@@ -3105,6 +3104,8 @@ classes:
     - citation_statement
     - do_id
     - Study_study_id
+    - external_id
+    - access_policy_id
     slot_usage:
       study_id:
         name: study_id
@@ -3118,10 +3119,9 @@ classes:
     description: Additional features about studies that may not apply to all studies
     title: Study Metadata
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
     - StudyMetadata_study_id
     - participant_lifespan_stage
     - selection_criteria
@@ -3132,6 +3132,8 @@ classes:
     - research_domain
     - expected_number_of_participants
     - actual_number_of_participants
+    - external_id
+    - access_policy_id
     slot_usage:
       study_id:
         name: study_id
@@ -3148,17 +3150,18 @@ classes:
     description: An organization that can provide access to specimen for further analysis.
     title: Virtual BioRepository (VBR)
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - VirtualBiorepository_vbr_id
     - name
     - institution
     - contact
     - website
     - vbr_readme
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       vbr_id:
         name: vbr_id
@@ -3172,13 +3175,14 @@ classes:
     description: A DOI is a permanent reference with metadata about a digital object.
     title: Digital Object Identifier (DOI)
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
+    - DOI_do_id
+    - bibliographic_reference
     - external_id
     - access_policy_id
     - study_id
-    - DOI_do_id
-    - bibliographic_reference
     slot_usage:
       do_id:
         name: do_id
@@ -3193,15 +3197,16 @@ classes:
       or sharing of data.
     title: Investigator
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - name
     - institution
     - investigator_title
     - email
+    - external_id
+    - access_policy_id
+    - study_id
     class_uri: cam:Investigator
   Publication:
     name: Publication
@@ -3209,13 +3214,14 @@ classes:
     description: Information about a specific publication.
     title: Publication
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
+    - bibliographic_reference
+    - website
     - external_id
     - access_policy_id
     - study_id
-    - bibliographic_reference
-    - website
     class_uri: cam:Publication
   Subject:
     name: Subject
@@ -3225,14 +3231,15 @@ classes:
       model, or any other similar entity.
     title: Subject
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Subject_subject_id
     - subject_type
     - organism_type
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       subject_id:
         name: subject_id
@@ -3246,11 +3253,9 @@ classes:
     description: Basic participant demographics summary
     title: Demographics
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Demographics_subject_id
     - sex
     - race
@@ -3258,6 +3263,9 @@ classes:
     - age_at_last_vital_status
     - vital_status
     - age_at_first_engagement
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       subject_id:
         name: subject_id
@@ -3271,16 +3279,17 @@ classes:
       in a study.
     title: Family
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Family_family_id
     - family_type
     - family_description
     - consanguinity
     - family_study_focus
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       family_id:
         name: family_id
@@ -3295,15 +3304,16 @@ classes:
       <relationship> <subject_id> <Mother's id> <KIN:027 "isBiologicalMotherOf"> <subject_id>
     title: Family Member Relationship
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - FamilyRelationship_family_relationship_id
     - family_member_id
     - relation
     - FamilyRelationship_subject_id
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       family_relationship_id:
         name: family_relationship_id
@@ -3321,15 +3331,16 @@ classes:
     description: Designates a Subject as a member of a family with a specified role.
     title: Family Membership
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - FamilyMembership_family_membership_id
     - FamilyMembership_family_id
     - FamilyMembership_subject_id
     - family_role
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       family_membership_id:
         name: family_membership_id
@@ -3350,11 +3361,9 @@ classes:
       etc.
     title: Subject Assertion
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - SubjectAssertion_assertion_id
     - subject_id
     - encounter_id
@@ -3369,6 +3378,9 @@ classes:
     - value_source
     - value_unit
     - value_unit_source
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       assertion_id:
         name: assertion_id
@@ -3401,11 +3413,9 @@ classes:
       from such a sample.
     title: Sample
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Sample_sample_id
     - Sample_biospecimen_collection_id
     - parent_sample_id
@@ -3415,6 +3425,9 @@ classes:
     - storage_method
     - quantity_number
     - quantity_unit
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       sample_id:
         name: sample_id
@@ -3431,11 +3444,9 @@ classes:
     description: A biospecimen collection event which yields one or more Samples.
     title: BiospecimenCollection
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - BiospecimenCollection_biospecimen_collection_id
     - age_at_collection
     - method
@@ -3443,6 +3454,9 @@ classes:
     - spatial_qualifier
     - laterality
     - encounter_id
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       biospecimen_collection_id:
         name: biospecimen_collection_id
@@ -3456,11 +3470,9 @@ classes:
     description: A specific tube or amount of a biospecimen associated with a Sample.
     title: Aliquot
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Aliquot_aliquot_id
     - sample_id
     - availablity_status
@@ -3468,6 +3480,9 @@ classes:
     - quantity_unit
     - concentration_number
     - concentration_unit
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       aliquot_id:
         name: aliquot_id
@@ -3482,15 +3497,16 @@ classes:
       was made, or information about a participant was recorded.
     title: Participant Encounter
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Encounter_encounter_id
     - subject_id
     - encounter_definition_id
     - age_at_event
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       encounter_id:
         name: encounter_id
@@ -3507,15 +3523,16 @@ classes:
       a type of data collection.
     title: Encounter Definition
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - EncounterDefinition_encounter_definition_id
     - name
     - description
     - EncounterDefinition_activity_definition_id
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       encounter_definition_id:
         name: encounter_definition_id
@@ -3533,14 +3550,15 @@ classes:
       assay, intervention, survey, or assessment.
     title: Activity Definition
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - ActivityDefinition_activity_definition_id
     - name
     - description
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       activity_definition_id:
         name: activity_definition_id
@@ -3554,11 +3572,9 @@ classes:
     description: File
     title: File
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - File_file_id
     - File_subject_id
     - File_sample_id
@@ -3575,6 +3591,9 @@ classes:
     - storage_class
     - hash
     - availability
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       file_id:
         name: file_id
@@ -3604,11 +3623,9 @@ classes:
     description: A specific assay that was performed on given subject(s) or sample(s).
     title: Assay
     from_schema: https://includedcc.org/common-access-model
-    is_a: Record
+    mixins:
+    - Record
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
     - Assay_assay_id
     - Assay_subject_id
     - Assay_sample_id
@@ -3616,6 +3633,9 @@ classes:
     - Assay_assay_type
     - assay_source
     - activity_definition_id
+    - external_id
+    - access_policy_id
+    - study_id
     slot_usage:
       assay_id:
         name: assay_id
@@ -3663,7 +3683,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-17T20:40:08'
-source_file_size: 46550
-generation_date: '2026-08-17T20:40:25'
+source_file_date: '2026-08-18T20:15:30'
+source_file_size: 46569
+generation_date: '2026-08-18T20:15:47'
 

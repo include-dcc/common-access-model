@@ -281,10 +281,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Investigator</strong></li>
-</ul>
-</li>
+<li><strong>Investigator</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -405,7 +402,8 @@ description: An individual who made contributions to the collection, analysis, o
   sharing of data.
 title: Investigator
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - name
 - institution
@@ -421,7 +419,8 @@ description: An individual who made contributions to the collection, analysis, o
   sharing of data.
 title: Investigator
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 attributes:
   name:
     name: name

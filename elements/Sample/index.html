@@ -327,10 +327,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Sample</strong></li>
-</ul>
-</li>
+<li><strong>Sample</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -487,7 +484,8 @@ description: A functionally equivalent specimen taken from a participant or proc
   from such a sample.
 title: Sample
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - sample_id
 - biospecimen_collection_id
@@ -517,7 +515,8 @@ description: A functionally equivalent specimen taken from a participant or proc
   from such a sample.
 title: Sample
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   sample_id:
     name: sample_id

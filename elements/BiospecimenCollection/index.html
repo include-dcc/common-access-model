@@ -332,10 +332,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>BiospecimenCollection</strong></li>
-</ul>
-</li>
+<li><strong>BiospecimenCollection</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -461,7 +458,8 @@
 description: A biospecimen collection event which yields one or more Samples.
 title: BiospecimenCollection
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - biospecimen_collection_id
 - age_at_collection
@@ -485,7 +483,8 @@ slot_usage:
 description: A biospecimen collection event which yields one or more Samples.
 title: BiospecimenCollection
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   biospecimen_collection_id:
     name: biospecimen_collection_id

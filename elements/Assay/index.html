@@ -325,10 +325,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Assay</strong></li>
-</ul>
-</li>
+<li><strong>Assay</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -435,7 +432,8 @@
 description: A specific assay that was performed on given subject(s) or sample(s).
 title: Assay
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - assay_id
 - subject_id
@@ -471,7 +469,8 @@ slot_usage:
 description: A specific assay that was performed on given subject(s) or sample(s).
 title: Assay
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   assay_id:
     name: assay_id

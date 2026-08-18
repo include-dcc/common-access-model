@@ -325,10 +325,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Demographics</strong></li>
-</ul>
-</li>
+<li><strong>Demographics</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -435,7 +432,8 @@
 description: Basic participant demographics summary
 title: Demographics
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - subject_id
 - sex
@@ -458,7 +456,8 @@ slot_usage:
 description: Basic participant demographics summary
 title: Demographics
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   subject_id:
     name: subject_id

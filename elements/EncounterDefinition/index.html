@@ -290,10 +290,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>EncounterDefinition</strong></li>
-</ul>
-</li>
+<li><strong>EncounterDefinition</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -404,7 +401,8 @@ description: A definition of an encounter type in this study, ie, an event at wh
   type of data collection.
 title: Encounter Definition
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - encounter_definition_id
 - name
@@ -431,7 +429,8 @@ description: A definition of an encounter type in this study, ie, an event at wh
   type of data collection.
 title: Encounter Definition
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   encounter_definition_id:
     name: encounter_definition_id

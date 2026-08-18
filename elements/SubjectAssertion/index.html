@@ -348,10 +348,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>SubjectAssertion</strong></li>
-</ul>
-</li>
+<li><strong>SubjectAssertion</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -501,7 +498,8 @@ description: Assertion about a particular Subject. May include Conditions, Measu
   etc.
 title: Subject Assertion
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - assertion_id
 - subject_id
@@ -536,7 +534,8 @@ description: Assertion about a particular Subject. May include Conditions, Measu
   etc.
 title: Subject Assertion
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   assertion_id:
     name: assertion_id

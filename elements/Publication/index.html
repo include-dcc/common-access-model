@@ -277,10 +277,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Publication</strong></li>
-</ul>
-</li>
+<li><strong>Publication</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -382,7 +379,8 @@
 description: Information about a specific publication.
 title: Publication
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - bibliographic_reference
 - website
@@ -395,7 +393,8 @@ slots:
 description: Information about a specific publication.
 title: Publication
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 attributes:
   bibliographic_reference:
     name: bibliographic_reference

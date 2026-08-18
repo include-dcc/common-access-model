@@ -299,10 +299,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Encounter</strong></li>
-</ul>
-</li>
+<li><strong>Encounter</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -417,7 +414,8 @@ description: An event at which data was collected about a participant, an interv
   was made, or information about a participant was recorded.
 title: Participant Encounter
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - encounter_id
 - subject_id
@@ -439,7 +437,8 @@ description: An event at which data was collected about a participant, an interv
   was made, or information about a participant was recorded.
 title: Participant Encounter
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   encounter_id:
     name: encounter_id

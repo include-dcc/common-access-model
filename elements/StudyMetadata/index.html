@@ -338,10 +338,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>StudyMetadata</strong></li>
-</ul>
-</li>
+<li><strong>StudyMetadata</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -460,7 +457,8 @@
 description: Additional features about studies that may not apply to all studies
 title: Study Metadata
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - study_id
 - participant_lifespan_stage
@@ -490,7 +488,8 @@ slot_usage:
 description: Additional features about studies that may not apply to all studies
 title: Study Metadata
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   study_id:
     name: study_id

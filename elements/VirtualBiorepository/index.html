@@ -294,10 +294,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>VirtualBiorepository</strong></li>
-</ul>
-</li>
+<li><strong>VirtualBiorepository</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -417,7 +414,8 @@
 description: An organization that can provide access to specimen for further analysis.
 title: Virtual BioRepository (VBR)
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - vbr_id
 - name
@@ -440,7 +438,8 @@ slot_usage:
 description: An organization that can provide access to specimen for further analysis.
 title: Virtual BioRepository (VBR)
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   vbr_id:
     name: vbr_id

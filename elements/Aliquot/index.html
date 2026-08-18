@@ -316,10 +316,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Aliquot</strong></li>
-</ul>
-</li>
+<li><strong>Aliquot</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -426,7 +423,8 @@
 description: A specific tube or amount of a biospecimen associated with a Sample.
 title: Aliquot
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - aliquot_id
 - sample_id
@@ -450,7 +448,8 @@ slot_usage:
 description: A specific tube or amount of a biospecimen associated with a Sample.
 title: Aliquot
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   aliquot_id:
     name: aliquot_id

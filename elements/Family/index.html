@@ -301,10 +301,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>Family</strong></li>
-</ul>
-</li>
+<li><strong>Family</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -419,7 +416,8 @@ description: A group of individuals of some relation who are grouped together in
   study.
 title: Family
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - family_id
 - family_type
@@ -442,7 +440,8 @@ description: A group of individuals of some relation who are grouped together in
   study.
 title: Family
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   family_id:
     name: family_id

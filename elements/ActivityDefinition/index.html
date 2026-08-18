@@ -279,10 +279,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>ActivityDefinition</strong></li>
-</ul>
-</li>
+<li><strong>ActivityDefinition</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -391,7 +388,8 @@ description: A definition of an activity in this study, eg, a biospecimen collec
   assay, intervention, survey, or assessment.
 title: Activity Definition
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - activity_definition_id
 - name
@@ -412,7 +410,8 @@ description: A definition of an activity in this study, eg, a biospecimen collec
   assay, intervention, survey, or assessment.
 title: Activity Definition
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   activity_definition_id:
     name: activity_definition_id

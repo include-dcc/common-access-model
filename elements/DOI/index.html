@@ -277,10 +277,7 @@
 </div>
 <h2 id="inheritance">Inheritance</h2>
 <ul>
-<li><a href="../Record/">Record</a><ul>
-<li><strong>DOI</strong></li>
-</ul>
-</li>
+<li><strong>DOI</strong> [ <a href="../Record/">Record</a>]</li>
 </ul>
 <h2 id="slots">Slots</h2>
 <table>
@@ -382,7 +379,8 @@
 description: A DOI is a permanent reference with metadata about a digital object.
 title: Digital Object Identifier (DOI)
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slots:
 - do_id
 - bibliographic_reference
@@ -401,7 +399,8 @@ slot_usage:
 description: A DOI is a permanent reference with metadata about a digital object.
 title: Digital Object Identifier (DOI)
 from_schema: https://includedcc.org/common-access-model
-is_a: Record
+mixins:
+- Record
 slot_usage:
   do_id:
     name: do_id
