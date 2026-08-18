@@ -13,16 +13,6 @@ prefixes:
   # subset of CDC Race and Ethnicity Code Set Version 1.0
   CDCREC: urn:oid:2.16.840.1.113883.6.238/
   hl7_null: http://terminology.hl7.org/CodeSystem/v3-NullFlavor/
-  ig_dob_method:
-    https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method/
-  igcondtype:
-    https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type/
-  ig2dac:
-    https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code/
-  ig2dat:
-    https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type/
-  ig2_biospecimen_availability:
-    https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability/
   snomedct: http://snomed.info/id/
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
@@ -715,7 +705,7 @@ slots:
   program:
     title: Program
     description: Funding source(s) for the study
-    range: Any
+    range: uriorcurie
     any_of: 
     - range: uriorcurie
     - range: EnumProgram
@@ -748,7 +738,7 @@ slots:
     range: string
   research_domain:
     description: Main research domain(s) of the study
-    range: Any
+    range: Concept
     any_of: 
       - range: Concept
       - range: EnumResearchDomain
@@ -769,7 +759,7 @@ slots:
     title: Study Design
     description: Overall design of study, including whether it is longitudinal
       and whether family members/unrelated controls are also enrolled
-    range: Any
+    range: Concept
     any_of:
       - range: Concept
       - range: EnumStudyDesign
@@ -824,15 +814,15 @@ slots:
   organism_type:
     title: Organism Type
     description: Organism Type, typically from NCBITaxon.
-    range: Any
+    range: uriorcurie
     any_of:
-      - range: Concept
+      - range: uriorcurie
       - range: EnumOrganism
   subject_type:
     title: Subject Type
     description: Type of entity this record represents
     required: true
-    range: Any
+    range: Concept
     any_of:
       - range: EnumSubjectType
       - range: EnumUnknownOther
@@ -856,7 +846,7 @@ slots:
   ethnicity:
     title: Ethnicity
     description: Ethnicity of Participant
-    range: Any
+    range: Concept
     any_of:
       - range: EnumEthnicity
       - range: EnumUnknownOther
@@ -876,7 +866,7 @@ slots:
   vital_status:
     title: Vital Status
     description: Whether participant is alive or dead
-    range: Any
+    range: Concept
     any_of:
       - range: EnumVitalStatus
       - range: EnumUnknown
@@ -919,7 +909,7 @@ slots:
       "Family Member" to the "Subject", eg, mother of. Ideally uses KIN
       ontology.
     required: true
-    range: Any
+    range: Concept
     any_of:
       - range: EnumFamilyRelation
       - range: EnumUnknown
@@ -930,7 +920,7 @@ slots:
   family_role:
     description: The "role" of this individual in this family. Could include
       terms like "proband", "mother", etc.
-    range: Any
+    range: uriorcurie
     any_of:
       - range: uriorcurie
       - range: EnumFamilyRole
@@ -982,7 +972,7 @@ slots:
   value_concept:
     title: Value concept
     description: The structured term defining the value of the assertion.
-    range: Any
+    range: Concept
     any_of:
     - range: Concept
     - range: EnumPresentAbsent
@@ -1070,14 +1060,14 @@ slots:
   method:
     title: Biospecimen Collection Method
     description: The approach used to collect the biospecimen.
-    range: Any
+    range: Concept
     any_of:
       - range: Concept
       - range: EnumSampleCollectionMethod
   site:
     title: Biospecimen Collection Site
     description: The location of the specimen collection.
-    range: Any
+    range: Concept
     any_of:
       - range: Concept
       - range: EnumSite
