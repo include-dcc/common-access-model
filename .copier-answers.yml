@@ -2,7 +2,7 @@
 _commit: v0.4.1
 _src_path: https://github.com/linkml/linkml-project-copier
 add_example: false
-copyright_year: '2025'
+copyright_year: "2025"
 email: robert.carroll@vumc.org
 full_name: Robert Carroll
 gh_action_docs_preview: true

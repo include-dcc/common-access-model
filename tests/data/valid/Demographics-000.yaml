@@ -1,5 +1,5 @@
 subject_id: subject000
 sex: male
-race: 
- - american_indian_or_alaska_native
+race:
+  - american_indian_or_alaska_native
 ethnicity: hispanic_or_latino

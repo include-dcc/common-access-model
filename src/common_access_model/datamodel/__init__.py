@@ -1,4 +1,5 @@
 from pathlib import Path
+
 from .common_access_model import *
 
 THIS_PATH = Path(__file__).parent
