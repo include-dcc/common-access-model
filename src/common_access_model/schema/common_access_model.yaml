@@ -839,7 +839,7 @@ slots:
   sex:
     title: Sex
     description: Sex of Participant
-    range: Any
+    range: Concept
     any_of:
       - range: EnumSex
       - range: EnumUnknownOther
@@ -847,7 +847,7 @@ slots:
   race:
     title: Race
     description: Race of Participant
-    range: Any
+    range: Concept
     any_of:
       - range: EnumRace
       - range: EnumUnknownOther
