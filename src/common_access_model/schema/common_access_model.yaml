@@ -89,7 +89,7 @@ types:
     base: str
     description: Dewrangle di global ID. For FHIR Diagnostic Report Resources.
 
-# To be created
+  # To be created
   fmGlobalID:
     uri: xsd:string
     base: str
@@ -103,7 +103,6 @@ types:
     base: str
     description: Dewrangle __ global ID. For FHIR MedicationStatement Resources.
 
-
 classes:
   Any:
     class_uri: linkml:Any
@@ -112,20 +111,20 @@ classes:
     title: Record
     abstract: true
     slots:
-    - external_id
-    - access_policy_id
-    - study_id
+      - external_id
+      - access_policy_id
+      - study_id
   AccessPolicy:
     title: Access Policy
     description: The access policy that describes the controls around use of data
     slots:
-    - access_policy_id
-    - data_use_accession
-    - data_use_permission
-    - data_use_modifier
-    - disease_limitation
-    - access_description
-    - website
+      - access_policy_id
+      - data_use_accession
+      - data_use_permission
+      - data_use_modifier
+      - disease_limitation
+      - access_description
+      - website
     slot_usage:
       access_policy_id:
         range: coGlobalID
@@ -137,7 +136,7 @@ classes:
     mixins:
       - Record
     slots:
-    #TODO: Split out core Study items and additional study metadata?
+      #TODO: Split out core Study items and additional study metadata?
       #- study_id Inherits study_id from Record now.
       - parent_study
       - study_title
@@ -149,7 +148,7 @@ classes:
       - contact
       - study_description
       - website
-    # - dbgap : Should we call this out specifically or just use an external id?
+      # - dbgap : Should we call this out specifically or just use an external id?
       - publication
       - acknowledgments
       - citation_statement
@@ -239,7 +238,8 @@ classes:
       - website
   Subject:
     title: Subject
-    description: This entity is the subject about which data or references are recorded.
+    description:
+      This entity is the subject about which data or references are recorded.
       This includes the idea of a human participant in a study, a cell line, an animal model,
       or any other similar entity.
     mixins:
@@ -276,11 +276,11 @@ classes:
     mixins:
       - Record
     slots:
-    - family_id
-    - family_type
-    - family_description
-    - consanguinity
-    - family_study_focus
+      - family_id
+      - family_type
+      - family_description
+      - consanguinity
+      - family_study_focus
     slot_usage:
       family_id:
         range: grGlobalID
@@ -289,15 +289,15 @@ classes:
   FamilyRelationship:
     title: Family Member Relationship
     description: A relationship between two Subjects. Directed as follows
-     <family_member_id> <relationship> <subject_id>
-     <Mother's id> <KIN:027 "isBiologicalMotherOf"> <subject_id>
+      <family_member_id> <relationship> <subject_id>
+      <Mother's id> <KIN:027 "isBiologicalMotherOf"> <subject_id>
     mixins:
       - Record
     slots:
-    - family_relationship_id
-    - family_member_id
-    - relation
-    - subject_id
+      - family_relationship_id
+      - family_member_id
+      - relation
+      - subject_id
     slot_usage:
       family_relationship_id:
         range: fmGlobalID
@@ -349,8 +349,8 @@ classes:
       assertion_id:
         range: obGlobalID
         any_of:
-         - range: deGlobalID
-         - range: msGlobalID
+          - range: deGlobalID
+          - range: msGlobalID
         required: true
         identifier: true
   Concept:
@@ -374,7 +374,7 @@ classes:
       - parent_sample_id
       - sample_type
       - processing
-      - availablity_status
+      - availability_status
       - storage_method
       - quantity_number
       - quantity_unit
@@ -411,7 +411,7 @@ classes:
     slots:
       - aliquot_id
       - sample_id
-      - availablity_status
+      - availability_status
       - quantity_number
       - quantity_unit
       - concentration_number
@@ -545,7 +545,6 @@ classes:
       assay_type:
         required: true
 
-
   Dataset:
     title: Dataset
     description: Set of files grouped together for release.
@@ -568,7 +567,6 @@ classes:
         multivalued: true
         description: The list of files comprising this dataset.
 
-
 slots:
   study_id:
     title: Study ID
@@ -578,12 +576,12 @@ slots:
   access_policy_id:
     title: Access Policy ID
     description: Global identifier for the access policy that applies to
-     this row of data.
+      this row of data.
     range: AccessPolicy
   data_use_accession:
     title: Data Use Accession
     description: Accession used to provision access to the record, eg,
-     a dbGaP phsID.
+      a dbGaP phsID.
     range: uriorcurie
   data_use_permission:
     title: Data Use Permission
@@ -597,7 +595,7 @@ slots:
   disease_limitation:
     title: Data Use Disease Limitation
     description: If the access is limited to a specific disease purpose,
-     it is specified here.
+      it is specified here.
     range: string
   access_description:
     title: Access Description
@@ -758,10 +756,11 @@ slots:
     range: string
   citation_statement:
     title: Citation Statement
-    description: Statement that secondary data users should use to acknowledge use of this study or dataset. E.g.,
-     "The results analyzed and <published or shown> here are based in whole or in part upon data generated by the INCLUDE
-     (INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromE) Project <insert accession
-     number(s) and/or study DOI(s)>, and were accessed from the INCLUDE Data Hub and <insert other database(s)>."
+    description:
+      Statement that secondary data users should use to acknowledge use of this study or dataset. E.g.,
+      "The results analyzed and <published or shown> here are based in whole or in part upon data generated by the INCLUDE
+      (INvestigation of Co-occurring conditions across the Lifespan to Understand Down syndromeE) Project <insert accession
+      number(s) and/or study DOI(s)>, and were accessed from the INCLUDE Data Hub and <insert other database(s)>."
     range: string
   bibliographic_reference:
     title: Bibiliographic Reference
@@ -795,8 +794,9 @@ slots:
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
     title: Age at First Participant Engagement
-    description: Age in days of Participant at first recorded study event (enrollment, visit, observation,
-     sample collection, survey completion, etc.). Age at enrollment is preferred, if available.
+    description:
+      Age in days of Participant at first recorded study event (enrollment, visit, observation,
+      sample collection, survey completion, etc.). Age at enrollment is preferred, if available.
     range: integer
     unit:
       ucum_code: d
@@ -824,7 +824,7 @@ slots:
     range: EnumFamilyType
   family_description:
     description: Free text describing the study family, such as potential
-     inheritance or details about consanguinity
+      inheritance or details about consanguinity
     range: string
   consanguinity:
     description: Is there known or suspected consanguinity in this study family?
@@ -842,8 +842,9 @@ slots:
     range: Subject
     inlined: false
   relation:
-    description: Code definting the relationship predicate. Relationship of the "Family Member"
-     to the "Subject", eg, mother of. Ideally uses KIN ontology.
+    description:
+      Code definting the relationship predicate. Relationship of the "Family Member"
+      to the "Subject", eg, mother of. Ideally uses KIN ontology.
     required: true
     range: EnumFamilyRelation
   family_membership_id:
@@ -865,7 +866,8 @@ slots:
       ucum_code: d
   age_at_event:
     title: Age at event
-    description: The age in days of the Subject at the time point which the assertion describes,
+    description:
+      The age in days of the Subject at the time point which the assertion describes,
       eg, age of onset or when a measurement was performed.
     range: integer
     unit:
@@ -940,11 +942,12 @@ slots:
     range: uriorcurie
   processing:
     title: Sample Processing
-    description: Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded
-     this distinct sample. OBI is recommended.
+    description:
+      Processing that was applied to the Parent Sample or from the Biospecimen Collection that yielded
+      this distinct sample. OBI is recommended.
     range: uriorcurie
     multivalued: true
-  availablity_status:
+  availability_status:
     title: Sample Availability
     description: Can this Sample be requested for further analysis?
     range: EnumAvailabilityStatus
@@ -1021,7 +1024,8 @@ slots:
     range: EnumEDAMFormats
   file_extension:
     title: File Extension
-    description: Typically a 3-4 letter code at the end of a filename that identifies the file format.
+    description:
+      Typically a 3-4 letter code at the end of a filename that identifies the file format.
       Empty string for no extension.
     range: string
     required: true
@@ -1098,8 +1102,9 @@ slots:
 enums:
   EnumDataUsePermission:
     title: Data Use Permission
-    description: Data Use Ontology (DUO) terms for data use permissions.
-     #Do we need a "registered tier" item?
+    description:
+      Data Use Ontology (DUO) terms for data use permissions.
+      #Do we need a "registered tier" item?
     reachable_from:
       source_ontology: bioregistry:duo
       source_nodes:
@@ -1223,7 +1228,7 @@ enums:
     description: Categories of data which may be collected about participants.
     #TODO: Add meanings
     permissible_values:
-    #Should we have these two demo/clinical data categories?
+      #Should we have these two demo/clinical data categories?
       unharmonized_demographic_clinical_data:
         title: Unharmonized Demographic/Clinical Data
       harmonized_demographic_clinical_data:
@@ -1261,7 +1266,8 @@ enums:
       participant:
         description: Study participant with consent, assent, or waiver of consent.
       non_participant:
-        description: An individual associated with a study who was not explictly consented, eg, the subject
+        description:
+          An individual associated with a study who was not explicitly consented, eg, the subject
           of a reported family history.
       cell_line:
         description: Cell Line
