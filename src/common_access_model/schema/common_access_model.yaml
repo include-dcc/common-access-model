@@ -560,8 +560,8 @@ classes:
       - file_id
       - assay_type
       #Could set this up as an assay definition- not sure if we need a more specific entity
-    - assay_source
-    - activity_definition_id
+      - assay_source
+      - activity_definition_id
 
     slot_usage:
       assay_id:
@@ -1064,24 +1064,19 @@ slots:
     range: EnumSampleCollectionMethod
   site:
     title: Biospecimen Collection Site
+    description: The location of the specimen collection.
     range: Concept
     any_of:
       - range: Concept
       - range: EnumSampleCollectionMethod
-  site:
-    title: Biospecimen Collection Site
-    description: The location of the specimen collection.
-    range: EnumSite
-  spatial_qualifier:
-    range: Concept
-    any_of:
-      - range: Concept
-      - range: EnumSite
   spatial_qualifier:
     title: Spatial Qualifier
     description: Qualifier that further refine the specific location of
       biospecimen collection
-    range: EnumSpatialQualifiers
+    range: Concept
+    any_of:
+      - range: Concept
+      - range: EnumSite
   laterality:
     title: Location Laterality
     description: Laterality that further refine the specific location of
