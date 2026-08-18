@@ -256,13 +256,13 @@
 
 
 
-      Sample : availablity_status
+      Sample : availability_status
 
 
 
 
 
-        Sample --&gt; "0..1" EnumAvailabilityStatus : availablity_status
+        Sample --&gt; "0..1" EnumAvailabilityStatus : availability_status
         click EnumAvailabilityStatus href "../EnumAvailabilityStatus/"
 
 
@@ -371,7 +371,7 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../availablity_status/">availablity_status</a></td>
+<td><a href="../availability_status/">availability_status</a></td>
 <td>0..1 <br/> <a href="../EnumAvailabilityStatus/">EnumAvailabilityStatus</a></td>
 <td>Can this Sample be requested for further analysis?</td>
 <td>direct</td>
@@ -492,7 +492,7 @@ slots:
 - parent_sample_id
 - sample_type
 - processing
-- availablity_status
+- availability_status
 - storage_method
 - quantity_number
 - quantity_unit
@@ -592,13 +592,13 @@ attributes:
     - Sample
     range: uriorcurie
     multivalued: true
-  availablity_status:
-    name: availablity_status
+  availability_status:
+    name: availability_status
     description: Can this Sample be requested for further analysis?
     title: Sample Availability
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: availablity_status
+    alias: availability_status
     owner: Sample
     domain_of:
     - Sample
