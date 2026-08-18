@@ -3,6 +3,14 @@ name: EnumFileHashType
 enums:
   EnumFileHashType:
     description: Types of file hashes supported.
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - MS:1000561
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
     permissible_values:
       MS:1000568:
         title: MD5
@@ -11,7 +19,7 @@ enums:
           the integrity of files.
         aliases:
         - md5
-      CAM:0000022:
+      CAMO:0000022:
         title: ETag
         description: The entity tag is a hash of the object. The ETag reflects 
           changes only to the contents of an object, not its metadata. The 

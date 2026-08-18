@@ -32,7 +32,6 @@ default_prefix: cam
 default_range: string
 imports:
 - linkml:types
-
 - enums/EnumAssayType
 - enums/EnumAsserterType
 - enums/EnumAvailabilityStatus

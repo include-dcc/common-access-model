@@ -4,29 +4,33 @@ enums:
   EnumDataSourceType:
     title: Data Source Type
     description: Approaches to ascertain information about a participant.
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000009
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
     permissible_values:
-      CAM:0000018:
-        title: Medical Record
-        description: Data obtained directly from medical record
+      CAMO:0000014:
+        title: Electronic Health Record
+        description: Data obtained directly from an Electronic Health Record.
         aliases:
         - medical_record
-      CAM:0000019:
-        title: Assessment
-        description: Data obtained by examination, interview, etc. with investigator
-        aliases:
-        - investigator_assessment
-      CAM:0000020:
-        title: Participant or Caregiver Report
-        description: Data obtained from survey, questionnaire, etc. filled out by
-          participant or caregiver
+      CAMO:0000010:
+        title: Survey
+        description: Data obtained from a survey or questionnaire given to a participant or their representative.
         aliases:
         - participant_or_caregiver_report
-      CAM:0000021:
-        title: Participant Self-Report
-        description: Data obtained from other source, such as tissue bank
+      CAMO:0000011:
+        title: Research Assessment
+        description: Data obtained by research staff for the study.
         aliases:
-        - other
-      CAM:0000022:
-        title: Unknown
-        aliases:
-        - unknown
+        - investigator_assessment
+      CAMO:0000012:
+        title: Interview
+        description: Data obtained by research staff interviewing participants, representatives, or others.
+      CAMO:0000013:
+        title: Physical Examination
+        description: Data obtained directly by research staff examining the participant.

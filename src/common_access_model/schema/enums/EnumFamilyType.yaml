@@ -3,29 +3,43 @@ name: EnumFamilyType
 enums:
   EnumFamilyType:
     description: Enumerations describing research family type
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000001
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
     permissible_values:
-      CAM:0000044:
-        title: Control-only
-        description: Control Only
-        aliases:
-        - control_only
-      CAM:0000045:
+      CAMO:0000002:
+        title: Parent(s) and Child(ren)
+        description: This family study includes at a minimum one parent and one child.
+      CAMO:0000003:
         title: Duo
-        description: Duo
+        description: This family study includes at a minimum one parent and one affected child.
         aliases:
         - duo
-      CAM:0000046:
-        title: Proband-only
-        description: Proband Only
-        aliases:
-        - proband_only
-      CAM:0000047:
+      CAMO:0000004:
         title: Trio
-        description: Trio (2 parents and affected child)
+        description: This family study includes at a minimum two parents of one affected child.
         aliases:
         - trio
-      CAM:0000048:
+      CAMO:0000005:
         title: Trio+
-        description: 2 Parents and 2 or more children
+        description: This family study includes at a minimum two parents of one affected child and at least one other child.
         aliases:
         - trio_plus
+      CAMO:0000006:
+        title: Case Only
+        description: This family study includes only one or more cases.
+      CAMO:0000007:
+        title: Proband Only
+        description: This family study includes only one or more probands.
+        aliases:
+        - proband_only
+      CAMO:0000008:
+        title: Control Only
+        description:  This family study includes only one or more controls.
+        aliases:
+        - control_only

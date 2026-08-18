@@ -3,31 +3,36 @@ name: EnumSubjectType
 enums:
   EnumSubjectType:
     description: Types of Subject entities
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000023
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
     permissible_values:
-      CAM:0000038:
-        title: participant
+      CAMO:0000024:
+        title: Participant
         description: Study participant with consent, assent, or waiver of consent.
         aliases:
         - participant
-      CAM:0000039:
-        title: non_participant
-        description: An individual associated with a study who was not explictly consented,
-          eg, the subject of a reported family history.
+      CAMO:0000025:
+        title: Non-Participant
+        description: An individual not directly participating in a study, eg, the subject of a reported family history.
         aliases:
         - non_participant
-      CAM:0000040:
-        title: cell_line
-        description: Cell Line
+      CAMO:0000026:
+        title: Cell Line
         aliases:
         - cell_line
-      CAM:0000041:
-        title: animal_model
-        description: Animal model
+      CAMO:0000027:
+        title: Animal Model
         aliases:
         - animal_model
-      CAM:0000042:
-        title: group
-        description: A group of individuals or entities.
+      CAMO:0000028:
+        title: Group
+        description: A group of entities or things being assessed as a whole.
         aliases:
         - group
 

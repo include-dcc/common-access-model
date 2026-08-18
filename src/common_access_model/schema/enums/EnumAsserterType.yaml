@@ -3,25 +3,36 @@ name: EnumAsserterType
 enums:
   EnumAsserterType:
     description: Individuals or organizations making assertions.
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000015
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
     permissible_values:
-      CAM:0000049:
-        title: Healthcare Organization
-        description: Assertion documented by a healthcare system.
-        aliases:
-        - medical_record
-      CAM:0000050:
-        title: Investigator
-        description: Assertion documented by an investigator, eg, through an examination.
+      CAMO:0000016:
+        title: Research Staff Asserted
+        description: Assertion made by research staff.
         aliases:
         - investigator_assessment
-      CAM:0000051:
-        title: Participant or Caregiver Report
-        description: Data obtained from survey, questionnaire, etc. filled out by
-          participant or caregiver
+      CAMO:0000017:
+        title: Healthcare Asserted
+        description: Assertion documented by a healthcare system or provider.
+        aliases:
+        - medical_record
+      CAMO:0000018:
+        title: Participant or Representative Asserted
+        description: Assertion made by a study participant, their representative, or some combination.
         aliases:
         - participant_or_caregiver_report
-      CAM:0000052:
-        title: Other
-        description: Data obtained from other source, such as tissue bank
-        aliases:
-        - other
+      CAMO:0000019:
+        title: Participant Asserted
+        description: Assertion made by a study participant.
+      CAMO:0000020:
+        title: Representative Asserted
+        description: Assertion made by a study participant's representative or representatives.
+      CAMO:0000021:
+        title: Caregiver Asserted
+        description: Assertion made by a study participant's caregiver or caregivers.
