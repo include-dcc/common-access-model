@@ -137,6 +137,14 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../dbt_artifacts/">
+<span class="md-ellipsis">
+    dbt
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
     About
@@ -262,21 +270,12 @@
 
 
 
-        File --&gt; "0..1" EnumFileAvailability : availability
-        click EnumFileAvailability href "../EnumFileAvailability/"
+        File --&gt; "0..1" EnumAvailabilityStatus : availability
+        click EnumAvailabilityStatus href "../EnumAvailabilityStatus/"
 
 
 
       File : data_category
-
-
-
-
-
-        File --&gt; "0..1" EnumDataCategory : data_category
-        click EnumDataCategory href "../EnumDataCategory/"
-
-
 
       File : data_type
 
@@ -417,7 +416,7 @@
 </tr>
 <tr>
 <td><a href="../data_category/">data_category</a></td>
-<td>0..1 <br/> <a href="../EnumDataCategory/">EnumDataCategory</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
 <td>direct</td>
 </tr>
@@ -471,7 +470,7 @@
 </tr>
 <tr>
 <td><a href="../availability/">availability</a></td>
-<td>0..1 <br/> <a href="../EnumFileAvailability/">EnumFileAvailability</a></td>
+<td>0..1 <br/> <a href="../EnumAvailabilityStatus/">EnumAvailabilityStatus</a></td>
 <td>Is or was this file available to users?</td>
 <td>direct</td>
 </tr>
@@ -703,7 +702,9 @@ attributes:
     domain_of:
     - StudyMetadata
     - File
-    range: EnumDataCategory
+    range: uriorcurie
+    any_of:
+    - range: EnumDataCategory
   data_type:
     name: data_type
     description: The type of data within this file.
@@ -794,7 +795,7 @@ attributes:
     owner: File
     domain_of:
     - File
-    range: EnumFileAvailability
+    range: EnumAvailabilityStatus
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

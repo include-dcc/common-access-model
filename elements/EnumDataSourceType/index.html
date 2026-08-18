@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumFileAvailability/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumDataSourceType/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumFileAvailability - common-access-model</title>
+        <title>Enum: EnumDataSourceType - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumfileavailability" class="md-skip">
+        <a href="#enum-enumdatasourcetype" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumFileAvailability
+              Enum: EnumDataSourceType
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -377,9 +399,9 @@
   
 
 
-<h1 id="enum-enumfileavailability">Enum: EnumFileAvailability</h1>
-<p><em>Options describing file availability</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumFileAvailability">cam:EnumFileAvailability</a></p>
+<h1 id="enum-enumdatasourcetype">Enum: EnumDataSourceType</h1>
+<p><em>Approaches to ascertain information about a participant.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumDataSourceType">cam:EnumDataSourceType</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -391,14 +413,29 @@
 </thead>
 <tbody>
 <tr>
-<td>snomed_ct:103328004</td>
-<td>snomed_ct:103328004</td>
-<td>The file is available to users, authorization permitting</td>
+<td>CAMO:0000014</td>
+<td>None</td>
+<td>Data obtained directly from an Electronic Health Record</td>
 </tr>
 <tr>
-<td>snomed_ct:103329007</td>
-<td>snomed_ct:103329007</td>
-<td>The file is not available to users</td>
+<td>CAMO:0000010</td>
+<td>None</td>
+<td>Data obtained from a survey or questionnaire given to a participant or their ...</td>
+</tr>
+<tr>
+<td>CAMO:0000011</td>
+<td>None</td>
+<td>Data obtained by research staff for the study</td>
+</tr>
+<tr>
+<td>CAMO:0000012</td>
+<td>None</td>
+<td>Data obtained by research staff interviewing participants, representatives, o...</td>
+</tr>
+<tr>
+<td>CAMO:0000013</td>
+<td>None</td>
+<td>Data obtained directly by research staff examining the participant</td>
 </tr>
 </tbody>
 </table>
@@ -412,8 +449,12 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../availability/">availability</a></td>
-<td>Is or was this file available to users?</td>
+<td><a href="../clinical_data_source_type/">clinical_data_source_type</a></td>
+<td>Source(s) of data collected from study participants</td>
+</tr>
+<tr>
+<td><a href="../assertion_source_type/">assertion_source_type</a></td>
+<td>The source of this assertion from the original data</td>
 </tr>
 </tbody>
 </table>
@@ -425,22 +466,48 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumFileAvailability
-description: Options describing file availability
+<pre><code class="language-yaml">name: EnumDataSourceType
+description: Approaches to ascertain information about a participant.
+title: Data Source Type
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
 permissible_values:
-  snomed_ct:103328004:
-    text: snomed_ct:103328004
-    description: The file is available to users, authorization permitting.
-    meaning: snomed_ct:103328004
-    title: Available
-  snomed_ct:103329007:
-    text: snomed_ct:103329007
-    description: The file is not available to users.
-    meaning: snomed_ct:103329007
-    title: Unavailable
+  CAMO:0000014:
+    text: CAMO:0000014
+    description: Data obtained directly from an Electronic Health Record.
+    title: Electronic Health Record
+    aliases:
+    - medical_record
+  CAMO:0000010:
+    text: CAMO:0000010
+    description: Data obtained from a survey or questionnaire given to a participant
+      or their representative.
+    title: Survey
+    aliases:
+    - participant_or_caregiver_report
+  CAMO:0000011:
+    text: CAMO:0000011
+    description: Data obtained by research staff for the study.
+    title: Research Assessment
+    aliases:
+    - investigator_assessment
+  CAMO:0000012:
+    text: CAMO:0000012
+    description: Data obtained by research staff interviewing participants, representatives,
+      or others.
+    title: Interview
+  CAMO:0000013:
+    text: CAMO:0000013
+    description: Data obtained directly by research staff examining the participant.
+    title: Physical Examination
+reachable_from:
+  source_ontology: camo
+  source_nodes:
+  - CAMO:0000009
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: true
 
 </code></pre>
 

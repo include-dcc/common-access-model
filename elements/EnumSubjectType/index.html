@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -311,15 +333,6 @@
   <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
     </span>
   </a>
   
@@ -391,49 +404,29 @@
 </thead>
 <tbody>
 <tr>
-<td>participant</td>
+<td>CAMO:0000024</td>
 <td>None</td>
 <td>Study participant with consent, assent, or waiver of consent</td>
 </tr>
 <tr>
-<td>non_participant</td>
+<td>CAMO:0000025</td>
 <td>None</td>
-<td>An individual associated with a study who was not explicitly consented, eg, t...</td>
+<td>An individual not directly participating in a study, eg, the subject of a rep...</td>
 </tr>
 <tr>
-<td>cell_line</td>
+<td>CAMO:0000026</td>
 <td>None</td>
-<td>Cell Line</td>
+<td></td>
 </tr>
 <tr>
-<td>animal_model</td>
+<td>CAMO:0000027</td>
 <td>None</td>
-<td>Animal model</td>
+<td></td>
 </tr>
 <tr>
-<td>group</td>
+<td>CAMO:0000028</td>
 <td>None</td>
-<td>A group of individuals or entities</td>
-</tr>
-<tr>
-<td>other</td>
-<td>None</td>
-<td>A different entity type- ideally this will be resolved!</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../subject_type/">subject_type</a></td>
-<td>Type of entity this record represents</td>
+<td>A group of entities or things being assessed as a whole</td>
 </tr>
 </tbody>
 </table>
@@ -450,25 +443,43 @@ description: Types of Subject entities
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  participant:
-    text: participant
+  CAMO:0000024:
+    text: CAMO:0000024
     description: Study participant with consent, assent, or waiver of consent.
-  non_participant:
-    text: non_participant
-    description: An individual associated with a study who was not explicitly consented,
-      eg, the subject of a reported family history.
-  cell_line:
-    text: cell_line
-    description: Cell Line
-  animal_model:
-    text: animal_model
-    description: Animal model
-  group:
-    text: group
-    description: A group of individuals or entities.
-  other:
-    text: other
-    description: A different entity type- ideally this will be resolved!
+    title: Participant
+    aliases:
+    - participant
+  CAMO:0000025:
+    text: CAMO:0000025
+    description: An individual not directly participating in a study, eg, the subject
+      of a reported family history.
+    title: Non-Participant
+    aliases:
+    - non_participant
+  CAMO:0000026:
+    text: CAMO:0000026
+    title: Cell Line
+    aliases:
+    - cell_line
+  CAMO:0000027:
+    text: CAMO:0000027
+    title: Animal Model
+    aliases:
+    - animal_model
+  CAMO:0000028:
+    text: CAMO:0000028
+    description: A group of entities or things being assessed as a whole.
+    title: Group
+    aliases:
+    - group
+reachable_from:
+  source_ontology: camo
+  source_nodes:
+  - CAMO:0000023
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: true
 
 </code></pre>
 

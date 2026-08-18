@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -412,7 +434,7 @@ Alias: ethnicity</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumEthnicity/">EnumEthnicity</a></p>
+<p>Range: <a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumEthnicity/">EnumEthnicity</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknownOther/">EnumUnknownOther</a></p>
 </li>
 <li>
 <p>Required: True</p>
@@ -453,8 +475,11 @@ rank: 1000
 alias: ethnicity
 domain_of:
 - Demographics
-range: EnumEthnicity
+range: Concept
 required: true
+any_of:
+- range: EnumEthnicity
+- range: EnumUnknownOther
 
 </code></pre>
 

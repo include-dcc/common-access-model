@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -411,7 +433,7 @@ Alias: family_role</p>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../Uriorcurie/">Uriorcurie</a></li>
+<li>Range: <a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../Uriorcurie/">Uriorcurie</a>&nbsp;or&nbsp;<br /><a href="../EnumFamilyRole/">EnumFamilyRole</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -449,6 +471,9 @@ alias: family_role
 domain_of:
 - FamilyMembership
 range: uriorcurie
+any_of:
+- range: uriorcurie
+- range: EnumFamilyRole
 
 </code></pre>
 

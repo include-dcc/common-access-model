@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumNull/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumUnknown/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumNull - common-access-model</title>
+        <title>Enum: EnumUnknown - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumnull" class="md-skip">
+        <a href="#enum-enumunknown" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumNull
+              Enum: EnumUnknown
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -368,9 +390,9 @@
   
 
 
-<h1 id="enum-enumnull">Enum: EnumNull</h1>
-<p><em>Base enumeration providing null options.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumNull">cam:EnumNull</a></p>
+<h1 id="enum-enumunknown">Enum: EnumUnknown</h1>
+<p><em>Base enumeration providing an Unknown option.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumUnknown">cam:EnumUnknown</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -382,8 +404,8 @@
 </thead>
 <tbody>
 <tr>
-<td>unknown</td>
-<td>NCIT:C17998</td>
+<td>snomedct:261665006</td>
+<td>None</td>
 <td></td>
 </tr>
 </tbody>
@@ -396,15 +418,16 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumNull
-description: Base enumeration providing null options.
+<pre><code class="language-yaml">name: EnumUnknown
+description: Base enumeration providing an Unknown option.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  unknown:
-    text: unknown
-    meaning: NCIT:C17998
+  snomedct:261665006:
+    text: snomedct:261665006
     title: Unknown
+    aliases:
+    - unknown
 
 </code></pre>
 

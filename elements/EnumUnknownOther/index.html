@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/assertion_provenance/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumUnknownOther/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Slot: Assertion Provenance (assertion_provenance) - common-access-model</title>
+        <title>Enum: EnumUnknownOther - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-assertion-provenance-assertion_provenance" class="md-skip">
+        <a href="#enum-enumunknownother" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: Assertion Provenance (assertion_provenance)
+              Enum: EnumUnknownOther
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -308,18 +330,9 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
+  <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
+      Permissible Values
     </span>
   </a>
   
@@ -346,15 +359,6 @@
         
       </ul>
     </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
   
 </li>
       
@@ -386,69 +390,54 @@
   
 
 
-<h1 id="slot-assertion-provenance-assertion_provenance">Slot: Assertion Provenance (assertion_provenance)</h1>
-<p><em>The original source of this assertion</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/assertion_provenance">cam:assertion_provenance</a>
-Alias: assertion_provenance</p>
-<!-- no inheritance hierarchy -->
-
-<h2 id="applicable-classes">Applicable Classes</h2>
+<h1 id="enum-enumunknownother">Enum: EnumUnknownOther</h1>
+<p><em>Base enumeration providing Unknown and Other options.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumUnknownOther">cam:EnumUnknownOther</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
 <tr>
-<th>Name</th>
+<th>Value</th>
+<th>Meaning</th>
 <th>Description</th>
-<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td>Assertion about a particular Subject</td>
-<td>no</td>
+<td>snomedct:261665006</td>
+<td>None</td>
+<td></td>
+</tr>
+<tr>
+<td>snomedct:74964007</td>
+<td>None</td>
+<td></td>
 </tr>
 </tbody>
 </table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../EnumAssertionProvenance/">EnumAssertionProvenance</a></li>
-</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://includedcc.org/common-access-model</li>
 </ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:assertion_provenance</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:assertion_provenance</td>
-</tr>
-</tbody>
-</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: assertion_provenance
-description: The original source of this assertion
-title: Assertion Provenance
+<pre><code class="language-yaml">name: EnumUnknownOther
+description: Base enumeration providing Unknown and Other options.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: assertion_provenance
-domain_of:
-- SubjectAssertion
-range: EnumAssertionProvenance
+permissible_values:
+  snomedct:261665006:
+    text: snomedct:261665006
+    title: Unknown
+    aliases:
+    - unknown
+  snomedct:74964007:
+    text: snomedct:74964007
+    title: Other
+    aliases:
+    - other
 
 </code></pre>
 

@@ -137,6 +137,14 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../dbt_artifacts/">
+<span class="md-ellipsis">
+    dbt
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
     About
@@ -325,7 +333,7 @@
 </tr>
 <tr>
 <td><a href="../family_role/">family_role</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumFamilyRole/">EnumFamilyRole</a></td>
 <td>The "role" of this individual in this family</td>
 <td>direct</td>
 </tr>
@@ -481,6 +489,9 @@ attributes:
     domain_of:
     - FamilyMembership
     range: uriorcurie
+    any_of:
+    - range: uriorcurie
+    - range: EnumFamilyRole
   external_id:
     name: external_id
     description: Other identifiers for this entity, eg, from the submitting study

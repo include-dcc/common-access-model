@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -306,15 +328,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#slots" class="md-nav__link">
@@ -378,40 +391,9 @@
 
 
 <h1 id="enum-enumparticipantlifespanstage">Enum: EnumParticipantLifespanStage</h1>
-<p><em>Stages of life during which participants may be recruited.</em></p>
+<p><em>Stages of life during which participants may be recruited. From NICHD Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumParticipantLifespanStage">cam:EnumParticipantLifespanStage</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>fetal</td>
-<td>None</td>
-<td>Before birth</td>
-</tr>
-<tr>
-<td>neonatal</td>
-<td>None</td>
-<td>0-28 days old</td>
-</tr>
-<tr>
-<td>pediatric</td>
-<td>None</td>
-<td>Birth-17 years old</td>
-</tr>
-<tr>
-<td>adult</td>
-<td>None</td>
-<td>18+ years old</td>
-</tr>
-</tbody>
-</table>
+<p><em>This is a dynamic enum</em></p>
 <h2 id="slots">Slots</h2>
 <table>
 <thead>
@@ -436,27 +418,19 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumParticipantLifespanStage
-description: Stages of life during which participants may be recruited.
+description: Stages of life during which participants may be recruited. From NICHD
+  Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html
 title: Participant Lifespan Stage
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-permissible_values:
-  fetal:
-    text: fetal
-    description: Before birth
-    title: Fetal
-  neonatal:
-    text: neonatal
-    description: 0-28 days old
-    title: Neonatal
-  pediatric:
-    text: pediatric
-    description: Birth-17 years old
-    title: Pediatric
-  adult:
-    text: adult
-    description: 18+ years old
-    title: Adult
+reachable_from:
+  source_ontology: bioregistry:ncit
+  source_nodes:
+  - NCIT:C89335
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 

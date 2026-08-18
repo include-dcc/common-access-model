@@ -9,6 +9,10 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
+         <loc>https://include-dcc.github.io/common-access-model/dbt_artifacts/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
@@ -121,7 +125,7 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumAssertionProvenance/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumAsserterType/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
@@ -129,15 +133,11 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumClinicalDataSourceType/</loc>
-         <lastmod>2026-08-18</lastmod>
-    </url>
-    <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumConsanguinityAssertion/</loc>
-         <lastmod>2026-08-18</lastmod>
-    </url>
-    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/EnumDataCategory/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumDataSourceType/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
@@ -165,11 +165,11 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumFamilyType/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumFamilyRole/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumFileAvailability/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumFamilyType/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
@@ -181,7 +181,7 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/EnumNull/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumOrganism/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
@@ -226,6 +226,14 @@
     </url>
     <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/EnumSubjectType/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumUnknown/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/EnumUnknownOther/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
@@ -433,11 +441,15 @@
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/asserter_type/</loc>
+         <lastmod>2026-08-18</lastmod>
+    </url>
+    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/assertion_id/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>
-         <loc>https://include-dcc.github.io/common-access-model/elements/assertion_provenance/</loc>
+         <loc>https://include-dcc.github.io/common-access-model/elements/assertion_source_type/</loc>
          <lastmod>2026-08-18</lastmod>
     </url>
     <url>

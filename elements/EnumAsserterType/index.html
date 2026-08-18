@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumAssertionProvenance/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumAsserterType/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumAssertionProvenance - common-access-model</title>
+        <title>Enum: EnumAsserterType - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumassertionprovenance" class="md-skip">
+        <a href="#enum-enumassertertype" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumAssertionProvenance
+              Enum: EnumAsserterType
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -377,9 +399,9 @@
   
 
 
-<h1 id="enum-enumassertionprovenance">Enum: EnumAssertionProvenance</h1>
-<p><em>Possible data sources for assertions.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumAssertionProvenance">cam:EnumAssertionProvenance</a></p>
+<h1 id="enum-enumassertertype">Enum: EnumAsserterType</h1>
+<p><em>Individuals or organizations making assertions.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumAsserterType">cam:EnumAsserterType</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -391,24 +413,34 @@
 </thead>
 <tbody>
 <tr>
-<td>medical_record</td>
+<td>CAMO:0000016</td>
 <td>None</td>
-<td>Data obtained from a medical record</td>
+<td>Assertion made by research staff</td>
 </tr>
 <tr>
-<td>investigator_assessment</td>
+<td>CAMO:0000017</td>
 <td>None</td>
-<td>Data obtained by examination, interview, etc</td>
+<td>Assertion documented by a healthcare system or provider</td>
 </tr>
 <tr>
-<td>participant_or_caregiver_report</td>
+<td>CAMO:0000018</td>
 <td>None</td>
-<td>Data obtained from survey, questionnaire, etc</td>
+<td>Assertion made by a study participant, their representative, or some combinat...</td>
 </tr>
 <tr>
-<td>other</td>
+<td>CAMO:0000019</td>
 <td>None</td>
-<td>Data obtained from other source, such as tissue bank</td>
+<td>Assertion made by a study participant</td>
+</tr>
+<tr>
+<td>CAMO:0000020</td>
+<td>None</td>
+<td>Assertion made by a study participant's representative or representatives</td>
+</tr>
+<tr>
+<td>CAMO:0000021</td>
+<td>None</td>
+<td>Assertion made by a study participant's caregiver or caregivers</td>
 </tr>
 </tbody>
 </table>
@@ -422,8 +454,8 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../assertion_provenance/">assertion_provenance</a></td>
-<td>The original source of this assertion</td>
+<td><a href="../asserter_type/">asserter_type</a></td>
+<td>The original asserter of this information</td>
 </tr>
 </tbody>
 </table>
@@ -435,29 +467,50 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumAssertionProvenance
-description: Possible data sources for assertions.
+<pre><code class="language-yaml">name: EnumAsserterType
+description: Individuals or organizations making assertions.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
 permissible_values:
-  medical_record:
-    text: medical_record
-    description: Data obtained from a medical record
-    title: Medical Record
-  investigator_assessment:
-    text: investigator_assessment
-    description: Data obtained by examination, interview, etc. with investigator
-    title: Investigator Assessment
-  participant_or_caregiver_report:
-    text: participant_or_caregiver_report
-    description: Data obtained from survey, questionnaire, etc. filled out by participant
-      or caregiver
-    title: Participant or Caregiver Report
-  other:
-    text: other
-    description: Data obtained from other source, such as tissue bank
-    title: Other
+  CAMO:0000016:
+    text: CAMO:0000016
+    description: Assertion made by research staff.
+    title: Research Staff Asserted
+    aliases:
+    - investigator_assessment
+  CAMO:0000017:
+    text: CAMO:0000017
+    description: Assertion documented by a healthcare system or provider.
+    title: Healthcare Asserted
+    aliases:
+    - medical_record
+  CAMO:0000018:
+    text: CAMO:0000018
+    description: Assertion made by a study participant, their representative, or some
+      combination.
+    title: Participant or Representative Asserted
+    aliases:
+    - participant_or_caregiver_report
+  CAMO:0000019:
+    text: CAMO:0000019
+    description: Assertion made by a study participant.
+    title: Participant Asserted
+  CAMO:0000020:
+    text: CAMO:0000020
+    description: Assertion made by a study participant's representative or representatives.
+    title: Representative Asserted
+  CAMO:0000021:
+    text: CAMO:0000021
+    description: Assertion made by a study participant's caregiver or caregivers.
+    title: Caregiver Asserted
+reachable_from:
+  source_ontology: camo
+  source_nodes:
+  - CAMO:0000015
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: true
 
 </code></pre>
 

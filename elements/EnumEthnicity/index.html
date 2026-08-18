@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -311,15 +333,6 @@
   <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
     </span>
   </a>
   
@@ -391,39 +404,14 @@
 </thead>
 <tbody>
 <tr>
-<td>hispanic_or_latino</td>
-<td>NCIT:C17459</td>
+<td>CDCREC:2135-2</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>not_hispanic_or_latino</td>
-<td>NCIT:C41222</td>
+<td>CDCREC:2186-5</td>
+<td>None</td>
 <td></td>
-</tr>
-<tr>
-<td>prefer_not_to_answer</td>
-<td>NCIT:C132222</td>
-<td></td>
-</tr>
-<tr>
-<td>unknown</td>
-<td>NCIT:C17998</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../ethnicity/">ethnicity</a></td>
-<td>Ethnicity of Participant</td>
 </tr>
 </tbody>
 </table>
@@ -440,22 +428,16 @@ description: Participant ethnicity, specific to Hispanic or Latino.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  hispanic_or_latino:
-    text: hispanic_or_latino
-    meaning: NCIT:C17459
+  CDCREC:2135-2:
+    text: CDCREC:2135-2
     title: Hispanic or Latino
-  not_hispanic_or_latino:
-    text: not_hispanic_or_latino
-    meaning: NCIT:C41222
+    aliases:
+    - hispanic_or_latino
+  CDCREC:2186-5:
+    text: CDCREC:2186-5
     title: Not Hispanic or Latino
-  prefer_not_to_answer:
-    text: prefer_not_to_answer
-    meaning: NCIT:C132222
-    title: Prefer not to answer
-  unknown:
-    text: unknown
-    meaning: NCIT:C17998
-    title: Unknown
+    aliases:
+    - not_hispanic_or_latino
 
 </code></pre>
 

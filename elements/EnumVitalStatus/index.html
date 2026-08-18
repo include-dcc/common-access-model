@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -311,15 +333,6 @@
   <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
     </span>
   </a>
   
@@ -391,29 +404,14 @@
 </thead>
 <tbody>
 <tr>
-<td>dead</td>
-<td>NCIT:C28554</td>
+<td>snomedct:419099009</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>alive</td>
-<td>NCIT:C37987</td>
+<td>snomedct:438949009</td>
+<td>None</td>
 <td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../vital_status/">vital_status</a></td>
-<td>Whether participant is alive or dead</td>
 </tr>
 </tbody>
 </table>
@@ -429,16 +427,17 @@
 description: Descriptions of a Subject's vital status
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
 permissible_values:
-  dead:
-    text: dead
-    meaning: NCIT:C28554
+  snomedct:419099009:
+    text: snomedct:419099009
     title: Dead
-  alive:
-    text: alive
-    meaning: NCIT:C37987
+    aliases:
+    - dead
+  snomedct:438949009:
+    text: snomedct:438949009
     title: Alive
+    aliases:
+    - alive
 
 </code></pre>
 

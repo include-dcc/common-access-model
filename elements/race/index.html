@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -412,7 +434,7 @@ Alias: race</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumRace/">EnumRace</a></p>
+<p>Range: <a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumRace/">EnumRace</a>&nbsp;or&nbsp;<br /><a href="../EnumUnknownOther/">EnumUnknownOther</a></p>
 </li>
 <li>
 <p>Multivalued: True</p>
@@ -456,9 +478,12 @@ rank: 1000
 alias: race
 domain_of:
 - Demographics
-range: EnumRace
+range: Concept
 required: true
 multivalued: true
+any_of:
+- range: EnumRace
+- range: EnumUnknownOther
 
 </code></pre>
 

@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumConsanguinityAssertion/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/assertion_source_type/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumConsanguinityAssertion - common-access-model</title>
+        <title>Slot: Assertion Source (assertion_source_type) - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumconsanguinityassertion" class="md-skip">
+        <a href="#slot-assertion-source-assertion_source_type" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumConsanguinityAssertion
+              Slot: Assertion Source (assertion_source_type)
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -308,18 +330,18 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
+  <a href="#applicable-classes" class="md-nav__link">
     <span class="md-ellipsis">
-      Permissible Values
+      Applicable Classes
     </span>
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
+  <a href="#properties" class="md-nav__link">
     <span class="md-ellipsis">
-      Slots
+      Properties
     </span>
   </a>
   
@@ -346,6 +368,15 @@
         
       </ul>
     </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mappings" class="md-nav__link">
+    <span class="md-ellipsis">
+      Mappings
+    </span>
+  </a>
   
 </li>
       
@@ -377,89 +408,69 @@
   
 
 
-<h1 id="enum-enumconsanguinityassertion">Enum: EnumConsanguinityAssertion</h1>
-<p><em>Asserts known or suspected consanguinity in this study family</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumConsanguinityAssertion">cam:EnumConsanguinityAssertion</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>not_suspected</td>
-<td>snomed_ct:428263003</td>
-<td>Not suspected</td>
-</tr>
-<tr>
-<td>suspected</td>
-<td>snomed_ct:415684004</td>
-<td>Suspected</td>
-</tr>
-<tr>
-<td>known_present</td>
-<td>snomed_ct:410515003</td>
-<td>Known Present</td>
-</tr>
-<tr>
-<td>unknown</td>
-<td>snomed_ct:261665006</td>
-<td>Unknown</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
+<h1 id="slot-assertion-source-assertion_source_type">Slot: Assertion Source (assertion_source_type)</h1>
+<p><em>The source of this assertion from the original data</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/assertion_source_type">cam:assertion_source_type</a>
+Alias: assertion_source_type</p>
+<!-- no inheritance hierarchy -->
+
+<h2 id="applicable-classes">Applicable Classes</h2>
 <table>
 <thead>
 <tr>
 <th>Name</th>
 <th>Description</th>
+<th>Modifies Slot</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../consanguinity/">consanguinity</a></td>
-<td>Is there known or suspected consanguinity in this study family?</td>
+<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
+<td>Assertion about a particular Subject</td>
+<td>no</td>
 </tr>
 </tbody>
 </table>
+<h2 id="properties">Properties</h2>
+<ul>
+<li>Range: <a href="../EnumDataSourceType/">EnumDataSourceType</a></li>
+</ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
 <li>from schema: https://includedcc.org/common-access-model</li>
 </ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>cam:assertion_source_type</td>
+</tr>
+<tr>
+<td>native</td>
+<td>cam:assertion_source_type</td>
+</tr>
+</tbody>
+</table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumConsanguinityAssertion
-description: Asserts known or suspected consanguinity in this study family
+<pre><code class="language-yaml">name: assertion_source_type
+description: The source of this assertion from the original data
+title: Assertion Source
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-permissible_values:
-  not_suspected:
-    text: not_suspected
-    description: Not suspected
-    meaning: snomed_ct:428263003
-    title: not-suspected
-  suspected:
-    text: suspected
-    description: Suspected
-    meaning: snomed_ct:415684004
-    title: suspected
-  known_present:
-    text: known_present
-    description: Known Present
-    meaning: snomed_ct:410515003
-    title: known-present
-  unknown:
-    text: unknown
-    description: Unknown
-    meaning: snomed_ct:261665006
-    title: unknown
+alias: assertion_source_type
+domain_of:
+- SubjectAssertion
+range: EnumDataSourceType
 
 </code></pre>
 

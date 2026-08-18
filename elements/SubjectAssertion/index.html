@@ -137,6 +137,14 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../dbt_artifacts/">
+<span class="md-ellipsis">
+    dbt
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
     About
@@ -255,16 +263,27 @@
 
       SubjectAssertion : age_at_resolution
 
+      SubjectAssertion : asserter_type
+
+
+
+
+
+        SubjectAssertion --&gt; "0..1" EnumAsserterType : asserter_type
+        click EnumAsserterType href "../EnumAsserterType/"
+
+
+
       SubjectAssertion : assertion_id
 
-      SubjectAssertion : assertion_provenance
+      SubjectAssertion : assertion_source_type
 
 
 
 
 
-        SubjectAssertion --&gt; "0..1" EnumAssertionProvenance : assertion_provenance
-        click EnumAssertionProvenance href "../EnumAssertionProvenance/"
+        SubjectAssertion --&gt; "0..1" EnumDataSourceType : assertion_source_type
+        click EnumDataSourceType href "../EnumDataSourceType/"
 
 
 
@@ -363,7 +382,7 @@
 <tbody>
 <tr>
 <td><a href="../assertion_id/">assertion_id</a></td>
-<td>1 <br/> <a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
+<td>1 <br/> <a href="../String/">String</a> or <br/><a href="../ObGlobalID/">ObGlobalID</a> or <br/><a href="../DeGlobalID/">DeGlobalID</a> or <br/><a href="../MsGlobalID/">MsGlobalID</a></td>
 <td>INCLUDE Global ID for the Assertion</td>
 <td>direct</td>
 </tr>
@@ -380,9 +399,15 @@
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../assertion_provenance/">assertion_provenance</a></td>
-<td>0..1 <br/> <a href="../EnumAssertionProvenance/">EnumAssertionProvenance</a></td>
-<td>The original source of this assertion</td>
+<td><a href="../asserter_type/">asserter_type</a></td>
+<td>0..1 <br/> <a href="../EnumAsserterType/">EnumAsserterType</a></td>
+<td>The original asserter of this information</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../assertion_source_type/">assertion_source_type</a></td>
+<td>0..1 <br/> <a href="../EnumDataSourceType/">EnumDataSourceType</a></td>
+<td>The source of this assertion from the original data</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -417,7 +442,7 @@
 </tr>
 <tr>
 <td><a href="../value_concept/">value_concept</a></td>
-<td>* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
+<td>* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumPresentAbsent/">EnumPresentAbsent</a></td>
 <td>The structured term defining the value of the assertion</td>
 <td>direct</td>
 </tr>
@@ -504,7 +529,8 @@ slots:
 - assertion_id
 - subject_id
 - encounter_id
-- assertion_provenance
+- asserter_type
+- assertion_source_type
 - age_at_assertion
 - age_at_event
 - age_at_resolution
@@ -519,9 +545,10 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: obGlobalID
+    range: string
     required: true
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
 
@@ -540,9 +567,10 @@ slot_usage:
   assertion_id:
     name: assertion_id
     identifier: true
-    range: obGlobalID
+    range: string
     required: true
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
 attributes:
@@ -557,10 +585,11 @@ attributes:
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: obGlobalID
+    range: string
     required: true
     multivalued: false
     any_of:
+    - range: obGlobalID
     - range: deGlobalID
     - range: msGlobalID
   subject_id:
@@ -595,17 +624,28 @@ attributes:
     - BiospecimenCollection
     - Encounter
     range: Encounter
-  assertion_provenance:
-    name: assertion_provenance
-    description: The original source of this assertion
-    title: Assertion Provenance
+  asserter_type:
+    name: asserter_type
+    description: The original asserter of this information
+    title: Asserter Type
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: assertion_provenance
+    alias: asserter_type
     owner: SubjectAssertion
     domain_of:
     - SubjectAssertion
-    range: EnumAssertionProvenance
+    range: EnumAsserterType
+  assertion_source_type:
+    name: assertion_source_type
+    description: The source of this assertion from the original data
+    title: Assertion Source
+    from_schema: https://includedcc.org/common-access-model
+    rank: 1000
+    alias: assertion_source_type
+    owner: SubjectAssertion
+    domain_of:
+    - SubjectAssertion
+    range: EnumDataSourceType
   age_at_assertion:
     name: age_at_assertion
     description: The age in days of the Subject when the assertion was made.
@@ -683,6 +723,7 @@ attributes:
     range: Concept
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumPresentAbsent
   value_number:
     name: value_number

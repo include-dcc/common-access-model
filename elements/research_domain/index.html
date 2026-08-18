@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -387,7 +409,7 @@
 
 
 <h1 id="slot-research_domain">Slot: research_domain</h1>
-<p><em>Main research domain(s) of the study, other than Down syndrome</em></p>
+<p><em>Main research domain(s) of the study</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/research_domain">cam:research_domain</a>
 Alias: research_domain</p>
 <!-- no inheritance hierarchy -->
@@ -412,7 +434,7 @@ Alias: research_domain</p>
 <h2 id="properties">Properties</h2>
 <ul>
 <li>
-<p>Range: <a href="../EnumResearchDomain/">EnumResearchDomain</a></p>
+<p>Range: <a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumResearchDomain/">EnumResearchDomain</a></p>
 </li>
 <li>
 <p>Multivalued: True</p>
@@ -449,15 +471,18 @@ Alias: research_domain</p>
 <details>
 
 <pre><code class="language-yaml">name: research_domain
-description: Main research domain(s) of the study, other than Down syndrome
+description: Main research domain(s) of the study
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 alias: research_domain
 domain_of:
 - StudyMetadata
-range: EnumResearchDomain
+range: Concept
 required: true
 multivalued: true
+any_of:
+- range: Concept
+- range: EnumResearchDomain
 
 </code></pre>
 

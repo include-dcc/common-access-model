@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -378,7 +400,7 @@
 
 
 <h1 id="enum-enumavailabilitystatus">Enum: EnumAvailabilityStatus</h1>
-<p><em>Is the biospecimen available for use?</em></p>
+<p><em>Is this item available for use?</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumAvailabilityStatus">cam:EnumAvailabilityStatus</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
@@ -391,14 +413,14 @@
 </thead>
 <tbody>
 <tr>
-<td>available</td>
-<td>ig2_biospecimen_availability:available</td>
-<td>Biospecimen is Available</td>
+<td>snomedct:103328004</td>
+<td>snomedct:103328004</td>
+<td>The item is available to users, authorization/request permitting</td>
 </tr>
 <tr>
-<td>unavailable</td>
-<td>ig2_biospecimen_availability:unavailable</td>
-<td>Biospecimen is Unavailable</td>
+<td>snomedct:103329007</td>
+<td>snomedct:103329007</td>
+<td>The item is not available to users</td>
 </tr>
 </tbody>
 </table>
@@ -415,6 +437,10 @@
 <td><a href="../availability_status/">availability_status</a></td>
 <td>Can this Sample be requested for further analysis?</td>
 </tr>
+<tr>
+<td><a href="../availability/">availability</a></td>
+<td>Is or was this file available to users?</td>
+</tr>
 </tbody>
 </table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
@@ -426,19 +452,19 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumAvailabilityStatus
-description: Is the biospecimen available for use?
+description: Is this item available for use?
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  available:
-    text: available
-    description: Biospecimen is Available
-    meaning: ig2_biospecimen_availability:available
+  snomedct:103328004:
+    text: snomedct:103328004
+    description: The item is available to users, authorization/request permitting.
+    meaning: snomedct:103328004
     title: Available
-  unavailable:
-    text: unavailable
-    description: Biospecimen is Unavailable
-    meaning: ig2_biospecimen_availability:unavailable
+  snomedct:103329007:
+    text: snomedct:103329007
+    description: The item is not available to users.
+    meaning: snomedct:103329007
     title: Unavailable
 
 </code></pre>

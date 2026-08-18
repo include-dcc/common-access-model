@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumClinicalDataSourceType/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/EnumOrganism/">
       
       
       
@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumClinicalDataSourceType - common-access-model</title>
+        <title>Enum: EnumOrganism - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumclinicaldatasourcetype" class="md-skip">
+        <a href="#enum-enumorganism" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumClinicalDataSourceType
+              Enum: EnumOrganism
             
           </span>
         </div>
@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -311,15 +333,6 @@
   <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
     </span>
   </a>
   
@@ -377,9 +390,9 @@
   
 
 
-<h1 id="enum-enumclinicaldatasourcetype">Enum: EnumClinicalDataSourceType</h1>
-<p><em>Approaches to ascertain clinical information about a participant.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumClinicalDataSourceType">cam:EnumClinicalDataSourceType</a></p>
+<h1 id="enum-enumorganism">Enum: EnumOrganism</h1>
+<p><em>Common Organism types.</em></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumOrganism">cam:EnumOrganism</a></p>
 <h2 id="permissible-values">Permissible Values</h2>
 <table>
 <thead>
@@ -391,44 +404,14 @@
 </thead>
 <tbody>
 <tr>
-<td>medical_record</td>
-<td>None</td>
-<td>Data obtained directly from medical record</td>
-</tr>
-<tr>
-<td>investigator_assessment</td>
-<td>None</td>
-<td>Data obtained by examination, interview, etc</td>
-</tr>
-<tr>
-<td>participant_or_caregiver_report</td>
-<td>None</td>
-<td>Data obtained from survey, questionnaire, etc</td>
-</tr>
-<tr>
-<td>other</td>
-<td>None</td>
-<td>Data obtained from other source, such as tissue bank</td>
-</tr>
-<tr>
-<td>unknown</td>
+<td>NCBITaxon:9606</td>
 <td>None</td>
 <td></td>
 </tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
 <tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../clinical_data_source_type/">clinical_data_source_type</a></td>
-<td>Source(s) of data collected from study participants</td>
+<td>NCBITaxon:10090</td>
+<td>None</td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -440,32 +423,22 @@
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
 
-<pre><code class="language-yaml">name: EnumClinicalDataSourceType
-description: Approaches to ascertain clinical information about a participant.
-title: Clinical Data Source Type
+<pre><code class="language-yaml">name: EnumOrganism
+description: Common Organism types.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  medical_record:
-    text: medical_record
-    description: Data obtained directly from medical record
-    title: Medical Record
-  investigator_assessment:
-    text: investigator_assessment
-    description: Data obtained by examination, interview, etc. with investigator
-    title: Investigator Assessment
-  participant_or_caregiver_report:
-    text: participant_or_caregiver_report
-    description: Data obtained from survey, questionnaire, etc. filled out by participant
-      or caregiver
-    title: Participant or Caregiver Report
-  other:
-    text: other
-    description: Data obtained from other source, such as tissue bank
-    title: Other
-  unknown:
-    text: unknown
-    title: Unknown
+  NCBITaxon:9606:
+    text: NCBITaxon:9606
+    title: Human
+    aliases:
+    - human
+  NCBITaxon:10090:
+    text: NCBITaxon:10090
+    title: Mus musculus
+    aliases:
+    - mouse
+    - house_mouse
 
 </code></pre>
 

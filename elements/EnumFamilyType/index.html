@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -391,29 +413,39 @@
 </thead>
 <tbody>
 <tr>
-<td>control_only</td>
+<td>CAMO:0000002</td>
 <td>None</td>
-<td>Control Only</td>
+<td>This family study includes at a minimum one parent and one child</td>
 </tr>
 <tr>
-<td>duo</td>
+<td>CAMO:0000003</td>
 <td>None</td>
-<td>Duo</td>
+<td>This family study includes at a minimum one parent and one affected child</td>
 </tr>
 <tr>
-<td>proband_only</td>
+<td>CAMO:0000004</td>
 <td>None</td>
-<td>Proband Only</td>
+<td>This family study includes at a minimum two parents of one affected child</td>
 </tr>
 <tr>
-<td>trio</td>
+<td>CAMO:0000005</td>
 <td>None</td>
-<td>Trio (2 parents and affected child)</td>
+<td>This family study includes at a minimum two parents of one affected child and...</td>
 </tr>
 <tr>
-<td>trio_plus</td>
+<td>CAMO:0000006</td>
 <td>None</td>
-<td>2 Parents and 2 or more children</td>
+<td>This family study includes only one or more cases</td>
+</tr>
+<tr>
+<td>CAMO:0000007</td>
+<td>None</td>
+<td>This family study includes only one or more probands</td>
+</tr>
+<tr>
+<td>CAMO:0000008</td>
+<td>None</td>
+<td>This family study includes only one or more controls</td>
 </tr>
 </tbody>
 </table>
@@ -444,28 +476,56 @@
 description: Enumerations describing research family type
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-is_a: EnumNull
 permissible_values:
-  control_only:
-    text: control_only
-    description: Control Only
-    title: Control-only
-  duo:
-    text: duo
-    description: Duo
+  CAMO:0000002:
+    text: CAMO:0000002
+    description: This family study includes at a minimum one parent and one child.
+    title: Parent(s) and Child(ren)
+  CAMO:0000003:
+    text: CAMO:0000003
+    description: This family study includes at a minimum one parent and one affected
+      child.
     title: Duo
-  proband_only:
-    text: proband_only
-    description: Proband Only
-    title: Proband-only
-  trio:
-    text: trio
-    description: Trio (2 parents and affected child)
+    aliases:
+    - duo
+  CAMO:0000004:
+    text: CAMO:0000004
+    description: This family study includes at a minimum two parents of one affected
+      child.
     title: Trio
-  trio_plus:
-    text: trio_plus
-    description: 2 Parents and 2 or more children
+    aliases:
+    - trio
+  CAMO:0000005:
+    text: CAMO:0000005
+    description: This family study includes at a minimum two parents of one affected
+      child and at least one other child.
     title: Trio+
+    aliases:
+    - trio_plus
+  CAMO:0000006:
+    text: CAMO:0000006
+    description: This family study includes only one or more cases.
+    title: Case Only
+  CAMO:0000007:
+    text: CAMO:0000007
+    description: This family study includes only one or more probands.
+    title: Proband Only
+    aliases:
+    - proband_only
+  CAMO:0000008:
+    text: CAMO:0000008
+    description: This family study includes only one or more controls.
+    title: Control Only
+    aliases:
+    - control_only
+reachable_from:
+  source_ontology: camo
+  source_nodes:
+  - CAMO:0000001
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: true
 
 </code></pre>
 

@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -311,15 +333,6 @@
   <a href="#permissible-values" class="md-nav__link">
     <span class="md-ellipsis">
       Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
     </span>
   </a>
   
@@ -391,39 +404,14 @@
 </thead>
 <tbody>
 <tr>
-<td>female</td>
-<td>NCIT:C16576</td>
+<td>snomedct:248152002</td>
+<td>None</td>
 <td></td>
 </tr>
 <tr>
-<td>male</td>
-<td>NCIT:C20197</td>
+<td>snomedct:248153007</td>
+<td>None</td>
 <td></td>
-</tr>
-<tr>
-<td>other</td>
-<td>NCIT:C17649</td>
-<td></td>
-</tr>
-<tr>
-<td>unknown</td>
-<td>NCIT:C17998</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../sex/">sex</a></td>
-<td>Sex of Participant</td>
 </tr>
 </tbody>
 </table>
@@ -440,22 +428,16 @@ description: Subject Sex
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
 permissible_values:
-  female:
-    text: female
-    meaning: NCIT:C16576
+  snomedct:248152002:
+    text: snomedct:248152002
     title: Female
-  male:
-    text: male
-    meaning: NCIT:C20197
+    aliases:
+    - female
+  snomedct:248153007:
+    text: snomedct:248153007
     title: Male
-  other:
-    text: other
-    meaning: NCIT:C17649
-    title: Other
-  unknown:
-    text: unknown
-    meaning: NCIT:C17998
-    title: Unknown
+    aliases:
+    - male
 
 </code></pre>
 

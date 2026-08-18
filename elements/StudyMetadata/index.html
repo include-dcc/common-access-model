@@ -137,6 +137,14 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="../../dbt_artifacts/">
+<span class="md-ellipsis">
+    dbt
+    
+  </span>
+</a>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
     About
@@ -257,21 +265,12 @@
 
 
 
-        StudyMetadata --&gt; "1..*" EnumClinicalDataSourceType : clinical_data_source_type
-        click EnumClinicalDataSourceType href "../EnumClinicalDataSourceType/"
+        StudyMetadata --&gt; "1..*" EnumDataSourceType : clinical_data_source_type
+        click EnumDataSourceType href "../EnumDataSourceType/"
 
 
 
       StudyMetadata : data_category
-
-
-
-
-
-        StudyMetadata --&gt; "1..*" EnumDataCategory : data_category
-        click EnumDataCategory href "../EnumDataCategory/"
-
-
 
       StudyMetadata : expected_number_of_participants
 
@@ -294,8 +293,8 @@
 
 
 
-        StudyMetadata --&gt; "1..*" EnumResearchDomain : research_domain
-        click EnumResearchDomain href "../EnumResearchDomain/"
+        StudyMetadata --&gt; "1..*" Concept : research_domain
+        click Concept href "../Concept/"
 
 
 
@@ -307,8 +306,8 @@
 
 
 
-        StudyMetadata --&gt; "1..*" EnumStudyDesign : study_design
-        click EnumStudyDesign href "../EnumStudyDesign/"
+        StudyMetadata --&gt; "1..*" Concept : study_design
+        click Concept href "../Concept/"
 
 
 
@@ -371,19 +370,19 @@
 </tr>
 <tr>
 <td><a href="../study_design/">study_design</a></td>
-<td>1..* <br/> <a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
+<td>1..* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumStudyDesign/">EnumStudyDesign</a></td>
 <td>Overall design of study, including whether it is longitudinal and whether fam...</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../clinical_data_source_type/">clinical_data_source_type</a></td>
-<td>1..* <br/> <a href="../EnumClinicalDataSourceType/">EnumClinicalDataSourceType</a></td>
+<td>1..* <br/> <a href="../EnumDataSourceType/">EnumDataSourceType</a></td>
 <td>Source(s) of data collected from study participants</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../data_category/">data_category</a></td>
-<td>1..* <br/> <a href="../EnumDataCategory/">EnumDataCategory</a></td>
+<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
 <td>direct</td>
 </tr>
@@ -395,8 +394,8 @@
 </tr>
 <tr>
 <td><a href="../research_domain/">research_domain</a></td>
-<td>1..* <br/> <a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
-<td>Main research domain(s) of the study, other than Down syndrome</td>
+<td>1..* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumResearchDomain/">EnumResearchDomain</a></td>
+<td>Main research domain(s) of the study</td>
 <td>direct</td>
 </tr>
 <tr>
@@ -551,9 +550,12 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumStudyDesign
+    range: Concept
     required: true
     multivalued: true
+    any_of:
+    - range: Concept
+    - range: EnumStudyDesign
   clinical_data_source_type:
     name: clinical_data_source_type
     description: Source(s) of data collected from study participants
@@ -564,7 +566,7 @@ attributes:
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumClinicalDataSourceType
+    range: EnumDataSourceType
     required: true
     multivalued: true
   data_category:
@@ -579,9 +581,11 @@ attributes:
     domain_of:
     - StudyMetadata
     - File
-    range: EnumDataCategory
+    range: uriorcurie
     required: true
     multivalued: true
+    any_of:
+    - range: EnumDataCategory
   vbr_id:
     name: vbr_id
     description: Information about the study's Virtual Biorepository, if participating
@@ -596,16 +600,19 @@ attributes:
     range: VirtualBiorepository
   research_domain:
     name: research_domain
-    description: Main research domain(s) of the study, other than Down syndrome
+    description: Main research domain(s) of the study
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     alias: research_domain
     owner: StudyMetadata
     domain_of:
     - StudyMetadata
-    range: EnumResearchDomain
+    range: Concept
     required: true
     multivalued: true
+    any_of:
+    - range: Concept
+    - range: EnumResearchDomain
   expected_number_of_participants:
     name: expected_number_of_participants
     description: Total expected number of participants to be recruited.

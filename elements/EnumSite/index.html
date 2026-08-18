@@ -266,6 +266,28 @@
   
   
     <li class="md-nav__item">
+      <a href="../../dbt_artifacts/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    dbt
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../about/" class="md-nav__link">
         
   
@@ -306,15 +328,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#identifier-and-mapping-information" class="md-nav__link">
@@ -369,24 +382,9 @@
 
 
 <h1 id="enum-enumsite">Enum: EnumSite</h1>
-<p><em>The location of the specimen collection. <a href="https://hl7.org/fhir/R4B/valueset-body-site.html">SNOMED Body Site</a> is recommended.</em></p>
+<p><em>The location of the specimen collection.</em></p>
 <p>URI: <a href="https://includedcc.org/common-access-model/EnumSite">cam:EnumSite</a></p>
 <p><em>This is a dynamic enum</em></p>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../site/">site</a></td>
-<td>The location of the specimen collection</td>
-</tr>
-</tbody>
-</table>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
 <ul>
@@ -396,10 +394,17 @@
 <details>
 
 <pre><code class="language-yaml">name: EnumSite
-description: The location of the specimen collection. [SNOMED Body Site](https://hl7.org/fhir/R4B/valueset-body-site.html)
-  is recommended.
+description: The location of the specimen collection.
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
+reachable_from:
+  source_ontology: bioregistry:snomedct
+  source_nodes:
+  - snomedct:442083009
+  relationship_types:
+  - rdfs:subClassOf
+  is_direct: false
+  include_self: false
 
 </code></pre>
 
