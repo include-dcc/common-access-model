@@ -1,6 +1,7 @@
 # https://pre-commit.com/
 
-exclude: "^(project/|generated/|target/|docs/|src/linkml/schema/submodules/|src/common_access_model/datamodel/|tests/)"
+#exclude: "^(project/|generated/|target/|docs/|src/linkml/schema/submodules/|src/common_access_model/datamodel/|tests/)"
+exclude: "^(project|src/common_access_model/datamodel/|tests/)"
 repos:
   - repo: https://github.com/pre-commit/pre-commit-hooks
     rev: v5.0.0
