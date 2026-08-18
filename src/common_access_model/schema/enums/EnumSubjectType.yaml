@@ -1,0 +1,38 @@
+id: https://includedcc.org/common-access-model/EnumSubjectType
+name: EnumSubjectType
+enums:
+  EnumSubjectType:
+    description: Types of Subject entities
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000023
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      CAMO:0000024:
+        title: Participant
+        description: Study participant with consent, assent, or waiver of consent.
+        aliases:
+        - participant
+      CAMO:0000025:
+        title: Non-Participant
+        description: An individual not directly participating in a study, eg, the subject of a reported family history.
+        aliases:
+        - non_participant
+      CAMO:0000026:
+        title: Cell Line
+        aliases:
+        - cell_line
+      CAMO:0000027:
+        title: Animal Model
+        aliases:
+        - animal_model
+      CAMO:0000028:
+        title: Group
+        description: A group of entities or things being assessed as a whole.
+        aliases:
+        - group
+

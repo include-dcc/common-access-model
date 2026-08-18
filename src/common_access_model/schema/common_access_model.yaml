@@ -1,25 +1,19 @@
----
 id: https://includedcc.org/common-access-model
 name: common-access-model
 title: Common Access Model
 description: LinkML Schema for the Common Access Model
 license: MIT
 see_also:
-  - https://includedcc.github.io/common-access-model
+- https://includedcc.github.io/common-access-model
 
 prefixes:
   cam: https://includedcc.org/common-access-model/
   linkml: https://w3id.org/linkml/
   schema: http://schema.org/
   # subset of CDC Race and Ethnicity Code Set Version 1.0
-  cdc_race_eth: urn:oid:2.16.840.1.113883.6.238/
+  CDCREC: urn:oid:2.16.840.1.113883.6.238/
   hl7_null: http://terminology.hl7.org/CodeSystem/v3-NullFlavor/
-  ig_dob_method: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-date-of-birth-method/
-  igcondtype: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/condition-type/
-  ig2dac: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-code/
-  ig2dat: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/research-data-access-type/
-  ig2_biospecimen_availability: https://nih-ncpi.github.io/ncpi-fhir-ig-2/CodeSystem/biospecimen-availability/
-  snomed_ct: http://snomed.info/id/
+  snomedct: http://snomed.info/id/
   MONDO: http://purl.obolibrary.org/obo/MONDO_
   HP: http://purl.obolibrary.org/obo/HP_
   mesh: http://id.nlm.nih.gov/mesh/
@@ -28,12 +22,46 @@ prefixes:
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
   KIN: http://purl.org/ga4gh/kin.owl#
+  edam: http://edamontology.org
+  OBI: http://purl.obolibrary.org/obo/OBI_
+  MS: http://purl.obolibrary.org/obo/MS_
+  CHMO: http://purl.obolibrary.org/obo/CHMO_
+  NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
 
 default_prefix: cam
 default_range: string
-
 imports:
-  - linkml:types
+- linkml:types
+- enums/EnumAssayType
+- enums/EnumAsserterType
+- enums/EnumAvailabilityStatus
+- enums/EnumDataCategory
+- enums/EnumDataSourceType
+- enums/EnumDataUseModifier
+- enums/EnumDataUsePermission
+- enums/EnumEDAMDataTypes
+- enums/EnumEDAMFormats
+- enums/EnumEthnicity
+- enums/EnumFamilyRelation
+- enums/EnumFamilyRole
+- enums/EnumFamilyType
+- enums/EnumFileHashType
+- enums/EnumLaterality
+- enums/EnumOrganism
+- enums/EnumParticipantLifespanStage
+- enums/EnumPresentAbsent
+- enums/EnumProgram
+- enums/EnumRace
+- enums/EnumResearchDomain
+- enums/EnumSampleCollectionMethod
+- enums/EnumSex
+- enums/EnumSite
+- enums/EnumSpatialQualifiers
+- enums/EnumStudyDesign
+- enums/EnumSubjectType
+- enums/EnumUnknown
+- enums/EnumUnknownOther
+- enums/EnumVitalStatus
 
 types:
   ptGlobalID:
@@ -116,7 +144,8 @@ classes:
       - study_id
   AccessPolicy:
     title: Access Policy
-    description: The access policy that describes the controls around use of data
+    description: The access policy that describes the controls around use of
+      data
     slots:
       - access_policy_id
       - data_use_accession
@@ -138,17 +167,17 @@ classes:
     slots:
       #TODO: Split out core Study items and additional study metadata?
       #- study_id Inherits study_id from Record now.
-      - parent_study
+      - parent_study 
       - study_title
       - study_code
       - study_short_name
       - program
       - funding_source
-      - principal_investigator
+      - principal_investigator 
       - contact
       - study_description
       - website
-      # - dbgap : Should we call this out specifically or just use an external id?
+    # - dbgap : Should we call this out specifically or just use an external id?
       - publication
       - acknowledgments
       - citation_statement
@@ -164,16 +193,16 @@ classes:
     mixins:
       - Record
     slots:
-      - study_id
-      - participant_lifespan_stage
-      - selection_criteria
-      - study_design
-      - clinical_data_source_type
-      - data_category
-      - vbr_id
-      - research_domain
-      - expected_number_of_participants
-      - actual_number_of_participants
+    - study_id
+    - participant_lifespan_stage
+    - selection_criteria
+    - study_design
+    - clinical_data_source_type
+    - data_category
+    - vbr_id
+    - research_domain
+    - expected_number_of_participants
+    - actual_number_of_participants
       # Do we need this info, or should it be documented elsewhere?
       #- guidType
       #- guidMapped
@@ -191,12 +220,12 @@ classes:
     mixins:
       - Record
     slots:
-      - vbr_id
-      - name
-      - institution
-      - contact
-      - website
-      - vbr_readme
+    - vbr_id
+    - name
+    - institution
+    - contact
+    - website
+    - vbr_readme
     slot_usage:
       vbr_id:
         range: orGlobalID
@@ -209,8 +238,8 @@ classes:
     mixins:
       - Record
     slots:
-      - do_id
-      - bibliographic_reference
+    - do_id
+    - bibliographic_reference
     slot_usage:
       do_id:
         range: string
@@ -222,11 +251,11 @@ classes:
     mixins:
       - Record
     slots:
-      - name
-      - institution
+    - name
+    - institution
       # - orcid : Should we call this out specifically or just use an external id?
-      - investigator_title
-      - email
+    - investigator_title
+    - email
   Publication:
     title: Publication
     description: Information about a specific publication.
@@ -234,8 +263,8 @@ classes:
       - Record
     #Could add more here
     slots:
-      - bibliographic_reference
-      - website
+    - bibliographic_reference
+    - website
   Subject:
     title: Subject
     description:
@@ -245,9 +274,9 @@ classes:
     mixins:
       - Record
     slots:
-      - subject_id
-      - subject_type
-      - organism_type
+    - subject_id
+    - subject_type
+    - organism_type
     slot_usage:
       subject_id:
         range: ptGlobalID
@@ -312,10 +341,10 @@ classes:
     mixins:
       - Record
     slots:
-      - family_membership_id
-      - family_id
-      - subject_id
-      - family_role
+    - family_membership_id
+    - family_id
+    - subject_id
+    - family_role
     slot_usage:
       family_membership_id:
         range: string
@@ -331,34 +360,36 @@ classes:
     mixins:
       - Record
     slots:
-      - assertion_id
-      - subject_id
-      - encounter_id
-      - assertion_provenance
-      - age_at_assertion
-      - age_at_event
-      - age_at_resolution
-      - concept
-      - concept_source
-      - value_concept
-      - value_number
-      - value_source
-      - value_unit
-      - value_unit_source
+    - assertion_id
+    - subject_id
+    - encounter_id
+    - asserter_type
+    - assertion_source_type
+    - age_at_assertion
+    - age_at_event
+    - age_at_resolution
+    - concept
+    - concept_source
+    - value_concept
+    - value_number
+    - value_source
+    - value_unit
+    - value_unit_source
     slot_usage:
       assertion_id:
-        range: obGlobalID
+        range: string
         any_of:
-          - range: deGlobalID
-          - range: msGlobalID
+        - range: obGlobalID
+        - range: deGlobalID
+        - range: msGlobalID
         required: true
         identifier: true
   Concept:
     title: Concept
     description: A standardized concept with display information.
     slots:
-      - concept_curie
-      - display
+    - concept_curie
+    - display
     slot_usage:
       concept_curie:
         required: true
@@ -384,7 +415,8 @@ classes:
         required: true
         identifier: true
       biospecimen_collection_id:
-        description: Biospecimen Collection during which this sample was generated.
+        description: Biospecimen Collection during which this sample was
+          generated.
   BiospecimenCollection:
     title: BiospecimenCollection
     description: A biospecimen collection event which yields one or more Samples.
@@ -428,11 +460,11 @@ classes:
     mixins:
       - Record
     slots:
-      - encounter_id
-      - subject_id
+    - encounter_id
+    - subject_id
       #TODO: Should this alternatively be an "encounter type", ie, to not require a full definition?
-      - encounter_definition_id
-      - age_at_event
+    - encounter_definition_id
+    - age_at_event
     slot_usage:
       encounter_id:
         range: enGlobalID
@@ -440,18 +472,18 @@ classes:
         identifier: true
   EncounterDefinition:
     title: Encounter Definition
-    description: A definition of an encounter type in this study, ie,
-      an event at which data was collected about a participant,
-      an intervention was made, or information about a participant was recorded.
-      This may be something planned by a study or a type of data collection.
+    description: A definition of an encounter type in this study, ie, an event
+      at which data was collected about a participant, an intervention was made,
+      or information about a participant was recorded. This may be something
+      planned by a study or a type of data collection.
     #TODO: These are metadata and may not need the same Record basis.
     mixins:
       - Record
     slots:
-      - encounter_definition_id
-      - name
-      - description
-      - activity_definition_id
+    - encounter_definition_id
+    - name
+    - description
+    - activity_definition_id
     slot_usage:
       encounter_definition_id:
         range: pdGlobalID
@@ -461,8 +493,8 @@ classes:
         multivalued: true
   ActivityDefinition:
     title: Activity Definition
-    description: A definition of an activity in this study, eg,
-      a biospecimen collection, assay, intervention, survey, or assessment.
+    description: A definition of an activity in this study, eg, a biospecimen
+      collection, assay, intervention, survey, or assessment.
     #TODO: These are metadata and may not need the same Record basis.
     mixins:
       - Record
@@ -528,8 +560,8 @@ classes:
       - file_id
       - assay_type
       #Could set this up as an assay definition- not sure if we need a more specific entity
-      - assay_source
-      - activity_definition_id
+    - assay_source
+    - activity_definition_id
 
     slot_usage:
       assay_id:
@@ -549,15 +581,15 @@ classes:
     title: Dataset
     description: Set of files grouped together for release.
     slots:
-      - dataset_id
-      - name
-      - description
-      - do_id
-      - file_id
-      - publication
+    - dataset_id
+    - name
+    - description
+    - do_id
+    - file_id
+    - publication
       #TODO: Are these good elements for the core entity?
-      - data_collection_start
-      - data_collection_end
+    - data_collection_start
+    - data_collection_end
     slot_usage:
       dataset_id:
         range: lsGlobalID
@@ -619,9 +651,9 @@ slots:
   external_id:
     title: External Identifiers
     description: Other identifiers for this entity, eg, from the submitting study or in systems like dbGaP
-    required: false
-    range: uriorcurie
-    multivalued: true
+    required: false 
+    range: uriorcurie 
+    multivalued: true 
   parent_study:
     title: Parent Study
     description: The parent study for this study, if it is a nested study.
@@ -678,7 +710,10 @@ slots:
   program:
     title: Program
     description: Funding source(s) for the study
-    range: EnumProgram
+    range: uriorcurie
+    any_of: 
+    - range: uriorcurie
+    - range: EnumProgram
     required: true
     multivalued: true
   study_description:
@@ -698,15 +733,20 @@ slots:
     multivalued: true
   vbr_id:
     title: Virtual Biorepository
-    description: Information about the study's Virtual Biorepository, if participating
+    description: Information about the study's Virtual Biorepository, if
+      participating
     range: VirtualBiorepository
   vbr_readme:
     title: VBR Readme
-    description: Instructions for contacting or requesting samples from Virtual Biorepository, if participating
+    description: Instructions for contacting or requesting samples from Virtual
+      Biorepository, if participating
     range: string
   research_domain:
-    description: Main research domain(s) of the study, other than Down syndrome
-    range: EnumResearchDomain
+    description: Main research domain(s) of the study
+    range: Concept
+    any_of: 
+      - range: Concept
+      - range: EnumResearchDomain
     required: true
     multivalued: true
   participant_lifespan_stage:
@@ -717,22 +757,30 @@ slots:
     multivalued: true
   selection_criteria:
     title: Selection Criteria
-    description: Brief description of inclusion and/or exclusion criteria for the study
+    description: Brief description of inclusion and/or exclusion criteria for
+      the study
     range: string
   study_design:
     title: Study Design
-    description: Overall design of study, including whether it is longitudinal and whether family members/unrelated controls are also enrolled
-    range: EnumStudyDesign
+    description: Overall design of study, including whether it is longitudinal
+      and whether family members/unrelated controls are also enrolled
+    range: Concept
+    any_of:
+      - range: Concept
+      - range: EnumStudyDesign
     required: true
     multivalued: true
   data_category:
     title: Data Category
-    description: General category of data in this Record (e.g. Clinical, Genomics, etc)
-    range: EnumDataCategory
+    description: General category of data in this Record (e.g. Clinical,
+      Genomics, etc)
+    range: uriorcurie
+    any_of:
+      - range: EnumDataCategory
   clinical_data_source_type:
     title: Clinical Data Source Type
     description: Source(s) of data collected from study participants
-    range: EnumClinicalDataSourceType
+    range: EnumDataSourceType
     required: true
     multivalued: true
   publication:
@@ -768,28 +816,43 @@ slots:
     range: string
   organism_type:
     title: Organism Type
-    description: Organism Type, typically from NCBITaxon. For reference, Human is NCBITaxon:9606.
+    description: Organism Type, typically from NCBITaxon.
     range: uriorcurie
+    any_of:
+      - range: uriorcurie
+      - range: EnumOrganism
   subject_type:
     title: Subject Type
     description: Type of entity this record represents
     required: true
-    range: EnumSubjectType
+    range: Concept
+    any_of:
+      - range: EnumSubjectType
+      - range: EnumUnknownOther
   sex:
     title: Sex
     description: Sex of Participant
-    range: EnumSex
+    range: Concept
+    any_of:
+      - range: EnumSex
+      - range: EnumUnknownOther
     required: true
   race:
     title: Race
     description: Race of Participant
-    range: EnumRace
+    range: Concept
+    any_of:
+      - range: EnumRace
+      - range: EnumUnknownOther
     required: true
     multivalued: true
   ethnicity:
     title: Ethnicity
     description: Ethnicity of Participant
-    range: EnumEthnicity
+    range: Concept
+    any_of:
+      - range: EnumEthnicity
+      - range: EnumUnknownOther
     required: true
   age_at_first_engagement:
     #Should this just be a reference out to an encounter?
@@ -806,7 +869,10 @@ slots:
   vital_status:
     title: Vital Status
     description: Whether participant is alive or dead
-    range: EnumVitalStatus
+    range: Concept
+    any_of:
+      - range: EnumVitalStatus
+      - range: EnumUnknown
   age_at_last_vital_status:
     title: Age at Last Vital Status
     description: Age in days when participant's vital status was last recorded
@@ -828,7 +894,7 @@ slots:
     range: string
   consanguinity:
     description: Is there known or suspected consanguinity in this study family?
-    range: EnumConsanguinityAssertion
+    range: EnumPresentAbsent
   family_study_focus:
     description: The specific focus of the investigation, eg, a condition.
     range: uriorcurie
@@ -846,7 +912,10 @@ slots:
       Code definting the relationship predicate. Relationship of the "Family Member"
       to the "Subject", eg, mother of. Ideally uses KIN ontology.
     required: true
-    range: EnumFamilyRelation
+    range: Concept
+    any_of:
+      - range: EnumFamilyRelation
+      - range: EnumUnknown
   family_membership_id:
     title: Family Relationship ID
     description: ID for the Family Relationship
@@ -854,10 +923,17 @@ slots:
   family_role:
     description: The "role" of this individual in this family. Could include terms like "proband", "mother", etc.
     range: uriorcurie
-  assertion_provenance:
-    title: Assertion Provenance
-    description: The original source of this assertion
-    range: EnumAssertionProvenance
+    any_of:
+      - range: uriorcurie
+      - range: EnumFamilyRole
+  asserter_type:
+    title: Asserter Type
+    description: The original asserter of this information
+    range: EnumAsserterType
+  assertion_source_type:
+    title: Assertion Source
+    description: The source of this assertion from the original data
+    range: EnumDataSourceType
   age_at_assertion:
     title: Age at assertion
     description: The age in days of the Subject when the assertion was made.
@@ -874,7 +950,8 @@ slots:
       ucum_code: d
   age_at_resolution:
     title: Age at resolution
-    description: The age in days of the Subject when the asserted state was resolved.
+    description: The age in days of the Subject when the asserted state was
+      resolved.
     range: integer
     unit:
       ucum_code: d
@@ -900,7 +977,8 @@ slots:
     description: The structured term defining the value of the assertion.
     range: Concept
     any_of:
-      - range: EnumPresentAbsent
+    - range: Concept
+    - range: EnumPresentAbsent
     multivalued: true
   value_number:
     title: Value Number
@@ -937,7 +1015,8 @@ slots:
     range: Aliquot
   sample_type:
     title: Sample Type
-    description: Type of material of which this Sample is comprised. UBERON is recommended.
+    description: Type of material of which this Sample is comprised. UBERON is
+      recommended.
     required: true
     range: uriorcurie
   processing:
@@ -953,7 +1032,8 @@ slots:
     range: EnumAvailabilityStatus
   storage_method:
     title: Sample Storage Method
-    description: Sample storage method, eg, Frozen or with additives. OBI may be suitable, or ChEBI for additives.
+    description: Sample storage method, eg, Frozen or with additives. OBI may be
+      suitable, or ChEBI for additives.
     range: uriorcurie
     multivalued: true
   quantity_number:
@@ -984,15 +1064,28 @@ slots:
     range: EnumSampleCollectionMethod
   site:
     title: Biospecimen Collection Site
+    range: Concept
+    any_of:
+      - range: Concept
+      - range: EnumSampleCollectionMethod
+  site:
+    title: Biospecimen Collection Site
     description: The location of the specimen collection.
     range: EnumSite
   spatial_qualifier:
+    range: Concept
+    any_of:
+      - range: Concept
+      - range: EnumSite
+  spatial_qualifier:
     title: Spatial Qualifier
-    description: Qualifier that further refine the specific location of biospecimen collection
+    description: Qualifier that further refine the specific location of
+      biospecimen collection
     range: EnumSpatialQualifiers
   laterality:
     title: Location Laterality
-    description: Laterality that further refine the specific location of biospecimen collection
+    description: Laterality that further refine the specific location of
+      biospecimen collection
     range: EnumLaterality
   encounter_id:
     title: Encounter ID
@@ -1053,12 +1146,13 @@ slots:
     range: uriorcurie
   storage_class:
     title: Storage Class
-    description: Storage class of the object, reflecting cost and access characteristics.
+    description: Storage class of the object, reflecting cost and access
+      characteristics.
     range: string
   availability:
     title: File Availability
     description: Is or was this file available to users?
-    range: EnumFileAvailability
+    range: EnumAvailabilityStatus
   hash:
     title: File Hash
     description: File hash information
@@ -1102,9 +1196,8 @@ slots:
 enums:
   EnumDataUsePermission:
     title: Data Use Permission
-    description:
-      Data Use Ontology (DUO) terms for data use permissions.
-      #Do we need a "registered tier" item?
+    description: Data Use Ontology (DUO) terms for data use permissions.
+     #Do we need a "registered tier" item?
     reachable_from:
       source_ontology: bioregistry:duo
       source_nodes:
@@ -1228,7 +1321,7 @@ enums:
     description: Categories of data which may be collected about participants.
     #TODO: Add meanings
     permissible_values:
-      #Should we have these two demo/clinical data categories?
+    #Should we have these two demo/clinical data categories?
       unharmonized_demographic_clinical_data:
         title: Unharmonized Demographic/Clinical Data
       harmonized_demographic_clinical_data:
@@ -1262,16 +1355,15 @@ enums:
         title: Sleep Study
   EnumSubjectType:
     description: Types of Subject entities
-    permissible_values:
-      participant:
+    permissible_values: 
+      participant: 
         description: Study participant with consent, assent, or waiver of consent.
       non_participant:
-        description:
-          An individual associated with a study who was not explicitly consented, eg, the subject
+        description: An individual associated with a study who was not explictly consented, eg, the subject
           of a reported family history.
-      cell_line:
+      cell_line: 
         description: Cell Line
-      animal_model:
+      animal_model: 
         description: Animal model
       group:
         description: A group of individuals or entities.
@@ -1374,41 +1466,41 @@ enums:
         title: Unknown
         meaning: NCIT:C17998
   EnumFamilyType:
-    description: Enumerations describing research family type
+    description: Enumerations describing research family type 
     is_a: EnumNull
-    permissible_values:
+    permissible_values: 
       control_only:
-        title: Control-only
-        description: Control Only
-      duo:
+        title: Control-only 
+        description: Control Only 
+      duo: 
         title: Duo
-        description: Duo
-      proband_only:
-        title: Proband-only
-        description: Proband Only
-      trio:
-        title: Trio
+        description: Duo 
+      proband_only: 
+        title: Proband-only 
+        description: Proband Only 
+      trio: 
+        title: Trio 
         description: Trio (2 parents and affected child)
-      trio_plus:
-        title: Trio+
+      trio_plus: 
+        title: Trio+ 
         description: 2 Parents and 2 or more children
-  EnumConsanguinityAssertion:
+  EnumConsanguinityAssertion: 
     description: Asserts known or suspected consanguinity in this study family
-    permissible_values:
-      not_suspected:
+    permissible_values:  
+      not_suspected: 
         title: not-suspected
-        description: Not suspected
+        description: Not suspected 
         meaning: snomed_ct:428263003
-      suspected:
-        title: suspected
+      suspected: 
+        title: suspected 
         description: Suspected
         meaning: snomed_ct:415684004
-      known_present:
-        title: known-present
+      known_present: 
+        title: known-present 
         description: Known Present
         meaning: snomed_ct:410515003
-      unknown:
-        title: unknown
+      unknown: 
+        title: unknown 
         description: Unknown
         meaning: snomed_ct:261665006
   EnumAssertionProvenance:
@@ -1432,12 +1524,12 @@ enums:
     description: Is the biospecimen available for use?
     permissible_values:
       available:
-        title: Available
-        meaning: ig2_biospecimen_availability:available
+        title: Available 
+        meaning: ig2_biospecimen_availability:available 
         description: Biospecimen is Available
-      unavailable:
-        title: Unavailable
-        meaning: ig2_biospecimen_availability:unavailable
+      unavailable: 
+        title: Unavailable 
+        meaning: ig2_biospecimen_availability:unavailable 
         description: Biospecimen is Unavailable
   EnumSampleCollectionMethod:
     description: The approach used to collect the biospecimen. [LOINC](https://loinc.org) is recommended.
@@ -1445,12 +1537,12 @@ enums:
     description: The location of the specimen collection. [SNOMED Body Site](https://hl7.org/fhir/R4B/valueset-body-site.html) is recommended.
   EnumSpatialQualifiers:
     description: Any spatial/location qualifiers.
-    enum_uri: http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs
+    enum_uri: http://hl7.org/fhir/us/mcode/ValueSet/mcode-body-location-qualifier-vs 
     reachable_from:
       source_ontology: bioregistry:snomedct
       source_nodes:
         - snomedct:106233006
-        - snomedct:272424004
+        - snomedct:272424004 
         - snomedct:51440002
         - snomedct:399488007
         - snomedct:24028007
@@ -1485,7 +1577,7 @@ enums:
     permissible_values:
       md5:
         title: MD5
-      etag:
+      etag: 
         title: ETag
       sha1:
         title: SHA-1
@@ -1495,17 +1587,17 @@ enums:
     is_a: EnumNull
     permissible_values:
       "loinc:LA9633-4":
-        title: Present
+        title: Present 
         meaning: loinc:LA9633-4
         description: This feature was determined to be present.
       "loinc:LA9634-2":
-        title: Absent
+        title: Absent 
         meaning: loinc:LA9634-2
         description: This feature was determined to be absent.
       "loinc:LA11884-6":
-        title: Indeterminate
+        title: Indeterminate 
         meaning: loinc:LA11884-6
-        description: This feature was assessed, but unable to be determined
+        description: This feature was assessed, but unable to be determined 
           as present or absent.
   EnumFileAvailability:
     description: Options describing file availability
@@ -1541,3 +1633,6 @@ enums:
       include_self: true
       relationship_types:
         - rdfs:subClassOf
+
+
+

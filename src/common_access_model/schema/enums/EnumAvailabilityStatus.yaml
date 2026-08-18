@@ -1,0 +1,14 @@
+id: https://includedcc.org/common-access-model/EnumAvailabilityStatus
+name: EnumAvailabilityStatus
+enums:
+  EnumAvailabilityStatus:
+    description: Is this item available for use?
+    permissible_values:
+      snomedct:103328004:
+        title: Available
+        meaning: snomedct:103328004
+        description: The item is available to users, authorization/request permitting.
+      snomedct:103329007:
+        title: Unavailable
+        meaning: snomedct:103329007
+        description: The item is not available to users.

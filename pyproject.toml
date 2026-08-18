@@ -27,7 +27,8 @@ dev = [
     "jupyter>=1.0.0",
     "mknotebooks>= 0.8.0",
     "hatchling>=1.27.0",
-    "tomli>=2.0.0"
+    "tomli>=2.0.0",
+    "ftd-dd",
 ]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection for how to
@@ -89,3 +90,6 @@ extend-exclude = [
   "src/common_access_model/datamodel/common_access_model_pydantic.py",
   "src/common_access_model/datamodel/common_access_model.py",
 ]
+
+[tool.uv.sources]
+ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }

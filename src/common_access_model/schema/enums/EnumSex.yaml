@@ -1,0 +1,14 @@
+id: https://includedcc.org/common-access-model/EnumSex
+name: EnumSex
+enums:
+  EnumSex:
+    description: Subject Sex
+    permissible_values:
+      snomedct:248152002:
+        title: Female
+        aliases:
+          - female
+      snomedct:248153007:
+        title: Male
+        aliases:
+          - male

@@ -1,5 +1,5 @@
 subject_id: subject000
-sex: male
+sex: snomedct:248152002
 race:
-  - american_indian_or_alaska_native
-ethnicity: hispanic_or_latino
+ - CDCREC:2054-5
+ethnicity: CDCREC:2186-5
