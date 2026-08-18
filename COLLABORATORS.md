@@ -1,15 +1,18 @@
-## Welcome to the Kids First Access Model 🚀
+## Welcome to the Common Access Model 🚀
 
-This repository serves as a downstream model designed to specialize the
-[Common Access Model](https://github.com/include-dcc/common-access-model). The
-structural foundation of this project is maintained and version-controlled via a
-Git submodule containing the core schema.
-
-The purpose of this model is to build out a program-specific extension (or
-profile) by importing the core elements and layering the Kids First unique data
-requirements on top.
+This repository represents the core model, Common Access Model (CAM). In order
+to allow downstream models to extend a common set of classes and their
+properties, those models should adhere to use this model as a Git submodule.
 
 ## Key Integration Guidelines
+
+All changes to this model should be made with the understanding that those
+changes are completely valid for all or many of the downstream models. Those
+changes should be made directly within this repository and not as changes to the
+versions from the submodules themselves.
+
+Please see the following notes when integrating this model as a submodule within
+one of the downtream modules:
 
 - Do Not Modify the Submodule from within this repository: All foundational
   classes, slots, and enums live in the core submodule. Any program-specific
@@ -54,8 +57,8 @@ just lint && just test
 
 Subsequent calls can drop the init if you know for a fact that no other
 submodules have been added. The just recipe does call the linter and runs the
-linkml test as a subsequent dependency, in case there are upstream changes
-that invalidate the downstream model.
+linkml test as a subsequent dependency, in case there are upstream changes that
+invalidate the downstream model.
 
 ### Updating the pinned hash
 
