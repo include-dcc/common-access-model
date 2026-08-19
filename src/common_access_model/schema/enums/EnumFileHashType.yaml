@@ -1,0 +1,42 @@
+id: https://includedcc.org/common-access-model/EnumFileHashType
+name: EnumFileHashType
+enums:
+  EnumFileHashType:
+    description: Types of file hashes supported.
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - MS:1000561
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      MS:1000568:
+        title: MD5
+        description: MD5 (Message-Digest algorithm 5) is a (now deprecated) 
+          cryptographic hash function with a 128-bit hash value used to check 
+          the integrity of files.
+        aliases:
+        - md5
+      CAMO:0000022:
+        title: ETag
+        description: The entity tag is a hash of the object. The ETag reflects 
+          changes only to the contents of an object, not its metadata. The 
+          ETag may or may not be an MD5 digest of the object data.
+        aliases:
+        - etag
+      MS:1000569:
+        title: SHA-1
+        description: SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash 
+          function designed by the National Security Agency (NSA). It is also 
+          used to verify file integrity. Since 2011 it has been deprecated by 
+          the NIST as a U. S. government standard.
+        aliases:
+        - sha1
+      MS:1003151:
+        title: SHA-256
+        description: SHA-256 (member of Secure Hash Algorithm-2 family) is a 
+          cryptographic hash function designed by the National Security Agency
+          (NSA) and published by the NIST as a U. S. government standard. It 
+          is also used to verify file integrity.

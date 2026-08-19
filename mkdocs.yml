@@ -28,6 +28,7 @@ nav:
   #  - Home: index.md
   - Schema: elements/index.md
   - ER Diagram: elements/erdiagram.md
+  - dbt: dbt_artifacts.md
   - About: about.md
 
 exclude_docs: |
