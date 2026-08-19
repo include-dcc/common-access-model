@@ -7,9 +7,3 @@
 _gen_sqla:
     mkdir -p {{dest}}/sqlalchemy && \
     uv run gen-sqla {{source_schema_path}} --declarative > {{dest}}/sqlalchemy/{{schema_name}}.py
-
-
-_gen-linkml:
-  -mkdir -p docs/schema
-  mkdir -p {{dest}}/linkml
-  uv run gen-linkml --mergeimports -f yaml {{source_schema_path}} > {{dest}}/linkml/{{schema_name}}.yaml

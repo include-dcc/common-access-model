@@ -76,7 +76,7 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc gensqla _gen-linkml
+site: gen-project gen-doc gensqla
 
 # SQL Alchemy model
 [group('model development')]
