@@ -68,7 +68,7 @@ jobs:
 
       - name: Strip imports from merged schema (fully self-contained artifact)
         run: |
-          python3 -c "
+          uv run python3 -c "
           import yaml
           path = 'docs/schema/common_access_model.yaml'
           data = yaml.safe_load(open(path))
