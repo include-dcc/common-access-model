@@ -77,4 +77,5 @@ jobs:
             dist/*.whl
             dist/*.tar.gz
             project-artifacts.zip
+            docs/schema/common_access_model.yaml
           fail_on_unmatched_files: true
