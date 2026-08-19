@@ -76,7 +76,7 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc dbt _gen-linkml
+site: gen-project gen-doc dbt
 
 # Support for various dbt related tasks
 [group('model development')]
