@@ -1,0 +1,38 @@
+id: https://includedcc.org/common-access-model/EnumAsserterType
+name: EnumAsserterType
+enums:
+  EnumAsserterType:
+    description: Individuals or organizations making assertions.
+    reachable_from:
+      source_ontology: camo
+      source_nodes:
+        - CAMO:0000015
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      CAMO:0000016:
+        title: Research Staff Asserted
+        description: Assertion made by research staff.
+        aliases:
+        - investigator_assessment
+      CAMO:0000017:
+        title: Healthcare Asserted
+        description: Assertion documented by a healthcare system or provider.
+        aliases:
+        - medical_record
+      CAMO:0000018:
+        title: Participant or Representative Asserted
+        description: Assertion made by a study participant, their representative, or some combination.
+        aliases:
+        - participant_or_caregiver_report
+      CAMO:0000019:
+        title: Participant Asserted
+        description: Assertion made by a study participant.
+      CAMO:0000020:
+        title: Representative Asserted
+        description: Assertion made by a study participant's representative or representatives.
+      CAMO:0000021:
+        title: Caregiver Asserted
+        description: Assertion made by a study participant's caregiver or caregivers.

@@ -1,0 +1,39 @@
+id: https://includedcc.org/common-access-model/EnumResearchDomain
+name: EnumResearchDomain
+enums:
+  EnumResearchDomain:
+    title: Research Domain
+    description: Domains of research activities.
+    permissible_values:
+      mesh:D001520:
+        title: Behavior and Behavior Mechanisms
+        aliases:
+          - behavior_and_behavior_mechanisms
+      mesh:D006330:
+        title: Congenital Heart Defects
+        aliases:
+          - congenital_heart_defects
+      mesh:D007154:
+        title: Immune System Diseases
+        aliases:
+          - immune_system_diseases
+      mesh:D006402:
+        title: Hematologic Diseases
+        aliases:
+          - hematologic_diseases
+      mesh:D065886:
+        title: Neurodevelopment
+        aliases:
+          - neurodevelopment
+      mesh:D012893:
+        title: Sleep Wake Disorders
+        aliases:
+          - sleep_wake_disorders
+      mesh:D013568:
+        title: All Co-occurring Conditions
+        aliases:
+          - all_co_occurring_conditions
+      mesh:D010809:
+        title: Physical Fitness
+        aliases:
+          - physical_fitness

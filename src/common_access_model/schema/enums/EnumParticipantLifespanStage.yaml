@@ -1,0 +1,16 @@
+id: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
+name: EnumParticipantLifespanStage
+enums:
+  EnumParticipantLifespanStage:
+    title: Participant Lifespan Stage
+    description: Stages of life during which participants may be recruited. From NICHD
+      Pediatric Terminology. https://evs.nci.nih.gov/ftp1/Pediatric_Terminologies/NICHD/About.html
+    reachable_from:
+      source_ontology: bioregistry:ncit
+      source_nodes:
+        - NCIT:C89335
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+ 

@@ -1,0 +1,26 @@
+id: https://includedcc.org/common-access-model/EnumProgram
+name: EnumProgram
+enums:
+  EnumProgram:
+    title: Funding Programs
+    description: Specific funding program examples.
+    permissible_values:
+      https://www.nih.gov/include-project:
+        title: INCLUDE
+        description: The INCLUDE (INvestigation of Co-occurring conditions across the 
+          Lifespan to Understand Down syndromE) Project was launched in June 2018 in 
+          support of a Congressional directive in the fiscal year (FY) 2018 Omnibus 
+          Appropriations. The directive called for a new trans-NIH research initiative 
+          on critical health and quality-of-life needs for individuals with Down syndrome.
+        aliases:
+        - include
+      https://commonfund.nih.gov/KidsFirst:
+        title: Kids First
+        description: The goal of the Gabriella Miller Kids First Pediatric Research Program 
+          (Kids First) is to help researchers uncover new insights into the biology of childhood 
+          cancer and congenital anomalies, including the discovery of shared genetic pathways 
+          between these disorders. Children with birth defects have an increased risk of developing 
+          childhood cancer. This suggests there are shared genetic pathways underlying some types 
+          of childhood cancer and congenital anomalies. 
+        aliases:
+        - kf
