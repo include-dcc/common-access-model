@@ -204,7 +204,6 @@ BiospecimenCollection {
     string biospecimen_collection_id  
     float age_at_collection  
     EnumSampleCollectionMethod method  
-    EnumLaterality laterality  
     uriorcurieList external_id  
 }
 Concept {
@@ -249,7 +248,6 @@ Family {
 }
 FamilyMembership {
     string family_membership_id  
-    uriorcurie family_role  
     uriorcurieList external_id  
 }
 FamilyRelationship {
@@ -261,7 +259,6 @@ File {
     string filename  
     EnumEDAMFormats format  
     string file_extension  
-    uriorcurie data_category  
     EnumEDAMDataTypes data_type  
     integer size  
     uriorcurie internal_uri  
@@ -316,7 +313,6 @@ StudyMetadata {
     EnumParticipantLifespanStageList participant_lifespan_stage  
     string selection_criteria  
     EnumDataSourceTypeList clinical_data_source_type  
-    uriorcurieList data_category  
     integer expected_number_of_participants  
     integer actual_number_of_participants  
     uriorcurieList external_id  
@@ -362,6 +358,7 @@ Assay ||--}o File : "file_id"
 Assay ||--}o Sample : "sample_id"
 Assay ||--}o Subject : "subject_id"
 BiospecimenCollection ||--|o AccessPolicy : "access_policy_id"
+BiospecimenCollection ||--|o Concept : "laterality"
 BiospecimenCollection ||--|o Concept : "site"
 BiospecimenCollection ||--|o Concept : "spatial_qualifier"
 BiospecimenCollection ||--|o Encounter : "encounter_id"
@@ -388,6 +385,7 @@ EncounterDefinition ||--}o ActivityDefinition : "activity_definition_id"
 Family ||--|o AccessPolicy : "access_policy_id"
 Family ||--|o Study : "study_id"
 FamilyMembership ||--|o AccessPolicy : "access_policy_id"
+FamilyMembership ||--|o Concept : "family_role"
 FamilyMembership ||--|o Study : "study_id"
 FamilyMembership ||--|| Family : "family_id"
 FamilyMembership ||--|| Subject : "subject_id"
@@ -397,6 +395,7 @@ FamilyRelationship ||--|| Concept : "relation"
 FamilyRelationship ||--|| Subject : "family_member_id"
 FamilyRelationship ||--|| Subject : "subject_id"
 File ||--|o AccessPolicy : "access_policy_id"
+File ||--|o Concept : "data_category"
 File ||--|o Study : "study_id"
 File ||--}o FileHash : "hash"
 File ||--}o Sample : "sample_id"
@@ -421,6 +420,7 @@ Study ||--}| Investigator : "principal_investigator"
 StudyMetadata ||--|o AccessPolicy : "access_policy_id"
 StudyMetadata ||--|o VirtualBiorepository : "vbr_id"
 StudyMetadata ||--|| Study : "study_id"
+StudyMetadata ||--}| Concept : "data_category"
 StudyMetadata ||--}| Concept : "research_domain"
 StudyMetadata ||--}| Concept : "study_design"
 Subject ||--|o AccessPolicy : "access_policy_id"

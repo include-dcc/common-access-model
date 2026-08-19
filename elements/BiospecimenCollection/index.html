@@ -287,8 +287,8 @@
 
 
 
-        BiospecimenCollection --&gt; "0..1" EnumLaterality : laterality
-        click EnumLaterality href "../EnumLaterality/"
+        BiospecimenCollection --&gt; "0..1" Concept : laterality
+        click Concept href "../Concept/"
 
 
 
@@ -373,19 +373,19 @@
 </tr>
 <tr>
 <td><a href="../site/">site</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
 <td>The location of the specimen collection</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../spatial_qualifier/">spatial_qualifier</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumSpatialQualifiers/">EnumSpatialQualifiers</a></td>
 <td>Qualifier that further refine the specific location of biospecimen collection</td>
 <td>direct</td>
 </tr>
 <tr>
 <td><a href="../laterality/">laterality</a></td>
-<td>0..1 <br/> <a href="../EnumLaterality/">EnumLaterality</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumLaterality/">EnumLaterality</a></td>
 <td>Laterality that further refine the specific location of biospecimen collectio...</td>
 <td>direct</td>
 </tr>
@@ -551,7 +551,7 @@ attributes:
     range: Concept
     any_of:
     - range: Concept
-    - range: EnumSampleCollectionMethod
+    - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
     description: Qualifier that further refine the specific location of biospecimen
@@ -566,7 +566,7 @@ attributes:
     range: Concept
     any_of:
     - range: Concept
-    - range: EnumSite
+    - range: EnumSpatialQualifiers
   laterality:
     name: laterality
     description: Laterality that further refine the specific location of biospecimen
@@ -578,7 +578,10 @@ attributes:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumLaterality
+    range: Concept
+    any_of:
+    - range: Concept
+    - range: EnumLaterality
   encounter_id:
     name: encounter_id
     description: Unique identifier for this Encounter.

@@ -433,7 +433,7 @@ Alias: laterality</p>
 </table>
 <h2 id="properties">Properties</h2>
 <ul>
-<li>Range: <a href="../EnumLaterality/">EnumLaterality</a></li>
+<li>Range: <a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../Concept/">Concept</a>&nbsp;or&nbsp;<br /><a href="../EnumLaterality/">EnumLaterality</a></li>
 </ul>
 <h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
 <h3 id="schema-source">Schema Source</h3>
@@ -470,7 +470,10 @@ rank: 1000
 alias: laterality
 domain_of:
 - BiospecimenCollection
-range: EnumLaterality
+range: Concept
+any_of:
+- range: Concept
+- range: EnumLaterality
 
 </code></pre>
 

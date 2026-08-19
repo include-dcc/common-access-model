@@ -27914,8 +27914,9 @@ slots:
     domain_of:
     - StudyMetadata
     - File
-    range: uriorcurie
+    range: Concept
     any_of:
+    - range: Concept
     - range: EnumDataCategory
   clinical_data_source_type:
     name: clinical_data_source_type
@@ -28241,9 +28242,9 @@ slots:
     owner: FamilyMembership
     domain_of:
     - FamilyMembership
-    range: uriorcurie
+    range: Concept
     any_of:
-    - range: uriorcurie
+    - range: Concept
     - range: EnumFamilyRole
   asserter_type:
     name: asserter_type
@@ -28594,7 +28595,7 @@ slots:
     range: Concept
     any_of:
     - range: Concept
-    - range: EnumSampleCollectionMethod
+    - range: EnumSite
   spatial_qualifier:
     name: spatial_qualifier
     definition_uri: https://includedcc.org/common-access-model/spatial_qualifier
@@ -28609,7 +28610,7 @@ slots:
     range: Concept
     any_of:
     - range: Concept
-    - range: EnumSite
+    - range: EnumSpatialQualifiers
   laterality:
     name: laterality
     definition_uri: https://includedcc.org/common-access-model/laterality
@@ -28621,7 +28622,10 @@ slots:
     owner: BiospecimenCollection
     domain_of:
     - BiospecimenCollection
-    range: EnumLaterality
+    range: Concept
+    any_of:
+    - range: Concept
+    - range: EnumLaterality
   encounter_id:
     name: encounter_id
     definition_uri: https://includedcc.org/common-access-model/encounter_id
@@ -28975,10 +28979,11 @@ slots:
     - StudyMetadata
     is_usage_slot: true
     usage_slot_name: data_category
-    range: uriorcurie
+    range: Concept
     required: true
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumDataCategory
   VirtualBiorepository_vbr_id:
     name: VirtualBiorepository_vbr_id
@@ -30163,7 +30168,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.7.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-19T18:22:00'
-source_file_size: 34085
-generation_date: '2026-08-19T18:22:11'
+source_file_date: '2026-08-19T18:46:52'
+source_file_size: 34152
+generation_date: '2026-08-19T18:47:13'
 

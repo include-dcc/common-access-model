@@ -272,6 +272,15 @@
 
       StudyMetadata : data_category
 
+
+
+
+
+        StudyMetadata --&gt; "1..*" Concept : data_category
+        click Concept href "../Concept/"
+
+
+
       StudyMetadata : expected_number_of_participants
 
       StudyMetadata : external_id
@@ -382,7 +391,7 @@
 </tr>
 <tr>
 <td><a href="../data_category/">data_category</a></td>
-<td>1..* <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
+<td>1..* <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumDataCategory/">EnumDataCategory</a></td>
 <td>General category of data in this Record (e</td>
 <td>direct</td>
 </tr>
@@ -581,10 +590,11 @@ attributes:
     domain_of:
     - StudyMetadata
     - File
-    range: uriorcurie
+    range: Concept
     required: true
     multivalued: true
     any_of:
+    - range: Concept
     - range: EnumDataCategory
   vbr_id:
     name: vbr_id
