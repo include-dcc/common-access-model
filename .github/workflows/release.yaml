@@ -66,16 +66,6 @@ jobs:
       - name: Zip full project artifacts
         run: zip -r project-artifacts.zip project/
 
-      - name: Strip imports from merged schema (fully self-contained artifact)
-        run: |
-          uv run python3 -c "
-          import yaml
-          path = 'docs/schema/common_access_model.yaml'
-          data = yaml.safe_load(open(path))
-          data.pop('imports', None)
-          yaml.safe_dump(data, open(path, 'w'), sort_keys=False)
-          "
-
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
@@ -87,5 +77,5 @@ jobs:
             dist/*.whl
             dist/*.tar.gz
             project-artifacts.zip
-            docs/schema/common_access_model.yaml
+            project/linkml/common_access_model.yaml
           fail_on_unmatched_files: true
