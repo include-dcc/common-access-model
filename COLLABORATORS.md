@@ -153,3 +153,19 @@ any manual intervention:
   ```bash
   uv run pre-commit run --all-files
   ```
+
+
+## Commands to Expand Enum Files
+### To write the expanded output:
+`just expand`
+
+#### Regenerate expanded output
+To rerun the expansion script on a file, delete the current `permissible_values` from the YAML file, then run `just _test-schema`, `just lint`, or `just expand`.
+
+The `permissible_values` can be deleted manually or by running the following command for each file:
+
+`just clear {file_name}`
+
+Example:
+
+`just clear EnumName`

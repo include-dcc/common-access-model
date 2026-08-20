@@ -11,12 +11,13 @@ authors = [
 license = "MIT"
 license-files = ["LICENSE"]
 readme = "README.md"
-requires-python = ">=3.9,<3.14"
+requires-python = ">=3.12,<3.14"
 dynamic = ["version"]
 
 dependencies = [
   "linkml>=1.9.6",
   "linkml-runtime >=1.9.4",
+  "term-weaver",
 ]
 
 [dependency-groups]
@@ -93,3 +94,4 @@ extend-exclude = [
 
 [tool.uv.sources]
 ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
+term-weaver = { path = "../../term-weaver/term-weaver", editable = true }
