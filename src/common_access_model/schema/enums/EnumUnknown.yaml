@@ -1,0 +1,12 @@
+id: https://includedcc.org/common-access-model/EnumUnknown
+name: EnumUnknown
+enums:
+  EnumUnknown:
+    description: Base enumeration providing an Unknown option.
+    permissible_values:
+      snomedct:261665006:
+        title: Unknown
+        aliases:
+          - unknown
+
+

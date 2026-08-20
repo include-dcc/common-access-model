@@ -76,7 +76,11 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc gensqla gen-monolith
+site: gen-project gen-doc dbt gen-monolith
+
+# Support for various dbt related tasks
+[group('model development')]
+dbt: gensqla _gen_ftddd _gen_dbtmodel
 
 # SQL Alchemy model
 [group('model development')]
