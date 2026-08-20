@@ -323,74 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -410,56 +342,77 @@
 
 <h1 id="slot-family-relationship-id-family_membership_id">Slot: Family Relationship ID (family_membership_id)</h1>
 <p><em>ID for the Family Relationship</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/family_membership_id">cam:family_membership_id</a>
-Alias: family_membership_id</p>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [cam:family_membership_id](https://includedcc.org/common-access-model/family_membership_id)
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../FamilyMembership/">FamilyMembership</a></td>
-<td>Designates a Subject as a member of a family with a specified role</td>
-<td>yes</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../FamilyMembership/">FamilyMembership</a></li>
-</ul>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:family_membership_id</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:family_membership_id</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [FamilyMembership](FamilyMembership.md) | Designates a Subject as a member of a family with a specified role |  yes  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [FamilyMembership](FamilyMembership.md) |
+| Domain Of | [FamilyMembership](FamilyMembership.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:family_membership_id |
+| native | cam:family_membership_id |
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: family_membership_id
@@ -467,20 +420,22 @@ description: ID for the Family Relationship
 title: Family Relationship ID
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: family_membership_id
 domain_of:
 - FamilyMembership
 range: FamilyMembership
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

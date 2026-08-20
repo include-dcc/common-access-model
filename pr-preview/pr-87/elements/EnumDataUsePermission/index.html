@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumDataUsePermission - common-access-model</title>
+        <title>Enum: Data Use Permission (EnumDataUsePermission) - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumdatausepermission" class="md-skip">
+        <a href="#enum-data-use-permission-enumdatausepermission" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumDataUsePermission
+              Enum: Data Use Permission (EnumDataUsePermission)
             
           </span>
         </div>
@@ -323,65 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -399,67 +340,64 @@
   
 
 
-<h1 id="enum-enumdatausepermission">Enum: EnumDataUsePermission</h1>
+<h1 id="enum-data-use-permission-enumdatausepermission">Enum: Data Use Permission (EnumDataUsePermission)</h1>
 <p><em>Data Use Ontology (DUO) terms for data use permissions.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumDataUsePermission">cam:EnumDataUsePermission</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>DUO:0000004</td>
-<td>DUO:0000004</td>
-<td>This data use permission indicates there is no restriction on use</td>
-</tr>
-<tr>
-<td>DUO:0000006</td>
-<td>DUO:0000006</td>
-<td>This data use permission indicates that use is allowed for health/medical/bio...</td>
-</tr>
-<tr>
-<td>DUO:0000007</td>
-<td>DUO:0000007</td>
-<td>This data use permission indicates that use is allowed provided it is related...</td>
-</tr>
-<tr>
-<td>DUO:0000011</td>
-<td>DUO:0000011</td>
-<td>This data use permission indicates that use of the data is limited to the stu...</td>
-</tr>
-<tr>
-<td>DUO:0000042</td>
-<td>DUO:0000042</td>
-<td>This data use permission indicates that use is allowed for general research u...</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../data_use_permission/">data_use_permission</a></td>
-<td>Broad category of restrictions on data use</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [cam:EnumDataUsePermission](https://includedcc.org/common-access-model/EnumDataUsePermission)
+## Enumeration Source
+**Reachable From:**
+- **Source:** NONE
+- **Nodes:** DUO:0000001
+- **Via:** rdfs:subClassOf
+
+
+
+## Permissible Values
+| Value | Meaning | Description | Additional Info |
+| --- | --- | --- | --- |
+| DUO:0000004 | DUO:0000004 | This data use permission indicates there is no restriction on use | Title: no restriction<br>|
+| DUO:0000006 | DUO:0000006 | This data use permission indicates that use is allowed for health/medical/bio... | Title: health or medical or biomedical research<br>|
+| DUO:0000007 | DUO:0000007 | This data use permission indicates that use is allowed provided it is related... | Title: disease specific research<br>|
+| DUO:0000011 | DUO:0000011 | This data use permission indicates that use of the data is limited to the stu... | Title: population origins or ancestry research only<br>|
+| DUO:0000042 | DUO:0000042 | This data use permission indicates that use is allowed for general research u... | Title: general research use<br>|
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [data_use_permission](data_use_permission.md) | Broad category of restrictions on data use |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: EnumDataUsePermission
@@ -519,11 +457,16 @@ reachable_from:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 

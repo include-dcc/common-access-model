@@ -170,25 +170,25 @@
 <h1>ER Diagram</h1>
 <div class="mermaid">erDiagram
 AccessPolicy {
+    string access_description  
     coGlobalID access_policy_id  
     uriorcurie data_use_accession  
-    EnumDataUsePermission data_use_permission  
     EnumDataUseModifier data_use_modifier  
+    EnumDataUsePermission data_use_permission  
     string disease_limitation  
-    string access_description  
     uri website  
 }
 ActivityDefinition {
-    adGlobalID activity_definition_id  
     string name  
     string description  
+    adGlobalID activity_definition_id  
     uriorcurieList external_id  
 }
 Aliquot {
     string aliquot_id  
     EnumAvailabilityStatus availability_status  
-    float quantity_number  
     float concentration_number  
+    float quantity_number  
     uriorcurieList external_id  
 }
 Any {
@@ -196,13 +196,13 @@ Any {
 }
 Assay {
     diGlobalID assay_id  
-    EnumAssayType assay_type  
     string assay_source  
+    EnumAssayType assay_type  
     uriorcurieList external_id  
 }
 BiospecimenCollection {
-    string biospecimen_collection_id  
     float age_at_collection  
+    string biospecimen_collection_id  
     EnumSampleCollectionMethod method  
     uriorcurieList external_id  
 }
@@ -211,39 +211,39 @@ Concept {
     string display  
 }
 DOI {
-    string do_id  
     string bibliographic_reference  
+    string do_id  
     uriorcurieList external_id  
 }
 Dataset {
-    lsGlobalID dataset_id  
     string name  
     string description  
-    string data_collection_start  
     string data_collection_end  
+    string data_collection_start  
+    lsGlobalID dataset_id  
 }
 Demographics {
-    integer age_at_last_vital_status  
     integer age_at_first_engagement  
+    integer age_at_last_vital_status  
     uriorcurieList external_id  
 }
 Encounter {
-    enGlobalID encounter_id  
     integer age_at_event  
+    enGlobalID encounter_id  
     uriorcurieList external_id  
 }
 EncounterDefinition {
-    pdGlobalID encounter_definition_id  
     string name  
     string description  
+    pdGlobalID encounter_definition_id  
     uriorcurieList external_id  
 }
 Family {
-    grGlobalID family_id  
-    EnumFamilyType family_type  
-    string family_description  
     EnumPresentAbsent consanguinity  
+    string family_description  
+    grGlobalID family_id  
     uriorcurie family_study_focus  
+    EnumFamilyType family_type  
     uriorcurieList external_id  
 }
 FamilyMembership {
@@ -255,17 +255,17 @@ FamilyRelationship {
     uriorcurieList external_id  
 }
 File {
+    EnumAvailabilityStatus availability  
+    EnumEDAMDataTypes data_type  
+    uriorcurie drs_uri  
+    string file_extension  
     drGlobalID file_id  
     string filename  
     EnumEDAMFormats format  
-    string file_extension  
-    EnumEDAMDataTypes data_type  
-    integer size  
     uriorcurie internal_uri  
     uriorcurie release_uri  
-    uriorcurie drs_uri  
+    integer size  
     string storage_class  
-    EnumAvailabilityStatus availability  
     uriorcurieList external_id  
 }
 FileHash {
@@ -274,9 +274,9 @@ FileHash {
 }
 Investigator {
     string name  
+    string email  
     string institution  
     string investigator_title  
-    string email  
     uriorcurieList external_id  
 }
 Publication {
@@ -288,47 +288,47 @@ Record {
     uriorcurieList external_id  
 }
 Sample {
+    EnumAvailabilityStatus availability_status  
+    uriorcurieList processing  
+    float quantity_number  
     bsGlobalID sample_id  
     uriorcurie sample_type  
-    uriorcurieList processing  
-    EnumAvailabilityStatus availability_status  
     uriorcurieList storage_method  
-    float quantity_number  
     uriorcurieList external_id  
 }
 Study {
-    string study_title  
-    string study_code  
-    string study_short_name  
-    uriorcurieList program  
-    stringList funding_source  
-    string study_description  
-    uri website  
     string acknowledgments  
     string citation_statement  
-    uriorcurieList external_id  
+    stringList funding_source  
+    uriorcurieList program  
+    string study_code  
+    string study_description  
     sdGlobalID study_id  
+    string study_short_name  
+    string study_title  
+    uri website  
+    uriorcurieList external_id  
 }
 StudyMetadata {
-    EnumParticipantLifespanStageList participant_lifespan_stage  
-    string selection_criteria  
+    integer actual_number_of_participants  
     EnumDataSourceTypeList clinical_data_source_type  
     integer expected_number_of_participants  
-    integer actual_number_of_participants  
+    EnumParticipantLifespanStageList participant_lifespan_stage  
+    string selection_criteria  
     uriorcurieList external_id  
 }
 Subject {
-    ptGlobalID subject_id  
     uriorcurie organism_type  
+    ptGlobalID subject_id  
     uriorcurieList external_id  
 }
 SubjectAssertion {
-    string assertion_id  
-    EnumAsserterType asserter_type  
-    EnumDataSourceType assertion_source_type  
     integer age_at_assertion  
     integer age_at_event  
     integer age_at_resolution  
+    EnumAsserterType asserter_type  
+    string assertion_id  
+    EnumDataSourceType assertion_source_type  
     string concept_source  
     float value_number  
     string value_source  
@@ -336,19 +336,18 @@ SubjectAssertion {
     uriorcurieList external_id  
 }
 VirtualBiorepository {
-    orGlobalID vbr_id  
     string name  
     string institution  
-    uri website  
+    orGlobalID vbr_id  
     string vbr_readme  
+    uri website  
     uriorcurieList external_id  
 }
 
 ActivityDefinition ||--|o AccessPolicy : "access_policy_id"
 ActivityDefinition ||--|o Study : "study_id"
 Aliquot ||--|o AccessPolicy : "access_policy_id"
-Aliquot ||--|o Concept : "concentration_unit"
-Aliquot ||--|o Concept : "quantity_unit"
+Aliquot ||--|o Concept : "concentration_unit, quantity_unit"
 Aliquot ||--|o Sample : "sample_id"
 Aliquot ||--|o Study : "study_id"
 Assay ||--|o AccessPolicy : "access_policy_id"
@@ -358,9 +357,7 @@ Assay ||--}o File : "file_id"
 Assay ||--}o Sample : "sample_id"
 Assay ||--}o Subject : "subject_id"
 BiospecimenCollection ||--|o AccessPolicy : "access_policy_id"
-BiospecimenCollection ||--|o Concept : "laterality"
-BiospecimenCollection ||--|o Concept : "site"
-BiospecimenCollection ||--|o Concept : "spatial_qualifier"
+BiospecimenCollection ||--|o Concept : "laterality, site, spatial_qualifier"
 BiospecimenCollection ||--|o Encounter : "encounter_id"
 BiospecimenCollection ||--|o Study : "study_id"
 DOI ||--|o AccessPolicy : "access_policy_id"
@@ -371,8 +368,7 @@ Dataset ||--}o Publication : "publication"
 Demographics ||--|o AccessPolicy : "access_policy_id"
 Demographics ||--|o Concept : "vital_status"
 Demographics ||--|o Study : "study_id"
-Demographics ||--|| Concept : "ethnicity"
-Demographics ||--|| Concept : "sex"
+Demographics ||--|| Concept : "ethnicity, sex"
 Demographics ||--|| Subject : "subject_id"
 Demographics ||--}| Concept : "race"
 Encounter ||--|o AccessPolicy : "access_policy_id"
@@ -392,8 +388,7 @@ FamilyMembership ||--|| Subject : "subject_id"
 FamilyRelationship ||--|o AccessPolicy : "access_policy_id"
 FamilyRelationship ||--|o Study : "study_id"
 FamilyRelationship ||--|| Concept : "relation"
-FamilyRelationship ||--|| Subject : "family_member_id"
-FamilyRelationship ||--|| Subject : "subject_id"
+FamilyRelationship ||--|| Subject : "family_member_id, subject_id"
 File ||--|o AccessPolicy : "access_policy_id"
 File ||--|o Concept : "data_category"
 File ||--|o Study : "study_id"
@@ -415,14 +410,11 @@ Study ||--|o AccessPolicy : "access_policy_id"
 Study ||--|o DOI : "do_id"
 Study ||--|o Study : "parent_study"
 Study ||--}o Publication : "publication"
-Study ||--}| Investigator : "contact"
-Study ||--}| Investigator : "principal_investigator"
+Study ||--}| Investigator : "contact, principal_investigator"
 StudyMetadata ||--|o AccessPolicy : "access_policy_id"
 StudyMetadata ||--|o VirtualBiorepository : "vbr_id"
 StudyMetadata ||--|| Study : "study_id"
-StudyMetadata ||--}| Concept : "data_category"
-StudyMetadata ||--}| Concept : "research_domain"
-StudyMetadata ||--}| Concept : "study_design"
+StudyMetadata ||--}| Concept : "data_category, research_domain, study_design"
 Subject ||--|o AccessPolicy : "access_policy_id"
 Subject ||--|o Study : "study_id"
 Subject ||--|| Concept : "subject_type"
@@ -431,8 +423,7 @@ SubjectAssertion ||--|o Concept : "value_unit"
 SubjectAssertion ||--|o Encounter : "encounter_id"
 SubjectAssertion ||--|o Study : "study_id"
 SubjectAssertion ||--|o Subject : "subject_id"
-SubjectAssertion ||--}o Concept : "concept"
-SubjectAssertion ||--}o Concept : "value_concept"
+SubjectAssertion ||--}o Concept : "concept, value_concept"
 VirtualBiorepository ||--|o AccessPolicy : "access_policy_id"
 VirtualBiorepository ||--|o Study : "study_id"
 VirtualBiorepository ||--}| Investigator : "contact"

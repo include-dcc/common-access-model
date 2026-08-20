@@ -323,74 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -410,66 +342,79 @@
 
 <h1 id="slot-doi-do_id">Slot: DOI (do_id)</h1>
 <p><em>Digital Object Identifier (DOI) for this Record.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/do_id">cam:do_id</a>
-Alias: do_id</p>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [cam:do_id](https://includedcc.org/common-access-model/do_id)
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../DOI/">DOI</a></td>
-<td>A DOI is a permanent reference with metadata about a digital object</td>
-<td>yes</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>Study Metadata</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Dataset/">Dataset</a></td>
-<td>Set of files grouped together for release</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../DOI/">DOI</a></li>
-</ul>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:do_id</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:do_id</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Study](Study.md) | Study Metadata |  no  |
+| [DOI](DOI.md) | A DOI is a permanent reference with metadata about a digital object |  yes  |
+| [Dataset](Dataset.md) | Set of files grouped together for release |  no  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [DOI](DOI.md) |
+| Domain Of | [Study](Study.md), [DOI](DOI.md), [Dataset](Dataset.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:do_id |
+| native | cam:do_id |
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: do_id
@@ -477,7 +422,6 @@ description: Digital Object Identifier (DOI) for this Record.
 title: DOI
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: do_id
 domain_of:
 - Study
 - DOI
@@ -487,13 +431,16 @@ multivalued: false
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

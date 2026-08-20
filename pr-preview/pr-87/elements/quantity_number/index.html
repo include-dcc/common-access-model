@@ -323,74 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -410,61 +342,78 @@
 
 <h1 id="slot-quantity-quantity_number">Slot: Quantity (quantity_number)</h1>
 <p><em>The total quantity of the specimen</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/quantity_number">cam:quantity_number</a>
-Alias: quantity_number</p>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [cam:quantity_number](https://includedcc.org/common-access-model/quantity_number)
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../Sample/">Sample</a></td>
-<td>A functionally equivalent specimen taken from a participant or processed from...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td>A specific tube or amount of a biospecimen associated with a Sample</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Float/">Float</a></li>
-</ul>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:quantity_number</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:quantity_number</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [Sample](Sample.md) | A functionally equivalent specimen taken from a participant or processed from... |  no  |
+| [Aliquot](Aliquot.md) | A specific tube or amount of a biospecimen associated with a Sample |  no  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Float](Float.md) |
+| Domain Of | [Sample](Sample.md), [Aliquot](Aliquot.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:quantity_number |
+| native | cam:quantity_number |
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: quantity_number
@@ -472,7 +421,6 @@ description: The total quantity of the specimen
 title: Quantity
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: quantity_number
 domain_of:
 - Sample
 - Aliquot
@@ -480,13 +428,16 @@ range: float
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

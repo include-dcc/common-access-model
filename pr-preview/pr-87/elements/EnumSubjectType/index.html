@@ -323,56 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -392,50 +342,56 @@
 
 <h1 id="enum-enumsubjecttype">Enum: EnumSubjectType</h1>
 <p><em>Types of Subject entities</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumSubjectType">cam:EnumSubjectType</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAMO:0000024</td>
-<td>None</td>
-<td>Study participant with consent, assent, or waiver of consent</td>
-</tr>
-<tr>
-<td>CAMO:0000025</td>
-<td>None</td>
-<td>An individual not directly participating in a study, eg, the subject of a rep...</td>
-</tr>
-<tr>
-<td>CAMO:0000026</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAMO:0000027</td>
-<td>None</td>
-<td></td>
-</tr>
-<tr>
-<td>CAMO:0000028</td>
-<td>None</td>
-<td>A group of entities or things being assessed as a whole</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [cam:EnumSubjectType](https://includedcc.org/common-access-model/EnumSubjectType)
+## Enumeration Source
+**Reachable From:**
+- **Source:** NONE
+- **Nodes:** CAMO:0000023
+- **Via:** rdfs:subClassOf
+
+
+
+## Permissible Values
+| Value | Meaning | Description | Additional Info |
+| --- | --- | --- | --- |
+| CAMO:0000024 | None | Study participant with consent, assent, or waiver of consent | Title: Participant<br>|
+| CAMO:0000025 | None | An individual not directly participating in a study, eg, the subject of a rep... | Title: Non-Participant<br>|
+| CAMO:0000026 | None |  | Title: Cell Line<br>|
+| CAMO:0000027 | None |  | Title: Animal Model<br>|
+| CAMO:0000028 | None | A group of entities or things being assessed as a whole | Title: Group<br>|
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: EnumSubjectType
@@ -485,11 +441,16 @@ reachable_from:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 

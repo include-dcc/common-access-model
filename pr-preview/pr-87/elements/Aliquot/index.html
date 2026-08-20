@@ -161,76 +161,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      Inheritance
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      Slots
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      Schema Source
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      Mappings
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      LinkML Source
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      Direct
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      Induced
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -239,7 +169,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-aliquot-aliquot">Class: Aliquot (Aliquot)</h1>
 <p><em>A specific tube or amount of a biospecimen associated with a Sample.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/Aliquot">cam:Aliquot</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [cam:Aliquot](https://includedcc.org/common-access-model/Aliquot)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class Aliquot
     click Aliquot href "../Aliquot/"
@@ -322,110 +262,77 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><strong>Aliquot</strong> [ <a href="../Record/">Record</a>]</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../aliquot_id/">aliquot_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td>Unique identifier for an Aliquot</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sample_id/">sample_id</a></td>
-<td>0..1 <br/> <a href="../Sample/">Sample</a></td>
-<td>The unique identifier for this Sample</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../availability_status/">availability_status</a></td>
-<td>0..1 <br/> <a href="../EnumAvailabilityStatus/">EnumAvailabilityStatus</a></td>
-<td>Can this Sample be requested for further analysis?</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_number/">quantity_number</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td>The total quantity of the specimen</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_unit/">quantity_unit</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
-<td>The structured term defining the units of the quantity</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../concentration_number/">concentration_number</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td>What is the concentration of the analyte in the Aliquot?</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../concentration_unit/">concentration_unit</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
-<td>Units associated with the concentration of the analyte in the Aliquot</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../external_id/">external_id</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>Global identifier for the access policy that applies to this row of data</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
-<td>INCLUDE Global ID for the study</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:Aliquot</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:Aliquot</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* **Aliquot** [ [Record](Record.md)]
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [aliquot_id](aliquot_id.md) | 1 <br/> [String](String.md) | Unique identifier for an Aliquot | direct |
+| [sample_id](sample_id.md) | 0..1 <br/> [Sample](Sample.md) | The unique identifier for this Sample | direct |
+| [availability_status](availability_status.md) | 0..1 <br/> [EnumAvailabilityStatus](EnumAvailabilityStatus.md) | Can this Sample be requested for further analysis? | direct |
+| [quantity_number](quantity_number.md) | 0..1 <br/> [Float](Float.md) | The total quantity of the specimen | direct |
+| [quantity_unit](quantity_unit.md) | 0..1 <br/> [Concept](Concept.md) | The structured term defining the units of the quantity | direct |
+| [concentration_number](concentration_number.md) | 0..1 <br/> [Float](Float.md) | What is the concentration of the analyte in the Aliquot? | direct |
+| [concentration_unit](concentration_unit.md) | 0..1 <br/> [Concept](Concept.md) | Units associated with the concentration of the analyte in the Aliquot | direct |
+| [external_id](external_id.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Other identifiers for this entity, eg, from the submitting study or in system... | [Record](Record.md) |
+| [access_policy_id](access_policy_id.md) | 0..1 <br/> [AccessPolicy](AccessPolicy.md) | Global identifier for the access policy that applies to this row of data | [Record](Record.md) |
+| [study_id](study_id.md) | 0..1 <br/> [Study](Study.md) | INCLUDE Global ID for the study | [Record](Record.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:Aliquot |
+| native | cam:Aliquot |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: Aliquot
 description: A specific tube or amount of a biospecimen associated with a Sample.
@@ -450,7 +357,9 @@ slot_usage:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: Aliquot
 description: A specific tube or amount of a biospecimen associated with a Sample.
@@ -472,7 +381,6 @@ attributes:
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     identifier: true
-    alias: aliquot_id
     owner: Aliquot
     domain_of:
     - Aliquot
@@ -484,7 +392,6 @@ attributes:
     title: Sample ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: sample_id
     owner: Aliquot
     domain_of:
     - Sample
@@ -498,7 +405,6 @@ attributes:
     title: Sample Availability
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: availability_status
     owner: Aliquot
     domain_of:
     - Sample
@@ -510,7 +416,6 @@ attributes:
     title: Quantity
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: quantity_number
     owner: Aliquot
     domain_of:
     - Sample
@@ -522,7 +427,6 @@ attributes:
     title: Quantity Units
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: quantity_unit
     owner: Aliquot
     domain_of:
     - Sample
@@ -534,7 +438,6 @@ attributes:
     title: Concentration
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: concentration_number
     owner: Aliquot
     domain_of:
     - Aliquot
@@ -545,7 +448,6 @@ attributes:
     title: Concentration Units
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: concentration_unit
     owner: Aliquot
     domain_of:
     - Aliquot
@@ -557,7 +459,6 @@ attributes:
     title: External Identifiers
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: external_id
     owner: Aliquot
     domain_of:
     - Record
@@ -571,7 +472,6 @@ attributes:
     title: Access Policy ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: access_policy_id
     owner: Aliquot
     domain_of:
     - Record
@@ -583,7 +483,6 @@ attributes:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: study_id
     owner: Aliquot
     domain_of:
     - Record
@@ -592,7 +491,7 @@ attributes:
     multivalued: false
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

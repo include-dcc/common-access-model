@@ -161,76 +161,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      Inheritance
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      Slots
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      Schema Source
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      Mappings
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      LinkML Source
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      Direct
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      Induced
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -239,7 +169,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-family-membership-familymembership">Class: Family Membership (FamilyMembership)</h1>
 <p><em>Designates a Subject as a member of a family with a specified role.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/FamilyMembership">cam:FamilyMembership</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [cam:FamilyMembership](https://includedcc.org/common-access-model/FamilyMembership)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class FamilyMembership
     click FamilyMembership href "../FamilyMembership/"
@@ -307,92 +247,74 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><strong>FamilyMembership</strong> [ <a href="../Record/">Record</a>]</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../family_membership_id/">family_membership_id</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td>ID for the Family Relationship</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../family_id/">family_id</a></td>
-<td>1 <br/> <a href="../Family/">Family</a></td>
-<td>Global ID for the Family</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>1 <br/> <a href="../Subject/">Subject</a></td>
-<td>INCLUDE Global ID for the Subject</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../family_role/">family_role</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../Concept/">Concept</a> or <br/><a href="../EnumFamilyRole/">EnumFamilyRole</a></td>
-<td>The "role" of this individual in this family</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../external_id/">external_id</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>Global identifier for the access policy that applies to this row of data</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
-<td>INCLUDE Global ID for the study</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:FamilyMembership</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:FamilyMembership</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* **FamilyMembership** [ [Record](Record.md)]
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [family_membership_id](family_membership_id.md) | 1 <br/> [String](String.md) | ID for the Family Relationship | direct |
+| [family_id](family_id.md) | 1 <br/> [Family](Family.md) | Global ID for the Family | direct |
+| [subject_id](subject_id.md) | 1 <br/> [Subject](Subject.md) | INCLUDE Global ID for the Subject | direct |
+| [family_role](family_role.md) | 0..1 <br/> [Concept](Concept.md) or <br/>[EnumFamilyRole](EnumFamilyRole.md) | The "role" of this individual in this family | direct |
+| [external_id](external_id.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Other identifiers for this entity, eg, from the submitting study or in system... | [Record](Record.md) |
+| [access_policy_id](access_policy_id.md) | 0..1 <br/> [AccessPolicy](AccessPolicy.md) | Global identifier for the access policy that applies to this row of data | [Record](Record.md) |
+| [study_id](study_id.md) | 0..1 <br/> [Study](Study.md) | INCLUDE Global ID for the study | [Record](Record.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:FamilyMembership |
+| native | cam:FamilyMembership |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: FamilyMembership
 description: Designates a Subject as a member of a family with a specified role.
@@ -420,7 +342,9 @@ slot_usage:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: FamilyMembership
 description: Designates a Subject as a member of a family with a specified role.
@@ -448,7 +372,6 @@ attributes:
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     identifier: true
-    alias: family_membership_id
     owner: FamilyMembership
     domain_of:
     - FamilyMembership
@@ -460,7 +383,6 @@ attributes:
     title: Family ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: family_id
     owner: FamilyMembership
     domain_of:
     - Family
@@ -473,7 +395,6 @@ attributes:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: subject_id
     owner: FamilyMembership
     domain_of:
     - Subject
@@ -493,7 +414,6 @@ attributes:
       like "proband", "mother", etc.
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: family_role
     owner: FamilyMembership
     domain_of:
     - FamilyMembership
@@ -508,7 +428,6 @@ attributes:
     title: External Identifiers
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: external_id
     owner: FamilyMembership
     domain_of:
     - Record
@@ -522,7 +441,6 @@ attributes:
     title: Access Policy ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: access_policy_id
     owner: FamilyMembership
     domain_of:
     - Record
@@ -534,7 +452,6 @@ attributes:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: study_id
     owner: FamilyMembership
     domain_of:
     - Record
@@ -543,7 +460,7 @@ attributes:
     multivalued: false
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

@@ -161,83 +161,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      Inheritance
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      Slots
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      Usages
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      Schema Source
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      Mappings
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      LinkML Source
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      Direct
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      Induced
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -246,7 +169,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-sample-sample">Class: Sample (Sample)</h1>
 <p><em>A functionally equivalent specimen taken from a participant or processed from such a sample.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/Sample">cam:Sample</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [cam:Sample](https://includedcc.org/common-access-model/Sample)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class Sample
     click Sample href "../Sample/"
@@ -333,159 +266,89 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><strong>Sample</strong> [ <a href="../Record/">Record</a>]</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../sample_id/">sample_id</a></td>
-<td>1 <br/> <a href="../BsGlobalID/">BsGlobalID</a></td>
-<td>The unique identifier for this Sample</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../biospecimen_collection_id/">biospecimen_collection_id</a></td>
-<td>0..1 <br/> <a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td>Biospecimen Collection during which this sample was generated</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../parent_sample_id/">parent_sample_id</a></td>
-<td>0..1 <br/> <a href="./">Sample</a></td>
-<td>Sample from which this sample is derived</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../sample_type/">sample_type</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Type of material of which this Sample is comprised</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../processing/">processing</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Processing that was applied to the Parent Sample or from the Biospecimen Coll...</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../availability_status/">availability_status</a></td>
-<td>0..1 <br/> <a href="../EnumAvailabilityStatus/">EnumAvailabilityStatus</a></td>
-<td>Can this Sample be requested for further analysis?</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../storage_method/">storage_method</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Sample storage method, eg, Frozen or with additives</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_number/">quantity_number</a></td>
-<td>0..1 <br/> <a href="../Float/">Float</a></td>
-<td>The total quantity of the specimen</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../quantity_unit/">quantity_unit</a></td>
-<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
-<td>The structured term defining the units of the quantity</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../external_id/">external_id</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>Global identifier for the access policy that applies to this row of data</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
-<td>INCLUDE Global ID for the study</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="./">Sample</a></td>
-<td><a href="../parent_sample_id/">parent_sample_id</a></td>
-<td>range</td>
-<td><a href="./">Sample</a></td>
-</tr>
-<tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td><a href="../sample_id/">sample_id</a></td>
-<td>range</td>
-<td><a href="./">Sample</a></td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td><a href="../sample_id/">sample_id</a></td>
-<td>range</td>
-<td><a href="./">Sample</a></td>
-</tr>
-<tr>
-<td><a href="../Assay/">Assay</a></td>
-<td><a href="../sample_id/">sample_id</a></td>
-<td>range</td>
-<td><a href="./">Sample</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:Sample</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:Sample</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* **Sample** [ [Record](Record.md)]
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [sample_id](sample_id.md) | 1 <br/> [BsGlobalID](BsGlobalID.md) | The unique identifier for this Sample | direct |
+| [biospecimen_collection_id](biospecimen_collection_id.md) | 0..1 <br/> [BiospecimenCollection](BiospecimenCollection.md) | Biospecimen Collection during which this sample was generated | direct |
+| [parent_sample_id](parent_sample_id.md) | 0..1 <br/> [Sample](Sample.md) | Sample from which this sample is derived | direct |
+| [sample_type](sample_type.md) | 1 <br/> [Uriorcurie](Uriorcurie.md) | Type of material of which this Sample is comprised | direct |
+| [processing](processing.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Processing that was applied to the Parent Sample or from the Biospecimen Coll... | direct |
+| [availability_status](availability_status.md) | 0..1 <br/> [EnumAvailabilityStatus](EnumAvailabilityStatus.md) | Can this Sample be requested for further analysis? | direct |
+| [storage_method](storage_method.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Sample storage method, eg, Frozen or with additives | direct |
+| [quantity_number](quantity_number.md) | 0..1 <br/> [Float](Float.md) | The total quantity of the specimen | direct |
+| [quantity_unit](quantity_unit.md) | 0..1 <br/> [Concept](Concept.md) | The structured term defining the units of the quantity | direct |
+| [external_id](external_id.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Other identifiers for this entity, eg, from the submitting study or in system... | [Record](Record.md) |
+| [access_policy_id](access_policy_id.md) | 0..1 <br/> [AccessPolicy](AccessPolicy.md) | Global identifier for the access policy that applies to this row of data | [Record](Record.md) |
+| [study_id](study_id.md) | 0..1 <br/> [Study](Study.md) | INCLUDE Global ID for the study | [Record](Record.md) |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [Sample](Sample.md) | [parent_sample_id](parent_sample_id.md) | range | [Sample](Sample.md) |
+| [Aliquot](Aliquot.md) | [sample_id](sample_id.md) | range | [Sample](Sample.md) |
+| [File](File.md) | [sample_id](sample_id.md) | range | [Sample](Sample.md) |
+| [Assay](Assay.md) | [sample_id](sample_id.md) | range | [Sample](Sample.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:Sample |
+| native | cam:Sample |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: Sample
 description: A functionally equivalent specimen taken from a participant or processed
@@ -516,7 +379,9 @@ slot_usage:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: Sample
 description: A functionally equivalent specimen taken from a participant or processed
@@ -542,7 +407,6 @@ attributes:
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     identifier: true
-    alias: sample_id
     owner: Sample
     domain_of:
     - Sample
@@ -557,7 +421,6 @@ attributes:
     title: Biospecimen Collection ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: biospecimen_collection_id
     owner: Sample
     domain_of:
     - Sample
@@ -569,7 +432,6 @@ attributes:
     title: Parent Sample ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: parent_sample_id
     owner: Sample
     domain_of:
     - Sample
@@ -581,7 +443,6 @@ attributes:
     title: Sample Type
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: sample_type
     owner: Sample
     domain_of:
     - Sample
@@ -594,7 +455,6 @@ attributes:
     title: Sample Processing
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: processing
     owner: Sample
     domain_of:
     - Sample
@@ -606,7 +466,6 @@ attributes:
     title: Sample Availability
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: availability_status
     owner: Sample
     domain_of:
     - Sample
@@ -619,7 +478,6 @@ attributes:
     title: Sample Storage Method
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: storage_method
     owner: Sample
     domain_of:
     - Sample
@@ -631,7 +489,6 @@ attributes:
     title: Quantity
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: quantity_number
     owner: Sample
     domain_of:
     - Sample
@@ -643,7 +500,6 @@ attributes:
     title: Quantity Units
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: quantity_unit
     owner: Sample
     domain_of:
     - Sample
@@ -656,7 +512,6 @@ attributes:
     title: External Identifiers
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: external_id
     owner: Sample
     domain_of:
     - Record
@@ -670,7 +525,6 @@ attributes:
     title: Access Policy ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: access_policy_id
     owner: Sample
     domain_of:
     - Record
@@ -682,7 +536,6 @@ attributes:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: study_id
     owner: Sample
     domain_of:
     - Record
@@ -691,7 +544,7 @@ attributes:
     multivalued: false
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>

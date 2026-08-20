@@ -323,65 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -401,95 +342,68 @@
 
 <h1 id="enum-enumpresentabsent">Enum: EnumPresentAbsent</h1>
 <p><em>Options for describing presence or absence. Derived from SNOMED CT Known codes. The "Known" codes and "Not suspected" are the broadest terms and suitable for general use.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumPresentAbsent">cam:EnumPresentAbsent</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>snomedct:410515003</td>
-<td>snomedct:410515003</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410516002</td>
-<td>snomedct:410516002</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410590009</td>
-<td>snomedct:410590009</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410591008</td>
-<td>snomedct:410591008</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410592001</td>
-<td>snomedct:410592001</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410593006</td>
-<td>snomedct:410593006</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410594000</td>
-<td>snomedct:410594000</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:410605003</td>
-<td>snomedct:410605003</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:415684004</td>
-<td>snomedct:415684004</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:428263003</td>
-<td>snomedct:428263003</td>
-<td></td>
-</tr>
-<tr>
-<td>snomedct:723511001</td>
-<td>snomedct:723511001</td>
-<td></td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../consanguinity/">consanguinity</a></td>
-<td>Is there known or suspected consanguinity in this study family?</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [cam:EnumPresentAbsent](https://includedcc.org/common-access-model/EnumPresentAbsent)
+## Enumeration Source
+**Reachable From:**
+- **Source:** NONE
+- **Nodes:** snomedct:36692007
+- **Via:** rdfs:subClassOf
+
+
+
+## Permissible Values
+| Value | Meaning | Description | Additional Info |
+| --- | --- | --- | --- |
+| snomedct:410515003 | snomedct:410515003 |  | Title: Known present<br>|
+| snomedct:410516002 | snomedct:410516002 |  | Title: Known absent<br>|
+| snomedct:410590009 | snomedct:410590009 |  | Title: Known possible<br>|
+| snomedct:410591008 | snomedct:410591008 |  | Title: Definitely present<br>|
+| snomedct:410592001 | snomedct:410592001 |  | Title: Probably present<br>|
+| snomedct:410593006 | snomedct:410593006 |  | Title: Probably not present<br>|
+| snomedct:410594000 | snomedct:410594000 |  | Title: Definitely not present<br>|
+| snomedct:410605003 | snomedct:410605003 |  | Title: Confirmed present<br>|
+| snomedct:415684004 | snomedct:415684004 |  | Title: Suspected<br>|
+| snomedct:428263003 | snomedct:428263003 |  | Title: Not suspected<br>|
+| snomedct:723511001 | snomedct:723511001 |  | Title: Refuted<br>|
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [consanguinity](consanguinity.md) | Is there known or suspected consanguinity in this study family? |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: EnumPresentAbsent
@@ -556,11 +470,16 @@ reachable_from:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 
