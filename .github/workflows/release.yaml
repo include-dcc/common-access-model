@@ -66,15 +66,12 @@ jobs:
       - name: Zip full project artifacts
         run: zip -r project-artifacts.zip project/
 
-      - name: Strip imports from merged schema (fully self-contained artifact)
+      - name: Extract clean version number
         run: |
-          uv run python3 -c "
-          import yaml
-          path = 'docs/schema/common_access_model.yaml'
-          data = yaml.safe_load(open(path))
-          data.pop('imports', None)
-          yaml.safe_dump(data, open(path, 'w'), sort_keys=False)
-          "
+          # Takes 'v0.0.2' from github.ref_name and strips the leading 'v'
+          CLEAN_VERSION="${{ github.ref_name }}"
+          CLEAN_VERSION="${CLEAN_VERSION#v}"
+          echo "VERSION=${CLEAN_VERSION}" >> $GITHUB_ENV
 
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
@@ -87,5 +84,5 @@ jobs:
             dist/*.whl
             dist/*.tar.gz
             project-artifacts.zip
-            docs/schema/common_access_model.yaml
+            project/monolith/common_access_model-${{ env.VERSION }}.yaml
           fail_on_unmatched_files: true
