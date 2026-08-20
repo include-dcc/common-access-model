@@ -10,7 +10,7 @@ _gen_ftddd:
 
 [group('model development')]
 _gen_dbtmodel:
-  uv run scripts/gen-dbtmodel.py
+  uv run gen-dbtmodel
 
 [group('model development')]
 _gen_sqla:
