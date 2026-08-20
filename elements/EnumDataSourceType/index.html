@@ -18,7 +18,7 @@
     
     
       
-        <title>Enum: EnumDataSourceType - common-access-model</title>
+        <title>Enum: Data Source Type (EnumDataSourceType) - common-access-model</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#enum-enumdatasourcetype" class="md-skip">
+        <a href="#enum-data-source-type-enumdatasourcetype" class="md-skip">
           Skip to content
         </a>
       
@@ -102,7 +102,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Enum: EnumDataSourceType
+              Enum: Data Source Type (EnumDataSourceType)
             
           </span>
         </div>
@@ -323,65 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -399,71 +340,65 @@
   
 
 
-<h1 id="enum-enumdatasourcetype">Enum: EnumDataSourceType</h1>
+<h1 id="enum-data-source-type-enumdatasourcetype">Enum: Data Source Type (EnumDataSourceType)</h1>
 <p><em>Approaches to ascertain information about a participant.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumDataSourceType">cam:EnumDataSourceType</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAMO:0000014</td>
-<td>None</td>
-<td>Data obtained directly from an Electronic Health Record</td>
-</tr>
-<tr>
-<td>CAMO:0000010</td>
-<td>None</td>
-<td>Data obtained from a survey or questionnaire given to a participant or their ...</td>
-</tr>
-<tr>
-<td>CAMO:0000011</td>
-<td>None</td>
-<td>Data obtained by research staff for the study</td>
-</tr>
-<tr>
-<td>CAMO:0000012</td>
-<td>None</td>
-<td>Data obtained by research staff interviewing participants, representatives, o...</td>
-</tr>
-<tr>
-<td>CAMO:0000013</td>
-<td>None</td>
-<td>Data obtained directly by research staff examining the participant</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../clinical_data_source_type/">clinical_data_source_type</a></td>
-<td>Source(s) of data collected from study participants</td>
-</tr>
-<tr>
-<td><a href="../assertion_source_type/">assertion_source_type</a></td>
-<td>The source of this assertion from the original data</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [cam:EnumDataSourceType](https://includedcc.org/common-access-model/EnumDataSourceType)
+## Enumeration Source
+**Reachable From:**
+- **Source:** NONE
+- **Nodes:** CAMO:0000009
+- **Via:** rdfs:subClassOf
+
+
+
+## Permissible Values
+| Value | Meaning | Description | Additional Info |
+| --- | --- | --- | --- |
+| CAMO:0000014 | None | Data obtained directly from an Electronic Health Record | Title: Electronic Health Record<br>|
+| CAMO:0000010 | None | Data obtained from a survey or questionnaire given to a participant or their ... | Title: Survey<br>|
+| CAMO:0000011 | None | Data obtained by research staff for the study | Title: Research Assessment<br>|
+| CAMO:0000012 | None | Data obtained by research staff interviewing participants, representatives, o... | Title: Interview<br>|
+| CAMO:0000013 | None | Data obtained directly by research staff examining the participant | Title: Physical Examination<br>|
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [clinical_data_source_type](clinical_data_source_type.md) | Source(s) of data collected from study participants |
+| [assertion_source_type](assertion_source_type.md) | The source of this assertion from the original data |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: EnumDataSourceType
@@ -513,11 +448,16 @@ reachable_from:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 

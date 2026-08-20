@@ -216,8 +216,8 @@ types:
     description: A character string
     notes:
     - In RDF serializations, a slot with range of string is treated as a literal or
-      type xsd:string.   If you are authoring schemas in LinkML YAML, the type is
-      referenced with the lower case "string".
+      type xsd:string. If you are authoring schemas in LinkML YAML, the type is referenced
+      with the lower case "string".
     from_schema: https://w3id.org/linkml/types
     imported_from: linkml:types
     exact_mappings:
@@ -30166,9 +30166,9 @@ classes:
         description: The list of files comprising this dataset.
         multivalued: true
     class_uri: cam:Dataset
-metamodel_version: 1.7.0
+metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-08-19T21:23:26'
+source_file_date: '2026-08-20T21:43:45'
 source_file_size: 34152
-generation_date: '2026-08-19T21:23:36'
+generation_date: '2026-08-20T21:44:00'
 

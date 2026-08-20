@@ -323,74 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#applicable-classes" class="md-nav__link">
-    <span class="md-ellipsis">
-      Applicable Classes
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#properties" class="md-nav__link">
-    <span class="md-ellipsis">
-      Properties
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#mappings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Mappings
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -410,61 +342,88 @@
 
 <h1 id="slot-age-at-event-age_at_event">Slot: Age at event (age_at_event)</h1>
 <p><em>The age in days of the Subject at the time point which the assertion describes, eg, age of onset or when a measurement was performed.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/age_at_event">cam:age_at_event</a>
-Alias: age_at_event</p>
+<div data-search-exclude markdown="1">
+
+
+
+URI: [cam:age_at_event](https://includedcc.org/common-access-model/age_at_event)
 <!-- no inheritance hierarchy -->
 
-<h2 id="applicable-classes">Applicable Classes</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-<th>Modifies Slot</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td>Assertion about a particular Subject</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Encounter/">Encounter</a></td>
-<td>An event at which data was collected about a participant, an intervention was...</td>
-<td>no</td>
-</tr>
-</tbody>
-</table>
-<h2 id="properties">Properties</h2>
-<ul>
-<li>Range: <a href="../Integer/">Integer</a></li>
-</ul>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:age_at_event</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:age_at_event</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+## Applicable Classes
+
+| Name | Description | Modifies Slot |
+| --- | --- | --- |
+| [SubjectAssertion](SubjectAssertion.md) | Assertion about a particular Subject |  no  |
+| [Encounter](Encounter.md) | An event at which data was collected about a participant, an intervention was... |  no  |
+
+
+
+
+
+
+## Properties
+
+### Type and Range
+
+| Property | Value |
+| --- | --- |
+| Range | [Integer](Integer.md) |
+| Domain Of | [SubjectAssertion](SubjectAssertion.md), [Encounter](Encounter.md) |
+
+### Cardinality and Requirements
+
+| Property | Value |
+| --- | --- |
+<details>
+<summary>Additional Constraints</summary>
+**Unit:**
+
+| Property | Value |
+| --- | --- |
+| ucum_code | d |
+
+</details>
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:age_at_event |
+| native | cam:age_at_event |
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: age_at_event
@@ -473,7 +432,6 @@ description: The age in days of the Subject at the time point which the assertio
 title: Age at event
 from_schema: https://includedcc.org/common-access-model
 rank: 1000
-alias: age_at_event
 domain_of:
 - SubjectAssertion
 - Encounter
@@ -483,13 +441,16 @@ unit:
 
 </code></pre>
 
-</details>
+</details></div>
 
 
 
 
 
 
+
+  
+  
 
 
 

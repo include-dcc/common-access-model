@@ -323,65 +323,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#permissible-values" class="md-nav__link">
-    <span class="md-ellipsis">
-      Permissible Values
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#slots" class="md-nav__link">
-    <span class="md-ellipsis">
-      Slots
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#identifier-and-mapping-information" class="md-nav__link">
-    <span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Identifier and Mapping Information">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#schema-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      Schema Source
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#linkml-source" class="md-nav__link">
-    <span class="md-ellipsis">
-      LinkML Source
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -401,75 +342,64 @@
 
 <h1 id="enum-enumfamilytype">Enum: EnumFamilyType</h1>
 <p><em>Enumerations describing research family type</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/EnumFamilyType">cam:EnumFamilyType</a></p>
-<h2 id="permissible-values">Permissible Values</h2>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Meaning</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>CAMO:0000002</td>
-<td>None</td>
-<td>This family study includes at a minimum one parent and one child</td>
-</tr>
-<tr>
-<td>CAMO:0000003</td>
-<td>None</td>
-<td>This family study includes at a minimum one parent and one affected child</td>
-</tr>
-<tr>
-<td>CAMO:0000004</td>
-<td>None</td>
-<td>This family study includes at a minimum two parents of one affected child</td>
-</tr>
-<tr>
-<td>CAMO:0000005</td>
-<td>None</td>
-<td>This family study includes at a minimum two parents of one affected child and...</td>
-</tr>
-<tr>
-<td>CAMO:0000006</td>
-<td>None</td>
-<td>This family study includes only one or more cases</td>
-</tr>
-<tr>
-<td>CAMO:0000007</td>
-<td>None</td>
-<td>This family study includes only one or more probands</td>
-</tr>
-<tr>
-<td>CAMO:0000008</td>
-<td>None</td>
-<td>This family study includes only one or more controls</td>
-</tr>
-</tbody>
-</table>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../family_type/">family_type</a></td>
-<td>Describes the 'type' of study family, eg, trio</td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="linkml-source">LinkML Source</h2>
+<div data-search-exclude markdown="1">
+
+URI: [cam:EnumFamilyType](https://includedcc.org/common-access-model/EnumFamilyType)
+## Enumeration Source
+**Reachable From:**
+- **Source:** NONE
+- **Nodes:** CAMO:0000001
+- **Via:** rdfs:subClassOf
+
+
+
+## Permissible Values
+| Value | Meaning | Description | Additional Info |
+| --- | --- | --- | --- |
+| CAMO:0000002 | None | This family study includes at a minimum one parent and one child | Title: Parent(s) and Child(ren)<br>|
+| CAMO:0000003 | None | This family study includes at a minimum one parent and one affected child | Title: Duo<br>|
+| CAMO:0000004 | None | This family study includes at a minimum two parents of one affected child | Title: Trio<br>|
+| CAMO:0000005 | None | This family study includes at a minimum two parents of one affected child and... | Title: Trio+<br>|
+| CAMO:0000006 | None | This family study includes only one or more cases | Title: Case Only<br>|
+| CAMO:0000007 | None | This family study includes only one or more probands | Title: Proband Only<br>|
+| CAMO:0000008 | None | This family study includes only one or more controls | Title: Control Only<br>|
+
+
+
+
+## Slots
+
+| Name | Description |
+| ---  | --- |
+| [family_type](family_type.md) | Describes the 'type' of study family, eg, trio |
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+
+
+## LinkML Source
+
 <details>
 
 <pre><code class="language-yaml">name: EnumFamilyType
@@ -531,11 +461,16 @@ reachable_from:
 
 </details>
 
+</div>
 
 
 
 
 
+
+
+  
+  
 
 
 

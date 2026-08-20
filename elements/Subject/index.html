@@ -161,83 +161,6 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
-<label class="md-nav__title" for="__toc">
-<span class="md-nav__icon md-icon"></span>
-      Table of contents
-    </label>
-<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#inheritance">
-<span class="md-ellipsis">
-      Inheritance
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#slots">
-<span class="md-ellipsis">
-      Slots
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      Usages
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#identifier-and-mapping-information">
-<span class="md-ellipsis">
-      Identifier and Mapping Information
-    </span>
-</a>
-<nav aria-label="Identifier and Mapping Information" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#schema-source">
-<span class="md-ellipsis">
-      Schema Source
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#mappings">
-<span class="md-ellipsis">
-      Mappings
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#linkml-source">
-<span class="md-ellipsis">
-      LinkML Source
-    </span>
-</a>
-<nav aria-label="LinkML Source" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#direct">
-<span class="md-ellipsis">
-      Direct
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
-<a class="md-nav__link" href="#induced">
-<span class="md-ellipsis">
-      Induced
-    </span>
-</a>
-</li>
-</ul>
-</nav>
-</li>
-</ul>
 </nav>
 </div>
 </div>
@@ -246,7 +169,17 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-subject-subject">Class: Subject (Subject)</h1>
 <p><em>This entity is the subject about which data or references are recorded. This includes the idea of a human participant in a study, a cell line, an animal model, or any other similar entity.</em></p>
-<p>URI: <a href="https://includedcc.org/common-access-model/Subject">cam:Subject</a></p>
+<div data-search-exclude="" markdown="1">
+
+
+
+URI: [cam:Subject](https://includedcc.org/common-access-model/Subject)
+
+
+
+
+
+
 <div class="mermaid"> classDiagram
     class Subject
     click Subject href "../Subject/"
@@ -294,147 +227,87 @@
 
 
 </div>
-<h2 id="inheritance">Inheritance</h2>
-<ul>
-<li><strong>Subject</strong> [ <a href="../Record/">Record</a>]</li>
-</ul>
-<h2 id="slots">Slots</h2>
-<table>
-<thead>
-<tr>
-<th>Name</th>
-<th>Cardinality and Range</th>
-<th>Description</th>
-<th>Inheritance</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>1 <br/> <a href="../PtGlobalID/">PtGlobalID</a></td>
-<td>INCLUDE Global ID for the Subject</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../subject_type/">subject_type</a></td>
-<td>1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumSubjectType/">EnumSubjectType</a> or <br/><a href="../EnumUnknownOther/">EnumUnknownOther</a></td>
-<td>Type of entity this record represents</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../organism_type/">organism_type</a></td>
-<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../Uriorcurie/">Uriorcurie</a> or <br/><a href="../EnumOrganism/">EnumOrganism</a></td>
-<td>Organism Type, typically from NCBITaxon</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../external_id/">external_id</a></td>
-<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
-<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
-<td>Global identifier for the access policy that applies to this row of data</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-<tr>
-<td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
-<td>INCLUDE Global ID for the study</td>
-<td><a href="../Record/">Record</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td><a href="../family_member_id/">family_member_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyMembership/">FamilyMembership</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../Encounter/">Encounter</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-<tr>
-<td><a href="../Assay/">Assay</a></td>
-<td><a href="../subject_id/">subject_id</a></td>
-<td>range</td>
-<td><a href="./">Subject</a></td>
-</tr>
-</tbody>
-</table>
-<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
-<h3 id="schema-source">Schema Source</h3>
-<ul>
-<li>from schema: https://includedcc.org/common-access-model</li>
-</ul>
-<h2 id="mappings">Mappings</h2>
-<table>
-<thead>
-<tr>
-<th>Mapping Type</th>
-<th>Mapped Value</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>self</td>
-<td>cam:Subject</td>
-</tr>
-<tr>
-<td>native</td>
-<td>cam:Subject</td>
-</tr>
-</tbody>
-</table>
-<h2 id="linkml-source">LinkML Source</h2>
+
+
+
+
+
+
+## Inheritance
+* **Subject** [ [Record](Record.md)]
+
+
+## Slots
+
+| Name | Cardinality and Range | Description | Inheritance |
+| ---  | --- | --- | --- |
+| [subject_id](subject_id.md) | 1 <br/> [PtGlobalID](PtGlobalID.md) | INCLUDE Global ID for the Subject | direct |
+| [subject_type](subject_type.md) | 1 <br/> [Concept](Concept.md) or <br/>[EnumSubjectType](EnumSubjectType.md) or <br/>[EnumUnknownOther](EnumUnknownOther.md) | Type of entity this record represents | direct |
+| [organism_type](organism_type.md) | 0..1 <br/> [Uriorcurie](Uriorcurie.md) or <br/>[EnumOrganism](EnumOrganism.md) | Organism Type, typically from NCBITaxon | direct |
+| [external_id](external_id.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Other identifiers for this entity, eg, from the submitting study or in system... | [Record](Record.md) |
+| [access_policy_id](access_policy_id.md) | 0..1 <br/> [AccessPolicy](AccessPolicy.md) | Global identifier for the access policy that applies to this row of data | [Record](Record.md) |
+| [study_id](study_id.md) | 0..1 <br/> [Study](Study.md) | INCLUDE Global ID for the study | [Record](Record.md) |
+
+
+
+
+
+## Usages
+
+| used by | used in | type | used |
+| ---  | --- | --- | --- |
+| [Demographics](Demographics.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [FamilyRelationship](FamilyRelationship.md) | [family_member_id](family_member_id.md) | range | [Subject](Subject.md) |
+| [FamilyRelationship](FamilyRelationship.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [FamilyMembership](FamilyMembership.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [SubjectAssertion](SubjectAssertion.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [Encounter](Encounter.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [File](File.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+| [Assay](Assay.md) | [subject_id](subject_id.md) | range | [Subject](Subject.md) |
+
+
+
+
+
+
+
+
+
+
+
+
+## Identifier and Mapping Information
+
+
+
+
+
+### Schema Source
+
+
+* from schema: https://includedcc.org/common-access-model
+
+
+
+
+## Mappings
+
+| Mapping Type | Mapped Value |
+| ---  | ---  |
+| self | cam:Subject |
+| native | cam:Subject |
+
+
+
+
+
+
+## LinkML Source
+
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-<h3 id="direct">Direct</h3>
+
+### Direct
+
 <details>
 <pre><code class="language-yaml">name: Subject
 description: This entity is the subject about which data or references are recorded.
@@ -457,7 +330,9 @@ slot_usage:
 
 </code></pre>
 </details>
-<h3 id="induced">Induced</h3>
+
+### Induced
+
 <details>
 <pre><code class="language-yaml">name: Subject
 description: This entity is the subject about which data or references are recorded.
@@ -481,7 +356,6 @@ attributes:
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
     identifier: true
-    alias: subject_id
     owner: Subject
     domain_of:
     - Subject
@@ -501,7 +375,6 @@ attributes:
     title: Subject Type
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: subject_type
     owner: Subject
     domain_of:
     - Subject
@@ -516,7 +389,6 @@ attributes:
     title: Organism Type
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: organism_type
     owner: Subject
     domain_of:
     - Subject
@@ -531,7 +403,6 @@ attributes:
     title: External Identifiers
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: external_id
     owner: Subject
     domain_of:
     - Record
@@ -545,7 +416,6 @@ attributes:
     title: Access Policy ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: access_policy_id
     owner: Subject
     domain_of:
     - Record
@@ -557,7 +427,6 @@ attributes:
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
     rank: 1000
-    alias: study_id
     owner: Subject
     domain_of:
     - Record
@@ -566,7 +435,7 @@ attributes:
     multivalued: false
 
 </code></pre>
-</details>
+</details></div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
