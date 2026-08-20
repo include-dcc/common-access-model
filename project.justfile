@@ -12,12 +12,6 @@ _gen_ftddd:
 _gen_dbtmodel:
   uv run gen-dbtmodel
 
-[group('model development')]
-_gen_sqla:
-    mkdir -p {{dest}}/sqlalchemy && \
-    uv run gen-sqla {{source_schema_path}} --declarative > {{dest}}/sqlalchemy/{{schema_name}}.py
-
-
 # Support for various dbt related tasks
 [group('model development')]
 dbt: gen-sqla gen-ftddd gen-dbtmodel

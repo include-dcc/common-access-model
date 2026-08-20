@@ -78,9 +78,6 @@ clean: _clean_project
 [group('model development')]
 site: gen-project gen-doc dbt gen-monolith
 
-# SQL Alchemy model
-[group('model development')]
-gensqla: _gen_sqla
 
 # Deploy documentation site to Github Pages
 [group('deployment')]
