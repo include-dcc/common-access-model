@@ -55,6 +55,7 @@ exclude = [
   "scratch"
 ]
 include = [
+  "src/common_access_model/schema/",
   "project/sqlalchemy/",
   "scripts/",
 ]
