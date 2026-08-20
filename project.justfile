@@ -7,3 +7,27 @@
 _gen_sqla:
     mkdir -p {{dest}}/sqlalchemy && \
     uv run gen-sqla {{source_schema_path}} --declarative > {{dest}}/sqlalchemy/{{schema_name}}.py
+
+
+# Support for various dbt related tasks
+[group('model development')]
+dbt: gen-sqla gen-ftddd gen-dbtmodel
+
+# SQL Alchemy model
+[group('model development')]
+gen-sqla:
+    mkdir -p {{dest}}/sqlalchemy && \
+    uv run gen-sqla {{source_schema_path}} --declarative > {{dest}}/sqlalchemy/{{schema_name}}.py
+
+
+[group('model development')]
+gen-ftddd:
+  uv run linkml_extract_dd {{source_schema_path}}
+
+[group('model development')]
+gen-dbtmodel:
+  uv run gen-dbtmodel
+
+[group('model development')]
+gen-monolith:
+  uv run gen-monolith

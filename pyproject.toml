@@ -1,5 +1,7 @@
 [build-system]
-requires = ["hatchling", "uv-dynamic-versioning"]
+requires = ["hatchling",
+  "the-caddie",
+  "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
 
 [project]
@@ -11,7 +13,7 @@ authors = [
 license = "MIT"
 license-files = ["LICENSE"]
 readme = "README.md"
-requires-python = ">=3.9,<3.14"
+requires-python = ">=3.10,<3.14"
 dynamic = ["version"]
 
 dependencies = [
@@ -27,7 +29,8 @@ dev = [
     "jupyter>=1.0.0",
     "mknotebooks>= 0.8.0",
     "hatchling>=1.27.0",
-    "tomli>=2.0.0"
+    "tomli>=2.0.0",
+    "the-caddie",
 ]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection for how to
@@ -40,6 +43,7 @@ source = "uv-dynamic-versioning"
 [tool.uv-dynamic-versioning]
 vcs = "git"
 style = "pep440"
+pattern = "^v?(?P<base>\\d+\\.\\d+\\.\\d+)"
 fallback-version = "0.0.0"
 
 [tool.hatch.build.targets.sdist]
@@ -89,3 +93,7 @@ extend-exclude = [
   "src/common_access_model/datamodel/common_access_model_pydantic.py",
   "src/common_access_model/datamodel/common_access_model.py",
 ]
+
+
+[tool.uv.sources]
+the-caddie = { git = "https://github.com/carrollaboratory/the-caddie" }
