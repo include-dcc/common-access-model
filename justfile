@@ -184,11 +184,11 @@ _update-linkml:
 
 # Expand enum files
 expand:
-  weaver -s src/common_access_model/schema
+  uv run weaver -s src/common_access_model/schema
 
 # Deletes permissible_values block from enum file so it can be re-expanded
 clear file_path:
-  weaver --clear src/common_access_model/schema/enums/{{file_path}}.yaml
+  uv run weaver --clear src/common_access_model/schema/enums/{{file_path}}.yaml
 
 # Test schema generation
 _test-schema: expand

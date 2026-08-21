@@ -416,6 +416,7 @@ dev = [
     { name = "mkdocs-material" },
     { name = "mkdocs-mermaid2-plugin" },
     { name = "mknotebooks" },
+    { name = "term-weaver" },
     { name = "the-caddie" },
     { name = "tomli" },
 ]
@@ -425,7 +426,7 @@ requires-dist = [
     { name = "hatchling", specifier = ">=1.32.0" },
     { name = "linkml", specifier = ">=1.11.0" },
     { name = "linkml-runtime", specifier = ">=1.11.0" },
-    { name = "term-weaver", git = "https://github.com/include-dcc/term-weaver.git" },
+    { name = "term-weaver", git = "https://github.com/include-dcc/term-weaver" },
     { name = "the-caddie", git = "https://github.com/carrollaboratory/the-caddie" },
 ]
 
@@ -437,6 +438,7 @@ dev = [
     { name = "mkdocs-material", specifier = ">=8.2.8" },
     { name = "mkdocs-mermaid2-plugin", specifier = ">=1.1.1" },
     { name = "mknotebooks", specifier = ">=0.8.0" },
+    { name = "term-weaver", git = "https://github.com/include-dcc/term-weaver" },
     { name = "the-caddie", git = "https://github.com/carrollaboratory/the-caddie" },
     { name = "tomli", specifier = ">=2.0.0" },
 ]
@@ -2404,7 +2406,7 @@ wheels = [
 [[package]]
 name = "term-weaver"
 version = "1.0.1.dev8+g5e5fa27f1"
-source = { git = "https://github.com/include-dcc/term-weaver.git#5e5fa27f1e40c70281a768fb3235f00cda043a5b" }
+source = { git = "https://github.com/include-dcc/term-weaver#5e5fa27f1e40c70281a768fb3235f00cda043a5b" }
 dependencies = [
     { name = "car-utils" },
     { name = "jinja2" },
