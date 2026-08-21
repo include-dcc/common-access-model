@@ -76,11 +76,7 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc gensqla
-
-# SQL Alchemy model
-[group('model development')]
-gensqla: _gen_sqla
+site: gen-project gen-doc
 
 # Deploy documentation site to Github Pages
 [group('deployment')]

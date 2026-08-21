@@ -1,3 +1,4 @@
+---
 id: https://includedcc.org/common-access-model/EnumParticipantLifespanStage
 name: EnumParticipantLifespanStage
 enums:
@@ -13,4 +14,100 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
- 
+    permissible_values:
+      NCIT:C176390:
+        title: Peripubertal
+        description: The transitional period of life between immature and mature reproductive
+          states.
+        meaning: NCIT:C176390
+      NCIT:C199314:
+        title: Adulthood
+        description: A time period in the human lifespan when full physical and intellectual
+          maturity have been attained, which generally follows adolescence.
+        meaning: NCIT:C199314
+      NCIT:C39298:
+        title: Adolescence
+        description: A human life stage that begins at twelve years of age and continues
+          until twenty-one complete years of age, generally marked by the beginning
+          of puberty and lasting to the beginning of adulthood.
+        meaning: NCIT:C39298
+      NCIT:C89331:
+        title: Early Adolescence
+        description: A human life stage that begins at twelve years of age and continues
+          until eighteen complete years of age. This phase marks the start of physical,
+          physiological and psychological changes that characterize pubertal growth
+          and development.
+        meaning: NCIT:C89331
+      NCIT:C89344:
+        title: Late Adolescence
+        description: A human life stage that begins at nineteen years of age and continues
+          until twenty-one complete years of age. This phase includes the final stages
+          of pubertal growth and development as well as the attainment of significant
+          psycho-social milestones.
+        meaning: NCIT:C89344
+      NCIT:C89345:
+        title: Childhood
+        description: A time period that begins at the beginning of the human embryonic
+          stage and continues until the end of adolescence.
+        meaning: NCIT:C89345
+      NCIT:C89346:
+        title: Early Childhood
+        description: A human life stage that begins at two years of age and continues
+          until five complete years of age.
+        meaning: NCIT:C89346
+      NCIT:C89347:
+        title: Middle Childhood
+        description: A human life stage that begins at six years of age and continues
+          until eleven complete years of age.
+        meaning: NCIT:C89347
+      NCIT:C89885:
+        title: Fetal Stage
+        description: A human life stage, during prenatal development, that typically
+          begins at the beginning of nine weeks after fertilization (full formation
+          of the embryo) and continues until birth.
+        meaning: NCIT:C89885
+      NCIT:C89887:
+        title: Full Term Neonatal Stage
+        description: A human life stage that begins at full term birth and continues
+          until twenty-seven complete days of age.
+        meaning: NCIT:C89887
+      NCIT:C89888:
+        title: Preterm Neonatal Stage
+        description: A human life stage that begins at birth prior to thirty-seven
+          weeks of full gestation (full term) and continues until twenty-seven complete
+          days after birth.
+        meaning: NCIT:C89888
+      NCIT:C89889:
+        title: Infancy
+        description: A human life stage that begins at birth and continues until twelve
+          complete months of age.
+        meaning: NCIT:C89889
+      NCIT:C89890:
+        title: Toddler Stage
+        description: A human life stage that begins at thirteen months of age and
+          continues until twenty-four complete months of age.
+        meaning: NCIT:C89890
+      NCIT:C90337:
+        title: Maternal Life Stage
+        description: The period of time during a female's reproductive years that
+          she functions as a mother.
+        meaning: NCIT:C90337
+      NCIT:C90338:
+        title: Maternal Postnatal Stage
+        description: The stage in the life of a mother after she has given birth.
+        meaning: NCIT:C90338
+      NCIT:C90339:
+        title: Maternal Prenatal Stage
+        description: The stage in the life of a mother during which she is pregnant.
+        meaning: NCIT:C90339
+      NCIT:C90340:
+        title: Maternal Preconception Stage
+        description: The stage in the life of a female during which she is attempting
+          to get pregnant.
+        meaning: NCIT:C90340
+      NCIT:C99135:
+        title: Embryonic Stage
+        description: A human life stage, during prenatal development, that begins
+          at fertilization and typically continues until the end of eight weeks after
+          fertilization, with full formation of the embryo.
+        meaning: NCIT:C99135
