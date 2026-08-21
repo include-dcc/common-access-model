@@ -34,6 +34,7 @@ dev = [
     "hatchling>=1.27.0",
     "tomli>=2.0.0",
     "the-caddie",
+    "term-weaver"
 ]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection for how to
@@ -100,5 +101,5 @@ extend-exclude = [
 
 [tool.uv.sources]
 ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
-term-weaver = { git = "https://github.com/include-dcc/term-weaver.git" }
+term-weaver = { git = "https://github.com/include-dcc/term-weaver" }
 the-caddie = { git = "https://github.com/carrollaboratory/the-caddie" }
