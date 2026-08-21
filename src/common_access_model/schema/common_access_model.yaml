@@ -774,8 +774,9 @@ slots:
     title: Data Category
     description: General category of data in this Record (e.g. Clinical,
       Genomics, etc)
-    range: uriorcurie
+    range: Concept
     any_of:
+      - range: Concept
       - range: EnumDataCategory
   clinical_data_source_type:
     title: Clinical Data Source Type
@@ -922,9 +923,9 @@ slots:
     range: FamilyMembership
   family_role:
     description: The "role" of this individual in this family. Could include terms like "proband", "mother", etc.
-    range: uriorcurie
+    range: Concept
     any_of:
-      - range: uriorcurie
+      - range: Concept
       - range: EnumFamilyRole
   asserter_type:
     title: Asserter Type
@@ -1068,7 +1069,7 @@ slots:
     range: Concept
     any_of:
       - range: Concept
-      - range: EnumSampleCollectionMethod
+      - range: EnumSite
   spatial_qualifier:
     title: Spatial Qualifier
     description: Qualifier that further refine the specific location of
@@ -1076,12 +1077,15 @@ slots:
     range: Concept
     any_of:
       - range: Concept
-      - range: EnumSite
+      - range: EnumSpatialQualifiers
   laterality:
     title: Location Laterality
     description: Laterality that further refine the specific location of
       biospecimen collection
-    range: EnumLaterality
+    range: Concept
+    any_of:
+      - range: Concept
+      - range: EnumLaterality
   encounter_id:
     title: Encounter ID
     description: Unique identifier for this Encounter.

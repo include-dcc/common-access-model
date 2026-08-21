@@ -66,6 +66,13 @@ jobs:
       - name: Zip full project artifacts
         run: zip -r project-artifacts.zip project/
 
+      - name: Extract clean version number
+        run: |
+          # Takes 'v0.0.2' from github.ref_name and strips the leading 'v'
+          CLEAN_VERSION="${{ github.ref_name }}"
+          CLEAN_VERSION="${CLEAN_VERSION#v}"
+          echo "VERSION=${CLEAN_VERSION}" >> $GITHUB_ENV
+
       - name: Create GitHub Release
         uses: softprops/action-gh-release@v3
         with:
@@ -77,4 +84,5 @@ jobs:
             dist/*.whl
             dist/*.tar.gz
             project-artifacts.zip
+            project/monolith/common_access_model-${{ env.VERSION }}.yaml
           fail_on_unmatched_files: true
