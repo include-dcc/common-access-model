@@ -341,7 +341,7 @@ dev = [
 requires-dist = [
     { name = "linkml", specifier = ">=1.9.6" },
     { name = "linkml-runtime", specifier = ">=1.9.4" },
-    { name = "term-weaver", editable = "../../term-weaver/term-weaver" },
+    { name = "term-weaver", git = "https://github.com/include-dcc/term-weaver.git" },
 ]
 
 [package.metadata.requires-dev]
@@ -2337,7 +2337,8 @@ wheels = [
 
 [[package]]
 name = "term-weaver"
-source = { editable = "../../term-weaver/term-weaver" }
+version = "1.0.1.dev8+g5e5fa27f1"
+source = { git = "https://github.com/include-dcc/term-weaver.git#5e5fa27f1e40c70281a768fb3235f00cda043a5b" }
 dependencies = [
     { name = "car-utils" },
     { name = "jinja2" },
@@ -2346,20 +2347,6 @@ dependencies = [
     { name = "requests" },
     { name = "search-dragon" },
 ]
-
-[package.metadata]
-requires-dist = [
-    { name = "car-utils", git = "https://github.com/carrollaboratory/car-utils.git" },
-    { name = "jinja2" },
-    { name = "linkml" },
-    { name = "pytest", marker = "extra == 'dev'" },
-    { name = "pyyaml" },
-    { name = "requests" },
-    { name = "rich", marker = "extra == 'dev'" },
-    { name = "rich-argparse", marker = "extra == 'dev'" },
-    { name = "search-dragon", git = "https://github.com/NIH-NCPI/search-dragon.git" },
-]
-provides-extras = ["dev"]
 
 [[package]]
 name = "terminado"
