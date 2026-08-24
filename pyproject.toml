@@ -100,6 +100,6 @@ extend-exclude = [
 
 
 [tool.uv.sources]
-ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
+#ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
 term-weaver = { git = "https://github.com/include-dcc/term-weaver" }
 the-caddie = { git = "https://github.com/carrollaboratory/the-caddie" }
