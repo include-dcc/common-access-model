@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://include-dcc.github.io/common-access-model/elements/AccessPolicy/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
 <title>Class: Access Policy (AccessPolicy) - common-access-model</title>
-<link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
@@ -123,7 +123,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../">
 <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
 </a>
@@ -131,7 +135,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../erdiagram/">
 <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
 </a>
@@ -139,7 +147,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../dbt_artifacts/">
 <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
 </a>
@@ -147,7 +159,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
 </a>
@@ -161,6 +177,92 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+<span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+<span class="md-ellipsis">
+      
+        Usages
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+<span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+</a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+<span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+<span class="md-ellipsis">
+      
+        Mappings
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+<span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+</a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+<span class="md-ellipsis">
+      
+        Direct
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+<span class="md-ellipsis">
+      
+        Induced
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -169,18 +271,9 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-access-policy-accesspolicy">Class: Access Policy (AccessPolicy)</h1>
 <p><em>The access policy that describes the controls around use of data</em></p>
-<div data-search-exclude="" markdown="1">
-
-
-
-URI: [cam:AccessPolicy](https://includedcc.org/common-access-model/AccessPolicy)
-
-
-
-
-
-
-<div class="mermaid"> classDiagram
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/AccessPolicy">cam:AccessPolicy</a></p>
+<pre class="mermaid"><code> classDiagram
     class AccessPolicy
     click AccessPolicy href "../AccessPolicy/"
       AccessPolicy : access_description
@@ -215,214 +308,345 @@ URI: [cam:AccessPolicy](https://includedcc.org/common-access-model/AccessPolicy)
 
       AccessPolicy : website
 
-
-</div>
+</code></pre>
 <!-- no inheritance hierarchy -->
-
-## Slots
-
-| Name | Cardinality and Range | Description | Inheritance |
-| ---  | --- | --- | --- |
-| [access_policy_id](access_policy_id.md) | 1 <br/> [CoGlobalID](CoGlobalID.md) | Global identifier for the access policy that applies to this row of data | direct |
-| [data_use_accession](data_use_accession.md) | 0..1 <br/> [Uriorcurie](Uriorcurie.md) | Accession used to provision access to the record, eg, a dbGaP phsID | direct |
-| [data_use_permission](data_use_permission.md) | 1 <br/> [EnumDataUsePermission](EnumDataUsePermission.md) | Broad category of restrictions on data use | direct |
-| [data_use_modifier](data_use_modifier.md) | 0..1 <br/> [EnumDataUseModifier](EnumDataUseModifier.md) | Additional modifiers that limit data use | direct |
-| [disease_limitation](disease_limitation.md) | 0..1 <br/> [String](String.md) | If the access is limited to a specific disease purpose, it is specified here | direct |
-| [access_description](access_description.md) | 0..1 <br/> [String](String.md) | Any additional information to support access requests | direct |
-| [website](website.md) | 0..1 <br/> [Uri](Uri.md) | Website with more information about this entity | direct |
-
-
-
-
-
-## Usages
-
-| used by | used in | type | used |
-| ---  | --- | --- | --- |
-| [Record](Record.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Study](Study.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [StudyMetadata](StudyMetadata.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [VirtualBiorepository](VirtualBiorepository.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [DOI](DOI.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Investigator](Investigator.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Publication](Publication.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Subject](Subject.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Demographics](Demographics.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Family](Family.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [FamilyRelationship](FamilyRelationship.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [FamilyMembership](FamilyMembership.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [SubjectAssertion](SubjectAssertion.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Sample](Sample.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [BiospecimenCollection](BiospecimenCollection.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Aliquot](Aliquot.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Encounter](Encounter.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [EncounterDefinition](EncounterDefinition.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [ActivityDefinition](ActivityDefinition.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [File](File.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-| [Assay](Assay.md) | [access_policy_id](access_policy_id.md) | range | [AccessPolicy](AccessPolicy.md) |
-
-
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-## Mappings
-
-| Mapping Type | Mapped Value |
-| ---  | ---  |
-| self | cam:AccessPolicy |
-| native | cam:AccessPolicy |
-
-
-
-
-
-
-## LinkML Source
-
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>1 <br/> <a href="../CoGlobalID/">CoGlobalID</a></td>
+<td>Global identifier for the access policy that applies to this row of data</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../data_use_accession/">data_use_accession</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>Accession used to provision access to the record, eg, a dbGaP phsID</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../data_use_permission/">data_use_permission</a></td>
+<td>1 <br/> <a href="../EnumDataUsePermission/">EnumDataUsePermission</a></td>
+<td>Broad category of restrictions on data use</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../data_use_modifier/">data_use_modifier</a></td>
+<td>0..1 <br/> <a href="../EnumDataUseModifier/">EnumDataUseModifier</a></td>
+<td>Additional modifiers that limit data use</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../disease_limitation/">disease_limitation</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>If the access is limited to a specific disease purpose, it is specified here</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../access_description/">access_description</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>Any additional information to support access requests</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../website/">website</a></td>
+<td>0..1 <br/> <a href="../Uri/">Uri</a></td>
+<td>Website with more information about this entity</td>
+<td>direct</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Record/">Record</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Study/">Study</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../StudyMetadata/">StudyMetadata</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../VirtualBiorepository/">VirtualBiorepository</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../DOI/">DOI</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Investigator/">Investigator</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Publication/">Publication</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Subject/">Subject</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Demographics/">Demographics</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Family/">Family</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../FamilyMembership/">FamilyMembership</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Sample/">Sample</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Aliquot/">Aliquot</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Encounter/">Encounter</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../EncounterDefinition/">EncounterDefinition</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../ActivityDefinition/">ActivityDefinition</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../File/">File</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+<tr>
+<td><a href="../Assay/">Assay</a></td>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>range</td>
+<td><a href="./">AccessPolicy</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>cam:AccessPolicy</td>
+</tr>
+<tr>
+<td>native</td>
+<td>cam:AccessPolicy</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-
-### Direct
-
+<h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: AccessPolicy
-description: The access policy that describes the controls around use of data
-title: Access Policy
-from_schema: https://includedcc.org/common-access-model
-slots:
-- access_policy_id
-- data_use_accession
-- data_use_permission
-- data_use_modifier
-- disease_limitation
-- access_description
-- website
-slot_usage:
-  access_policy_id:
-    name: access_policy_id
-    identifier: true
-    range: coGlobalID
-    required: true
-
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The access policy that describes the controls around use of data</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Access Policy</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">slots</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_policy_id</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_accession</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_permission</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_modifier</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_description</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
+<span class="nt">slot_usage</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">access_policy_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_policy_id</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coGlobalID</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
 </details>
-
-### Induced
-
+<h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: AccessPolicy
-description: The access policy that describes the controls around use of data
-title: Access Policy
-from_schema: https://includedcc.org/common-access-model
-slot_usage:
-  access_policy_id:
-    name: access_policy_id
-    identifier: true
-    range: coGlobalID
-    required: true
-attributes:
-  access_policy_id:
-    name: access_policy_id
-    description: Global identifier for the access policy that applies to this row
-      of data.
-    title: Access Policy ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    identifier: true
-    owner: AccessPolicy
-    domain_of:
-    - Record
-    - AccessPolicy
-    range: coGlobalID
-    required: true
-  data_use_accession:
-    name: data_use_accession
-    description: Accession used to provision access to the record, eg, a dbGaP phsID.
-    title: Data Use Accession
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    range: uriorcurie
-  data_use_permission:
-    name: data_use_permission
-    description: Broad category of restrictions on data use.
-    title: Data Use Permission
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    range: EnumDataUsePermission
-    required: true
-  data_use_modifier:
-    name: data_use_modifier
-    description: Additional modifiers that limit data use.
-    title: Data Use Modifier
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    range: EnumDataUseModifier
-  disease_limitation:
-    name: disease_limitation
-    description: If the access is limited to a specific disease purpose, it is specified
-      here.
-    title: Data Use Disease Limitation
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    range: string
-  access_description:
-    name: access_description
-    description: Any additional information to support access requests.
-    title: Access Description
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    range: string
-  website:
-    name: website
-    description: Website with more information about this entity.
-    title: Website
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: AccessPolicy
-    domain_of:
-    - AccessPolicy
-    - Study
-    - VirtualBiorepository
-    - Publication
-    range: uri
-
-</code></pre>
-</details></div>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The access policy that describes the controls around use of data</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Access Policy</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">slot_usage</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">access_policy_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_policy_id</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coGlobalID</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">attributes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">access_policy_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_policy_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Global identifier for the access policy that applies to this row</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">of data.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Access Policy ID</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">coGlobalID</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">data_use_accession</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_accession</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Accession used to provision access to the record, eg, a dbGaP phsID.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Accession</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
+<span class="w">  </span><span class="nt">data_use_permission</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_permission</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Broad category of restrictions on data use.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Permission</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumDataUsePermission</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">data_use_modifier</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_modifier</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Additional modifiers that limit data use.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Modifier</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumDataUseModifier</span>
+<span class="w">  </span><span class="nt">disease_limitation</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">If the access is limited to a specific disease purpose, it is specified</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">here.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Disease Limitation</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">access_description</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_description</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Any additional information to support access requests.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Access Description</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">website</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Website with more information about this entity.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Website</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Study</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">VirtualBiorepository</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Publication</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uri</span>
+</code></pre></div>
+</details>
+</div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -447,8 +671,7 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
-<script type="module">import mermaid from "https://unpkg.com/mermaid@11.4.1/dist/mermaid.esm.min.mjs";
-mermaid.initialize({});</script></body>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+</body>
 </html>

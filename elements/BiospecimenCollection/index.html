@@ -7,9 +7,9 @@
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
 <link href="https://include-dcc.github.io/common-access-model/elements/BiospecimenCollection/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
-<meta content="mkdocs-1.6.1, mkdocs-material-9.6.23" name="generator"/>
+<meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
 <title>Class: BiospecimenCollection (BiospecimenCollection) - common-access-model</title>
-<link href="../../assets/stylesheets/main.84d31ad4.min.css" rel="stylesheet"/>
+<link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&amp;display=fallback" rel="stylesheet"/>
 <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
@@ -123,7 +123,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../">
 <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
 </a>
@@ -131,7 +135,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../erdiagram/">
 <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
 </a>
@@ -139,7 +147,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../dbt_artifacts/">
 <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
 </a>
@@ -147,7 +159,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="../../about/">
 <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
 </a>
@@ -161,6 +177,101 @@
 <div class="md-sidebar__scrollwrap">
 <div class="md-sidebar__inner">
 <nav aria-label="Table of contents" class="md-nav md-nav--secondary">
+<label class="md-nav__title" for="__toc">
+<span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+<ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#inheritance">
+<span class="md-ellipsis">
+      
+        Inheritance
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#slots">
+<span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#usages">
+<span class="md-ellipsis">
+      
+        Usages
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#identifier-and-mapping-information">
+<span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+</a>
+<nav aria-label="Identifier and Mapping Information" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#schema-source">
+<span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#mappings">
+<span class="md-ellipsis">
+      
+        Mappings
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#linkml-source">
+<span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+</a>
+<nav aria-label="LinkML Source" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#direct">
+<span class="md-ellipsis">
+      
+        Direct
+      
+    </span>
+</a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#induced">
+<span class="md-ellipsis">
+      
+        Induced
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+</ul>
 </nav>
 </div>
 </div>
@@ -169,18 +280,9 @@
 <article class="md-content__inner md-typeset">
 <h1 id="class-biospecimencollection-biospecimencollection">Class: BiospecimenCollection (BiospecimenCollection)</h1>
 <p><em>A biospecimen collection event which yields one or more Samples.</em></p>
-<div data-search-exclude="" markdown="1">
-
-
-
-URI: [cam:BiospecimenCollection](https://includedcc.org/common-access-model/BiospecimenCollection)
-
-
-
-
-
-
-<div class="mermaid"> classDiagram
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/BiospecimenCollection">cam:BiospecimenCollection</a></p>
+<pre class="mermaid"><code> classDiagram
     class BiospecimenCollection
     click BiospecimenCollection href "../BiospecimenCollection/"
       Record &lt;|-- BiospecimenCollection
@@ -269,255 +371,296 @@ URI: [cam:BiospecimenCollection](https://includedcc.org/common-access-model/Bios
 
 
 
-
-</div>
-
-
-
-
-
-
-## Inheritance
-* **BiospecimenCollection** [ [Record](Record.md)]
-
-
-## Slots
-
-| Name | Cardinality and Range | Description | Inheritance |
-| ---  | --- | --- | --- |
-| [biospecimen_collection_id](biospecimen_collection_id.md) | 1 <br/> [String](String.md) | Unique identifier for this Biospecimen Collection | direct |
-| [age_at_collection](age_at_collection.md) | 0..1 <br/> [Float](Float.md) | The age at which this biospecimen was collected in decimal years | direct |
-| [method](method.md) | 0..1 <br/> [EnumSampleCollectionMethod](EnumSampleCollectionMethod.md) | The approach used to collect the biospecimen | direct |
-| [site](site.md) | 0..1 <br/> [Concept](Concept.md) or <br/>[EnumSite](EnumSite.md) | The location of the specimen collection | direct |
-| [spatial_qualifier](spatial_qualifier.md) | 0..1 <br/> [Concept](Concept.md) or <br/>[EnumSpatialQualifiers](EnumSpatialQualifiers.md) | Qualifier that further refine the specific location of biospecimen collection | direct |
-| [laterality](laterality.md) | 0..1 <br/> [Concept](Concept.md) or <br/>[EnumLaterality](EnumLaterality.md) | Laterality that further refine the specific location of biospecimen collectio... | direct |
-| [encounter_id](encounter_id.md) | 0..1 <br/> [Encounter](Encounter.md) | Unique identifier for this Encounter | direct |
-| [external_id](external_id.md) | * <br/> [Uriorcurie](Uriorcurie.md) | Other identifiers for this entity, eg, from the submitting study or in system... | [Record](Record.md) |
-| [access_policy_id](access_policy_id.md) | 0..1 <br/> [AccessPolicy](AccessPolicy.md) | Global identifier for the access policy that applies to this row of data | [Record](Record.md) |
-| [study_id](study_id.md) | 0..1 <br/> [Study](Study.md) | INCLUDE Global ID for the study | [Record](Record.md) |
-
-
-
-
-
-## Usages
-
-| used by | used in | type | used |
-| ---  | --- | --- | --- |
-| [Sample](Sample.md) | [biospecimen_collection_id](biospecimen_collection_id.md) | range | [BiospecimenCollection](BiospecimenCollection.md) |
-
-
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-## Mappings
-
-| Mapping Type | Mapped Value |
-| ---  | ---  |
-| self | cam:BiospecimenCollection |
-| native | cam:BiospecimenCollection |
-
-
-
-
-
-
-## LinkML Source
-
+</code></pre>
+<h2 id="inheritance">Inheritance</h2>
+<ul>
+<li><strong>BiospecimenCollection</strong> [ <a href="../Record/">Record</a>]</li>
+</ul>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Cardinality and Range</th>
+<th>Description</th>
+<th>Inheritance</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../biospecimen_collection_id/">biospecimen_collection_id</a></td>
+<td>1 <br/> <a href="../String/">String</a></td>
+<td>Unique identifier for this Biospecimen Collection</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../age_at_collection/">age_at_collection</a></td>
+<td>0..1 <br/> <a href="../Float/">Float</a></td>
+<td>The age at which this biospecimen was collected in decimal years</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../method/">method</a></td>
+<td>0..1 <br/> <a href="../EnumSampleCollectionMethod/">EnumSampleCollectionMethod</a></td>
+<td>The approach used to collect the biospecimen</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../site/">site</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumSite/">EnumSite</a></td>
+<td>The location of the specimen collection</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../spatial_qualifier/">spatial_qualifier</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumSpatialQualifiers/">EnumSpatialQualifiers</a></td>
+<td>Qualifier that further refine the specific location of biospecimen collection</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../laterality/">laterality</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a> or <br/><a href="../EnumLaterality/">EnumLaterality</a></td>
+<td>Laterality that further refine the specific location of biospecimen collectio...</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../encounter_id/">encounter_id</a></td>
+<td>0..1 <br/> <a href="../Encounter/">Encounter</a></td>
+<td>Unique identifier for this Encounter</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../external_id/">external_id</a></td>
+<td>* <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>Other identifiers for this entity, eg, from the submitting study or in system...</td>
+<td><a href="../Record/">Record</a></td>
+</tr>
+<tr>
+<td><a href="../access_policy_id/">access_policy_id</a></td>
+<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
+<td>Global identifier for the access policy that applies to this row of data</td>
+<td><a href="../Record/">Record</a></td>
+</tr>
+<tr>
+<td><a href="../study_id/">study_id</a></td>
+<td>0..1 <br/> <a href="../Study/">Study</a></td>
+<td>INCLUDE Global ID for the study</td>
+<td><a href="../Record/">Record</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="usages">Usages</h2>
+<table>
+<thead>
+<tr>
+<th>used by</th>
+<th>used in</th>
+<th>type</th>
+<th>used</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../Sample/">Sample</a></td>
+<td><a href="../biospecimen_collection_id/">biospecimen_collection_id</a></td>
+<td>range</td>
+<td><a href="./">BiospecimenCollection</a></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="mappings">Mappings</h2>
+<table>
+<thead>
+<tr>
+<th>Mapping Type</th>
+<th>Mapped Value</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>self</td>
+<td>cam:BiospecimenCollection</td>
+</tr>
+<tr>
+<td>native</td>
+<td>cam:BiospecimenCollection</td>
+</tr>
+</tbody>
+</table>
+<h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
-
-### Direct
-
+<h3 id="direct">Direct</h3>
 <details>
-<pre><code class="language-yaml">name: BiospecimenCollection
-description: A biospecimen collection event which yields one or more Samples.
-title: BiospecimenCollection
-from_schema: https://includedcc.org/common-access-model
-mixins:
-- Record
-slots:
-- biospecimen_collection_id
-- age_at_collection
-- method
-- site
-- spatial_qualifier
-- laterality
-- encounter_id
-slot_usage:
-  biospecimen_collection_id:
-    name: biospecimen_collection_id
-    identifier: true
-    range: string
-    required: true
-
-</code></pre>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A biospecimen collection event which yields one or more Samples.</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">mixins</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="nt">slots</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">biospecimen_collection_id</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">age_at_collection</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">method</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">site</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spatial_qualifier</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">laterality</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">encounter_id</span>
+<span class="nt">slot_usage</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">biospecimen_collection_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">biospecimen_collection_id</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
 </details>
-
-### Induced
-
+<h3 id="induced">Induced</h3>
 <details>
-<pre><code class="language-yaml">name: BiospecimenCollection
-description: A biospecimen collection event which yields one or more Samples.
-title: BiospecimenCollection
-from_schema: https://includedcc.org/common-access-model
-mixins:
-- Record
-slot_usage:
-  biospecimen_collection_id:
-    name: biospecimen_collection_id
-    identifier: true
-    range: string
-    required: true
-attributes:
-  biospecimen_collection_id:
-    name: biospecimen_collection_id
-    description: Unique identifier for this Biospecimen Collection.
-    title: Biospecimen Collection ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    identifier: true
-    owner: BiospecimenCollection
-    domain_of:
-    - Sample
-    - BiospecimenCollection
-    range: string
-    required: true
-  age_at_collection:
-    name: age_at_collection
-    description: The age at which this biospecimen was collected in decimal years.
-    title: Age at Biospecimen Collection
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - BiospecimenCollection
-    range: float
-    unit:
-      ucum_code: a
-  method:
-    name: method
-    description: The approach used to collect the biospecimen.
-    title: Biospecimen Collection Method
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - BiospecimenCollection
-    range: EnumSampleCollectionMethod
-  site:
-    name: site
-    description: The location of the specimen collection.
-    title: Biospecimen Collection Site
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - BiospecimenCollection
-    range: Concept
-    any_of:
-    - range: Concept
-    - range: EnumSite
-  spatial_qualifier:
-    name: spatial_qualifier
-    description: Qualifier that further refine the specific location of biospecimen
-      collection
-    title: Spatial Qualifier
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - BiospecimenCollection
-    range: Concept
-    any_of:
-    - range: Concept
-    - range: EnumSpatialQualifiers
-  laterality:
-    name: laterality
-    description: Laterality that further refine the specific location of biospecimen
-      collection
-    title: Location Laterality
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - BiospecimenCollection
-    range: Concept
-    any_of:
-    - range: Concept
-    - range: EnumLaterality
-  encounter_id:
-    name: encounter_id
-    description: Unique identifier for this Encounter.
-    title: Encounter ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - SubjectAssertion
-    - BiospecimenCollection
-    - Encounter
-    range: Encounter
-  external_id:
-    name: external_id
-    description: Other identifiers for this entity, eg, from the submitting study
-      or in systems like dbGaP
-    title: External Identifiers
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - Record
-    range: uriorcurie
-    required: false
-    multivalued: true
-  access_policy_id:
-    name: access_policy_id
-    description: Global identifier for the access policy that applies to this row
-      of data.
-    title: Access Policy ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - Record
-    - AccessPolicy
-    range: AccessPolicy
-  study_id:
-    name: study_id
-    description: INCLUDE Global ID for the study
-    title: Study ID
-    from_schema: https://includedcc.org/common-access-model
-    rank: 1000
-    owner: BiospecimenCollection
-    domain_of:
-    - Record
-    - StudyMetadata
-    range: Study
-    multivalued: false
-
-</code></pre>
-</details></div>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A biospecimen collection event which yields one or more Samples.</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">mixins</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="nt">slot_usage</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">biospecimen_collection_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">biospecimen_collection_id</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="nt">attributes</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">biospecimen_collection_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">biospecimen_collection_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Unique identifier for this Biospecimen Collection.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Biospecimen Collection ID</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Sample</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">age_at_collection</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">age_at_collection</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The age at which this biospecimen was collected in decimal years.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Age at Biospecimen Collection</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">float</span>
+<span class="w">    </span><span class="nt">unit</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">ucum_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">a</span>
+<span class="w">  </span><span class="nt">method</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">method</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The approach used to collect the biospecimen.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Biospecimen Collection Method</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumSampleCollectionMethod</span>
+<span class="w">  </span><span class="nt">site</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">site</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The location of the specimen collection.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Biospecimen Collection Site</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">any_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumSite</span>
+<span class="w">  </span><span class="nt">spatial_qualifier</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">spatial_qualifier</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Qualifier that further refine the specific location of biospecimen</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">collection</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Spatial Qualifier</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">any_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumSpatialQualifiers</span>
+<span class="w">  </span><span class="nt">laterality</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">laterality</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Laterality that further refine the specific location of biospecimen</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">collection</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Location Laterality</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">any_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumLaterality</span>
+<span class="w">  </span><span class="nt">encounter_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">encounter_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Unique identifier for this Encounter.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Encounter ID</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SubjectAssertion</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Encounter</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Encounter</span>
+<span class="w">  </span><span class="nt">external_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Other identifiers for this entity, eg, from the submitting study</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">or in systems like dbGaP</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">External Identifiers</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">access_policy_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_policy_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Global identifier for the access policy that applies to this row</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">of data.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Access Policy ID</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">  </span><span class="nt">study_id</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">study_id</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INCLUDE Global ID for the study</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Study ID</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BiospecimenCollection</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">StudyMetadata</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Study</span>
+<span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
+</details>
+</div>
 </article>
 </div>
 <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var labels=set.querySelector(".tabbed-labels");for(var tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
@@ -542,8 +685,7 @@ attributes:
 <div class="md-dialog" data-md-component="dialog">
 <div class="md-dialog__inner md-typeset"></div>
 </div>
-<script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
-<script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
-<script type="module">import mermaid from "https://unpkg.com/mermaid@11.4.1/dist/mermaid.esm.min.mjs";
-mermaid.initialize({});</script></body>
+<script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+<script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+</body>
 </html>

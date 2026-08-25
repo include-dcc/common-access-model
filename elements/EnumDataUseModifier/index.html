@@ -13,8 +13,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -22,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   </head>
@@ -227,9 +229,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -249,9 +256,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -271,9 +283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,9 +310,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,6 +345,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeration Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -331,6 +433,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -342,220 +445,296 @@
 
 <h1 id="enum-data-use-modifier-enumdatausemodifier">Enum: Data Use Modifier (EnumDataUseModifier)</h1>
 <p><em>Data Use Ontology (DUO) terms for data use modifiers.</em></p>
-<div data-search-exclude markdown="1">
-
-URI: [cam:EnumDataUseModifier](https://includedcc.org/common-access-model/EnumDataUseModifier)
-## Enumeration Source
-**Reachable From:**
-- **Source:** NONE
-- **Nodes:** DUO:0000017
-- **Via:** rdfs:subClassOf
-
-
-
-## Permissible Values
-| Value | Meaning | Description | Additional Info |
-| --- | --- | --- | --- |
-| DUO:00000044 | DUO:00000044 | This data use modifier indicates use for purposes of population, origin, or a... | Title: population origins or ancestry research prohibited<br>|
-| DUO:0000012 | DUO:0000012 | This data use modifier indicates that use is limited to studies of a certain ... | Title: research specific restrictions<br>|
-| DUO:0000015 | DUO:0000015 | This data use modifier indicates that use does not allow methods development ... | Title: no general methods research<br>|
-| DUO:0000016 | DUO:0000016 | This data use modifier indicates that use is limited to genetic studies only ... | Title: genetic studies only<br>|
-| DUO:0000018 | DUO:0000018 | This data use modifier indicates that use of the data is limited to not-for-p... | Title: not for profit, non commercial use only<br>|
-| DUO:0000019 | DUO:0000019 | This data use modifier indicates that requestor agrees to make results of stu... | Title: publication required<br>|
-| DUO:0000020 | DUO:0000020 | This could be coupled with a string describing the primary study investigator... | Title: collaboration required<br>|
-| DUO:0000021 | DUO:0000021 | This data use modifier indicates that the requestor must provide documentatio... | Title: ethics approval required<br>|
-| DUO:0000022 | DUO:0000022 | This data use modifier indicates that use is limited to within a specific geo... | Title: geographical restriction<br>|
-| DUO:0000024 | DUO:0000024 | This data use modifier indicates that requestor agrees not to publish results... | Title: publication moratorium<br>|
-| DUO:0000025 | DUO:0000025 | This data use modifier indicates that use is approved for a specific number o... | Title: time limit on use<br>|
-| DUO:0000026 | DUO:0000026 | This data use modifier indicates that use is limited to use by approved users | Title: user specific restriction<br>|
-| DUO:0000027 | DUO:0000027 | This data use modifier indicates that use is limited to use within an approve... | Title: project specific restriction<br>|
-| DUO:0000028 | DUO:0000028 | This data use modifier indicates that use is limited to use within an approve... | Title: institution specific restriction<br>|
-| DUO:0000029 | DUO:0000029 | This data use modifier indicates that the requestor must return derived/enric... | Title: return to database or resource<br>|
-| DUO:0000043 | DUO:0000043 | Clinical Care is defined as Health care or services provided at home, in a he... | Title: clinical care use<br>|
-| DUO:0000045 | DUO:0000045 | This data use modifier indicates that use of the data is limited to not-for-p... | Title: not for profit organisation use only<br>|
-| DUO:0000046 | DUO:0000046 | This data use modifier indicates that use of the data is limited to not-for-p... | Title: non-commercial use only<br>|
-
-
-
-
-## Slots
-
-| Name | Description |
-| ---  | --- |
-| [data_use_modifier](data_use_modifier.md) | Additional modifiers that limit data use |
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-
-
-## LinkML Source
-
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumDataUseModifier">cam:EnumDataUseModifier</a></p>
+<h2 id="enumeration-source">Enumeration Source</h2>
+<p><strong>Reachable From:</strong>
+- <strong>Source:</strong> NONE
+- <strong>Nodes:</strong> DUO:0000017
+- <strong>Via:</strong> rdfs:subClassOf</p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Additional Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DUO:00000044</td>
+<td>DUO:00000044</td>
+<td>This data use modifier indicates use for purposes of population, origin, or a...</td>
+<td>Title: population origins or ancestry research prohibited<br></td>
+</tr>
+<tr>
+<td>DUO:0000012</td>
+<td>DUO:0000012</td>
+<td>This data use modifier indicates that use is limited to studies of a certain ...</td>
+<td>Title: research specific restrictions<br></td>
+</tr>
+<tr>
+<td>DUO:0000015</td>
+<td>DUO:0000015</td>
+<td>This data use modifier indicates that use does not allow methods development ...</td>
+<td>Title: no general methods research<br></td>
+</tr>
+<tr>
+<td>DUO:0000016</td>
+<td>DUO:0000016</td>
+<td>This data use modifier indicates that use is limited to genetic studies only ...</td>
+<td>Title: genetic studies only<br></td>
+</tr>
+<tr>
+<td>DUO:0000018</td>
+<td>DUO:0000018</td>
+<td>This data use modifier indicates that use of the data is limited to not-for-p...</td>
+<td>Title: not for profit, non commercial use only<br></td>
+</tr>
+<tr>
+<td>DUO:0000019</td>
+<td>DUO:0000019</td>
+<td>This data use modifier indicates that requestor agrees to make results of stu...</td>
+<td>Title: publication required<br></td>
+</tr>
+<tr>
+<td>DUO:0000020</td>
+<td>DUO:0000020</td>
+<td>This could be coupled with a string describing the primary study investigator...</td>
+<td>Title: collaboration required<br></td>
+</tr>
+<tr>
+<td>DUO:0000021</td>
+<td>DUO:0000021</td>
+<td>This data use modifier indicates that the requestor must provide documentatio...</td>
+<td>Title: ethics approval required<br></td>
+</tr>
+<tr>
+<td>DUO:0000022</td>
+<td>DUO:0000022</td>
+<td>This data use modifier indicates that use is limited to within a specific geo...</td>
+<td>Title: geographical restriction<br></td>
+</tr>
+<tr>
+<td>DUO:0000024</td>
+<td>DUO:0000024</td>
+<td>This data use modifier indicates that requestor agrees not to publish results...</td>
+<td>Title: publication moratorium<br></td>
+</tr>
+<tr>
+<td>DUO:0000025</td>
+<td>DUO:0000025</td>
+<td>This data use modifier indicates that use is approved for a specific number o...</td>
+<td>Title: time limit on use<br></td>
+</tr>
+<tr>
+<td>DUO:0000026</td>
+<td>DUO:0000026</td>
+<td>This data use modifier indicates that use is limited to use by approved users</td>
+<td>Title: user specific restriction<br></td>
+</tr>
+<tr>
+<td>DUO:0000027</td>
+<td>DUO:0000027</td>
+<td>This data use modifier indicates that use is limited to use within an approve...</td>
+<td>Title: project specific restriction<br></td>
+</tr>
+<tr>
+<td>DUO:0000028</td>
+<td>DUO:0000028</td>
+<td>This data use modifier indicates that use is limited to use within an approve...</td>
+<td>Title: institution specific restriction<br></td>
+</tr>
+<tr>
+<td>DUO:0000029</td>
+<td>DUO:0000029</td>
+<td>This data use modifier indicates that the requestor must return derived/enric...</td>
+<td>Title: return to database or resource<br></td>
+</tr>
+<tr>
+<td>DUO:0000043</td>
+<td>DUO:0000043</td>
+<td>Clinical Care is defined as Health care or services provided at home, in a he...</td>
+<td>Title: clinical care use<br></td>
+</tr>
+<tr>
+<td>DUO:0000045</td>
+<td>DUO:0000045</td>
+<td>This data use modifier indicates that use of the data is limited to not-for-p...</td>
+<td>Title: not for profit organisation use only<br></td>
+</tr>
+<tr>
+<td>DUO:0000046</td>
+<td>DUO:0000046</td>
+<td>This data use modifier indicates that use of the data is limited to not-for-p...</td>
+<td>Title: non-commercial use only<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../data_use_modifier/">data_use_modifier</a></td>
+<td>Additional modifiers that limit data use</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
 <details>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumDataUseModifier</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Ontology (DUO) terms for data use modifiers.</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Modifier</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">DUO:00000044</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:00000044</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates use for purposes of population,</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">origin, or ancestry research is prohibited.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:00000044</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">population origins or ancestry research prohibited</span>
+<span class="w">  </span><span class="nt">DUO:0000012</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000012</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use is limited to studies of</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">a certain research type.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000012</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">research specific restrictions</span>
+<span class="w">  </span><span class="nt">DUO:0000015</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000015</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use does not allow methods</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">development research (e.g., development of software or algorithms).</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000015</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no general methods research</span>
+<span class="w">  </span><span class="nt">DUO:0000016</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000016</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use is limited to genetic studies</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">only (i.e., studies that include genotype research alone or both genotype and</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">phenotype research, but not phenotype research exclusively)</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000016</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">genetic studies only</span>
+<span class="w">  </span><span class="nt">DUO:0000018</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000018</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use of the data is limited</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">to not-for-profit organizations and not-for-profit use, non-commercial use.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000018</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not for profit, non commercial use only</span>
+<span class="w">  </span><span class="nt">DUO:0000019</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000019</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that requestor agrees to make results</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">of studies using the data available to the larger scientific community.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000019</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publication required</span>
+<span class="w">  </span><span class="nt">DUO:0000020</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000020</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">could</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">coupled</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">string</span><span class="nv"> </span><span class="s">describing</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">primary</span><span class="nv"> </span><span class="s">study</span>
+<span class="w">      </span><span class="s">investigator(s).</span>
 
-<pre><code class="language-yaml">name: EnumDataUseModifier
-description: Data Use Ontology (DUO) terms for data use modifiers.
-title: Data Use Modifier
-from_schema: https://includedcc.org/common-access-model
-rank: 1000
-permissible_values:
-  DUO:00000044:
-    text: DUO:00000044
-    description: This data use modifier indicates use for purposes of population,
-      origin, or ancestry research is prohibited.
-    meaning: DUO:00000044
-    title: population origins or ancestry research prohibited
-  DUO:0000012:
-    text: DUO:0000012
-    description: This data use modifier indicates that use is limited to studies of
-      a certain research type.
-    meaning: DUO:0000012
-    title: research specific restrictions
-  DUO:0000015:
-    text: DUO:0000015
-    description: This data use modifier indicates that use does not allow methods
-      development research (e.g., development of software or algorithms).
-    meaning: DUO:0000015
-    title: no general methods research
-  DUO:0000016:
-    text: DUO:0000016
-    description: This data use modifier indicates that use is limited to genetic studies
-      only (i.e., studies that include genotype research alone or both genotype and
-      phenotype research, but not phenotype research exclusively)
-    meaning: DUO:0000016
-    title: genetic studies only
-  DUO:0000018:
-    text: DUO:0000018
-    description: This data use modifier indicates that use of the data is limited
-      to not-for-profit organizations and not-for-profit use, non-commercial use.
-    meaning: DUO:0000018
-    title: not for profit, non commercial use only
-  DUO:0000019:
-    text: DUO:0000019
-    description: This data use modifier indicates that requestor agrees to make results
-      of studies using the data available to the larger scientific community.
-    meaning: DUO:0000019
-    title: publication required
-  DUO:0000020:
-    text: DUO:0000020
-    description: 'This could be coupled with a string describing the primary study
-      investigator(s).
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">requestor</span><span class="nv"> </span><span class="s">must</span><span class="nv"> </span><span class="s">agree</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">collaboration</span>
+<span class="w">      </span><span class="s">with</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">primary</span><span class="nv"> </span><span class="s">study</span><span class="nv"> </span><span class="s">investigator(s).'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000020</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">collaboration required</span>
+<span class="w">  </span><span class="nt">DUO:0000021</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000021</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that the requestor must provide</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">documentation of local IRB/ERB approval.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000021</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ethics approval required</span>
+<span class="w">  </span><span class="nt">DUO:0000022</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000022</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">limited</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">within</span><span class="nv"> </span><span class="s">a</span>
+<span class="w">      </span><span class="s">specific</span><span class="nv"> </span><span class="s">geographic</span><span class="nv"> </span><span class="s">region.</span>
 
-      This data use modifier indicates that the requestor must agree to collaboration
-      with the primary study investigator(s).'
-    meaning: DUO:0000020
-    title: collaboration required
-  DUO:0000021:
-    text: DUO:0000021
-    description: This data use modifier indicates that the requestor must provide
-      documentation of local IRB/ERB approval.
-    meaning: DUO:0000021
-    title: ethics approval required
-  DUO:0000022:
-    text: DUO:0000022
-    description: 'This data use modifier indicates that use is limited to within a
-      specific geographic region.
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">should</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">coupled</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">ontology</span><span class="nv"> </span><span class="s">term</span><span class="nv"> </span><span class="s">describing</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">geographical</span><span class="nv"> </span><span class="s">location</span>
+<span class="w">      </span><span class="s">the</span><span class="nv"> </span><span class="s">restriction</span><span class="nv"> </span><span class="s">applies</span><span class="nv"> </span><span class="s">to.'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000022</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">geographical restriction</span>
+<span class="w">  </span><span class="nt">DUO:0000024</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000024</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">requestor</span><span class="nv"> </span><span class="s">agrees</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">publish</span>
+<span class="w">      </span><span class="s">results</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">studies</span><span class="nv"> </span><span class="s">until</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">specific</span><span class="nv"> </span><span class="s">date.</span>
 
-      This should be coupled with an ontology term describing the geographical location
-      the restriction applies to.'
-    meaning: DUO:0000022
-    title: geographical restriction
-  DUO:0000024:
-    text: DUO:0000024
-    description: 'This data use modifier indicates that requestor agrees not to publish
-      results of studies until a specific date.
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">should</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">coupled</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">date</span><span class="nv"> </span><span class="s">specified</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">ISO8601'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000024</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">publication moratorium</span>
+<span class="w">  </span><span class="nt">DUO:0000025</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000025</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">approved</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">specific</span>
+<span class="w">      </span><span class="s">number</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">months.</span>
 
-      This should be coupled with a date specified as ISO8601'
-    meaning: DUO:0000024
-    title: publication moratorium
-  DUO:0000025:
-    text: DUO:0000025
-    description: 'This data use modifier indicates that use is approved for a specific
-      number of months.
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">should</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">coupled</span><span class="nv"> </span><span class="s">with</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">integer</span><span class="nv"> </span><span class="s">value</span><span class="nv"> </span><span class="s">indicating</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">number</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">months.'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000025</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">time limit on use</span>
+<span class="w">  </span><span class="nt">DUO:0000026</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000026</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use is limited to use by approved</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">users.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000026</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">user specific restriction</span>
+<span class="w">  </span><span class="nt">DUO:0000027</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000027</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use is limited to use within</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">an approved project.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000027</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">project specific restriction</span>
+<span class="w">  </span><span class="nt">DUO:0000028</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000028</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use is limited to use within</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">an approved institution.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000028</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">institution specific restriction</span>
+<span class="w">  </span><span class="nt">DUO:0000029</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000029</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that the requestor must return derived/enriched</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">data to the database/resource.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000029</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">return to database or resource</span>
+<span class="w">  </span><span class="nt">DUO:0000043</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000043</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'Clinical</span><span class="nv"> </span><span class="s">Care</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">defined</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">Health</span><span class="nv"> </span><span class="s">care</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">services</span><span class="nv"> </span><span class="s">provided</span><span class="nv"> </span><span class="s">at</span>
+<span class="w">      </span><span class="s">home,</span><span class="nv"> </span><span class="s">in</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">healthcare</span><span class="nv"> </span><span class="s">facility</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">hospital.</span><span class="nv"> </span><span class="s">Data</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">used</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">clinical</span><span class="nv"> </span><span class="s">decision</span>
+<span class="w">      </span><span class="s">making.</span>
 
-      This should be coupled with an integer value indicating the number of months.'
-    meaning: DUO:0000025
-    title: time limit on use
-  DUO:0000026:
-    text: DUO:0000026
-    description: This data use modifier indicates that use is limited to use by approved
-      users.
-    meaning: DUO:0000026
-    title: user specific restriction
-  DUO:0000027:
-    text: DUO:0000027
-    description: This data use modifier indicates that use is limited to use within
-      an approved project.
-    meaning: DUO:0000027
-    title: project specific restriction
-  DUO:0000028:
-    text: DUO:0000028
-    description: This data use modifier indicates that use is limited to use within
-      an approved institution.
-    meaning: DUO:0000028
-    title: institution specific restriction
-  DUO:0000029:
-    text: DUO:0000029
-    description: This data use modifier indicates that the requestor must return derived/enriched
-      data to the database/resource.
-    meaning: DUO:0000029
-    title: return to database or resource
-  DUO:0000043:
-    text: DUO:0000043
-    description: 'Clinical Care is defined as Health care or services provided at
-      home, in a healthcare facility or hospital. Data may be used for clinical decision
-      making.
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">allowed</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">clinical</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">care.'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000043</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">clinical care use</span>
+<span class="w">  </span><span class="nt">DUO:0000045</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000045</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use modifier indicates that use of the data is limited</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">to not-for-profit organizations.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000045</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">not for profit organisation use only</span>
+<span class="w">  </span><span class="nt">DUO:0000046</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000046</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">modifier</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">limited</span>
+<span class="w">      </span><span class="s">to</span><span class="nv"> </span><span class="s">not-for-profit</span><span class="nv"> </span><span class="s">use.</span>
 
-      This data use modifier indicates that use is allowed for clinical use and care.'
-    meaning: DUO:0000043
-    title: clinical care use
-  DUO:0000045:
-    text: DUO:0000045
-    description: This data use modifier indicates that use of the data is limited
-      to not-for-profit organizations.
-    meaning: DUO:0000045
-    title: not for profit organisation use only
-  DUO:0000046:
-    text: DUO:0000046
-    description: 'This data use modifier indicates that use of the data is limited
-      to not-for-profit use.
-
-      This indicates that data can be used by commercial organisations for research
-      purposes, but not commercial purposes.'
-    meaning: DUO:0000046
-    title: non-commercial use only
-reachable_from:
-  source_ontology: bioregistry:duo
-  source_nodes:
-  - DUO:0000017
-  relationship_types:
-  - rdfs:subClassOf
-  is_direct: false
-
-</code></pre>
-
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">can</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">used</span><span class="nv"> </span><span class="s">by</span><span class="nv"> </span><span class="s">commercial</span><span class="nv"> </span><span class="s">organisations</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">research</span>
+<span class="w">      </span><span class="s">purposes,</span><span class="nv"> </span><span class="s">but</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">commercial</span><span class="nv"> </span><span class="s">purposes.'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000046</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">non-commercial use only</span>
+<span class="nt">reachable_from</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">source_ontology</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bioregistry:duo</span>
+<span class="w">  </span><span class="nt">source_nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000017</span>
+<span class="w">  </span><span class="nt">relationship_types</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rdfs:subClassOf</span>
+<span class="w">  </span><span class="nt">is_direct</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
 </details>
-
 </div>
 
 
@@ -610,10 +789,11 @@ reachable_from:
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

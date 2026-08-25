@@ -13,8 +13,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -22,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   </head>
@@ -227,9 +229,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -249,9 +256,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -271,9 +283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,9 +310,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,6 +345,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeration Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -331,6 +433,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -342,111 +445,117 @@
 
 <h1 id="enum-enumfilehashtype">Enum: EnumFileHashType</h1>
 <p><em>Types of file hashes supported.</em></p>
-<div data-search-exclude markdown="1">
-
-URI: [cam:EnumFileHashType](https://includedcc.org/common-access-model/EnumFileHashType)
-## Enumeration Source
-**Reachable From:**
-- **Source:** NONE
-- **Nodes:** MS:1000561
-- **Via:** rdfs:subClassOf
-
-
-
-## Permissible Values
-| Value | Meaning | Description | Additional Info |
-| --- | --- | --- | --- |
-| MS:1000568 | None | MD5 (Message-Digest algorithm 5) is a (now deprecated) cryptographic hash fun... | Title: MD5<br>|
-| CAMO:0000022 | None | The entity tag is a hash of the object | Title: ETag<br>|
-| MS:1000569 | None | SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash function designed by ... | Title: SHA-1<br>|
-| MS:1003151 | None | SHA-256 (member of Secure Hash Algorithm-2 family) is a cryptographic hash fu... | Title: SHA-256<br>|
-
-
-
-
-## Slots
-
-| Name | Description |
-| ---  | --- |
-| [hash_type](hash_type.md) | The type of file hash, eg, md5 |
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-
-
-## LinkML Source
-
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumFileHashType">cam:EnumFileHashType</a></p>
+<h2 id="enumeration-source">Enumeration Source</h2>
+<p><strong>Reachable From:</strong>
+- <strong>Source:</strong> NONE
+- <strong>Nodes:</strong> MS:1000561
+- <strong>Via:</strong> rdfs:subClassOf</p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Additional Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>MS:1000568</td>
+<td>None</td>
+<td>MD5 (Message-Digest algorithm 5) is a (now deprecated) cryptographic hash fun...</td>
+<td>Title: MD5<br></td>
+</tr>
+<tr>
+<td>CAMO:0000022</td>
+<td>None</td>
+<td>The entity tag is a hash of the object</td>
+<td>Title: ETag<br></td>
+</tr>
+<tr>
+<td>MS:1000569</td>
+<td>None</td>
+<td>SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash function designed by ...</td>
+<td>Title: SHA-1<br></td>
+</tr>
+<tr>
+<td>MS:1003151</td>
+<td>None</td>
+<td>SHA-256 (member of Secure Hash Algorithm-2 family) is a cryptographic hash fu...</td>
+<td>Title: SHA-256<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../hash_type/">hash_type</a></td>
+<td>The type of file hash, eg, md5</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
 <details>
-
-<pre><code class="language-yaml">name: EnumFileHashType
-description: Types of file hashes supported.
-from_schema: https://includedcc.org/common-access-model
-rank: 1000
-permissible_values:
-  MS:1000568:
-    text: MS:1000568
-    description: MD5 (Message-Digest algorithm 5) is a (now deprecated) cryptographic
-      hash function with a 128-bit hash value used to check the integrity of files.
-    title: MD5
-    aliases:
-    - md5
-  CAMO:0000022:
-    text: CAMO:0000022
-    description: The entity tag is a hash of the object. The ETag reflects changes
-      only to the contents of an object, not its metadata. The ETag may or may not
-      be an MD5 digest of the object data.
-    title: ETag
-    aliases:
-    - etag
-  MS:1000569:
-    text: MS:1000569
-    description: SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash function
-      designed by the National Security Agency (NSA). It is also used to verify file
-      integrity. Since 2011 it has been deprecated by the NIST as a U. S. government
-      standard.
-    title: SHA-1
-    aliases:
-    - sha1
-  MS:1003151:
-    text: MS:1003151
-    description: SHA-256 (member of Secure Hash Algorithm-2 family) is a cryptographic
-      hash function designed by the National Security Agency (NSA) and published by
-      the NIST as a U. S. government standard. It is also used to verify file integrity.
-    title: SHA-256
-reachable_from:
-  source_ontology: camo
-  source_nodes:
-  - MS:1000561
-  relationship_types:
-  - rdfs:subClassOf
-  is_direct: false
-  include_self: true
-
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumFileHashType</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Types of file hashes supported.</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">MS:1000568</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MS:1000568</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MD5 (Message-Digest algorithm 5) is a (now deprecated) cryptographic</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">hash function with a 128-bit hash value used to check the integrity of files.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MD5</span>
+<span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">md5</span>
+<span class="w">  </span><span class="nt">CAMO:0000022</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CAMO:0000022</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The entity tag is a hash of the object. The ETag reflects changes</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">only to the contents of an object, not its metadata. The ETag may or may not</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">be an MD5 digest of the object data.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ETag</span>
+<span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">etag</span>
+<span class="w">  </span><span class="nt">MS:1000569</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MS:1000569</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SHA-1 (Secure Hash Algorithm-1) is a cryptographic hash function</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">designed by the National Security Agency (NSA). It is also used to verify file</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">integrity. Since 2011 it has been deprecated by the NIST as a U. S. government</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">standard.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SHA-1</span>
+<span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sha1</span>
+<span class="w">  </span><span class="nt">MS:1003151</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MS:1003151</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SHA-256 (member of Secure Hash Algorithm-2 family) is a cryptographic</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">hash function designed by the National Security Agency (NSA) and published by</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">the NIST as a U. S. government standard. It is also used to verify file integrity.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">SHA-256</span>
+<span class="nt">reachable_from</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">source_ontology</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">camo</span>
+<span class="w">  </span><span class="nt">source_nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MS:1000561</span>
+<span class="w">  </span><span class="nt">relationship_types</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rdfs:subClassOf</span>
+<span class="w">  </span><span class="nt">is_direct</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">include_self</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
 </details>
-
 </div>
 
 
@@ -501,10 +610,11 @@ reachable_from:
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

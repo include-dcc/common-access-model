@@ -13,8 +13,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -22,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   </head>
@@ -227,9 +229,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -249,9 +256,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -271,9 +283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,9 +310,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,6 +345,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeration Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -331,6 +433,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -342,121 +445,132 @@
 
 <h1 id="enum-data-use-permission-enumdatausepermission">Enum: Data Use Permission (EnumDataUsePermission)</h1>
 <p><em>Data Use Ontology (DUO) terms for data use permissions.</em></p>
-<div data-search-exclude markdown="1">
-
-URI: [cam:EnumDataUsePermission](https://includedcc.org/common-access-model/EnumDataUsePermission)
-## Enumeration Source
-**Reachable From:**
-- **Source:** NONE
-- **Nodes:** DUO:0000001
-- **Via:** rdfs:subClassOf
-
-
-
-## Permissible Values
-| Value | Meaning | Description | Additional Info |
-| --- | --- | --- | --- |
-| DUO:0000004 | DUO:0000004 | This data use permission indicates there is no restriction on use | Title: no restriction<br>|
-| DUO:0000006 | DUO:0000006 | This data use permission indicates that use is allowed for health/medical/bio... | Title: health or medical or biomedical research<br>|
-| DUO:0000007 | DUO:0000007 | This data use permission indicates that use is allowed provided it is related... | Title: disease specific research<br>|
-| DUO:0000011 | DUO:0000011 | This data use permission indicates that use of the data is limited to the stu... | Title: population origins or ancestry research only<br>|
-| DUO:0000042 | DUO:0000042 | This data use permission indicates that use is allowed for general research u... | Title: general research use<br>|
-
-
-
-
-## Slots
-
-| Name | Description |
-| ---  | --- |
-| [data_use_permission](data_use_permission.md) | Broad category of restrictions on data use |
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-
-
-## LinkML Source
-
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumDataUsePermission">cam:EnumDataUsePermission</a></p>
+<h2 id="enumeration-source">Enumeration Source</h2>
+<p><strong>Reachable From:</strong>
+- <strong>Source:</strong> NONE
+- <strong>Nodes:</strong> DUO:0000001
+- <strong>Via:</strong> rdfs:subClassOf</p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Additional Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>DUO:0000004</td>
+<td>DUO:0000004</td>
+<td>This data use permission indicates there is no restriction on use</td>
+<td>Title: no restriction<br></td>
+</tr>
+<tr>
+<td>DUO:0000006</td>
+<td>DUO:0000006</td>
+<td>This data use permission indicates that use is allowed for health/medical/bio...</td>
+<td>Title: health or medical or biomedical research<br></td>
+</tr>
+<tr>
+<td>DUO:0000007</td>
+<td>DUO:0000007</td>
+<td>This data use permission indicates that use is allowed provided it is related...</td>
+<td>Title: disease specific research<br></td>
+</tr>
+<tr>
+<td>DUO:0000011</td>
+<td>DUO:0000011</td>
+<td>This data use permission indicates that use of the data is limited to the stu...</td>
+<td>Title: population origins or ancestry research only<br></td>
+</tr>
+<tr>
+<td>DUO:0000042</td>
+<td>DUO:0000042</td>
+<td>This data use permission indicates that use is allowed for general research u...</td>
+<td>Title: general research use<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../data_use_permission/">data_use_permission</a></td>
+<td>Broad category of restrictions on data use</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
 <details>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumDataUsePermission</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Ontology (DUO) terms for data use permissions.</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Permission</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">DUO:0000004</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000004</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use permission indicates there is no restriction on use.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000004</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">no restriction</span>
+<span class="w">  </span><span class="nt">DUO:0000006</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000006</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use permission indicates that use is allowed for health/medical/biomedical</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">purposes; does not include the study of population origins or ancestry.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000006</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">health or medical or biomedical research</span>
+<span class="w">  </span><span class="nt">DUO:0000007</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000007</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">"This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">allowed</span><span class="nv"> </span><span class="s">provided\</span>
+<span class="w">      </span><span class="s">\ it</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">related</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">specified</span><span class="nv"> </span><span class="s">disease.\nThis</span><span class="nv"> </span><span class="s">term</span><span class="nv"> </span><span class="s">should</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">coupled</span><span class="nv"> </span><span class="s">with\</span>
+<span class="w">      </span><span class="s">\ a</span><span class="nv"> </span><span class="s">term</span><span class="nv"> </span><span class="s">describing</span><span class="nv"> </span><span class="s">a</span><span class="nv"> </span><span class="s">disease</span><span class="nv"> </span><span class="s">from</span><span class="nv"> </span><span class="s">an</span><span class="nv"> </span><span class="s">ontology</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">specify</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">disease</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">restriction\</span>
+<span class="w">      </span><span class="s">\ applies</span><span class="nv"> </span><span class="s">to.</span><span class="nv"> </span><span class="s">\n\nDUO</span><span class="nv"> </span><span class="s">recommends</span><span class="nv"> </span><span class="s">MONDO</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">used,</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">provide</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">basis</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">automated\</span>
+<span class="w">      </span><span class="s">\ evaluation.</span><span class="nv"> </span><span class="s">For</span><span class="nv"> </span><span class="s">more</span><span class="nv"> </span><span class="s">information</span><span class="nv"> </span><span class="s">see</span><span class="nv"> </span><span class="s">https://github.com/EBISPOT/DUO/blob/master/MONDO_Overview.md\n\</span>
+<span class="w">      </span><span class="s">\nOther</span><span class="nv"> </span><span class="s">resources,</span><span class="nv"> </span><span class="s">such</span><span class="nv"> </span><span class="s">as</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">Disease</span><span class="nv"> </span><span class="s">Ontology,</span><span class="nv"> </span><span class="s">HPO,</span><span class="nv"> </span><span class="s">SNOMED-CT</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">others,</span><span class="nv"> </span><span class="s">can\</span>
+<span class="w">      </span><span class="s">\ also</span><span class="nv"> </span><span class="s">be</span><span class="nv"> </span><span class="s">used.</span><span class="nv"> </span><span class="s">When</span><span class="nv"> </span><span class="s">those</span><span class="nv"> </span><span class="s">other</span><span class="nv"> </span><span class="s">resources</span><span class="nv"> </span><span class="s">are</span><span class="nv"> </span><span class="s">being</span><span class="nv"> </span><span class="s">used,</span><span class="nv"> </span><span class="s">this</span><span class="nv"> </span><span class="s">may</span><span class="nv"> </span><span class="s">require\</span>
+<span class="w">      </span><span class="s">\ an</span><span class="nv"> </span><span class="s">extra</span><span class="nv"> </span><span class="s">mapping</span><span class="nv"> </span><span class="s">step</span><span class="nv"> </span><span class="s">to</span><span class="nv"> </span><span class="s">leverage</span><span class="nv"> </span><span class="s">automated</span><span class="nv"> </span><span class="s">matching</span><span class="nv"> </span><span class="s">algorithms."</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000007</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease specific research</span>
+<span class="w">  </span><span class="nt">DUO:0000011</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000011</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">This data use permission indicates that use of the data is limited</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">to the study of population origins or ancestry.</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000011</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">population origins or ancestry research only</span>
+<span class="w">  </span><span class="nt">DUO:0000042</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000042</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="s">'This</span><span class="nv"> </span><span class="s">data</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">permission</span><span class="nv"> </span><span class="s">indicates</span><span class="nv"> </span><span class="s">that</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">allowed</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">general</span>
+<span class="w">      </span><span class="s">research</span><span class="nv"> </span><span class="s">use</span><span class="nv"> </span><span class="s">for</span><span class="nv"> </span><span class="s">any</span><span class="nv"> </span><span class="s">research</span><span class="nv"> </span><span class="s">purpose.</span>
 
-<pre><code class="language-yaml">name: EnumDataUsePermission
-description: Data Use Ontology (DUO) terms for data use permissions.
-title: Data Use Permission
-from_schema: https://includedcc.org/common-access-model
-rank: 1000
-permissible_values:
-  DUO:0000004:
-    text: DUO:0000004
-    description: This data use permission indicates there is no restriction on use.
-    meaning: DUO:0000004
-    title: no restriction
-  DUO:0000006:
-    text: DUO:0000006
-    description: This data use permission indicates that use is allowed for health/medical/biomedical
-      purposes; does not include the study of population origins or ancestry.
-    meaning: DUO:0000006
-    title: health or medical or biomedical research
-  DUO:0000007:
-    text: DUO:0000007
-    description: &quot;This data use permission indicates that use is allowed provided\
-      \ it is related to the specified disease.\nThis term should be coupled with\
-      \ a term describing a disease from an ontology to specify the disease the restriction\
-      \ applies to. \n\nDUO recommends MONDO be used, to provide the basis for automated\
-      \ evaluation. For more information see https://github.com/EBISPOT/DUO/blob/master/MONDO_Overview.md\n\
-      \nOther resources, such as the Disease Ontology, HPO, SNOMED-CT or others, can\
-      \ also be used. When those other resources are being used, this may require\
-      \ an extra mapping step to leverage automated matching algorithms.&quot;
-    meaning: DUO:0000007
-    title: disease specific research
-  DUO:0000011:
-    text: DUO:0000011
-    description: This data use permission indicates that use of the data is limited
-      to the study of population origins or ancestry.
-    meaning: DUO:0000011
-    title: population origins or ancestry research only
-  DUO:0000042:
-    text: DUO:0000042
-    description: 'This data use permission indicates that use is allowed for general
-      research use for any research purpose.
-
-      This includes but is not limited to: health/medical/biomedical purposes, fundamental
-      biology research, the study of population origins or ancestry, statistical methods
-      and algorithms development, and social-sciences research.'
-    meaning: DUO:0000042
-    title: general research use
-reachable_from:
-  source_ontology: bioregistry:duo
-  source_nodes:
-  - DUO:0000001
-  relationship_types:
-  - rdfs:subClassOf
-  is_direct: false
-
-</code></pre>
-
+<span class="w">      </span><span class="s">This</span><span class="nv"> </span><span class="s">includes</span><span class="nv"> </span><span class="s">but</span><span class="nv"> </span><span class="s">is</span><span class="nv"> </span><span class="s">not</span><span class="nv"> </span><span class="s">limited</span><span class="nv"> </span><span class="s">to:</span><span class="nv"> </span><span class="s">health/medical/biomedical</span><span class="nv"> </span><span class="s">purposes,</span><span class="nv"> </span><span class="s">fundamental</span>
+<span class="w">      </span><span class="s">biology</span><span class="nv"> </span><span class="s">research,</span><span class="nv"> </span><span class="s">the</span><span class="nv"> </span><span class="s">study</span><span class="nv"> </span><span class="s">of</span><span class="nv"> </span><span class="s">population</span><span class="nv"> </span><span class="s">origins</span><span class="nv"> </span><span class="s">or</span><span class="nv"> </span><span class="s">ancestry,</span><span class="nv"> </span><span class="s">statistical</span><span class="nv"> </span><span class="s">methods</span>
+<span class="w">      </span><span class="s">and</span><span class="nv"> </span><span class="s">algorithms</span><span class="nv"> </span><span class="s">development,</span><span class="nv"> </span><span class="s">and</span><span class="nv"> </span><span class="s">social-sciences</span><span class="nv"> </span><span class="s">research.'</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000042</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">general research use</span>
+<span class="nt">reachable_from</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">source_ontology</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bioregistry:duo</span>
+<span class="w">  </span><span class="nt">source_nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000001</span>
+<span class="w">  </span><span class="nt">relationship_types</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rdfs:subClassOf</span>
+<span class="w">  </span><span class="nt">is_direct</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
 </details>
-
 </div>
 
 
@@ -511,10 +625,11 @@ reachable_from:
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

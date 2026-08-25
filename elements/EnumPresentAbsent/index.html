@@ -13,8 +13,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -22,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   </head>
@@ -227,9 +229,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -249,9 +256,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -271,9 +283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,9 +310,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,6 +345,86 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Enumeration Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#slots" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Slots
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -331,6 +433,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -342,134 +445,175 @@
 
 <h1 id="enum-enumpresentabsent">Enum: EnumPresentAbsent</h1>
 <p><em>Options for describing presence or absence. Derived from SNOMED CT Known codes. The "Known" codes and "Not suspected" are the broadest terms and suitable for general use.</em></p>
-<div data-search-exclude markdown="1">
-
-URI: [cam:EnumPresentAbsent](https://includedcc.org/common-access-model/EnumPresentAbsent)
-## Enumeration Source
-**Reachable From:**
-- **Source:** NONE
-- **Nodes:** snomedct:36692007
-- **Via:** rdfs:subClassOf
-
-
-
-## Permissible Values
-| Value | Meaning | Description | Additional Info |
-| --- | --- | --- | --- |
-| snomedct:410515003 | snomedct:410515003 |  | Title: Known present<br>|
-| snomedct:410516002 | snomedct:410516002 |  | Title: Known absent<br>|
-| snomedct:410590009 | snomedct:410590009 |  | Title: Known possible<br>|
-| snomedct:410591008 | snomedct:410591008 |  | Title: Definitely present<br>|
-| snomedct:410592001 | snomedct:410592001 |  | Title: Probably present<br>|
-| snomedct:410593006 | snomedct:410593006 |  | Title: Probably not present<br>|
-| snomedct:410594000 | snomedct:410594000 |  | Title: Definitely not present<br>|
-| snomedct:410605003 | snomedct:410605003 |  | Title: Confirmed present<br>|
-| snomedct:415684004 | snomedct:415684004 |  | Title: Suspected<br>|
-| snomedct:428263003 | snomedct:428263003 |  | Title: Not suspected<br>|
-| snomedct:723511001 | snomedct:723511001 |  | Title: Refuted<br>|
-
-
-
-
-## Slots
-
-| Name | Description |
-| ---  | --- |
-| [consanguinity](consanguinity.md) | Is there known or suspected consanguinity in this study family? |
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-
-
-## LinkML Source
-
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumPresentAbsent">cam:EnumPresentAbsent</a></p>
+<h2 id="enumeration-source">Enumeration Source</h2>
+<p><strong>Reachable From:</strong>
+- <strong>Source:</strong> NONE
+- <strong>Nodes:</strong> snomedct:36692007
+- <strong>Via:</strong> rdfs:subClassOf</p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Additional Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>snomedct:410515003</td>
+<td>snomedct:410515003</td>
+<td></td>
+<td>Title: Known present<br></td>
+</tr>
+<tr>
+<td>snomedct:410516002</td>
+<td>snomedct:410516002</td>
+<td></td>
+<td>Title: Known absent<br></td>
+</tr>
+<tr>
+<td>snomedct:410590009</td>
+<td>snomedct:410590009</td>
+<td></td>
+<td>Title: Known possible<br></td>
+</tr>
+<tr>
+<td>snomedct:410591008</td>
+<td>snomedct:410591008</td>
+<td></td>
+<td>Title: Definitely present<br></td>
+</tr>
+<tr>
+<td>snomedct:410592001</td>
+<td>snomedct:410592001</td>
+<td></td>
+<td>Title: Probably present<br></td>
+</tr>
+<tr>
+<td>snomedct:410593006</td>
+<td>snomedct:410593006</td>
+<td></td>
+<td>Title: Probably not present<br></td>
+</tr>
+<tr>
+<td>snomedct:410594000</td>
+<td>snomedct:410594000</td>
+<td></td>
+<td>Title: Definitely not present<br></td>
+</tr>
+<tr>
+<td>snomedct:410605003</td>
+<td>snomedct:410605003</td>
+<td></td>
+<td>Title: Confirmed present<br></td>
+</tr>
+<tr>
+<td>snomedct:415684004</td>
+<td>snomedct:415684004</td>
+<td></td>
+<td>Title: Suspected<br></td>
+</tr>
+<tr>
+<td>snomedct:428263003</td>
+<td>snomedct:428263003</td>
+<td></td>
+<td>Title: Not suspected<br></td>
+</tr>
+<tr>
+<td>snomedct:723511001</td>
+<td>snomedct:723511001</td>
+<td></td>
+<td>Title: Refuted<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="slots">Slots</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../consanguinity/">consanguinity</a></td>
+<td>Is there known or suspected consanguinity in this study family?</td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
 <details>
-
-<pre><code class="language-yaml">name: EnumPresentAbsent
-description: Options for describing presence or absence. Derived from SNOMED CT Known
-  codes. The &quot;Known&quot; codes and &quot;Not suspected&quot; are the broadest terms and suitable
-  for general use.
-from_schema: https://includedcc.org/common-access-model
-rank: 1000
-permissible_values:
-  snomedct:410515003:
-    text: snomedct:410515003
-    meaning: snomedct:410515003
-    title: Known present
-  snomedct:410516002:
-    text: snomedct:410516002
-    meaning: snomedct:410516002
-    title: Known absent
-  snomedct:410590009:
-    text: snomedct:410590009
-    meaning: snomedct:410590009
-    title: Known possible
-  snomedct:410591008:
-    text: snomedct:410591008
-    meaning: snomedct:410591008
-    title: Definitely present
-  snomedct:410592001:
-    text: snomedct:410592001
-    meaning: snomedct:410592001
-    title: Probably present
-  snomedct:410593006:
-    text: snomedct:410593006
-    meaning: snomedct:410593006
-    title: Probably not present
-  snomedct:410594000:
-    text: snomedct:410594000
-    meaning: snomedct:410594000
-    title: Definitely not present
-  snomedct:410605003:
-    text: snomedct:410605003
-    meaning: snomedct:410605003
-    title: Confirmed present
-  snomedct:415684004:
-    text: snomedct:415684004
-    meaning: snomedct:415684004
-    title: Suspected
-  snomedct:428263003:
-    text: snomedct:428263003
-    meaning: snomedct:428263003
-    title: Not suspected
-  snomedct:723511001:
-    text: snomedct:723511001
-    meaning: snomedct:723511001
-    title: Refuted
-reachable_from:
-  source_ontology: bioregistry:snomedct
-  source_nodes:
-  - snomedct:36692007
-  relationship_types:
-  - rdfs:subClassOf
-  is_direct: false
-  include_self: false
-
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumPresentAbsent</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Options for describing presence or absence. Derived from SNOMED CT Known</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">codes. The "Known" codes and "Not suspected" are the broadest terms and suitable</span>
+<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">for general use.</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">snomedct:410515003</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410515003</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410515003</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Known present</span>
+<span class="w">  </span><span class="nt">snomedct:410516002</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410516002</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410516002</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Known absent</span>
+<span class="w">  </span><span class="nt">snomedct:410590009</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410590009</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410590009</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Known possible</span>
+<span class="w">  </span><span class="nt">snomedct:410591008</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410591008</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410591008</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Definitely present</span>
+<span class="w">  </span><span class="nt">snomedct:410592001</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410592001</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410592001</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Probably present</span>
+<span class="w">  </span><span class="nt">snomedct:410593006</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410593006</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410593006</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Probably not present</span>
+<span class="w">  </span><span class="nt">snomedct:410594000</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410594000</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410594000</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Definitely not present</span>
+<span class="w">  </span><span class="nt">snomedct:410605003</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410605003</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410605003</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Confirmed present</span>
+<span class="w">  </span><span class="nt">snomedct:415684004</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:415684004</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:415684004</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Suspected</span>
+<span class="w">  </span><span class="nt">snomedct:428263003</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:428263003</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:428263003</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Not suspected</span>
+<span class="w">  </span><span class="nt">snomedct:723511001</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:723511001</span>
+<span class="w">    </span><span class="nt">meaning</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:723511001</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Refuted</span>
+<span class="nt">reachable_from</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">source_ontology</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bioregistry:snomedct</span>
+<span class="w">  </span><span class="nt">source_nodes</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:36692007</span>
+<span class="w">  </span><span class="nt">relationship_types</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">rdfs:subClassOf</span>
+<span class="w">  </span><span class="nt">is_direct</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+<span class="w">  </span><span class="nt">include_self</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
 </details>
-
 </div>
 
 
@@ -524,10 +668,11 @@ reachable_from:
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>

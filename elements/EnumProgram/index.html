@@ -13,8 +13,11 @@
       
       
       
+        
+      
+      
       <link rel="icon" href="../../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.23">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
     
     
       
@@ -22,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.84d31ad4.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
       
       
 
@@ -51,7 +54,6 @@
     
       
 
-    
     
     
   </head>
@@ -227,9 +229,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     Schema
+  
+
     
   </span>
+  
   
 
       </a>
@@ -249,9 +256,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     ER Diagram
+  
+
     
   </span>
+  
   
 
       </a>
@@ -271,9 +283,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     dbt
+  
+
     
   </span>
+  
   
 
       </a>
@@ -293,9 +310,14 @@
   
   
   <span class="md-ellipsis">
+    
+  
     About
+  
+
     
   </span>
+  
   
 
       </a>
@@ -323,6 +345,64 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#permissible-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Permissible Values
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#identifier-and-mapping-information" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Identifier and Mapping Information
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Identifier and Mapping Information">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#schema-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Schema Source
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#linkml-source" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        LinkML Source
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -331,6 +411,7 @@
           
           
             <div class="md-content" data-md-component="content">
+              
               <article class="md-content__inner md-typeset">
                 
                   
@@ -342,80 +423,69 @@
 
 <h1 id="enum-funding-programs-enumprogram">Enum: Funding Programs (EnumProgram)</h1>
 <p><em>Specific funding program examples.</em></p>
-<div data-search-exclude markdown="1">
-
-URI: [cam:EnumProgram](https://includedcc.org/common-access-model/EnumProgram)
-
-## Permissible Values
-| Value | Meaning | Description | Additional Info |
-| --- | --- | --- | --- |
-| https://www.nih.gov/include-project | None | The INCLUDE (INvestigation of Co-occurring conditions across the Lifespan to ... | Title: INCLUDE<br>|
-| https://commonfund.nih.gov/KidsFirst | None | The goal of the Gabriella Miller Kids First Pediatric Research Program (Kids ... | Title: Kids First<br>|
-
-
-
-
-
-
-
-
-
-
-
-
-
-## Identifier and Mapping Information
-
-
-
-
-
-### Schema Source
-
-
-* from schema: https://includedcc.org/common-access-model
-
-
-
-
-
-
-## LinkML Source
-
+<div>
+<p>URI: <a href="https://includedcc.org/common-access-model/EnumProgram">cam:EnumProgram</a></p>
+<h2 id="permissible-values">Permissible Values</h2>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+<th>Description</th>
+<th>Additional Info</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="https://www.nih.gov/include-project">https://www.nih.gov/include-project</a></td>
+<td>None</td>
+<td>The INCLUDE (INvestigation of Co-occurring conditions across the Lifespan to ...</td>
+<td>Title: INCLUDE<br></td>
+</tr>
+<tr>
+<td><a href="https://commonfund.nih.gov/KidsFirst">https://commonfund.nih.gov/KidsFirst</a></td>
+<td>None</td>
+<td>The goal of the Gabriella Miller Kids First Pediatric Research Program (Kids ...</td>
+<td>Title: Kids First<br></td>
+</tr>
+</tbody>
+</table>
+<h2 id="identifier-and-mapping-information">Identifier and Mapping Information</h2>
+<h3 id="schema-source">Schema Source</h3>
+<ul>
+<li>from schema: <a href="https://includedcc.org/common-access-model">https://includedcc.org/common-access-model</a></li>
+</ul>
+<h2 id="linkml-source">LinkML Source</h2>
 <details>
-
-<pre><code class="language-yaml">name: EnumProgram
-description: Specific funding program examples.
-title: Funding Programs
-from_schema: https://includedcc.org/common-access-model
-rank: 1000
-permissible_values:
-  https://www.nih.gov/include-project:
-    text: https://www.nih.gov/include-project
-    description: The INCLUDE (INvestigation of Co-occurring conditions across the
-      Lifespan to Understand Down syndromE) Project was launched in June 2018 in support
-      of a Congressional directive in the fiscal year (FY) 2018 Omnibus Appropriations.
-      The directive called for a new trans-NIH research initiative on critical health
-      and quality-of-life needs for individuals with Down syndrome.
-    title: INCLUDE
-    aliases:
-    - include
-  https://commonfund.nih.gov/KidsFirst:
-    text: https://commonfund.nih.gov/KidsFirst
-    description: The goal of the Gabriella Miller Kids First Pediatric Research Program
-      (Kids First) is to help researchers uncover new insights into the biology of
-      childhood cancer and congenital anomalies, including the discovery of shared
-      genetic pathways between these disorders. Children with birth defects have an
-      increased risk of developing childhood cancer. This suggests there are shared
-      genetic pathways underlying some types of childhood cancer and congenital anomalies.
-    title: Kids First
-    aliases:
-    - kf
-
-</code></pre>
-
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumProgram</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Specific funding program examples.</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Funding Programs</span>
+<span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="nt">permissible_values</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">https://www.nih.gov/include-project</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://www.nih.gov/include-project</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The INCLUDE (INvestigation of Co-occurring conditions across the</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">Lifespan to Understand Down syndromE) Project was launched in June 2018 in support</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">of a Congressional directive in the fiscal year (FY) 2018 Omnibus Appropriations.</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">The directive called for a new trans-NIH research initiative on critical health</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">and quality-of-life needs for individuals with Down syndrome.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INCLUDE</span>
+<span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">include</span>
+<span class="w">  </span><span class="nt">https://commonfund.nih.gov/KidsFirst</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://commonfund.nih.gov/KidsFirst</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The goal of the Gabriella Miller Kids First Pediatric Research Program</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">(Kids First) is to help researchers uncover new insights into the biology of</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">childhood cancer and congenital anomalies, including the discovery of shared</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">genetic pathways between these disorders. Children with birth defects have an</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">increased risk of developing childhood cancer. This suggests there are shared</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">genetic pathways underlying some types of childhood cancer and congenital anomalies.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Kids First</span>
+<span class="w">    </span><span class="nt">aliases</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">kf</span>
+</code></pre></div>
 </details>
-
 </div>
 
 
@@ -470,10 +540,11 @@ permissible_values:
     
     
       
-      <script id="__config" type="application/json">{"base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.973d3a69.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.tabs.link"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f55a23d4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
       
     
   </body>
