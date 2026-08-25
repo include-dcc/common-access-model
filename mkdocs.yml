@@ -21,6 +21,31 @@ plugins:
   #     scripts:
   #       - gen_pages.py  # or any other name or path
 
+markdown_extensions:
+  - pymdownx.superfences:
+      # https://mkdocs-mermaid2.readthedocs.io/en/latest/superfences
+      # custom code highlighting rules
+      custom_fences:
+        - name: mermaid
+          # disable code highlighting to display diagrams
+          format: !!python/name:pymdownx.superfences.fence_code_format
+          class: mermaid
+  # https://facelessuser.github.io/pymdown-extensions/extensions/magiclink/
+  # auto-link HTML, FTP, and email links
+  - pymdownx.magiclink
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#admonition
+  # support for call-outs
+  - admonition
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#tables
+  # create tables
+  - tables
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#attribute-lists
+  # enables use of HTML attributes and CSS classes to applicable elements
+  - attr_list
+  # https://squidfunk.github.io/mkdocs-material/setup/extensions/python-markdown/#markdown-in-html
+  # write markdown inside of HTML
+  - md_in_html
+
 watch:
   - src/common_access_model/schema
 
