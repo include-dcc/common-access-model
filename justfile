@@ -76,8 +76,7 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc dbt gen-monolith
-
+site: gen-project gen-doc
 
 # Deploy documentation site to Github Pages
 [group('deployment')]
@@ -90,7 +89,7 @@ test: _test-schema _test-python _test-examples
 
 # Run linting
 [group('model development')]
-lint:
+lint: expand
   uv run linkml-lint --config .linkml-linter.yaml {{source_schema_dir}}
 
 # Generate md documentation for the schema
@@ -183,8 +182,16 @@ _update-template:
 _update-linkml:
   uv add linkml --upgrade-package linkml
 
+# Expand enum files
+expand:
+  uv run weaver -s src/common_access_model/schema
+
+# Deletes permissible_values block from enum file so it can be re-expanded
+clear file_path:
+  uv run weaver --clear src/common_access_model/schema/enums/{{file_path}}.yaml
+
 # Test schema generation
-_test-schema:
+_test-schema: expand
   uv run gen-project {{config_yaml}} -d tmp {{source_schema_path}}
 
 # Run Python unit tests with pytest
