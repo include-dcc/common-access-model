@@ -22,6 +22,7 @@ dependencies = [
   "linkml-runtime>=1.11.0",
   "the-caddie",
   "term-weaver",
+  "mkdocs-pymdownx-material-extras>=2.8",
 ]
 
 [dependency-groups]
