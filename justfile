@@ -184,7 +184,7 @@ _update-linkml:
 
 # Expand enum files
 expand:
-  uv run weaver -s src/common_access_model/schema
+  uv run weaver -s src/{{schema_name}}/schema
 
 # Deletes permissible_values block from enum file so it can be re-expanded
 clear file_path:
