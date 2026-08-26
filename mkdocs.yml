@@ -2,13 +2,26 @@
 site_name: "common-access-model"
 theme:
   name: material
+  palette:
+    - scheme: default
+    - scheme: slate # dark mode variant
   # palette:
   #  scheme: slate
   #  primary: cyan
   features:
     - content.tabs.link
-
+    - header.autohide # maximum screen space during scrolling
+    - navigation.expand # optimize user experience
+    - navigation.instant # optimize user experience
+    - navigation.instant.progress
+    - navigation.tracking # update address bar
+    - search.suggest # suggest good completions
+    - content.code.copy # enable copy to clipboard
 # for adding extra css/js see https://www.mkdocs.org/user-guide/customizing-your-theme/
+
+# extra css/js see https://www.mkdocs.org/user-guide/customizing-your-theme/
+extra_css: []
+extra_javascript: []
 
 plugins:
   - search
@@ -16,6 +29,8 @@ plugins:
       execute: false
   - mermaid2:
       version: 11.4.1
+  # https://pypi.org/project/mkdocs-pymdownx-material-extras
+  - mkdocs_pymdownx_material_extras:
   # TODO rebuild docs on schema change (https://github.com/dalito/linkml-project-copier/issues/39)
   # - gen-files:
   #     scripts:
