@@ -15,17 +15,21 @@ search:
 
 {% macro compute_range(slot) -%}
     {%- if slot.any_of or slot.exactly_one_of -%}
-        {%- for subslot_range in schemaview.slot_range_as_union(slot) -%}
-            {{ gen.link(subslot_range) }}
-            {%- if not loop.last -%}
-                &nbsp;or&nbsp;<br />
-            {%- endif -%}
-        {%- endfor -%}
+        {%- set expr_ranges = (slot.exactly_one_of + slot.any_of) | selectattr('range') | map(attribute='range') | unique | list -%}
+        {%- if expr_ranges -%}
+            {%- for subslot_range in expr_ranges -%}
+                {{ gen.link(subslot_range) }}
+                {%- if not loop.last -%}
+                    &nbsp;or&nbsp;<br />
+                {%- endif -%}
+            {%- endfor -%}
+        {%- else -%}
+            {{ gen.link(slot.range) }}
+        {%- endif -%}
     {%- else -%}
         {{ gen.link(slot.range) }}
     {%- endif -%}
 {% endmacro %}
-
 # Slot: {{ title }} {% if element.deprecated %} <span style="color: red;"><strong> (DEPRECATED) </strong></span> {% endif %}
 
 {%- if header -%}
@@ -408,7 +412,7 @@ Alias: {{ element.alias }}
 Value must satisfy at least one of:
 
 {%- for expr in element.any_of %}
-- {{ expr }}
+- {% if expr.range %}{{ gen.link(expr.range) }}{% endif %}{% if expr.pattern %} matching pattern `{{ expr.pattern }}`{% endif %}{% if expr.minimum_value is not none %}, minimum {{ expr.minimum_value }}{% endif %}{% if expr.maximum_value is not none %}, maximum {{ expr.maximum_value }}{% endif %}
 {%- endfor %}
 {%- endif %}
 
