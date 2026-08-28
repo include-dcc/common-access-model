@@ -76,7 +76,7 @@ clean: _clean_project
 
 # (Re-)Generate project and documentation locally
 [group('model development')]
-site: gen-project gen-doc gen-monolith
+site: gen-project gen-doc gen-monolith dbt
 
 # Deploy documentation site to Github Pages
 [group('deployment')]
