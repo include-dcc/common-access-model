@@ -29,7 +29,7 @@ imports:
 - enums/EnumResearchDomain
 - enums/EnumSampleCollectionMethod
 - enums/EnumSex
-- enums/EnumSite
+- enums/EnumSiteExamples
 - enums/EnumSpatialQualifiers
 - enums/EnumStudyDesign
 - enums/EnumSubjectType
@@ -24593,19 +24593,25 @@ enums:
         title: Male
         aliases:
         - male
-  EnumSite:
-    name: EnumSite
-    definition_uri: https://includedcc.org/common-access-model/EnumSite/EnumSite
-    description: The location of the specimen collection.
-    from_schema: https://includedcc.org/common-access-model/EnumSite
-    reachable_from:
-      source_ontology: bioregistry:snomedct
-      source_nodes:
-      - snomedct:442083009
-      relationship_types:
-      - rdfs:subClassOf
-      is_direct: false
-      include_self: false
+  EnumSiteExamples:
+    name: EnumSiteExamples
+    definition_uri: https://includedcc.org/common-access-model/EnumSiteExamples/EnumSiteExamples
+    description: Example locations of specimen collection. Full list of options can
+      be found below snomedct:442083009 .
+    from_schema: https://includedcc.org/common-access-model/EnumSiteExamples
+    permissible_values:
+      snomedct:78277001:
+        text: snomedct:78277001
+        meaning: snomedct:78277001
+        title: Temporal lobe structure
+      snomedct:5798000:
+        text: snomedct:5798000
+        meaning: snomedct:5798000
+        title: Diaphragm structure
+      snomedct:71341001:
+        text: snomedct:71341001
+        meaning: snomedct:71341001
+        title: Bone structure of femur
   EnumSpatialQualifiers:
     name: EnumSpatialQualifiers
     definition_uri: https://includedcc.org/common-access-model/EnumSpatialQualifiers/EnumSpatialQualifiers
@@ -29287,7 +29293,7 @@ slots:
     range: Concept
     any_of:
     - range: Concept
-    - range: EnumSite
+    - range: EnumSiteExamples
   spatial_qualifier:
     name: spatial_qualifier
     definition_uri: https://includedcc.org/common-access-model/spatial_qualifier
@@ -30860,7 +30866,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-09-08T17:40:24'
-source_file_size: 34152
-generation_date: '2026-09-08T17:40:38'
+source_file_date: '2026-09-08T21:21:11'
+source_file_size: 34168
+generation_date: '2026-09-08T21:21:24'
 
