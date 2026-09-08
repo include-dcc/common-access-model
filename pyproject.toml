@@ -1,5 +1,7 @@
 [build-system]
-requires = ["hatchling", "uv-dynamic-versioning"]
+requires = ["hatchling",
+  "the-caddie",
+  "uv-dynamic-versioning"]
 build-backend = "hatchling.build"
 
 [project]
@@ -11,12 +13,16 @@ authors = [
 license = "MIT"
 license-files = ["LICENSE"]
 readme = "README.md"
-requires-python = ">=3.9,<3.14"
+requires-python = ">=3.12,<4.0"
 dynamic = ["version"]
 
 dependencies = [
-  "linkml>=1.9.6",
-  "linkml-runtime >=1.9.4",
+  "hatchling>=1.32.0",
+  "linkml>=1.11.0",
+  "linkml-runtime>=1.11.0",
+  "the-caddie",
+  "term-weaver",
+  "mkdocs-pymdownx-material-extras>=2.8",
 ]
 
 [dependency-groups]
@@ -28,7 +34,8 @@ dev = [
     "mknotebooks>= 0.8.0",
     "hatchling>=1.27.0",
     "tomli>=2.0.0",
-    "ftd-dd",
+    "the-caddie",
+    "term-weaver"
 ]
 
 # See https://hatch.pypa.io/latest/config/build/#file-selection for how to
@@ -41,6 +48,7 @@ source = "uv-dynamic-versioning"
 [tool.uv-dynamic-versioning]
 vcs = "git"
 style = "pep440"
+pattern = "^v?(?P<base>\\d+\\.\\d+\\.\\d+)"
 fallback-version = "0.0.0"
 
 [tool.hatch.build.targets.sdist]
@@ -50,13 +58,13 @@ exclude = [
   "scratch"
 ]
 include = [
+  "src/common_access_model/schema/",
   "project/sqlalchemy/",
   "scripts/",
 ]
 
-# Release the SQL Alchemy files
-[tool.hatch.build.hooks.custom]
-path = "scripts/hatch_build.py"
+# Activate the hook
+[tool.hatch.build.targets.wheel.hooks.caddie-sqla]
 
 
 # Ref.: https://docs.pytest.org/en/stable/reference/reference.html#configuration-options
@@ -91,5 +99,8 @@ extend-exclude = [
   "src/common_access_model/datamodel/common_access_model.py",
 ]
 
+
 [tool.uv.sources]
-ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
+#ftd-dd = { git = "https://github.com/carrollaboratory/ftd-dd" }
+term-weaver = { git = "https://github.com/include-dcc/term-weaver" }
+the-caddie = { git = "https://github.com/carrollaboratory/the-caddie" }

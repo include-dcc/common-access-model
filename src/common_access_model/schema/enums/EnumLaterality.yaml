@@ -12,5 +12,27 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
- 
-
+    permissible_values:
+      HP:0012832:
+        title: Bilateral
+        description: Being present on both sides of the body.
+        meaning: HP:0012832
+      HP:0012833:
+        title: Unilateral
+        description: Being present on only the left or only the right side of the
+          body.
+        meaning: HP:0012833
+      HP:0012834:
+        title: Right
+        description: Being located on the right side of the body.
+        meaning: HP:0012834
+      HP:0012835:
+        title: Left
+        description: Being located on the left side of the body.
+        meaning: HP:0012835
+      HP:4000152:
+        title: Alternating laterality
+        description: Occurring on the left and right in succession. This term can
+          refer to alternating sides of the body (e.g., Alternating hemiplegia) or
+          alternative sides of the visual field (e.g., some migraine auras).
+        meaning: HP:4000152

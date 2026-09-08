@@ -1,8 +1,9 @@
+---
 id: https://includedcc.org/common-access-model/EnumSampleCollectionMethod
 name: EnumSampleCollectionMethod
 enums:
   EnumSampleCollectionMethod:
-    description: The approach used to collect the biospecimen. 
+    description: The approach used to collect the biospecimen.
     reachable_from:
       source_ontology: bioregistry:snomedct
       source_nodes:
@@ -11,3 +12,415 @@ enums:
       is_direct: false
       relationship_types:
         - rdfs:subClassOf
+    permissible_values:
+      snomedct:1048003:
+        title: Capillary specimen collection
+        meaning: snomedct:1048003
+      snomedct:113031002:
+        title: Urine specimen collection, 2 hours
+        meaning: snomedct:113031002
+      snomedct:115985003:
+        title: Sweat collection by iontophoresis procedure
+        meaning: snomedct:115985003
+      snomedct:1202027002:
+        title: Collection of esophageal cells via swallowable cell collection sponge
+          in capsule (procedure)
+        meaning: snomedct:1202027002
+      snomedct:1230332003:
+        title: Collection of blood from umbilical cord immediately after delivery
+        meaning: snomedct:1230332003
+      snomedct:1255865009:
+        title: Aspiration of seminal fluid from seminal vesicle using ultrasonographic
+          guidance (procedure)
+        meaning: snomedct:1255865009
+      snomedct:1285339005:
+        title: Aspiration of seminal fluid from testis
+        meaning: snomedct:1285339005
+      snomedct:1359755003:
+        title: Taking eye swab
+        meaning: snomedct:1359755003
+      snomedct:13677008:
+        title: Urine specimen collection, closed drainage
+        meaning: snomedct:13677008
+      snomedct:16631761000119104:
+        title: Collection of blood via implanted venous access device
+        meaning: snomedct:16631761000119104
+      snomedct:174653005:
+        title: Endoscopic retrograde pancreatography with collection of pancreatic
+          juice
+        meaning: snomedct:174653005
+      snomedct:19867003:
+        title: Collection of sputum, Lukens tube
+        meaning: snomedct:19867003
+      snomedct:21217000:
+        title: Collection of pinworm specimen
+        meaning: snomedct:21217000
+      snomedct:225098009:
+        title: Collection of sample of saliva
+        meaning: snomedct:225098009
+      snomedct:225105004:
+        title: Collection of stool specimen
+        meaning: snomedct:225105004
+      snomedct:225109005:
+        title: Collection of nephrostomy urine specimen
+        meaning: snomedct:225109005
+      snomedct:225110000:
+        title: Collection of ureterostomy urine specimen
+        meaning: snomedct:225110000
+      snomedct:225111001:
+        title: Collection of early morning urine specimen
+        meaning: snomedct:225111001
+      snomedct:225112008:
+        title: Overnight collection of urine
+        meaning: snomedct:225112008
+      snomedct:225113003:
+        title: Timed urine collection
+        meaning: snomedct:225113003
+      snomedct:225271002:
+        title: Collection of mid-stream specimen of urine
+        meaning: snomedct:225271002
+      snomedct:225709000:
+        title: Taking cough swab
+        meaning: snomedct:225709000
+      snomedct:225711009:
+        title: Collection of nasal pharyngeal aspirate
+        meaning: snomedct:225711009
+      snomedct:225997002:
+        title: Taking wound swab
+        meaning: snomedct:225997002
+      snomedct:23248003:
+        title: Taking swab for microbiology
+        meaning: snomedct:23248003
+      snomedct:235488002:
+        title: Collection of pancreatic juice
+        meaning: snomedct:235488002
+      snomedct:235569007:
+        title: Collection of bile
+        meaning: snomedct:235569007
+      snomedct:236363003:
+        title: Semen aspiration
+        meaning: snomedct:236363003
+      snomedct:236364009:
+        title: Micro-epididymal spermatozoa aspiration
+        meaning: snomedct:236364009
+      snomedct:243772004:
+        title: Thumb-prick sampling
+        meaning: snomedct:243772004
+      snomedct:243776001:
+        title: Blood sampling from extracorporeal blood circuit
+        meaning: snomedct:243776001
+      snomedct:243777005:
+        title: Blood sampling from hemodialysis circuit (procedure)
+        meaning: snomedct:243777005
+      snomedct:243778000:
+        title: Arterial port blood sampling during hemodialysis (procedure)
+        meaning: snomedct:243778000
+      snomedct:243779008:
+        title: Venous port blood sampling during hemodialysis (procedure)
+        meaning: snomedct:243779008
+      snomedct:243780006:
+        title: Blood sampling from cardiopulmonary bypass circuit
+        meaning: snomedct:243780006
+      snomedct:243781005:
+        title: Blood sampling from ECMO circuit
+        meaning: snomedct:243781005
+      snomedct:24469009:
+        title: Collection of routine urine specimen for laboratory
+        meaning: snomedct:24469009
+      snomedct:2475000:
+        title: Urine specimen collection, 24 hours
+        meaning: snomedct:2475000
+      snomedct:276907003:
+        title: Percutaneous aspiration of spermatozoa
+        meaning: snomedct:276907003
+      snomedct:278450005:
+        title: Finger stick
+        meaning: snomedct:278450005
+      snomedct:285570007:
+        title: Taking of swab
+        meaning: snomedct:285570007
+      snomedct:285586000:
+        title: Taking swab for Chlamydia test
+        meaning: snomedct:285586000
+      snomedct:285589007:
+        title: Endocervical swab
+        meaning: snomedct:285589007
+      snomedct:301805004:
+        title: Taking high vaginal swab
+        meaning: snomedct:301805004
+      snomedct:301874004:
+        title: Taking vaginal swab
+        meaning: snomedct:301874004
+      snomedct:304991003:
+        title: Take mouth swab
+        meaning: snomedct:304991003
+      snomedct:310216004:
+        title: Collection of sample from mouth
+        meaning: snomedct:310216004
+      snomedct:310217008:
+        title: Collection of gingival crevicular fluid sample
+        meaning: snomedct:310217008
+      snomedct:312645003:
+        title: Percutaneous epididymal aspiration of spermatozoa
+        meaning: snomedct:312645003
+      snomedct:312855001:
+        title: Taking conjunctival swab
+        meaning: snomedct:312855001
+      snomedct:312873003:
+        title: Taking vulval swab
+        meaning: snomedct:312873003
+      snomedct:312874009:
+        title: Taking penile swab
+        meaning: snomedct:312874009
+      snomedct:312875005:
+        title: Taking cervical swab
+        meaning: snomedct:312875005
+      snomedct:312876006:
+        title: Taking urethral swab
+        meaning: snomedct:312876006
+      snomedct:312877002:
+        title: Taking low vaginal swab
+        meaning: snomedct:312877002
+      snomedct:312878007:
+        title: Taking postnasal swab
+        meaning: snomedct:312878007
+      snomedct:312879004:
+        title: Taking ear swab
+        meaning: snomedct:312879004
+      snomedct:312880001:
+        title: Taking throat swab
+        meaning: snomedct:312880001
+      snomedct:312881002:
+        title: Taking skin swab
+        meaning: snomedct:312881002
+      snomedct:312882009:
+        title: Taking nasal swab
+        meaning: snomedct:312882009
+      snomedct:313273004:
+        title: Taking swab for Bordetella pertussis test
+        meaning: snomedct:313273004
+      snomedct:313274005:
+        title: Taking swab for Respiratory syncytial virus test
+        meaning: snomedct:313274005
+      snomedct:31507001:
+        title: Specimen collection for microbiology
+        meaning: snomedct:31507001
+      snomedct:32564009:
+        title: Arterial specimen collection for laboratory test
+        meaning: snomedct:32564009
+      snomedct:34532003:
+        title: Semen specimen collection
+        meaning: snomedct:34532003
+      snomedct:37020001:
+        title: Collection of urine and strain for calculus
+        meaning: snomedct:37020001
+      snomedct:37705003:
+        title: Collection of sputum
+        meaning: snomedct:37705003
+      snomedct:386087005:
+        title: Collection of aspirated sputum
+        meaning: snomedct:386087005
+      snomedct:386088000:
+        title: Collection of induced sputum
+        meaning: snomedct:386088000
+      snomedct:386089008:
+        title: Collection of coughed sputum
+        meaning: snomedct:386089008
+      snomedct:386099003:
+        title: Spot urine procedure
+        meaning: snomedct:386099003
+      snomedct:390784004:
+        title: Taking endocervical swab for Chlamydia test
+        meaning: snomedct:390784004
+      snomedct:390785003:
+        title: Taking urethral swab for Chlamydia test
+        meaning: snomedct:390785003
+      snomedct:400993006:
+        title: Taking cervical swab for Neisseria gonorrhoeae test
+        meaning: snomedct:400993006
+      snomedct:400994000:
+        title: Taking swab for Neisseria gonorrhoeae test
+        meaning: snomedct:400994000
+      snomedct:401002001:
+        title: Taking urethral swab for Neisseria gonorrhoeae test
+        meaning: snomedct:401002001
+      snomedct:40597003:
+        title: Urine specimen collection, 12 hours
+        meaning: snomedct:40597003
+      snomedct:406173008:
+        title: 'Phlebotomy: cannulated vessel'
+        meaning: snomedct:406173008
+      snomedct:418622002:
+        title: Taking oral swab
+        meaning: snomedct:418622002
+      snomedct:42311007:
+        title: Radial artery puncture for laboratory test
+        meaning: snomedct:42311007
+      snomedct:427133003:
+        title: Endoscopic retrograde cholangiopancreatography with collection of bile
+        meaning: snomedct:427133003
+      snomedct:439599008:
+        title: Collection of specimen by device
+        meaning: snomedct:439599008
+      snomedct:441136006:
+        title: Collection of specimen by glass slide
+        meaning: snomedct:441136006
+      snomedct:441266008:
+        title: Specimen collection by endometrial suction curette
+        meaning: snomedct:441266008
+      snomedct:441378005:
+        title: Collection of specimen by culture plate
+        meaning: snomedct:441378005
+      snomedct:444171005:
+        title: Collection of biliary drainage by gravity
+        meaning: snomedct:444171005
+      snomedct:446232000:
+        title: Collection of bile via biliary T-tube
+        meaning: snomedct:446232000
+      snomedct:446775007:
+        title: Collection of urine via indwelling urinary catheter
+        meaning: snomedct:446775007
+      snomedct:44733008:
+        title: Collection of string test
+        meaning: snomedct:44733008
+      snomedct:450874000:
+        title: Collection of first stream urine specimen
+        meaning: snomedct:450874000
+      snomedct:45240002:
+        title: Ear lobe stick
+        meaning: snomedct:45240002
+      snomedct:472859009:
+        title: Taking anal swab for Chlamydia test
+        meaning: snomedct:472859009
+      snomedct:472860004:
+        title: Taking anal swab for gonorrhea (procedure)
+        meaning: snomedct:472860004
+      snomedct:472917009:
+        title: Collection of device for submission as specimen
+        meaning: snomedct:472917009
+      snomedct:473363001:
+        title: Taking of culture from cervix
+        meaning: snomedct:473363001
+      snomedct:50576009:
+        title: Specimen collection by drainage
+        meaning: snomedct:50576009
+      snomedct:50753008:
+        title: Brachial artery puncture for laboratory test
+        meaning: snomedct:50753008
+      snomedct:57617002:
+        title: Urine specimen collection
+        meaning: snomedct:57617002
+      snomedct:58088002:
+        title: Urine specimen collection via suprapubic approach
+        meaning: snomedct:58088002
+      snomedct:64860001:
+        title: Collection of sweat test
+        meaning: snomedct:64860001
+      snomedct:66904006:
+        title: Collection of expired gas, quantitative
+        meaning: snomedct:66904006
+      snomedct:698007008:
+        title: Collection of early morning mid stream specimen of urine by clean catch
+        meaning: snomedct:698007008
+      snomedct:698086002:
+        title: Collection of urine via pediatric urine collection bag (procedure)
+        meaning: snomedct:698086002
+      snomedct:698087006:
+        title: Collection of urine via indwelling suprapubic catheter
+        meaning: snomedct:698087006
+      snomedct:699873000:
+        title: Collection of blood via arterial catheter
+        meaning: snomedct:699873000
+      snomedct:70347009:
+        title: Collection of specimen for culture by laboratory
+        meaning: snomedct:70347009
+      snomedct:705084002:
+        title: Collection of fluid specimen via closed suction drain
+        meaning: snomedct:705084002
+      snomedct:705156009:
+        title: Collection of urine via straight catheter
+        meaning: snomedct:705156009
+      snomedct:705172001:
+        title: Collection of cystostomy tube urine specimen
+        meaning: snomedct:705172001
+      snomedct:707982002:
+        title: Taking throat swab for Chlamydia test
+        meaning: snomedct:707982002
+      snomedct:707983007:
+        title: Taking throat swab for gonorrhea (procedure)
+        meaning: snomedct:707983007
+      snomedct:708015008:
+        title: Plucking of hair for microscopy and culture
+        meaning: snomedct:708015008
+      snomedct:709500005:
+        title: Collection of specimen by cough culture plate
+        meaning: snomedct:709500005
+      snomedct:71197008:
+        title: Femoral artery puncture for laboratory test
+        meaning: snomedct:71197008
+      snomedct:713143008:
+        title: Collection of arterial blood specimen
+        meaning: snomedct:713143008
+      snomedct:720450003:
+        title: Preoperative urine specimen collection
+        meaning: snomedct:720450003
+      snomedct:722501003:
+        title: Postoperative urine specimen collection
+        meaning: snomedct:722501003
+      snomedct:732218007:
+        title: Urine specimen collection, 8 hours
+        meaning: snomedct:732218007
+      snomedct:732221009:
+        title: Urine specimen collection, 48 hours
+        meaning: snomedct:732221009
+      snomedct:732223007:
+        title: Urine specimen collection, 72 hours
+        meaning: snomedct:732223007
+      snomedct:732224001:
+        title: Timed stool collection
+        meaning: snomedct:732224001
+      snomedct:732228003:
+        title: Stool specimen collection, 24 hours
+        meaning: snomedct:732228003
+      snomedct:732292007:
+        title: Stool specimen collection, 48 hours
+        meaning: snomedct:732292007
+      snomedct:733478009:
+        title: Collection of specimen by adhesive slide
+        meaning: snomedct:733478009
+      snomedct:733481004:
+        title: Collection of second void urine specimen
+        meaning: snomedct:733481004
+      snomedct:73416001:
+        title: Urine specimen collection, clean catch
+        meaning: snomedct:73416001
+      snomedct:738796001:
+        title: Collection of dried blood spot specimen
+        meaning: snomedct:738796001
+      snomedct:764928002:
+        title: Collection of fluid specimen
+        meaning: snomedct:764928002
+      snomedct:764929005:
+        title: Collection of exhaled breath specimen
+        meaning: snomedct:764929005
+      snomedct:768966009:
+        title: Collection of device tip
+        meaning: snomedct:768966009
+      snomedct:769401004:
+        title: Collection of body fluid from surgical drain
+        meaning: snomedct:769401004
+      snomedct:77262006:
+        title: Heel stick
+        meaning: snomedct:77262006
+      snomedct:82078001:
+        title: Collection of blood specimen for laboratory
+        meaning: snomedct:82078001
+      snomedct:83917009:
+        title: Specimen collection for microbiology, anaerobic
+        meaning: snomedct:83917009
+      snomedct:840566006:
+        title: Specimen collection for biobank
+        meaning: snomedct:840566006
+      snomedct:86326008:
+        title: Collection of sweat test, pediatric overnight (procedure)
+        meaning: snomedct:86326008
