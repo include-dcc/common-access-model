@@ -1068,7 +1068,7 @@ slots:
     range: Concept
     any_of:
       - range: Concept
-      - range: EnumSampleCollectionMethod
+      - range: EnumSiteExamples
   spatial_qualifier:
     title: Spatial Qualifier
     description: Qualifier that further refine the specific location of
@@ -1076,7 +1076,7 @@ slots:
     range: Concept
     any_of:
       - range: Concept
-      - range: EnumSiteExamples
+      - range: EnumSpatialQualifiers
   laterality:
     title: Location Laterality
     description: Laterality that further refine the specific location of
