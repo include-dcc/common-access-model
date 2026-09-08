@@ -1,0 +1,16 @@
+---
+id: https://includedcc.org/common-access-model/EnumSiteExamples
+name: EnumSiteExamples
+enums:
+  EnumSiteExamples:
+    description: Example locations of specimen collection. Full list of options can be found below snomedct:442083009 .
+    permissible_values:
+      snomedct:78277001:
+        title: Temporal lobe structure
+        meaning: snomedct:78277001
+      snomedct:5798000:
+        title: Diaphragm structure
+        meaning: snomedct:5798000
+      snomedct:71341001:
+        title: Bone structure of femur
+        meaning: snomedct:71341001

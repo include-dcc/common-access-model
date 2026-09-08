@@ -55,7 +55,7 @@ imports:
 - enums/EnumResearchDomain
 - enums/EnumSampleCollectionMethod
 - enums/EnumSex
-- enums/EnumSite
+- enums/EnumSiteExamples
 - enums/EnumSpatialQualifiers
 - enums/EnumStudyDesign
 - enums/EnumSubjectType
@@ -1069,7 +1069,7 @@ slots:
     range: Concept
     any_of:
       - range: Concept
-      - range: EnumSite
+      - range: EnumSiteExamples
   spatial_qualifier:
     title: Spatial Qualifier
     description: Qualifier that further refine the specific location of
