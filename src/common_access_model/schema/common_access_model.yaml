@@ -407,6 +407,13 @@ classes:
       - display
       - display_type
       - language
+  DeprecatedConcept:
+    title: Deprecated Concept
+    description: Identifies concepts that are not currently valid.
+    slots:
+      - concept_curie
+      - deprecation_type
+      - replacement_curie
   Vocabulary:
     description: Flat table containing each of the ontologies used for dataset annotations
     slots:
@@ -1012,6 +1019,14 @@ slots:
   display_type:
     title: Display Type
     description: The type of display name, eg, "Preferred".
+    range: string
+  deprecation_type:
+    title: Deprecation Type
+    description: The type of or reason for deprecation, if known.
+    range: string
+  replacement_curie:
+    title: Replacement CURIE
+    description: A replacement curie for this deprecated concept, if applicable.
     range: string
   language:
     title: Language
