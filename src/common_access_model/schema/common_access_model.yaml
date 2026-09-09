@@ -389,9 +389,9 @@ classes:
     description: A standardized concept with display information.
     slots:
       - concept_curie
-      - vocabulary_id
+      - concept_id
+      - vocabulary_prefix
       - concept_code
-      - omop_concept_id
       - display
       - definition
     slot_usage:
@@ -399,22 +399,41 @@ classes:
         required: true
         identifier: true
         range: uriorcurie
+  Synonym:
+    title: Concept Synonym
+    description: Alternate display names for concepts.
+    slots:
+      - concept_curie
+      - display
+      - display_type
+      - language
   Vocabulary:
     description: Flat table containing each of the ontologies used for dataset annotations
     slots:
-      - vocabulary_id
+      - vocabulary_prefix
       - name
       - vocabulary_uri
+      - vocabulary_id
       - fhir_system
-      - prefix
       - description
       - version
       - vocabulary_source 
     slot_usage:
-      vocabulary_id:
+      vocabulary_prefix:
         identifier: true
         range: string
-
+        pattern: "^[A-Za-z][A-Za-z0-9_\\-\\.]*$"
+        comments:
+          - "Must start with a letter; thereafter allows letters, digits, underscores, hyphens, and dots to accommodate OLS/UMLS source variability."
+          - "RISK: In order for all of our data to correctly join, the format of the prefix must always align with the prefix used in this table."
+        todos:
+          - "Ensure that MapDragon and TermWeaver both rely on the same rules for prefixes"
+  ConceptRelationship:
+    description: Relationships between two terms.
+    slots:
+      - concept_curie
+      - target_concept_curie
+      - relationship_curie
   Sample:
     title: Sample
     description: A functionally equivalent specimen taken from a participant or processed from such a sample.
@@ -990,12 +1009,20 @@ slots:
     title: Display String
     description: The friendly display string of the coded term.
     range: string
+  display_type:
+    title: Display Type
+    description: The type of display name, eg, "Preferred".
+    range: string
+  language:
+    title: Language
+    description: The ISO 639 language code of this entity.
+    range: string
   concept_code:
     title: Concept Code
     description: Identifier as it is defined within the ontology
     required: true
     range: string
-  omop_concept_id:
+  concept_id:
     title: OMOP Concept ID
     description: The OMOP Concept ID for the term, if applicable
     range: integer
@@ -1004,10 +1031,9 @@ slots:
     description: Detailed definition or description for the term
     range: string
   vocabulary_id:
-    title: Vocabulary ID
-    description: The ID associated with the vocabulary or ontology inside the warehouse
-    required: true
-    range: Vocabulary
+    title: OMOP Vocabulary ID
+    description: The OMOP Vocabulary ID associated with the vocabulary, if applicable
+    range: string
   vocabulary_uri:
     title: Vocabulary URI
     description: Official URI associated with the vocabulary
@@ -1018,16 +1044,10 @@ slots:
     description: System used within FHIR valuesets and codings
     required: true
     range: uri
-  prefix:
+  vocabulary_prefix:
     title: Canonical Curie Prefix
     description: The authoritative namespace prefix allocated to the vocabulary. Used to resolve compact identifiers (CURIEs) to their full semantic URIs or FHIR system URLs.
-    range: string
-    pattern: "^[A-Za-z][A-Za-z0-9_\\-\\.]*$"
-    comments:
-      - "Must start with a letter; thereafter allows letters, digits, underscores, hyphens, and dots to accommodate OLS/UMLS source variability."
-      - "RISK: In order for all of our data to correctly join, the format of the prefix must always align with the prefix used in this table."
-    todos:
-      - "Ensure that MapDragon and TermWeaver both rely on the same rules for prefixes"
+    range: Vocabulary
   version:
     title: Version
     description: Version associated with the current vocabulary content
@@ -1038,6 +1058,14 @@ slots:
     range: string
     comments:
       - "This is currently poorly defined because we haven't fully defined the nature of the data pulls. Most likely it will end up as a filename (.owl, .obo, etc) or another tool, etc"
+  target_concept_curie:
+    title: Target Concept ID
+    description: The concept to which this term relates
+    range: Concept
+  relationship_curie:
+    title: Mapping Relationship
+    description: The relationship between the subject (this term) and the object (target_concept_id).
+    range: uriorcurie
   concept_source:
     title: Concept Source Text
     description: The source text yielding the standardized concept.

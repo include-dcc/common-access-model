@@ -1,7 +1,6 @@
-vocabulary_id: test
+vocabulary_prefix: test_concept
 name: Test Vocabulary
 vocabulary_uri: https://github.com/include-dcc/common-access-model/blob/main/tests/data/valid/Vocabulary-000.yaml
 fhir_system: https://github.com/include-dcc/common-access-model/blob/main/tests/data/valid/Vocabulary-000.yaml
-prefix: test_concept
 version: '0.1'
 vocabulary_source: https://github.com/include-dcc/common-access-model/blob/main/tests/data/valid/Vocabulary-000.yaml
