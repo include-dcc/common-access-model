@@ -50,6 +50,7 @@ share/python-wheels/
 .installed.cfg
 *.egg
 MANIFEST
+common_access_model/common_access_model.py
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
