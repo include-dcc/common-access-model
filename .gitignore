@@ -2,6 +2,9 @@
 .bash_history_local
 .envrc
 
+# Log from concept expansion
+/output/log.txt
+
 # generated part of documentation
 /docs/elements/*.md
 /docs/schema/*.yaml
