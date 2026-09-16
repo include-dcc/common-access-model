@@ -243,8 +243,15 @@ BiospecimenCollection {
     uriorcurieList external_id  
 }
 Concept {
+    string concept_code  
     uriorcurie concept_curie  
+    integer concept_id  
+    string definition  
     string display  
+}
+ConceptRelationship {
+    uriorcurie concept_curie  
+    uriorcurie relationship_curie  
 }
 DOI {
     string bibliographic_reference  
@@ -262,6 +269,11 @@ Demographics {
     integer age_at_first_engagement  
     integer age_at_last_vital_status  
     uriorcurieList external_id  
+}
+DeprecatedConcept {
+    uriorcurie concept_curie  
+    string deprecation_type  
+    string replacement_curie  
 }
 Encounter {
     integer age_at_event  
@@ -371,6 +383,12 @@ SubjectAssertion {
     string value_unit_source  
     uriorcurieList external_id  
 }
+Synonym {
+    uriorcurie concept_curie  
+    string display  
+    string display_type  
+    string language  
+}
 VirtualBiorepository {
     string name  
     string institution  
@@ -378,6 +396,16 @@ VirtualBiorepository {
     string vbr_readme  
     uri website  
     uriorcurieList external_id  
+}
+Vocabulary {
+    string name  
+    string description  
+    uri fhir_system  
+    string version  
+    string vocabulary_id  
+    string vocabulary_prefix  
+    string vocabulary_source  
+    uri vocabulary_uri  
 }
 
 ActivityDefinition ||--|o AccessPolicy : "access_policy_id"
@@ -396,6 +424,8 @@ BiospecimenCollection ||--|o AccessPolicy : "access_policy_id"
 BiospecimenCollection ||--|o Concept : "laterality, site, spatial_qualifier"
 BiospecimenCollection ||--|o Encounter : "encounter_id"
 BiospecimenCollection ||--|o Study : "study_id"
+Concept ||--|o Vocabulary : "vocabulary_prefix"
+ConceptRelationship ||--|o Concept : "target_concept_curie"
 DOI ||--|o AccessPolicy : "access_policy_id"
 DOI ||--|o Study : "study_id"
 Dataset ||--|o DOI : "do_id"

@@ -5,10 +5,10 @@
 <head>
 <meta charset="utf-8"/>
 <meta content="width=device-width,initial-scale=1" name="viewport"/>
-<link href="https://include-dcc.github.io/common-access-model/elements/Concept/" rel="canonical"/>
+<link href="https://include-dcc.github.io/common-access-model/elements/ConceptRelationship/" rel="canonical"/>
 <link href="../../assets/images/favicon.png" rel="icon"/>
 <meta content="mkdocs-1.6.1, mkdocs-material-9.7.7" name="generator"/>
-<title>Class: Concept (Concept) - common-access-model</title>
+<title>Class: ConceptRelationship - common-access-model</title>
 <link href="../../assets/stylesheets/main.ec1eaa64.min.css" rel="stylesheet"/>
 <link href="../../assets/stylesheets/palette.ab4e12ef.min.css" rel="stylesheet"/>
 <script src="../../assets/pymdownx-extras/material-extra-theme-2ek1P7jT.js" type="text/javascript"></script>
@@ -27,7 +27,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#class-concept-concept">
+<a class="md-skip" href="#class-conceptrelationship">
           Skip to content
         </a>
 </div>
@@ -51,7 +51,7 @@
 <div class="md-header__topic" data-md-component="header-topic">
 <span class="md-ellipsis">
             
-              Class: Concept (Concept)
+              Class: ConceptRelationship
             
           </span>
 </div>
@@ -212,15 +212,6 @@
 </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#usages">
-<span class="md-ellipsis">
-      
-        Usages
-      
-    </span>
-</a>
-</li>
-<li class="md-nav__item">
 <a class="md-nav__link" href="#identifier-and-mapping-information">
 <span class="md-ellipsis">
       
@@ -289,31 +280,25 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="class-concept-concept">Class: Concept (Concept)</h1>
-<p><em>A standardized concept with display information.</em></p>
+<h1 id="class-conceptrelationship">Class: ConceptRelationship</h1>
+<p><em>Relationships between two terms.</em></p>
 <div>
-<p>URI: <a href="https://includedcc.org/common-access-model/Concept">cam:Concept</a></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/ConceptRelationship">cam:ConceptRelationship</a></p>
 <pre class="mermaid"><code> classDiagram
-    class Concept
-    click Concept href "../Concept/"
-      Concept : concept_code
+    class ConceptRelationship
+    click ConceptRelationship href "../ConceptRelationship/"
+      ConceptRelationship : concept_curie
 
-      Concept : concept_curie
+      ConceptRelationship : relationship_curie
 
-      Concept : concept_id
-
-      Concept : definition
-
-      Concept : display
-
-      Concept : vocabulary_prefix
+      ConceptRelationship : target_concept_curie
 
 
 
 
 
-        Concept --&gt; "0..1" Vocabulary : vocabulary_prefix
-        click Vocabulary href "../Vocabulary/"
+        ConceptRelationship --&gt; "0..1" Concept : target_concept_curie
+        click Concept href "../Concept/"
 
 
 
@@ -332,232 +317,21 @@
 <tbody>
 <tr>
 <td><a href="../concept_curie/">concept_curie</a></td>
-<td>1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
 <td>The standardized curie for the term</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../concept_id/">concept_id</a></td>
-<td>0..1 <br/> <a href="../Integer/">Integer</a></td>
-<td>The OMOP Concept ID for the term, if applicable</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../vocabulary_prefix/">vocabulary_prefix</a></td>
-<td>0..1 <br/> <a href="../Vocabulary/">Vocabulary</a></td>
-<td>The authoritative namespace prefix allocated to the vocabulary</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../concept_code/">concept_code</a></td>
-<td>1 <br/> <a href="../String/">String</a></td>
-<td>Identifier as it is defined within the ontology</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../display/">display</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>The friendly display string of the coded term</td>
-<td>direct</td>
-</tr>
-<tr>
-<td><a href="../definition/">definition</a></td>
-<td>0..1 <br/> <a href="../String/">String</a></td>
-<td>Detailed definition or description for the term</td>
-<td>direct</td>
-</tr>
-</tbody>
-</table>
-<h2 id="usages">Usages</h2>
-<table>
-<thead>
-<tr>
-<th>used by</th>
-<th>used in</th>
-<th>type</th>
-<th>used</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../study_design/">study_design</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../study_design/">study_design</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../data_category/">data_category</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../data_category/">data_category</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../research_domain/">research_domain</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td><a href="../research_domain/">research_domain</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Subject/">Subject</a></td>
-<td><a href="../subject_type/">subject_type</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td><a href="../sex/">sex</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td><a href="../race/">race</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td><a href="../ethnicity/">ethnicity</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td><a href="../vital_status/">vital_status</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td><a href="../relation/">relation</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyMembership/">FamilyMembership</a></td>
-<td><a href="../family_role/">family_role</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../FamilyMembership/">FamilyMembership</a></td>
-<td><a href="../family_role/">family_role</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td><a href="../concept/">concept</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td><a href="../value_concept/">value_concept</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td><a href="../value_concept/">value_concept</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td><a href="../value_unit/">value_unit</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../ConceptRelationship/">ConceptRelationship</a></td>
 <td><a href="../target_concept_curie/">target_concept_curie</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
+<td>The concept to which this term relates</td>
+<td>direct</td>
 </tr>
 <tr>
-<td><a href="../Sample/">Sample</a></td>
-<td><a href="../quantity_unit/">quantity_unit</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../site/">site</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../site/">site</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../spatial_qualifier/">spatial_qualifier</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../spatial_qualifier/">spatial_qualifier</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../laterality/">laterality</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td><a href="../laterality/">laterality</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td><a href="../quantity_unit/">quantity_unit</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td><a href="../concentration_unit/">concentration_unit</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td><a href="../data_category/">data_category</a></td>
-<td>range</td>
-<td><a href="./">Concept</a></td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td><a href="../data_category/">data_category</a></td>
-<td>any_of[range]</td>
-<td><a href="./">Concept</a></td>
+<td><a href="../relationship_curie/">relationship_curie</a></td>
+<td>0..1 <br/> <a href="../Uriorcurie/">Uriorcurie</a></td>
+<td>The relationship between the subject (this term) and the object (target_conce...</td>
+<td>direct</td>
 </tr>
 </tbody>
 </table>
@@ -577,11 +351,11 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>cam:Concept</td>
+<td>cam:ConceptRelationship</td>
 </tr>
 <tr>
 <td>native</td>
-<td>cam:Concept</td>
+<td>cam:ConceptRelationship</td>
 </tr>
 </tbody>
 </table>
@@ -589,37 +363,20 @@
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A standardized concept with display information.</span>
-<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Relationships between two terms.</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="nt">slots</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_curie</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_id</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vocabulary_prefix</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_code</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">display</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">definition</span>
-<span class="nt">slot_usage</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">concept_curie</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_curie</span>
-<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">target_concept_curie</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">relationship_curie</span>
 </code></pre></div>
 </details>
 <h3 id="induced">Induced</h3>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">A standardized concept with display information.</span>
-<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Relationships between two terms.</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
-<span class="nt">slot_usage</span><span class="p">:</span>
-<span class="w">  </span><span class="nt">concept_curie</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_curie</span>
-<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="nt">attributes</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">concept_curie</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_curie</span>
@@ -627,70 +384,33 @@
 <span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept Curie</span>
 <span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">identifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
 <span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Synonym</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DeprecatedConcept</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">  </span><span class="nt">concept_id</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_id</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The OMOP Concept ID for the term, if applicable</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">OMOP Concept ID</span>
+<span class="w">  </span><span class="nt">target_concept_curie</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">target_concept_curie</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The concept to which this term relates</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Target Concept ID</span>
 <span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
 <span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">integer</span>
-<span class="w">  </span><span class="nt">vocabulary_prefix</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">vocabulary_prefix</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The authoritative namespace prefix allocated to the vocabulary. Used</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">to resolve compact identifiers (CURIEs) to their full semantic URIs or FHIR</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">system URLs.</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Canonical Curie Prefix</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">  </span><span class="nt">relationship_curie</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">relationship_curie</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The relationship between the subject (this term) and the object (target_concept_id).</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Mapping Relationship</span>
 <span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
 <span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Vocabulary</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Vocabulary</span>
-<span class="w">  </span><span class="nt">concept_code</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">concept_code</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Identifier as it is defined within the ontology</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept Code</span>
-<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
-<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
-<span class="w">  </span><span class="nt">display</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">display</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">The friendly display string of the coded term.</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Display String</span>
-<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
-<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Synonym</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
-<span class="w">  </span><span class="nt">definition</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">definition</span>
-<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Detailed definition or description for the term</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Definition</span>
-<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
-<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
-<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
-<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
-<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">ConceptRelationship</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
 </code></pre></div>
 </details>
 </div>

@@ -28719,6 +28719,7 @@ slots:
     domain_of:
     - VirtualBiorepository
     - Investigator
+    - Vocabulary
     - EncounterDefinition
     - ActivityDefinition
     - Dataset
@@ -29314,9 +29315,12 @@ slots:
     title: Concept Curie
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:concept_curie
-    owner: Concept
+    owner: ConceptRelationship
     domain_of:
     - Concept
+    - Synonym
+    - DeprecatedConcept
+    - ConceptRelationship
     range: uriorcurie
   display:
     name: display
@@ -29325,10 +29329,186 @@ slots:
     title: Display String
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:display
+    owner: Synonym
+    domain_of:
+    - Concept
+    - Synonym
+    range: string
+  display_type:
+    name: display_type
+    definition_uri: https://includedcc.org/common-access-model/display_type
+    description: The type of display name, eg, "Preferred".
+    title: Display Type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:display_type
+    owner: Synonym
+    domain_of:
+    - Synonym
+    range: string
+  deprecation_type:
+    name: deprecation_type
+    definition_uri: https://includedcc.org/common-access-model/deprecation_type
+    description: The type of or reason for deprecation, if known.
+    title: Deprecation Type
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:deprecation_type
+    owner: DeprecatedConcept
+    domain_of:
+    - DeprecatedConcept
+    range: string
+  replacement_curie:
+    name: replacement_curie
+    definition_uri: https://includedcc.org/common-access-model/replacement_curie
+    description: A replacement curie for this deprecated concept, if applicable.
+    title: Replacement CURIE
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:replacement_curie
+    owner: DeprecatedConcept
+    domain_of:
+    - DeprecatedConcept
+    range: string
+  language:
+    name: language
+    definition_uri: https://includedcc.org/common-access-model/language
+    description: The ISO 639 language code of this entity.
+    title: Language
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:language
+    owner: Synonym
+    domain_of:
+    - Synonym
+    range: string
+  concept_code:
+    name: concept_code
+    definition_uri: https://includedcc.org/common-access-model/concept_code
+    description: Identifier as it is defined within the ontology
+    title: Concept Code
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concept_code
     owner: Concept
     domain_of:
     - Concept
     range: string
+    required: true
+  concept_id:
+    name: concept_id
+    definition_uri: https://includedcc.org/common-access-model/concept_id
+    description: The OMOP Concept ID for the term, if applicable
+    title: OMOP Concept ID
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:concept_id
+    owner: Concept
+    domain_of:
+    - Concept
+    range: integer
+  definition:
+    name: definition
+    definition_uri: https://includedcc.org/common-access-model/definition
+    description: Detailed definition or description for the term
+    title: Definition
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:definition
+    owner: Concept
+    domain_of:
+    - Concept
+    range: string
+  vocabulary_id:
+    name: vocabulary_id
+    definition_uri: https://includedcc.org/common-access-model/vocabulary_id
+    description: The OMOP Vocabulary ID associated with the vocabulary, if applicable
+    title: OMOP Vocabulary ID
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vocabulary_id
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    range: string
+  vocabulary_uri:
+    name: vocabulary_uri
+    definition_uri: https://includedcc.org/common-access-model/vocabulary_uri
+    description: Official URI associated with the vocabulary
+    title: Vocabulary URI
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vocabulary_uri
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    range: uri
+    required: true
+  fhir_system:
+    name: fhir_system
+    definition_uri: https://includedcc.org/common-access-model/fhir_system
+    description: System used within FHIR valuesets and codings
+    title: FHIR System
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:fhir_system
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    range: uri
+    required: true
+  vocabulary_prefix:
+    name: vocabulary_prefix
+    definition_uri: https://includedcc.org/common-access-model/vocabulary_prefix
+    description: The authoritative namespace prefix allocated to the vocabulary. Used
+      to resolve compact identifiers (CURIEs) to their full semantic URIs or FHIR
+      system URLs.
+    title: Canonical Curie Prefix
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vocabulary_prefix
+    owner: Vocabulary
+    domain_of:
+    - Concept
+    - Vocabulary
+    range: Vocabulary
+  version:
+    name: version
+    definition_uri: https://includedcc.org/common-access-model/version
+    description: Version associated with the current vocabulary content
+    title: Version
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:version
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    range: string
+  vocabulary_source:
+    name: vocabulary_source
+    definition_uri: https://includedcc.org/common-access-model/vocabulary_source
+    description: Source used for accessing the vocabulary's content
+    title: Vocabulary data source
+    comments:
+    - This is currently poorly defined because we haven't fully defined the nature
+      of the data pulls. Most likely it will end up as a filename (.owl, .obo, etc)
+      or another tool, etc
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:vocabulary_source
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    range: string
+  target_concept_curie:
+    name: target_concept_curie
+    definition_uri: https://includedcc.org/common-access-model/target_concept_curie
+    description: The concept to which this term relates
+    title: Target Concept ID
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:target_concept_curie
+    owner: ConceptRelationship
+    domain_of:
+    - ConceptRelationship
+    range: Concept
+  relationship_curie:
+    name: relationship_curie
+    definition_uri: https://includedcc.org/common-access-model/relationship_curie
+    description: The relationship between the subject (this term) and the object (target_concept_id).
+    title: Mapping Relationship
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:relationship_curie
+    owner: ConceptRelationship
+    domain_of:
+    - ConceptRelationship
+    range: uriorcurie
   concept_source:
     name: concept_source
     definition_uri: https://includedcc.org/common-access-model/concept_source
@@ -29634,6 +29814,7 @@ slots:
     slot_uri: cam:description
     owner: Dataset
     domain_of:
+    - Vocabulary
     - EncounterDefinition
     - ActivityDefinition
     - Dataset
@@ -30194,6 +30375,34 @@ slots:
     usage_slot_name: concept_curie
     range: uriorcurie
     required: true
+  Vocabulary_vocabulary_prefix:
+    name: Vocabulary_vocabulary_prefix
+    definition_uri: https://includedcc.org/common-access-model/vocabulary_prefix
+    description: The authoritative namespace prefix allocated to the vocabulary. Used
+      to resolve compact identifiers (CURIEs) to their full semantic URIs or FHIR
+      system URLs.
+    title: Canonical Curie Prefix
+    todos:
+    - Ensure that MapDragon and TermWeaver both rely on the same rules for prefixes
+    comments:
+    - Must start with a letter; thereafter allows letters, digits, underscores, hyphens,
+      and dots to accommodate OLS/UMLS source variability.
+    - 'RISK: In order for all of our data to correctly join, the format of the prefix
+      must always align with the prefix used in this table.'
+    from_schema: https://includedcc.org/common-access-model
+    is_a: vocabulary_prefix
+    domain: Vocabulary
+    slot_uri: cam:vocabulary_prefix
+    identifier: true
+    alias: vocabulary_prefix
+    owner: Vocabulary
+    domain_of:
+    - Vocabulary
+    is_usage_slot: true
+    usage_slot_name: vocabulary_prefix
+    range: string
+    required: true
+    pattern: ^[A-Za-z][A-Za-z0-9_\-\.]*$
   Sample_sample_id:
     name: Sample_sample_id
     definition_uri: https://includedcc.org/common-access-model/sample_id
@@ -30870,13 +31079,79 @@ classes:
     from_schema: https://includedcc.org/common-access-model
     slots:
     - Concept_concept_curie
+    - concept_id
+    - vocabulary_prefix
+    - concept_code
     - display
+    - definition
     slot_usage:
       concept_curie:
         name: concept_curie
         identifier: true
+        range: uriorcurie
         required: true
     class_uri: cam:Concept
+  Synonym:
+    name: Synonym
+    definition_uri: https://includedcc.org/common-access-model/Synonym
+    description: Alternate display names for concepts.
+    title: Concept Synonym
+    from_schema: https://includedcc.org/common-access-model
+    slots:
+    - concept_curie
+    - display
+    - display_type
+    - language
+    class_uri: cam:Synonym
+  DeprecatedConcept:
+    name: DeprecatedConcept
+    definition_uri: https://includedcc.org/common-access-model/DeprecatedConcept
+    description: Identifies concepts that are not currently valid.
+    title: Deprecated Concept
+    from_schema: https://includedcc.org/common-access-model
+    slots:
+    - concept_curie
+    - deprecation_type
+    - replacement_curie
+    class_uri: cam:DeprecatedConcept
+  Vocabulary:
+    name: Vocabulary
+    definition_uri: https://includedcc.org/common-access-model/Vocabulary
+    description: Flat table containing each of the ontologies used for dataset annotations
+    from_schema: https://includedcc.org/common-access-model
+    slots:
+    - Vocabulary_vocabulary_prefix
+    - name
+    - vocabulary_uri
+    - vocabulary_id
+    - fhir_system
+    - description
+    - version
+    - vocabulary_source
+    slot_usage:
+      vocabulary_prefix:
+        name: vocabulary_prefix
+        todos:
+        - Ensure that MapDragon and TermWeaver both rely on the same rules for prefixes
+        comments:
+        - Must start with a letter; thereafter allows letters, digits, underscores,
+          hyphens, and dots to accommodate OLS/UMLS source variability.
+        - 'RISK: In order for all of our data to correctly join, the format of the
+          prefix must always align with the prefix used in this table.'
+        identifier: true
+        range: string
+        pattern: ^[A-Za-z][A-Za-z0-9_\-\.]*$
+    class_uri: cam:Vocabulary
+  ConceptRelationship:
+    name: ConceptRelationship
+    definition_uri: https://includedcc.org/common-access-model/ConceptRelationship
+    description: Relationships between two terms.
+    from_schema: https://includedcc.org/common-access-model
+    slots:
+    - concept_curie
+    - target_concept_curie
+    - relationship_curie
+    class_uri: cam:ConceptRelationship
   Sample:
     name: Sample
     definition_uri: https://includedcc.org/common-access-model/Sample
@@ -31154,7 +31429,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-09-14T15:56:45'
-source_file_size: 34168
-generation_date: '2026-09-14T15:57:03'
+source_file_date: '2026-09-16T20:10:00'
+source_file_size: 38007
+generation_date: '2026-09-16T20:10:13'
 
