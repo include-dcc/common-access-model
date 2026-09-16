@@ -1,2 +1,4 @@
 concept_curie: test_concept:000
 display: Test
+vocabulary_prefix: test
+concept_code: '000'
