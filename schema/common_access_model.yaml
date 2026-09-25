@@ -29981,7 +29981,7 @@ slots:
     owner: File
     domain_of:
     - File
-    range: FileHash
+    range: HashDigest
     multivalued: true
     inlined: true
     inlined_as_list: true
@@ -29992,9 +29992,9 @@ slots:
     title: File Hash Type
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:hash_type
-    owner: FileHash
+    owner: HashDigest
     domain_of:
-    - FileHash
+    - HashDigest
     range: EnumFileHashType
   hash_value:
     name: hash_value
@@ -30003,9 +30003,9 @@ slots:
     title: File Hash Value
     from_schema: https://includedcc.org/common-access-model
     slot_uri: cam:hash_value
-    owner: FileHash
+    owner: HashDigest
     domain_of:
-    - FileHash
+    - HashDigest
     range: string
   assay_id:
     name: assay_id
@@ -31353,16 +31353,16 @@ classes:
         name: sample_id
         multivalued: true
     class_uri: cam:File
-  FileHash:
-    name: FileHash
-    definition_uri: https://includedcc.org/common-access-model/FileHash
+  HashDigest:
+    name: HashDigest
+    definition_uri: https://includedcc.org/common-access-model/HashDigest
     description: Type and value of a file content hash.
-    title: File Hash
+    title: Hash Digest
     from_schema: https://includedcc.org/common-access-model
     slots:
     - hash_type
     - hash_value
-    class_uri: cam:FileHash
+    class_uri: cam:HashDigest
   Assay:
     name: Assay
     definition_uri: https://includedcc.org/common-access-model/Assay
@@ -31429,7 +31429,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-09-23T21:46:27'
-source_file_size: 38007
-generation_date: '2026-09-23T21:46:40'
+source_file_date: '2026-09-25T16:21:12'
+source_file_size: 38220
+generation_date: '2026-09-25T16:21:20'
 

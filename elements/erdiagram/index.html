@@ -316,7 +316,7 @@ File {
     string storage_class  
     uriorcurieList external_id  
 }
-FileHash {
+HashDigest {
     EnumFileHashType hash_type  
     string hash_value  
 }
@@ -458,7 +458,7 @@ FamilyRelationship ||--|| Subject : "family_member_id, subject_id"
 File ||--|o AccessPolicy : "access_policy_id"
 File ||--|o Concept : "data_category"
 File ||--|o Study : "study_id"
-File ||--}o FileHash : "hash"
+File ||--}o HashDigest : "hash"
 File ||--}o Sample : "sample_id"
 File ||--}o Subject : "subject_id"
 Investigator ||--|o AccessPolicy : "access_policy_id"
