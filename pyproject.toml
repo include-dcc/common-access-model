@@ -80,6 +80,7 @@ skip = [
   "src/common_access_model/datamodel/common_access_model_pydantic.py",
   "src/common_access_model/datamodel/common_access_model.py",
 ]
+ignore-words = ".codespell-ignore.txt"
 
 # Reminder: words have to be lowercased for the ignore-words-list
 ignore-words-list = "linke"
