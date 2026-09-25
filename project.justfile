@@ -33,3 +33,7 @@ gen-dbtmodel:
 [group('model development')]
 gen-monolith:
   uv run gen-monolith
+
+[group('project management')]
+precommit:
+  pre-commit install

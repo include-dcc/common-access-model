@@ -16,17 +16,17 @@ enums:
         title: Research Staff Asserted
         description: Assertion made by research staff.
         aliases:
-        - investigator_assessment
+          - investigator_assessment
       CAMO:0000017:
         title: Healthcare Asserted
         description: Assertion documented by a healthcare system or provider.
         aliases:
-        - medical_record
+          - medical_record
       CAMO:0000018:
         title: Participant or Representative Asserted
         description: Assertion made by a study participant, their representative, or some combination.
         aliases:
-        - participant_or_caregiver_report
+          - participant_or_caregiver_report
       CAMO:0000019:
         title: Participant Asserted
         description: Assertion made by a study participant.

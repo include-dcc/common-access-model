@@ -6,19 +6,16 @@ properties, those models should adhere to use this model as a Git submodule.
 
 ## Key Integration Guidelines
 
-All changes to this model should be made with the understanding that those
-changes are completely valid for all or many of the downstream models. Those
-changes should be made directly within this repository and not as changes to the
-versions from the submodules themselves.
+The classes and slots defined herein are shared across all downstream models. As
+such, changes required to satisfy a downstream model's requirements should be
+contained solely within the downstream model itself, or updated here with the
+understanding that those changes will make their way to all of the other
+downstream models in time.
 
-Please see the following notes when integrating this model as a submodule within
-one of the downtream modules:
+Downstream model development guidance:
 
-- Do Not Modify the Submodule from within this repository: All foundational
-  classes, slots, and enums live in the core submodule. Any program-specific
-  customizations must happen strictly in your downstream files.
-- Leverage Imports: At this time, the current model imports the
-  common_access_model.yaml directly within the main model definition.
+- Leverage Imports: At this time, the downstream model imports the
+  common_access_model-{version}.yaml directly within the main model definition.
 - Extend via Inheritance: Use the is_a or mixins keys to create program-specific
   subclasses that inherit core slots while allowing you to add local attributes.
 - Refine via Slot Usage: If you need to restrict or change the behavior of an
@@ -27,64 +24,37 @@ one of the downtream modules:
 
 ## Getting Started
 
-If you aren't already familiar with working with submodules, there are just a
-couple of key takeaways to keep in mind:
+When you initialized your working environment using 'just install', a pre-commit
+hook should have been installed for you that will apply various style fixes
+before each commit. In general, only the files being committed are tested.
 
-- The submodule has been pinned to a specific git commit hash to avoid
-  unexpected changes the CAM creeping into downstream model interfering with
-  local builds, CI/CD scripts, etc.
-- The submodule itself should only be updated by deliberate action with the
-  expectation that downstream model changes may be required to reflect incoming
-  updates.
-
-### Initializing the submodule
-
-Before you can actually compile the model on a new machine, you'll need to pull
-the submodule's content down. A convenient just recipe has been created for
-exactly that:
+For those whose local copies of the model predate this change, you may simply
+run the following just recipe to hook the pre-commit runs into your local clone.
+Please note that this must be run again if you ever pull the code down into a
+new directory.
 
 ```bash
-just init-submodule
+just precommit
 ```
 
-or, if you prefer to do it directly yourself:
+### Updating (and initializing) the Common Access Model
+
+To incorporate the Common Access Model into a downstream model, either for the
+first time or to update to a newer version, a just recipe has been provided:
 
 ```bash
-git submodule update --init --recursive
-# make sure nothing is broken
-just lint && just test
+just update-cam
 ```
 
-Subsequent calls can drop the init if you know for a fact that no other
-submodules have been added. The just recipe does call the linter and runs the
-linkml test as a subsequent dependency, in case there are upstream changes that
-invalidate the downstream model.
+This will download the latest version of the common access model to
+src/{model_name}/upstream-models/. The resulting file will be a complete
+monolithic copy of the common access model with the version as part of the name.
+It is up to the user to update the downstream model to include the updated CAM
+model file.
 
-### Updating the pinned hash
-
-Once it has been decided that it is time to update the CAM to use the latest
-version, the maintainer should run the following commands to fetch, test and
-lock the new version into the downstream model's main.
-
-```bash
-# Navigate into the submodule directory
-cd src/kf_access_model/schema/common_access_model
-
-# Fetch and check out the desired remote target (e.g., main branch)
-git fetch origin
-git checkout origin/main
-
-# Move back to the repository root
-cd -
-
-# Run linter and tests
-just lint && just test
-
-
-# Commit the new submodule hash pointer to this repository
-git add src/kf_access_model/schema/common_access_model
-git commit -m "chore: update common_access_model submodule to latest hash"
-```
+This file is tracked in github, so once the newest version is correctly checked
+in, other contributors will pick up the correct version directly from their git
+pulls.
 
 ## Release Artifacts
 
@@ -154,18 +124,23 @@ any manual intervention:
   uv run pre-commit run --all-files
   ```
 
-
 ## Commands to Expand Enum Files
+
 ### To write the expanded output:
+
 `just expand`
 
-This has also been added as a dependency to the recipes _test-schema and lint, and will automatically be run with `just test` and `just lint`.
+This has also been added as a dependency to the recipes _test-schema and lint,
+and will automatically be run with `just test` and `just lint`.
 
 #### Regenerate expanded output
-Enums that already have a `permissible_values` will not be expanded.
-To rerun the expansion script on a file, delete the current `permissible_values` from the YAML file, then run `just expand`, `just _test`, or `just lint`.
 
-The `permissible_values` for any given enum can be deleted manually or by running the following command for each file:
+Enums that already have a `permissible_values` will not be expanded. To rerun
+the expansion script on a file, delete the current `permissible_values` from the
+YAML file, then run `just expand`, `just _test`, or `just lint`.
+
+The `permissible_values` for any given enum can be deleted manually or by
+running the following command for each file:
 
 `just clear {file_name}`
 

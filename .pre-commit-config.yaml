@@ -30,6 +30,14 @@ repos:
       - id: trailing-whitespace
         args: [--markdown-linebreak-ext=md]
 
+  - repo: https://github.com/codespell-project/codespell
+    rev: v2.4.2
+    hooks:
+      - id: codespell
+        additional_dependencies:
+          - tomli
+        exclude: ^src/kf_access_model/schema/upstream-models/.*\.yaml$
+
   - repo: https://github.com/crate-ci/typos
     rev: v1.31.1
     hooks:

@@ -15,12 +15,14 @@ enums:
     permissible_values:
       edam:data_0582:
         title: Ontology
-        description: An ontology of biological or bioinformatics concepts and relations,
+        description:
+          An ontology of biological or bioinformatics concepts and relations,
           a controlled vocabulary, structured glossary etc.
         meaning: edam:data_0582
       edam:data_0842:
         title: Identifier
-        description: A text token, number or something else which identifies an entity,
+        description:
+          A text token, number or something else which identifies an entity,
           but which may not be persistent (stable) or unique (the same identifier
           may identify multiple things).
         meaning: edam:data_0842
@@ -38,7 +40,8 @@ enums:
         meaning: edam:data_0846
       edam:data_0847:
         title: QSAR descriptor
-        description: A QSAR quantitative descriptor (name-value pair) of chemical
+        description:
+          A QSAR quantitative descriptor (name-value pair) of chemical
           structure.
         meaning: edam:data_0847
       edam:data_0849:
@@ -47,38 +50,44 @@ enums:
         meaning: edam:data_0849
       edam:data_0850:
         title: Sequence set
-        description: A collection of one or typically multiple molecular sequences
+        description:
+          A collection of one or typically multiple molecular sequences
           (which can include derived data or metadata) that do not (typically) correspond
           to molecular sequence database records or entries and which (typically)
           are derived from some analytical method.
         meaning: edam:data_0850
       edam:data_0856:
         title: Sequence feature source
-        description: How the annotation of a sequence feature (for example in EMBL
+        description:
+          How the annotation of a sequence feature (for example in EMBL
           or Swiss-Prot) was derived.
         meaning: edam:data_0856
       edam:data_0857:
         title: Sequence search results
-        description: A report of sequence hits and associated data from searching
+        description:
+          A report of sequence hits and associated data from searching
           a database of sequences (for example a BLAST search). This will typically
           include a list of scores (often with statistical evaluation) and a set of
           alignments for the hits.
         meaning: edam:data_0857
       edam:data_0858:
         title: Sequence signature matches
-        description: Report on the location of matches ("hits") between sequences,
+        description:
+          Report on the location of matches ("hits") between sequences,
           sequence profiles, motifs (conserved or functional patterns) and other types
           of sequence signatures.
         meaning: edam:data_0858
       edam:data_0860:
         title: Sequence signature data
-        description: Sequence signature data concerns specific or conserved pattern
+        description:
+          Sequence signature data concerns specific or conserved pattern
           in molecular sequences and the classifiers used for their identification,
           including sequence motifs, profiles or other diagnostic element.
         meaning: edam:data_0860
       edam:data_0862:
         title: Dotplot
-        description: A dotplot of sequence similarities identified from word-matching
+        description:
+          A dotplot of sequence similarities identified from word-matching
           or character comparison.
         meaning: edam:data_0862
       edam:data_0863:
@@ -91,12 +100,14 @@ enums:
         meaning: edam:data_0865
       edam:data_0867:
         title: Sequence alignment report
-        description: An informative report of molecular sequence alignment-derived
+        description:
+          An informative report of molecular sequence alignment-derived
           data or metadata.
         meaning: edam:data_0867
       edam:data_0870:
         title: Sequence distance matrix
-        description: A matrix of estimated evolutionary distance between molecular
+        description:
+          A matrix of estimated evolutionary distance between molecular
           sequences, such as is suitable for phylogenetic tree calculation.
         meaning: edam:data_0870
       edam:data_0871:
@@ -105,33 +116,39 @@ enums:
         meaning: edam:data_0871
       edam:data_0872:
         title: Phylogenetic tree
-        description: The raw data (not just an image) from which a phylogenetic tree
+        description:
+          The raw data (not just an image) from which a phylogenetic tree
           is directly generated or plotted, such as topology, lengths (in time or
           in expected amounts of variance) and a confidence interval for each length.
         meaning: edam:data_0872
       edam:data_0874:
         title: Comparison matrix
-        description: Matrix of integer or floating point numbers for amino acid or
+        description:
+          Matrix of integer or floating point numbers for amino acid or
           nucleotide sequence comparison.
         meaning: edam:data_0874
       edam:data_0878:
         title: Protein secondary structure alignment
-        description: Alignment of the (1D representations of) secondary structure
+        description:
+          Alignment of the (1D representations of) secondary structure
           of two or more proteins.
         meaning: edam:data_0878
       edam:data_0880:
         title: RNA secondary structure
-        description: An informative report of secondary structure (predicted or real)
+        description:
+          An informative report of secondary structure (predicted or real)
           of an RNA molecule.
         meaning: edam:data_0880
       edam:data_0881:
         title: RNA secondary structure alignment
-        description: Alignment of the (1D representations of) secondary structure
+        description:
+          Alignment of the (1D representations of) secondary structure
           of two or more RNA molecules.
         meaning: edam:data_0881
       edam:data_0883:
         title: Structure
-        description: 3D coordinate and associated data for a macromolecular tertiary
+        description:
+          3D coordinate and associated data for a macromolecular tertiary
           (3D) structure or part of a structure.
         meaning: edam:data_0883
       edam:data_0886:
@@ -140,22 +157,26 @@ enums:
         meaning: edam:data_0886
       edam:data_0887:
         title: Structure alignment report
-        description: An informative report of molecular tertiary structure alignment-derived
+        description:
+          An informative report of molecular tertiary structure alignment-derived
           data.
         meaning: edam:data_0887
       edam:data_0888:
         title: Structure similarity score
-        description: A value representing molecular structure similarity, measured
+        description:
+          A value representing molecular structure similarity, measured
           from structure alignment or some other type of structure comparison.
         meaning: edam:data_0888
       edam:data_0889:
         title: Structural profile
-        description: Some type of structural (3D) profile or template (representing
+        description:
+          Some type of structural (3D) profile or template (representing
           a structure or structure alignment).
         meaning: edam:data_0889
       edam:data_0890:
         title: Structural (3D) profile alignment
-        description: A 3D profile-3D profile alignment (each profile representing
+        description:
+          A 3D profile-3D profile alignment (each profile representing
           structures or a structure alignment).
         meaning: edam:data_0890
       edam:data_0892:
@@ -164,29 +185,34 @@ enums:
         meaning: edam:data_0892
       edam:data_0893:
         title: Sequence-structure alignment
-        description: An alignment of molecular sequence to structure (from threading
+        description:
+          An alignment of molecular sequence to structure (from threading
           sequence(s) through 3D structure or representation of structure(s)).
         meaning: edam:data_0893
       edam:data_0896:
         title: Protein report
-        description: An informative human-readable report about one or more specific
+        description:
+          An informative human-readable report about one or more specific
           protein molecules or protein structural domains, derived from analysis of
           primary (sequence or structural) data.
         meaning: edam:data_0896
       edam:data_0897:
         title: Protein property
-        description: A report of primarily non-positional data describing intrinsic
+        description:
+          A report of primarily non-positional data describing intrinsic
           physical, chemical or other properties of a protein molecule or model.
         meaning: edam:data_0897
       edam:data_0905:
         title: Protein interaction raw data
-        description: Protein-protein interaction data from for example yeast two-hybrid
+        description:
+          Protein-protein interaction data from for example yeast two-hybrid
           analysis, protein microarrays, immunoaffinity chromatography followed by
           mass spectrometry, phage display etc.
         meaning: edam:data_0905
       edam:data_0906:
         title: Protein interaction data
-        description: Data concerning the interactions (predicted or known) within
+        description:
+          Data concerning the interactions (predicted or known) within
           or between a protein, structural domain or part of a protein. This includes
           intra- and inter-residue contacts and distances, as well as interactions
           with other proteins and non-protein entities such as nucleic acid, metal
@@ -194,32 +220,38 @@ enums:
         meaning: edam:data_0906
       edam:data_0907:
         title: Protein family report
-        description: An informative report on a specific protein family or other classification
+        description:
+          An informative report on a specific protein family or other classification
           or group of protein sequences or structures.
         meaning: edam:data_0907
       edam:data_0909:
         title: Vmax
-        description: The maximum initial velocity or rate of a reaction. It is the
+        description:
+          The maximum initial velocity or rate of a reaction. It is the
           limiting velocity as substrate concentrations get very large.
         meaning: edam:data_0909
       edam:data_0910:
         title: Km
-        description: Km is the concentration (usually in Molar units) of substrate
+        description:
+          Km is the concentration (usually in Molar units) of substrate
           that leads to half-maximal velocity of an enzyme-catalysed reaction.
         meaning: edam:data_0910
       edam:data_0912:
         title: Nucleic acid property
-        description: A report of primarily non-positional data describing intrinsic
+        description:
+          A report of primarily non-positional data describing intrinsic
           physical, chemical or other properties of a nucleic acid molecule.
         meaning: edam:data_0912
       edam:data_0914:
         title: Codon usage data
-        description: Data derived from analysis of codon usage (typically a codon
+        description:
+          Data derived from analysis of codon usage (typically a codon
           usage table) of DNA sequences.
         meaning: edam:data_0914
       edam:data_0916:
         title: Gene report
-        description: A report on predicted or actual gene structure, regions which
+        description:
+          A report on predicted or actual gene structure, regions which
           make an RNA product and features such as promoters, coding regions, splice
           sites etc.
         meaning: edam:data_0916
@@ -229,14 +261,16 @@ enums:
         meaning: edam:data_0919
       edam:data_0920:
         title: Genotype/phenotype report
-        description: A human-readable collection of information about the set of genes
+        description:
+          A human-readable collection of information about the set of genes
           (or allelic forms) present in an individual, organism or cell and associated
           with a specific physical characteristic, or a report concerning an organisms
           traits and phenotypes.
         meaning: edam:data_0920
       edam:data_0924:
         title: Sequence trace
-        description: Fluorescence trace data generated by an automated DNA sequencer,
+        description:
+          Fluorescence trace data generated by an automated DNA sequencer,
           which can be interpreted as a molecular sequence (reads), given associated
           sequencing metadata such as base-call quality scores.
         meaning: edam:data_0924
@@ -250,12 +284,14 @@ enums:
         meaning: edam:data_0926
       edam:data_0927:
         title: Genetic linkage report
-        description: A human-readable collection of information about the linkage
+        description:
+          A human-readable collection of information about the linkage
           of alleles.
         meaning: edam:data_0927
       edam:data_0928:
         title: Gene expression profile
-        description: Data quantifying the level of expression of (typically) multiple
+        description:
+          Data quantifying the level of expression of (typically) multiple
           genes, derived for example from microarray experiments.
         meaning: edam:data_0928
       edam:data_0937:
@@ -268,7 +304,8 @@ enums:
         meaning: edam:data_0938
       edam:data_0939:
         title: CD spectra
-        description: Protein secondary structure from protein coordinate or circular
+        description:
+          Protein secondary structure from protein coordinate or circular
           dichroism (CD) spectroscopic data.
         meaning: edam:data_0939
       edam:data_0940:
@@ -285,19 +322,22 @@ enums:
         meaning: edam:data_0943
       edam:data_0944:
         title: Peptide mass fingerprint
-        description: A set of peptide masses (peptide mass fingerprint) from mass
+        description:
+          A set of peptide masses (peptide mass fingerprint) from mass
           spectrometry.
         meaning: edam:data_0944
       edam:data_0945:
         title: Peptide identification
-        description: Protein or peptide identifications with evidence supporting the
+        description:
+          Protein or peptide identifications with evidence supporting the
           identifications, for example from comparing a peptide mass fingerprint (from
           mass spectrometry) to a sequence database, or the set of typical spectra
           one obtains when running a protein through a mass spectrometer.
         meaning: edam:data_0945
       edam:data_0949:
         title: Workflow metadata
-        description: Basic information, annotation or documentation concerning a workflow
+        description:
+          Basic information, annotation or documentation concerning a workflow
           (but not the workflow itself).
         meaning: edam:data_0949
       edam:data_0950:
@@ -306,12 +346,14 @@ enums:
         meaning: edam:data_0950
       edam:data_0951:
         title: Statistical estimate score
-        description: A value representing estimated statistical significance of some
+        description:
+          A value representing estimated statistical significance of some
           observed data; typically sequence database hits.
         meaning: edam:data_0951
       edam:data_0954:
         title: Database cross-mapping
-        description: A mapping of the accession numbers (or other database identifier)
+        description:
+          A mapping of the accession numbers (or other database identifier)
           of entries between (typically) two biological or biomedical databases.
         meaning: edam:data_0954
       edam:data_0955:
@@ -320,32 +362,38 @@ enums:
         meaning: edam:data_0955
       edam:data_0956:
         title: Data index report
-        description: A human-readable collection of information concerning an analysis
+        description:
+          A human-readable collection of information concerning an analysis
           of an index of biological data.
         meaning: edam:data_0956
       edam:data_0957:
         title: Database metadata
-        description: Basic information on bioinformatics database(s) or other data
+        description:
+          Basic information on bioinformatics database(s) or other data
           sources such as name, type, description, URL etc.
         meaning: edam:data_0957
       edam:data_0958:
         title: Tool metadata
-        description: Basic information about one or more bioinformatics applications
+        description:
+          Basic information about one or more bioinformatics applications
           or packages, such as name, type, description, or other documentation.
         meaning: edam:data_0958
       edam:data_0960:
         title: User metadata
-        description: Textual metadata on a software author or end-user, for example
+        description:
+          Textual metadata on a software author or end-user, for example
           a person or other software.
         meaning: edam:data_0960
       edam:data_0962:
         title: Small molecule report
-        description: A human-readable collection of information about a specific chemical
+        description:
+          A human-readable collection of information about a specific chemical
           compound.
         meaning: edam:data_0962
       edam:data_0963:
         title: Cell line report
-        description: A human-readable collection of information about a particular
+        description:
+          A human-readable collection of information about a particular
           strain of organism cell line including plants, virus, fungi and bacteria.
           The data typically includes strain number, organism type, growth conditions,
           source and so on.
@@ -364,17 +412,20 @@ enums:
         meaning: edam:data_0968
       edam:data_0970:
         title: Citation
-        description: Bibliographic data that uniquely identifies a scientific article,
+        description:
+          Bibliographic data that uniquely identifies a scientific article,
           book or other published material.
         meaning: edam:data_0970
       edam:data_0971:
         title: Article
-        description: A scientific text, typically a full text article from a scientific
+        description:
+          A scientific text, typically a full text article from a scientific
           journal.
         meaning: edam:data_0971
       edam:data_0972:
         title: Text mining report
-        description: A human-readable collection of information resulting from text
+        description:
+          A human-readable collection of information resulting from text
           mining.
         meaning: edam:data_0972
       edam:data_0976:
@@ -383,7 +434,8 @@ enums:
         meaning: edam:data_0976
       edam:data_0977:
         title: Tool identifier
-        description: An identifier of a bioinformatics tool, e.g. an application or
+        description:
+          An identifier of a bioinformatics tool, e.g. an application or
           web service.
         meaning: edam:data_0977
       edam:data_0982:
@@ -436,7 +488,8 @@ enums:
         meaning: edam:data_0996
       edam:data_0997:
         title: Chemical name (ChEBI)
-        description: Unique name from Chemical Entities of Biological Interest (ChEBI)
+        description:
+          Unique name from Chemical Entities of Biological Interest (ChEBI)
           of a chemical compound.
         meaning: edam:data_0997
       edam:data_0998:
@@ -445,7 +498,8 @@ enums:
         meaning: edam:data_0998
       edam:data_0999:
         title: Chemical name (INN)
-        description: International Non-proprietary Name (INN or 'generic name') of
+        description:
+          International Non-proprietary Name (INN or 'generic name') of
           a chemical compound, assigned by the World Health Organisation (WHO).
         meaning: edam:data_0999
       edam:data_1000:
@@ -458,7 +512,8 @@ enums:
         meaning: edam:data_1001
       edam:data_1002:
         title: CAS number
-        description: CAS registry number of a chemical compound; a unique numerical
+        description:
+          CAS registry number of a chemical compound; a unique numerical
           identifier of chemicals in the scientific literature, as assigned by the
           Chemical Abstracts Service.
         meaning: edam:data_1002
@@ -472,12 +527,14 @@ enums:
         meaning: edam:data_1004
       edam:data_1005:
         title: HET group name
-        description: 3-letter code word for a ligand (HET group) from a PDB file,
+        description:
+          3-letter code word for a ligand (HET group) from a PDB file,
           for example ATP.
         meaning: edam:data_1005
       edam:data_1006:
         title: Amino acid name
-        description: String of one or more ASCII characters representing an amino
+        description:
+          String of one or more ASCII characters representing an amino
           acid.
         meaning: edam:data_1006
       edam:data_1007:
@@ -494,7 +551,8 @@ enums:
         meaning: edam:data_1009
       edam:data_1010:
         title: Enzyme identifier
-        description: Name or other identifier of an enzyme or record from a database
+        description:
+          Name or other identifier of an enzyme or record from a database
           of enzymes.
         meaning: edam:data_1010
       edam:data_1011:
@@ -511,12 +569,14 @@ enums:
         meaning: edam:data_1013
       edam:data_1015:
         title: Sequence feature ID
-        description: A unique identifier of molecular sequence feature, for example
+        description:
+          A unique identifier of molecular sequence feature, for example
           an ID of a feature that is unique within the scope of the GFF file.
         meaning: edam:data_1015
       edam:data_1016:
         title: Sequence position
-        description: A position of one or more points (base or residue) in a sequence,
+        description:
+          A position of one or more points (base or residue) in a sequence,
           or part of such a specification.
         meaning: edam:data_1016
       edam:data_1017:
@@ -525,7 +585,8 @@ enums:
         meaning: edam:data_1017
       edam:data_1020:
         title: Sequence feature key
-        description: The type of a sequence feature, typically a term or accession
+        description:
+          The type of a sequence feature, typically a term or accession
           from the Sequence Ontology, for example an EMBL or Swiss-Prot sequence feature
           key.
         meaning: edam:data_1020
@@ -535,22 +596,26 @@ enums:
         meaning: edam:data_1021
       edam:data_1022:
         title: Sequence feature label
-        description: A name of a sequence feature, e.g. the name of a feature to be
+        description:
+          A name of a sequence feature, e.g. the name of a feature to be
           displayed to an end-user. Typically an EMBL or Swiss-Prot feature label.
         meaning: edam:data_1022
       edam:data_1023:
         title: EMBOSS Uniform Feature Object
-        description: The name of a sequence feature-containing entity adhering to
+        description:
+          The name of a sequence feature-containing entity adhering to
           the standard feature naming scheme used by all EMBOSS applications.
         meaning: edam:data_1023
       edam:data_1025:
         title: Gene identifier
-        description: An identifier of a gene, such as a name/symbol or a unique identifier
+        description:
+          An identifier of a gene, such as a name/symbol or a unique identifier
           of a gene in a database.
         meaning: edam:data_1025
       edam:data_1026:
         title: Gene symbol
-        description: The short name of a gene; a single word that does not contain
+        description:
+          The short name of a gene; a single word that does not contain
           white space characters. It is typically derived from the gene name.
         meaning: edam:data_1026
       edam:data_1027:
@@ -567,7 +632,8 @@ enums:
         meaning: edam:data_1032
       edam:data_1033:
         title: Ensembl gene ID
-        description: Unique identifier for a gene (or other feature) from the Ensembl
+        description:
+          Unique identifier for a gene (or other feature) from the Ensembl
           database.
         meaning: edam:data_1033
       edam:data_1034:
@@ -592,7 +658,8 @@ enums:
         meaning: edam:data_1038
       edam:data_1039:
         title: SCOP domain identifier
-        description: Identifier of a protein domain (or other node) from the SCOP
+        description:
+          Identifier of a protein domain (or other node) from the SCOP
           database.
         meaning: edam:data_1039
       edam:data_1040:
@@ -601,12 +668,14 @@ enums:
         meaning: edam:data_1040
       edam:data_1041:
         title: SCOP concise classification string (sccs)
-        description: A SCOP concise classification string (sccs) is a compact representation
+        description:
+          A SCOP concise classification string (sccs) is a compact representation
           of a SCOP domain classification.
         meaning: edam:data_1041
       edam:data_1042:
         title: SCOP sunid
-        description: Unique identifier (number) of an entry in the SCOP hierarchy,
+        description:
+          Unique identifier (number) of an entry in the SCOP hierarchy,
           for example 33229.
         meaning: edam:data_1042
       edam:data_1043:
@@ -623,12 +692,14 @@ enums:
         meaning: edam:data_1045
       edam:data_1046:
         title: Strain name
-        description: The name of a strain of an organism variant, typically a plant,
+        description:
+          The name of a strain of an organism variant, typically a plant,
           virus or bacterium.
         meaning: edam:data_1046
       edam:data_1047:
         title: URI
-        description: A string of characters that name or otherwise identify a resource
+        description:
+          A string of characters that name or otherwise identify a resource
           on the Internet.
         meaning: edam:data_1047
       edam:data_1048:
@@ -645,7 +716,8 @@ enums:
         meaning: edam:data_1050
       edam:data_1051:
         title: Ontology name
-        description: Name of an ontology of biological or bioinformatics concepts
+        description:
+          Name of an ontology of biological or bioinformatics concepts
           and relations.
         meaning: edam:data_1051
       edam:data_1052:
@@ -658,7 +730,8 @@ enums:
         meaning: edam:data_1053
       edam:data_1055:
         title: LSID
-        description: A Life Science Identifier (LSID) - a unique identifier of some
+        description:
+          A Life Science Identifier (LSID) - a unique identifier of some
           data.
         meaning: edam:data_1055
       edam:data_1056:
@@ -683,7 +756,8 @@ enums:
         meaning: edam:data_1061
       edam:data_1063:
         title: Sequence identifier
-        description: An identifier of molecular sequence(s) or entries from a molecular
+        description:
+          An identifier of molecular sequence(s) or entries from a molecular
           sequence database.
         meaning: edam:data_1063
       edam:data_1064:
@@ -692,12 +766,14 @@ enums:
         meaning: edam:data_1064
       edam:data_1066:
         title: Sequence alignment ID
-        description: Identifier of a molecular sequence alignment, for example a record
+        description:
+          Identifier of a molecular sequence alignment, for example a record
           from an alignment database.
         meaning: edam:data_1066
       edam:data_1068:
         title: Phylogenetic tree ID
-        description: Identifier of a phylogenetic tree for example from a phylogenetic
+        description:
+          Identifier of a phylogenetic tree for example from a phylogenetic
           tree database.
         meaning: edam:data_1068
       edam:data_1069:
@@ -706,27 +782,32 @@ enums:
         meaning: edam:data_1069
       edam:data_1070:
         title: Structure ID
-        description: A unique and persistent identifier of a molecular tertiary structure,
+        description:
+          A unique and persistent identifier of a molecular tertiary structure,
           typically an entry from a structure database.
         meaning: edam:data_1070
       edam:data_1071:
         title: Structural (3D) profile ID
-        description: Identifier or name of a structural (3D) profile or template (representing
+        description:
+          Identifier or name of a structural (3D) profile or template (representing
           a structure or structure alignment).
         meaning: edam:data_1071
       edam:data_1072:
         title: Structure alignment ID
-        description: Identifier of an entry from a database of tertiary structure
+        description:
+          Identifier of an entry from a database of tertiary structure
           alignments.
         meaning: edam:data_1072
       edam:data_1073:
         title: Amino acid index ID
-        description: Identifier of an index of amino acid physicochemical and biochemical
+        description:
+          Identifier of an index of amino acid physicochemical and biochemical
           property data.
         meaning: edam:data_1073
       edam:data_1074:
         title: Protein interaction ID
-        description: Identifier of a report of protein interactions from a protein
+        description:
+          Identifier of a report of protein interactions from a protein
           interaction database (typically).
         meaning: edam:data_1074
       edam:data_1075:
@@ -747,12 +828,14 @@ enums:
         meaning: edam:data_1078
       edam:data_1079:
         title: Electron microscopy model ID
-        description: Identifier of an entry from a database of electron microscopy
+        description:
+          Identifier of an entry from a database of electron microscopy
           data.
         meaning: edam:data_1079
       edam:data_1080:
         title: Gene expression report ID
-        description: Accession of a report of gene expression (e.g. a gene expression
+        description:
+          Accession of a report of gene expression (e.g. a gene expression
           profile) from a database.
         meaning: edam:data_1080
       edam:data_1081:
@@ -761,12 +844,14 @@ enums:
         meaning: edam:data_1081
       edam:data_1082:
         title: Pathway or network identifier
-        description: Identifier of an entry from a database of biological pathways
+        description:
+          Identifier of an entry from a database of biological pathways
           or networks.
         meaning: edam:data_1082
       edam:data_1083:
         title: Workflow ID
-        description: Identifier of a biological or biomedical workflow, typically
+        description:
+          Identifier of a biological or biomedical workflow, typically
           from a database of workflows.
         meaning: edam:data_1083
       edam:data_1084:
@@ -775,7 +860,8 @@ enums:
         meaning: edam:data_1084
       edam:data_1085:
         title: Biological model ID
-        description: Identifier of a mathematical model, typically an entry from a
+        description:
+          Identifier of a mathematical model, typically an entry from a
           database.
         meaning: edam:data_1085
       edam:data_1086:
@@ -784,7 +870,8 @@ enums:
         meaning: edam:data_1086
       edam:data_1087:
         title: Ontology concept ID
-        description: A unique (typically numerical) identifier of a concept in an
+        description:
+          A unique (typically numerical) identifier of a concept in an
           ontology of biological or bioinformatics concepts and relations.
         meaning: edam:data_1087
       edam:data_1088:
@@ -797,7 +884,8 @@ enums:
         meaning: edam:data_1089
       edam:data_1091:
         title: WormBase name
-        description: Name of an object from the WormBase database, usually a human-readable
+        description:
+          Name of an object from the WormBase database, usually a human-readable
           name.
         meaning: edam:data_1091
       edam:data_1092:
@@ -806,12 +894,14 @@ enums:
         meaning: edam:data_1092
       edam:data_1093:
         title: Sequence accession
-        description: A persistent, unique identifier of a molecular sequence database
+        description:
+          A persistent, unique identifier of a molecular sequence database
           entry.
         meaning: edam:data_1093
       edam:data_1095:
         title: EMBOSS Uniform Sequence Address
-        description: The name of a sequence-based entity adhering to the standard
+        description:
+          The name of a sequence-based entity adhering to the standard
           sequence naming scheme used by all EMBOSS applications.
         meaning: edam:data_1095
       edam:data_1096:
@@ -836,12 +926,14 @@ enums:
         meaning: edam:data_1102
       edam:data_1103:
         title: EMBL/GenBank/DDBJ ID
-        description: Identifier of a (nucleic acid) entry from the EMBL/GenBank/DDBJ
+        description:
+          Identifier of a (nucleic acid) entry from the EMBL/GenBank/DDBJ
           databases.
         meaning: edam:data_1103
       edam:data_1104:
         title: Sequence cluster ID (UniGene)
-        description: A unique identifier of an entry (gene cluster) from the NCBI
+        description:
+          A unique identifier of an entry (gene cluster) from the NCBI
           UniGene database.
         meaning: edam:data_1104
       edam:data_1105:
@@ -862,7 +954,8 @@ enums:
         meaning: edam:data_1113
       edam:data_1114:
         title: Sequence motif identifier
-        description: Identifier of a sequence motif, for example an entry from a motif
+        description:
+          Identifier of a sequence motif, for example an entry from a motif
           database.
         meaning: edam:data_1114
       edam:data_1115:
@@ -871,7 +964,8 @@ enums:
         meaning: edam:data_1115
       edam:data_1116:
         title: ELM ID
-        description: Identifier of an entry from the ELMdb database of protein functional
+        description:
+          Identifier of an entry from the ELMdb database of protein functional
           sites.
         meaning: edam:data_1116
       edam:data_1117:
@@ -920,7 +1014,8 @@ enums:
         meaning: edam:data_1131
       edam:data_1132:
         title: InterPro entry name
-        description: Name of an InterPro entry, usually indicating the type of protein
+        description:
+          Name of an InterPro entry, usually indicating the type of protein
           matches for that entry.
         meaning: edam:data_1132
       edam:data_1133:
@@ -953,7 +1048,8 @@ enums:
         meaning: edam:data_1139
       edam:data_1140:
         title: Superfamily hidden Markov model number
-        description: Unique identifier (number) of a hidden Markov model from the
+        description:
+          Unique identifier (number) of a hidden Markov model from the
           Superfamily database.
         meaning: edam:data_1140
       edam:data_1141:
@@ -1006,7 +1102,8 @@ enums:
         meaning: edam:data_1153
       edam:data_1154:
         title: KEGG object identifier
-        description: Unique identifier of an object from one of the KEGG databases
+        description:
+          Unique identifier of an object from one of the KEGG databases
           (excluding the GENES division).
         meaning: edam:data_1154
       edam:data_1155:
@@ -1015,7 +1112,8 @@ enums:
         meaning: edam:data_1155
       edam:data_1157:
         title: Pathway ID (BioCyc)
-        description: Identifier of an pathway from the BioCyc biological pathways
+        description:
+          Identifier of an pathway from the BioCyc biological pathways
           database.
         meaning: edam:data_1157
       edam:data_1158:
@@ -1028,13 +1126,15 @@ enums:
         meaning: edam:data_1159
       edam:data_1160:
         title: Pathway ID (CPDB)
-        description: Identifier of an entry from the CPDB (ConsensusPathDB) biological
+        description:
+          Identifier of an entry from the CPDB (ConsensusPathDB) biological
           pathways database, which is an identifier from an external database integrated
           into CPDB.
         meaning: edam:data_1160
       edam:data_1161:
         title: Pathway ID (Panther)
-        description: Identifier of a biological pathway from the Panther Pathways
+        description:
+          Identifier of a biological pathway from the Panther Pathways
           database.
         meaning: edam:data_1161
       edam:data_1162:
@@ -1071,7 +1171,8 @@ enums:
         meaning: edam:data_1171
       edam:data_1172:
         title: PubChem CID
-        description: Chemical structure specified in PubChem Compound Identification
+        description:
+          Chemical structure specified in PubChem Compound Identification
           (CID), a non-zero integer identifier for a unique chemical structure.
         meaning: edam:data_1172
       edam:data_1173:
@@ -1100,7 +1201,8 @@ enums:
         meaning: edam:data_1178
       edam:data_1179:
         title: NCBI taxonomy ID
-        description: A stable unique identifier for each taxon (for a species, a family,
+        description:
+          A stable unique identifier for each taxon (for a species, a family,
           an order, or any other group in the NCBI taxonomy database.
         meaning: edam:data_1179
       edam:data_1180:
@@ -1189,34 +1291,40 @@ enums:
         meaning: edam:data_1205
       edam:data_1233:
         title: Sequence set (protein)
-        description: Any collection of multiple protein sequences and associated metadata
+        description:
+          Any collection of multiple protein sequences and associated metadata
           that do not (typically) correspond to common sequence database records or
           database entries.
         meaning: edam:data_1233
       edam:data_1234:
         title: Sequence set (nucleic acid)
-        description: Any collection of multiple nucleotide sequences and associated
+        description:
+          Any collection of multiple nucleotide sequences and associated
           metadata that do not (typically) correspond to common sequence database
           records or database entries.
         meaning: edam:data_1234
       edam:data_1235:
         title: Sequence cluster
-        description: A set of sequences that have been clustered or otherwise classified
+        description:
+          A set of sequences that have been clustered or otherwise classified
           as belonging to a group including (typically) sequence cluster information.
         meaning: edam:data_1235
       edam:data_1238:
         title: Proteolytic digest
-        description: A protein sequence cleaved into peptide fragments (by enzymatic
+        description:
+          A protein sequence cleaved into peptide fragments (by enzymatic
           or chemical cleavage) with fragment masses.
         meaning: edam:data_1238
       edam:data_1239:
         title: Restriction digest
-        description: Restriction digest fragments from digesting a nucleotide sequence
+        description:
+          Restriction digest fragments from digesting a nucleotide sequence
           with restriction sites using a restriction endonuclease.
         meaning: edam:data_1239
       edam:data_1240:
         title: PCR primers
-        description: Oligonucleotide primer(s) for PCR and DNA amplification, for
+        description:
+          Oligonucleotide primer(s) for PCR and DNA amplification, for
           example a minimal primer set.
         meaning: edam:data_1240
       edam:data_1245:
@@ -1229,23 +1337,27 @@ enums:
         meaning: edam:data_1246
       edam:data_1249:
         title: Sequence length
-        description: The size (length) of a sequence, subsequence or region in a sequence,
+        description:
+          The size (length) of a sequence, subsequence or region in a sequence,
           or range(s) of lengths.
         meaning: edam:data_1249
       edam:data_1254:
         title: Sequence property
-        description: An informative report about non-positional sequence features,
+        description:
+          An informative report about non-positional sequence features,
           typically a report on general molecular sequence properties derived from
           sequence analysis.
         meaning: edam:data_1254
       edam:data_1255:
         title: Sequence features
-        description: Annotation of positional features of molecular sequence(s), i.e.
+        description:
+          Annotation of positional features of molecular sequence(s), i.e.
           that can be mapped to position(s) in the sequence.
         meaning: edam:data_1255
       edam:data_1259:
         title: Sequence complexity report
-        description: A report on sequence complexity, for example low-complexity or
+        description:
+          A report on sequence complexity, for example low-complexity or
           repeat regions in sequences.
         meaning: edam:data_1259
       edam:data_1260:
@@ -1254,12 +1366,14 @@ enums:
         meaning: edam:data_1260
       edam:data_1261:
         title: Sequence composition report
-        description: A report (typically a table) on character or word composition
+        description:
+          A report (typically a table) on character or word composition
           / frequency of a molecular sequence(s).
         meaning: edam:data_1261
       edam:data_1262:
         title: Peptide molecular weight hits
-        description: A report on peptide fragments of certain molecular weight(s)
+        description:
+          A report on peptide fragments of certain molecular weight(s)
           in one or more protein sequences.
         meaning: edam:data_1262
       edam:data_1263:
@@ -1284,54 +1398,64 @@ enums:
         meaning: edam:data_1268
       edam:data_1270:
         title: Feature table
-        description: Annotation of positional sequence features, organised into a
+        description:
+          Annotation of positional sequence features, organised into a
           standard feature table.
         meaning: edam:data_1270
       edam:data_1274:
         title: Map
-        description: A map of (typically one) DNA sequence annotated with positional
+        description:
+          A map of (typically one) DNA sequence annotated with positional
           or non-positional features.
         meaning: edam:data_1274
       edam:data_1276:
         title: Nucleic acid features
-        description: An informative report on intrinsic positional features of a nucleotide
+        description:
+          An informative report on intrinsic positional features of a nucleotide
           sequence, formatted to be machine-readable.
         meaning: edam:data_1276
       edam:data_1277:
         title: Protein features
-        description: An informative report on intrinsic positional features of a protein
+        description:
+          An informative report on intrinsic positional features of a protein
           sequence.
         meaning: edam:data_1277
       edam:data_1278:
         title: Genetic map
-        description: A map showing the relative positions of genetic markers in a
+        description:
+          A map showing the relative positions of genetic markers in a
           nucleic acid sequence, based on estimation of non-physical distance such
           as recombination frequencies.
         meaning: edam:data_1278
       edam:data_1279:
         title: Sequence map
-        description: A map of genetic markers in a contiguous, assembled genomic sequence,
+        description:
+          A map of genetic markers in a contiguous, assembled genomic sequence,
           with the sizes and separation of markers measured in base pairs.
         meaning: edam:data_1279
       edam:data_1280:
         title: Physical map
-        description: A map of DNA (linear or circular) annotated with physical features
+        description:
+          A map of DNA (linear or circular) annotated with physical features
           or landmarks such as restriction sites, cloned DNA fragments, genes or genetic
           markers, along with the physical distances between them.
         meaning: edam:data_1280
       edam:data_1283:
         title: Cytogenetic map
-        description: A map showing banding patterns derived from direct observation
+        description:
+          A map showing banding patterns derived from direct observation
           of a stained chromosome.
         meaning: edam:data_1283
       edam:data_1284:
         title: DNA transduction map
-        description: A gene map showing distances between loci based on relative cotransduction
+        description:
+          A gene map showing distances between loci based on relative cotransduction
           frequencies.
         meaning: edam:data_1284
       edam:data_1285:
         title: Gene map
-        description: Sequence map of a single gene annotated with genetic features
+        description:
+          Sequence map of a single gene annotated with genetic features
           such as introns, exons, untranslated regions, polyA signals, promoters,
           enhancers and (possibly) mutations defining alleles of a gene.
         meaning: edam:data_1285
@@ -1345,7 +1469,8 @@ enums:
         meaning: edam:data_1288
       edam:data_1289:
         title: Restriction map
-        description: Image of the restriction enzyme cleavage sites (restriction sites)
+        description:
+          Image of the restriction enzyme cleavage sites (restriction sites)
           in a nucleic acid sequence.
         meaning: edam:data_1289
       edam:data_1347:
@@ -1358,44 +1483,52 @@ enums:
         meaning: edam:data_1352
       edam:data_1353:
         title: Sequence motif
-        description: Any specific or conserved pattern (typically expressed as a regular
+        description:
+          Any specific or conserved pattern (typically expressed as a regular
           expression) in a molecular sequence.
         meaning: edam:data_1353
       edam:data_1354:
         title: Sequence profile
-        description: Some type of statistical model representing a (typically multiple)
+        description:
+          Some type of statistical model representing a (typically multiple)
           sequence alignment.
         meaning: edam:data_1354
       edam:data_1355:
         title: Protein signature
-        description: An informative report about a specific or conserved protein sequence
+        description:
+          An informative report about a specific or conserved protein sequence
           pattern.
         meaning: edam:data_1355
       edam:data_1361:
         title: Position frequency matrix
-        description: A profile (typically representing a sequence alignment) that
+        description:
+          A profile (typically representing a sequence alignment) that
           is a simple matrix of nucleotide (or amino acid) counts per position.
         meaning: edam:data_1361
       edam:data_1362:
         title: Position weight matrix
-        description: A profile (typically representing a sequence alignment) that
+        description:
+          A profile (typically representing a sequence alignment) that
           is weighted matrix of nucleotide (or amino acid) counts per position.
         meaning: edam:data_1362
       edam:data_1363:
         title: Information content matrix
-        description: A profile (typically representing a sequence alignment) derived
+        description:
+          A profile (typically representing a sequence alignment) derived
           from a matrix of nucleotide (or amino acid) counts per position that reflects
           information content at each position.
         meaning: edam:data_1363
       edam:data_1364:
         title: Hidden Markov model
-        description: A statistical Markov model of a system which is assumed to be
+        description:
+          A statistical Markov model of a system which is assumed to be
           a Markov process with unobserved (hidden) states. For example, a hidden
           Markov model representation of a set or alignment of sequences.
         meaning: edam:data_1364
       edam:data_1365:
         title: Fingerprint
-        description: One or more fingerprints (sequence classifiers) as used in the
+        description:
+          One or more fingerprints (sequence classifiers) as used in the
           PRINTS database.
         meaning: edam:data_1365
       edam:data_1381:
@@ -1416,7 +1549,8 @@ enums:
         meaning: edam:data_1385
       edam:data_1394:
         title: Alignment score or penalty
-        description: A simple floating point number defining the penalty for opening
+        description:
+          A simple floating point number defining the penalty for opening
           or extending a gap in an alignment.
         meaning: edam:data_1394
       edam:data_1397:
@@ -1433,56 +1567,66 @@ enums:
         meaning: edam:data_1399
       edam:data_1401:
         title: Match reward score
-        description: The score for a 'match' used in various sequence database search
+        description:
+          The score for a 'match' used in various sequence database search
           applications with simple scoring schemes.
         meaning: edam:data_1401
       edam:data_1402:
         title: Mismatch penalty score
-        description: The score (penalty) for a 'mismatch' used in various alignment
+        description:
+          The score (penalty) for a 'mismatch' used in various alignment
           and sequence database search applications with simple scoring schemes.
         meaning: edam:data_1402
       edam:data_1403:
         title: Drop off score
-        description: This is the threshold drop in score at which extension of word
+        description:
+          This is the threshold drop in score at which extension of word
           alignment is halted.
         meaning: edam:data_1403
       edam:data_1410:
         title: Terminal gap opening penalty
-        description: A number defining the penalty for opening gaps at the termini
+        description:
+          A number defining the penalty for opening gaps at the termini
           of an alignment, either from the N/C terminal of protein or 5'/3' terminal
           of nucleotide sequences.
         meaning: edam:data_1410
       edam:data_1411:
         title: Terminal gap extension penalty
-        description: A number defining the penalty for extending gaps at the termini
+        description:
+          A number defining the penalty for extending gaps at the termini
           of an alignment, either from the N/C terminal of protein or 5'/3' terminal
           of nucleotide sequences.
         meaning: edam:data_1411
       edam:data_1412:
         title: Sequence identity
-        description: Sequence identity is the number (%) of matches (identical characters)
+        description:
+          Sequence identity is the number (%) of matches (identical characters)
           in positions from an alignment of two molecular sequences.
         meaning: edam:data_1412
       edam:data_1413:
         title: Sequence similarity
-        description: Sequence similarity is the similarity (expressed as a percentage)
+        description:
+          Sequence similarity is the similarity (expressed as a percentage)
           of two molecular sequences calculated from their alignment, a scoring matrix
           for scoring characters substitutions and penalties for gap insertion and
           extension.
         meaning: edam:data_1413
       edam:data_1426:
         title: Phylogenetic continuous quantitative data
-        description: Continuous quantitative data that may be read during phylogenetic
+        description:
+          Continuous quantitative data that may be read during phylogenetic
           tree calculation.
         meaning: edam:data_1426
       edam:data_1427:
         title: Phylogenetic discrete data
-        description: Character data with discrete states that may be read during phylogenetic
+        description:
+          Character data with discrete states that may be read during phylogenetic
           tree calculation.
         meaning: edam:data_1427
       edam:data_1428:
         title: Phylogenetic character cliques
-        description: One or more cliques of mutually compatible characters that are
+        description:
+          One or more cliques of mutually compatible characters that are
           generated, for example from analysis of discrete character data, and are
           used to generate a phylogeny.
         meaning: edam:data_1428
@@ -1492,17 +1636,20 @@ enums:
         meaning: edam:data_1429
       edam:data_1439:
         title: DNA substitution model
-        description: A model of DNA substitution that explains a DNA sequence alignment,
+        description:
+          A model of DNA substitution that explains a DNA sequence alignment,
           derived from phylogenetic tree analysis.
         meaning: edam:data_1439
       edam:data_1442:
         title: Phylogenetic tree distances
-        description: Distances, such as Branch Score distance, between two or more
+        description:
+          Distances, such as Branch Score distance, between two or more
           phylogenetic trees.
         meaning: edam:data_1442
       edam:data_1444:
         title: Phylogenetic character contrasts
-        description: Independent contrasts for characters used in a phylogenetic tree,
+        description:
+          Independent contrasts for characters used in a phylogenetic tree,
           or covariances, regressions and correlations between characters for those
           contrasts.
         meaning: edam:data_1444
@@ -1516,17 +1663,20 @@ enums:
         meaning: edam:data_1449
       edam:data_1459:
         title: Nucleic acid structure
-        description: 3D coordinate and associated data for a nucleic acid tertiary
+        description:
+          3D coordinate and associated data for a nucleic acid tertiary
           (3D) structure.
         meaning: edam:data_1459
       edam:data_1460:
         title: Protein structure
-        description: 3D coordinate and associated data for a protein tertiary (3D)
+        description:
+          3D coordinate and associated data for a protein tertiary (3D)
           structure, or part of a structure, possibly in complex with other molecules.
         meaning: edam:data_1460
       edam:data_1461:
         title: Protein-ligand complex
-        description: The structure of a protein in complex with a ligand, typically
+        description:
+          The structure of a protein in complex with a ligand, typically
           a small molecule such as an enzyme substrate or cofactor, but possibly another
           macromolecule.
         meaning: edam:data_1461
@@ -1536,7 +1686,8 @@ enums:
         meaning: edam:data_1462
       edam:data_1463:
         title: Small molecule structure
-        description: 3D coordinate and associated data for the (3D) structure of a
+        description:
+          3D coordinate and associated data for the (3D) structure of a
           small molecule, such as any common chemical compound.
         meaning: edam:data_1463
       edam:data_1464:
@@ -1549,27 +1700,32 @@ enums:
         meaning: edam:data_1465
       edam:data_1466:
         title: tRNA structure
-        description: 3D coordinate and associated data for a tRNA tertiary (3D) structure,
+        description:
+          3D coordinate and associated data for a tRNA tertiary (3D) structure,
           including tmRNA, snoRNAs etc.
         meaning: edam:data_1466
       edam:data_1467:
         title: Protein chain
-        description: 3D coordinate and associated data for the tertiary (3D) structure
+        description:
+          3D coordinate and associated data for the tertiary (3D) structure
           of a polypeptide chain.
         meaning: edam:data_1467
       edam:data_1468:
         title: Protein domain
-        description: 3D coordinate and associated data for the tertiary (3D) structure
+        description:
+          3D coordinate and associated data for the tertiary (3D) structure
           of a protein domain.
         meaning: edam:data_1468
       edam:data_1470:
         title: C-alpha trace
-        description: 3D coordinate and associated data for a protein tertiary (3D)
+        description:
+          3D coordinate and associated data for a protein tertiary (3D)
           structure (typically C-alpha atoms only).
         meaning: edam:data_1470
       edam:data_1479:
         title: Structure alignment (pair)
-        description: Alignment (superimposition) of exactly two molecular tertiary
+        description:
+          Alignment (superimposition) of exactly two molecular tertiary
           (3D) structures.
         meaning: edam:data_1479
       edam:data_1481:
@@ -1586,12 +1742,14 @@ enums:
         meaning: edam:data_1493
       edam:data_1494:
         title: Structural transformation matrix
-        description: Matrix to transform (rotate/translate) 3D coordinates, typically
+        description:
+          Matrix to transform (rotate/translate) 3D coordinates, typically
           the transformation necessary to superimpose two molecular structures.
         meaning: edam:data_1494
       edam:data_1497:
         title: Root-mean-square deviation
-        description: Root-mean-square deviation (RMSD) is calculated to measure the
+        description:
+          Root-mean-square deviation (RMSD) is calculated to measure the
           average distance between superimposed macromolecular coordinates.
         meaning: edam:data_1497
       edam:data_1498:
@@ -1600,17 +1758,20 @@ enums:
         meaning: edam:data_1498
       edam:data_1499:
         title: 3D-1D scoring matrix
-        description: A matrix of 3D-1D scores reflecting the probability of amino
+        description:
+          A matrix of 3D-1D scores reflecting the probability of amino
           acids to occur in different tertiary structural environments.
         meaning: edam:data_1499
       edam:data_1501:
         title: Amino acid index
-        description: A table of 20 numerical values which quantify a property (e.g.
+        description:
+          A table of 20 numerical values which quantify a property (e.g.
           physicochemical or biochemical) of the common amino acids.
         meaning: edam:data_1501
       edam:data_1502:
         title: Amino acid index (chemical classes)
-        description: Chemical classification (small, aliphatic, aromatic, polar, charged
+        description:
+          Chemical classification (small, aliphatic, aromatic, polar, charged
           etc) of amino acids.
         meaning: edam:data_1502
       edam:data_1503:
@@ -1627,7 +1788,8 @@ enums:
         meaning: edam:data_1506
       edam:data_1507:
         title: Amino acid index (White-Wimley data)
-        description: Experimental free energy values for the water-interface and water-octanol
+        description:
+          Experimental free energy values for the water-interface and water-octanol
           transitions for the amino acids.
         meaning: edam:data_1507
       edam:data_1508:
@@ -1636,7 +1798,8 @@ enums:
         meaning: edam:data_1508
       edam:data_1519:
         title: Peptide molecular weights
-        description: List of molecular weight(s) of one or more proteins or peptides,
+        description:
+          List of molecular weight(s) of one or more proteins or peptides,
           for example cut by proteolytic enzymes or reagents.
         meaning: edam:data_1519
       edam:data_1520:
@@ -1649,17 +1812,20 @@ enums:
         meaning: edam:data_1521
       edam:data_1522:
         title: Protein sequence hydropathy plot
-        description: A protein sequence with annotation on hydrophobic or hydrophilic
+        description:
+          A protein sequence with annotation on hydrophobic or hydrophilic
           / charged regions, hydrophobicity plot etc.
         meaning: edam:data_1522
       edam:data_1523:
         title: Protein charge plot
-        description: A plot of the mean charge of the amino acids within a window
+        description:
+          A plot of the mean charge of the amino acids within a window
           of specified length as the window is moved along a protein sequence.
         meaning: edam:data_1523
       edam:data_1524:
         title: Protein solubility
-        description: The solubility or atomic solvation energy of a protein sequence
+        description:
+          The solubility or atomic solvation energy of a protein sequence
           or structure.
         meaning: edam:data_1524
       edam:data_1525:
@@ -1668,7 +1834,8 @@ enums:
         meaning: edam:data_1525
       edam:data_1526:
         title: Protein globularity
-        description: Data on the stability, intrinsic disorder or globularity of a
+        description:
+          Data on the stability, intrinsic disorder or globularity of a
           protein sequence.
         meaning: edam:data_1526
       edam:data_1527:
@@ -1701,7 +1868,8 @@ enums:
         meaning: edam:data_1534
       edam:data_1537:
         title: Protein structure report
-        description: A human-readable collection of information about one or more
+        description:
+          A human-readable collection of information about one or more
           specific protein 3D structure(s) or structural domains.
         meaning: edam:data_1537
       edam:data_1539:
@@ -1710,7 +1878,8 @@ enums:
         meaning: edam:data_1539
       edam:data_1542:
         title: Protein solvent accessibility
-        description: Data on the solvent accessible or buried surface area of a protein
+        description:
+          Data on the solvent accessible or buried surface area of a protein
           structure.
         meaning: edam:data_1542
       edam:data_1544:
@@ -1719,12 +1888,14 @@ enums:
         meaning: edam:data_1544
       edam:data_1545:
         title: Protein dipole moment
-        description: Data on the net charge distribution (dipole moment) of a protein
+        description:
+          Data on the net charge distribution (dipole moment) of a protein
           structure.
         meaning: edam:data_1545
       edam:data_1546:
         title: Protein distance matrix
-        description: A matrix of distances between amino acid residues (for example
+        description:
+          A matrix of distances between amino acid residues (for example
           the C-alpha atoms) in a protein structure.
         meaning: edam:data_1546
       edam:data_1547:
@@ -1733,7 +1904,8 @@ enums:
         meaning: edam:data_1547
       edam:data_1548:
         title: Protein residue 3D cluster
-        description: Report on clusters of contacting residues in protein structures
+        description:
+          Report on clusters of contacting residues in protein structures
           such as a key structural residue network.
         meaning: edam:data_1548
       edam:data_1549:
@@ -1746,17 +1918,20 @@ enums:
         meaning: edam:data_1566
       edam:data_1583:
         title: Nucleic acid melting profile
-        description: Data on the dissociation characteristics of a double-stranded
+        description:
+          Data on the dissociation characteristics of a double-stranded
           nucleic acid molecule (DNA or a DNA/RNA hybrid) during heating.
         meaning: edam:data_1583
       edam:data_1584:
         title: Nucleic acid enthalpy
-        description: Enthalpy of hybridised or double stranded nucleic acid (DNA or
+        description:
+          Enthalpy of hybridised or double stranded nucleic acid (DNA or
           RNA/DNA).
         meaning: edam:data_1584
       edam:data_1585:
         title: Nucleic acid entropy
-        description: Entropy of hybridised or double stranded nucleic acid (DNA or
+        description:
+          Entropy of hybridised or double stranded nucleic acid (DNA or
           RNA/DNA).
         meaning: edam:data_1585
       edam:data_1588:
@@ -1777,13 +1952,15 @@ enums:
         meaning: edam:data_1595
       edam:data_1596:
         title: Nucleic acid folding report
-        description: A human-readable collection of information about RNA/DNA folding,
+        description:
+          A human-readable collection of information about RNA/DNA folding,
           minimum folding energies for DNA or RNA sequences, energy landscape of RNA
           mutants etc.
         meaning: edam:data_1596
       edam:data_1597:
         title: Codon usage table
-        description: Table of codon usage data calculated from one or more nucleic
+        description:
+          Table of codon usage data calculated from one or more nucleic
           acid sequences.
         meaning: edam:data_1597
       edam:data_1598:
@@ -1792,17 +1969,20 @@ enums:
         meaning: edam:data_1598
       edam:data_1600:
         title: Codon usage bias plot
-        description: A plot of the synonymous codon usage calculated for windows over
+        description:
+          A plot of the synonymous codon usage calculated for windows over
           a nucleotide sequence.
         meaning: edam:data_1600
       edam:data_1602:
         title: Codon usage fraction difference
-        description: The differences in codon usage fractions between two codon usage
+        description:
+          The differences in codon usage fractions between two codon usage
           tables.
         meaning: edam:data_1602
       edam:data_1621:
         title: Pharmacogenomic test report
-        description: A human-readable collection of information about the influence
+        description:
+          A human-readable collection of information about the influence
           of genotype on drug response.
         meaning: edam:data_1621
       edam:data_1622:
@@ -1811,24 +1991,28 @@ enums:
         meaning: edam:data_1622
       edam:data_1636:
         title: Heat map
-        description: A graphical 2D tabular representation of expression data, typically
+        description:
+          A graphical 2D tabular representation of expression data, typically
           derived from an omics experiment. A heat map is a table where rows and columns
           correspond to different features and contexts (for example, cells or samples)
           and the cell colour represents the level of expression of a gene that context.
         meaning: edam:data_1636
       edam:data_1667:
         title: E-value
-        description: A simple floating point number defining the lower or upper limit
+        description:
+          A simple floating point number defining the lower or upper limit
           of an expectation value (E-value).
         meaning: edam:data_1667
       edam:data_1668:
         title: Z-value
-        description: The z-value is the number of standard deviations a data value
+        description:
+          The z-value is the number of standard deviations a data value
           is above or below a mean value.
         meaning: edam:data_1668
       edam:data_1669:
         title: P-value
-        description: The P-value is the probability of obtaining by random chance
+        description:
+          The P-value is the probability of obtaining by random chance
           a result that is at least as extreme as an observed result, assuming a NULL
           hypothesis is true.
         meaning: edam:data_1669
@@ -1854,7 +2038,8 @@ enums:
         meaning: edam:data_1696
       edam:data_1707:
         title: Phylogenetic tree image
-        description: An image (for viewing or printing) of a phylogenetic tree including
+        description:
+          An image (for viewing or printing) of a phylogenetic tree including
           (typically) a plot of rooted or unrooted phylogenies, cladograms, circular
           trees or phenograms and associated information.
         meaning: edam:data_1707
@@ -1872,7 +2057,8 @@ enums:
         meaning: edam:data_1710
       edam:data_1711:
         title: Sequence alignment image
-        description: Image of two or more aligned molecular sequences possibly annotated
+        description:
+          Image of two or more aligned molecular sequences possibly annotated
           with alignment features.
         meaning: edam:data_1711
       edam:data_1712:
@@ -1881,7 +2067,8 @@ enums:
         meaning: edam:data_1712
       edam:data_1713:
         title: Fate map
-        description: A fate map is a plan of early stage of an embryo such as a blastula,
+        description:
+          A fate map is a plan of early stage of an embryo such as a blastula,
           showing areas that are significance to development.
         meaning: edam:data_1713
       edam:data_1714:
@@ -1902,7 +2089,8 @@ enums:
         meaning: edam:data_1743
       edam:data_1748:
         title: PDB atom name
-        description: Identifier (a string) of a specific atom from a PDB file for
+        description:
+          Identifier (a string) of a specific atom from a PDB file for
           a molecular structure.
         meaning: edam:data_1748
       edam:data_1755:
@@ -1931,7 +2119,8 @@ enums:
         meaning: edam:data_1771
       edam:data_1772:
         title: Score
-        description: A numerical value, that is some type of scored value arising
+        description:
+          A numerical value, that is some type of scored value arising
           for example from a prediction method.
         meaning: edam:data_1772
       edam:data_1794:
@@ -1952,7 +2141,8 @@ enums:
         meaning: edam:data_1802
       edam:data_1803:
         title: Gene ID (Virginia microbial)
-        description: Gene identifier from Virginia Bioinformatics Institute microbial
+        description:
+          Gene identifier from Virginia Bioinformatics Institute microbial
           database.
         meaning: edam:data_1803
       edam:data_1804:
@@ -1965,7 +2155,8 @@ enums:
         meaning: edam:data_1805
       edam:data_1807:
         title: ORF name
-        description: The name of an open reading frame attributed by a sequencing
+        description:
+          The name of an open reading frame attributed by a sequencing
           project.
         meaning: edam:data_1807
       edam:data_1855:
@@ -1974,32 +2165,38 @@ enums:
         meaning: edam:data_1855
       edam:data_1856:
         title: PDB insertion code
-        description: An insertion code (part of the residue number) for an amino acid
+        description:
+          An insertion code (part of the residue number) for an amino acid
           residue from a PDB file.
         meaning: edam:data_1856
       edam:data_1857:
         title: Atomic occupancy
-        description: The fraction of an atom type present at a site in a molecular
+        description:
+          The fraction of an atom type present at a site in a molecular
           structure.
         meaning: edam:data_1857
       edam:data_1858:
         title: Isotropic B factor
-        description: Isotropic B factor (atomic displacement parameter) for an atom
+        description:
+          Isotropic B factor (atomic displacement parameter) for an atom
           from a PDB file.
         meaning: edam:data_1858
       edam:data_1859:
         title: Deletion map
-        description: A cytogenetic map showing chromosome banding patterns in mutant
+        description:
+          A cytogenetic map showing chromosome banding patterns in mutant
           cell lines relative to the wild type.
         meaning: edam:data_1859
       edam:data_1860:
         title: QTL map
-        description: A genetic map which shows the approximate location of quantitative
+        description:
+          A genetic map which shows the approximate location of quantitative
           trait loci (QTL) between two or more markers.
         meaning: edam:data_1860
       edam:data_1863:
         title: Haplotype map
-        description: A map of haplotypes in a genome or other sequence, describing
+        description:
+          A map of haplotypes in a genome or other sequence, describing
           common patterns of genetic variation.
         meaning: edam:data_1863
       edam:data_1867:
@@ -2008,7 +2205,8 @@ enums:
         meaning: edam:data_1867
       edam:data_1868:
         title: Taxon
-        description: The name of a group of organisms belonging to the same taxonomic
+        description:
+          The name of a group of organisms belonging to the same taxonomic
           rank.
         meaning: edam:data_1868
       edam:data_1869:
@@ -2021,7 +2219,8 @@ enums:
         meaning: edam:data_1870
       edam:data_1872:
         title: Taxonomic classification
-        description: The full name for a group of organisms, reflecting their biological
+        description:
+          The full name for a group of organisms, reflecting their biological
           classification and (usually) conforming to a standard nomenclature.
         meaning: edam:data_1872
       edam:data_1873:
@@ -2046,7 +2245,8 @@ enums:
         meaning: edam:data_1882
       edam:data_1883:
         title: Annotated URI
-        description: A URI along with annotation describing the data found at the
+        description:
+          A URI along with annotation describing the data found at the
           address.
         meaning: edam:data_1883
       edam:data_1885:
@@ -2063,14 +2263,16 @@ enums:
         meaning: edam:data_1891
       edam:data_1893:
         title: Locus ID
-        description: A unique name or other identifier of a genetic locus, typically
+        description:
+          A unique name or other identifier of a genetic locus, typically
           conforming to a scheme that names loci (such as predicted genes) depending
           on their position in a molecular sequence, for example a completely sequenced
           genome or chromosome.
         meaning: edam:data_1893
       edam:data_1895:
         title: Locus ID (AGI)
-        description: Locus identifier for Arabidopsis Genome Initiative (TAIR, TIGR
+        description:
+          Locus identifier for Arabidopsis Genome Initiative (TAIR, TIGR
           and MIPS databases).
         meaning: edam:data_1895
       edam:data_1896:
@@ -2079,7 +2281,8 @@ enums:
         meaning: edam:data_1896
       edam:data_1897:
         title: Locus ID (MGG)
-        description: Identifier for loci from Magnaporthe grisea Database at the Broad
+        description:
+          Identifier for loci from Magnaporthe grisea Database at the Broad
           Institute.
         meaning: edam:data_1897
       edam:data_1898:
@@ -2088,7 +2291,8 @@ enums:
         meaning: edam:data_1898
       edam:data_1899:
         title: Locus ID (CMR)
-        description: Locus identifier for Comprehensive Microbial Resource at the
+        description:
+          Locus identifier for Comprehensive Microbial Resource at the
           J. Craig Venter Institute.
         meaning: edam:data_1899
       edam:data_1900:
@@ -2125,7 +2329,8 @@ enums:
         meaning: edam:data_1908
       edam:data_1916:
         title: Alignment
-        description: An alignment of molecular sequences, structures or profiles derived
+        description:
+          An alignment of molecular sequences, structures or profiles derived
           from them.
         meaning: edam:data_1916
       edam:data_1917:
@@ -2134,22 +2339,26 @@ enums:
         meaning: edam:data_1917
       edam:data_2007:
         title: UniProt keyword
-        description: A word or phrase that can appear in the keywords field (KW line)
+        description:
+          A word or phrase that can appear in the keywords field (KW line)
           of entries from the UniProt database.
         meaning: edam:data_2007
       edam:data_2012:
         title: Sequence coordinates
-        description: A position in a map (for example a genetic map), either a single
+        description:
+          A position in a map (for example a genetic map), either a single
           position (point) or a region / interval.
         meaning: edam:data_2012
       edam:data_2016:
         title: Amino acid property
-        description: Data concerning the intrinsic physical (e.g. structural) or chemical
+        description:
+          Data concerning the intrinsic physical (e.g. structural) or chemical
           properties of one, more or all amino acids.
         meaning: edam:data_2016
       edam:data_2019:
         title: Map data
-        description: Data describing a molecular map (genetic or physical) or a set
+        description:
+          Data describing a molecular map (genetic or physical) or a set
           of such maps, including various attributes of, data extracted from or derived
           from the analysis of them, but excluding the map(s) themselves. This includes
           metadata for map sets that share a common set of features which are mapped.
@@ -2160,20 +2369,23 @@ enums:
         meaning: edam:data_2024
       edam:data_2025:
         title: Michaelis Menten plot
-        description: A plot giving an approximation of the kinetics of an enzyme-catalysed
+        description:
+          A plot giving an approximation of the kinetics of an enzyme-catalysed
           reaction, assuming simple kinetics (i.e. no intermediate or product inhibition,
           allostericity or cooperativity). It plots initial reaction rate to the substrate
           concentration (S) from which the maximum rate (vmax) is apparent.
         meaning: edam:data_2025
       edam:data_2026:
         title: Hanes Woolf plot
-        description: A plot based on the Michaelis Menten equation of enzyme kinetics
+        description:
+          A plot based on the Michaelis Menten equation of enzyme kinetics
           plotting the ratio of the initial substrate concentration (S) against the
           reaction velocity (v).
         meaning: edam:data_2026
       edam:data_2042:
         title: Evidence
-        description: Typically a human-readable summary of body of facts or information
+        description:
+          Typically a human-readable summary of body of facts or information
           indicating why a statement is true or valid. This may include a computational
           prediction, laboratory experiment, literature reference etc.
         meaning: edam:data_2042
@@ -2183,7 +2395,8 @@ enums:
         meaning: edam:data_2044
       edam:data_2048:
         title: Report
-        description: A human-readable collection of information including annotation
+        description:
+          A human-readable collection of information including annotation
           on a biological entity or phenomena, computer-generated reports of analysis
           of primary data (e.g. sequence or structural), and metadata (data about
           primary data) or any other free (essentially unformatted) text, as distinct
@@ -2211,12 +2424,14 @@ enums:
         meaning: edam:data_2082
       edam:data_2084:
         title: Nucleic acid report
-        description: A human-readable collection of information about one or more
+        description:
+          A human-readable collection of information about one or more
           specific nucleic acid molecules.
         meaning: edam:data_2084
       edam:data_2085:
         title: Structure report
-        description: A human-readable collection of information about one or more
+        description:
+          A human-readable collection of information about one or more
           molecular tertiary (3D) structures. It might include annotation on the structure,
           a computer-generated report of analysis of structural data, and metadata
           (data about primary data) or any other free (essentially unformatted) text,
@@ -2224,22 +2439,26 @@ enums:
         meaning: edam:data_2085
       edam:data_2087:
         title: Molecular property
-        description: A report on the physical (e.g. structural) or chemical properties
+        description:
+          A report on the physical (e.g. structural) or chemical properties
           of molecules, or parts of a molecule.
         meaning: edam:data_2087
       edam:data_2088:
         title: DNA base structural data
-        description: Structural data for DNA base pairs or runs of bases, such as
+        description:
+          Structural data for DNA base pairs or runs of bases, such as
           energy or angle data.
         meaning: edam:data_2088
       edam:data_2091:
         title: Accession
-        description: A persistent (stable) and unique identifier, typically identifying
+        description:
+          A persistent (stable) and unique identifier, typically identifying
           an object (entry) from a database.
         meaning: edam:data_2091
       edam:data_2093:
         title: Data reference
-        description: Reference to a dataset (or a cross-reference between two datasets),
+        description:
+          Reference to a dataset (or a cross-reference between two datasets),
           typically one or more entries in a biological database or ontology.
         meaning: edam:data_2093
       edam:data_2098:
@@ -2248,17 +2467,20 @@ enums:
         meaning: edam:data_2098
       edam:data_2099:
         title: Name
-        description: A name of a thing, which need not necessarily uniquely identify
+        description:
+          A name of a thing, which need not necessarily uniquely identify
           it.
         meaning: edam:data_2099
       edam:data_2101:
         title: Account authentication
-        description: Authentication data usually used to log in into an account on
+        description:
+          Authentication data usually used to log in into an account on
           an information system such as a web application or a database.
         meaning: edam:data_2101
       edam:data_2102:
         title: KEGG organism code
-        description: A three-letter code used in the KEGG databases to uniquely identify
+        description:
+          A three-letter code used in the KEGG databases to uniquely identify
           organisms.
         meaning: edam:data_2102
       edam:data_2104:
@@ -2271,7 +2493,8 @@ enums:
         meaning: edam:data_2105
       edam:data_2106:
         title: Reaction ID (BioCyc)
-        description: Identifier of a biological reaction from the BioCyc reactions
+        description:
+          Identifier of a biological reaction from the BioCyc reactions
           database.
         meaning: edam:data_2106
       edam:data_2107:
@@ -2284,7 +2507,8 @@ enums:
         meaning: edam:data_2108
       edam:data_2109:
         title: Identifier (hybrid)
-        description: An identifier that is reused for data objects of fundamentally
+        description:
+          An identifier that is reused for data objects of fundamentally
           different types (typically served from a single database).
         meaning: edam:data_2109
       edam:data_2110:
@@ -2313,7 +2537,8 @@ enums:
         meaning: edam:data_2117
       edam:data_2118:
         title: Person identifier
-        description: An identifier of a software end-user on a website or a database
+        description:
+          An identifier of a software end-user on a website or a database
           (typically a person or an entity).
         meaning: edam:data_2118
       edam:data_2119:
@@ -2330,7 +2555,8 @@ enums:
         meaning: edam:data_2128
       edam:data_2129:
         title: File format name
-        description: Name of a file format such as HTML, PNG, PDF, EMBL, GenBank and
+        description:
+          Name of a file format such as HTML, PNG, PDF, EMBL, GenBank and
           so on.
         meaning: edam:data_2129
       edam:data_2131:
@@ -2347,7 +2573,8 @@ enums:
         meaning: edam:data_2137
       edam:data_2139:
         title: Nucleic acid melting temperature
-        description: A temperature concerning nucleic acid denaturation, typically
+        description:
+          A temperature concerning nucleic acid denaturation, typically
           the temperature at which the two strands of a hybridised or double stranded
           nucleic acid (DNA or RNA/DNA) molecule separate.
         meaning: edam:data_2139
@@ -2361,22 +2588,26 @@ enums:
         meaning: edam:data_2154
       edam:data_2160:
         title: Fickett testcode plot
-        description: A plot of Fickett testcode statistic (identifying protein coding
+        description:
+          A plot of Fickett testcode statistic (identifying protein coding
           regions) in a nucleotide sequences.
         meaning: edam:data_2160
       edam:data_2161:
         title: Sequence similarity plot
-        description: A plot of sequence similarities identified from word-matching
+        description:
+          A plot of sequence similarities identified from word-matching
           or character comparison.
         meaning: edam:data_2161
       edam:data_2162:
         title: Helical wheel
-        description: An image of peptide sequence sequence looking down the axis of
+        description:
+          An image of peptide sequence sequence looking down the axis of
           the helix for highlighting amphipathicity and other properties.
         meaning: edam:data_2162
       edam:data_2163:
         title: Helical net
-        description: An image of peptide sequence sequence in a simple 3,4,3,4 repeating
+        description:
+          An image of peptide sequence sequence in a simple 3,4,3,4 repeating
           pattern that emulates at a simple level the arrangement of residues around
           an alpha helix.
         meaning: edam:data_2163
@@ -2386,7 +2617,8 @@ enums:
         meaning: edam:data_2165
       edam:data_2166:
         title: Sequence composition plot
-        description: A plot of character or word composition / frequency of a molecular
+        description:
+          A plot of character or word composition / frequency of a molecular
           sequence.
         meaning: edam:data_2166
       edam:data_2167:
@@ -2395,7 +2627,8 @@ enums:
         meaning: edam:data_2167
       edam:data_2168:
         title: Sequence trace image
-        description: Image of a sequence trace (nucleotide sequence versus probabilities
+        description:
+          Image of a sequence trace (nucleotide sequence versus probabilities
           of each of the 4 bases).
         meaning: edam:data_2168
       edam:data_2174:
@@ -2404,7 +2637,8 @@ enums:
         meaning: edam:data_2174
       edam:data_2190:
         title: Sequence checksum
-        description: A fixed-size datum calculated (by using a hash function) for
+        description:
+          A fixed-size datum calculated (by using a hash function) for
           a molecular sequence, typically for purposes of error detection or indexing.
         meaning: edam:data_2190
       edam:data_2193:
@@ -2465,12 +2699,14 @@ enums:
         meaning: edam:data_2293
       edam:data_2294:
         title: Sequence variation ID
-        description: An identifier of an entry from a database of molecular sequence
+        description:
+          An identifier of an entry from a database of molecular sequence
           variation.
         meaning: edam:data_2294
       edam:data_2295:
         title: Gene ID
-        description: A unique (and typically persistent) identifier of a gene in a
+        description:
+          A unique (and typically persistent) identifier of a gene in a
           database, that is (typically) different to the gene name/symbol.
         meaning: edam:data_2295
       edam:data_2297:
@@ -2479,12 +2715,14 @@ enums:
         meaning: edam:data_2297
       edam:data_2298:
         title: Gene ID (HGNC)
-        description: Identifier for a gene approved by the HUGO Gene Nomenclature
+        description:
+          Identifier for a gene approved by the HUGO Gene Nomenclature
           Committee.
         meaning: edam:data_2298
       edam:data_2299:
         title: Gene name
-        description: The name of a gene, (typically) assigned by a person and/or according
+        description:
+          The name of a gene, (typically) assigned by a person and/or according
           to a naming scheme. It may contain white space characters and is typically
           more intuitive and readable than a gene symbol. It (typically) may be used
           to identify similar genes in different species and to derive a gene symbol.
@@ -2495,28 +2733,33 @@ enums:
         meaning: edam:data_2301
       edam:data_2302:
         title: STRING ID
-        description: Unique identifier of an entry from the STRING database of protein-protein
+        description:
+          Unique identifier of an entry from the STRING database of protein-protein
           interactions.
         meaning: edam:data_2302
       edam:data_2309:
         title: Reaction ID (SABIO-RK)
-        description: Identifier of a biological reaction from the SABIO-RK reactions
+        description:
+          Identifier of a biological reaction from the SABIO-RK reactions
           database.
         meaning: edam:data_2309
       edam:data_2313:
         title: Carbohydrate report
-        description: A human-readable collection of information about one or more
+        description:
+          A human-readable collection of information about one or more
           specific carbohydrate 3D structure(s).
         meaning: edam:data_2313
       edam:data_2314:
         title: GI number
-        description: A series of digits that are assigned consecutively to each sequence
+        description:
+          A series of digits that are assigned consecutively to each sequence
           record processed by NCBI. The GI number bears no resemblance to the Accession
           number of the sequence record.
         meaning: edam:data_2314
       edam:data_2315:
         title: NCBI version
-        description: An identifier assigned to sequence records processed by NCBI,
+        description:
+          An identifier assigned to sequence records processed by NCBI,
           made of the accession number of the database record followed by a dot and
           a version number.
         meaning: edam:data_2315
@@ -2558,12 +2801,14 @@ enums:
         meaning: edam:data_2327
       edam:data_2335:
         title: Bit score
-        description: A score derived from the alignment of two sequences, which is
+        description:
+          A score derived from the alignment of two sequences, which is
           then normalised with respect to the scoring system.
         meaning: edam:data_2335
       edam:data_2337:
         title: Resource metadata
-        description: Data concerning or describing some core computational resource,
+        description:
+          Data concerning or describing some core computational resource,
           as distinct from primary data. This includes metadata on the origin, source,
           history, ownership or location of some thing.
         meaning: edam:data_2337
@@ -2617,32 +2862,38 @@ enums:
         meaning: edam:data_2353
       edam:data_2354:
         title: RNA family report
-        description: A human-readable collection of information about a specific RNA
+        description:
+          A human-readable collection of information about a specific RNA
           family or other group of classified RNA sequences.
         meaning: edam:data_2354
       edam:data_2355:
         title: RNA family identifier
-        description: Identifier of an RNA family, typically an entry from a RNA sequence
+        description:
+          Identifier of an RNA family, typically an entry from a RNA sequence
           classification database.
         meaning: edam:data_2355
       edam:data_2356:
         title: RFAM accession
-        description: Stable accession number of an entry (RNA family) from the RFAM
+        description:
+          Stable accession number of an entry (RNA family) from the RFAM
           database.
         meaning: edam:data_2356
       edam:data_2362:
         title: Sequence accession (hybrid)
-        description: Accession number of a nucleotide or protein sequence database
+        description:
+          Accession number of a nucleotide or protein sequence database
           entry.
         meaning: edam:data_2362
       edam:data_2365:
         title: Pathway or network accession
-        description: A persistent, unique identifier of a biological pathway or network
+        description:
+          A persistent, unique identifier of a biological pathway or network
           (typically a database entry).
         meaning: edam:data_2365
       edam:data_2366:
         title: Secondary structure alignment
-        description: Alignment of the (1D representations of) secondary structure
+        description:
+          Alignment of the (1D representations of) secondary structure
           of two or more molecules.
         meaning: edam:data_2366
       edam:data_2367:
@@ -2667,22 +2918,26 @@ enums:
         meaning: edam:data_2371
       edam:data_2373:
         title: Spot ID
-        description: Unique identifier of a spot from a two-dimensional (protein)
+        description:
+          Unique identifier of a spot from a two-dimensional (protein)
           gel.
         meaning: edam:data_2373
       edam:data_2374:
         title: Spot serial number
-        description: Unique identifier of a spot from a two-dimensional (protein)
+        description:
+          Unique identifier of a spot from a two-dimensional (protein)
           gel in the SWISS-2DPAGE database.
         meaning: edam:data_2374
       edam:data_2375:
         title: Spot ID (HSC-2DPAGE)
-        description: Unique identifier of a spot from a two-dimensional (protein)
+        description:
+          Unique identifier of a spot from a two-dimensional (protein)
           gel from a HSC-2DPAGE database.
         meaning: edam:data_2375
       edam:data_2379:
         title: Strain identifier
-        description: Identifier of a strain of an organism variant, typically a plant,
+        description:
+          Identifier of a strain of an organism variant, typically a plant,
           virus or bacterium.
         meaning: edam:data_2379
       edam:data_2380:
@@ -2691,7 +2946,8 @@ enums:
         meaning: edam:data_2380
       edam:data_2382:
         title: Genotype experiment ID
-        description: Identifier of an entry from a database of genotype experiment
+        description:
+          Identifier of an entry from a database of genotype experiment
           metadata.
         meaning: edam:data_2382
       edam:data_2383:
@@ -2700,7 +2956,8 @@ enums:
         meaning: edam:data_2383
       edam:data_2384:
         title: IPI protein ID
-        description: Identifier of a protein entry catalogued in the International
+        description:
+          Identifier of a protein entry catalogued in the International
           Protein Index (IPI) database.
         meaning: edam:data_2384
       edam:data_2385:
@@ -2745,13 +3002,15 @@ enums:
         meaning: edam:data_2398
       edam:data_2523:
         title: Phylogenetic data
-        description: Data concerning phylogeny, typically of molecular sequences,
+        description:
+          Data concerning phylogeny, typically of molecular sequences,
           including reports of information concerning or derived from a phylogenetic
           tree, or from comparing two or more phylogenetic trees.
         meaning: edam:data_2523
       edam:data_2526:
         title: Text data
-        description: Data concerning, extracted from, or derived from the analysis
+        description:
+          Data concerning, extracted from, or derived from the analysis
           of a scientific text (or texts) such as a full text article from a scientific
           journal.
         meaning: edam:data_2526
@@ -2761,18 +3020,21 @@ enums:
         meaning: edam:data_2530
       edam:data_2531:
         title: Protocol
-        description: A human-readable collection of information about about how a
+        description:
+          A human-readable collection of information about about how a
           scientific experiment or analysis was carried out that results in a specific
           set of data or results used for further analysis or to test a specific hypothesis.
         meaning: edam:data_2531
       edam:data_2534:
         title: Sequence attribute
-        description: An attribute of a molecular sequence, possibly in reference to
+        description:
+          An attribute of a molecular sequence, possibly in reference to
           some other sequence.
         meaning: edam:data_2534
       edam:data_2535:
         title: Sequence tag profile
-        description: Output from a serial analysis of gene expression (SAGE), massively
+        description:
+          Output from a serial analysis of gene expression (SAGE), massively
           parallel signature sequencing (MPSS) or sequencing by synthesis (SBS) experiment.
           In all cases this is a list of short sequence tags and the number of times
           it is observed.
@@ -2815,12 +3077,14 @@ enums:
         meaning: edam:data_2580
       edam:data_2582:
         title: GO concept ID (biological process)
-        description: An identifier of a 'biological process' concept from the the
+        description:
+          An identifier of a 'biological process' concept from the the
           Gene Ontology.
         meaning: edam:data_2582
       edam:data_2583:
         title: GO concept ID (molecular function)
-        description: An identifier of a 'molecular function' concept from the the
+        description:
+          An identifier of a 'molecular function' concept from the the
           Gene Ontology.
         meaning: edam:data_2583
       edam:data_2586:
@@ -2833,17 +3097,20 @@ enums:
         meaning: edam:data_2587
       edam:data_2588:
         title: BlotBase blot ID
-        description: Unique identifier of a blot from a Northern Blot from the BlotBase
+        description:
+          Unique identifier of a blot from a Northern Blot from the BlotBase
           database.
         meaning: edam:data_2588
       edam:data_2589:
         title: Hierarchy
-        description: Raw data on a biological hierarchy, describing the hierarchy
+        description:
+          Raw data on a biological hierarchy, describing the hierarchy
           proper, hierarchy components and possibly associated annotation.
         meaning: edam:data_2589
       edam:data_2591:
-        title: Brite hierarchy ID
-        description: Identifier of an entry from the Brite database of biological
+        title: Bright hierarchy ID
+        description:
+          Identifier of an entry from the Bright database of biological
           hierarchies.
         meaning: edam:data_2591
       edam:data_2593:
@@ -2852,12 +3119,14 @@ enums:
         meaning: edam:data_2593
       edam:data_2594:
         title: UniGene taxon
-        description: The name of a taxon using the controlled vocabulary of the UniGene
+        description:
+          The name of a taxon using the controlled vocabulary of the UniGene
           database.
         meaning: edam:data_2594
       edam:data_2595:
         title: UTRdb taxon
-        description: The name of a taxon using the controlled vocabulary of the UTRdb
+        description:
+          The name of a taxon using the controlled vocabulary of the UTRdb
           database.
         meaning: edam:data_2595
       edam:data_2596:
@@ -2866,17 +3135,20 @@ enums:
         meaning: edam:data_2596
       edam:data_2597:
         title: CABRI catalogue name
-        description: The name of a catalogue of biological resources from the CABRI
+        description:
+          The name of a catalogue of biological resources from the CABRI
           database.
         meaning: edam:data_2597
       edam:data_2600:
         title: Pathway or network
-        description: Primary data about a specific biological pathway or network (the
+        description:
+          Primary data about a specific biological pathway or network (the
           nodes and connections within the pathway or network).
         meaning: edam:data_2600
       edam:data_2603:
         title: Expression data
-        description: Image, hybridisation or some other data arising from a study
+        description:
+          Image, hybridisation or some other data arising from a study
           of feature/molecule expression, typically profiling or quantification.
         meaning: edam:data_2603
       edam:data_2605:
@@ -2885,7 +3157,8 @@ enums:
         meaning: edam:data_2605
       edam:data_2606:
         title: RFAM name
-        description: Name (not necessarily stable) an entry (RNA family) from the
+        description:
+          Name (not necessarily stable) an entry (RNA family) from the
           RFAM database.
         meaning: edam:data_2606
       edam:data_2608:
@@ -2898,12 +3171,14 @@ enums:
         meaning: edam:data_2609
       edam:data_2610:
         title: Ensembl ID
-        description: Identifier of an entry (exon, gene, transcript or protein) from
+        description:
+          Identifier of an entry (exon, gene, transcript or protein) from
           the Ensembl database.
         meaning: edam:data_2610
       edam:data_2611:
         title: ICD identifier
-        description: An identifier of a disease from the International Classification
+        description:
+          An identifier of a disease from the International Classification
           of Diseases (ICD) database.
         meaning: edam:data_2611
       edam:data_2612:
@@ -2912,27 +3187,32 @@ enums:
         meaning: edam:data_2612
       edam:data_2613:
         title: KEGG Glycan ID
-        description: Unique identifier of a glycan ligand from the KEGG GLYCAN database
+        description:
+          Unique identifier of a glycan ligand from the KEGG GLYCAN database
           (a subset of KEGG LIGAND).
         meaning: edam:data_2613
       edam:data_2614:
         title: TCDB ID
-        description: A unique identifier of a family from the transport classification
+        description:
+          A unique identifier of a family from the transport classification
           database (TCDB) of membrane transport proteins.
         meaning: edam:data_2614
       edam:data_2615:
         title: MINT ID
-        description: Unique identifier of an entry from the MINT database of protein-protein
+        description:
+          Unique identifier of an entry from the MINT database of protein-protein
           interactions.
         meaning: edam:data_2615
       edam:data_2616:
         title: DIP ID
-        description: Unique identifier of an entry from the DIP database of protein-protein
+        description:
+          Unique identifier of an entry from the DIP database of protein-protein
           interactions.
         meaning: edam:data_2616
       edam:data_2617:
         title: Signaling Gateway protein ID
-        description: Unique identifier of a protein listed in the UCSD-Nature Signaling
+        description:
+          Unique identifier of a protein listed in the UCSD-Nature Signaling
           Gateway Molecule Pages database.
         meaning: edam:data_2617
       edam:data_2618:
@@ -2941,7 +3221,8 @@ enums:
         meaning: edam:data_2618
       edam:data_2619:
         title: RESID ID
-        description: Identifier of a protein modification catalogued in the RESID
+        description:
+          Identifier of a protein modification catalogued in the RESID
           database.
         meaning: edam:data_2619
       edam:data_2620:
@@ -2954,7 +3235,8 @@ enums:
         meaning: edam:data_2621
       edam:data_2622:
         title: Compound ID (HMDB)
-        description: Identifier of a small molecule metabolite from the Human Metabolome
+        description:
+          Identifier of a small molecule metabolite from the Human Metabolome
           Database (HMDB).
         meaning: edam:data_2622
       edam:data_2625:
@@ -2983,7 +3265,8 @@ enums:
         meaning: edam:data_2631
       edam:data_2632:
         title: SGD ID
-        description: Identifier of an entry from the Saccharomyces genome database
+        description:
+          Identifier of an entry from the Saccharomyces genome database
           (SGD).
         meaning: edam:data_2632
       edam:data_2633:
@@ -2992,7 +3275,8 @@ enums:
         meaning: edam:data_2633
       edam:data_2634:
         title: ISBN
-        description: The International Standard Book Number (ISBN) is for identifying
+        description:
+          The International Standard Book Number (ISBN) is for identifying
           printed books.
         meaning: edam:data_2634
       edam:data_2635:
@@ -3005,7 +3289,8 @@ enums:
         meaning: edam:data_2636
       edam:data_2637:
         title: cPath ID
-        description: A unique identifier for pathways, reactions, complexes and small
+        description:
+          A unique identifier for pathways, reactions, complexes and small
           molecules from the cPath (Pathway Commons) database.
         meaning: edam:data_2637
       edam:data_2638:
@@ -3026,7 +3311,8 @@ enums:
         meaning: edam:data_2642
       edam:data_2643:
         title: Gene ID (ZFIN)
-        description: Identifier for a gene from the Zebrafish information network
+        description:
+          Identifier for a gene from the Zebrafish information network
           genome (ZFIN) database.
         meaning: edam:data_2643
       edam:data_2644:
@@ -3043,32 +3329,38 @@ enums:
         meaning: edam:data_2646
       edam:data_2647:
         title: LGICdb identifier
-        description: Unique identifier of an entry from the Ligand-gated ion channel
+        description:
+          Unique identifier of an entry from the Ligand-gated ion channel
           (LGICdb) database.
         meaning: edam:data_2647
       edam:data_2648:
         title: Reaction kinetics ID (SABIO-RK)
-        description: Identifier of a biological reaction (kinetics entry) from the
+        description:
+          Identifier of a biological reaction (kinetics entry) from the
           SABIO-RK reactions database.
         meaning: edam:data_2648
       edam:data_2649:
         title: PharmGKB ID
-        description: Identifier of an entry from the pharmacogenetics and pharmacogenomics
+        description:
+          Identifier of an entry from the pharmacogenetics and pharmacogenomics
           knowledge base (PharmGKB).
         meaning: edam:data_2649
       edam:data_2650:
         title: Pathway ID (PharmGKB)
-        description: Identifier of a pathway from the pharmacogenetics and pharmacogenomics
+        description:
+          Identifier of a pathway from the pharmacogenetics and pharmacogenomics
           knowledge base (PharmGKB).
         meaning: edam:data_2650
       edam:data_2651:
         title: Disease ID (PharmGKB)
-        description: Identifier of a disease from the pharmacogenetics and pharmacogenomics
+        description:
+          Identifier of a disease from the pharmacogenetics and pharmacogenomics
           knowledge base (PharmGKB).
         meaning: edam:data_2651
       edam:data_2652:
         title: Drug ID (PharmGKB)
-        description: Identifier of a drug from the pharmacogenetics and pharmacogenomics
+        description:
+          Identifier of a drug from the pharmacogenetics and pharmacogenomics
           knowledge base (PharmGKB).
         meaning: edam:data_2652
       edam:data_2653:
@@ -3077,7 +3369,8 @@ enums:
         meaning: edam:data_2653
       edam:data_2654:
         title: Target ID (TTD)
-        description: Identifier of a target protein from the Therapeutic Target Database
+        description:
+          Identifier of a target protein from the Therapeutic Target Database
           (TTD).
         meaning: edam:data_2654
       edam:data_2655:
@@ -3098,17 +3391,20 @@ enums:
         meaning: edam:data_2658
       edam:data_2659:
         title: Pathway ID (SMPDB)
-        description: Identifier of a pathway from the Small Molecule Pathway Database
+        description:
+          Identifier of a pathway from the Small Molecule Pathway Database
           (SMPDB).
         meaning: edam:data_2659
       edam:data_2660:
         title: BioNumbers ID
-        description: Identifier of an entry from the BioNumbers database of key numbers
+        description:
+          Identifier of an entry from the BioNumbers database of key numbers
           and associated data in molecular biology.
         meaning: edam:data_2660
       edam:data_2662:
         title: T3DB ID
-        description: Unique identifier of a toxin from the Toxin and Toxin Target
+        description:
+          Unique identifier of a toxin from the Toxin and Toxin Target
           Database (T3DB) database.
         meaning: edam:data_2662
       edam:data_2663:
@@ -3133,7 +3429,8 @@ enums:
         meaning: edam:data_2667
       edam:data_2668:
         title: iRefIndex ID
-        description: Unique identifier of an entry from the iRefIndex database of
+        description:
+          Unique identifier of an entry from the iRefIndex database of
           protein-protein interactions.
         meaning: edam:data_2668
       edam:data_2669:
@@ -3142,12 +3439,14 @@ enums:
         meaning: edam:data_2669
       edam:data_2670:
         title: Pathway ID (DQCS)
-        description: Identifier of a signaling pathway from the Database of Quantitative
+        description:
+          Identifier of a signaling pathway from the Database of Quantitative
           Cellular Signaling (DQCS).
         meaning: edam:data_2670
       edam:data_2700:
         title: CATH identifier
-        description: Identifier of a protein domain (or other node) from the CATH
+        description:
+          Identifier of a protein domain (or other node) from the CATH
           database.
         meaning: edam:data_2700
       edam:data_2701:
@@ -3160,12 +3459,14 @@ enums:
         meaning: edam:data_2702
       edam:data_2704:
         title: Clone ID (IMAGE)
-        description: A unique identifier assigned by the I.M.A.G.E. consortium to
+        description:
+          A unique identifier assigned by the I.M.A.G.E. consortium to
           a clone (cloned molecular sequence).
         meaning: edam:data_2704
       edam:data_2705:
         title: GO concept ID (cellular component)
-        description: An identifier of a 'cellular component' concept from the Gene
+        description:
+          An identifier of a 'cellular component' concept from the Gene
           Ontology.
         meaning: edam:data_2705
       edam:data_2706:
@@ -3178,12 +3479,14 @@ enums:
         meaning: edam:data_2709
       edam:data_2710:
         title: CleanEx dataset code
-        description: An identifier of (typically a list of) gene expression experiments
+        description:
+          An identifier of (typically a list of) gene expression experiments
           catalogued in the CleanEx database.
         meaning: edam:data_2710
       edam:data_2711:
         title: Genome report
-        description: A human-readable collection of information concerning a genome
+        description:
+          A human-readable collection of information concerning a genome
           as a whole.
         meaning: edam:data_2711
       edam:data_2713:
@@ -3192,7 +3495,8 @@ enums:
         meaning: edam:data_2713
       edam:data_2714:
         title: CDD PSSM-ID
-        description: Unique identifier of a position-specific scoring matrix from
+        description:
+          Unique identifier of a position-specific scoring matrix from
           the CDD database.
         meaning: edam:data_2714
       edam:data_2715:
@@ -3233,7 +3537,8 @@ enums:
         meaning: edam:data_2725
       edam:data_2727:
         title: Promoter ID
-        description: An identifier of a promoter of a gene that is catalogued in a
+        description:
+          An identifier of a promoter of a gene that is catalogued in a
           database.
         meaning: edam:data_2727
       edam:data_2728:
@@ -3250,7 +3555,8 @@ enums:
         meaning: edam:data_2730
       edam:data_2731:
         title: Protein family ID (GeneFarm)
-        description: Accession number of an entry (protein family) from the GeneFarm
+        description:
+          Accession number of an entry (protein family) from the GeneFarm
           database.
         meaning: edam:data_2731
       edam:data_2732:
@@ -3291,7 +3597,8 @@ enums:
         meaning: edam:data_2745
       edam:data_2746:
         title: MonosaccharideDB ID
-        description: Unique identifier of a monosaccharide from the MonosaccharideDB
+        description:
+          Unique identifier of a monosaccharide from the MonosaccharideDB
           database.
         meaning: edam:data_2746
       edam:data_2749:
@@ -3300,12 +3607,14 @@ enums:
         meaning: edam:data_2749
       edam:data_2752:
         title: GlycoMap ID
-        description: Identifier of an entry from the GlycoMapsDB (Glycosciences.de)
+        description:
+          Identifier of an entry from the GlycoMapsDB (Glycosciences.de)
           database.
         meaning: edam:data_2752
       edam:data_2753:
         title: Carbohydrate conformational map
-        description: A conformational energy map of the glycosidic linkages in a carbohydrate
+        description:
+          A conformational energy map of the glycosidic linkages in a carbohydrate
           molecule.
         meaning: edam:data_2753
       edam:data_2755:
@@ -3314,7 +3623,8 @@ enums:
         meaning: edam:data_2755
       edam:data_2756:
         title: TCID
-        description: Identifier of a membrane transport proteins from the transport
+        description:
+          Identifier of a membrane transport proteins from the transport
           classification database (TCDB).
         meaning: edam:data_2756
       edam:data_2757:
@@ -3331,12 +3641,14 @@ enums:
         meaning: edam:data_2759
       edam:data_2761:
         title: UTRSite ID
-        description: Identifier of an entry from the UTRSite database of regulatory
+        description:
+          Identifier of an entry from the UTRSite database of regulatory
           motifs in eukaryotic UTRs.
         meaning: edam:data_2761
       edam:data_2762:
         title: Sequence signature report
-        description: An informative report about a specific or conserved pattern in
+        description:
+          An informative report about a specific or conserved pattern in
           a molecular sequence, such as its context in genes or proteins, its role,
           origin or method of construction, etc.
         meaning: edam:data_2762
@@ -3366,12 +3678,14 @@ enums:
         meaning: edam:data_2772
       edam:data_2773:
         title: IMGT/HLA ID
-        description: Identifier of a human major histocompatibility complex (HLA)
+        description:
+          Identifier of a human major histocompatibility complex (HLA)
           or other protein from the IMGT/HLA database.
         meaning: edam:data_2773
       edam:data_2774:
         title: Gene ID (JCVI)
-        description: A unique identifier of gene assigned by the J. Craig Venter Institute
+        description:
+          A unique identifier of gene assigned by the J. Craig Venter Institute
           (JCVI).
         meaning: edam:data_2774
       edam:data_2775:
@@ -3416,7 +3730,8 @@ enums:
         meaning: edam:data_2784
       edam:data_2785:
         title: Virus identifier
-        description: An accession of annotation on a (group of) viruses (catalogued
+        description:
+          An accession of annotation on a (group of) viruses (catalogued
           in a database).
         meaning: edam:data_2785
       edam:data_2786:
@@ -3441,12 +3756,14 @@ enums:
         meaning: edam:data_2791
       edam:data_2792:
         title: Protein ID (PeroxiBase)
-        description: Unique identifier for a peroxidase protein from the PeroxiBase
+        description:
+          Unique identifier for a peroxidase protein from the PeroxiBase
           database.
         meaning: edam:data_2792
       edam:data_2793:
         title: SISYPHUS ID
-        description: Identifier of an entry from the SISYPHUS database of tertiary
+        description:
+          Identifier of an entry from the SISYPHUS database of tertiary
           structure alignments.
         meaning: edam:data_2793
       edam:data_2794:
@@ -3463,7 +3780,8 @@ enums:
         meaning: edam:data_2796
       edam:data_2797:
         title: Protein ID (LGICdb)
-        description: Unique identifier for a ligand-gated ion channel protein from
+        description:
+          Unique identifier for a ligand-gated ion channel protein from
           the LGICdb database.
         meaning: edam:data_2797
       edam:data_2798:
@@ -3484,12 +3802,14 @@ enums:
         meaning: edam:data_2802
       edam:data_2803:
         title: Clone ID (RefSeq)
-        description: A unique identifier of a cDNA molecule catalogued in the RefSeq
+        description:
+          A unique identifier of a cDNA molecule catalogued in the RefSeq
           database.
         meaning: edam:data_2803
       edam:data_2804:
         title: Protein ID (ConoServer)
-        description: Unique identifier for a cone snail toxin protein from the ConoServer
+        description:
+          Unique identifier for a cone snail toxin protein from the ConoServer
           database.
         meaning: edam:data_2804
       edam:data_2805:
@@ -3522,29 +3842,34 @@ enums:
         meaning: edam:data_2850
       edam:data_2851:
         title: Drug structure
-        description: 3D coordinate and associated data for the (3D) structure of a
+        description:
+          3D coordinate and associated data for the (3D) structure of a
           drug.
         meaning: edam:data_2851
       edam:data_2852:
         title: Toxin structure
-        description: 3D coordinate and associated data for the (3D) structure of a
+        description:
+          3D coordinate and associated data for the (3D) structure of a
           toxin.
         meaning: edam:data_2852
       edam:data_2854:
         title: Position-specific scoring matrix
-        description: A simple matrix of numbers, where each value (or column of values)
+        description:
+          A simple matrix of numbers, where each value (or column of values)
           is derived derived from analysis of the corresponding position in a sequence
           alignment.
         meaning: edam:data_2854
       edam:data_2855:
         title: Distance matrix
-        description: A matrix of distances between molecular entities, where a value
+        description:
+          A matrix of distances between molecular entities, where a value
           (distance) is (typically) derived from comparison of two entities and reflects
           their similarity.
         meaning: edam:data_2855
       edam:data_2856:
         title: Structural distance matrix
-        description: Distances (values representing similarity) between a group of
+        description:
+          Distances (values representing similarity) between a group of
           molecular structures.
         meaning: edam:data_2856
       edam:data_2858:
@@ -3553,44 +3878,52 @@ enums:
         meaning: edam:data_2858
       edam:data_2865:
         title: Codon usage bias
-        description: A numerical measure of differences in the frequency of occurrence
+        description:
+          A numerical measure of differences in the frequency of occurrence
           of synonymous codons in DNA sequences.
         meaning: edam:data_2865
       edam:data_2870:
         title: Radiation hybrid map
-        description: A map showing distance between genetic markers estimated by radiation-induced
+        description:
+          A map showing distance between genetic markers estimated by radiation-induced
           breaks in a chromosome.
         meaning: edam:data_2870
       edam:data_2872:
         title: ID list
-        description: A simple list of data identifiers (such as database accessions),
+        description:
+          A simple list of data identifiers (such as database accessions),
           possibly with additional basic information on the addressed data.
         meaning: edam:data_2872
       edam:data_2873:
         title: Phylogenetic gene frequencies data
-        description: Gene frequencies data that may be read during phylogenetic tree
+        description:
+          Gene frequencies data that may be read during phylogenetic tree
           calculation.
         meaning: edam:data_2873
       edam:data_2877:
         title: Protein complex
-        description: 3D coordinate and associated data for a multi-protein complex;
+        description:
+          3D coordinate and associated data for a multi-protein complex;
           two or more polypeptides chains in a stable, functional association with
           one another.
         meaning: edam:data_2877
       edam:data_2878:
         title: Protein structural motif
-        description: 3D coordinate and associated data for a protein (3D) structural
+        description:
+          3D coordinate and associated data for a protein (3D) structural
           motif; any group of contiguous or non-contiguous amino acid residues but
           typically those forming a feature with a structural or functional role.
         meaning: edam:data_2878
       edam:data_2879:
         title: Lipid report
-        description: A human-readable collection of information about one or more
+        description:
+          A human-readable collection of information about one or more
           specific lipid 3D structure(s).
         meaning: edam:data_2879
       edam:data_2884:
         title: Plot
-        description: Biological data that has been plotted as a graph of some type,
+        description:
+          Biological data that has been plotted as a graph of some type,
           or plotting instructions for rendering such a graph.
         meaning: edam:data_2884
       edam:data_2886:
@@ -3603,7 +3936,8 @@ enums:
         meaning: edam:data_2887
       edam:data_2891:
         title: Biological model accession
-        description: Accession of a mathematical model, typically an entry from a
+        description:
+          Accession of a mathematical model, typically an entry from a
           database.
         meaning: edam:data_2891
       edam:data_2892:
@@ -3644,7 +3978,8 @@ enums:
         meaning: edam:data_2900
       edam:data_2901:
         title: Molecule accession
-        description: Molecule accession is any persistent, unique identifier of a
+        description:
+          Molecule accession is any persistent, unique identifier of a
           specific molecule (catalogued in a database).
         meaning: edam:data_2901
       edam:data_2902:
@@ -3657,7 +3992,8 @@ enums:
         meaning: edam:data_2903
       edam:data_2904:
         title: Map accession
-        description: An accession of a map of a molecular sequence (deposited in a
+        description:
+          An accession of a map of a molecular sequence (deposited in a
           database).
         meaning: edam:data_2904
       edam:data_2905:
@@ -3674,7 +4010,8 @@ enums:
         meaning: edam:data_2907
       edam:data_2908:
         title: Organism accession
-        description: An accession of annotation on a (group of) organisms (catalogued
+        description:
+          An accession of annotation on a (group of) organisms (catalogued
           in a database).
         meaning: edam:data_2908
       edam:data_2909:
@@ -3687,12 +4024,14 @@ enums:
         meaning: edam:data_2910
       edam:data_2911:
         title: Transcription factor accession
-        description: Accession of an entry from a database of transcription factors
+        description:
+          Accession of an entry from a database of transcription factors
           or binding sites.
         meaning: edam:data_2911
       edam:data_2912:
         title: Strain accession
-        description: Accession number of a strain of an organism variant, typically
+        description:
+          Accession number of a strain of an organism variant, typically
           a plant, virus or bacterium.
         meaning: edam:data_2912
       edam:data_2914:
@@ -3713,28 +4052,33 @@ enums:
         meaning: edam:data_2917
       edam:data_2955:
         title: Sequence report
-        description: An informative report of information about molecular sequence(s),
+        description:
+          An informative report of information about molecular sequence(s),
           including basic information (metadata), and reports generated from molecular
           sequence analysis, including positional features and non-positional properties.
         meaning: edam:data_2955
       edam:data_2956:
         title: Protein secondary structure
-        description: Data concerning the properties or features of one or more protein
+        description:
+          Data concerning the properties or features of one or more protein
           secondary structures.
         meaning: edam:data_2956
       edam:data_2957:
         title: Hopp and Woods plot
-        description: A Hopp and Woods plot of predicted antigenicity of a peptide
+        description:
+          A Hopp and Woods plot of predicted antigenicity of a peptide
           or protein.
         meaning: edam:data_2957
       edam:data_2968:
         title: Image
-        description: Data (typically biological or biomedical) that has been rendered
+        description:
+          Data (typically biological or biomedical) that has been rendered
           into an image, typically for display on screen.
         meaning: edam:data_2968
       edam:data_2969:
         title: Sequence image
-        description: Image of a molecular sequence, possibly with sequence features
+        description:
+          Image of a molecular sequence, possibly with sequence features
           or properties shown.
         meaning: edam:data_2969
       edam:data_2970:
@@ -3747,12 +4091,14 @@ enums:
         meaning: edam:data_2976
       edam:data_2977:
         title: Nucleic acid sequence
-        description: One or more nucleic acid sequences, possibly with associated
+        description:
+          One or more nucleic acid sequences, possibly with associated
           annotation.
         meaning: edam:data_2977
       edam:data_2978:
         title: Reaction data
-        description: Data concerning a biochemical reaction, typically data and more
+        description:
+          Data concerning a biochemical reaction, typically data and more
           general annotation on the kinetics of enzyme-catalysed reaction.
         meaning: edam:data_2978
       edam:data_2979:
@@ -3761,7 +4107,8 @@ enums:
         meaning: edam:data_2979
       edam:data_2984:
         title: Pathway or network report
-        description: An informative report concerning or derived from the analysis
+        description:
+          An informative report concerning or derived from the analysis
           of a biological pathway or network, such as a map (diagram) or annotation.
         meaning: edam:data_2984
       edam:data_2985:
@@ -3770,7 +4117,8 @@ enums:
         meaning: edam:data_2985
       edam:data_2991:
         title: Protein geometry data
-        description: Geometry data for a protein structure, for example bond lengths,
+        description:
+          Geometry data for a protein structure, for example bond lengths,
           bond angles, torsion angles, chiralities, planaraties etc.
         meaning: edam:data_2991
       edam:data_2992:
@@ -3779,12 +4127,14 @@ enums:
         meaning: edam:data_2992
       edam:data_2994:
         title: Phylogenetic character weights
-        description: Weights for sequence positions or characters in phylogenetic
+        description:
+          Weights for sequence positions or characters in phylogenetic
           analysis where zero is defined as unweighted.
         meaning: edam:data_2994
       edam:data_3002:
         title: Annotation track
-        description: Annotation of one particular positional feature on a biomolecular
+        description:
+          Annotation of one particular positional feature on a biomolecular
           (typically genome) sequence, suitable for import and display in a genome
           browser.
         meaning: edam:data_3002
@@ -3798,17 +4148,20 @@ enums:
         meaning: edam:data_3022
       edam:data_3025:
         title: Ontology concept identifier
-        description: Identifier of a concept in an ontology of biological or bioinformatics
+        description:
+          Identifier of a concept in an ontology of biological or bioinformatics
           concepts and relations.
         meaning: edam:data_3025
       edam:data_3028:
         title: Taxonomy
-        description: Data concerning the classification, identification and naming
+        description:
+          Data concerning the classification, identification and naming
           of organisms.
         meaning: edam:data_3028
       edam:data_3029:
         title: Protein ID (EMBL/GenBank/DDBJ)
-        description: EMBL/GENBANK/DDBJ coding feature protein identifier, issued by
+        description:
+          EMBL/GENBANK/DDBJ coding feature protein identifier, issued by
           International collaborators.
         meaning: edam:data_3029
       edam:data_3034:
@@ -3817,54 +4170,64 @@ enums:
         meaning: edam:data_3034
       edam:data_3035:
         title: Structure identifier
-        description: An identifier of a molecular tertiary structure, typically an
+        description:
+          An identifier of a molecular tertiary structure, typically an
           entry from a structure database.
         meaning: edam:data_3035
       edam:data_3036:
         title: Matrix identifier
-        description: An identifier of an array of numerical values, such as a comparison
+        description:
+          An identifier of an array of numerical values, such as a comparison
           matrix.
         meaning: edam:data_3036
       edam:data_3103:
         title: ATC code
-        description: Unique identifier of a drug conforming to the Anatomical Therapeutic
+        description:
+          Unique identifier of a drug conforming to the Anatomical Therapeutic
           Chemical (ATC) Classification System, a drug classification system controlled
           by the WHO Collaborating Centre for Drug Statistics Methodology (WHOCC).
         meaning: edam:data_3103
       edam:data_3104:
         title: UNII
-        description: A unique, unambiguous, alphanumeric identifier of a chemical
+        description:
+          A unique, unambiguous, alphanumeric identifier of a chemical
           substance as catalogued by the Substance Registration System of the Food
           and Drug Administration (FDA).
         meaning: edam:data_3104
       edam:data_3106:
         title: System metadata
-        description: Metadata concerning the software, hardware or other aspects of
+        description:
+          Metadata concerning the software, hardware or other aspects of
           a computer system.
         meaning: edam:data_3106
       edam:data_3108:
         title: Experimental measurement
-        description: Raw data such as measurements or other results from laboratory
+        description:
+          Raw data such as measurements or other results from laboratory
           experiments, as generated from laboratory hardware.
         meaning: edam:data_3108
       edam:data_3110:
         title: Raw microarray data
-        description: Raw data (typically MIAME-compliant) for hybridisations from
+        description:
+          Raw data (typically MIAME-compliant) for hybridisations from
           a microarray experiment.
         meaning: edam:data_3110
       edam:data_3111:
         title: Processed microarray data
-        description: Data generated from processing and analysis of probe set data
+        description:
+          Data generated from processing and analysis of probe set data
           from a microarray experiment.
         meaning: edam:data_3111
       edam:data_3112:
         title: Gene expression matrix
-        description: The final processed (normalised) data for a set of hybridisations
+        description:
+          The final processed (normalised) data for a set of hybridisations
           in a microarray experiment.
         meaning: edam:data_3112
       edam:data_3113:
         title: Sample annotation
-        description: Annotation on a biological sample, for example experimental factors
+        description:
+          Annotation on a biological sample, for example experimental factors
           and their values.
         meaning: edam:data_3113
       edam:data_3115:
@@ -3873,24 +4236,28 @@ enums:
         meaning: edam:data_3115
       edam:data_3117:
         title: Microarray hybridisation data
-        description: Data concerning the hybridisations measured during a microarray
+        description:
+          Data concerning the hybridisations measured during a microarray
           experiment.
         meaning: edam:data_3117
       edam:data_3128:
         title: Nucleic acid structure report
-        description: A human-readable collection of information about regions within
+        description:
+          A human-readable collection of information about regions within
           a nucleic acid sequence which form secondary or tertiary (3D) structures.
         meaning: edam:data_3128
       edam:data_3134:
         title: Gene transcript report
-        description: An informative report on features of a messenger RNA (mRNA) molecules
+        description:
+          An informative report on features of a messenger RNA (mRNA) molecules
           including precursor RNA, primary (unprocessed) transcript and fully processed
           molecules. This includes reports on a specific gene transcript, clone or
           EST.
         meaning: edam:data_3134
       edam:data_3148:
         title: Gene family report
-        description: A human-readable collection of information about a particular
+        description:
+          A human-readable collection of information about a particular
           family of genes, typically a set of genes with similar sequence that originate
           from duplication of a common ancestor gene, or any other classification
           of nucleic acid sequences or structures that reflects gene structure.
@@ -3941,7 +4308,8 @@ enums:
         meaning: edam:data_3271
       edam:data_3272:
         title: Species tree
-        description: A phylogenetic tree that reflects phylogeny of the taxa from
+        description:
+          A phylogenetic tree that reflects phylogeny of the taxa from
           which the characters (used in calculating the tree) were sampled.
         meaning: edam:data_3272
       edam:data_3273:
@@ -3958,12 +4326,14 @@ enums:
         meaning: edam:data_3275
       edam:data_3354:
         title: Transition matrix
-        description: A HMM transition matrix contains the probabilities of switching
+        description:
+          A HMM transition matrix contains the probabilities of switching
           from one HMM state to another.
         meaning: edam:data_3354
       edam:data_3355:
         title: Emission matrix
-        description: A HMM emission matrix holds the probabilities of choosing the
+        description:
+          A HMM emission matrix holds the probabilities of choosing the
           four nucleotides (A, C, G and T) in each of the states of a HMM.
         meaning: edam:data_3355
       edam:data_3358:
@@ -3972,17 +4342,20 @@ enums:
         meaning: edam:data_3358
       edam:data_3424:
         title: Raw image
-        description: Raw biological or biomedical image generated by some experimental
+        description:
+          Raw biological or biomedical image generated by some experimental
           technique.
         meaning: edam:data_3424
       edam:data_3425:
         title: Carbohydrate property
-        description: Data concerning the intrinsic physical (e.g. structural) or chemical
+        description:
+          Data concerning the intrinsic physical (e.g. structural) or chemical
           properties of one, more or all carbohydrates.
         meaning: edam:data_3425
       edam:data_3442:
         title: MRI image
-        description: An imaging technique that uses magnetic fields and radiowaves
+        description:
+          An imaging technique that uses magnetic fields and radiowaves
           to form images, typically to investigate the anatomy and physiology of the
           human body.
         meaning: edam:data_3442
@@ -3992,7 +4365,8 @@ enums:
         meaning: edam:data_3449
       edam:data_3451:
         title: Rate of association
-        description: Rate of association of a protein with another protein or some
+        description:
+          Rate of association of a protein with another protein or some
           other molecule.
         meaning: edam:data_3451
       edam:data_3479:
@@ -4001,17 +4375,20 @@ enums:
         meaning: edam:data_3479
       edam:data_3483:
         title: Spectrum
-        description: The spectrum of frequencies of electromagnetic radiation emitted
+        description:
+          The spectrum of frequencies of electromagnetic radiation emitted
           from a molecule as a result of some spectroscopy experiment.
         meaning: edam:data_3483
       edam:data_3488:
         title: NMR spectrum
-        description: Spectral information for a molecule from a nuclear magnetic resonance
+        description:
+          Spectral information for a molecule from a nuclear magnetic resonance
           experiment.
         meaning: edam:data_3488
       edam:data_3492:
         title: Nucleic acid signature
-        description: An informative report about a specific or conserved nucleic acid
+        description:
+          An informative report about a specific or conserved nucleic acid
           sequence pattern.
         meaning: edam:data_3492
       edam:data_3494:
@@ -4024,16 +4401,18 @@ enums:
         meaning: edam:data_3495
       edam:data_3498:
         title: Sequence variations
-        description: Data on gene sequence variations resulting large-scale genotyping
+        description:
+          Data on gene sequence variations resulting large-scale genotyping
           and DNA sequencing projects.
         meaning: edam:data_3498
       edam:data_3505:
         title: Bibliography
-        description: A list of publications such as scientic papers or books.
+        description: A list of publications such as scientific papers or books.
         meaning: edam:data_3505
       edam:data_3509:
         title: Ontology mapping
-        description: A mapping of supplied textual terms or phrases to ontology concepts
+        description:
+          A mapping of supplied textual terms or phrases to ontology concepts
           (URIs).
         meaning: edam:data_3509
       edam:data_3546:
@@ -4042,7 +4421,8 @@ enums:
         meaning: edam:data_3546
       edam:data_3558:
         title: Clinical trial report
-        description: A human-readable collection of information concerning a clinical
+        description:
+          A human-readable collection of information concerning a clinical
           trial.
         meaning: edam:data_3558
       edam:data_3567:
@@ -4063,7 +4443,8 @@ enums:
         meaning: edam:data_3668
       edam:data_3669:
         title: Learning material
-        description: Learning material is a document or another digital object that
+        description:
+          Learning material is a document or another digital object that
           is designed for learning (educational, training) purposes.
         meaning: edam:data_3669
       edam:data_3670:
@@ -4072,7 +4453,8 @@ enums:
         meaning: edam:data_3670
       edam:data_3671:
         title: Text
-        description: Any free or plain text, typically for human consumption and in
+        description:
+          Any free or plain text, typically for human consumption and in
           English. Can instantiate also as a textual search query.
         meaning: edam:data_3671
       edam:data_3707:
@@ -4081,7 +4463,8 @@ enums:
         meaning: edam:data_3707
       edam:data_3716:
         title: Biosafety report
-        description: A human-readable collection of information concerning biosafety
+        description:
+          A human-readable collection of information concerning biosafety
           data.
         meaning: edam:data_3716
       edam:data_3717:
@@ -4090,32 +4473,38 @@ enums:
         meaning: edam:data_3717
       edam:data_3718:
         title: Pathogenicity report
-        description: Information about the ability of an organism to cause disease
+        description:
+          Information about the ability of an organism to cause disease
           in a corresponding host.
         meaning: edam:data_3718
       edam:data_3719:
         title: Biosafety classification
-        description: Information about the biosafety classification of an organism
+        description:
+          Information about the biosafety classification of an organism
           according to corresponding law.
         meaning: edam:data_3719
       edam:data_3720:
         title: Geographic location
-        description: A report about localisation of the isolaton of biological material
+        description:
+          A report about localisation of the isolaton of biological material
           e.g. country or coordinates.
         meaning: edam:data_3720
       edam:data_3721:
         title: Isolation source
-        description: A report about any kind of isolation source of biological material
+        description:
+          A report about any kind of isolation source of biological material
           e.g. blood, water, soil.
         meaning: edam:data_3721
       edam:data_3722:
         title: Physiology parameter
-        description: Experimentally determined parameter of the physiology of an organism,
+        description:
+          Experimentally determined parameter of the physiology of an organism,
           e.g. substrate spectrum.
         meaning: edam:data_3722
       edam:data_3723:
         title: Morphology parameter
-        description: Experimentally determined parameter of the morphology of an organism,
+        description:
+          Experimentally determined parameter of the morphology of an organism,
           e.g. size & shape.
         meaning: edam:data_3723
       edam:data_3724:
@@ -4124,7 +4513,8 @@ enums:
         meaning: edam:data_3724
       edam:data_3732:
         title: Sequencing metadata name
-        description: Data concerning a sequencing experiment, that may be specified
+        description:
+          Data concerning a sequencing experiment, that may be specified
           as an input to some tool.
         meaning: edam:data_3732
       edam:data_3733:
@@ -4133,18 +4523,21 @@ enums:
         meaning: edam:data_3733
       edam:data_3734:
         title: Lane identifier
-        description: An identifier of a lane within a flow cell of a sequencing machine,
+        description:
+          An identifier of a lane within a flow cell of a sequencing machine,
           within which millions of sequences are immobilised, amplified and sequenced.
         meaning: edam:data_3734
       edam:data_3735:
         title: Run number
-        description: A number corresponding to the number of an analysis performed
+        description:
+          A number corresponding to the number of an analysis performed
           by a sequencing machine. For example, if it's the 13th analysis, the run
           is 13.
         meaning: edam:data_3735
       edam:data_3736:
         title: Ecological data
-        description: Data concerning ecology; for example measurements and reports
+        description:
+          Data concerning ecology; for example measurements and reports
           from the study of interactions among organisms and their environment.
         meaning: edam:data_3736
       edam:data_3737:
@@ -4161,35 +4554,41 @@ enums:
         meaning: edam:data_3739
       edam:data_3743:
         title: Ordination plot
-        description: A plot in which community data (e.g. species abundance data)
+        description:
+          A plot in which community data (e.g. species abundance data)
           is summarised. Similar species and samples are plotted close together, and
           dissimilar species and samples are plotted placed far apart.
         meaning: edam:data_3743
       edam:data_3753:
         title: Over-representation data
-        description: A ranked list of categories (usually ontology concepts), each
+        description:
+          A ranked list of categories (usually ontology concepts), each
           associated with a statistical metric of over-/under-representation within
           the studied data.
         meaning: edam:data_3753
       edam:data_3754:
         title: GO-term enrichment data
-        description: A ranked list of Gene Ontology concepts, each associated with
+        description:
+          A ranked list of Gene Ontology concepts, each associated with
           a p-value, concerning or derived from the analysis of e.g. a set of genes
           or proteins.
         meaning: edam:data_3754
       edam:data_3756:
         title: Localisation score
-        description: Score for localization of one or more post-translational modifications
+        description:
+          Score for localization of one or more post-translational modifications
           in peptide sequence measured by mass spectrometry.
         meaning: edam:data_3756
       edam:data_3757:
         title: Unimod ID
-        description: Identifier of a protein modification catalogued in the Unimod
+        description:
+          Identifier of a protein modification catalogued in the Unimod
           database.
         meaning: edam:data_3757
       edam:data_3759:
         title: ProteomeXchange ID
-        description: Identifier for mass spectrometry proteomics data in the proteomexchange.org
+        description:
+          Identifier for mass spectrometry proteomics data in the proteomexchange.org
           repository.
         meaning: edam:data_3759
       edam:data_3768:
@@ -4202,12 +4601,14 @@ enums:
         meaning: edam:data_3769
       edam:data_3779:
         title: Annotated text
-        description: A text (such as a scientific article), annotated with notes,
+        description:
+          A text (such as a scientific article), annotated with notes,
           data and metadata, such as recognised entities, concepts, and their relations.
         meaning: edam:data_3779
       edam:data_3786:
         title: Query script
-        description: A structured query, in form of a script, that defines a database
+        description:
+          A structured query, in form of a script, that defines a database
           search task.
         meaning: edam:data_3786
       edam:data_3805:
@@ -4216,7 +4617,8 @@ enums:
         meaning: edam:data_3805
       edam:data_3806:
         title: 3D EM Mask
-        description: Annotation on a structural 3D EM Map from electron microscopy.
+        description:
+          Annotation on a structural 3D EM Map from electron microscopy.
           This might include one or several locations in the map of the known features
           of a particular macromolecule.
         meaning: edam:data_3806
@@ -4226,62 +4628,73 @@ enums:
         meaning: edam:data_3807
       edam:data_3808:
         title: EM Micrograph
-        description: Raw acquisition from electron microscopy or average of an aligned
+        description:
+          Raw acquisition from electron microscopy or average of an aligned
           DDD movie.
         meaning: edam:data_3808
       edam:data_3842:
         title: Molecular simulation data
-        description: Data coming from molecular simulations, computer "experiments"
+        description:
+          Data coming from molecular simulations, computer "experiments"
           on model molecules.
         meaning: edam:data_3842
       edam:data_3856:
         title: RNA central ID
-        description: Identifier of an entry from the RNA central database of annotated
+        description:
+          Identifier of an entry from the RNA central database of annotated
           human miRNAs.
         meaning: edam:data_3856
       edam:data_3861:
         title: Electronic health record
-        description: A human-readable systematic collection of patient (or population)
+        description:
+          A human-readable systematic collection of patient (or population)
           health information in a digital format.
         meaning: edam:data_3861
       edam:data_3869:
         title: Simulation
-        description: 'Data coming from molecular simulations, computer "experiments"
+        description:
+          'Data coming from molecular simulations, computer "experiments"
           on model molecules. Typically formed by two separated but indivisible pieces
           of information: topology data (static) and trajectory data (dynamic).'
         meaning: edam:data_3869
       edam:data_3870:
         title: Trajectory data
-        description: 'Dynamic information of a structure molecular system coming from
+        description:
+          "Dynamic information of a structure molecular system coming from
           a molecular simulation: XYZ 3D coordinates (sometimes with their associated
-          velocities) for every atom along time.'
+          velocities) for every atom along time."
         meaning: edam:data_3870
       edam:data_3871:
         title: Forcefield parameters
-        description: 'Force field parameters: charges, masses, radii, bond lengths,
+        description:
+          "Force field parameters: charges, masses, radii, bond lengths,
           bond dihedrals, etc. define the structural molecular system, and are essential
-          for the proper description and simulation of a molecular system.'
+          for the proper description and simulation of a molecular system."
         meaning: edam:data_3871
       edam:data_3872:
         title: Topology data
-        description: 'Static information of a structure molecular system that is needed
+        description:
+          "Static information of a structure molecular system that is needed
           for a molecular simulation: the list of atoms, their non-bonded parameters
           for Van der Waals and electrostatic interactions, and the complete connectivity
-          in terms of bonds, angles and dihedrals.'
+          in terms of bonds, angles and dihedrals."
         meaning: edam:data_3872
       edam:data_3905:
         title: Histogram
-        description: Visualization of distribution of quantitative data, e.g. expression
+        description:
+          Visualization of distribution of quantitative data, e.g. expression
           data, by histograms, violin plots and density plots.
         meaning: edam:data_3905
       edam:data_3914:
         title: Quality control report
-        description: Report of the quality control review that was made of factors
+        description:
+          Report of the quality control review that was made of factors
           involved in a procedure.
         meaning: edam:data_3914
       edam:data_3917:
         title: Count matrix
-        description: A table of unnormalized values representing summarised read counts
+        description:
+          A table of unnormalized values representing summarised read counts
           per genomic region (e.g. gene, transcript, peak).
         meaning: edam:data_3917
       edam:data_3924:
@@ -4290,14 +4703,16 @@ enums:
         meaning: edam:data_3924
       edam:data_3932:
         title: Q-value
-        description: 'A score derived from the P-value to ensure correction for multiple
+        description:
+          "A score derived from the P-value to ensure correction for multiple
           tests. The Q-value provides an estimate of the positive False Discovery
           Rate (pFDR), i.e. the rate of false positives among all the cases reported
-          positive: pFDR = FP / (FP + TP).'
+          positive: pFDR = FP / (FP + TP)."
         meaning: edam:data_3932
       edam:data_3949:
         title: Profile HMM
-        description: A profile HMM is a variant of a Hidden Markov model that is derived
+        description:
+          A profile HMM is a variant of a Hidden Markov model that is derived
           specifically from a set of (aligned) biological sequences. Profile HMMs
           provide the basis for a position-specific scoring system, which can be used
           to align sequences and search databases for related sequences.
@@ -4308,25 +4723,29 @@ enums:
         meaning: edam:data_3952
       edam:data_3953:
         title: Pathway overrepresentation data
-        description: A ranked list of pathways, each associated with z-score, p-value
+        description:
+          A ranked list of pathways, each associated with z-score, p-value
           or similar, concerning or derived from the analysis of e.g. a set of genes
           or proteins.
         meaning: edam:data_3953
       edam:data_4022:
         title: ORCID Identifier
-        description: Identifier of a researcher registered with the ORCID database.
+        description:
+          Identifier of a researcher registered with the ORCID database.
           Used to identify author IDs.
         meaning: edam:data_4022
       edam:data_4040:
         title: Data management plan
-        description: Data management plan is a document describing the data management
+        description:
+          Data management plan is a document describing the data management
           of a project or an organisation, including acquisition, reuse, structure,
           processing, storage, documentation, sharing, and preservation of data. This
           may include budgeting for these operations.
         meaning: edam:data_4040
       edam:data_4075:
         title: RefMet ID
-        description: RefMet ID is the unique, persistent identifier used by the RefMet
+        description:
+          RefMet ID is the unique, persistent identifier used by the RefMet
           database (A Reference list of Metabolite names), a standardised reference
           nomenclature for metabolites.
         meaning: edam:data_4075

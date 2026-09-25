@@ -7,12 +7,11 @@ enums:
       snomedct:85900004:
         title: Proband
         aliases:
-        - proband
+          - proband
       KIN:027:
         title: isBiologicalMotherOf
         description: A relation that indicates that a person is the biological mother of another person.
       snomedct:72705000:
         title: Mother
         aliases:
-        - mother
-    
+          - mother
