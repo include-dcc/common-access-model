@@ -4,7 +4,7 @@ title: Common Access Model
 description: LinkML Schema for the Common Access Model
 license: MIT
 see_also:
-- https://includedcc.github.io/common-access-model
+  - https://includedcc.github.io/common-access-model
 
 prefixes:
   cam: https://includedcc.org/common-access-model/
@@ -31,37 +31,37 @@ prefixes:
 default_prefix: cam
 default_range: string
 imports:
-- linkml:types
-- enums/EnumAssayType
-- enums/EnumAsserterType
-- enums/EnumAvailabilityStatus
-- enums/EnumDataCategory
-- enums/EnumDataSourceType
-- enums/EnumDataUseModifier
-- enums/EnumDataUsePermission
-- enums/EnumEDAMDataTypes
-- enums/EnumEDAMFormats
-- enums/EnumEthnicity
-- enums/EnumFamilyRelation
-- enums/EnumFamilyRole
-- enums/EnumFamilyType
-- enums/EnumFileHashType
-- enums/EnumLaterality
-- enums/EnumOrganism
-- enums/EnumParticipantLifespanStage
-- enums/EnumPresentAbsent
-- enums/EnumProgram
-- enums/EnumRace
-- enums/EnumResearchDomain
-- enums/EnumSampleCollectionMethod
-- enums/EnumSex
-- enums/EnumSiteExamples
-- enums/EnumSpatialQualifiers
-- enums/EnumStudyDesign
-- enums/EnumSubjectType
-- enums/EnumUnknown
-- enums/EnumUnknownOther
-- enums/EnumVitalStatus
+  - linkml:types
+  - enums/EnumAssayType
+  - enums/EnumAsserterType
+  - enums/EnumAvailabilityStatus
+  - enums/EnumDataCategory
+  - enums/EnumDataSourceType
+  - enums/EnumDataUseModifier
+  - enums/EnumDataUsePermission
+  - enums/EnumEDAMDataTypes
+  - enums/EnumEDAMFormats
+  - enums/EnumEthnicity
+  - enums/EnumFamilyRelation
+  - enums/EnumFamilyRole
+  - enums/EnumFamilyType
+  - enums/EnumFileHashType
+  - enums/EnumLaterality
+  - enums/EnumOrganism
+  - enums/EnumParticipantLifespanStage
+  - enums/EnumPresentAbsent
+  - enums/EnumProgram
+  - enums/EnumRace
+  - enums/EnumResearchDomain
+  - enums/EnumSampleCollectionMethod
+  - enums/EnumSex
+  - enums/EnumSiteExamples
+  - enums/EnumSpatialQualifiers
+  - enums/EnumStudyDesign
+  - enums/EnumSubjectType
+  - enums/EnumUnknown
+  - enums/EnumUnknownOther
+  - enums/EnumVitalStatus
 
 types:
   ptGlobalID:
@@ -167,17 +167,17 @@ classes:
     slots:
       #TODO: Split out core Study items and additional study metadata?
       #- study_id Inherits study_id from Record now.
-      - parent_study 
+      - parent_study
       - study_title
       - study_code
       - study_short_name
       - program
       - funding_source
-      - principal_investigator 
+      - principal_investigator
       - contact
       - study_description
       - website
-    # - dbgap : Should we call this out specifically or just use an external id?
+      # - dbgap : Should we call this out specifically or just use an external id?
       - publication
       - acknowledgments
       - citation_statement
@@ -193,19 +193,19 @@ classes:
     mixins:
       - Record
     slots:
-    - study_id
-    - participant_lifespan_stage
-    - selection_criteria
-    - study_design
-    - clinical_data_source_type
-    - data_category
-    - vbr_id
-    - research_domain
-    - expected_number_of_participants
-    - actual_number_of_participants
-      # Do we need this info, or should it be documented elsewhere?
-      #- guidType
-      #- guidMapped
+      - study_id
+      - participant_lifespan_stage
+      - selection_criteria
+      - study_design
+      - clinical_data_source_type
+      - data_category
+      - vbr_id
+      - research_domain
+      - expected_number_of_participants
+      - actual_number_of_participants
+        # Do we need this info, or should it be documented elsewhere?
+        #- guidType
+        #- guidMapped
     slot_usage:
       study_id:
         required: true
@@ -220,12 +220,12 @@ classes:
     mixins:
       - Record
     slots:
-    - vbr_id
-    - name
-    - institution
-    - contact
-    - website
-    - vbr_readme
+      - vbr_id
+      - name
+      - institution
+      - contact
+      - website
+      - vbr_readme
     slot_usage:
       vbr_id:
         range: orGlobalID
@@ -238,8 +238,8 @@ classes:
     mixins:
       - Record
     slots:
-    - do_id
-    - bibliographic_reference
+      - do_id
+      - bibliographic_reference
     slot_usage:
       do_id:
         range: string
@@ -251,11 +251,11 @@ classes:
     mixins:
       - Record
     slots:
-    - name
-    - institution
-      # - orcid : Should we call this out specifically or just use an external id?
-    - investigator_title
-    - email
+      - name
+      - institution
+        # - orcid : Should we call this out specifically or just use an external id?
+      - investigator_title
+      - email
   Publication:
     title: Publication
     description: Information about a specific publication.
@@ -263,8 +263,8 @@ classes:
       - Record
     #Could add more here
     slots:
-    - bibliographic_reference
-    - website
+      - bibliographic_reference
+      - website
   Subject:
     title: Subject
     description:
@@ -274,9 +274,9 @@ classes:
     mixins:
       - Record
     slots:
-    - subject_id
-    - subject_type
-    - organism_type
+      - subject_id
+      - subject_type
+      - organism_type
     slot_usage:
       subject_id:
         range: ptGlobalID
@@ -341,10 +341,10 @@ classes:
     mixins:
       - Record
     slots:
-    - family_membership_id
-    - family_id
-    - subject_id
-    - family_role
+      - family_membership_id
+      - family_id
+      - subject_id
+      - family_role
     slot_usage:
       family_membership_id:
         range: string
@@ -360,28 +360,28 @@ classes:
     mixins:
       - Record
     slots:
-    - assertion_id
-    - subject_id
-    - encounter_id
-    - asserter_type
-    - assertion_source_type
-    - age_at_assertion
-    - age_at_event
-    - age_at_resolution
-    - concept
-    - concept_source
-    - value_concept
-    - value_number
-    - value_source
-    - value_unit
-    - value_unit_source
+      - assertion_id
+      - subject_id
+      - encounter_id
+      - asserter_type
+      - assertion_source_type
+      - age_at_assertion
+      - age_at_event
+      - age_at_resolution
+      - concept
+      - concept_source
+      - value_concept
+      - value_number
+      - value_source
+      - value_unit
+      - value_unit_source
     slot_usage:
       assertion_id:
         range: string
         any_of:
-        - range: obGlobalID
-        - range: deGlobalID
-        - range: msGlobalID
+          - range: obGlobalID
+          - range: deGlobalID
+          - range: msGlobalID
         required: true
         identifier: true
   Concept:
@@ -424,7 +424,7 @@ classes:
       - fhir_system
       - description
       - version
-      - vocabulary_source 
+      - vocabulary_source
     slot_usage:
       vocabulary_prefix:
         identifier: true
@@ -507,11 +507,11 @@ classes:
     mixins:
       - Record
     slots:
-    - encounter_id
-    - subject_id
-      #TODO: Should this alternatively be an "encounter type", ie, to not require a full definition?
-    - encounter_definition_id
-    - age_at_event
+      - encounter_id
+      - subject_id
+        #TODO: Should this alternatively be an "encounter type", ie, to not require a full definition?
+      - encounter_definition_id
+      - age_at_event
     slot_usage:
       encounter_id:
         range: enGlobalID
@@ -527,10 +527,10 @@ classes:
     mixins:
       - Record
     slots:
-    - encounter_definition_id
-    - name
-    - description
-    - activity_definition_id
+      - encounter_definition_id
+      - name
+      - description
+      - activity_definition_id
     slot_usage:
       encounter_definition_id:
         range: pdGlobalID
@@ -588,8 +588,8 @@ classes:
       sample_id:
         multivalued: true
 
-  FileHash:
-    title: File Hash
+  HashDigest:
+    title: Hash Digest
     description: Type and value of a file content hash.
     slots:
       - hash_type
@@ -628,15 +628,15 @@ classes:
     title: Dataset
     description: Set of files grouped together for release.
     slots:
-    - dataset_id
-    - name
-    - description
-    - do_id
-    - file_id
-    - publication
-      #TODO: Are these good elements for the core entity?
-    - data_collection_start
-    - data_collection_end
+      - dataset_id
+      - name
+      - description
+      - do_id
+      - file_id
+      - publication
+        #TODO: Are these good elements for the core entity?
+      - data_collection_start
+      - data_collection_end
     slot_usage:
       dataset_id:
         range: lsGlobalID
@@ -698,9 +698,9 @@ slots:
   external_id:
     title: External Identifiers
     description: Other identifiers for this entity, eg, from the submitting study or in systems like dbGaP
-    required: false 
-    range: uriorcurie 
-    multivalued: true 
+    required: false
+    range: uriorcurie
+    multivalued: true
   parent_study:
     title: Parent Study
     description: The parent study for this study, if it is a nested study.
@@ -758,9 +758,9 @@ slots:
     title: Program
     description: Funding source(s) for the study
     range: uriorcurie
-    any_of: 
-    - range: uriorcurie
-    - range: EnumProgram
+    any_of:
+      - range: uriorcurie
+      - range: EnumProgram
     required: true
     multivalued: true
   study_description:
@@ -791,7 +791,7 @@ slots:
   research_domain:
     description: Main research domain(s) of the study
     range: Concept
-    any_of: 
+    any_of:
       - range: Concept
       - range: EnumResearchDomain
     required: true
@@ -1090,8 +1090,8 @@ slots:
     description: The structured term defining the value of the assertion.
     range: Concept
     any_of:
-    - range: Concept
-    - range: EnumPresentAbsent
+      - range: Concept
+      - range: EnumPresentAbsent
     multivalued: true
   value_number:
     title: Value Number
@@ -1267,7 +1267,7 @@ slots:
   hash:
     title: File Hash
     description: File hash information
-    range: FileHash
+    range: HashDigest
     multivalued: true
   hash_type:
     title: File Hash Type
@@ -1303,4 +1303,3 @@ slots:
     description: The date that data collection started. May include only a year.
     #TODO: We could re-evaluate these as dates, but that may be too implementation specific
     range: string
-
