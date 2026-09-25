@@ -15,43 +15,51 @@ enums:
     permissible_values:
       edam:format_1196:
         title: SMILES
-        description: Chemical structure specified in Simplified Molecular Input Line
+        description:
+          Chemical structure specified in Simplified Molecular Input Line
           Entry System (SMILES) line notation.
         meaning: edam:format_1196
       edam:format_1197:
         title: InChI
-        description: Chemical structure specified in IUPAC International Chemical
+        description:
+          Chemical structure specified in IUPAC International Chemical
           Identifier (InChI) line notation.
         meaning: edam:format_1197
       edam:format_1198:
         title: mf
-        description: Chemical structure specified by Molecular Formula (MF), including
+        description:
+          Chemical structure specified by Molecular Formula (MF), including
           a count of each element in a compound.
         meaning: edam:format_1198
       edam:format_1199:
         title: InChIKey
-        description: The InChIKey (hashed InChI) is a fixed length (25 character)
+        description:
+          The InChIKey (hashed InChI) is a fixed length (25 character)
           condensed digital representation of an InChI chemical structure specification.
           It uniquely identifies a chemical compound.
         meaning: edam:format_1199
       edam:format_1200:
         title: smarts
-        description: SMILES ARbitrary Target Specification (SMARTS) format for chemical
+        description:
+          SMILES ARbitrary Target Specification (SMARTS) format for chemical
           structure specification, which is a subset of the SMILES line notation.
         meaning: edam:format_1200
       edam:format_1206:
         title: unambiguous pure
-        description: Alphabet for a molecular sequence with possible unknown positions
+        description:
+          Alphabet for a molecular sequence with possible unknown positions
           but without ambiguity or non-sequence characters.
         meaning: edam:format_1206
       edam:format_1207:
         title: nucleotide
-        description: Alphabet for a nucleotide sequence with possible ambiguity, unknown
+        description:
+          Alphabet for a nucleotide sequence with possible ambiguity, unknown
           positions and non-sequence characters.
         meaning: edam:format_1207
       edam:format_1208:
         title: protein
-        description: Alphabet for a protein sequence with possible ambiguity, unknown
+        description:
+          Alphabet for a protein sequence with possible ambiguity, unknown
           positions and non-sequence characters.
         meaning: edam:format_1208
       edam:format_1209:
@@ -60,93 +68,111 @@ enums:
         meaning: edam:format_1209
       edam:format_1210:
         title: pure nucleotide
-        description: Alphabet for a nucleotide sequence with possible ambiguity and
+        description:
+          Alphabet for a nucleotide sequence with possible ambiguity and
           unknown positions but without non-sequence characters.
         meaning: edam:format_1210
       edam:format_1211:
         title: unambiguous pure nucleotide
-        description: Alphabet for a nucleotide sequence (characters ACGTU only) with
+        description:
+          Alphabet for a nucleotide sequence (characters ACGTU only) with
           possible unknown positions but without ambiguity or non-sequence characters
           .
         meaning: edam:format_1211
       edam:format_1212:
         title: dna
-        description: Alphabet for a DNA sequence with possible ambiguity, unknown
+        description:
+          Alphabet for a DNA sequence with possible ambiguity, unknown
           positions and non-sequence characters.
         meaning: edam:format_1212
       edam:format_1213:
         title: rna
-        description: Alphabet for an RNA sequence with possible ambiguity, unknown
+        description:
+          Alphabet for an RNA sequence with possible ambiguity, unknown
           positions and non-sequence characters.
         meaning: edam:format_1213
       edam:format_1214:
         title: unambiguous pure dna
-        description: Alphabet for a DNA sequence (characters ACGT only) with possible
+        description:
+          Alphabet for a DNA sequence (characters ACGT only) with possible
           unknown positions but without ambiguity or non-sequence characters.
         meaning: edam:format_1214
       edam:format_1215:
         title: pure dna
-        description: Alphabet for a DNA sequence with possible ambiguity and unknown
+        description:
+          Alphabet for a DNA sequence with possible ambiguity and unknown
           positions but without non-sequence characters.
         meaning: edam:format_1215
       edam:format_1216:
         title: unambiguous pure rna sequence
-        description: Alphabet for an RNA sequence (characters ACGU only) with possible
+        description:
+          Alphabet for an RNA sequence (characters ACGU only) with possible
           unknown positions but without ambiguity or non-sequence characters.
         meaning: edam:format_1216
       edam:format_1217:
         title: pure rna
-        description: Alphabet for an RNA sequence with possible ambiguity and unknown
+        description:
+          Alphabet for an RNA sequence with possible ambiguity and unknown
           positions but without non-sequence characters.
         meaning: edam:format_1217
       edam:format_1218:
         title: unambiguous pure protein
-        description: Alphabet for any protein sequence with possible unknown positions
+        description:
+          Alphabet for any protein sequence with possible unknown positions
           but without ambiguity or non-sequence characters.
         meaning: edam:format_1218
       edam:format_1219:
         title: pure protein
-        description: Alphabet for any protein sequence with possible ambiguity and
+        description:
+          Alphabet for any protein sequence with possible ambiguity and
           unknown positions but without non-sequence characters.
         meaning: edam:format_1219
       edam:format_1248:
         title: EMBL feature location
-        description: Format for sequence positions (feature location) as used in DDBJ/EMBL/GenBank
+        description:
+          Format for sequence positions (feature location) as used in DDBJ/EMBL/GenBank
           database.
         meaning: edam:format_1248
       edam:format_1295:
         title: quicktandem
-        description: Report format for tandem repeats in a nucleotide sequence (format
+        description:
+          Report format for tandem repeats in a nucleotide sequence (format
           generated by the Sanger Centre quicktandem program).
         meaning: edam:format_1295
       edam:format_1296:
         title: Sanger inverted repeats
-        description: Report format for inverted repeats in a nucleotide sequence (format
+        description:
+          Report format for inverted repeats in a nucleotide sequence (format
           generated by the Sanger Centre inverted program).
         meaning: edam:format_1296
       edam:format_1297:
         title: EMBOSS repeat
-        description: Report format for tandem repeats in a sequence (an EMBOSS report
+        description:
+          Report format for tandem repeats in a sequence (an EMBOSS report
           format).
         meaning: edam:format_1297
       edam:format_1316:
         title: est2genome format
-        description: Format of a report on exon-intron structure generated by EMBOSS
+        description:
+          Format of a report on exon-intron structure generated by EMBOSS
           est2genome.
         meaning: edam:format_1316
       edam:format_1318:
         title: restrict format
-        description: Report format for restriction enzyme recognition sites used by
+        description:
+          Report format for restriction enzyme recognition sites used by
           EMBOSS restrict program.
         meaning: edam:format_1318
       edam:format_1319:
         title: restover format
-        description: Report format for restriction enzyme recognition sites used by
+        description:
+          Report format for restriction enzyme recognition sites used by
           EMBOSS restover program.
         meaning: edam:format_1319
       edam:format_1320:
         title: REBASE restriction sites
-        description: Report format for restriction enzyme recognition sites used by
+        description:
+          Report format for restriction enzyme recognition sites used by
           REBASE database.
         meaning: edam:format_1320
       edam:format_1332:
@@ -155,27 +181,32 @@ enums:
         meaning: edam:format_1332
       edam:format_1333:
         title: BLAST results
-        description: Format of results of a sequence database search using some variant
+        description:
+          Format of results of a sequence database search using some variant
           of BLAST.
         meaning: edam:format_1333
       edam:format_1334:
         title: mspcrunch
-        description: Format of results of a sequence database search using some variant
+        description:
+          Format of results of a sequence database search using some variant
           of MSPCrunch.
         meaning: edam:format_1334
       edam:format_1335:
         title: Smith-Waterman format
-        description: Format of results of a sequence database search using some variant
+        description:
+          Format of results of a sequence database search using some variant
           of Smith Waterman.
         meaning: edam:format_1335
       edam:format_1336:
         title: dhf
-        description: Format of EMBASSY domain hits file (DHF) of hits (sequences)
+        description:
+          Format of EMBASSY domain hits file (DHF) of hits (sequences)
           with domain classification information.
         meaning: edam:format_1336
       edam:format_1337:
         title: lhf
-        description: Format of EMBASSY ligand hits file (LHF) of database hits (sequences)
+        description:
+          Format of EMBASSY ligand hits file (LHF) of database hits (sequences)
           with ligand classification information.
         meaning: edam:format_1337
       edam:format_1341:
@@ -184,12 +215,14 @@ enums:
         meaning: edam:format_1341
       edam:format_1342:
         title: InterPro protein view report format
-        description: Format of results of a search of the InterPro database showing
+        description:
+          Format of results of a search of the InterPro database showing
           matches of query protein sequence(s) to InterPro entries.
         meaning: edam:format_1342
       edam:format_1343:
         title: InterPro match table format
-        description: Format of results of a search of the InterPro database showing
+        description:
+          Format of results of a search of the InterPro database showing
           matches between protein sequence(s) and signatures for an InterPro entry.
         meaning: edam:format_1343
       edam:format_1349:
@@ -202,7 +235,8 @@ enums:
         meaning: edam:format_1350
       edam:format_1351:
         title: HMMER emission and transition
-        description: Format of a report from the HMMER package on the emission and
+        description:
+          Format of a report from the HMMER package on the emission and
           transition counts of a hidden Markov model.
         meaning: edam:format_1351
       edam:format_1356:
@@ -219,12 +253,14 @@ enums:
         meaning: edam:format_1360
       edam:format_1366:
         title: prosite-profile
-        description: Sequence profile (sequence classifier) format used in the PROSITE
+        description:
+          Sequence profile (sequence classifier) format used in the PROSITE
           database.
         meaning: edam:format_1366
       edam:format_1367:
         title: JASPAR format
-        description: A profile (sequence classifier) in the format used in the JASPAR
+        description:
+          A profile (sequence classifier) in the format used in the JASPAR
           database.
         meaning: edam:format_1367
       edam:format_1369:
@@ -233,12 +269,14 @@ enums:
         meaning: edam:format_1369
       edam:format_1370:
         title: HMMER format
-        description: Format of a hidden Markov model representation used by the HMMER
+        description:
+          Format of a hidden Markov model representation used by the HMMER
           package.
         meaning: edam:format_1370
       edam:format_1391:
         title: HMMER-aln
-        description: FASTA-style format for multiple sequences aligned by HMMER package
+        description:
+          FASTA-style format for multiple sequences aligned by HMMER package
           to an HMM.
         meaning: edam:format_1391
       edam:format_1392:
@@ -247,23 +285,27 @@ enums:
         meaning: edam:format_1392
       edam:format_1393:
         title: daf
-        description: EMBASSY 'domain alignment file' (DAF) format, containing a sequence
+        description:
+          EMBASSY 'domain alignment file' (DAF) format, containing a sequence
           alignment of protein domains belonging to the same SCOP or CATH family.
         meaning: edam:format_1393
       edam:format_1419:
         title: Sequence-MEME profile alignment
-        description: Format for alignment of molecular sequences to MEME profiles
+        description:
+          Format for alignment of molecular sequences to MEME profiles
           (position-dependent scoring matrices) as generated by the MAST tool from
           the MEME package.
         meaning: edam:format_1419
       edam:format_1421:
         title: HMMER profile alignment (sequences versus HMMs)
-        description: Format used by the HMMER package for an alignment of a sequence
+        description:
+          Format used by the HMMER package for an alignment of a sequence
           against a hidden Markov model database.
         meaning: edam:format_1421
       edam:format_1422:
         title: HMMER profile alignment (HMM versus sequences)
-        description: Format used by the HMMER package for of an alignment of a hidden
+        description:
+          Format used by the HMMER package for of an alignment of a hidden
           Markov model against a sequence database.
         meaning: edam:format_1422
       edam:format_1423:
@@ -276,7 +318,8 @@ enums:
         meaning: edam:format_1424
       edam:format_1425:
         title: Phylip tree raw
-        description: Raw data file format used by Phylip from which a phylogenetic
+        description:
+          Raw data file format used by Phylip from which a phylogenetic
           tree is directly generated or plotted.
         meaning: edam:format_1425
       edam:format_1430:
@@ -301,37 +344,44 @@ enums:
         meaning: edam:format_1435
       edam:format_1436:
         title: TreeBASE format
-        description: The format of an entry from the TreeBASE database of phylogenetic
+        description:
+          The format of an entry from the TreeBASE database of phylogenetic
           data.
         meaning: edam:format_1436
       edam:format_1437:
         title: TreeFam format
-        description: The format of an entry from the TreeFam database of phylogenetic
+        description:
+          The format of an entry from the TreeFam database of phylogenetic
           data.
         meaning: edam:format_1437
       edam:format_1445:
         title: Phylip tree distance format
-        description: Format for distances, such as Branch Score distance, between
+        description:
+          Format for distances, such as Branch Score distance, between
           two or more phylogenetic trees as used by the Phylip package.
         meaning: edam:format_1445
       edam:format_1454:
         title: dssp
-        description: Format of an entry from the DSSP database (Dictionary of Secondary
+        description:
+          Format of an entry from the DSSP database (Dictionary of Secondary
           Structure in Proteins).
         meaning: edam:format_1454
       edam:format_1455:
         title: hssp
-        description: Entry format of the HSSP database (Homology-derived Secondary
+        description:
+          Entry format of the HSSP database (Homology-derived Secondary
           Structure in Proteins).
         meaning: edam:format_1455
       edam:format_1457:
         title: Dot-bracket format
-        description: Format of RNA secondary structure in dot-bracket notation, originally
+        description:
+          Format of RNA secondary structure in dot-bracket notation, originally
           generated by the Vienna RNA package/server.
         meaning: edam:format_1457
       edam:format_1458:
         title: Vienna local RNA secondary structure format
-        description: Format of local RNA secondary structure components with free
+        description:
+          Format of local RNA secondary structure components with free
           energy values, generated by the Vienna RNA package/server.
         meaning: edam:format_1458
       edam:format_1475:
@@ -356,7 +406,8 @@ enums:
         meaning: edam:format_1504
       edam:format_1551:
         title: Pcons report format
-        description: Format of output of the Pcons Model Quality Assessment Program
+        description:
+          Format of output of the Pcons Model Quality Assessment Program
           (MQAP).
         meaning: edam:format_1551
       edam:format_1552:
@@ -365,18 +416,21 @@ enums:
         meaning: edam:format_1552
       edam:format_1582:
         title: findkm
-        description: A report format for the kinetics of enzyme-catalysed reaction(s)
+        description:
+          A report format for the kinetics of enzyme-catalysed reaction(s)
           in a format generated by EMBOSS findkm. This includes Michaelis Menten plot,
           Hanes Woolf plot, Michaelis Menten constant (Km) and maximum velocity (Vmax).
         meaning: edam:format_1582
       edam:format_1627:
         title: Primer3 primer
-        description: Report format on PCR primers and hybridisation oligos as generated
+        description:
+          Report format on PCR primers and hybridisation oligos as generated
           by Whitehead primer3 program.
         meaning: edam:format_1627
       edam:format_1628:
         title: ABI
-        description: A format of raw sequence read data from an Applied Biosystems
+        description:
+          A format of raw sequence read data from an Applied Biosystems
           sequencing machine.
         meaning: edam:format_1628
       edam:format_1629:
@@ -384,8 +438,9 @@ enums:
         description: Format of MIRA sequence trace information file.
         meaning: edam:format_1629
       edam:format_1630:
-        title: CAF
-        description: Common Assembly Format (CAF). A sequence assembly format including
+        title: CALF
+        description:
+          Common Assembly Format (CALF). A sequence assembly format including
           contigs, base-call qualities, and other metadata.
         meaning: edam:format_1630
       edam:format_1631:
@@ -394,12 +449,14 @@ enums:
         meaning: edam:format_1631
       edam:format_1632:
         title: SCF
-        description: Staden Chromatogram Files format (SCF) of base-called sequence
+        description:
+          Staden Chromatogram Files format (SCF) of base-called sequence
           reads, qualities, and other metadata.
         meaning: edam:format_1632
       edam:format_1633:
         title: PHD
-        description: PHD sequence trace format to store serialised chromatogram data
+        description:
+          PHD sequence trace format to store serialised chromatogram data
           (reads).
         meaning: edam:format_1633
       edam:format_1637:
@@ -408,22 +465,26 @@ enums:
         meaning: edam:format_1637
       edam:format_1638:
         title: cel
-        description: Format of Affymetrix data file of information about (raw) expression
+        description:
+          Format of Affymetrix data file of information about (raw) expression
           levels of the individual probes.
         meaning: edam:format_1638
       edam:format_1639:
         title: affymetrix
-        description: Format of affymetrix gene cluster files (hc-genes.txt, hc-chips.txt)
+        description:
+          Format of affymetrix gene cluster files (hc-genes.txt, hc-chips.txt)
           from hierarchical clustering.
         meaning: edam:format_1639
       edam:format_1641:
         title: affymetrix-exp
-        description: Affymetrix data file format for information about experimental
+        description:
+          Affymetrix data file format for information about experimental
           conditions and protocols.
         meaning: edam:format_1641
       edam:format_1644:
         title: CHP
-        description: Format of Affymetrix data file of information about (normalised)
+        description:
+          Format of Affymetrix data file of information about (normalised)
           expression levels of the individual probes.
         meaning: edam:format_1644
       edam:format_1665:
@@ -432,7 +493,8 @@ enums:
         meaning: edam:format_1665
       edam:format_1705:
         title: HET group dictionary entry format
-        description: The format of an entry from the HET group dictionary (HET groups
+        description:
+          The format of an entry from the HET group dictionary (HET groups
           from PDB files).
         meaning: edam:format_1705
       edam:format_1734:
@@ -441,17 +503,20 @@ enums:
         meaning: edam:format_1734
       edam:format_1735:
         title: Medline Display Format
-        description: Format for abstracts of scientific articles from the Medline
+        description:
+          Format for abstracts of scientific articles from the Medline
           database.
         meaning: edam:format_1735
       edam:format_1736:
         title: CiteXplore-core
-        description: CiteXplore 'core' citation format including title, journal, authors
+        description:
+          CiteXplore 'core' citation format including title, journal, authors
           and abstract.
         meaning: edam:format_1736
       edam:format_1737:
         title: CiteXplore-all
-        description: CiteXplore 'all' citation format includes all known details such
+        description:
+          CiteXplore 'all' citation format includes all known details such
           as Mesh terms and cross-references.
         meaning: edam:format_1737
       edam:format_1739:
@@ -460,7 +525,8 @@ enums:
         meaning: edam:format_1739
       edam:format_1740:
         title: iHOP format
-        description: The format of iHOP (Information Hyperlinked over Proteins) text-mining
+        description:
+          The format of iHOP (Information Hyperlinked over Proteins) text-mining
           result.
         meaning: edam:format_1740
       edam:format_1741:
@@ -468,8 +534,8 @@ enums:
         description: OSCAR format of annotated chemical text.
         meaning: edam:format_1741
       edam:format_1861:
-        title: PlasMapper TextMap
-        description: Map of a plasmid (circular DNA) in PlasMapper TextMap format.
+        title: PlaysMapper TextMap
+        description: Map of a plasmid (circular DNA) in PlaysMapper TextMap format.
         meaning: edam:format_1861
       edam:format_1910:
         title: newick
@@ -633,7 +699,8 @@ enums:
         meaning: edam:format_1960
       edam:format_1961:
         title: Stockholm format
-        description: Stockholm multiple sequence alignment format (used by Pfam and
+        description:
+          Stockholm multiple sequence alignment format (used by Pfam and
           Rfam).
         meaning: edam:format_1961
       edam:format_1962:
@@ -662,7 +729,8 @@ enums:
         meaning: edam:format_1968
       edam:format_1969:
         title: debug-seq
-        description: EMBOSS debugging trace sequence format of full internal data
+        description:
+          EMBOSS debugging trace sequence format of full internal data
           content.
         meaning: edam:format_1969
       edam:format_1970:
@@ -699,7 +767,8 @@ enums:
         meaning: edam:format_1982
       edam:format_1983:
         title: debug
-        description: EMBOSS alignment format for debugging trace of full internal
+        description:
+          EMBOSS alignment format for debugging trace of full internal
           data content.
         meaning: edam:format_1983
       edam:format_1984:
@@ -728,7 +797,8 @@ enums:
         meaning: edam:format_1989
       edam:format_1990:
         title: match
-        description: Alignment format for start and end of matches between sequence
+        description:
+          Alignment format for start and end of matches between sequence
           pairs.
         meaning: edam:format_1990
       edam:format_1991:
@@ -813,7 +883,8 @@ enums:
         meaning: edam:format_2030
       edam:format_2031:
         title: Gene annotation format
-        description: Format of a report on a particular locus, gene, gene system or
+        description:
+          Format of a report on a particular locus, gene, gene system or
           groups of genes.
         meaning: edam:format_2031
       edam:format_2032:
@@ -866,7 +937,8 @@ enums:
         meaning: edam:format_2055
       edam:format_2056:
         title: Microarray experiment data format
-        description: Format for information about a microarray experimental per se
+        description:
+          Format for information about a microarray experimental per se
           (not the data generated from that experiment).
         meaning: edam:format_2056
       edam:format_2057:
@@ -875,17 +947,20 @@ enums:
         meaning: edam:format_2057
       edam:format_2058:
         title: Gene expression report format
-        description: Format of a file of gene expression data, e.g. a gene expression
+        description:
+          Format of a file of gene expression data, e.g. a gene expression
           matrix or profile.
         meaning: edam:format_2058
       edam:format_2060:
         title: Map format
-        description: Format of a map of (typically one) molecular sequence annotated
+        description:
+          Format of a map of (typically one) molecular sequence annotated
           with features.
         meaning: edam:format_2060
       edam:format_2061:
         title: Nucleic acid features (primers) format
-        description: Format of a report on PCR primers or hybridisation oligos in
+        description:
+          Format of a report on PCR primers or hybridisation oligos in
           a nucleic acid sequence.
         meaning: edam:format_2061
       edam:format_2062:
@@ -898,12 +973,14 @@ enums:
         meaning: edam:format_2064
       edam:format_2065:
         title: Protein structure report (quality evaluation) format
-        description: Format of a report on the quality of a protein three-dimensional
+        description:
+          Format of a report on the quality of a protein three-dimensional
           model.
         meaning: edam:format_2065
       edam:format_2066:
         title: Database hits (sequence) format
-        description: Format of a report on sequence hits and associated data from
+        description:
+          Format of a report on sequence hits and associated data from
           searching a sequence database.
         meaning: edam:format_2066
       edam:format_2067:
@@ -928,17 +1005,20 @@ enums:
         meaning: edam:format_2074
       edam:format_2075:
         title: HMM emission and transition counts format
-        description: Data format for the emission and transition counts of a hidden
+        description:
+          Data format for the emission and transition counts of a hidden
           Markov model.
         meaning: edam:format_2075
       edam:format_2076:
         title: RNA secondary structure format
-        description: Format for secondary structure (predicted or real) of an RNA
+        description:
+          Format for secondary structure (predicted or real) of an RNA
           molecule.
         meaning: edam:format_2076
       edam:format_2077:
         title: Protein secondary structure format
-        description: Format for secondary structure (predicted or real) of a protein
+        description:
+          Format for secondary structure (predicted or real) of a protein
           molecule.
         meaning: edam:format_2077
       edam:format_2078:
@@ -947,32 +1027,38 @@ enums:
         meaning: edam:format_2078
       edam:format_2094:
         title: pure
-        description: Alphabet for molecular sequence with possible unknown positions
+        description:
+          Alphabet for molecular sequence with possible unknown positions
           but without non-sequence characters.
         meaning: edam:format_2094
       edam:format_2095:
         title: unpure
-        description: Alphabet for a molecular sequence with possible unknown positions
+        description:
+          Alphabet for a molecular sequence with possible unknown positions
           but possibly with non-sequence characters.
         meaning: edam:format_2095
       edam:format_2096:
         title: unambiguous sequence
-        description: Alphabet for a molecular sequence with possible unknown positions
+        description:
+          Alphabet for a molecular sequence with possible unknown positions
           but without ambiguity characters.
         meaning: edam:format_2096
       edam:format_2097:
         title: ambiguous
-        description: Alphabet for a molecular sequence with possible unknown positions
+        description:
+          Alphabet for a molecular sequence with possible unknown positions
           and possible ambiguity characters.
         meaning: edam:format_2097
       edam:format_2155:
         title: Sequence features (repeats) format
-        description: Format used for map of repeats in molecular (typically nucleotide)
+        description:
+          Format used for map of repeats in molecular (typically nucleotide)
           sequences.
         meaning: edam:format_2155
       edam:format_2158:
         title: Nucleic acid features (restriction sites) format
-        description: Format used for report on restriction enzyme recognition sites
+        description:
+          Format used for report on restriction enzyme recognition sites
           in nucleotide sequences.
         meaning: edam:format_2158
       edam:format_2170:
@@ -1005,7 +1091,8 @@ enums:
         meaning: edam:format_2184
       edam:format_2185:
         title: INSDSeq
-        description: INSDSeq provides the elements of a sequence as presented in the
+        description:
+          INSDSeq provides the elements of a sequence as presented in the
           GenBank/EMBL/DDBJ-style flatfile formats, with a small amount of additional
           structure.
         meaning: edam:format_2185
@@ -1027,12 +1114,14 @@ enums:
         meaning: edam:format_2195
       edam:format_2196:
         title: OBO format
-        description: A serialisation format conforming to the Open Biomedical Ontologies
+        description:
+          A serialisation format conforming to the Open Biomedical Ontologies
           (OBO) model.
         meaning: edam:format_2196
       edam:format_2197:
         title: OWL format
-        description: A serialisation format conforming to the Web Ontology Language
+        description:
+          A serialisation format conforming to the Web Ontology Language
           (OWL) model.
         meaning: edam:format_2197
       edam:format_2200:
@@ -1089,19 +1178,22 @@ enums:
         meaning: edam:format_2333
       edam:format_2350:
         title: Format (by type of data)
-        description: A placeholder concept for visual navigation by dividing data
+        description:
+          A placeholder concept for visual navigation by dividing data
           formats by the content of the data that is represented.
         meaning: edam:format_2350
       edam:format_2352:
         title: BioXSD (XML)
-        description: BioXSD-schema-based XML format of sequence-based data and some
+        description:
+          BioXSD-schema-based XML format of sequence-based data and some
           other common data - sequence records, alignments, feature records, references
           to resources, and more - optimised for integrative bioinformatics, Web services,
           and object-oriented programming.
         meaning: edam:format_2352
       edam:format_2376:
         title: RDF format
-        description: A serialisation format conforming to the Resource Description
+        description:
+          A serialisation format conforming to the Resource Description
           Framework (RDF) model.
         meaning: edam:format_2376
       edam:format_2532:
@@ -1178,27 +1270,32 @@ enums:
         meaning: edam:format_2561
       edam:format_2566:
         title: completely unambiguous
-        description: Alphabet for a molecular sequence without any unknown positions
+        description:
+          Alphabet for a molecular sequence without any unknown positions
           or ambiguity characters.
         meaning: edam:format_2566
       edam:format_2567:
         title: completely unambiguous pure
-        description: Alphabet for a molecular sequence without unknown positions,
+        description:
+          Alphabet for a molecular sequence without unknown positions,
           ambiguity or non-sequence characters.
         meaning: edam:format_2567
       edam:format_2568:
         title: completely unambiguous pure nucleotide
-        description: Alphabet for a nucleotide sequence (characters ACGTU only) without
+        description:
+          Alphabet for a nucleotide sequence (characters ACGTU only) without
           unknown positions, ambiguity or non-sequence characters .
         meaning: edam:format_2568
       edam:format_2569:
         title: completely unambiguous pure dna
-        description: Alphabet for a DNA sequence (characters ACGT only) without unknown
+        description:
+          Alphabet for a DNA sequence (characters ACGT only) without unknown
           positions, ambiguity or non-sequence characters.
         meaning: edam:format_2569
       edam:format_2570:
         title: completely unambiguous pure rna sequence
-        description: Alphabet for an RNA sequence (characters ACGU only) without unknown
+        description:
+          Alphabet for an RNA sequence (characters ACGU only) without unknown
           positions, ambiguity or non-sequence characters.
         meaning: edam:format_2570
       edam:format_2571:
@@ -1207,26 +1304,30 @@ enums:
         meaning: edam:format_2571
       edam:format_2572:
         title: BAM
-        description: BAM format, the binary, BGZF-formatted compressed version of
+        description:
+          BAM format, the binary, BGZF-formatted compressed version of
           SAM format for alignment of nucleotide sequences (e.g. sequencing reads)
           to (a) reference sequence(s). May contain base-call and alignment qualities
           and other data.
         meaning: edam:format_2572
       edam:format_2573:
         title: SAM
-        description: Sequence Alignment/Map (SAM) format for alignment of nucleotide
+        description:
+          Sequence Alignment/Map (SAM) format for alignment of nucleotide
           sequences (e.g. sequencing reads) to (a) reference sequence(s). May contain
           base-call and alignment qualities and other data.
         meaning: edam:format_2573
       edam:format_2585:
         title: SBML
-        description: Systems Biology Markup Language (SBML), the standard XML format
+        description:
+          Systems Biology Markup Language (SBML), the standard XML format
           for models of biological processes such as for example metabolism, cell
           signaling, and gene regulation.
         meaning: edam:format_2585
       edam:format_2607:
         title: completely unambiguous pure protein
-        description: Alphabet for any protein sequence without unknown positions,
+        description:
+          Alphabet for any protein sequence without unknown positions,
           ambiguity or non-sequence characters.
         meaning: edam:format_2607
       edam:format_2848:
@@ -1239,7 +1340,8 @@ enums:
         meaning: edam:format_2919
       edam:format_2920:
         title: Alignment format (pair only)
-        description: Data format for molecular sequence alignment information that
+        description:
+          Data format for molecular sequence alignment information that
           can hold sequence alignment(s) of only 2 sequences.
         meaning: edam:format_2920
       edam:format_2921:
@@ -1260,55 +1362,65 @@ enums:
         meaning: edam:format_2924
       edam:format_3000:
         title: AB1
-        description: AB1 binary format of raw DNA sequence reads (output of Applied
+        description:
+          AB1 binary format of raw DNA sequence reads (output of Applied
           Biosystems' sequencing analysis software). Contains an electropherogram
           and the DNA base sequence.
         meaning: edam:format_3000
       edam:format_3001:
         title: ACE
-        description: ACE sequence assembly format including contigs, base-call qualities,
+        description:
+          ACE sequence assembly format including contigs, base-call qualities,
           and other metadata (version Aug 1998 and onwards).
         meaning: edam:format_3001
       edam:format_3003:
         title: BED
-        description: Browser Extensible Data (BED) format of sequence annotation track,
+        description:
+          Browser Extensible Data (BED) format of sequence annotation track,
           typically to be displayed in a genome browser.
         meaning: edam:format_3003
       edam:format_3004:
         title: bigBed
-        description: bigBed format for large sequence annotation tracks, similar to
+        description:
+          bigBed format for large sequence annotation tracks, similar to
           textual BED format.
         meaning: edam:format_3004
       edam:format_3005:
         title: WIG
-        description: Wiggle format (WIG) of a sequence annotation track that consists
+        description:
+          Wiggle format (WIG) of a sequence annotation track that consists
           of a value for each sequence position. Typically to be displayed in a genome
           browser.
         meaning: edam:format_3005
       edam:format_3006:
         title: bigWig
-        description: bigWig format for large sequence annotation tracks that consist
+        description:
+          bigWig format for large sequence annotation tracks that consist
           of a value for each sequence position. Similar to textual WIG format.
         meaning: edam:format_3006
       edam:format_3007:
         title: PSL
-        description: PSL format of alignments, typically generated by BLAT or psLayout.
+        description:
+          PSL format of alignments, typically generated by BLAT or psLayout.
           Can be displayed in a genome browser like a sequence annotation track.
         meaning: edam:format_3007
       edam:format_3008:
         title: MAF
-        description: Multiple Alignment Format (MAF) supporting alignments of whole
+        description:
+          Multiple Alignment Format (MAF) supporting alignments of whole
           genomes with rearrangements, directions, multiple pieces to the alignment,
           and so forth.
         meaning: edam:format_3008
       edam:format_3009:
         title: 2bit
-        description: 2bit binary format of nucleotide sequences using 2 bits per nucleotide.
+        description:
+          2bit binary format of nucleotide sequences using 2 bits per nucleotide.
           In addition encodes unknown nucleotides and lower-case 'masking'.
         meaning: edam:format_3009
       edam:format_3010:
         title: .nib
-        description: .nib (nibble) binary format of a nucleotide sequence using 4
+        description:
+          .nib (nibble) binary format of a nucleotide sequence using 4
           bits per nucleotide (including unknown) and its lower-case 'masking'.
         meaning: edam:format_3010
       edam:format_3011:
@@ -1317,7 +1429,8 @@ enums:
         meaning: edam:format_3011
       edam:format_3012:
         title: pgSnp
-        description: Personal Genome SNP (pgSnp) format for sequence variation tracks
+        description:
+          Personal Genome SNP (pgSnp) format for sequence variation tracks
           (indels and polymorphisms), supported by the UCSC Genome Browser.
         meaning: edam:format_3012
       edam:format_3013:
@@ -1330,33 +1443,39 @@ enums:
         meaning: edam:format_3014
       edam:format_3015:
         title: Pileup
-        description: Pileup format of alignment of sequences (e.g. sequencing reads)
+        description:
+          Pileup format of alignment of sequences (e.g. sequencing reads)
           to (a) reference sequence(s). Contains aligned bases per base of the reference
           sequence(s).
         meaning: edam:format_3015
       edam:format_3016:
         title: VCF
-        description: Variant Call Format (VCF) is tabular format for storing genomic
+        description:
+          Variant Call Format (VCF) is tabular format for storing genomic
           sequence variations.
         meaning: edam:format_3016
       edam:format_3017:
         title: SRF
-        description: Sequence Read Format (SRF) of sequence trace data. Supports submission
+        description:
+          Sequence Read Format (SRF) of sequence trace data. Supports submission
           to the NCBI Short Read Archive.
         meaning: edam:format_3017
       edam:format_3018:
         title: ZTR
-        description: ZTR format for storing chromatogram data from DNA sequencing
+        description:
+          ZTR format for storing chromatogram data from DNA sequencing
           instruments.
         meaning: edam:format_3018
       edam:format_3019:
         title: GVF
-        description: Genome Variation Format (GVF). A GFF3-compatible format with
+        description:
+          Genome Variation Format (GVF). A GFF3-compatible format with
           defined header and attribute tags for sequence variation.
         meaning: edam:format_3019
       edam:format_3020:
         title: BCF
-        description: BCF is the binary version of Variant Call Format (VCF) for sequence
+        description:
+          BCF is the binary version of Variant Call Format (VCF) for sequence
           variation (indels, polymorphisms, structural variation).
         meaning: edam:format_3020
       edam:format_3033:
@@ -1365,7 +1484,8 @@ enums:
         meaning: edam:format_3033
       edam:format_3097:
         title: Protein domain classification format
-        description: Format of data concerning the classification of the sequences
+        description:
+          Format of data concerning the classification of the sequences
           and/or structures of protein structural domain(s).
         meaning: edam:format_3097
       edam:format_3098:
@@ -1378,33 +1498,39 @@ enums:
         meaning: edam:format_3099
       edam:format_3100:
         title: CATH domain report format
-        description: Format of summary of domain classification information for a
+        description:
+          Format of summary of domain classification information for a
           CATH domain.
         meaning: edam:format_3100
       edam:format_3155:
         title: SBRML
-        description: Systems Biology Result Markup Language (SBRML), the standard
+        description:
+          Systems Biology Result Markup Language (SBRML), the standard
           XML format for simulated or calculated results (e.g. trajectories) of systems
           biology models.
         meaning: edam:format_3155
       edam:format_3156:
         title: BioPAX
-        description: BioPAX is an exchange format for pathway data, with its data
+        description:
+          BioPAX is an exchange format for pathway data, with its data
           model defined in OWL.
         meaning: edam:format_3156
       edam:format_3157:
         title: EBI Application Result XML
-        description: EBI Application Result XML is a format returned by sequence similarity
+        description:
+          EBI Application Result XML is a format returned by sequence similarity
           search Web services at EBI.
         meaning: edam:format_3157
       edam:format_3158:
         title: PSI MI XML (MIF)
-        description: XML Molecular Interaction Format (MIF), standardised by HUPO
+        description:
+          XML Molecular Interaction Format (MIF), standardised by HUPO
           PSI MI.
         meaning: edam:format_3158
       edam:format_3159:
         title: phyloXML
-        description: phyloXML is a standardised XML format for phylogenetic trees,
+        description:
+          phyloXML is a standardised XML format for phylogenetic trees,
           networks, and associated data.
         meaning: edam:format_3159
       edam:format_3160:
@@ -1413,30 +1539,35 @@ enums:
         meaning: edam:format_3160
       edam:format_3161:
         title: MAGE-ML
-        description: MAGE-ML XML format for microarray expression data, standardised
+        description:
+          MAGE-ML XML format for microarray expression data, standardised
           by MGED (now FGED).
         meaning: edam:format_3161
       edam:format_3162:
         title: MAGE-TAB
-        description: MAGE-TAB textual format for microarray expression data, standardised
+        description:
+          MAGE-TAB textual format for microarray expression data, standardised
           by MGED (now FGED).
         meaning: edam:format_3162
       edam:format_3163:
         title: GCDML
-        description: GCDML XML format for genome and metagenome metadata according
+        description:
+          GCDML XML format for genome and metagenome metadata according
           to MIGS/MIMS/MIMARKS information standards, standardised by the Genomic
           Standards Consortium (GSC).
         meaning: edam:format_3163
       edam:format_3164:
         title: GTrack
-        description: GTrack is a generic and optimised tabular format for genome or
+        description:
+          GTrack is a generic and optimised tabular format for genome or
           sequence feature tracks. GTrack unifies the power of other track formats
           (e.g. GFF3, BED, WIG), and while optimised in size, adds more flexibility,
           customisation, and automation ("machine understandability").
         meaning: edam:format_3164
       edam:format_3166:
         title: Biological pathway or network report format
-        description: Data format for a report of information derived from a biological
+        description:
+          Data format for a report of information derived from a biological
           pathway or network.
         meaning: edam:format_3166
       edam:format_3167:
@@ -1453,54 +1584,64 @@ enums:
         meaning: edam:format_3239
       edam:format_3240:
         title: CellML
-        description: CellML, the format for mathematical models of biological and
+        description:
+          CellML, the format for mathematical models of biological and
           other networks.
         meaning: edam:format_3240
       edam:format_3242:
         title: PSI MI TAB (MITAB)
-        description: Tabular Molecular Interaction format (MITAB), standardised by
+        description:
+          Tabular Molecular Interaction format (MITAB), standardised by
           HUPO PSI MI.
         meaning: edam:format_3242
       edam:format_3243:
         title: PSI-PAR
-        description: Protein affinity format (PSI-PAR), standardised by HUPO PSI MI.
+        description:
+          Protein affinity format (PSI-PAR), standardised by HUPO PSI MI.
           It is compatible with PSI MI XML (MIF) and uses the same XML Schema.
         meaning: edam:format_3243
       edam:format_3244:
         title: mzML
-        description: mzML format for raw spectrometer output data, standardised by
+        description:
+          mzML format for raw spectrometer output data, standardised by
           HUPO PSI MSS.
         meaning: edam:format_3244
       edam:format_3245:
         title: Mass spectrometry data format
-        description: Format for mass pectra and derived data, include peptide sequences
+        description:
+          Format for mass pectra and derived data, include peptide sequences
           etc.
         meaning: edam:format_3245
       edam:format_3246:
         title: TraML
-        description: TraML (Transition Markup Language) is the format for mass spectrometry
+        description:
+          TraML (Transition Markup Language) is the format for mass spectrometry
           transitions, standardised by HUPO PSI MSS.
         meaning: edam:format_3246
       edam:format_3247:
         title: mzIdentML
-        description: mzIdentML is the exchange format for peptides and proteins identified
+        description:
+          mzIdentML is the exchange format for peptides and proteins identified
           from mass spectra, standardised by HUPO PSI PI. It can be used for outputs
           of proteomics search engines.
         meaning: edam:format_3247
       edam:format_3248:
         title: mzQuantML
-        description: mzQuantML is the format for quantitation values associated with
+        description:
+          mzQuantML is the format for quantitation values associated with
           peptides, proteins and small molecules from mass spectra, standardised by
           HUPO PSI PI. It can be used for outputs of quantitation software for proteomics.
         meaning: edam:format_3248
       edam:format_3249:
         title: GelML
-        description: GelML is the format for describing the process of gel electrophoresis,
+        description:
+          GelML is the format for describing the process of gel electrophoresis,
           standardised by HUPO PSI PS.
         meaning: edam:format_3249
       edam:format_3250:
         title: spML
-        description: spML is the format for describing proteomics sample processing,
+        description:
+          spML is the format for describing proteomics sample processing,
           other than using gels, prior to mass spectrometric protein identification,
           standardised by HUPO PSI PS. It may also be applicable for metabolomics.
         meaning: edam:format_3250
@@ -1514,23 +1655,27 @@ enums:
         meaning: edam:format_3253
       edam:format_3254:
         title: KRSS2 Syntax
-        description: A superset of the "Description-Logic Knowledge Representation
+        description:
+          A superset of the "Description-Logic Knowledge Representation
           System Specification from the KRSS Group of the ARPA Knowledge Sharing Effort".
         meaning: edam:format_3254
       edam:format_3255:
         title: Turtle
-        description: The Terse RDF Triple Language (Turtle) is a human-friendly serialisation
+        description:
+          The Terse RDF Triple Language (Turtle) is a human-friendly serialisation
           format for RDF (Resource Description Framework) graphs.
         meaning: edam:format_3255
       edam:format_3256:
         title: N-Triples
-        description: A plain text serialisation format for RDF (Resource Description
+        description:
+          A plain text serialisation format for RDF (Resource Description
           Framework) graphs, and a subset of the Turtle (Terse RDF Triple Language)
           format.
         meaning: edam:format_3256
       edam:format_3257:
         title: Notation3
-        description: A shorthand non-XML serialisation of Resource Description Framework
+        description:
+          A shorthand non-XML serialisation of Resource Description Framework
           model, designed with human-readability in mind.
         meaning: edam:format_3257
       edam:format_3261:
@@ -1543,14 +1688,16 @@ enums:
         meaning: edam:format_3262
       edam:format_3281:
         title: A2M
-        description: The A2M format is used as the primary format for multiple alignments
+        description:
+          The A2M format is used as the primary format for multiple alignments
           of protein or nucleic-acid sequences in the SAM suite of tools. It is a
           small modification of FASTA format for sequences and is compatible with
           most tools that read FASTA.
         meaning: edam:format_3281
       edam:format_3284:
         title: SFF
-        description: Standard flowgram format (SFF) is a binary file format used to
+        description:
+          Standard flowgram format (SFF) is a binary file format used to
           encode results of pyrosequencing from the 454 Life Sciences platform for
           high-throughput sequencing.
         meaning: edam:format_3284
@@ -1560,12 +1707,14 @@ enums:
         meaning: edam:format_3285
       edam:format_3286:
         title: PED
-        description: The PED file describes individuals and genetic data and is used
+        description:
+          The PED file describes individuals and genetic data and is used
           by the Plink package.
         meaning: edam:format_3286
       edam:format_3287:
         title: Individual genetic data format
-        description: Data format for a metadata on an individual and their genetic
+        description:
+          Data format for a metadata on an individual and their genetic
           data.
         meaning: edam:format_3287
       edam:format_3288:
@@ -1574,7 +1723,8 @@ enums:
         meaning: edam:format_3288
       edam:format_3309:
         title: CT
-        description: File format of a CT (Connectivity Table) file from the RNAstructure
+        description:
+          File format of a CT (Connectivity Table) file from the RNAstructure
           package.
         meaning: edam:format_3309
       edam:format_3310:
@@ -1591,7 +1741,8 @@ enums:
         meaning: edam:format_3312
       edam:format_3313:
         title: BLC
-        description: A multiple alignment in vertical format, as used in the AMPS
+        description:
+          A multiple alignment in vertical format, as used in the AMPS
           (Alignment of Multiple Protein Sequences) package.
         meaning: edam:format_3313
       edam:format_3326:
@@ -1612,7 +1763,8 @@ enums:
         meaning: edam:format_3329
       edam:format_3330:
         title: PO
-        description: PO is the output format of Partial Order Alignment program (POA)
+        description:
+          PO is the output format of Partial Order Alignment program (POA)
           performing Multiple Sequence Alignment (MSA).
         meaning: edam:format_3330
       edam:format_3331:
@@ -1625,7 +1777,8 @@ enums:
         meaning: edam:format_3462
       edam:format_3464:
         title: JSON
-        description: JavaScript Object Notation format; a lightweight, text-based
+        description:
+          JavaScript Object Notation format; a lightweight, text-based
           format to represent tree-structured data using key-value pairs.
         meaning: edam:format_3464
       edam:format_3466:
@@ -1646,7 +1799,8 @@ enums:
         meaning: edam:format_3475
       edam:format_3477:
         title: Cytoscape input file format
-        description: Format of the cytoscape input file of gene expression ratios
+        description:
+          Format of the cytoscape input file of gene expression ratios
           or values are specified over one or more experiments.
         meaning: edam:format_3477
       edam:format_3484:
@@ -1679,7 +1833,8 @@ enums:
         meaning: edam:format_3506
       edam:format_3507:
         title: Document format
-        description: Format of documents including word processor, spreadsheet and
+        description:
+          Format of documents including word processor, spreadsheet and
           presentation.
         meaning: edam:format_3507
       edam:format_3508:
@@ -1692,44 +1847,52 @@ enums:
         meaning: edam:format_3547
       edam:format_3548:
         title: DICOM format
-        description: Medical image format corresponding to the Digital Imaging and
+        description:
+          Medical image format corresponding to the Digital Imaging and
           Communications in Medicine (DICOM) standard.
         meaning: edam:format_3548
       edam:format_3549:
         title: nii
-        description: An open file format from the Neuroimaging Informatics Technology
+        description:
+          An open file format from the Neuroimaging Informatics Technology
           Initiative (NIfTI) commonly used to store brain imaging data obtained using
           Magnetic Resonance Imaging (MRI) methods.
         meaning: edam:format_3549
       edam:format_3550:
         title: mhd
-        description: Text-based tagged file format for medical images generated using
+        description:
+          Text-based tagged file format for medical images generated using
           the MetaImage software package.
         meaning: edam:format_3550
       edam:format_3551:
         title: nrrd
-        description: Nearly Raw Rasta Data format designed to support scientific visualisation
+        description:
+          Nearly Raw Rasta Data format designed to support scientific visualisation
           and image processing involving N-dimensional raster data.
         meaning: edam:format_3551
       edam:format_3554:
         title: R file format
-        description: File format used for scripts written in the R programming language
+        description:
+          File format used for scripts written in the R programming language
           for execution within the R software environment, typically for statistical
           computation and graphics.
         meaning: edam:format_3554
       edam:format_3555:
         title: SPSS
-        description: File format used for scripts for the Statistical Package for
+        description:
+          File format used for scripts for the Statistical Package for
           the Social Sciences.
         meaning: edam:format_3555
       edam:format_3556:
         title: MHTML
-        description: MIME HTML format for Web pages, which can include external resources,
+        description:
+          MIME HTML format for Web pages, which can include external resources,
           including images, Flash animations and so on.
         meaning: edam:format_3556
       edam:format_3578:
         title: IDAT
-        description: Proprietary file format for (raw) BeadArray data used by genomewide
+        description:
+          Proprietary file format for (raw) BeadArray data used by genomewide
           profiling platforms from Illumina Inc. This format is output directly from
           the scanner and stores summary intensities for each probe-type on an array.
         meaning: edam:format_3578
@@ -1739,34 +1902,40 @@ enums:
         meaning: edam:format_3579
       edam:format_3580:
         title: rcc
-        description: Reporter Code Count-A data file (.csv) output by the Nanostring
+        description:
+          Reporter Code Count-A data file (.csv) output by the Nanostring
           nCounter Digital Analyzer, which contains gene sample information, probe
           information and probe counts.
         meaning: edam:format_3580
       edam:format_3581:
         title: arff
-        description: ARFF (Attribute-Relation File Format) is an ASCII text file format
+        description:
+          ARFF (Attribute-Relation File Format) is an ASCII text file format
           that describes a list of instances sharing a set of attributes.
         meaning: edam:format_3581
       edam:format_3582:
         title: afg
-        description: AFG is a single text-based file assembly format that holds read
+        description:
+          AFG is a single text-based file assembly format that holds read
           and consensus information together.
         meaning: edam:format_3582
       edam:format_3583:
         title: bedgraph
-        description: The bedGraph format allows display of continuous-valued data
+        description:
+          The bedGraph format allows display of continuous-valued data
           in track format. This display type is useful for probability scores and
           transcriptome data.
         meaning: edam:format_3583
       edam:format_3584:
         title: bedstrict
-        description: Browser Extensible Data (BED) format of sequence annotation track
+        description:
+          Browser Extensible Data (BED) format of sequence annotation track
           that strictly does not contain non-standard fields beyond the first 3 columns.
         meaning: edam:format_3584
       edam:format_3585:
         title: bed6
-        description: BED file format where each feature is described by chromosome,
+        description:
+          BED file format where each feature is described by chromosome,
           start, end, name, score, and strand.
         meaning: edam:format_3585
       edam:format_3586:
@@ -1787,7 +1956,8 @@ enums:
         meaning: edam:format_3589
       edam:format_3590:
         title: HDF5
-        description: HDF5 is a data model, library, and file format for storing and
+        description:
+          HDF5 is a data model, library, and file format for storing and
           managing data, based on Hierarchical Data Format (HDF).
         meaning: edam:format_3590
       edam:format_3591:
@@ -1800,55 +1970,65 @@ enums:
         meaning: edam:format_3592
       edam:format_3593:
         title: im
-        description: IM is a format used by LabEye and other applications based on
+        description:
+          IM is a format used by LabEye and other applications based on
           the IFUNC image processing library.
         meaning: edam:format_3593
       edam:format_3594:
         title: pcd
-        description: Photo CD format, which is the highest resolution format for images
+        description:
+          Photo CD format, which is the highest resolution format for images
           on a CD.
         meaning: edam:format_3594
       edam:format_3595:
         title: pcx
-        description: PCX is an image file format that uses a simple form of run-length
+        description:
+          PCX is an image file format that uses a simple form of run-length
           encoding. It is lossless.
         meaning: edam:format_3595
       edam:format_3596:
         title: ppm
-        description: The PPM format is a lowest common denominator color image file
+        description:
+          The PPM format is a lowest common denominator color image file
           format.
         meaning: edam:format_3596
       edam:format_3597:
         title: psd
-        description: PSD (Photoshop Document) is a proprietary file that allows the
+        description:
+          PSD (Photoshop Document) is a proprietary file that allows the
           user to work with the images' individual layers even after the file has
           been saved.
         meaning: edam:format_3597
       edam:format_3598:
         title: xbm
-        description: X BitMap is a plain text binary image format used by the X Window
+        description:
+          X BitMap is a plain text binary image format used by the X Window
           System used for storing cursor and icon bitmaps used in the X GUI.
         meaning: edam:format_3598
       edam:format_3599:
         title: xpm
-        description: X PixMap (XPM) is an image file format used by the X Window System,
+        description:
+          X PixMap (XPM) is an image file format used by the X Window System,
           it is intended primarily for creating icon pixmaps, and supports transparent
           pixels.
         meaning: edam:format_3599
       edam:format_3600:
         title: rgb
-        description: RGB file format is the native raster graphics file format for
+        description:
+          RGB file format is the native raster graphics file format for
           Silicon Graphics workstations.
         meaning: edam:format_3600
       edam:format_3601:
         title: pbm
-        description: The PBM format is a lowest common denominator monochrome file
+        description:
+          The PBM format is a lowest common denominator monochrome file
           format. It serves as the common language of a large family of bitmap image
           conversion filters.
         meaning: edam:format_3601
       edam:format_3602:
         title: pgm
-        description: The PGM format is a lowest common denominator grayscale file
+        description:
+          The PGM format is a lowest common denominator grayscale file
           format.
         meaning: edam:format_3602
       edam:format_3603:
@@ -1857,42 +2037,50 @@ enums:
         meaning: edam:format_3603
       edam:format_3604:
         title: SVG
-        description: Scalable Vector Graphics (SVG) is an XML-based vector image format
+        description:
+          Scalable Vector Graphics (SVG) is an XML-based vector image format
           for two-dimensional graphics with support for interactivity and animation.
         meaning: edam:format_3604
       edam:format_3605:
         title: rast
-        description: Sun Raster is a raster graphics file format used on SunOS by
+        description:
+          Sun Raster is a raster graphics file format used on SunOS by
           Sun Microsystems.
         meaning: edam:format_3605
       edam:format_3606:
         title: Sequence quality report format (text)
-        description: Textual report format for sequence quality for reports from sequencing
+        description:
+          Textual report format for sequence quality for reports from sequencing
           machines.
         meaning: edam:format_3606
       edam:format_3607:
         title: qual
-        description: FASTQ format subset for Phred sequencing quality score data only
+        description:
+          FASTQ format subset for Phred sequencing quality score data only
           (no sequences).
         meaning: edam:format_3607
       edam:format_3608:
         title: qualsolexa
-        description: FASTQ format subset for Phred sequencing quality score data only
+        description:
+          FASTQ format subset for Phred sequencing quality score data only
           (no sequences) for Solexa/Illumina 1.0 format.
         meaning: edam:format_3608
       edam:format_3609:
         title: qualillumina
-        description: FASTQ format subset for Phred sequencing quality score data only
+        description:
+          FASTQ format subset for Phred sequencing quality score data only
           (no sequences) from Illumina 1.5 and before Illumina 1.8.
         meaning: edam:format_3609
       edam:format_3610:
         title: qualsolid
-        description: FASTQ format subset for Phred sequencing quality score data only
+        description:
+          FASTQ format subset for Phred sequencing quality score data only
           (no sequences) for SOLiD data.
         meaning: edam:format_3610
       edam:format_3611:
         title: qual454
-        description: FASTQ format subset for Phred sequencing quality score data only
+        description:
+          FASTQ format subset for Phred sequencing quality score data only
           (no sequences) from 454 sequencers.
         meaning: edam:format_3611
       edam:format_3612:
@@ -1925,12 +2113,14 @@ enums:
         meaning: edam:format_3618
       edam:format_3619:
         title: sif
-        description: SIF (simple interaction file) Format - a network/pathway format
+        description:
+          SIF (simple interaction file) Format - a network/pathway format
           used for instance in cytoscape.
         meaning: edam:format_3619
       edam:format_3620:
         title: xlsx
-        description: MS Excel spreadsheet format consisting of a set of XML documents
+        description:
+          MS Excel spreadsheet format consisting of a set of XML documents
           stored in a ZIP-compressed file.
         meaning: edam:format_3620
       edam:format_3621:
@@ -1939,12 +2129,14 @@ enums:
         meaning: edam:format_3621
       edam:format_3622:
         title: Gemini SQLite format
-        description: Data format used by the SQLite database conformant to the Gemini
+        description:
+          Data format used by the SQLite database conformant to the Gemini
           schema.
         meaning: edam:format_3622
       edam:format_3624:
         title: snpeffdb
-        description: An index of a genome database, indexed for use by the snpeff
+        description:
+          An index of a genome database, indexed for use by the snpeff
           tool.
         meaning: edam:format_3624
       edam:format_3626:
@@ -1953,18 +2145,21 @@ enums:
         meaning: edam:format_3626
       edam:format_3650:
         title: NetCDF
-        description: Format used by netCDF software library for writing and reading
+        description:
+          Format used by netCDF software library for writing and reading
           chromatography-MS data files. Also used to store trajectory atom coordinates
           information, such as the ones obtained by Molecular Dynamics simulations.
         meaning: edam:format_3650
       edam:format_3651:
         title: MGF
-        description: Mascot Generic Format. Encodes multiple MS/MS spectra in a single
+        description:
+          Mascot Generic Format. Encodes multiple MS/MS spectra in a single
           file.
         meaning: edam:format_3651
       edam:format_3652:
         title: dta
-        description: Spectral data format file where each spectrum is written to a
+        description:
+          Spectral data format file where each spectrum is written to a
           separate file.
         meaning: edam:format_3652
       edam:format_3653:
@@ -1973,62 +2168,73 @@ enums:
         meaning: edam:format_3653
       edam:format_3654:
         title: mzXML
-        description: Common file format for proteomics mass spectrometric data developed
+        description:
+          Common file format for proteomics mass spectrometric data developed
           at the Seattle Proteome Center/Institute for Systems Biology.
         meaning: edam:format_3654
       edam:format_3655:
         title: pepXML
-        description: Open data format for the storage, exchange, and processing of
+        description:
+          Open data format for the storage, exchange, and processing of
           peptide sequence assignments of MS/MS scans, intended to provide a common
           data output format for many different MS/MS search engines and subsequent
           peptide-level analyses.
         meaning: edam:format_3655
       edam:format_3657:
         title: GPML
-        description: Graphical Pathway Markup Language (GPML) is an XML format used
+        description:
+          Graphical Pathway Markup Language (GPML) is an XML format used
           for exchanging biological pathways.
         meaning: edam:format_3657
       edam:format_3665:
         title: K-mer countgraph
-        description: A list of k-mers and their occurrences in a dataset. Can also
+        description:
+          A list of k-mers and their occurrences in a dataset. Can also
           be used as an implicit De Bruijn graph.
         meaning: edam:format_3665
       edam:format_3681:
         title: mzTab
-        description: mzTab is a light-weight, tab-delimited format for mass spectrometry-based
+        description:
+          mzTab is a light-weight, tab-delimited format for mass spectrometry-based
           proteomics data.
         meaning: edam:format_3681
       edam:format_3682:
         title: imzML metadata file
-        description: imzML metadata is a data format for mass spectrometry imaging
+        description:
+          imzML metadata is a data format for mass spectrometry imaging
           metadata.
         meaning: edam:format_3682
       edam:format_3683:
         title: qcML
-        description: qcML is an XML format for quality-related data of mass spectrometry
+        description:
+          qcML is an XML format for quality-related data of mass spectrometry
           and other high-throughput measurements.
         meaning: edam:format_3683
       edam:format_3684:
         title: PRIDE XML
-        description: PRIDE XML is an XML format for mass spectra, peptide and protein
+        description:
+          PRIDE XML is an XML format for mass spectra, peptide and protein
           identifications, and metadata about a corresponding measurement, sample,
           experiment.
         meaning: edam:format_3684
       edam:format_3685:
         title: SED-ML
-        description: Simulation Experiment Description Markup Language (SED-ML) is
+        description:
+          Simulation Experiment Description Markup Language (SED-ML) is
           an XML format for encoding simulation setups, according to the MIASE (Minimum
           Information About a Simulation Experiment) requirements.
         meaning: edam:format_3685
       edam:format_3686:
         title: COMBINE OMEX
-        description: Open Modeling EXchange format (OMEX) is a ZIPped format for encapsulating
+        description:
+          Open Modeling EXchange format (OMEX) is a ZIPped format for encapsulating
           all information necessary for a modeling and simulation project in systems
           biology.
         meaning: edam:format_3686
       edam:format_3687:
         title: ISA-Tab
-        description: ISA-Tab stands for Investigation / Study / Assay (ISA) tab-delimited
+        description:
+          ISA-Tab stands for Investigation / Study / Assay (ISA) tab-delimited
           (Tab) format, and it is comprised of metadata describing observational or
           experimental scientific studies.
         meaning: edam:format_3687
@@ -2038,27 +2244,32 @@ enums:
         meaning: edam:format_3688
       edam:format_3689:
         title: BCML
-        description: Biological Connection Markup Language (BCML) is an XML format
+        description:
+          Biological Connection Markup Language (BCML) is an XML format
           for biological pathways.
         meaning: edam:format_3689
       edam:format_3690:
         title: BDML
-        description: Biological Dynamics Markup Language (BDML) is an XML format for
+        description:
+          Biological Dynamics Markup Language (BDML) is an XML format for
           quantitative data describing biological dynamics.
         meaning: edam:format_3690
       edam:format_3691:
         title: BEL
-        description: Biological Expression Language (BEL) is a textual format for
+        description:
+          Biological Expression Language (BEL) is a textual format for
           representing scientific findings in life sciences in a computable form.
         meaning: edam:format_3691
       edam:format_3692:
         title: SBGN-ML
-        description: SBGN-ML is an XML format for Systems Biology Graphical Notation
+        description:
+          SBGN-ML is an XML format for Systems Biology Graphical Notation
           (SBGN) diagrams of biological pathways or networks.
         meaning: edam:format_3692
       edam:format_3693:
         title: AGP
-        description: AGP is a tabular format for a sequence assembly (a contig, a
+        description:
+          AGP is a tabular format for a sequence assembly (a contig, a
           scaffold/supercontig, or a chromosome).
         meaning: edam:format_3693
       edam:format_3696:
@@ -2067,23 +2278,27 @@ enums:
         meaning: edam:format_3696
       edam:format_3698:
         title: SRA format
-        description: SRA archive format (SRA) is the archive format used for input
+        description:
+          SRA archive format (SRA) is the archive format used for input
           to the NCBI Sequence Read Archive.
         meaning: edam:format_3698
       edam:format_3699:
         title: VDB
-        description: VDB ('vertical database') is the native format used for export
+        description:
+          VDB ('vertical database') is the native format used for export
           from the NCBI Sequence Read Archive.
         meaning: edam:format_3699
       edam:format_3701:
         title: Sequin format
-        description: A five-column, tab-delimited table of feature locations and qualifiers
+        description:
+          A five-column, tab-delimited table of feature locations and qualifiers
           for importing annotation into an existing Sequin submission (an NCBI tool
           for submitting and updating GenBank entries).
         meaning: edam:format_3701
       edam:format_3702:
         title: MSF
-        description: Proprietary mass-spectrometry format of Thermo Scientific's ProteomeDiscoverer
+        description:
+          Proprietary mass-spectrometry format of Thermo Scientific's ProteomeDiscoverer
           software.
         meaning: edam:format_3702
       edam:format_3706:
@@ -2092,13 +2307,15 @@ enums:
         meaning: edam:format_3706
       edam:format_3708:
         title: ABCD format
-        description: Exchange format of the Access to Biological Collections Data
+        description:
+          Exchange format of the Access to Biological Collections Data
           (ABCD) Schema; a standard for the access to and exchange of data about specimens
           and observations (primary biodiversity data).
         meaning: edam:format_3708
       edam:format_3709:
         title: GCT/Res format
-        description: Tab-delimited text files of GenePattern that contain a column
+        description:
+          Tab-delimited text files of GenePattern that contain a column
           for each sample, a row for each gene, and an expression value for each gene
           in each sample.
         meaning: edam:format_3709
@@ -2108,12 +2325,14 @@ enums:
         meaning: edam:format_3710
       edam:format_3711:
         title: X!Tandem XML
-        description: Output format used by X! series search engines that is based
+        description:
+          Output format used by X! series search engines that is based
           on the XML language BIOML.
         meaning: edam:format_3711
       edam:format_3712:
         title: Thermo RAW
-        description: Proprietary file format for mass spectrometry data from Thermo
+        description:
+          Proprietary file format for mass spectrometry data from Thermo
           Scientific.
         meaning: edam:format_3712
       edam:format_3713:
@@ -2122,71 +2341,83 @@ enums:
         meaning: edam:format_3713
       edam:format_3714:
         title: MaxQuant APL peaklist format
-        description: Format of peak list files from Andromeda search engine (MaxQuant)
+        description:
+          Format of peak list files from Andromeda search engine (MaxQuant)
           that consist of arbitrarily many spectra.
         meaning: edam:format_3714
       edam:format_3725:
         title: SBOL
-        description: Synthetic Biology Open Language (SBOL) is an XML format for the
+        description:
+          Synthetic Biology Open Language (SBOL) is an XML format for the
           specification and exchange of biological design information in synthetic
           biology.
         meaning: edam:format_3725
       edam:format_3726:
         title: PMML
-        description: PMML uses XML to represent mining models. The structure of the
+        description:
+          PMML uses XML to represent mining models. The structure of the
           models is described by an XML Schema.
         meaning: edam:format_3726
       edam:format_3727:
-        title: OME-TIFF
-        description: Image file format used by the Open Microscopy Environment (OME).
+        title: SOME-TIFF
+        description: Image file format used by the Open Microscopy Environment (SOME).
         meaning: edam:format_3727
       edam:format_3728:
         title: LocARNA PP
-        description: The LocARNA PP format combines sequence or alignment information
+        description:
+          The LocARNA PP format combines sequence or alignment information
           and (respectively, single or consensus) ensemble probabilities into an PP
           2.0 record.
         meaning: edam:format_3728
       edam:format_3729:
         title: dbGaP format
-        description: Input format used by the Database of Genotypes and Phenotypes
+        description:
+          Input format used by the Database of Genotypes and Phenotypes
           (dbGaP).
         meaning: edam:format_3729
       edam:format_3746:
         title: BIOM format
-        description: The BIological Observation Matrix (BIOM) is a format for representing
+        description:
+          The BIological Observation Matrix (BIOM) is a format for representing
           biological sample by observation contingency tables in broad areas of comparative
-          omics. The primary use of this format is to represent OTU tables and metagenome
+          omics. The primary use of this format is to represent OUT tables and metagenome
           tables.
         meaning: edam:format_3746
       edam:format_3747:
         title: protXML
-        description: A format for storage, exchange, and processing of protein identifications
+        description:
+          A format for storage, exchange, and processing of protein identifications
           created from ms/ms-derived peptide sequence data.
         meaning: edam:format_3747
       edam:format_3748:
         title: Linked data format
-        description: A linked data format enables publishing structured data as linked
+        description:
+          A linked data format enables publishing structured data as linked
           data (Linked Data), so that the data can be interlinked and become more
           useful through semantic queries.
         meaning: edam:format_3748
       edam:format_3749:
         title: JSON-LD
-        description: JSON-LD, or JavaScript Object Notation for Linked Data, is a
+        description:
+          JSON-LD, or JavaScript Object Notation for Linked Data, is a
           method of encoding Linked Data using JSON.
         meaning: edam:format_3749
       edam:format_3750:
         title: YAML
-        description: YAML (YAML Ain't Markup Language) is a human-readable tree-structured
+        description:
+          YAML (YAML Ain't Markup Language) is a human-readable tree-structured
           data serialisation language.
         meaning: edam:format_3750
       edam:format_3751:
         title: DSV
-        description: Tabular data represented as values in a text file delimited by
+        description:
+          Tabular data represented as values in a text file delimited by
           some character.
         meaning: edam:format_3751
       edam:format_3752:
         title: CSV
-        description: Tabular data represented as comma-separated values in a text
+        description:
+          Tabular data represented as comma-separated values in a text
           file.
         meaning: edam:format_3752
       edam:format_3758:
@@ -2195,90 +2426,106 @@ enums:
         meaning: edam:format_3758
       edam:format_3764:
         title: idXML
-        description: XML file format for files containing information about peptide
+        description:
+          XML file format for files containing information about peptide
           identifications from mass spectrometry data analysis carried out with OpenMS.
         meaning: edam:format_3764
       edam:format_3765:
         title: KNIME datatable format
-        description: Data table formatted such that it can be passed/streamed within
+        description:
+          Data table formatted such that it can be passed/streamed within
           the KNIME platform.
         meaning: edam:format_3765
       edam:format_3770:
         title: UniProtKB XML
-        description: UniProtKB XML sequence features format is an XML format available
+        description:
+          UniProtKB XML sequence features format is an XML format available
           for downloading UniProt entries.
         meaning: edam:format_3770
       edam:format_3771:
         title: UniProtKB RDF
-        description: UniProtKB RDF sequence features format is an RDF format available
+        description:
+          UniProtKB RDF sequence features format is an RDF format available
           for downloading UniProt entries (in RDF/XML).
         meaning: edam:format_3771
       edam:format_3772:
         title: BioJSON (BioXSD)
-        description: BioJSON is a BioXSD-schema-based JSON format of sequence-based
+        description:
+          BioJSON is a BioXSD-schema-based JSON format of sequence-based
           data and some other common data - sequence records, alignments, feature
           records, references to resources, and more - optimised for integrative bioinformatics,
           web applications and APIs, and object-oriented programming.
         meaning: edam:format_3772
       edam:format_3773:
         title: BioYAML
-        description: BioYAML is a BioXSD-schema-based YAML format of sequence-based
+        description:
+          BioYAML is a BioXSD-schema-based YAML format of sequence-based
           data and some other common data - sequence records, alignments, feature
           records, references to resources, and more - optimised for integrative bioinformatics,
           web APIs, human readability and editing, and object-oriented programming.
         meaning: edam:format_3773
       edam:format_3774:
         title: BioJSON (Jalview)
-        description: BioJSON is a JSON format of single multiple sequence alignments,
+        description:
+          BioJSON is a JSON format of single multiple sequence alignments,
           with their annotations, features, and custom visualisation and application
           settings for the Jalview workbench.
         meaning: edam:format_3774
       edam:format_3775:
         title: GSuite
-        description: GSuite is a tabular format for collections of genome or sequence
+        description:
+          GSuite is a tabular format for collections of genome or sequence
           feature tracks, suitable for integrative multi-track analysis. GSuite contains
           links to genome/sequence tracks, with additional metadata.
         meaning: edam:format_3775
       edam:format_3776:
         title: BTrack
-        description: BTrack is an HDF5-based binary format for genome or sequence
+        description:
+          BTrack is an HDF5-based binary format for genome or sequence
           feature tracks and their collections, suitable for integrative multi-track
           analysis. BTrack is a binary, compressed alternative to the GTrack and GSuite
           formats.
         meaning: edam:format_3776
       edam:format_3777:
         title: MCPD
-        description: The FAO/Bioversity/IPGRI Multi-Crop Passport Descriptors (MCPD)
+        description:
+          The FAO/Bioversity/IPGRI Multi-Crop Passport Descriptors (MCPD)
           is an international standard format for exchange of germplasm information.
         meaning: edam:format_3777
       edam:format_3780:
         title: Annotated text format
-        description: Data format of an annotated text, e.g. with recognised entities,
+        description:
+          Data format of an annotated text, e.g. with recognised entities,
           concepts, and relations.
         meaning: edam:format_3780
       edam:format_3781:
         title: PubAnnotation format
-        description: JSON format of annotated scientific text used by PubAnnotations
+        description:
+          JSON format of annotated scientific text used by PubAnnotations
           and other tools.
         meaning: edam:format_3781
       edam:format_3782:
         title: BioC
-        description: BioC is a standardised XML format for sharing and integrating
+        description:
+          BioC is a standardised XML format for sharing and integrating
           text data and annotations.
         meaning: edam:format_3782
       edam:format_3783:
         title: PubTator format
-        description: Native textual export format of annotated scientific text from
+        description:
+          Native textual export format of annotated scientific text from
           PubTator.
         meaning: edam:format_3783
       edam:format_3784:
         title: Open Annotation format
-        description: A format of text annotation using the linked-data Open Annotation
+        description:
+          A format of text annotation using the linked-data Open Annotation
           Data Model, serialised typically in RDF or JSON-LD.
         meaning: edam:format_3784
       edam:format_3785:
         title: BioNLP Shared Task format
-        description: A family of similar formats of text annotation, used by BRAT
+        description:
+          A family of similar formats of text annotation, used by BRAT
           and other tools, known as BioNLP Shared Task format (BioNLP 2009 Shared
           Task on Event Extraction, BioNLP Shared Task 2011, BioNLP Shared Task 2013),
           BRAT format, BRAT standoff format, and similar.
@@ -2289,20 +2536,23 @@ enums:
         meaning: edam:format_3787
       edam:format_3788:
         title: SQL
-        description: SQL (Structured Query Language) is the de-facto standard query
+        description:
+          SQL (Structured Query Language) is the de-facto standard query
           language (format of queries) for querying and manipulating data in relational
           databases.
         meaning: edam:format_3788
       edam:format_3789:
         title: XQuery
-        description: XQuery (XML Query) is a query language (format of queries) for
+        description:
+          XQuery (XML Query) is a query language (format of queries) for
           querying and manipulating structured and unstructured data, usually in the
           form of XML, text, and with vendor-specific extensions for other data formats
           (JSON, binary, etc.).
         meaning: edam:format_3789
       edam:format_3790:
         title: SPARQL
-        description: SPARQL (SPARQL Protocol and RDF Query Language) is a semantic
+        description:
+          SPARQL (SPARQL Protocol and RDF Query Language) is a semantic
           query language for querying and manipulating data stored in Resource Description
           Framework (RDF) format.
         meaning: edam:format_3790
@@ -2312,7 +2562,8 @@ enums:
         meaning: edam:format_3804
       edam:format_3811:
         title: XMFA
-        description: XMFA format stands for eXtended Multi-FastA format and is used
+        description:
+          XMFA format stands for eXtended Multi-FastA format and is used
           to store collinear sub-alignments that constitute a single genome alignment.
         meaning: edam:format_3811
       edam:format_3812:
@@ -2321,23 +2572,27 @@ enums:
         meaning: edam:format_3812
       edam:format_3813:
         title: SAMPLE file format
-        description: The SAMPLE file format contains information about each individual
+        description:
+          The SAMPLE file format contains information about each individual
           i.e. individual IDs, covariates, phenotypes and missing data proportions,
           from a GWAS study.
         meaning: edam:format_3813
       edam:format_3814:
         title: SDF
-        description: SDF is one of a family of chemical-data file formats developed
+        description:
+          SDF is one of a family of chemical-data file formats developed
           by MDL Information Systems; it is intended especially for structural information.
         meaning: edam:format_3814
       edam:format_3815:
         title: Molfile
-        description: An MDL Molfile is a file format for holding information about
+        description:
+          An MDL Molfile is a file format for holding information about
           the atoms, bonds, connectivity and coordinates of a molecule.
         meaning: edam:format_3815
       edam:format_3816:
         title: Mol2
-        description: Complete, portable representation of a SYBYL molecule. ASCII
+        description:
+          Complete, portable representation of a SYBYL molecule. ASCII
           file which contains all the information needed to reconstruct a SYBYL molecule.
         meaning: edam:format_3816
       edam:format_3817:
@@ -2346,18 +2601,21 @@ enums:
         meaning: edam:format_3817
       edam:format_3818:
         title: ELAND format
-        description: Tab-delimited text file format used by Eland - the read-mapping
+        description:
+          Tab-delimited text file format used by Eland - the read-mapping
           program distributed by Illumina with its sequencing analysis pipeline -
           which maps short Solexa sequence reads to the human reference genome.
         meaning: edam:format_3818
       edam:format_3819:
         title: Relaxed PHYLIP Interleaved
-        description: Phylip multiple alignment sequence format, less stringent than
+        description:
+          Phylip multiple alignment sequence format, less stringent than
           PHYLIP format.
         meaning: edam:format_3819
       edam:format_3820:
         title: Relaxed PHYLIP Sequential
-        description: Phylip multiple alignment sequence format, less stringent than
+        description:
+          Phylip multiple alignment sequence format, less stringent than
           PHYLIP sequential format (format_1998).
         meaning: edam:format_3820
       edam:format_3821:
@@ -2366,34 +2624,40 @@ enums:
         meaning: edam:format_3821
       edam:format_3822:
         title: GML
-        description: GML (Graph Modeling Language) is a text file format supporting
+        description:
+          GML (Graph Modeling Language) is a text file format supporting
           network data with a very easy syntax. It is used by Graphlet, Pajek, yEd,
           LEDA and NetworkX.
         meaning: edam:format_3822
       edam:format_3823:
         title: FASTG
-        description: FASTG is a format for faithfully representing genome assemblies
+        description:
+          FASTG is a format for faithfully representing genome assemblies
           in the face of allelic polymorphism and assembly uncertainty.
         meaning: edam:format_3823
       edam:format_3824:
         title: NMR data format
-        description: Data format for raw data from a nuclear magnetic resonance (NMR)
+        description:
+          Data format for raw data from a nuclear magnetic resonance (NMR)
           spectroscopy experiment.
         meaning: edam:format_3824
       edam:format_3825:
         title: nmrML
-        description: nmrML is an MSI supported XML-based open access format for metabolomics
+        description:
+          nmrML is an MSI supported XML-based open access format for metabolomics
           NMR raw and processed spectral data. It is accompanies by an nmrCV (controlled
           vocabulary) to allow ontology-based annotations.
         meaning: edam:format_3825
       edam:format_3826:
         title: proBAM
-        description: . proBAM is an adaptation of BAM (format_2572), which was extended
+        description:
+          . proBAM is an adaptation of BAM (format_2572), which was extended
           to meet specific requirements entailed by proteomics data.
         meaning: edam:format_3826
       edam:format_3827:
         title: proBED
-        description: . proBED is an adaptation of BED (format_3003), which was extended
+        description:
+          . proBED is an adaptation of BED (format_3003), which was extended
           to meet specific requirements entailed by proteomics data.
         meaning: edam:format_3827
       edam:format_3828:
@@ -2402,7 +2666,8 @@ enums:
         meaning: edam:format_3828
       edam:format_3829:
         title: GPR
-        description: GenePix Results (GPR) text file format developed by Axon Instruments
+        description:
+          GenePix Results (GPR) text file format developed by Axon Instruments
           that is used to save GenePix Results data.
         meaning: edam:format_3829
       edam:format_3830:
@@ -2411,7 +2676,8 @@ enums:
         meaning: edam:format_3830
       edam:format_3832:
         title: consensusXML
-        description: OpenMS format for grouping features in one map or across several
+        description:
+          OpenMS format for grouping features in one map or across several
           maps.
         meaning: edam:format_3832
       edam:format_3833:
@@ -2420,12 +2686,14 @@ enums:
         meaning: edam:format_3833
       edam:format_3834:
         title: mzData
-        description: Now deprecated data format of the HUPO Proteomics Standards Initiative.
+        description:
+          Now deprecated data format of the HUPO Proteomics Standards Initiative.
           Replaced by mzML (format_3244).
         meaning: edam:format_3834
       edam:format_3835:
         title: TIDE TXT
-        description: Format supported by the Tide tool for identifying peptides from
+        description:
+          Format supported by the Tide tool for identifying peptides from
           tandem mass spectra.
         meaning: edam:format_3835
       edam:format_3836:
@@ -2446,18 +2714,21 @@ enums:
         meaning: edam:format_3841
       edam:format_3843:
         title: BEAST
-        description: XML input file format for BEAST Software (Bayesian Evolutionary
+        description:
+          XML input file format for BEAST Software (Bayesian Evolutionary
           Analysis Sampling Trees).
         meaning: edam:format_3843
       edam:format_3844:
         title: Chado-XML
-        description: Chado-XML format is a direct mapping of the Chado relational
+        description:
+          Chado-XML format is a direct mapping of the Chado relational
           schema into XML.
         meaning: edam:format_3844
       edam:format_3845:
         title: HSAML
-        description: 'An alignment format generated by PRANK/PRANKSTER consisting
-          of four elements: newick, nodes, selection and model.'
+        description:
+          "An alignment format generated by PRANK/PRANKSTER consisting
+          of four elements: newick, nodes, selection and model."
         meaning: edam:format_3845
       edam:format_3846:
         title: InterProScan XML
@@ -2465,35 +2736,41 @@ enums:
         meaning: edam:format_3846
       edam:format_3847:
         title: KGML
-        description: The KEGG Markup Language (KGML) is an exchange format of the
+        description:
+          The KEGG Markup Language (KGML) is an exchange format of the
           KEGG pathway maps, which is converted from internally used KGML+ (KGML+SVG)
           format.
         meaning: edam:format_3847
       edam:format_3848:
         title: PubMed XML
-        description: XML format for collected entries from bibliographic databases
+        description:
+          XML format for collected entries from bibliographic databases
           MEDLINE and PubMed.
         meaning: edam:format_3848
       edam:format_3849:
         title: MSAML
-        description: A set of XML compliant markup components for describing multiple
+        description:
+          A set of XML compliant markup components for describing multiple
           sequence alignments.
         meaning: edam:format_3849
       edam:format_3850:
         title: OrthoXML
-        description: OrthoXML is designed broadly to allow the storage and comparison
+        description:
+          OrthoXML is designed broadly to allow the storage and comparison
           of orthology data from any ortholog database. It establishes a structure
           for describing orthology relationships while still allowing flexibility
           for database-specific information to be encapsulated in the same format.
         meaning: edam:format_3850
       edam:format_3851:
         title: PSDML
-        description: Tree structure of Protein Sequence Database Markup Language generated
+        description:
+          Tree structure of Protein Sequence Database Markup Language generated
           using Matra software.
         meaning: edam:format_3851
       edam:format_3852:
         title: SeqXML
-        description: SeqXML is an XML Schema to describe biological sequences, developed
+        description:
+          SeqXML is an XML Schema to describe biological sequences, developed
           by the Stockholm Bioinformatics Centre.
         meaning: edam:format_3852
       edam:format_3853:
@@ -2506,7 +2783,8 @@ enums:
         meaning: edam:format_3854
       edam:format_3857:
         title: CWL
-        description: Common Workflow Language (CWL) format for description of command-line
+        description:
+          Common Workflow Language (CWL) format for description of command-line
           tools and workflows.
         meaning: edam:format_3857
       edam:format_3858:
@@ -2515,7 +2793,8 @@ enums:
         meaning: edam:format_3858
       edam:format_3859:
         title: JCAMP-DX
-        description: A standardized file format for data exchange in mass spectrometry,
+        description:
+          A standardized file format for data exchange in mass spectrometry,
           initially developed for infrared spectrometry.
         meaning: edam:format_3859
       edam:format_3862:
@@ -2528,39 +2807,46 @@ enums:
         meaning: edam:format_3863
       edam:format_3864:
         title: mirGFF3
-        description: mirGFF3 is a common format for microRNA data resulting from small-RNA
+        description:
+          mirGFF3 is a common format for microRNA data resulting from small-RNA
           RNA-Seq workflows.
         meaning: edam:format_3864
       edam:format_3865:
         title: RNA annotation format
-        description: A "placeholder" concept for formats of annotated RNA data, including
+        description:
+          A "placeholder" concept for formats of annotated RNA data, including
           e.g. microRNA and RNA-Seq data.
         meaning: edam:format_3865
       edam:format_3866:
         title: Trajectory format
-        description: File format to store trajectory information for a 3D structure
+        description:
+          File format to store trajectory information for a 3D structure
           .
         meaning: edam:format_3866
       edam:format_3867:
         title: Trajectory format (binary)
-        description: Binary file format to store trajectory information for a 3D structure
+        description:
+          Binary file format to store trajectory information for a 3D structure
           .
         meaning: edam:format_3867
       edam:format_3868:
         title: Trajectory format (text)
-        description: Textual file format to store trajectory information for a 3D
+        description:
+          Textual file format to store trajectory information for a 3D
           structure .
         meaning: edam:format_3868
       edam:format_3873:
         title: HDF
-        description: HDF is the name of a set of file formats and libraries designed
+        description:
+          HDF is the name of a set of file formats and libraries designed
           to store and organize large amounts of numerical data, originally developed
           at the National Center for Supercomputing Applications at the University
           of Illinois.
         meaning: edam:format_3873
       edam:format_3874:
         title: PCAzip
-        description: PCAZip format is a binary compressed file to store atom coordinates
+        description:
+          PCAZip format is a binary compressed file to store atom coordinates
           based on Essential Dynamics (ED) and Principal Component Analysis (PCA).
         meaning: edam:format_3874
       edam:format_3875:
@@ -2569,50 +2855,58 @@ enums:
         meaning: edam:format_3875
       edam:format_3876:
         title: TNG
-        description: Trajectory Next Generation (TNG) is a format for storage of molecular
+        description:
+          Trajectory Next Generation (TNG) is a format for storage of molecular
           simulation data. It is designed and implemented by the GROMACS development
           group, and it is called to be the substitute of the XTC format.
         meaning: edam:format_3876
       edam:format_3877:
         title: XYZ
-        description: The XYZ chemical file format is widely supported by many programs,
+        description:
+          The XYZ chemical file format is widely supported by many programs,
           although many slightly different XYZ file formats coexist (Tinker XYZ, UniChem
           XYZ, etc.). Basic information stored for each atom in the system are x,
           y and z coordinates and atom element/atomic number.
         meaning: edam:format_3877
       edam:format_3878:
         title: mdcrd
-        description: AMBER trajectory (also called mdcrd), with 10 coordinates per
+        description:
+          AMBER trajectory (also called mdcrd), with 10 coordinates per
           line and format F8.3 (fixed point notation with field width 8 and 3 decimal
           places).
         meaning: edam:format_3878
       edam:format_3879:
         title: Topology format
-        description: Format of topology files; containing the static information of
+        description:
+          Format of topology files; containing the static information of
           a structure molecular system that is needed for a molecular simulation.
         meaning: edam:format_3879
       edam:format_3880:
         title: GROMACS top
-        description: GROMACS MD package top textual files define an entire structure
+        description:
+          GROMACS MD package top textual files define an entire structure
           system topology, either directly, or by including itp files.
         meaning: edam:format_3880
       edam:format_3881:
         title: AMBER top
-        description: AMBER Prmtop file (version 7) is a structure topology text file
+        description:
+          AMBER Prmtop file (version 7) is a structure topology text file
           divided in several sections designed to be parsed easily using simple Fortran
           code. Each section contains particular topology information, such as atom
           name, charge, mass, angles, dihedrals, etc.
         meaning: edam:format_3881
       edam:format_3882:
         title: PSF
-        description: 'X-Plor Protein Structure Files (PSF) are structure topology
+        description:
+          "X-Plor Protein Structure Files (PSF) are structure topology
           files used by NAMD and CHARMM molecular simulations programs. PSF files
           contain six main sections of interest: atoms, bonds, angles, dihedrals,
-          improper dihedrals (force terms used to maintain planarity) and cross-terms.'
+          improper dihedrals (force terms used to maintain planarity) and cross-terms."
         meaning: edam:format_3882
       edam:format_3883:
         title: GROMACS itp
-        description: GROMACS itp files (include topology) contain structure topology
+        description:
+          GROMACS itp files (include topology) contain structure topology
           information, and are typically included in GROMACS topology files (GROMACS
           top). Itp files are used to define individual (or multiple) components of
           a topology as a separate file. This is particularly useful if there is a
@@ -2621,85 +2915,99 @@ enums:
         meaning: edam:format_3883
       edam:format_3884:
         title: FF parameter format
-        description: Format of force field parameter files, which store the set of
+        description:
+          Format of force field parameter files, which store the set of
           parameters (charges, masses, radii, bond lengths, bond dihedrals, etc.)
           that are essential for the proper description and simulation of a molecular
           system.
         meaning: edam:format_3884
       edam:format_3885:
         title: BinPos
-        description: Scripps Research Institute BinPos format is a binary formatted
+        description:
+          Scripps Research Institute BinPos format is a binary formatted
           file to store atom coordinates.
         meaning: edam:format_3885
       edam:format_3886:
         title: RST
-        description: AMBER coordinate/restart file with 6 coordinates per line and
+        description:
+          AMBER coordinate/restart file with 6 coordinates per line and
           decimal format F12.7 (fixed point notation with field width 12 and 7 decimal
           places).
         meaning: edam:format_3886
       edam:format_3887:
         title: CHARMM rtf
-        description: Format of CHARMM Residue Topology Files (RTF), which define groups
+        description:
+          Format of CHARMM Residue Topology Files (RTF), which define groups
           by including the atoms, the properties of the group, and bond and charge
           information.
         meaning: edam:format_3887
       edam:format_3888:
         title: AMBER frcmod
-        description: AMBER frcmod (Force field Modification) is a file format to store
+        description:
+          AMBER frcmod (Force field Modification) is a file format to store
           any modification to the standard force field needed for a particular molecule
           to be properly represented in the simulation.
         meaning: edam:format_3888
       edam:format_3889:
         title: AMBER off
-        description: AMBER Object File Format library files (OFF library files) store
+        description:
+          AMBER Object File Format library files (OFF library files) store
           residue libraries (forcefield residue parameters).
         meaning: edam:format_3889
       edam:format_3906:
         title: NMReDATA
-        description: 'MReData is a text based data standard for processed NMR data.
+        description:
+          'MReData is a text based data standard for processed NMR data.
           It is relying on SDF molecule data and allows to store assignments of NMR
           peaks to molecule features. The NMR-extracted data (or "NMReDATA") includes:
           Chemical shift,scalar coupling, 2D correlation, assignment, etc.'
         meaning: edam:format_3906
       edam:format_3909:
         title: BpForms
-        description: BpForms is a string format for concretely representing the primary
+        description:
+          BpForms is a string format for concretely representing the primary
           structures of biopolymers, including DNA, RNA, and proteins that include
           non-canonical nucleic and amino acids. See https://www.bpforms.org for more
           information.
         meaning: edam:format_3909
       edam:format_3910:
         title: trr
-        description: Format of trr files that contain the trajectory of a simulation
+        description:
+          Format of trr files that contain the trajectory of a simulation
           experiment used by GROMACS.
         meaning: edam:format_3910
       edam:format_3911:
         title: msh
-        description: Mash sketch is a format for sequence / sequence checksum information.
+        description:
+          Mash sketch is a format for sequence / sequence checksum information.
           To make a sketch, each k-mer in a sequence is hashed, which creates a pseudo-random
           identifier. By sorting these hashes, a small subset from the top of the
           sorted list can represent the entire sequence.
         meaning: edam:format_3911
       edam:format_3913:
         title: Loom
-        description: The Loom file format is based on HDF5, a standard for storing
+        description:
+          The Loom file format is based on HDF5, a standard for storing
           large numerical datasets. The Loom format is designed to efficiently hold
           large omics datasets. Typically, such data takes the form of a large matrix
           of numbers, along with metadata for the rows and columns.
         meaning: edam:format_3913
       edam:format_3915:
         title: Zarr
-        description: The Zarr format is an implementation of chunked, compressed,
+        description:
+          The Zarr format is an implementation of chunked, compressed,
           N-dimensional arrays for storing data.
         meaning: edam:format_3915
       edam:format_3916:
         title: MTX
-        description: The Matrix Market matrix (MTX) format stores numerical or pattern
+        description:
+          The Matrix Market matrix (MTX) format stores numerical or pattern
           matrices in a dense (array format) or sparse (coordinate format) representation.
         meaning: edam:format_3916
       edam:format_3951:
         title: BcForms
-        description: BcForms is a format for abstractly describing the molecular structure
+        description:
+          BcForms is a format for abstractly describing the molecular structure
           (atoms and bonds) of macromolecular complexes as a collection of subunits
           and crosslinks. Each subunit can be described with BpForms (http://edamontology.org/format_3909)
           or SMILES (http://edamontology.org/data_2301). BcForms uses an ontology
@@ -2708,19 +3016,22 @@ enums:
         meaning: edam:format_3951
       edam:format_3956:
         title: N-Quads
-        description: N-Quads is a line-based, plain text format for encoding an RDF
+        description:
+          N-Quads is a line-based, plain text format for encoding an RDF
           dataset. It includes information about the graph each triple belongs to.
         meaning: edam:format_3956
       edam:format_3969:
         title: Vega
-        description: Vega is a visualization grammar, a declarative language for creating,
+        description:
+          Vega is a visualization grammar, a declarative language for creating,
           saving, and sharing interactive visualization designs. With Vega, you can
           describe the visual appearance and interactive behavior of a visualization
           in a JSON format, and generate web-based views using Canvas or SVG.
         meaning: edam:format_3969
       edam:format_3970:
         title: Vega-lite
-        description: Vega-Lite is a high-level grammar of interactive graphics. It
+        description:
+          Vega-Lite is a high-level grammar of interactive graphics. It
           provides a concise JSON syntax for rapidly generating visualizations to
           support analysis. Vega-Lite specifications can be compiled to Vega specifications.
         meaning: edam:format_3970
@@ -2730,33 +3041,38 @@ enums:
         meaning: edam:format_3971
       edam:format_3972:
         title: BNGL
-        description: BioNetGen is a format for the specification and simulation of
+        description:
+          BioNetGen is a format for the specification and simulation of
           rule-based models of biochemical systems, including signal transduction,
           metabolic, and genetic regulatory networks.
         meaning: edam:format_3972
       edam:format_3973:
         title: Docker image
-        description: A Docker image is a file, comprised of multiple layers, that
+        description:
+          A Docker image is a file, comprised of multiple layers, that
           is used to execute code in a Docker container. An image is essentially built
           from the instructions for a complete and executable version of an application,
           which relies on the host OS kernel.
         meaning: edam:format_3973
       edam:format_3975:
         title: GFA 1
-        description: Graphical Fragment Assembly captures sequence graphs as the product
+        description:
+          Graphical Fragment Assembly captures sequence graphs as the product
           of an assembly, a representation of variation in genomes, splice graphs
           in genes, or even overlap between reads from long-read sequencing technology.
         meaning: edam:format_3975
       edam:format_3976:
         title: GFA 2
-        description: Graphical Fragment Assembly captures sequence graphs as the product
+        description:
+          Graphical Fragment Assembly captures sequence graphs as the product
           of an assembly, a representation of variation in genomes, splice graphs
           in genes, or even overlap between reads from long-read sequencing technology.
           GFA2 is an update of GFA1 which is not compatible with GFA1.
         meaning: edam:format_3976
       edam:format_3977:
         title: ObjTables
-        description: ObjTables is a toolkit for creating reusable datasets that are
+        description:
+          ObjTables is a toolkit for creating reusable datasets that are
           both human and machine-readable, combining the ease of spreadsheets (e.g.,
           Excel workbooks) with the rigor of schemas (classes, their attributes, the
           type of each attribute, and the possible relationships between instances
@@ -2767,19 +3083,22 @@ enums:
         meaning: edam:format_3977
       edam:format_3978:
         title: CONTIG
-        description: The CONTIG format used for output of the SOAPdenovo alignment
+        description:
+          The CONTIG format used for output of the SOAPdenovo alignment
           program. It contains contig sequences generated without using mate pair
           information.
         meaning: edam:format_3978
       edam:format_3979:
         title: WEGO
-        description: WEGO native format used by the Web Gene Ontology Annotation Plot
+        description:
+          WEGO native format used by the Web Gene Ontology Annotation Plot
           application.   Tab-delimited format with gene names and others GO IDs (columns)
           with one annotation record per line.
         meaning: edam:format_3979
       edam:format_3980:
         title: RPKM
-        description: Tab-delimited format for gene expression levels table, calculated
+        description:
+          Tab-delimited format for gene expression levels table, calculated
           as Reads Per Kilobase per Million (RPKM) mapped reads.
         meaning: edam:format_3980
       edam:format_3981:
@@ -2788,17 +3107,20 @@ enums:
         meaning: edam:format_3981
       edam:format_3982:
         title: CHAIN
-        description: The CHAIN format describes a pairwise alignment that allow gaps
+        description:
+          The CHAIN format describes a pairwise alignment that allow gaps
           in both sequences simultaneously and is used by the UCSC Genome Browser.
         meaning: edam:format_3982
       edam:format_3983:
         title: NET
-        description: The NET file format is used to describe the data that underlie
+        description:
+          The NET file format is used to describe the data that underlie
           the net alignment annotations in the UCSC Genome Browser.
         meaning: edam:format_3983
       edam:format_3984:
         title: QMAP
-        description: Format of QMAP files generated for methylation data from an internal
+        description:
+          Format of QMAP files generated for methylation data from an internal
           BGI pipeline.
         meaning: edam:format_3984
       edam:format_3985:
@@ -2807,7 +3129,8 @@ enums:
         meaning: edam:format_3985
       edam:format_3986:
         title: WMV
-        description: The proprietary native video format of various Microsoft programs
+        description:
+          The proprietary native video format of various Microsoft programs
           such as Windows Media Player.
         meaning: edam:format_3986
       edam:format_3987:
@@ -2820,34 +3143,40 @@ enums:
         meaning: edam:format_3988
       edam:format_3989:
         title: GZIP format
-        description: GNU zip compressed file format common to Unix-based operating
+        description:
+          GNU zip compressed file format common to Unix-based operating
           systems.
         meaning: edam:format_3989
       edam:format_3990:
         title: AVI
-        description: Audio Video Interleaved (AVI) format is a multimedia container
+        description:
+          Audio Video Interleaved (AVI) format is a multimedia container
           format for AVI files, that allows synchronous audio-with-video playback.
         meaning: edam:format_3990
       edam:format_3991:
         title: TrackDB
-        description: A declaration file format for UCSC browsers track dataset display
+        description:
+          A declaration file format for UCSC browsers track dataset display
           characteristics.
         meaning: edam:format_3991
       edam:format_3992:
         title: CIGAR format
-        description: Compact Idiosyncratic Gapped Alignment Report format is a compressed
+        description:
+          Compact Idiosyncratic Gapped Alignment Report format is a compressed
           (run-length encoded) pairwise alignment format. It is useful for representing
           long (e.g. genomic) pairwise alignments.
         meaning: edam:format_3992
       edam:format_3993:
         title: Stereolithography format
-        description: STL is a file format native to the stereolithography CAD software
+        description:
+          STL is a file format native to the stereolithography CAD software
           created by 3D Systems. The format is used to save and share surface-rendered
           3D images and also for 3D printing.
         meaning: edam:format_3993
       edam:format_3994:
         title: U3D
-        description: U3D (Universal 3D) is a compressed file format and data structure
+        description:
+          U3D (Universal 3D) is a compressed file format and data structure
           for 3D computer graphics. It contains 3D model information such as triangle
           meshes, lighting, shading, motion data, lines and points with color and
           structure.
@@ -2858,51 +3187,60 @@ enums:
         meaning: edam:format_3995
       edam:format_3996:
         title: Python script
-        description: Format for scripts writtenin Python - a widely used high-level
+        description:
+          Format for scripts writtenin Python - a widely used high-level
           programming language for general-purpose programming.
         meaning: edam:format_3996
       edam:format_3997:
         title: MPEG-4
-        description: A digital multimedia container format most commonly used to store
+        description:
+          A digital multimedia container format most commonly used to store
           video and audio.
         meaning: edam:format_3997
       edam:format_3998:
         title: Perl script
-        description: Format for scripts written in Perl - a family of high-level,
+        description:
+          Format for scripts written in Perl - a family of high-level,
           general-purpose, interpreted, dynamic programming languages.
         meaning: edam:format_3998
       edam:format_3999:
         title: R script
-        description: Format for scripts written in the R language - an open source
+        description:
+          Format for scripts written in the R language - an open source
           programming language and software environment for statistical computing
           and graphics that is supported by the R Foundation for Statistical Computing.
         meaning: edam:format_3999
       edam:format_4000:
         title: R markdown
-        description: A file format for making dynamic documents (R Markdown scripts)
+        description:
+          A file format for making dynamic documents (R Markdown scripts)
           with the R language.
         meaning: edam:format_4000
       edam:format_4002:
         title: pickle
-        description: Format used by Python pickle module for serializing and de-serializing
+        description:
+          Format used by Python pickle module for serializing and de-serializing
           a Python object structure.
         meaning: edam:format_4002
       edam:format_4003:
         title: NumPy format
-        description: The standard binary file format used by NumPy - a fundamental
+        description:
+          The standard binary file format used by NumPy - a fundamental
           package for scientific computing with Python - for persisting a single arbitrary
           NumPy array on disk. The format stores all of the shape and dtype information
           necessary to reconstruct the array correctly.
         meaning: edam:format_4003
       edam:format_4004:
         title: SimTools repertoire file format
-        description: Format of repertoire (archive) files that can be read by SimToolbox
+        description:
+          Format of repertoire (archive) files that can be read by SimToolbox
           (a MATLAB toolbox for structured illumination fluorescence microscopy) or
           alternatively extracted with zip file archiver software.
         meaning: edam:format_4004
       edam:format_4005:
         title: Configuration file format
-        description: A configuration file used by various programs to store settings
+        description:
+          A configuration file used by various programs to store settings
           that are specific to their respective software.
         meaning: edam:format_4005
       edam:format_4006:
@@ -2915,12 +3253,14 @@ enums:
         meaning: edam:format_4007
       edam:format_4015:
         title: PEtab
-        description: A data format for specifying parameter estimation problems in
+        description:
+          A data format for specifying parameter estimation problems in
           systems biology.
         meaning: edam:format_4015
       edam:format_4018:
         title: gVCF
-        description: Genomic Variant Call Format (gVCF) is a version of VCF that includes
+        description:
+          Genomic Variant Call Format (gVCF) is a version of VCF that includes
           not only the positions that are variant when compared to a reference genome,
           but also the non-variant positions as ranges, including metrics of confidence
           that the positions in the range are actually non-variant e.g. minimum read-depth
@@ -2928,18 +3268,21 @@ enums:
         meaning: edam:format_4018
       edam:format_4023:
         title: cml
-        description: Chemical Markup Language (CML) is an XML-based format for encoding
+        description:
+          Chemical Markup Language (CML) is an XML-based format for encoding
           detailed information about a wide range of chemical concepts.
         meaning: edam:format_4023
       edam:format_4024:
         title: cif
-        description: Crystallographic Information File (CIF) is a data exchange standard
+        description:
+          Crystallographic Information File (CIF) is a data exchange standard
           file format for Crystallographic Information and related Structural Science
           data.
         meaning: edam:format_4024
       edam:format_4025:
         title: BioSimulators format for the specifications of biosimulation tools
-        description: Format for describing the capabilities of a biosimulation tool
+        description:
+          Format for describing the capabilities of a biosimulation tool
           including the modeling frameworks, simulation algorithms, and modeling formats
           that it supports, as well as metadata such as a list of the interfaces,
           programming languages, and operating systems supported by the tool; a link
@@ -2947,20 +3290,24 @@ enums:
           to the tool.
         meaning: edam:format_4025
       edam:format_4026:
-        title: BioSimulators standard for command-line interfaces for biosimulation
+        title:
+          BioSimulators standard for command-line interfaces for biosimulation
           tools
-        description: Outlines the syntax and semantics of the input and output arguments
+        description:
+          Outlines the syntax and semantics of the input and output arguments
           for command-line interfaces for biosimulation tools.
         meaning: edam:format_4026
       edam:format_4035:
         title: PQR
-        description: Data format derived from the standard PDB format, which enables
+        description:
+          Data format derived from the standard PDB format, which enables
           user to incorporate parameters for charge and radius to the existing PDB
           data file.
         meaning: edam:format_4035
       edam:format_4036:
         title: PDBQT
-        description: Data format used in AutoDock 4 for storing atomic coordinates,
+        description:
+          Data format used in AutoDock 4 for storing atomic coordinates,
           partial atomic charges and AutoDock atom types for both receptors and ligands.
         meaning: edam:format_4036
       edam:format_4039:
@@ -2969,17 +3316,20 @@ enums:
         meaning: edam:format_4039
       edam:format_4041:
         title: maDMP
-        description: maDMP stands for machine-actionable data management plan, a standard
+        description:
+          maDMP stands for machine-actionable data management plan, a standard
           for DMPs developed by the Research Data Alliance (RDA).
         meaning: edam:format_4041
       edam:format_4048:
         title: Nextflow
-        description: Nextflow is a workflow system for creating scalable, portable,
+        description:
+          Nextflow is a workflow system for creating scalable, portable,
           and reproducible workflows.
         meaning: edam:format_4048
       edam:format_4049:
         title: Snakemake
-        description: The Snakemake workflow management system is a tool to create
+        description:
+          The Snakemake workflow management system is a tool to create
           reproducible and scalable data analyses.
         meaning: edam:format_4049
       edam:format_4050:
@@ -2988,61 +3338,71 @@ enums:
         meaning: edam:format_4050
       edam:format_4058:
         title: mzTab-M
-        description: mzTab-M is a light-weight, tab-delimited format for mass spectrometry-based
+        description:
+          mzTab-M is a light-weight, tab-delimited format for mass spectrometry-based
           chemical profiling data, including metabolomics.
         meaning: edam:format_4058
       edam:format_4059:
         title: mzTab-L
-        description: mzTab-L is a light-weight, tab-delimited format for mass spectrometry-based
+        description:
+          mzTab-L is a light-weight, tab-delimited format for mass spectrometry-based
           lipidomics data. It is a compatible version of mzTab-M, with additional
           rules and information standard (reporting guidelines).
         meaning: edam:format_4059
       edam:format_4066:
         title: ISA-Tab Investigation file
-        description: ISA-Tab Investigation file (i_Investigation.txt) contains metadata
+        description:
+          ISA-Tab Investigation file (i_Investigation.txt) contains metadata
           describing the overall goals, means, and context of an investigation/experiment,
           including references to associated Study and Assay files.
         meaning: edam:format_4066
       edam:format_4067:
         title: ISA-Tab Study file
-        description: ISA-Tab Study file (s_*.txt) contains sample metadata describing
+        description:
+          ISA-Tab Study file (s_*.txt) contains sample metadata describing
           the subjects under study, their sources, characteristics, sampling methodology,
           and any treatments or manipulations applied.
         meaning: edam:format_4067
       edam:format_4068:
         title: ISA-Tab Assay file
-        description: ISA-Tab Assay file (a_*.txt) contains assay metadata describing
+        description:
+          ISA-Tab Assay file (a_*.txt) contains assay metadata describing
           test steps and analytical measurements performed on the sample material,
           including measurement types, technology used, and references to raw and
           derived data files.
         meaning: edam:format_4068
       edam:format_4069:
         title: ISA-JSON
-        description: ISA-JSON stands for Investigation / Study / Assay (ISA) JavaScript
+        description:
+          ISA-JSON stands for Investigation / Study / Assay (ISA) JavaScript
           Object Notation (JSON) format, and it is comprised of metadata describing
           observational or experimental scientific studies.
         meaning: edam:format_4069
       edam:format_4070:
         title: mwTab
-        description: mwTab is a tab-delimited text format developed by the Metabolomics
+        description:
+          mwTab is a tab-delimited text format developed by the Metabolomics
           Workbench to facilitate programmatic processing of metabolomics data and
           metadata suitable for submission to the repository.
         meaning: edam:format_4070
       edam:format_4071:
         title: MHD
-        description: MHD (MetabolomicsHub Common Data Model) is a JSON-based format
+        description:
+          MHD (MetabolomicsHub Common Data Model) is a JSON-based format
           providing a standardised, FAIR-compliant data model for the exchange, discovery,
           and reuse of metabolomics dataset metadata across international repositories.
         meaning: edam:format_4071
       edam:format_4072:
         title: MHD announcement
-        description: The MHD announcement file is a JSON-based format used to notify
+        description:
+          The MHD announcement file is a JSON-based format used to notify
           MetabolomicsHub of new or updated dataset submissions, serving as a manifest
           or notification file within the MHD data flow.
         meaning: edam:format_4072
       edam:format_4073:
         title: MetaboLights MAF
-        description: MetaboLights MAF (Metabolite Annotation File) is a tab-separated
+        description:
+          MetaboLights MAF (Metabolite Annotation File) is a tab-separated
           file format used to report metabolites identified or annotated in a metabolomics
           study, including compound identifiers, chemical structure representations,
           mass-to-charge ratios, retention times, and per-sample quantitative measurements.

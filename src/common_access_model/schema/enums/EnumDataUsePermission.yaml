@@ -15,17 +15,20 @@ enums:
     permissible_values:
       DUO:0000004:
         title: no restriction
-        description: This data use permission indicates there is no restriction on
+        description:
+          This data use permission indicates there is no restriction on
           use.
         meaning: DUO:0000004
       DUO:0000006:
         title: health or medical or biomedical research
-        description: This data use permission indicates that use is allowed for health/medical/biomedical
+        description:
+          This data use permission indicates that use is allowed for health/medical/biomedical
           purposes; does not include the study of population origins or ancestry.
         meaning: DUO:0000006
       DUO:0000007:
         title: disease specific research
-        description: "This data use permission indicates that use is allowed provided\
+        description:
+          "This data use permission indicates that use is allowed provided\
           \ it is related to the specified disease.\nThis term should be coupled with\
           \ a term describing a disease from an ontology to specify the disease the\
           \ restriction applies to. \n\nDUO recommends MONDO be used, to provide the\
@@ -36,15 +39,17 @@ enums:
         meaning: DUO:0000007
       DUO:0000011:
         title: population origins or ancestry research only
-        description: This data use permission indicates that use of the data is limited
+        description:
+          This data use permission indicates that use of the data is limited
           to the study of population origins or ancestry.
         meaning: DUO:0000011
       DUO:0000042:
         title: general research use
-        description: 'This data use permission indicates that use is allowed for general
+        description:
+          "This data use permission indicates that use is allowed for general
           research use for any research purpose.
 
           This includes but is not limited to: health/medical/biomedical purposes,
           fundamental biology research, the study of population origins or ancestry,
-          statistical methods and algorithms development, and social-sciences research.'
+          statistical methods and algorithms development, and social-sciences research."
         meaning: DUO:0000042

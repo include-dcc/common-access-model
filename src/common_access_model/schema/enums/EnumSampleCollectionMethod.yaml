@@ -23,14 +23,16 @@ enums:
         title: Sweat collection by iontophoresis procedure
         meaning: snomedct:115985003
       snomedct:1202027002:
-        title: Collection of esophageal cells via swallowable cell collection sponge
+        title:
+          Collection of esophageal cells via swallowable cell collection sponge
           in capsule (procedure)
         meaning: snomedct:1202027002
       snomedct:1230332003:
         title: Collection of blood from umbilical cord immediately after delivery
         meaning: snomedct:1230332003
       snomedct:1255865009:
-        title: Aspiration of seminal fluid from seminal vesicle using ultrasonographic
+        title:
+          Aspiration of seminal fluid from seminal vesicle using ultrasonographic
           guidance (procedure)
         meaning: snomedct:1255865009
       snomedct:1285339005:
@@ -46,7 +48,8 @@ enums:
         title: Collection of blood via implanted venous access device
         meaning: snomedct:16631761000119104
       snomedct:174653005:
-        title: Endoscopic retrograde pancreatography with collection of pancreatic
+        title:
+          Endoscopic retrograde pancreatography with collection of pancreatic
           juice
         meaning: snomedct:174653005
       snomedct:19867003:
@@ -248,7 +251,7 @@ enums:
         title: Urine specimen collection, 12 hours
         meaning: snomedct:40597003
       snomedct:406173008:
-        title: 'Phlebotomy: cannulated vessel'
+        title: "Phlebotomy: cannulated vessel"
         meaning: snomedct:406173008
       snomedct:418622002:
         title: Taking oral swab

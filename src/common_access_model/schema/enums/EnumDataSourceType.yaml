@@ -17,17 +17,17 @@ enums:
         title: Electronic Health Record
         description: Data obtained directly from an Electronic Health Record.
         aliases:
-        - medical_record
+          - medical_record
       CAMO:0000010:
         title: Survey
         description: Data obtained from a survey or questionnaire given to a participant or their representative.
         aliases:
-        - participant_or_caregiver_report
+          - participant_or_caregiver_report
       CAMO:0000011:
         title: Research Assessment
         description: Data obtained by research staff for the study.
         aliases:
-        - investigator_assessment
+          - investigator_assessment
       CAMO:0000012:
         title: Interview
         description: Data obtained by research staff interviewing participants, representatives, or others.

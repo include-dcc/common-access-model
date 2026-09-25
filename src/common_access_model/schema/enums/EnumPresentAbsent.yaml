@@ -3,7 +3,8 @@ id: https://includedcc.org/common-access-model/EnumPresentAbsent
 name: EnumPresentAbsent
 enums:
   EnumPresentAbsent:
-    description: Options for describing presence or absence. Derived from SNOMED CT
+    description:
+      Options for describing presence or absence. Derived from SNOMED CT
       Known codes. The "Known" codes and "Not suspected" are the broadest terms and
       suitable for general use.
     reachable_from:

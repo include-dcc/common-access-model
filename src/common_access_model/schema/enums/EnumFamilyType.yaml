@@ -19,17 +19,17 @@ enums:
         title: Duo
         description: This family study includes at a minimum one parent and one affected child.
         aliases:
-        - duo
+          - duo
       CAMO:0000004:
         title: Trio
         description: This family study includes at a minimum two parents of one affected child.
         aliases:
-        - trio
+          - trio
       CAMO:0000005:
         title: Trio+
         description: This family study includes at a minimum two parents of one affected child and at least one other child.
         aliases:
-        - trio_plus
+          - trio_plus
       CAMO:0000006:
         title: Case Only
         description: This family study includes only one or more cases.
@@ -37,9 +37,9 @@ enums:
         title: Proband Only
         description: This family study includes only one or more probands.
         aliases:
-        - proband_only
+          - proband_only
       CAMO:0000008:
         title: Control Only
-        description:  This family study includes only one or more controls.
+        description: This family study includes only one or more controls.
         aliases:
-        - control_only
+          - control_only
