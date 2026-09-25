@@ -550,7 +550,7 @@ enums:
         title: protein-protein interaction detection assay
       OBI:0000291:
         text: OBI:0000291
-        description: An assay tthat determines DNA regions specifically recognized
+        description: An assay that determines DNA regions specifically recognized
           by proteins that function as transcription factors
         meaning: OBI:0000291
         title: transcription factor binding site assay
@@ -719,7 +719,7 @@ enums:
         title: chain termination sequencing assay
       OBI:0000697:
         text: OBI:0000697
-        description: A DNA sequencing by synthesis assay that identifiies the sequnece
+        description: A DNA sequencing by synthesis assay that identifiies the sequence
           of billions of DNA molecules immobilized to a surface using DNA polymerase
           and fluorescently labeled nucleotides added one at a time. The sequencing
           process does not require an amplification step and is typically able to
@@ -878,7 +878,7 @@ enums:
       OBI:0000854:
         text: OBI:0000854
         description: An analyte assay that detects specific peptides in an input material
-          by separating it using gel electrophoresis, transfering the separated molecules
+          by separating it using gel electrophoresis, transferring the separated molecules
           to a membrane, and staining them with_ antibodies specific to the analyte
           molecules.
         meaning: OBI:0000854
@@ -887,7 +887,7 @@ enums:
         text: OBI:0000860
         description: An assay that determines the presence of gene transcripts by
           hybridizing labeled RNA or DNA probes against messenger RNAs isolated from
-          tissue or cell cultures, resolved on denaturing gel, transfered by a blotting
+          tissue or cell cultures, resolved on denaturing gel, transferred by a blotting
           procedure to a solid support. Detection of hybridization signals is carried
           out by immunofluorescence or radioactivity measurements using photographic
           films or digital imaging devices such as Phosphor Imager.
@@ -903,7 +903,7 @@ enums:
         text: OBI:0000870
         description: An assay that provides information about the secondary structure
           of nucleic acids using chemical or enzymatic probing to establish the extent
-          of base-pairing or solvent accessiblity.
+          of base-pairing or solvent accessibility.
         meaning: OBI:0000870
         title: single-nucleotide-resolution nucleic acid structure mapping assay
       OBI:0000871:
@@ -951,7 +951,7 @@ enums:
         title: in vivo cell killing assay
       OBI:0000891:
         text: OBI:0000891
-        description: A cytometry assay which measures the degreee to which input cells
+        description: A cytometry assay which measures the degree to which input cells
           are replicating.
         meaning: OBI:0000891
         title: cell proliferation assay
@@ -1147,8 +1147,8 @@ enums:
       OBI:0001015:
         text: OBI:0001015
         description: A single-nucleotide-resolution nucleic acid structure mapping
-          assay which determins nucleic acid secondary structure at a nucleotide resolution
-          scale using DMS as reagent and chemical probe
+          assay which determines nucleic acid secondary structure at a nucleotide
+          resolution scale using DMS as reagent and chemical probe
         meaning: OBI:0001015
         title: DMS structure mapping assay
       OBI:0001016:
@@ -1272,7 +1272,7 @@ enums:
       OBI:0001145:
         text: OBI:0001145
         description: A 3D molecular structure determination assay in which a complex
-          of 2 or more molecular enties is characterized which provides information
+          of 2 or more molecular entries is characterized which provides information
           on their binding configuration.
         meaning: OBI:0001145
         title: 3D structure determination of bound molecular complex assay
@@ -1584,7 +1584,7 @@ enums:
           cytokine production by T cells
       OBI:0001247:
         text: OBI:0001247
-        description: A genotyping assay that uses a high througput sequencer
+        description: A genotyping assay that uses a high throughput sequencer
         meaning: OBI:0001247
         title: genotyping by high throughput sequencing assay
       OBI:0001248:
@@ -2887,7 +2887,7 @@ enums:
       OBI:0001591:
         text: OBI:0001591
         description: A binding assay that measures the formation or disassociation
-          of a complex of 2 material entities directly without use of a competitve
+          of a complex of 2 material entities directly without use of a competitive
           ligand.
         meaning: OBI:0001591
         title: direct binding assay
@@ -3109,7 +3109,7 @@ enums:
       OBI:0001646:
         text: OBI:0001646
         description: An electron-microscopy 3D molecular structure determination assay
-          that characterizes the 3-dimensional molecular structrue of a B cell epitope:antibody
+          that characterizes the 3-dimensional molecular structure of a B cell epitope:antibody
           complex
         meaning: OBI:0001646
         title: electron microscopy assay determining the 3D structure of a B cell
@@ -3275,7 +3275,7 @@ enums:
       OBI:0001669:
         text: OBI:0001669
         description: An assay that measures protein-protein interactions by separating
-          target proteins on an SDS-PAGE gel, transfering them to a solid substrate,
+          target proteins on an SDS-PAGE gel, transferring them to a solid substrate,
           hybridizing with a protein probe and visualizing bound proteins using a
           probe-directed antibody. This is a adaptation on the western blot assay.
         meaning: OBI:0001669
@@ -3646,7 +3646,7 @@ enums:
       OBI:0001738:
         text: OBI:0001738
         description: A X-ray crystallography 3D molecular structure determination
-          assay that characterizes the 3-dimensional molecular structrue of a B cell
+          assay that characterizes the 3-dimensional molecular structure of a B cell
           epitope:antibody complex.
         meaning: OBI:0001738
         title: X-ray crystallography assay determining the 3D structure of a B cell
@@ -4492,7 +4492,7 @@ enums:
       OBI:0001954:
         text: OBI:0001954
         description: An assay in which portions of chromatin, the ordered and organized
-          complex of DNA and its interaction partners that make up a chormosome, is
+          complex of DNA and its interaction partners that make up a chromosome, is
           extracted and purified by immunoprecipitation with antibodies or tags, and
           subsequently analyzed
         meaning: OBI:0001954
@@ -4525,7 +4525,7 @@ enums:
       OBI:0001978:
         text: OBI:0001978
         description: An analyte assay that detects specific molecules in an input
-          material by separating it using gel electrophoresis, transfering the separated
+          material by separating it using gel electrophoresis, transferring the separated
           molecules to a membrane, and staining them with_ antibodies specific to
           the analyte molecules.
         meaning: OBI:0001978
@@ -4869,7 +4869,7 @@ enums:
         text: OBI:0002055
         description: A T cell epitope recognition assay that measures the immune response
           process resulting from the binding of a T cell receptor to epitope or the
-          recongition of the epitope.
+          recognition of the epitope.
         meaning: OBI:0002055
         title: assay measuring biological activity resulting from T cell epitope:MHC:TCR
           binding
@@ -5001,7 +5001,7 @@ enums:
         title: assay measuring T cell epitope specific suppression in vitro
       OBI:0002075:
         text: OBI:0002075
-        description: An immune epitope assay that characterizes the structrue of a
+        description: An immune epitope assay that characterizes the structure of a
           MHC-ligand complex, or detects the processing and presentation of a ligand
           by an antigen presenting cell, or the binding of a ligand to an MHC molecule.
         meaning: OBI:0002075
@@ -5488,7 +5488,7 @@ enums:
         text: OBI:0002176
         description: An assay that measures the electrical properties of biological
           cells or tissues. Typically, this assay will generate measurements of voltage
-          changes or electric current (or other associated variables such as impedence
+          changes or electric current (or other associated variables such as impedance
           or capacitance).
         meaning: OBI:0002176
         title: electrophysiology assay
@@ -5839,7 +5839,7 @@ enums:
       OBI:0002635:
         text: OBI:0002635
         description: An efficacy of T cell epitope intervention experiment that detects
-          a decrease in disease after adoptive transfer of epitope specfic T cells.
+          a decrease in disease after adoptive transfer of epitope specific T cells.
         meaning: OBI:0002635
         title: in vivo assay measuring T cell epitope specific disease reduction resulting
           from the adoptive transfer of epitope specific T cells
@@ -5854,7 +5854,7 @@ enums:
       OBI:0002637:
         text: OBI:0002637
         description: An efficacy of T cell epitope intervention experiment that uses
-          a epitope protection experiment after adoptive transfer of epitope specfic
+          a epitope protection experiment after adoptive transfer of epitope specific
           T cells.
         meaning: OBI:0002637
         title: in vivo assay measuring T cell epitope specific protection from challenge
@@ -5925,7 +5925,7 @@ enums:
         text: OBI:0002645
         description: An efficacy of T cell epitope intervention experiment that uses
           a tolerance induction intervention experiment after adoptive transfer of
-          epitope specfic T cells.
+          epitope specific T cells.
         meaning: OBI:0002645
         title: in vivo assay measuring T cell epitope specific tolerance induction
           resulting from the adoptive transfer of epitope specific T cells
@@ -5976,14 +5976,14 @@ enums:
         text: OBI:0002667
         description: An efficacy of T cell epitope intervention experiment that detects
           epitope specific type IV hypersensitivity after adoptive transfer of epitope
-          specfic T cells.
+          specific T cells.
         meaning: OBI:0002667
         title: in vivo skin test assay measuring T cell epitope specific type IV hypersensitivity
           resulting from the adoptive transfer of epitope specific T cells
       OBI:0002668:
         text: OBI:0002668
         description: A T cell epitope specific proliferation assay that is performed
-          in vivo after adoptive transfer of epitope specfic T cells.
+          in vivo after adoptive transfer of epitope specific T cells.
         meaning: OBI:0002668
         title: in vivo assay measuring epitope specific proliferation of T cells resulting
           from the adoptive transfer of epitope specific T cells
@@ -5991,7 +5991,7 @@ enums:
         text: OBI:0002669
         description: A T cell epitope specific helper activity assay that detects
           the ability of a T cell epitope to enhance an antibody response after adoptive
-          transfer of epitope specfic T cells.
+          transfer of epitope specific T cells.
         meaning: OBI:0002669
         title: assay measuring epitope specific helper T cell enhancement of a B cell
           mediated immune response resulting from the adoptive transfer of epitope
@@ -6000,7 +6000,7 @@ enums:
         text: OBI:0002670
         description: A T cell epitope specific helper activity assay that detects
           the ability of a T cell epitope to enhance a T cell response after adoptive
-          transfer of epitope specfic T cells.
+          transfer of epitope specific T cells.
         meaning: OBI:0002670
         title: assay measuring epitope specific helper T cell enhancement of a T cell
           mediated immune response resulting from the adoptive transfer of epitope
@@ -6029,7 +6029,7 @@ enums:
       OBI:0002676:
         text: OBI:0002676
         description: An efficacy of T cell epitope intervention experiment that is
-          performed after adoptive transfer of epitope specfic T cells.
+          performed after adoptive transfer of epitope specific T cells.
         meaning: OBI:0002676
         title: in vivo assay measuring a T cell epitope specific response after adoptive
           transfer of epitope specific T cells
@@ -6044,7 +6044,7 @@ enums:
         text: OBI:0002678
         description: An efficacy of T cell epitope intervention experiment that uses
           a disease exacerbation in vivo intervention experiment after adoptive transfer
-          of epitope specfic T cells.
+          of epitope specific T cells.
         meaning: OBI:0002678
         title: in vivo assay measuring T cell epitope specific disease exacerbation
           resulting from the adoptive transfer of epitope specific T cells
@@ -6596,7 +6596,7 @@ enums:
         description: A type of proprietary in situ kinase inhibitor assay that employs
           biotinylated acyl phosphates of ATP and ADP.
         meaning: OBI:0002964
-        title: KiNativ assay
+        title: KiNative assay
       OBI:0002965:
         text: OBI:0002965
         description: A type of transcription profiling assay in which a set of landmark
@@ -7043,7 +7043,7 @@ enums:
       OBI:0003106:
         text: OBI:0003106
         description: "A fluorescence in-situ hybridization assay that involves ultra-resolution\
-          \ imaging of cell activity by targetting thousands of single molecules with\
+          \ imaging of cell activity by targeting thousands of single molecules with\
           \ fluorescent probes which find and hybridize with complementary DNA or\
           \ RNA sequences in the tissue sample, thus enabling identification of those\
           \ molecules directly in single cells with their spatial\_context preserved."
@@ -7077,7 +7077,7 @@ enums:
         description: An analyte assay that uses aptamers to detect protein analytes
           in serum.
         meaning: OBI:0003111
-        title: SOMAscan assay
+        title: SOMEAscan assay
       OBI:0003112:
         text: OBI:0003112
         description: "A proximity extension assay that uses quantitative polymerase\
@@ -7159,7 +7159,7 @@ enums:
         title: neuron morphology reconstruction assay
       OBI:0003127:
         text: OBI:0003127
-        description: An immune epitope assay that characterizes the structrue of an
+        description: An immune epitope assay that characterizes the structure of an
           antibody-epitope complex, or measures the binding of an antibody receptor
           to epitope, or the immune response process resulting from such a binding
           event or the recognition of the epitope.
@@ -7167,7 +7167,7 @@ enums:
         title: B cell epitope assay
       OBI:0003128:
         text: OBI:0003128
-        description: An immune epitope assay that characterizes the structrue of an
+        description: An immune epitope assay that characterizes the structure of an
           epitope-T cell receptor complex, or measures the binding of a T cell receptor
           to epitope, or the immune response process resulting from such a binding
           event or the recognition of the epitope.
@@ -8448,14 +8448,14 @@ enums:
         title: heel to shin assessment
       OBI:0003513:
         text: OBI:0003513
-        description: An observational assesment of an individual's muscle tissue loss
-          due to inactivity or disease.
+        description: An observational assessment of an individual's muscle tissue
+          loss due to inactivity or disease.
         meaning: OBI:0003513
         title: muscle atrophy assessment
       OBI:0003514:
         text: OBI:0003514
         description: A functional assessment of an individual's ability to perform
-          muscle movement to overcome gravity or physical resistence.
+          muscle movement to overcome gravity or physical resistance.
         meaning: OBI:0003514
         title: muscle weakness assessment
       OBI:0003515:
@@ -8571,7 +8571,7 @@ enums:
         title: lower limb coordination assessment
       OBI:0003533:
         text: OBI:0003533
-        description: A functional assesment of an individual's nerve performance.
+        description: A functional assessment of an individual's nerve performance.
           Specifically the nerves connecting the sensory and motor structures with
           the central nervous system.
         meaning: OBI:0003533
@@ -8590,7 +8590,7 @@ enums:
         title: deep tendon reflex assessment of the knee joint
       OBI:0003536:
         text: OBI:0003536
-        description: A physical examination of an organism through visual assesment.
+        description: A physical examination of an organism through visual assessment.
         meaning: OBI:0003536
         title: observational assessment of individual
       OBI:0003537:
@@ -8759,7 +8759,7 @@ enums:
       OBI:0003612:
         text: OBI:0003612
         description: An electron-microscopy 3D molecular structure determination assay
-          that characterizes the 3-dimensional molecular structrue of a T cell epitope:MHC:TCR
+          that characterizes the 3-dimensional molecular structure of a T cell epitope:MHC:TCR
           complex.
         meaning: OBI:0003612
         title: electron microscopy assay determining the 3D structure of a T cell
@@ -8767,7 +8767,7 @@ enums:
       OBI:0003613:
         text: OBI:0003613
         description: An electron-microscopy 3D molecular structure determination assay
-          that characterizes the 3-dimensional molecular structrue of a MHC:ligand
+          that characterizes the 3-dimensional molecular structure of a MHC:ligand
           complex.
         meaning: OBI:0003613
         title: electron microscopy assay determining the 3D structure of a MHC:ligand
@@ -9806,7 +9806,7 @@ enums:
         text: OBI:1110128
         description: An assay that detects the binding of an epitope to an adaptive
           immune receptor, or an immune process resulting from such a binding event,
-          or characterizes the structrue of the complex resulting from such a binding
+          or characterizes the structure of the complex resulting from such a binding
           event.
         meaning: OBI:1110128
         title: immune epitope assay
@@ -11587,75 +11587,75 @@ enums:
       OBI:2100271:
         text: OBI:2100271
         description: An analyte assay that measures the abundance of sodium in arterial
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100271
-        title: ABL90 panel arterial blood sodium assay
+        title: ABLE90 panel arterial blood sodium assay
       OBI:2100272:
         text: OBI:2100272
         description: An analyte assay that measures the abundance of oxygen in arterial
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100272
-        title: ABL90 panel arterial blood oxygen assay
+        title: ABLE90 panel arterial blood oxygen assay
       OBI:2100273:
         text: OBI:2100273
         description: An analyte assay that measures the abundance of glucose in arterial
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100273
-        title: ABL90 panel arterial blood glucose assay
+        title: ABLE90 panel arterial blood glucose assay
       OBI:2100274:
         text: OBI:2100274
         description: An assay that measures lactic acid in arterial blood as part
-          of a ABL90 panel order
+          of a ABLE90 panel order
         meaning: OBI:2100274
-        title: ABL90 panel arterial blood lactic acid assay
+        title: ABLE90 panel arterial blood lactic acid assay
       OBI:2100275:
         text: OBI:2100275
         description: An analyte assay that measures the abundance of hemoglobin in
-          arterial blood as part of a ABL90 panel order
+          arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100275
-        title: ABL90 panel arterial blood hemoglobin assay
+        title: ABLE90 panel arterial blood hemoglobin assay
       OBI:2100276:
         text: OBI:2100276
         description: An analyte assay that measures the abundance of chloride in arterial
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100276
-        title: ABL90 panel arterial blood chloride assay
+        title: ABLE90 panel arterial blood chloride assay
       OBI:2100277:
         text: OBI:2100277
         description: An analyte assay that measures the abundance of carbon dioxide
-          in arterial blood as part of a ABL90 panel order
+          in arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100277
-        title: ABL90 panel arterial blood carbon dioxide assay
+        title: ABLE90 panel arterial blood carbon dioxide assay
       OBI:2100278:
         text: OBI:2100278
         description: A cytometry assay that measures the proportion of red blood cells
-          in arterial blood as part of a ABL90 panel order
+          in arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100278
-        title: ABL90 panel arterial blood hematocrit assay
+        title: ABLE90 panel arterial blood hematocrit assay
       OBI:2100279:
         text: OBI:2100279
         description: An analyte assay that measures the abundance of calcium in arterial
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100279
-        title: ABL90 panel arterial blood calcium assay
+        title: ABLE90 panel arterial blood calcium assay
       OBI:2100280:
         text: OBI:2100280
         description: An assay that measures temperature in arterial blood as part
-          of a ABL90 panel order
+          of a ABLE90 panel order
         meaning: OBI:2100280
-        title: ABL90 panel arterial blood temperature assay
+        title: ABLE90 panel arterial blood temperature assay
       OBI:2100281:
         text: OBI:2100281
         description: An analyte assay that measures the abundance of bicarbonate in
-          arterial blood as part of a ABL90 panel order
+          arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100281
-        title: ABL90 panel arterial blood bicarbonate assay
+        title: ABLE90 panel arterial blood bicarbonate assay
       OBI:2100282:
         text: OBI:2100282
         description: An analyte assay that measures the abundance of potassium in
-          arterial blood as part of a ABL90 panel order
+          arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100282
-        title: ABL90 panel arterial blood potassium assay
+        title: ABLE90 panel arterial blood potassium assay
       OBI:2100283:
         text: OBI:2100283
         description: A cytometry assay that measures the count of promyelocytes in
@@ -11665,63 +11665,63 @@ enums:
       OBI:2100284:
         text: OBI:2100284
         description: An analyte assay that measures the abundance of glucose in venous
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100284
-        title: ABL90 panel venous blood glucose assay
+        title: ABLE90 panel venous blood glucose assay
       OBI:2100285:
         text: OBI:2100285
         description: An analyte assay that measures the abundance of hemoglobin in
-          venous blood as part of a ABL90 panel order
+          venous blood as part of a ABLE90 panel order
         meaning: OBI:2100285
-        title: ABL90 panel venous blood hemoglobin assay
+        title: ABLE90 panel venous blood hemoglobin assay
       OBI:2100286:
         text: OBI:2100286
         description: An analyte assay that measures the abundance of ionized calcium
-          in venous blood as part of a ABL90 panel order
+          in venous blood as part of a ABLE90 panel order
         meaning: OBI:2100286
-        title: ABL90 panel venous blood ionized calcium assay
+        title: ABLE90 panel venous blood ionized calcium assay
       OBI:2100287:
         text: OBI:2100287
         description: An analyte assay that measures the abundance of carbon dioxide
-          in venous blood as part of a ABL90 panel order
+          in venous blood as part of a ABLE90 panel order
         meaning: OBI:2100287
-        title: ABL90 panel venous blood carbon dioxide assay
+        title: ABLE90 panel venous blood carbon dioxide assay
       OBI:2100288:
         text: OBI:2100288
         description: A cytometry assay that measures the proportion of red blood cells
-          in venous blood as part of a ABL90 panel order
+          in venous blood as part of a ABLE90 panel order
         meaning: OBI:2100288
-        title: ABL90 panel venous blood hematocrit assay
+        title: ABLE90 panel venous blood hematocrit assay
       OBI:2100289:
         text: OBI:2100289
         description: An analyte assay that measures the abundance of sodium in venous
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100289
-        title: ABL90 panel venous blood sodium assay
+        title: ABLE90 panel venous blood sodium assay
       OBI:2100290:
         text: OBI:2100290
         description: An analyte assay that measures the abundance of oxygen in venous
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100290
-        title: ABL90 panel venous blood oxygen assay
+        title: ABLE90 panel venous blood oxygen assay
       OBI:2100291:
         text: OBI:2100291
         description: An analyte assay that measures the abundance of bicarbonate in
-          venous blood as part of a ABL90 panel order
+          venous blood as part of a ABLE90 panel order
         meaning: OBI:2100291
-        title: ABL90 panel venous blood bicarbonate assay
+        title: ABLE90 panel venous blood bicarbonate assay
       OBI:2100292:
         text: OBI:2100292
         description: An assay that measures lactic acid in venous blood as part of
-          a ABL90 panel order
+          a ABLE90 panel order
         meaning: OBI:2100292
-        title: ABL90 panel venous blood lactic acid assay
+        title: ABLE90 panel venous blood lactic acid assay
       OBI:2100293:
         text: OBI:2100293
         description: An analyte assay that measures the abundance of chloride in venous
-          blood as part of a ABL90 panel order
+          blood as part of a ABLE90 panel order
         meaning: OBI:2100293
-        title: ABL90 panel venous blood chloride assay
+        title: ABLE90 panel venous blood chloride assay
       OBI:2100294:
         text: OBI:2100294
         description: An analyte assay that measures the abundance of T4 in venous
@@ -11737,9 +11737,9 @@ enums:
       OBI:2100296:
         text: OBI:2100296
         description: An analyte assay that measures the abundance of potassium in
-          venous blood as part of a ABL90 panel order
+          venous blood as part of a ABLE90 panel order
         meaning: OBI:2100296
-        title: ABL90 panel venous blood potassium assay
+        title: ABLE90 panel venous blood potassium assay
       OBI:2100297:
         text: OBI:2100297
         description: An analyte assay that measures the abundance of sodium in urine
@@ -11802,15 +11802,15 @@ enums:
       OBI:2100307:
         text: OBI:2100307
         description: An analyte assay that measures the abundance of methemoglobin
-          in venous blood as part of a ABL90 panel order
+          in venous blood as part of a ABLE90 panel order
         meaning: OBI:2100307
-        title: ABL90 panel venous blood methemoglobin assay
+        title: ABLE90 panel venous blood methemoglobin assay
       OBI:2100308:
         text: OBI:2100308
         description: An analyte assay that measures the abundance of methemoglobin
-          in arterial blood as part of a ABL90 panel order
+          in arterial blood as part of a ABLE90 panel order
         meaning: OBI:2100308
-        title: ABL90 panel arterial blood methemoglobin assay
+        title: ABLE90 panel arterial blood methemoglobin assay
       OBI:2100309:
         text: OBI:2100309
         description: An analyte assay that measures the abundance of valproic acid
@@ -18004,10 +18004,10 @@ enums:
         title: Hierarchy
       edam:data_2591:
         text: edam:data_2591
-        description: Identifier of an entry from the Brite database of biological
+        description: Identifier of an entry from the Bright database of biological
           hierarchies.
         meaning: edam:data_2591
-        title: Brite hierarchy ID
+        title: Bright hierarchy ID
       edam:data_2593:
         text: edam:data_2593
         description: A unique identifier for an organism used in the BRENDA database.
@@ -19455,7 +19455,7 @@ enums:
         title: Sequence variations
       edam:data_3505:
         text: edam:data_3505
-        description: A list of publications such as scientic papers or books.
+        description: A list of publications such as scientific papers or books.
         meaning: edam:data_3505
         title: Bibliography
       edam:data_3509:
@@ -20281,10 +20281,10 @@ enums:
         title: mira
       edam:format_1630:
         text: edam:format_1630
-        description: Common Assembly Format (CAF). A sequence assembly format including
+        description: Common Assembly Format (CALF). A sequence assembly format including
           contigs, base-call qualities, and other metadata.
         meaning: edam:format_1630
-        title: CAF
+        title: CALF
       edam:format_1631:
         text: edam:format_1631
         description: Sequence assembly project file EXP format.
@@ -20383,9 +20383,9 @@ enums:
         title: OSCAR format
       edam:format_1861:
         text: edam:format_1861
-        description: Map of a plasmid (circular DNA) in PlasMapper TextMap format.
+        description: Map of a plasmid (circular DNA) in PlaysMapper TextMap format.
         meaning: edam:format_1861
-        title: PlasMapper TextMap
+        title: PlaysMapper TextMap
       edam:format_1910:
         text: edam:format_1910
         description: Phylogenetic tree Newick (text) format.
@@ -22420,9 +22420,9 @@ enums:
         title: PMML
       edam:format_3727:
         text: edam:format_3727
-        description: Image file format used by the Open Microscopy Environment (OME).
+        description: Image file format used by the Open Microscopy Environment (SOME).
         meaning: edam:format_3727
-        title: OME-TIFF
+        title: SOME-TIFF
       edam:format_3728:
         text: edam:format_3728
         description: The LocARNA PP format combines sequence or alignment information
@@ -22440,7 +22440,7 @@ enums:
         text: edam:format_3746
         description: The BIological Observation Matrix (BIOM) is a format for representing
           biological sample by observation contingency tables in broad areas of comparative
-          omics. The primary use of this format is to represent OTU tables and metagenome
+          omics. The primary use of this format is to represent OUT tables and metagenome
           tables.
         meaning: edam:format_3746
         title: BIOM format
@@ -24202,10 +24202,11 @@ enums:
       https://www.nih.gov/include-project:
         text: https://www.nih.gov/include-project
         description: The INCLUDE (INvestigation of Co-occurring conditions across
-          the Lifespan to Understand Down syndromE) Project was launched in June 2018
-          in support of a Congressional directive in the fiscal year (FY) 2018 Omnibus
-          Appropriations. The directive called for a new trans-NIH research initiative
-          on critical health and quality-of-life needs for individuals with Down syndrome.
+          the Lifespan to Understand Down syndromeE) Project was launched in June
+          2018 in support of a Congressional directive in the fiscal year (FY) 2018
+          Omnibus Appropriations. The directive called for a new trans-NIH research
+          initiative on critical health and quality-of-life needs for individuals
+          with Down syndrome.
         title: INCLUDE
         aliases:
         - include
@@ -31429,7 +31430,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-09-25T16:21:12'
+source_file_date: '2026-09-25T21:56:21'
 source_file_size: 38220
-generation_date: '2026-09-25T16:21:20'
+generation_date: '2026-09-25T21:56:30'
 
