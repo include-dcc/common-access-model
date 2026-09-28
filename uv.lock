@@ -2895,8 +2895,8 @@ wheels = [
 
 [[package]]
 name = "the-caddie"
-version = "0.6.3"
-source = { git = "https://github.com/carrollaboratory/the-caddie#465076d2752c08ec1c865d171dfb239f39c0c66d" }
+version = "0.6.5.dev4"
+source = { git = "https://github.com/carrollaboratory/the-caddie#d1bc797b6ac72ebf8fb88c38cb7193bf79574667" }
 dependencies = [
     { name = "hatchling" },
     { name = "httpx" },
