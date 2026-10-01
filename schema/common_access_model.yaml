@@ -31326,7 +31326,6 @@ classes:
     - File_subject_id
     - File_sample_id
     - filename
-    - format
     - file_extension
     - data_category
     - data_type
@@ -31430,7 +31429,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-09-28T22:21:25'
-source_file_size: 38220
-generation_date: '2026-09-28T22:21:40'
+source_file_date: '2026-10-01T18:20:41'
+source_file_size: 38205
+generation_date: '2026-10-01T18:20:50'
 
