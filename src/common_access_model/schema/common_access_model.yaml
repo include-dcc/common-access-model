@@ -22,11 +22,13 @@ prefixes:
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
   KIN: http://purl.org/ga4gh/kin.owl#
-  edam: http://edamontology.org
+  edam: http://edamontology.org/
   OBI: http://purl.obolibrary.org/obo/OBI_
   MS: http://purl.obolibrary.org/obo/MS_
   CHMO: http://purl.obolibrary.org/obo/CHMO_
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  CAMO: http://purl.obolibrary.org/obo/CAMO_
+  ucum: https://units-of-measurement.org/
 
 default_prefix: cam
 default_range: string
@@ -335,6 +337,7 @@ classes:
       subject_id:
         required: true
         description: The family member Subject who is the relationship "object".
+  # Do we want to add a constraint to prevent more than one fam_id + sub_id or is that OK?
   FamilyMembership:
     title: Family Membership
     description: Designates a Subject as a member of a family with a specified role.
@@ -1010,7 +1013,7 @@ slots:
   concept_curie:
     title: Concept Curie
     description: The standardized curie for the term.
-    range: uriorcurie
+    range: Concept
   display:
     title: Display String
     description: The friendly display string of the coded term.
