@@ -79,7 +79,7 @@ prefixes:
     prefix_reference: https://loinc.org/
   KIN:
     prefix_prefix: KIN
-    prefix_reference: http://purl.org/ga4gh/kin.owl#
+    prefix_reference: http://purl.org/ga4gh/kin.owl#KIN_
   edam:
     prefix_prefix: edam
     prefix_reference: http://edamontology.org/
@@ -23533,297 +23533,297 @@ enums:
     description: Definitions of family relations as provided by KIN Ontology.
     from_schema: https://includedcc.org/common-access-model/EnumFamilyRelation
     permissible_values:
-      KIN:KIN_001:
-        text: KIN:KIN_001
+      KIN:001:
+        text: KIN:001
         description: A relation that indicates that a person is connected to another
           biologically or through a socio-legal relationship.
-        meaning: KIN:KIN_001
+        meaning: KIN:001
         title: isRelativeOf
-      KIN:KIN_053:
-        text: KIN:KIN_053
+      KIN:053:
+        text: KIN:053
         description: A relation between a person and a child of that person's son.
-        meaning: KIN:KIN_053
+        meaning: KIN:053
         title: isPaternalGrandparentOf
-      KIN:KIN_022:
-        text: KIN:KIN_022
+      KIN:022:
+        text: KIN:022
         description: A legal relation between a person and a child that is adopted
           by that person. The adopted child is given the rights, privileges, and duties
           of a biological child by the adoptive person.
-        meaning: KIN:KIN_022
+        meaning: KIN:022
         title: isAdoptiveParentOf
-      KIN:KIN_027:
-        text: KIN:KIN_027
+      KIN:027:
+        text: KIN:027
         description: A relation that indicates that a person is the biological mother
           of another person.
-        meaning: KIN:KIN_027
+        meaning: KIN:027
         title: isBiologicalMotherOf
-      KIN:KIN_039:
-        text: KIN:KIN_039
+      KIN:039:
+        text: KIN:039
         description: A relation between the child and a woman who carried a fertilised
           egg in her womb and gave birth to a child on behalf of the mother.
-        meaning: KIN:KIN_039
+        meaning: KIN:039
         title: hasGestationalCarrier
-      KIN:KIN_038:
-        text: KIN:KIN_038
+      KIN:038:
+        text: KIN:038
         description: A relation between a fertile woman who donated an egg to another
           woman to help her conceive and the child.
-        meaning: KIN:KIN_038
+        meaning: KIN:038
         title: isOvumDonorOf
-      KIN:KIN_051:
-        text: KIN:KIN_051
+      KIN:051:
+        text: KIN:051
         description: A socio-legal relationship between two people who used to live
           together, share a common domestic life and are closely related biologically
           (second cousins or closer), and have now separated.
-        meaning: KIN:KIN_051
+        meaning: KIN:051
         title: isSeparatedConsanguineousPartnerOf
-      KIN:KIN_010:
-        text: KIN:KIN_010
+      KIN:010:
+        text: KIN:010
         description: A relation between two people born at the same birth from a single
           fertilised ovum that splits.
-        meaning: KIN:KIN_010
+        meaning: KIN:010
         title: isMonozygoticMultipleBirthSiblingOf
-      KIN:KIN_055:
-        text: KIN:KIN_055
+      KIN:055:
+        text: KIN:055
         description: A relation between two people that share the same biological
           father.
-        meaning: KIN:KIN_055
+        meaning: KIN:055
         title: isPaternalHalfSiblingOf
-      KIN:KIN_008:
-        text: KIN:KIN_008
+      KIN:008:
+        text: KIN:008
         description: A relation between two people that have both biological parents
           in common.
-        meaning: KIN:KIN_008
+        meaning: KIN:008
         title: isFullsiblingOf
-      KIN:KIN_052:
-        text: KIN:KIN_052
+      KIN:052:
+        text: KIN:052
         description: A relation between a person and a child of that person's daughter.
-        meaning: KIN:KIN_052
+        meaning: KIN:052
         title: isMaternalGrandparentOf
-      KIN:KIN_028:
-        text: KIN:KIN_028
+      KIN:028:
+        text: KIN:028
         description: A relation that indicates that a person is the biological father
           of another person.
-        meaning: KIN:KIN_028
+        meaning: KIN:028
         title: isBiologicalFatherOf
-      KIN:KIN_013:
-        text: KIN:KIN_013
+      KIN:013:
+        text: KIN:013
         description: A relation that indicates that a person is the sibling of a parent
           of another person.
-        meaning: KIN:KIN_013
+        meaning: KIN:013
         title: isParentalSiblingOf
-      KIN:KIN_003:
-        text: KIN:KIN_003
+      KIN:003:
+        text: KIN:003
         description: A relation that indicates that a person is the biological parent
           of another person.
-        meaning: KIN:KIN_003
+        meaning: KIN:003
         title: isBiologicalParentOf
-      KIN:KIN_059:
-        text: KIN:KIN_059
+      KIN:059:
+        text: KIN:059
         description: A relation between a man and the child of that man's brother.
-        meaning: KIN:KIN_059
+        meaning: KIN:059
         title: isPaternalUncleOf
-      KIN:KIN_005:
-        text: KIN:KIN_005
+      KIN:005:
+        text: KIN:005
         description: A relation between the woman who carried a fertilised egg in
           her womb and gave birth to a child on behalf of the mother, and the child.
-        meaning: KIN:KIN_005
+        meaning: KIN:005
         title: isGestationalCarrierOf
-      KIN:KIN_023:
-        text: KIN:KIN_023
+      KIN:023:
+        text: KIN:023
         description: A relation between a person and a child, where the person is
           married to the father or mother of a child but who is not that child's own
           father or mother.
-        meaning: KIN:KIN_023
+        meaning: KIN:023
         title: isStepParentOf
-      KIN:KIN_036:
-        text: KIN:KIN_036
+      KIN:036:
+        text: KIN:036
         description: A relation between a person and a parent of that person's parent.
-        meaning: KIN:KIN_036
+        meaning: KIN:036
         title: isGrandchildOf
-      KIN:KIN_025:
-        text: KIN:KIN_025
+      KIN:025:
+        text: KIN:025
         description: A relation between children born of two different families who
           have been joined by marriage, defacto or otherwise, of at least one of their
           respective parents.
-        meaning: KIN:KIN_025
+        meaning: KIN:025
         title: isStepSiblingOf
-      KIN:KIN_058:
-        text: KIN:KIN_058
+      KIN:058:
+        text: KIN:058
         description: A relation between a man and the child of that man's sister.
-        meaning: KIN:KIN_058
+        meaning: KIN:058
         title: isMaternalUncleOf
-      KIN:KIN_004:
-        text: KIN:KIN_004
+      KIN:004:
+        text: KIN:004
         description: A relation between a man who donated his sperm and the child.
-        meaning: KIN:KIN_004
+        meaning: KIN:004
         title: isSpermDonorOf
-      KIN:KIN_024:
-        text: KIN:KIN_024
+      KIN:024:
+        text: KIN:024
         description: A relation between two people that has all or some of the characteristics
           of a sibling relationship.
-        meaning: KIN:KIN_024
+        meaning: KIN:024
         title: isSiblingFigureOf
-      KIN:KIN_009:
-        text: KIN:KIN_009
+      KIN:009:
+        text: KIN:009
         description: A relation between two people born at the same birth.
-        meaning: KIN:KIN_009
+        meaning: KIN:009
         title: isMultipleBirthSiblingOf
-      KIN:KIN_061:
-        text: KIN:KIN_061
+      KIN:061:
+        text: KIN:061
         description: A relation between a woman and the child of that woman's brother.
-        meaning: KIN:KIN_061
+        meaning: KIN:061
         title: isPaternalAuntOf
-      KIN:KIN_060:
-        text: KIN:KIN_060
+      KIN:060:
+        text: KIN:060
         description: A relation between a woman and the child of that woman's sister.
-        meaning: KIN:KIN_060
+        meaning: KIN:060
         title: isMaternalAuntOf
-      KIN:KIN_029:
-        text: KIN:KIN_029
+      KIN:029:
+        text: KIN:029
         description: "A relation between a woman that has donated mitochondria and\
           \ a child. Mitochondrial donation involves removing the nuclear DNA from\
           \ a woman\u2019s ovum containing faulty mitochondria and inserting it into\
           \ a healthy donor ovum, which has had its nuclear DNA removed."
-        meaning: KIN:KIN_029
+        meaning: KIN:029
         title: isMitochondrialDonorOf
-      KIN:KIN_047:
-        text: KIN:KIN_047
+      KIN:047:
+        text: KIN:047
         description: A relation between a person and a parent of that person's grandparent.
-        meaning: KIN:KIN_047
+        meaning: KIN:047
         title: isGreatGrandchildOf
-      KIN:KIN_021:
-        text: KIN:KIN_021
+      KIN:021:
+        text: KIN:021
         description: A relation between a person and a child that temporarily enters
           into his or her family for a period of time, without becoming the child's
           legal parent.
-        meaning: KIN:KIN_021
+        meaning: KIN:021
         title: isFosterParentOf
-      KIN:KIN_057:
-        text: KIN:KIN_057
+      KIN:057:
+        text: KIN:057
         description: A relation between children born of two different families who
           have been joined by marriage, defacto or otherwise. One is a biological
           child and the other is a step child of the same man.
-        meaning: KIN:KIN_057
+        meaning: KIN:057
         title: isPaternalStepSiblingOf
-      KIN:KIN_030:
-        text: KIN:KIN_030
+      KIN:030:
+        text: KIN:030
         description: A socio-legal relationship between two people who live together,
           share a common domestic life and are closely related biologically (second
           cousins or closer).
-        meaning: KIN:KIN_030
+        meaning: KIN:030
         title: isConsanguineousPartnerOf
-      KIN:KIN_046:
-        text: KIN:KIN_046
+      KIN:046:
+        text: KIN:046
         description: A relation that indicates that a person has a parental sibling
           relationship with another person, i.e., the other person is the sibling
           of a parent.
-        meaning: KIN:KIN_046
+        meaning: KIN:046
         title: hasParentalSibling
-      KIN:KIN_012:
-        text: KIN:KIN_012
+      KIN:012:
+        text: KIN:012
         description: A relation between two people that have a single biological parent
           in common.
-        meaning: KIN:KIN_012
+        meaning: KIN:012
         title: isHalfSiblingOf
-      KIN:KIN_014:
-        text: KIN:KIN_014
+      KIN:014:
+        text: KIN:014
         description: A relation between a person and a child of that person's uncle
           or aunt.
-        meaning: KIN:KIN_014
+        meaning: KIN:014
         title: isCousinOf
-      KIN:KIN_015:
-        text: KIN:KIN_015
+      KIN:015:
+        text: KIN:015
         description: A relation between a person and a child of that person's mother's
           sibling.
-        meaning: KIN:KIN_015
+        meaning: KIN:015
         title: isMaternalCousinOf
-      KIN:KIN_050:
-        text: KIN:KIN_050
+      KIN:050:
+        text: KIN:050
         description: A socio-legal relationship between two people who used to live
           together and share a common domestic life, but have now separated.
-        meaning: KIN:KIN_050
+        meaning: KIN:050
         title: isSeparatedPartnerOf
-      KIN:KIN_056:
-        text: KIN:KIN_056
+      KIN:056:
+        text: KIN:056
         description: A relation between children born of two different families who
           have been joined by marriage, defacto or otherwise. One is a biological
           child and the other is a step child of the same woman.
-        meaning: KIN:KIN_056
+        meaning: KIN:056
         title: isMaternalStepSiblingOf
-      KIN:KIN_032:
-        text: KIN:KIN_032
+      KIN:032:
+        text: KIN:032
         description: A relation that indicates that a person is the biological child
           of another person.
-        meaning: KIN:KIN_032
+        meaning: KIN:032
         title: isBiologicalChildOf
-      KIN:KIN_020:
-        text: KIN:KIN_020
+      KIN:020:
+        text: KIN:020
         description: A relation between a person who is regarded as having all or
           some of the characteristics of a parent and the child.
-        meaning: KIN:KIN_020
+        meaning: KIN:020
         title: isParentFigureOf
-      KIN:KIN_007:
-        text: KIN:KIN_007
+      KIN:007:
+        text: KIN:007
         description: A relation between two people that have one or both biological
           parents in common.
-        meaning: KIN:KIN_007
+        meaning: KIN:007
         title: isBiologicalSiblingOf
-      KIN:KIN_002:
-        text: KIN:KIN_002
+      KIN:002:
+        text: KIN:002
         description: A relation that indicates that a person is related to another
           person biologically.
-        meaning: KIN:KIN_002
+        meaning: KIN:002
         title: isBiologicalRelativeOf
-      KIN:KIN_018:
-        text: KIN:KIN_018
+      KIN:018:
+        text: KIN:018
         description: A relation between a person and a child of that person's grandchild.
-        meaning: KIN:KIN_018
+        meaning: KIN:018
         title: isGreatGrandparentOf
-      KIN:KIN_011:
-        text: KIN:KIN_011
+      KIN:011:
+        text: KIN:011
         description: A relation between two people born at the same birth from fertilisation
           of more than two ovums discharged in a single ovarian cycle.
-        meaning: KIN:KIN_011
+        meaning: KIN:011
         title: isPolyzygoticMultipleBirthSiblingOf
-      KIN:KIN_006:
-        text: KIN:KIN_006
+      KIN:006:
+        text: KIN:006
         description: A relation between the woman who carried her fertilised egg in
           her womb and gave birth to a child on behalf of the mother, and the child.
-        meaning: KIN:KIN_006
+        meaning: KIN:006
         title: isSurrogateOvumDonorOf
-      KIN:KIN_017:
-        text: KIN:KIN_017
+      KIN:017:
+        text: KIN:017
         description: A relation between a person and a child of that person's child.
-        meaning: KIN:KIN_017
+        meaning: KIN:017
         title: isGrandparentOf
-      KIN:KIN_016:
-        text: KIN:KIN_016
+      KIN:016:
+        text: KIN:016
         description: A relation between a person and a child of that person's father's
           sibling.
-        meaning: KIN:KIN_016
+        meaning: KIN:016
         title: isPaternalCousinOf
-      KIN:KIN_026:
-        text: KIN:KIN_026
+      KIN:026:
+        text: KIN:026
         description: A socio-legal relationship between two people who live together
           and share a common domestic life.
-        meaning: KIN:KIN_026
+        meaning: KIN:026
         title: isPartnerOf
-      KIN:KIN_019:
-        text: KIN:KIN_019
+      KIN:019:
+        text: KIN:019
         description: A social or legal relationship between two people, for example,
           an adoptive parent.
-        meaning: KIN:KIN_019
+        meaning: KIN:019
         title: isSocialLegalRelativeOf
-      KIN:KIN_054:
-        text: KIN:KIN_054
+      KIN:054:
+        text: KIN:054
         description: A relation between two people that share the same biological
           mother.
-        meaning: KIN:KIN_054
+        meaning: KIN:054
         title: isMaternalHalfSiblingOf
     reachable_from:
       source_ontology: http://purl.org/ga4gh/kin.owl
       source_nodes:
-      - KIN:KIN_001
+      - KIN:001
       relationship_types:
       - rdfs:subClassOf
       is_direct: false
@@ -31525,7 +31525,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-02T14:15:08'
-source_file_size: 38590
-generation_date: '2026-10-02T14:15:19'
+source_file_date: '2026-10-02T16:42:48'
+source_file_size: 38594
+generation_date: '2026-10-02T16:42:59'
 
