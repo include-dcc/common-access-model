@@ -387,6 +387,8 @@ classes:
           - range: msGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
   Concept:
     title: Concept
     description: A standardized concept with display information.
@@ -454,6 +456,7 @@ classes:
       - biospecimen_collection_id
       - parent_sample_id
       - sample_type
+      - subject_id
       - processing
       - availability_status
       - storage_method
@@ -464,6 +467,8 @@ classes:
         range: bsGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
       biospecimen_collection_id:
         description: Biospecimen Collection during which this sample was
           generated.
@@ -503,6 +508,8 @@ classes:
         range: string
         required: true
         identifier: true
+      sample_id:
+        required: true
   Encounter:
     title: Participant Encounter
     description: An event at which data was collected about a participant,
@@ -520,6 +527,8 @@ classes:
         range: enGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
   EncounterDefinition:
     title: Encounter Definition
     description: A definition of an encounter type in this study, ie, an event
@@ -629,6 +638,8 @@ classes:
   Dataset:
     title: Dataset
     description: Set of files grouped together for release.
+    mixins:
+      - Record
     slots:
       - dataset_id
       - name
