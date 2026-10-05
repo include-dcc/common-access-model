@@ -1,2 +1,7 @@
-subject_id: subject001
+subject_id: pt-0u4gl52nuc
 subject_type: CAMO:0000024
+organism_type: NCBITaxon:9606
+external_id:
+- https://example.org/cam-testdata/tiny/Subject/trio1-proband
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

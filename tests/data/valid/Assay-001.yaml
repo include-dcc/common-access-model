@@ -1,0 +1,13 @@
+assay_id: di-9dukh3vbqc
+subject_id:
+- pt-r4rv0bzkwc
+sample_id:
+- bs-55cg5o8i0k
+file_id:
+- dr-bpfgefc86h
+assay_type: OBI:0002117
+activity_definition_id: ad-9uamjmgmeq
+external_id:
+- https://example.org/cam-testdata/tiny/Assay/trio1-father-wgs
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

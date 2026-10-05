@@ -1,0 +1,5 @@
+vocabulary_prefix: CAMO
+name: Common Access Model Ontology
+vocabulary_uri: http://purl.obolibrary.org/obo/CAMO_
+fhir_system: http://purl.obolibrary.org/obo/CAMO
+description: Organized terms in support of a shared data model.
