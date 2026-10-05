@@ -30081,6 +30081,42 @@ slots:
     domain_of:
     - Dataset
     range: string
+  Record_access_policy_id:
+    name: Record_access_policy_id
+    definition_uri: https://includedcc.org/common-access-model/access_policy_id
+    description: Global identifier for the access policy that applies to this row
+      of data.
+    title: Access Policy ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: access_policy_id
+    domain: Record
+    slot_uri: cam:access_policy_id
+    alias: access_policy_id
+    owner: Record
+    domain_of:
+    - Record
+    is_usage_slot: true
+    usage_slot_name: access_policy_id
+    range: AccessPolicy
+    required: true
+  Record_study_id:
+    name: Record_study_id
+    definition_uri: https://includedcc.org/common-access-model/study_id
+    description: INCLUDE Global ID for the study
+    title: Study ID
+    from_schema: https://includedcc.org/common-access-model
+    is_a: study_id
+    domain: Record
+    slot_uri: cam:study_id
+    alias: study_id
+    owner: Record
+    domain_of:
+    - Record
+    is_usage_slot: true
+    usage_slot_name: study_id
+    range: Study
+    required: true
+    multivalued: false
   AccessPolicy_access_policy_id:
     name: AccessPolicy_access_policy_id
     definition_uri: https://includedcc.org/common-access-model/access_policy_id
@@ -30106,7 +30142,7 @@ slots:
     description: INCLUDE Global ID for the study
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
-    is_a: study_id
+    is_a: Record_study_id
     domain: Study
     slot_uri: cam:study_id
     identifier: true
@@ -30125,7 +30161,7 @@ slots:
     description: INCLUDE Global ID for the study
     title: Study ID
     from_schema: https://includedcc.org/common-access-model
-    is_a: study_id
+    is_a: Record_study_id
     domain: StudyMetadata
     slot_uri: cam:study_id
     identifier: true
@@ -30813,8 +30849,15 @@ classes:
     abstract: true
     slots:
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
+    slot_usage:
+      access_policy_id:
+        name: access_policy_id
+        required: true
+      study_id:
+        name: study_id
+        required: true
     class_uri: cam:Record
   AccessPolicy:
     name: AccessPolicy
@@ -30862,7 +30905,7 @@ classes:
     - do_id
     - Study_study_id
     - external_id
-    - access_policy_id
+    - Record_access_policy_id
     slot_usage:
       study_id:
         name: study_id
@@ -30879,7 +30922,7 @@ classes:
     mixins:
     - Record
     slots:
-    - StudyMetadata_study_id
+    - study_id
     - participant_lifespan_stage
     - selection_criteria
     - study_design
@@ -30889,8 +30932,9 @@ classes:
     - research_domain
     - expected_number_of_participants
     - actual_number_of_participants
+    - StudyMetadata_study_id
     - external_id
-    - access_policy_id
+    - Record_access_policy_id
     slot_usage:
       study_id:
         name: study_id
@@ -30917,8 +30961,8 @@ classes:
     - website
     - vbr_readme
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       vbr_id:
         name: vbr_id
@@ -30938,8 +30982,8 @@ classes:
     - DOI_do_id
     - bibliographic_reference
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       do_id:
         name: do_id
@@ -30962,8 +31006,8 @@ classes:
     - investigator_title
     - email
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     class_uri: cam:Investigator
   Publication:
     name: Publication
@@ -30977,8 +31021,8 @@ classes:
     - bibliographic_reference
     - website
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     class_uri: cam:Publication
   Subject:
     name: Subject
@@ -30995,8 +31039,8 @@ classes:
     - subject_type
     - organism_type
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       subject_id:
         name: subject_id
@@ -31021,8 +31065,8 @@ classes:
     - vital_status
     - age_at_first_engagement
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       subject_id:
         name: subject_id
@@ -31045,8 +31089,8 @@ classes:
     - consanguinity
     - family_study_focus
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       family_id:
         name: family_id
@@ -31069,8 +31113,8 @@ classes:
     - relation
     - FamilyRelationship_subject_id
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       family_relationship_id:
         name: family_relationship_id
@@ -31096,8 +31140,8 @@ classes:
     - FamilyMembership_subject_id
     - family_role
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       family_membership_id:
         name: family_membership_id
@@ -31137,8 +31181,8 @@ classes:
     - value_unit
     - value_unit_source
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       assertion_id:
         name: assertion_id
@@ -31255,8 +31299,8 @@ classes:
     - quantity_number
     - quantity_unit
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       sample_id:
         name: sample_id
@@ -31287,8 +31331,8 @@ classes:
     - laterality
     - encounter_id
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       biospecimen_collection_id:
         name: biospecimen_collection_id
@@ -31313,8 +31357,8 @@ classes:
     - concentration_number
     - concentration_unit
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       aliquot_id:
         name: aliquot_id
@@ -31340,8 +31384,8 @@ classes:
     - encounter_definition_id
     - age_at_event
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       encounter_id:
         name: encounter_id
@@ -31369,8 +31413,8 @@ classes:
     - description
     - EncounterDefinition_activity_definition_id
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       encounter_definition_id:
         name: encounter_definition_id
@@ -31395,8 +31439,8 @@ classes:
     - name
     - description
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       activity_definition_id:
         name: activity_definition_id
@@ -31429,8 +31473,8 @@ classes:
     - hash
     - availability
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       file_id:
         name: file_id
@@ -31471,8 +31515,8 @@ classes:
     - assay_source
     - activity_definition_id
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       assay_id:
         name: assay_id
@@ -31510,8 +31554,8 @@ classes:
     - data_collection_start
     - data_collection_end
     - external_id
-    - access_policy_id
-    - study_id
+    - Record_access_policy_id
+    - Record_study_id
     slot_usage:
       dataset_id:
         name: dataset_id
@@ -31525,7 +31569,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-05T21:22:37'
-source_file_size: 38594
-generation_date: '2026-10-05T21:22:51'
+source_file_date: '2026-10-05T21:53:13'
+source_file_size: 38696
+generation_date: '2026-10-05T21:53:21'
 

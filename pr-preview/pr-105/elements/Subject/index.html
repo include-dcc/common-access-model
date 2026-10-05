@@ -354,7 +354,7 @@
 
 
 
-        Subject --&gt; "0..1" AccessPolicy : access_policy_id
+        Subject --&gt; "1" AccessPolicy : access_policy_id
         click AccessPolicy href "../AccessPolicy/"
 
 
@@ -369,7 +369,7 @@
 
 
 
-        Subject --&gt; "0..1" Study : study_id
+        Subject --&gt; "1" Study : study_id
         click Study href "../Study/"
 
 
@@ -429,13 +429,13 @@
 </tr>
 <tr>
 <td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
+<td>1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
 <td>Global identifier for the access policy that applies to this row of data</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
 <tr>
 <td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
+<td>1 <br/> <a href="../Study/">Study</a></td>
 <td>INCLUDE Global ID for the study</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
@@ -536,10 +536,14 @@
 <h3 id="example-subject-0000">Example: Subject-0000</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">subject_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">subject001</span>
 <span class="nt">subject_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CAMO:0000024</span>
+<span class="nt">access_policy_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">co-ajdm9fyxxz</span>
+<span class="nt">study_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sd-7hwpqzc2yr</span>
 </code></pre></div>
 <h3 id="example-subject-000">Example: Subject-000</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">subject_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">subject000</span>
 <span class="nt">subject_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CAMO:0000024</span>
+<span class="nt">access_policy_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">co-ajdm9fyxxz</span>
+<span class="nt">study_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sd-7hwpqzc2yr</span>
 </code></pre></div>
 <h3 id="example-subject-001">Example: Subject-001</h3>
 <div class="highlight"><pre><span></span><code><span class="nt">subject_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">pt-0u4gl52nuc</span>
@@ -664,6 +668,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">study_id</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">study_id</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INCLUDE Global ID for the study</span>
@@ -675,6 +680,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">StudyMetadata</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Study</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
 </details>

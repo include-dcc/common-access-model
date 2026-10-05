@@ -336,7 +336,7 @@
 
 
 
-        Study --&gt; "0..1" AccessPolicy : access_policy_id
+        Study --&gt; "1" AccessPolicy : access_policy_id
         click AccessPolicy href "../AccessPolicy/"
 
 
@@ -526,7 +526,7 @@
 </tr>
 <tr>
 <td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
+<td>1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
 <td>Global identifier for the access policy that applies to this row of data</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
@@ -992,6 +992,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">study_id</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">study_id</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INCLUDE Global ID for the study</span>
