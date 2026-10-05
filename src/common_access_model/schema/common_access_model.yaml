@@ -144,6 +144,11 @@ classes:
       - external_id
       - access_policy_id
       - study_id
+    slot_usage:
+      access_policy_id:
+        required: true
+      study_id:
+        required: true
   AccessPolicy:
     title: Access Policy
     description: The access policy that describes the controls around use of
