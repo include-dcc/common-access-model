@@ -1,0 +1,13 @@
+subject_id: pt-0u4gl52nuc
+sex: snomedct:248152002
+race:
+- CDCREC:2054-5
+- CDCREC:2106-3
+ethnicity: CDCREC:2186-5
+age_at_last_vital_status: 2190
+vital_status: snomedct:438949009
+age_at_first_engagement: 1826
+external_id:
+- https://example.org/cam-testdata/tiny/Demographics/trio1-proband
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

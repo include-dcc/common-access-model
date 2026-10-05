@@ -1,0 +1,21 @@
+study_id: sd-7hwpqzc2yr
+participant_lifespan_stage:
+- NCIT:C199314
+- NCIT:C89345
+study_design:
+- mesh:D008137
+- mesh:D015331
+clinical_data_source_type:
+- CAMO:0000014
+- CAMO:0000011
+data_category:
+- edam:topic_0625
+- edam:topic_3673
+vbr_id: or-t6jcy1rgzy
+research_domain:
+- mesh:D006330
+expected_number_of_participants: 4
+actual_number_of_participants: 3
+external_id:
+- https://example.org/cam-testdata/tiny/StudyMetadata/s1
+access_policy_id: co-ajdm9fyxxz

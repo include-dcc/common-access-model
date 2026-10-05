@@ -1,0 +1,8 @@
+encounter_definition_id: pd-crs8941hkh
+name: Follow-up visit
+activity_definition_id:
+- ad-h4vzhilve0
+external_id:
+- https://example.org/cam-testdata/tiny/EncounterDefinition/follow-up
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

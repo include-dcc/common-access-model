@@ -1,0 +1,22 @@
+file_id: dr-88uhd8kdda
+subject_id:
+- pt-0u4gl52nuc
+- pt-nlpxyndlla
+- pt-r4rv0bzkwc
+sample_id:
+- bs-55cg5o8i0k
+- bs-dy45fxh8vr
+- bs-x1o5ezuit1
+filename: TRIO1.joint.vcf.gz
+file_extension: .vcf.gz
+data_category: edam:topic_0199
+data_type: edam:data_3498
+format: edam:format_3016
+size: 362905217
+hash:
+- hash_type: MS:1000568
+  hash_value: 0ac96d1b3e18024fe2f36ce17807c80a
+external_id:
+- https://example.org/cam-testdata/tiny/File/trio1-joint-vcf
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

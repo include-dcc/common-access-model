@@ -1,0 +1,11 @@
+sample_id: bs-1zcz596f79
+biospecimen_collection_id: bsc-v721ubzcsj
+sample_type: UBERON:0000178
+subject_id: pt-0u4gl52nuc
+availability_status: snomedct:103328004
+storage_method:
+- OBI:0000819
+external_id:
+- https://example.org/cam-testdata/tiny/Sample/trio1-proband-blood
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr
