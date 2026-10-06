@@ -27,7 +27,7 @@ prefixes:
   MS: http://purl.obolibrary.org/obo/MS_
   CHMO: http://purl.obolibrary.org/obo/CHMO_
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
-  CAMO: http://purl.obolibrary.org/obo/CAMO_
+  CAMO: https://github.com/include-dcc/camo/releases/latest/download/camo.owl#
   ucum: https://units-of-measurement.org/
 
 default_prefix: cam
