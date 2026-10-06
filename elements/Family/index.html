@@ -261,6 +261,28 @@
 </a>
 </li>
 <li class="md-nav__item">
+<a class="md-nav__link" href="#examples">
+<span class="md-ellipsis">
+      
+        Examples
+      
+    </span>
+</a>
+<nav aria-label="Examples" class="md-nav">
+<ul class="md-nav__list">
+<li class="md-nav__item">
+<a class="md-nav__link" href="#example-family-001">
+<span class="md-ellipsis">
+      
+        Example: Family-001
+      
+    </span>
+</a>
+</li>
+</ul>
+</nav>
+</li>
+<li class="md-nav__item">
 <a class="md-nav__link" href="#linkml-source">
 <span class="md-ellipsis">
       
@@ -314,7 +336,7 @@
 
 
 
-        Family --&gt; "0..1" AccessPolicy : access_policy_id
+        Family --&gt; "1" AccessPolicy : access_policy_id
         click AccessPolicy href "../AccessPolicy/"
 
 
@@ -355,7 +377,7 @@
 
 
 
-        Family --&gt; "0..1" Study : study_id
+        Family --&gt; "1" Study : study_id
         click Study href "../Study/"
 
 
@@ -414,13 +436,13 @@
 </tr>
 <tr>
 <td><a href="../access_policy_id/">access_policy_id</a></td>
-<td>0..1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
+<td>1 <br/> <a href="../AccessPolicy/">AccessPolicy</a></td>
 <td>Global identifier for the access policy that applies to this row of data</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
 <tr>
 <td><a href="../study_id/">study_id</a></td>
-<td>0..1 <br/> <a href="../Study/">Study</a></td>
+<td>1 <br/> <a href="../Study/">Study</a></td>
 <td>INCLUDE Global ID for the study</td>
 <td><a href="../Record/">Record</a></td>
 </tr>
@@ -469,6 +491,17 @@
 </tr>
 </tbody>
 </table>
+<h2 id="examples">Examples</h2>
+<h3 id="example-family-001">Example: Family-001</h3>
+<div class="highlight"><pre><span></span><code><span class="nt">family_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">gr-gm96zwr6qd</span>
+<span class="nt">family_type</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">CAMO:0000005</span>
+<span class="nt">consanguinity</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">snomedct:410516002</span>
+<span class="nt">family_study_focus</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">MONDO:0008608</span>
+<span class="nt">external_id</span><span class="p">:</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://example.org/cam-testdata/tiny/Family/trio1</span>
+<span class="nt">access_policy_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">co-ajdm9fyxxz</span>
+<span class="nt">study_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sd-7hwpqzc2yr</span>
+</code></pre></div>
 <h2 id="linkml-source">LinkML Source</h2>
 <!-- TODO: investigate https://stackoverflow.com/questions/37606292/how-to-create-tabbed-code-blocks-in-mkdocs-or-sphinx -->
 <h3 id="direct">Direct</h3>
@@ -585,6 +618,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">  </span><span class="nt">study_id</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">study_id</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">INCLUDE Global ID for the study</span>
@@ -596,6 +630,7 @@
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">StudyMetadata</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Study</span>
+<span class="w">    </span><span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 <span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
 </details>
