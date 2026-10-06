@@ -97,7 +97,7 @@ prefixes:
     prefix_reference: http://purl.obolibrary.org/obo/NCBITaxon_
   CAMO:
     prefix_prefix: CAMO
-    prefix_reference: http://purl.obolibrary.org/obo/CAMO_
+    prefix_reference: https://github.com/include-dcc/camo/releases/latest/download/camo.owl#
   ucum:
     prefix_prefix: ucum
     prefix_reference: https://units-of-measurement.org/
@@ -31569,7 +31569,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-05T21:53:13'
-source_file_size: 38696
-generation_date: '2026-10-05T21:53:21'
+source_file_date: '2026-10-06T19:48:46'
+source_file_size: 38730
+generation_date: '2026-10-06T19:48:54'
 
