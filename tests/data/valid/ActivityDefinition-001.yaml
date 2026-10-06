@@ -1,0 +1,6 @@
+activity_definition_id: ad-9uamjmgmeq
+name: Whole genome sequencing
+external_id:
+- https://example.org/cam-testdata/tiny/ActivityDefinition/wgs
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

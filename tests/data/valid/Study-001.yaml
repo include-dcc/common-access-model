@@ -1,0 +1,38 @@
+study_title: Madamoiselle Moo's Marvelous Research Study
+study_code: M00M00
+study_short_name: M00M00 Study
+program:
+- https://www.nih.gov/include-project
+funding_source:
+- Fictional Foundation for Test Data
+principal_investigator:
+- name: Nancy Ewing
+  institution: Sunny Acres School of Barnyard Sciences
+  investigator_title: Principal Investigator
+  email: nancy.ewing@example.org
+  external_id:
+  - https://example.org/cam-testdata/tiny/Investigator/s1-pi
+  access_policy_id: co-ajdm9fyxxz
+  study_id: sd-7hwpqzc2yr
+contact:
+- name: Austin Bowen
+  institution: Pasture Point Center for Galline Genomics
+  investigator_title: Study Coordinator
+  email: austin.bowen@example.org
+  external_id:
+  - https://example.org/cam-testdata/tiny/Investigator/s1-contact
+  access_policy_id: co-ajdm9fyxxz
+  study_id: sd-7hwpqzc2yr
+study_description: Synthetic trio study used to exercise every CAM table and FHIR mapping path. All people and data are fictional.
+publication:
+- bibliographic_reference: Quack F, Meow N, Meow E, Meow A. Social behavior in goats is mostly unremarkable. Ann Hayloft Genet. 2017;24(12):283-289.
+  external_id:
+  - https://example.org/cam-testdata/tiny/Publication/s1-pub1
+  access_policy_id: co-ajdm9fyxxz
+  study_id: sd-7hwpqzc2yr
+do_id: 10.5072/cam-testdata.bc5dx08a
+external_id:
+- https://studies.cows-come-home.gov/cud?id=M00M00-01
+- https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000000
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

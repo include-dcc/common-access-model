@@ -1,0 +1,8 @@
+biospecimen_collection_id: bsc-8bf58h4x9t
+age_at_collection: 33.98
+method: snomedct:82078001
+encounter_id: en-03iwm0w52x
+external_id:
+- https://example.org/cam-testdata/tiny/BiospecimenCollection/trio1-mother-blood-draw
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

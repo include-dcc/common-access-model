@@ -1,0 +1,19 @@
+dataset_id: ls-h7rc1m2nvw
+name: M00M00 release 1
+do_id: 10.5072/cam-testdata.bc5dx08a
+file_id:
+- dr-88uhd8kdda
+- dr-8racu3r89t
+- dr-bpfgefc86h
+- dr-mabd0lfbmq
+- dr-njl7vp2sz9
+publication:
+- bibliographic_reference: Quack F, Meow N, Meow E, Meow A. Social behavior in goats is mostly unremarkable. Ann Hayloft Genet. 2017;24(12):283-289.
+  external_id:
+  - https://example.org/cam-testdata/tiny/Publication/s1-pub1
+  access_policy_id: co-ajdm9fyxxz
+  study_id: sd-7hwpqzc2yr
+external_id:
+- https://example.org/cam-testdata/tiny/Dataset/s1-release-1
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

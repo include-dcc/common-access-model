@@ -1,0 +1,16 @@
+vbr_id: or-t6jcy1rgzy
+name: Oakpaddock Specimen Barn
+institution: Millpond School of Barnyard Sciences
+contact:
+- name: Austin Bowen
+  institution: Pasture Point Center for Galline Genomics
+  investigator_title: Study Coordinator
+  email: austin.bowen@example.org
+  external_id:
+  - https://example.org/cam-testdata/tiny/Investigator/s1-contact
+  access_policy_id: co-ajdm9fyxxz
+  study_id: sd-7hwpqzc2yr
+external_id:
+- https://example.org/cam-testdata/tiny/VirtualBiorepository/s1-vbr
+access_policy_id: co-ajdm9fyxxz
+study_id: sd-7hwpqzc2yr

@@ -21,12 +21,14 @@ prefixes:
   PATO: http://purl.obolibrary.org/obo/PATO_
   DUO: http://purl.obolibrary.org/obo/DUO_
   loinc: https://loinc.org/
-  KIN: http://purl.org/ga4gh/kin.owl#
-  edam: http://edamontology.org
+  KIN: http://purl.org/ga4gh/kin.owl#KIN_
+  edam: http://edamontology.org/
   OBI: http://purl.obolibrary.org/obo/OBI_
   MS: http://purl.obolibrary.org/obo/MS_
   CHMO: http://purl.obolibrary.org/obo/CHMO_
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
+  CAMO: https://github.com/include-dcc/camo/releases/latest/download/camo.owl#
+  ucum: https://units-of-measurement.org/
 
 default_prefix: cam
 default_range: string
@@ -142,6 +144,11 @@ classes:
       - external_id
       - access_policy_id
       - study_id
+    slot_usage:
+      access_policy_id:
+        required: true
+      study_id:
+        required: true
   AccessPolicy:
     title: Access Policy
     description: The access policy that describes the controls around use of
@@ -335,6 +342,7 @@ classes:
       subject_id:
         required: true
         description: The family member Subject who is the relationship "object".
+  # Do we want to add a constraint to prevent more than one fam_id + sub_id or is that OK?
   FamilyMembership:
     title: Family Membership
     description: Designates a Subject as a member of a family with a specified role.
@@ -384,6 +392,8 @@ classes:
           - range: msGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
   Concept:
     title: Concept
     description: A standardized concept with display information.
@@ -451,6 +461,7 @@ classes:
       - biospecimen_collection_id
       - parent_sample_id
       - sample_type
+      - subject_id
       - processing
       - availability_status
       - storage_method
@@ -461,6 +472,8 @@ classes:
         range: bsGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
       biospecimen_collection_id:
         description: Biospecimen Collection during which this sample was
           generated.
@@ -500,6 +513,8 @@ classes:
         range: string
         required: true
         identifier: true
+      sample_id:
+        required: true
   Encounter:
     title: Participant Encounter
     description: An event at which data was collected about a participant,
@@ -517,6 +532,8 @@ classes:
         range: enGlobalID
         required: true
         identifier: true
+      subject_id:
+        required: true
   EncounterDefinition:
     title: Encounter Definition
     description: A definition of an encounter type in this study, ie, an event
@@ -626,6 +643,8 @@ classes:
   Dataset:
     title: Dataset
     description: Set of files grouped together for release.
+    mixins:
+      - Record
     slots:
       - dataset_id
       - name
@@ -1010,7 +1029,7 @@ slots:
   concept_curie:
     title: Concept Curie
     description: The standardized curie for the term.
-    range: uriorcurie
+    range: Concept
   display:
     title: Display String
     description: The friendly display string of the coded term.
