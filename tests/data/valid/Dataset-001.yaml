@@ -1,6 +1,6 @@
 dataset_id: ls-h7rc1m2nvw
 name: M00M00 release 1
-do_id: 10.5072/cam-testdata.bc5dx08a
+do_id: https://doi.org/10.5072/cam-testdata.bc5dx08a
 file_id:
 - dr-88uhd8kdda
 - dr-8racu3r89t

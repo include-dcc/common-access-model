@@ -4,9 +4,9 @@ encounter_id: en-wbpon00qtl
 age_at_assertion: 1826
 age_at_event: 0
 concept:
-- HP:0006695
+- HP:0006695  # Atrioventricular canal defect
 value_concept:
-- snomedct:410515003
+- snomedct:410515003  # Known present
 external_id:
 - https://example.org/cam-testdata/tiny/SubjectAssertion/trio1-proband-avsd
 access_policy_id: co-ajdm9fyxxz

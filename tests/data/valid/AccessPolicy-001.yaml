@@ -1,6 +1,6 @@
 access_policy_id: co-ajdm9fyxxz
 data_use_accession: DBGAP:phs000000
-data_use_permission: DUO:0000007
-data_use_modifier: DUO:0000021
+data_use_permission: DUO:0000007  # disease specific research
+data_use_modifier: DUO:0000021  # ethics approval required
 disease_limitation: mesh:D012919
 access_description: Use limited to studies of growth rate.

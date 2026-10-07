@@ -1,10 +1,10 @@
 sample_id: bs-1zcz596f79
 biospecimen_collection_id: bsc-v721ubzcsj
-sample_type: UBERON:0000178
+sample_type: UBERON:0000178  # blood
 subject_id: pt-0u4gl52nuc
-availability_status: snomedct:103328004
+availability_status: snomedct:103328004  # Available
 storage_method:
-- OBI:0000819
+- OBI:0000819  # anticoagulant tube storage of blood specimen
 external_id:
 - https://example.org/cam-testdata/tiny/Sample/trio1-proband-blood
 access_policy_id: co-ajdm9fyxxz

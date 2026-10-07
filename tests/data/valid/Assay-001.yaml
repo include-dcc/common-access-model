@@ -5,7 +5,7 @@ sample_id:
 - bs-55cg5o8i0k
 file_id:
 - dr-bpfgefc86h
-assay_type: OBI:0002117
+assay_type: OBI:0002117  # whole genome sequencing assay
 activity_definition_id: ad-9uamjmgmeq
 external_id:
 - https://example.org/cam-testdata/tiny/Assay/trio1-father-wgs

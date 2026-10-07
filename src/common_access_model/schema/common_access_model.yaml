@@ -249,7 +249,7 @@ classes:
       - bibliographic_reference
     slot_usage:
       do_id:
-        range: string
+        range: uri
         required: true
         identifier: true
   Investigator:
