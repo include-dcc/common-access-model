@@ -30230,7 +30230,7 @@ slots:
     - DOI
     is_usage_slot: true
     usage_slot_name: do_id
-    range: string
+    range: uri
     required: true
     multivalued: false
   Subject_subject_id:
@@ -30988,7 +30988,7 @@ classes:
       do_id:
         name: do_id
         identifier: true
-        range: string
+        range: uri
         required: true
     class_uri: cam:DOI
   Investigator:
@@ -31569,7 +31569,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-07T17:23:31'
-source_file_size: 38730
-generation_date: '2026-10-07T17:23:41'
+source_file_date: '2026-10-07T20:04:18'
+source_file_size: 38727
+generation_date: '2026-10-07T20:04:31'
 
