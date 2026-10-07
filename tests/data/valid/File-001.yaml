@@ -9,12 +9,12 @@ sample_id:
 - bs-x1o5ezuit1
 filename: TRIO1.joint.vcf.gz
 file_extension: .vcf.gz
-data_category: edam:topic_0199
-data_type: edam:data_3498
-format: edam:format_3016
+data_category: edam:topic_0199  # Genetic variation
+data_type: edam:data_3498  # Sequence variations
+format: edam:format_3016  # VCF
 size: 362905217
 hash:
-- hash_type: MS:1000568
+- hash_type: MS:1000568  # MD5
   hash_value: 0ac96d1b3e18024fe2f36ce17807c80a
 external_id:
 - https://example.org/cam-testdata/tiny/File/trio1-joint-vcf

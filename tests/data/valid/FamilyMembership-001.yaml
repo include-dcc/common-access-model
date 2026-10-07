@@ -1,7 +1,7 @@
 family_membership_id: fmb-e6elokv6qd
 family_id: gr-gm96zwr6qd
 subject_id: pt-r4rv0bzkwc
-family_role: KIN:028
+family_role: KIN:028  # isBiologicalFatherOf
 external_id:
 - https://example.org/cam-testdata/tiny/FamilyMembership/trio1-father
 access_policy_id: co-ajdm9fyxxz

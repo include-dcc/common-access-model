@@ -30,7 +30,7 @@ publication:
   - https://example.org/cam-testdata/tiny/Publication/s1-pub1
   access_policy_id: co-ajdm9fyxxz
   study_id: sd-7hwpqzc2yr
-do_id: 10.5072/cam-testdata.bc5dx08a
+do_id: https://doi.org/10.5072/cam-testdata.bc5dx08a
 external_id:
 - https://studies.cows-come-home.gov/cud?id=M00M00-01
 - https://www.ncbi.nlm.nih.gov/projects/gap/cgi-bin/study.cgi?study_id=phs000000

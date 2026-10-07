@@ -1,6 +1,6 @@
 subject_id: pt-0u4gl52nuc
-subject_type: CAMO:0000024
-organism_type: NCBITaxon:9606
+subject_type: CAMO:0000024  # Participant
+organism_type: NCBITaxon:9606  # Homo sapiens
 external_id:
 - https://example.org/cam-testdata/tiny/Subject/trio1-proband
 access_policy_id: co-ajdm9fyxxz

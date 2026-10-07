@@ -1,7 +1,7 @@
 aliquot_id: alq-f18iqw2be0
 sample_id: bs-55cg5o8i0k
 quantity_number: 0.1
-quantity_unit: ucum:ml
+quantity_unit: ucum:ml  # ml
 external_id:
 - https://example.org/cam-testdata/tiny/Aliquot/trio1-father-dna-a1
 access_policy_id: co-ajdm9fyxxz
