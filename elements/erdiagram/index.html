@@ -326,6 +326,10 @@ Investigator {
     string investigator_title  
     uriorcurieList external_id  
 }
+Person {
+    pnGlobalID person_id  
+    uriorcurieList external_id  
+}
 Publication {
     string bibliographic_reference  
     uri website  
@@ -464,6 +468,9 @@ File ||--}o Sample : "sample_id"
 File ||--}o Subject : "subject_id"
 Investigator ||--|| AccessPolicy : "access_policy_id"
 Investigator ||--|| Study : "study_id"
+Person ||--|| AccessPolicy : "access_policy_id"
+Person ||--|| Study : "study_id"
+Person ||--}| Subject : "subject_id"
 Publication ||--|| AccessPolicy : "access_policy_id"
 Publication ||--|| Study : "study_id"
 Record ||--|| AccessPolicy : "access_policy_id"

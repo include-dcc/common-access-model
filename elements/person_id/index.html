@@ -8,7 +8,7 @@
       
       
       
-        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/external_id/">
+        <link rel="canonical" href="https://include-dcc.github.io/common-access-model/elements/person_id/">
       
       
       
@@ -21,7 +21,7 @@
     
     
       
-        <title>Slot: External Identifiers (external_id) - common-access-model</title>
+        <title>Slot: Person ID (person_id) - common-access-model</title>
       
     
     
@@ -84,7 +84,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slot-external-identifiers-external_id" class="md-skip">
+        <a href="#slot-person-id-person_id" class="md-skip">
           Skip to content
         </a>
       
@@ -126,7 +126,7 @@
         <div class="md-header__topic" data-md-component="header-topic">
           <span class="md-ellipsis">
             
-              Slot: External Identifiers (external_id)
+              Slot: Person ID (person_id)
             
           </span>
         </div>
@@ -522,10 +522,10 @@
   
 
 
-<h1 id="slot-external-identifiers-external_id">Slot: External Identifiers (external_id)</h1>
-<p><em>Other identifiers for this entity, eg, from the submitting study or in systems like dbGaP</em></p>
+<h1 id="slot-person-id-person_id">Slot: Person ID (person_id)</h1>
+<p><em>Global ID for the Person record</em></p>
 <div>
-<p>URI: <a href="https://includedcc.org/common-access-model/external_id">cam:external_id</a></p>
+<p>URI: <a href="https://includedcc.org/common-access-model/person_id">cam:person_id</a></p>
 <!-- no inheritance hierarchy -->
 <h2 id="applicable-classes">Applicable Classes</h2>
 <table>
@@ -538,119 +538,9 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../Record/">Record</a></td>
-<td>One row / entity within the database</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Study/">Study</a></td>
-<td>Study Metadata</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../StudyMetadata/">StudyMetadata</a></td>
-<td>Additional features about studies that may not apply to all studies</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../VirtualBiorepository/">VirtualBiorepository</a></td>
-<td>An organization that can provide access to specimen for further analysis</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../DOI/">DOI</a></td>
-<td>A DOI is a permanent reference with metadata about a digital object</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Investigator/">Investigator</a></td>
-<td>An individual who made contributions to the collection, analysis, or sharing ...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Publication/">Publication</a></td>
-<td>Information about a specific publication</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Subject/">Subject</a></td>
-<td>This entity is the subject about which data or references are recorded</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Demographics/">Demographics</a></td>
-<td>Basic participant demographics summary</td>
-<td>no</td>
-</tr>
-<tr>
 <td><a href="../Person/">Person</a></td>
 <td>Links Subjects across study contexts</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Family/">Family</a></td>
-<td>A group of individuals of some relation who are grouped together in a study</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../FamilyRelationship/">FamilyRelationship</a></td>
-<td>A relationship between two Subjects</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../FamilyMembership/">FamilyMembership</a></td>
-<td>Designates a Subject as a member of a family with a specified role</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../SubjectAssertion/">SubjectAssertion</a></td>
-<td>Assertion about a particular Subject</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Sample/">Sample</a></td>
-<td>A functionally equivalent specimen taken from a participant or processed from...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../BiospecimenCollection/">BiospecimenCollection</a></td>
-<td>A biospecimen collection event which yields one or more Samples</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Aliquot/">Aliquot</a></td>
-<td>A specific tube or amount of a biospecimen associated with a Sample</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Encounter/">Encounter</a></td>
-<td>An event at which data was collected about a participant, an intervention was...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../EncounterDefinition/">EncounterDefinition</a></td>
-<td>A definition of an encounter type in this study, ie, an event at which data w...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../ActivityDefinition/">ActivityDefinition</a></td>
-<td>A definition of an activity in this study, eg, a biospecimen collection, assa...</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../File/">File</a></td>
-<td>File</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Assay/">Assay</a></td>
-<td>A specific assay that was performed on given subject(s) or sample(s)</td>
-<td>no</td>
-</tr>
-<tr>
-<td><a href="../Dataset/">Dataset</a></td>
-<td>Set of files grouped together for release</td>
-<td>no</td>
+<td>yes</td>
 </tr>
 </tbody>
 </table>
@@ -666,11 +556,11 @@
 <tbody>
 <tr>
 <td>Range</td>
-<td><a href="../Uriorcurie/">Uriorcurie</a></td>
+<td><a href="../Person/">Person</a></td>
 </tr>
 <tr>
 <td>Domain Of</td>
-<td><a href="../Record/">Record</a></td>
+<td><a href="../Person/">Person</a></td>
 </tr>
 </tbody>
 </table>
@@ -684,8 +574,8 @@
 </thead>
 <tbody>
 <tr>
-<td>Multivalued</td>
-<td>Yes</td>
+<td></td>
+<td></td>
 </tr>
 </tbody>
 </table>
@@ -705,27 +595,25 @@
 <tbody>
 <tr>
 <td>self</td>
-<td>cam:external_id</td>
+<td>cam:person_id</td>
 </tr>
 <tr>
 <td>native</td>
-<td>cam:external_id</td>
+<td>cam:person_id</td>
 </tr>
 </tbody>
 </table>
 <h2 id="linkml-source">LinkML Source</h2>
 <details>
-<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">external_id</span>
-<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Other identifiers for this entity, eg, from the submitting study or in</span>
-<span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">systems like dbGaP</span>
-<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">External Identifiers</span>
+<div class="highlight"><pre><span></span><code><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">person_id</span>
+<span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Global ID for the Person record</span>
+<span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person ID</span>
 <span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
 <span class="nt">domain_of</span><span class="p">:</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Record</span>
-<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">uriorcurie</span>
-<span class="nt">required</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
-<span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
+<span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Person</span>
+<span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
 </details>
 </div>

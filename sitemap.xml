@@ -329,6 +329,14 @@
          <lastmod>2026-10-07</lastmod>
     </url>
     <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/Person/</loc>
+         <lastmod>2026-10-07</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/PnGlobalID/</loc>
+         <lastmod>2026-10-07</lastmod>
+    </url>
+    <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/PtGlobalID/</loc>
          <lastmod>2026-10-07</lastmod>
     </url>
@@ -734,6 +742,10 @@
     </url>
     <url>
          <loc>https://include-dcc.github.io/common-access-model/elements/participant_lifespan_stage/</loc>
+         <lastmod>2026-10-07</lastmod>
+    </url>
+    <url>
+         <loc>https://include-dcc.github.io/common-access-model/elements/person_id/</loc>
          <lastmod>2026-10-07</lastmod>
     </url>
     <url>
