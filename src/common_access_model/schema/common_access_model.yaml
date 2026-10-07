@@ -70,6 +70,10 @@ types:
     uri: xsd:string
     base: str
     description: Dewrangle pt global ID. For FHIR Patient Resources.
+  pnGlobalID:
+    uri: xsd:string
+    base: str
+    description: Dewrangle pn global ID. For FHIR Person Resources.
   obGlobalID:
     uri: xsd:string
     base: str
@@ -306,6 +310,23 @@ classes:
       subject_id:
         required: true
         identifier: true
+  Person:
+    title: Person
+    description: Links Subjects across study contexts. All Subjects in a given person record
+      are known to be the same individual.
+    mixins:
+      - Record
+    slots:
+      - person_id
+      - subject_id
+    slot_usage:
+      person_id:
+        range: pnGlobalID
+        required: true
+        identifier: true
+      subject_id:
+        required: true
+        multivalued: true
   Family:
     title: Family
     description: A group of individuals of some relation who are grouped together in a study.
@@ -707,6 +728,11 @@ slots:
     title: Study ID
     description: INCLUDE Global ID for the Subject
     range: Subject
+    multivalued: false
+  person_id:
+    title: Person ID
+    description: Global ID for the Person record
+    range: Person
     multivalued: false
   assertion_id:
     title: Assertion ID
