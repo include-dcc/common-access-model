@@ -4,6 +4,9 @@
 # If it is not on path, provide the path to the executable in the following line.
 #set windows-shell := ["C:/Program Files/Git/usr/bin/sh", "-cu"]
 
+# Ensures Windows uses UTF8 encoding- needed to support certain characters.
+export PYTHONUTF8 := "1"
+
 # ============ Variables used in recipes ============
 
 # Load environment variables from config.public.mk or specified file
