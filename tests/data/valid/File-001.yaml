@@ -7,6 +7,7 @@ sample_id:
 - bs-55cg5o8i0k
 - bs-dy45fxh8vr
 - bs-x1o5ezuit1
+file_content_access_policy_id: co-ajdm9fyxxz
 filename: TRIO1.joint.vcf.gz
 file_extension: .vcf.gz
 data_category: edam:topic_0199  # Genetic variation
