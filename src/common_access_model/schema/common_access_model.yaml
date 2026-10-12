@@ -603,6 +603,7 @@ classes:
       - file_id
       - subject_id
       - sample_id
+      - file_content_access_policy_id
       - filename
       - file_extension
       - data_category
@@ -1262,6 +1263,12 @@ slots:
     title: File ID
     description: Unique identifier for this File.
     range: File
+  file_content_access_policy_id:
+    title: File Content Access Policy
+    description: The access policy that applies to the content of the file.
+      This is separate from the access policy that applies to the file metadata.
+    range: AccessPolicy
+    required: true
   filename:
     title: Filename
     description: The name of the file.
