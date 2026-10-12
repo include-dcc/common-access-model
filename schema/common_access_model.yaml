@@ -29885,6 +29885,19 @@ slots:
     - Assay
     - Dataset
     range: File
+  file_content_access_policy_id:
+    name: file_content_access_policy_id
+    definition_uri: https://includedcc.org/common-access-model/file_content_access_policy_id
+    description: The access policy that applies to the content of the file. This is
+      separate from the access policy that applies to the file metadata.
+    title: File Content Access Policy
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:file_content_access_policy_id
+    owner: File
+    domain_of:
+    - File
+    range: AccessPolicy
+    required: true
   filename:
     name: filename
     definition_uri: https://includedcc.org/common-access-model/filename
@@ -31543,6 +31556,7 @@ classes:
     - File_file_id
     - File_subject_id
     - File_sample_id
+    - file_content_access_policy_id
     - filename
     - file_extension
     - data_category
@@ -31652,7 +31666,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-07T21:52:47'
-source_file_size: 39380
-generation_date: '2026-10-07T21:52:57'
+source_file_date: '2026-10-12T15:04:20'
+source_file_size: 39689
+generation_date: '2026-10-12T15:04:33'
 
