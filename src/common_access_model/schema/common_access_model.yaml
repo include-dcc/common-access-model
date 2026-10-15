@@ -662,6 +662,52 @@ classes:
       assay_type:
         required: true
 
+
+  SequencingAssay:
+    title: Sequencing Experiment Assay
+    description: A sequencing experiment performed on a Biospecimen.
+    is_a: Assay
+    slots:
+      - sequencing_center_id
+      - library_name
+      - experiment_date
+      - experiment_strategy
+      - is_paired_end
+      - platform
+      - instrument_model
+      - total_reads
+      - is_adapter_trimmed
+      - adapter_sequencing # required if is_adapter_trimmed is false
+      - quality_scale
+      - reference_genome
+      - workflow_type
+      - workflow_tool
+      - workflow_version
+      - workflow_endpoint
+      - flow_cell
+      - lane_number
+
+  GenomicsAssay:
+    title: WGS/WXS Assay
+    description: A whole genome or whole exome sequencing experiment performed on a Biospecimen.
+    is_a: SequencingAssay
+    slots:
+      - max_insert_size
+      - mean_insert_size
+      - mean_depth
+      - mean_read_length
+      - target_capture_kit
+
+  TranscriptomicsAssay:
+    title: RNA Sequencing Assay
+    description: An RNA sequencing experiment performed on a Biospecimen.
+    is_a: SequencingAssay
+    slots:
+      - library_strand
+      - library_prep # is this equivalent to library_construction?
+      - library_selection
+
+
   Dataset:
     title: Dataset
     description: Set of files grouped together for release.
@@ -1353,4 +1399,115 @@ slots:
     title: Data Collection End
     description: The date that data collection started. May include only a year.
     #TODO: We could re-evaluate these as dates, but that may be too implementation specific
+    range: string
+
+
+# Sequencing Assay slots
+  reference_genome:
+    title: Reference Genome
+    description: >-
+      The reference genome build this file is aligned to or was generated
+      against.
+    range: EnumReferenceGenome
+  workflow_type:
+    title: Workflow Type
+    description: >-
+      The type of workflow that produced this file. (Kids First
+      Dataservice field: worflow_type)
+    range: string
+  workflow_tool:
+    title: Workflow Tool
+    description: >-
+      The tool used by the workflow that produced this file. (Kids First
+      Dataservice field: worflow_tool)
+    range: string
+  workflow_version:
+    title: Workflow Version
+    description: The version of the workflow tool used to produce this file.
+    range: string
+  flow_cell:
+    title: Flow Cell
+    description: The flow cell identifier for this read group.
+    range: string
+  lane_number:
+    title: Lane Number
+    description: The lane number for this read group.
+    range: integer
+  quality_scale:
+    title: Quality Scale
+    description: The quality score scale used for this read group.
+    range: EnumReadGroupQualityScale
+  library_name:
+    title: Library Name
+    description: The name of the sequencing library.
+    range: string
+  experiment_date:
+    title: Experiment Date
+    description: The date the sequencing experiment was performed.
+    range: date
+  experiment_strategy:
+    title: Experiment Strategy
+    description: The sequencing strategy used.
+    range: EnumSequencingStrategy
+  library_strand:
+    title: Library Strand
+    description: The strandedness of the sequencing library.
+    range: EnumLibraryStrand
+  library_prep:
+    title: Library Prep
+    description: The library preparation method used.
+    range: EnumLibraryPrep
+  library_selection:
+    title: Library Selection
+    description: The library selection method used.
+    range: EnumLibrarySelection
+  is_paired_end:
+    title: Is Paired End
+    description: Whether the sequencing reads are paired-end.
+    range: boolean
+  platform:
+    title: Platform
+    description: The sequencing platform used.
+    range: EnumSequencingPlatform
+  instrument_model:
+    title: Instrument Model
+    description: The sequencing instrument model used.
+    range: EnumSequencingInstrument
+  max_insert_size:
+    title: Max Insert Size
+    description: The maximum insert size, in base pairs.
+    range: integer
+  mean_insert_size:
+    title: Mean Insert Size
+    description: The mean insert size, in base pairs.
+    range: float
+  mean_depth:
+    title: Mean Depth
+    description: The mean sequencing depth of coverage.
+    range: float
+  total_reads:
+    title: Total Reads
+    description: The total number of reads generated.
+    range: integer
+  mean_read_length:
+    title: Mean Read Length
+    description: The mean read length, in base pairs.
+    range: integer
+  target_capture_kit:
+    title: Target Capture Kit
+    description: The target capture kit used, if any.
+    range: string
+  read_pair_number:
+    title: Read Pair Number
+    description: >-
+      The read pair number (1 or 2) for this read group, for paired-end
+      sequencing.
+    range: integer
+  is_adapter_trimmed:
+    title: Is Adapter Trimmed
+    description: Whether adapter sequences were trimmed.
+    range: boolean
+  adapter_sequencing:
+    title: Adapter Sequence
+    description: The adapter sequence used, if known.
     range: string
