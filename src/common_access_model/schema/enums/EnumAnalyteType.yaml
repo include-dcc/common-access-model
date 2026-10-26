@@ -1,0 +1,22 @@
+id: https://includedcc.org/common-access-model/EnumAnalyteType
+name: EnumAnalyteType
+enums:
+  EnumAnalyteType:
+    description: The type of analyte that was extracted from the biospecimen.
+    reachable_from:
+      source_ontology: bioregistry:ncit
+      source_nodes:
+        - C706
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      C449:
+        title: DNA
+        description: A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information.
+        meaning: C449
+      C812:
+        title: RNA
+        description: Single-stranded long chain of nucleotides containing ribose.
+        meaning: C812

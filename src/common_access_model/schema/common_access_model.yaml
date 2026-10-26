@@ -29,6 +29,7 @@ prefixes:
   NCBITaxon: http://purl.obolibrary.org/obo/NCBITaxon_
   CAMO: https://github.com/include-dcc/camo/releases/latest/download/camo.owl#
   ucum: https://units-of-measurement.org/
+  valuesets: https://w3id.org/valuesets/
 
 default_prefix: cam
 default_range: string
@@ -64,6 +65,10 @@ imports:
   - enums/EnumUnknown
   - enums/EnumUnknownOther
   - enums/EnumVitalStatus
+
+  - enums/EnumAnalyteType
+  - enums/EnumLibraryPrep
+  - enums/EnumLibrarySelection
 
 types:
   ptGlobalID:

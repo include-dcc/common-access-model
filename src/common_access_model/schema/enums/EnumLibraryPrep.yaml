@@ -1,0 +1,23 @@
+---
+id: https://includedcc.org/common-access-model/EnumLibraryPrep
+name: EnumLibraryPrep
+enums:
+  EnumLibraryPrep:
+    description: 
+    reachable_from:
+      source_ontology: bioregistry:obi
+      source_nodes:
+        - OBI:0666666
+      include_self: true
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      OBI:0000848:
+        title: polyA RNA extraction
+        description: A RNA extraction process typically involving the use of poly dT oligomers in which the desired output material is polyA RNA.
+        meaning: OBI:0000848
+      OBI:0000855:
+        title: total RNA depletion
+        description: A RNA extraction process in which total cellular and organelle RNA are extracted.
+        meaning: OBI:0000855
