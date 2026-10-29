@@ -67,8 +67,15 @@ imports:
   - enums/EnumVitalStatus
 
   - enums/EnumAnalyteType
+  - enums/EnumLibraryStrand
   - enums/EnumLibraryPrep
   - enums/EnumLibrarySelection
+  - enums/EnumSequencingInstrument
+  - enums/EnumSequencingCenter
+  - enums/EnumSequencingPlatform
+  - enums/EnumSequencingStrategy
+  - enums/EnumReadGroupQualityScale
+  - enums/EnumReferenceGenome
 
 types:
   ptGlobalID:
@@ -1408,12 +1415,20 @@ slots:
 
 
 # Sequencing Assay slots
+  sequencing_center_id:
+    title: Sequencing Center ID
+    description: The unique identifier for the sequencing center that performed the assay.
+    range: EnumSequencingCenter
   reference_genome:
     title: Reference Genome
     description: >-
       The reference genome build this file is aligned to or was generated
       against.
     range: EnumReferenceGenome
+  workflow_endpoint:
+    title: Workflow Endpoint
+    description: The endpoint of the workflow that produced this file. (Kids First Dataservice field - worflow_endpoint)
+    range: string
   workflow_type:
     title: Workflow Type
     description: >-

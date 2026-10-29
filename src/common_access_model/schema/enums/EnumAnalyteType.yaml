@@ -5,12 +5,6 @@ enums:
     description: The type of analyte that was extracted from the biospecimen.
     reachable_from:
       source_ontology: bioregistry:ncit
-      source_nodes:
-        - C706
-      include_self: true
-      is_direct: false
-      relationship_types:
-        - rdfs:subClassOf
     permissible_values:
       C449:
         title: DNA

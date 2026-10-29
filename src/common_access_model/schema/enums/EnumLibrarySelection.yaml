@@ -6,12 +6,6 @@ enums:
     description: 
     reachable_from:
       source_ontology: bioregistry:ncit
-      source_nodes:
-        - C15241
-      include_self: true
-      is_direct: false
-      relationship_types:
-        - rdfs:subClassOf
     permissible_values:
       C163986:
         title: Hybrid Selection
