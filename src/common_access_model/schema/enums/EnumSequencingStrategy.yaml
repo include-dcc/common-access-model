@@ -1,0 +1,39 @@
+id: https://includedcc.org/common-access-model/EnumSequencingStrategy
+name: EnumSequencingStrategy
+enums:
+  EnumSequencingStrategy:
+    title: Sequencing Strategy
+    description: >-
+      Sequencing strategies, from
+      kf_lib_data_ingest.common.constants.SEQUENCING.STRATEGY.
+    permissible_values:
+      linked_wgs:
+        title: Linked-Read WGS (10x Chromium)
+      methyl:
+        title: Methylation
+      mrna:
+        title: miRNA-Seq
+      rna:
+        title: RNA-Seq
+      wgs:
+        title: WGS
+      wxs:
+        title: WXS
+      targeted:
+        title: Targeted Sequencing
+      panel:
+        title: Panel
+      scrna:
+        title: scRNA-Seq
+      snrna:
+        title: snRNA-Seq
+      ccs_wgs:
+        title: Circular Consensus Sequencing WGS
+      ccs_rna:
+        title: Circular Consensus Sequencing RNA-Seq
+      clr_wgs:
+        title: Continuous Long Reads WGS
+      clr_rna:
+        title: Continuous Long Reads RNA-Seq
+      ont_wgs:
+        title: ONT WGS
