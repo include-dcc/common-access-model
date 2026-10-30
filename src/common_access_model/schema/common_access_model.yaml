@@ -673,6 +673,7 @@ classes:
       - description
       - do_id
       - file_id
+      - actual_number_of_participants
       - publication
         #TODO: Are these good elements for the core entity?
       - data_collection_start
