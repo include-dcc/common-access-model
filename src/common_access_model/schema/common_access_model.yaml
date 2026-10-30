@@ -162,7 +162,9 @@ classes:
       - data_use_accession
       - data_use_permission
       - data_use_modifier
-      - disease_limitation
+      - disease_limitation_source_code
+      - disease_limitation_source_text
+      - disease_limitation_concept
       - access_description
       - website
     slot_usage:
@@ -711,11 +713,24 @@ slots:
     title: Data Use Modifier
     description: Additional modifiers that limit data use.
     range: EnumDataUseModifier
-  disease_limitation:
+    multivalued: true
+  disease_limitation_source_code:
+    title: Data Use Disease Limitation Source Code
+    description: If the access is limited to a specific disease purpose,
+      it is specified here. This is a short code that may be used.
+    range: string
+  disease_limitation_source_text:
+    title: Data Use Disease Limitation Source Text
+    description: If the access is limited to a specific disease purpose,
+      it is specified here. This is the original text description.
+    range: string
+  disease_limitation_concept:
     title: Data Use Disease Limitation
     description: If the access is limited to a specific disease purpose,
-      it is specified here.
-    range: string
+      it is specified here. This is an assigned standardized term. It
+      may be assigned secondhand and therefore not be guaranteed computable 
+      with respect to the original limitations.
+    range: Concept
   access_description:
     title: Access Description
     description: Any additional information to support access requests.
