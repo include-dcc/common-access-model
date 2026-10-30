@@ -330,7 +330,7 @@
 
 
 
-        AccessPolicy --&gt; "0..1" EnumDataUseModifier : data_use_modifier
+        AccessPolicy --&gt; "*" EnumDataUseModifier : data_use_modifier
         click EnumDataUseModifier href "../EnumDataUseModifier/"
 
 
@@ -346,7 +346,20 @@
 
 
 
-      AccessPolicy : disease_limitation
+      AccessPolicy : disease_limitation_concept
+
+
+
+
+
+        AccessPolicy --&gt; "0..1" Concept : disease_limitation_concept
+        click Concept href "../Concept/"
+
+
+
+      AccessPolicy : disease_limitation_source_code
+
+      AccessPolicy : disease_limitation_source_text
 
       AccessPolicy : website
 
@@ -383,13 +396,25 @@
 </tr>
 <tr>
 <td><a href="../data_use_modifier/">data_use_modifier</a></td>
-<td>0..1 <br/> <a href="../EnumDataUseModifier/">EnumDataUseModifier</a></td>
+<td>* <br/> <a href="../EnumDataUseModifier/">EnumDataUseModifier</a></td>
 <td>Additional modifiers that limit data use</td>
 <td>direct</td>
 </tr>
 <tr>
-<td><a href="../disease_limitation/">disease_limitation</a></td>
+<td><a href="../disease_limitation_source_code/">disease_limitation_source_code</a></td>
 <td>0..1 <br/> <a href="../String/">String</a></td>
+<td>If the access is limited to a specific disease purpose, it is specified here</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../disease_limitation_source_text/">disease_limitation_source_text</a></td>
+<td>0..1 <br/> <a href="../String/">String</a></td>
+<td>If the access is limited to a specific disease purpose, it is specified here</td>
+<td>direct</td>
+</tr>
+<tr>
+<td><a href="../disease_limitation_concept/">disease_limitation_concept</a></td>
+<td>0..1 <br/> <a href="../Concept/">Concept</a></td>
 <td>If the access is limited to a specific disease purpose, it is specified here</td>
 <td>direct</td>
 </tr>
@@ -593,8 +618,11 @@
 <div class="highlight"><pre><span></span><code><span class="nt">access_policy_id</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">co-ajdm9fyxxz</span>
 <span class="nt">data_use_accession</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DBGAP:phs000000</span>
 <span class="nt">data_use_permission</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000007</span><span class="w">  </span><span class="c1"># disease specific research</span>
-<span class="nt">data_use_modifier</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000021</span><span class="w">  </span><span class="c1"># ethics approval required</span>
-<span class="nt">disease_limitation</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mesh:D012919</span>
+<span class="nt">data_use_modifier</span><span class="p">:</span><span class="w"> </span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">DUO:0000021</span><span class="w">  </span><span class="c1"># ethics approval required</span>
+<span class="nt">disease_limitation_source_code</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">BAV</span>
+<span class="nt">disease_limitation_source_text</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Bicuspid Aortic Valve</span>
+<span class="nt">disease_limitation_concept</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">mesh:D000082882</span>
 <span class="nt">access_description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Use limited to studies of growth rate.</span>
 </code></pre></div>
 <h2 id="linkml-source">LinkML Source</h2>
@@ -610,7 +638,9 @@
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_accession</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_permission</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">data_use_modifier</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_source_code</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_source_text</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_concept</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_description</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">website</span>
 <span class="nt">slot_usage</span><span class="p">:</span>
@@ -679,17 +709,41 @@
 <span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">EnumDataUseModifier</span>
-<span class="w">  </span><span class="nt">disease_limitation</span><span class="p">:</span>
-<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation</span>
+<span class="w">    </span><span class="nt">multivalued</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+<span class="w">  </span><span class="nt">disease_limitation_source_code</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_source_code</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">If the access is limited to a specific disease purpose, it is specified</span>
-<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">here.</span>
-<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Disease Limitation</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">here. This is a short code that may be used.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Disease Limitation Source Code</span>
 <span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
 <span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
 <span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
 <span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
 <span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">disease_limitation_source_text</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_source_text</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">If the access is limited to a specific disease purpose, it is specified</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">here. This is the original text description.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Disease Limitation Source Text</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">string</span>
+<span class="w">  </span><span class="nt">disease_limitation_concept</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">disease_limitation_concept</span>
+<span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">If the access is limited to a specific disease purpose, it is specified</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">here. This is an assigned standardized term. It may be assigned secondhand and</span>
+<span class="w">      </span><span class="l l-Scalar l-Scalar-Plain">therefore not be guaranteed computable with respect to the original limitations.</span>
+<span class="w">    </span><span class="nt">title</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Data Use Disease Limitation</span>
+<span class="w">    </span><span class="nt">from_schema</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">https://includedcc.org/common-access-model</span>
+<span class="w">    </span><span class="nt">rank</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000</span>
+<span class="w">    </span><span class="nt">owner</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">domain_of</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">AccessPolicy</span>
+<span class="w">    </span><span class="nt">range</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Concept</span>
 <span class="w">  </span><span class="nt">access_description</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">name</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">access_description</span>
 <span class="w">    </span><span class="nt">description</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">Any additional information to support access requests.</span>

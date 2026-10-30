@@ -28551,18 +28551,44 @@ slots:
     domain_of:
     - AccessPolicy
     range: EnumDataUseModifier
-  disease_limitation:
-    name: disease_limitation
-    definition_uri: https://includedcc.org/common-access-model/disease_limitation
+    multivalued: true
+  disease_limitation_source_code:
+    name: disease_limitation_source_code
+    definition_uri: https://includedcc.org/common-access-model/disease_limitation_source_code
     description: If the access is limited to a specific disease purpose, it is specified
-      here.
-    title: Data Use Disease Limitation
+      here. This is a short code that may be used.
+    title: Data Use Disease Limitation Source Code
     from_schema: https://includedcc.org/common-access-model
-    slot_uri: cam:disease_limitation
+    slot_uri: cam:disease_limitation_source_code
     owner: AccessPolicy
     domain_of:
     - AccessPolicy
     range: string
+  disease_limitation_source_text:
+    name: disease_limitation_source_text
+    definition_uri: https://includedcc.org/common-access-model/disease_limitation_source_text
+    description: If the access is limited to a specific disease purpose, it is specified
+      here. This is the original text description.
+    title: Data Use Disease Limitation Source Text
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:disease_limitation_source_text
+    owner: AccessPolicy
+    domain_of:
+    - AccessPolicy
+    range: string
+  disease_limitation_concept:
+    name: disease_limitation_concept
+    definition_uri: https://includedcc.org/common-access-model/disease_limitation_concept
+    description: If the access is limited to a specific disease purpose, it is specified
+      here. This is an assigned standardized term. It may be assigned secondhand and
+      therefore not be guaranteed computable with respect to the original limitations.
+    title: Data Use Disease Limitation
+    from_schema: https://includedcc.org/common-access-model
+    slot_uri: cam:disease_limitation_concept
+    owner: AccessPolicy
+    domain_of:
+    - AccessPolicy
+    range: Concept
   access_description:
     name: access_description
     definition_uri: https://includedcc.org/common-access-model/access_description
@@ -30940,7 +30966,9 @@ classes:
     - data_use_accession
     - data_use_permission
     - data_use_modifier
-    - disease_limitation
+    - disease_limitation_source_code
+    - disease_limitation_source_text
+    - disease_limitation_concept
     - access_description
     - website
     slot_usage:
@@ -31666,7 +31694,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-10-12T15:04:20'
-source_file_size: 39689
-generation_date: '2026-10-12T15:04:33'
+source_file_date: '2026-10-30T20:55:07'
+source_file_size: 40459
+generation_date: '2026-10-30T20:55:18'
 

@@ -209,9 +209,10 @@ AccessPolicy {
     string access_description  
     coGlobalID access_policy_id  
     uriorcurie data_use_accession  
-    EnumDataUseModifier data_use_modifier  
+    EnumDataUseModifierList data_use_modifier  
     EnumDataUsePermission data_use_permission  
-    string disease_limitation  
+    string disease_limitation_source_code  
+    string disease_limitation_source_text  
     uri website  
 }
 ActivityDefinition {
@@ -410,6 +411,7 @@ Vocabulary {
     uri vocabulary_uri  
 }
 
+AccessPolicy ||--|o Concept : "disease_limitation_concept"
 ActivityDefinition ||--|| AccessPolicy : "access_policy_id"
 ActivityDefinition ||--|| Study : "study_id"
 Aliquot ||--|o Concept : "concentration_unit, quantity_unit"
