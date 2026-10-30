@@ -1,0 +1,37 @@
+---
+id: https://includedcc.org/common-access-model/EnumLibrarySelection
+name: EnumLibrarySelection
+enums:
+  EnumLibrarySelection:
+    description: 
+    reachable_from:
+      source_ontology: bioregistry:ncit
+    permissible_values:
+      C163986:
+        title: Hybrid Selection
+        description: A genomic library where the sample has been subjected to enrichment via nucleic acid hybridization. 
+        meaning: C163986
+      C17003:
+        title: PCR
+        description: A method for amplifying a DNA base sequence using multiple rounds of heat denaturation of the DNA and annealing of oligonucleotide primers complementary to flanking regions in the presence of a heat-stable polymerase
+        meaning: C17003
+      C163987:
+        title: Affinity Enrichment
+        description: A genomic library where the sample has been subjected to enrichment via binding to a target protein or oligonucleotide prior to molecular analysis.
+        meaning: C163987
+      C163988:
+        title: Poly-T Enrichment
+        description: A genomic library where the sample has been subjected to enrichment via binding to immobilized poly-T oligonucleotides, which will preferentially isolate polyadenylated (poly-A) RNAs.
+        meaning: C163988
+      C163989:
+        title: Random
+        description: A genomic library constructed to generate random DNA fragments by subjecting a genomic sample to either amplification using random primers or fragmentation via exposure to restriction enzymes or shear stress.
+        meaning: C163989
+      C163990:
+        title: rRNA Depletion
+        description: A genomic library where the sample has been subjected to a ribosomal RNA depletion step before it is amplified.
+        meaning: C163990
+      C163991:
+        title: miRNA Size Fractionation
+        description: A RNA library that has been fractionated by size exclusion methods to enrich for microRNAs.
+        meaning: C163991

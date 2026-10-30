@@ -1,0 +1,37 @@
+---
+id: https://includedcc.org/common-access-model/EnumReadGroupQualityScale
+name: EnumReadGroupQualityScale
+enums:
+  EnumReadGroupQualityScale:
+    title: Read Group Quality Scale
+    description: Quality score encoding used in FASTQ files, from the LinkML valuesets
+      SequenceQualityEncoding.
+    reachable_from:
+      source_ontology: linkml:valuesets
+      source_nodes:
+        - SequenceQualityEncoding
+      include_self: false
+      is_direct: false
+      relationship_types:
+        - rdfs:subClassOf
+    permissible_values:
+      ILLUMINA_1:3:
+        title: ILLUMINA_1_3
+        description: Illumina 1.3+ (PHRED+64, ASCII offset 64)
+        meaning: ILLUMINA_1:3
+      ILLUMINA_1:5:
+        title: ILLUMINA_1_5
+        description: Illumina 1.5+ (PHRED+64, special handling for 0-2)
+        meaning: ILLUMINA_1:5
+      ILLUMINA_1:8:
+        title: ILLUMINA_1_8
+        description: Illumina 1.8+ (PHRED+33, modern standard)
+        meaning: ILLUMINA_1:8
+      SANGER:
+        title: SANGER
+        description: Sanger/Phred+33 (PHRED scores, ASCII offset 33)
+        meaning: SANGER
+      SOLEXA:
+        title: SOLEXA
+        description: Solexa+64 (Solexa scores, ASCII offset 64)
+        meaning: SOLEXA

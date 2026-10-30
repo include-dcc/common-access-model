@@ -1,0 +1,23 @@
+id: https://includedcc.org/common-access-model/EnumSequencingPlatform
+name: EnumSequencingPlatform
+enums:
+  EnumSequencingPlatform:
+    title: Sequencing Platform
+    description: >-
+      Sequencing platforms, from
+      kf_lib_data_ingest.common.constants.SEQUENCING.PLATFORM.
+    permissible_values:
+      complete_genomics:
+        title: Complete Genomics
+      illumina:
+        title: Illumina
+      ion_torrent:
+        title: Ion Torrent
+      ls454:
+        title: LS454
+      pacbio:
+        title: PacBio
+      solid:
+        title: SOLiD
+      ont:
+        title: ONT

@@ -1,0 +1,80 @@
+---
+id: https://w3id.org/carrollaboratory/kf-access-model/EnumSequencingCenter
+name: EnumSequencingCenter
+enums:
+  EnumSequencingCenter:
+    title: Sequencing Center
+    description: >-
+      Sequencing centers with an ID in Kids First, from
+      kf_lib_data_ingest.common.constants.SEQUENCING.CENTER.
+    permissible_values:
+      SC_0CNMF82N:
+        title: Ashion
+      SC_A1JNZAZH:
+        title: Baylor College of Medicine
+      SC_FN7NH453:
+        title: British Columbia Cancer Agency Genome Sciences Centre
+      SC_WWEQ9HFY:
+        title: BGI@CHOP Genome Center
+      SC_FAD4KCQG:
+        title: BGI
+      SC_DGDDQVYR:
+        title: Broad Institute
+      SC_31369RXZ:
+        title: CBTN Unsequenced
+      SC_9NSC532X:
+        title: CHOP
+      SC_ZZPPF973:
+        title: CHOP DGD
+      SC_D30SEWS4:
+        title: Complete Genomics
+      SC_MDY0AZMZ:
+        title: CSIR - Institute of Genomics and Integrative Biology, Delhi, India
+      SC_CATTVETT:
+        title: Feline Diagnostics LLC
+      SC_XXXXXXX2:
+        title: fg
+      SC_5EDC0A25:
+        title: GeneDx
+      SC_75KENA7A:
+        title: Humangenetik Tübingen
+      SC_X1N69WJM:
+        title: HudsonAlpha Institute for Biotechnology
+      SC_N1EVHSME:
+        title: NantOmics
+      SC_2ZBAMKK0:
+        title: Novogene
+      SC_BJW95TMY:
+        title: New York Genome Center
+      SC_F6RZ51K9:
+        title: National Cancer Institute, Khan Lab
+      SC_HEXD2E5R:
+        title: National Institutes of Health
+      SC_V4CCQ3WE:
+        title: Princess Maxima Center
+      SC_9WMJKQ1X:
+        title: SickKids
+      SC_KE2ASNJM:
+        title: Genomic Clinical Core at Sidra Medical and Research Center
+      SC_1K3QGW4V:
+        title: St Jude
+      SC_SJJ0B9GN:
+        title: TEMP
+      SC_TQ8HJWGE:
+        title: Tempus
+      SC_KQ9JZG3P:
+        title: The Translational Genomics Research Institute
+      SC_5A2B1T4K:
+        title: 'UNKNOWN:CHRIS_JONES'
+      SC_MSQP04K7:
+        title: UCSF CAT
+      SC_T2A19FHX:
+        title: Variantyx
+      SC_BATJDPHB:
+        title: Virtual
+      SC_K52V7463:
+        title: Washington University
+      SC_31W52VNX:
+        title: Yale
+      SC_8JXH42X1:
+        title: Fred Hutchinson Cancer Research Center
