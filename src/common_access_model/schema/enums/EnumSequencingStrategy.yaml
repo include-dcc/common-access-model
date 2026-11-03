@@ -1,39 +1,139 @@
+---
 id: https://includedcc.org/common-access-model/EnumSequencingStrategy
 name: EnumSequencingStrategy
 enums:
   EnumSequencingStrategy:
-    title: Sequencing Strategy
-    description: >-
-      Sequencing strategies, from
-      kf_lib_data_ingest.common.constants.SEQUENCING.STRATEGY.
+    description: 
     permissible_values:
-      linked_wgs:
-        title: Linked-Read WGS (10x Chromium)
-      methyl:
-        title: Methylation
-      mrna:
-        title: miRNA-Seq
-      rna:
-        title: RNA-Seq
-      wgs:
-        title: WGS
-      wxs:
-        title: WXS
-      targeted:
-        title: Targeted Sequencing
-      panel:
-        title: Panel
-      scrna:
-        title: scRNA-Seq
-      snrna:
-        title: snRNA-Seq
-      ccs_wgs:
-        title: Circular Consensus Sequencing WGS
-      ccs_rna:
-        title: Circular Consensus Sequencing RNA-Seq
-      clr_wgs:
-        title: Continuous Long Reads WGS
-      clr_rna:
-        title: Continuous Long Reads RNA-Seq
-      ont_wgs:
-        title: ONT WGS
+
+      # WGS
+      NCIT:C101294:
+        title: Whole Genome Sequencing
+        description: A procedure that can determine the DNA sequence for nearly the
+          entire genome of an individual.
+        meaning: NCIT:C101294
+      # WES
+      NCIT:C101295:
+        title: Whole Exome Sequencing
+        description: A procedure that can determine the DNA sequence for all of the
+          exons in an individual.
+        meaning: NCIT:C101295
+      
+    # Linked-read WGS (10x)
+
+      # RNA
+      NCIT:C192768:
+        title: RNA Sequence Analysis
+        description: The determination of the sequence of purines and pyrimidines in a sample containing ribonucleic acid (RNA).
+        meaning: NCIT:C192768
+
+    # MRNA
+      NCIT:C129432:
+        title: mRNA Sequencing
+        description: A procedure that can determine the RNA sequences for all or part
+          of the poly-A tail-containing messenger RNA transcripts in an individual.
+        meaning: NCIT:C129432
+      NCIT:C156057:
+        title: MicroRNA Sequencing
+        description: A next-generation or massively parallel high-throughput DNA sequencing-based
+          procedure that can identify and quantify the microRNA sequences present
+          in a biological sample.
+        meaning: NCIT:C156057
+      
+      # scRNA
+      NCIT:C171152:
+        title: Single Cell RNA Sequencing
+        description: A procedure that can determine the nucleotide sequence for all
+          of the RNA transcripts in an amplified nucleotide sample that was derived
+          from a single cell.
+        meaning: NCIT:C171152
+
+      # snRNA?
+
+      # Panel
+      NCIT:C165600:
+        title: Tumor Panel Sequencing
+        description: An application of next-generation targeted sequencing where tumor-specific
+          genes are selected for sequencing. Using next-generation techniques, chosen
+          sequences can be sequenced to high depths that facilitate the identification
+          of variants that are present at low allele frequencies.
+        meaning: NCIT:C165600
+      NCIT:C173599:
+        title: Disease Panel Gene Sequencing
+        description: An application of next-generation targeted sequencing where a
+          disease-specific group of genes or loci are assayed for sequence alterations
+          as a screening procedure for the disease.
+        meaning: NCIT:C173599
+      NCIT:C198412:
+        title: Multi-gene Panel Sequencing
+        description: An application of next-generation targeted sequencing where the
+          sequencing primers are designed to specifically target a panel of multiple
+          genes or loci of interest.
+        meaning: NCIT:C198412
+
+    # Targeted
+      NCIT:C204828:
+        title: Targeted Capture Sequencing
+        description: A method to enrich and sequence genomic regions of interest.
+          Sequences are selected by oligonucleotides that are used to pull-down complementary
+          DNA through hybridization.
+        meaning: NCIT:C204828
+      NCIT:C158253:
+        title: Targeted Genome Sequencing
+        description: A DNA sequencing technique in which selected regions of an individual's
+          genome are sequenced.
+        meaning: NCIT:C158253
+      NCIT:C158252:
+        title: Targeted Transcriptome Sequencing
+        description: A type of whole transcriptome shotgun sequencing technique in
+          which select portions of the transcriptome are selected for sequencing.
+        meaning: NCIT:C158252
+
+
+    # Methyl
+      NCIT:C204820:
+        title: Methyl-binding Domain Sequencing
+        description: A strategy to obtain DNA sequences from (all) methylated sites.
+          Genomic DNA is randomly fragmented with ultrasonication and then methylated
+          fragments are captured by a protein with high affinity for double-stranded
+          DNA harboring methylated CpGs; non-methylated DNA fragments are washed away.
+          The methylation-enriched fraction is then barcode tagged and sequenced.
+        meaning: NCIT:C204820
+      NCIT:C204821:
+        title: Methylated DNA Immunoprecipitation Sequencing
+        description: A strategy to obtain DNA sequences from methylated sites. Genomic
+          DNA is randomly sheared by sonication and immunoprecipitated with a monoclonal
+          antibody that specifically recognizes 5-methylcytidine. The DNA fragments
+          are then isolated and sequenced.
+        meaning: NCIT:C204821
+      NCIT:C204822:
+        title: Methylation-Sensitive Restriction Enzyme Sequencing
+        description: A method to study DNA methylation. Genomic DNA is separately
+          digested with different methylation sensitive restriction enzymes and the
+          fragments are used to generate a library. Deep sequencing of the library
+          allows for accurate detection of methylation sites in the genome.
+        meaning: NCIT:C204822
+      
+
+    # Proteomics
+      NCIT:C20085:
+        title: Proteomics
+        description: The global analysis of cellular proteins. Proteomics uses a combination of sophisticated techniques including two-dimensional (2D) gel electrophoresis, image analysis, mass spectrometry, amino acid sequencing, and bio-informatics to resolve comprehensively, to quantify, and to characterize proteins. The application of proteomics provides major opportunities to elucidate disease mechanisms and to identify new diagnostic markers and therapeutic targets.
+        meaning: NCIT:C20085
+
+    # ONT WGS
+      NCIT:C146818:
+        title: Oxford Nanopore Sequencing
+        description: A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis.
+        meaning: NCIT:C146818    
+      
+      
+      # CCS_WGS, CLR_WGS
+      NCIT:C223895:
+        title: Long Read Sequencing
+        description: The sequencing of long, continuous DNA fragments.
+        meaning: NCIT:C223895
+
+    # CCS RNA
+
+    # CLR RNA

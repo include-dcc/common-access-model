@@ -3,15 +3,15 @@ name: EnumReferenceGenome
 enums:
   EnumReferenceGenome:
     title: Reference Genome
-    description: >-
-      Reference genome builds, from
-      kf_lib_data_ingest.common.constants.SEQUENCING.REFERENCE_GENOME.
     permissible_values:
-      GRCh38:
-        title: GRCh38
-      GRCh37:
+      loinc:LA14029-5:
         title: GRCh37
-      hs37d5:
-        title: hs37d5
-      hg19:
+        meaning: loinc:LA14029-5
+      loinc:LA26806-2:
+        title: GRCh38
+        meaning: loinc:LA26806-2
+      # hs37d5:
+      #   title: hs37d5
+      loinc:LA14025-3:
         title: hg19
+        meaning: loinc:LA14025-3
