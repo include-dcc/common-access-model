@@ -15,34 +15,44 @@ enums:
     permissible_values:
       NCIT:C163986:
         title: Hybrid Selected Genomic Library
-        description: A genomic library where the sample has been subjected to enrichment
+        description:
+          A genomic library where the sample has been subjected to enrichment
           via nucleic acid hybridization.
         meaning: NCIT:C163986
       NCIT:C163987:
         title: Affinity Enriched Genomic Library
-        description: A genomic library where the sample has been subjected to enrichment
+        description:
+          A genomic library where the sample has been subjected to enrichment
           via binding to a target protein or oligonucleotide prior to molecular analysis.
         meaning: NCIT:C163987
       NCIT:C163988:
         title: Poly-A Enriched Genomic Library
-        description: A genomic library where the sample has been subjected to enrichment
+        description:
+          A genomic library where the sample has been subjected to enrichment
           via binding to immobilized poly-T oligonucleotides, which will preferentially
           isolate polyadenylated (poly-A) RNAs.
         meaning: NCIT:C163988
       NCIT:C163989:
         title: Randomly Selected Genomic Library
-        description: A genomic library constructed to generate random DNA fragments
+        description:
+          A genomic library constructed to generate random DNA fragments
           by subjecting a genomic sample to either amplification using random primers
           or fragmentation via exposure to restriction enzymes or shear stress. The
           fragments can then be cloned or sequenced directly.
         meaning: NCIT:C163989
       NCIT:C163990:
         title: rRNA Depleted Genomic Library
-        description: A genomic library where the sample has been subjected to a ribosomal
+        description:
+          A genomic library where the sample has been subjected to a ribosomal
           RNA depletion step before it is amplified.
         meaning: NCIT:C163990
       NCIT:C163991:
         title: miRNA Size Fractionated Genomic Library
-        description: A RNA library that has been fractionated by size exclusion methods
+        description:
+          A RNA library that has been fractionated by size exclusion methods
           to enrich for microRNAs.
         meaning: NCIT:C163991
+      NCIT:C17003:
+        title: Polymerase Chain Reaction
+        description: A method for amplifying a DNA base sequence using multiple rounds of heat denaturation of the DNA and annealing of oligonucleotide primers complementary to flanking regions in the presence of a heat-stable polymerase. This results in duplication of the targeted DNA region. Newly synthesized DNA strands can subsequently serve as additional templates for the same primer sequences, so that successive rounds of primer annealing, strand elongation, and dissociation produce rapid and highly specific amplification of the desired sequence. PCR also can be used to detect the existence of the defined sequence in a DNA sample.
+        meaning: NCIT:C17003
