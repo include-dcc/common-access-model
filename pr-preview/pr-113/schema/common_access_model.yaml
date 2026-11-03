@@ -28617,6 +28617,19 @@ enums:
           to enrich for microRNAs.
         meaning: NCIT:C163991
         title: miRNA Size Fractionated Genomic Library
+      NCIT:C17003:
+        text: NCIT:C17003
+        description: A method for amplifying a DNA base sequence using multiple rounds
+          of heat denaturation of the DNA and annealing of oligonucleotide primers
+          complementary to flanking regions in the presence of a heat-stable polymerase.
+          This results in duplication of the targeted DNA region. Newly synthesized
+          DNA strands can subsequently serve as additional templates for the same
+          primer sequences, so that successive rounds of primer annealing, strand
+          elongation, and dissociation produce rapid and highly specific amplification
+          of the desired sequence. PCR also can be used to detect the existence of
+          the defined sequence in a DNA sample.
+        meaning: NCIT:C17003
+        title: Polymerase Chain Reaction
     reachable_from:
       source_ontology: bioregistry:ncit
       source_nodes:
@@ -32668,7 +32681,7 @@ classes:
     class_uri: cam:Dataset
 metamodel_version: 1.11.0
 source_file: common_access_model.yaml
-source_file_date: '2026-11-03T19:40:02'
+source_file_date: '2026-11-03T20:49:04'
 source_file_size: 45754
-generation_date: '2026-11-03T19:40:14'
+generation_date: '2026-11-03T20:49:41'
 
