@@ -1,0 +1,19 @@
+id: https://includedcc.org/common-access-model/EnumLibraryStrand
+name: EnumLibraryStrand
+enums:
+  EnumLibraryStrand:
+    title: Library Strand
+    description: Sequencing library strandedness, indicating whether the library is single-stranded, double-stranded, or unstranded.
+    permissible_values:
+      NCIT:C150427:
+        title: Unstranded Library Sequencing
+        description: Non-directional sequencing, where the reads can map from either the transcript strand or its complement.
+        meaning: NCIT:C150427
+      NCIT:C150428:
+        title: First-strand Library Sequencing
+        description: Directional sequencing, where the first read (or the only read in case of single end reads) is from the complement strand.
+        meaning: NCIT:C150428
+      NCIT:C150426:
+        title: Second-strand Library Sequencing
+        description: Directional sequencing, where the first read of the read pair (or in case of single end reads, the only read) is from the transcript strand.
+        meaning: NCIT:C150426

@@ -1,0 +1,17 @@
+id: https://includedcc.org/common-access-model/EnumReferenceGenome
+name: EnumReferenceGenome
+enums:
+  EnumReferenceGenome:
+    title: Reference Genome
+    permissible_values:
+      loinc:LA14029-5:
+        title: GRCh37
+        meaning: loinc:LA14029-5
+      loinc:LA26806-2:
+        title: GRCh38
+        meaning: loinc:LA26806-2
+      # hs37d5:
+      #   title: hs37d5
+      loinc:LA14025-3:
+        title: hg19
+        meaning: loinc:LA14025-3
