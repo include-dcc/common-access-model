@@ -1,0 +1,12 @@
+id: https://includedcc.org/common-access-model/EnumAnalyteType
+name: EnumAnalyteType
+enums:
+  EnumAnalyteType:
+    description: The type of analyte that was extracted from the biospecimen.
+    permissible_values:
+      SNOMEDCT:24851008:
+        title: DNA
+        meaning: SNOMEDCT:24851008
+      SNOMEDCT:27888000:
+        title: RNA
+        meaning: SNOMEDCT:27888000

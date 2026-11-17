@@ -1,0 +1,14 @@
+---
+id: https://includedcc.org/common-access-model/EnumSequencingInstrument
+name: EnumSequencingInstrument
+enums:
+  EnumSequencingInstrument:
+    title: Sequencing Instrument
+    permissible_values:
+      # Illumina HiSeq X Ten and HiSeq x 2.5
+      OBI:0002129:
+        title: Illumina HiSeq X Ten
+        description:
+          A DNA sequencer that consists of a set of 10 HiSeq X Sequencing
+          Systems.
+        meaning: OBI:0002129

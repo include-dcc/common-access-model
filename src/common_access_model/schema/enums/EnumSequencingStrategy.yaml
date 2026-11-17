@@ -1,0 +1,88 @@
+---
+id: https://includedcc.org/common-access-model/EnumSequencingStrategy
+name: EnumSequencingStrategy
+enums:
+  EnumSequencingStrategy:
+    description:
+    permissible_values:
+      # WGS (CCS and CLR denoted in sequencing mode)
+      NCIT:C101294:
+        title: Whole Genome Sequencing
+        description:
+          A procedure that can determine the DNA sequence for nearly the
+          entire genome of an individual.
+        meaning: NCIT:C101294
+      # WES
+      NCIT:C101295:
+        title: Whole Exome Sequencing
+        description:
+          A procedure that can determine the DNA sequence for all of the
+          exons in an individual.
+        meaning: NCIT:C101295
+
+      # Linked-read WGS (10x)
+
+      # RNA (CCS and CLR denoted in sequencing mode)
+      NCIT:C192768:
+        title: RNA Sequence Analysis
+        description: The determination of the sequence of purines and pyrimidines in a sample containing ribonucleic acid (RNA).
+        meaning: NCIT:C192768
+
+      # MRNA
+      NCIT:C156057:
+        title: MicroRNA Sequencing
+        description:
+          A next-generation or massively parallel high-throughput DNA sequencing-based
+          procedure that can identify and quantify the microRNA sequences present
+          in a biological sample.
+        meaning: NCIT:C156057
+
+      # scRNA and snRNA
+      NCIT:C171152:
+        title: Single Cell RNA Sequencing
+        description:
+          A procedure that can determine the nucleotide sequence for all
+          of the RNA transcripts in an amplified nucleotide sample that was derived
+          from a single cell.
+        meaning: NCIT:C171152
+
+      # Panel
+      NCIT:C198412:
+        title: Multi-gene Panel Sequencing
+        description:
+          An application of next-generation targeted sequencing where the
+          sequencing primers are designed to specifically target a panel of multiple
+          genes or loci of interest.
+        meaning: NCIT:C198412
+
+      # Targeted
+      NCIT:C158253:
+        title: Targeted Genome Sequencing
+        description:
+          A DNA sequencing technique in which selected regions of an individual's
+          genome are sequenced.
+        meaning: NCIT:C158253
+      NCIT:C158252:
+        title: Targeted Transcriptome Sequencing
+        description:
+          A type of whole transcriptome shotgun sequencing technique in
+          which select portions of the transcriptome are selected for sequencing.
+        meaning: NCIT:C158252
+
+      # Methylation
+      NCIT:C165222:
+        title: DNA Methylation Array
+        description: The use of a high-throughput microarray where all of the known CpG islands either in a single specimen or all of the known promoter sequences of a specimen or a population group are coupled to beads or microwells to determine which are methylated
+        meaning: NCIT:C165222
+
+      # Proteomics
+      NCIT:C20085:
+        title: Proteomics
+        description: The global analysis of cellular proteins. Proteomics uses a combination of sophisticated techniques including two-dimensional (2D) gel electrophoresis, image analysis, mass spectrometry, amino acid sequencing, and bio-informatics to resolve comprehensively, to quantify, and to characterize proteins. The application of proteomics provides major opportunities to elucidate disease mechanisms and to identify new diagnostic markers and therapeutic targets.
+        meaning: NCIT:C20085
+
+      # ONT WGS
+      NCIT:C146818:
+        title: Oxford Nanopore Sequencing
+        description: A proprietary next-generation DNA sequencing technology from Oxford Nanopore Technologies that can directly identify and sequence a DNA molecule as it passes through a nanopore, driven by electrophoresis.
+        meaning: NCIT:C146818
